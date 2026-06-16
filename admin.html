@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#f4f1ea">
+    <title>Site Yönetimi | Uzm. Dr. Özgür Özbebit</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+  </head>
+  <body>
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">Güvenli yönetim</p>
+          <h1>Site yönetimi</h1>
+          <p>Değişiklikler önce önizlenir, onaydan sonra GitHub'a tek commit olarak gönderilir.</p>
+        </div>
+        <button class="quiet-button" type="button" data-logout hidden>Çıkış yap</button>
+      </header>
+
+      <nav class="admin-tabs" aria-label="Admin bölümleri">
+        <a class="is-active" href="/admin" aria-current="page">İletişim</a>
+        <a href="/admin/content/">İçerik Üret</a>
+      </nav>
+
+      <section class="panel auth-panel" data-login-panel>
+        <form data-login-form>
+          <div>
+            <p class="eyebrow">Oturum aç</p>
+            <h2>Admin paneline giriş</h2>
+            <p>Vercel ortam değişkenlerinde tanımlanan yönetici parolasını girin.</p>
+          </div>
+          <label>
+            <span>Yönetici parolası</span>
+            <input type="password" name="password" autocomplete="current-password" required>
+          </label>
+          <button class="primary-button" type="submit">Giriş yap</button>
+        </form>
+      </section>
+
+      <section class="content-entry" data-content-entry hidden>
+        <div>
+          <p class="eyebrow">İçerik üretimi</p>
+          <h2>Blog ve sosyal medya taslakları hazırlayın</h2>
+          <p>Tek bir başlıktan blog, Instagram, Facebook, LinkedIn, X ve kısa video taslakları oluşturun.</p>
+        </div>
+        <a class="content-entry-button" href="/admin/content/">İçerik Üret Modülünü Aç</a>
+      </section>
+
+      <section class="editor" data-editor hidden>
+        <form class="panel form-panel" data-contact-form>
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">İletişim</p>
+              <h2>Yayınlanacak bilgiler</h2>
+            </div>
+            <span class="status-pill" data-status>GitHub'dan okunuyor</span>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              <span>Telefon</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+90 555 555 55 55" required>
+            </label>
+            <label>
+              <span>WhatsApp</span>
+              <input type="tel" name="whatsapp" autocomplete="tel" placeholder="+90 555 555 55 55">
+            </label>
+            <label>
+              <span>E-posta</span>
+              <input type="email" name="email" autocomplete="email" placeholder="info@example.com" required>
+            </label>
+            <label class="wide-field">
+              <span>Adres</span>
+              <textarea name="address" rows="3" autocomplete="street-address" required></textarea>
+            </label>
+            <label>
+              <span>Instagram bağlantısı</span>
+              <input type="url" name="instagram" placeholder="https://instagram.com/...">
+            </label>
+            <label>
+              <span>LinkedIn bağlantısı</span>
+              <input type="url" name="linkedin" placeholder="https://linkedin.com/in/...">
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit" data-preview-button>Önizle</button>
+            <p>Önizleme, verileri doğrular ve hangi dosyaların değişeceğini gösterir.</p>
+          </div>
+        </form>
+
+        <aside class="panel preview-panel" data-preview-panel>
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Önizleme</p>
+              <h2>Sitede görünecek hali</h2>
+            </div>
+          </div>
+
+          <div class="contact-preview">
+            <a data-preview-phone>Telefon eklenmedi</a>
+            <a data-preview-whatsapp hidden>WhatsApp</a>
+            <a data-preview-email>E-posta eklenmedi</a>
+            <p data-preview-address>Adres eklenmedi</p>
+            <div class="social-preview">
+              <a data-preview-instagram hidden>Instagram</a>
+              <a data-preview-linkedin hidden>LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="publish-box" data-publish-box hidden>
+            <p data-preview-summary></p>
+            <details>
+              <summary>Güncellenecek dosyaları göster</summary>
+              <ul data-affected-files></ul>
+            </details>
+            <label class="confirm-row">
+              <input type="checkbox" data-confirm>
+              <span>Önizlemeyi kontrol ettim ve bu bilgileri yayınlamak istiyorum.</span>
+            </label>
+            <button class="publish-button" type="button" data-publish disabled>Yayınla</button>
+            <p class="publish-note">Bu işlem GitHub deposunun ayarlı branch'ine commit atar. Vercel dağıtımı otomatik başlar.</p>
+          </div>
+
+          <section class="publish-result" data-publish-result hidden>
+            <p class="eyebrow">Yayın sonucu</p>
+            <h2>GitHub commit doğrulandı</h2>
+            <dl>
+              <div><dt>Commit SHA</dt><dd><code data-result-sha></code></dd></div>
+              <div><dt>Güncellenen dosya</dt><dd data-result-count></dd></div>
+            </dl>
+            <details>
+              <summary>Commit edilen dosyaları göster</summary>
+              <ul data-result-files></ul>
+            </details>
+            <div class="result-links">
+              <a data-result-commit-link target="_blank" rel="noreferrer">GitHub commitini aç</a>
+              <a data-result-vercel-link target="_blank" rel="noreferrer">Vercel deploylarını kontrol et</a>
+              <a data-result-production-link target="_blank" rel="noreferrer" hidden>Canlı siteyi aç</a>
+            </div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="editor home-editor" data-home-editor hidden>
+        <form class="panel form-panel" data-home-form>
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Ana Sayfa</p>
+              <h2>Ana sayfa içerikleri</h2>
+            </div>
+            <span class="status-pill" data-home-status>GitHub'dan okunuyor</span>
+          </div>
+
+          <div class="form-grid">
+            <label><span>Üst küçük başlık</span><input type="text" name="eyebrow" required></label>
+            <label><span>Randevu Al buton metni</span><input type="text" name="appointmentButton" required></label>
+            <label class="wide-field"><span>Ana hero başlığı</span><textarea name="heroTitle" rows="2" required></textarea></label>
+            <label class="wide-field"><span>Hero açıklama metni</span><textarea name="heroDescription" rows="4" required></textarea></label>
+            <label><span>Çalışma Alanları buton metni</span><input type="text" name="servicesButton" required></label>
+            <label class="wide-field"><span>Yaklaşım bölümü başlığı</span><textarea name="approachTitle" rows="2" required></textarea></label>
+            <label class="wide-field"><span>Yaklaşım bölümü açıklaması</span><textarea name="approachDescription" rows="5" required></textarea></label>
+            <label class="wide-field"><span>Süreç bölümü başlığı</span><textarea name="processTitle" rows="2" required></textarea></label>
+            <label class="wide-field"><span>Süreç bölümü açıklaması</span><textarea name="processDescription" rows="4" required></textarea></label>
+          </div>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit" data-home-preview-button>Önizle</button>
+            <p>Hero, yaklaşım, süreç ve ana sayfa SEO alanları birlikte güncellenir.</p>
+          </div>
+        </form>
+
+        <aside class="panel preview-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">Ana Sayfa Önizleme</p><h2 data-home-preview-title>Hero başlığı</h2></div>
+          </div>
+          <div class="home-preview">
+            <p class="eyebrow" data-home-preview-eyebrow></p>
+            <p data-home-preview-description></p>
+            <div class="preview-buttons"><span data-home-preview-appointment></span><span data-home-preview-services></span></div>
+            <hr>
+            <strong data-home-preview-approach-title></strong>
+            <p data-home-preview-approach-description></p>
+            <strong data-home-preview-process-title></strong>
+            <p data-home-preview-process-description></p>
+          </div>
+
+          <div class="publish-box" data-home-publish-box hidden>
+            <p data-home-preview-summary></p>
+            <label class="confirm-row">
+              <input type="checkbox" data-home-confirm>
+              <span>Önizlemeyi kontrol ettim ve ana sayfa metinlerini yayınlamak istiyorum.</span>
+            </label>
+            <button class="publish-button" type="button" data-home-publish disabled>Yayınla</button>
+            <p class="publish-note">index.html GitHub'a commit edilir ve commit sonrası yeniden doğrulanır.</p>
+          </div>
+
+          <section class="publish-result" data-home-publish-result hidden>
+            <p class="eyebrow">Yayın sonucu</p>
+            <h2>Ana sayfa commit edildi</h2>
+            <dl>
+              <div><dt>Commit SHA</dt><dd><code data-home-result-sha></code></dd></div>
+              <div><dt>Güncellenen dosya</dt><dd data-home-result-count></dd></div>
+            </dl>
+            <div class="result-links">
+              <a data-home-result-commit-link target="_blank" rel="noreferrer">GitHub commitini aç</a>
+              <a data-home-result-vercel-link target="_blank" rel="noreferrer">Vercel deploylarını kontrol et</a>
+              <a data-home-result-production-link target="_blank" rel="noreferrer" hidden>Canlı siteyi aç</a>
+            </div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="panel social-content-panel" data-social-editor hidden>
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Sosyal Medya İçeriği</p>
+            <h2>Güvenli içerik taslağı</h2>
+            <p>Bir konu başlığı girin. İçerik yalnızca taslak olarak hazırlanır ve otomatik yayınlanmaz.</p>
+          </div>
+          <span class="status-pill" data-social-status>Taslak bekleniyor</span>
+        </div>
+        <form class="social-form" data-social-form>
+          <label><span>İçerik başlığı</span><input type="text" name="title" maxlength="140" placeholder="Örn. Panik atak hakkında sık sorulanlar" required></label>
+          <button class="primary-button" type="submit" data-social-generate>Taslak Oluştur</button>
+        </form>
+        <section class="social-draft" data-social-draft hidden>
+          <article><h3>Instagram açıklaması</h3><p data-social-instagram></p></article>
+          <article><h3>Facebook paylaşım metni</h3><p data-social-facebook></p></article>
+          <article><h3>LinkedIn profesyonel paylaşım metni</h3><p data-social-linkedin></p></article>
+          <article><h3>TikTok kısa video senaryosu</h3><p data-social-tiktok></p></article>
+          <article><h3>5 hashtag</h3><p data-social-hashtags></p></article>
+          <article><h3>Görsel önerisi</h3><p data-social-visual></p></article>
+          <article class="physician-note"><h3>Hekim kontrol notu</h3><p data-social-physician-note></p></article>
+          <div class="social-approval">
+            <label class="confirm-row"><input type="checkbox" data-social-confirm><span>Hekim kontrolünü yaptım ve bu taslağa onay verdim.</span></label>
+            <button class="publish-button" type="button" data-social-approve disabled>Hekim Onaylı Taslak Oluştur</button>
+            <p>Bu düğme sosyal medya hesaplarında paylaşım yapmaz. Yalnızca taslağın hekim tarafından kontrol edildiğini işaretler.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="panel content-kit-panel" data-content-editor hidden>
+        <div class="panel-heading">
+          <div><p class="eyebrow">Tek Tuş Uzman Paketi</p><h2>Bir başlıktan haftalık içerik seti</h2><p>Tek işlemle dokuz kanala uygun taslak hazırlayın. Harici API bağlantısı veya otomatik yayın yoktur.</p></div>
+          <span class="status-pill" data-content-status>Taslak bekleniyor</span>
+        </div>
+        <form class="social-form" data-content-form>
+          <label><span>İçerik başlığı</span><input type="text" name="title" maxlength="140" placeholder="Örn. Antidepresanlar bağımlılık yapar mı?" required></label>
+          <button class="primary-button expert-package-button" type="submit" data-content-generate>UZMAN PAKETİ OLUŞTUR</button>
+        </form>
+        <div class="expert-package-list" aria-label="Uzman paketine dahil içerikler"><span>Blog</span><span>SEO Blog Paketi</span><span>Instagram Post</span><span>Carousel</span><span>Facebook</span><span>LinkedIn Uzun Makale</span><span>X Flood</span><span>Reels Senaryosu</span><span>SSS</span><span>Podcast</span></div>
+        <section class="content-kit" data-content-draft hidden>
+          <div class="content-tabs" role="tablist" aria-label="İçerik türleri">
+            <button type="button" role="tab" data-content-tab="blog" aria-selected="true">Blog</button><button type="button" role="tab" data-content-tab="seo-blog" aria-selected="false">SEO Blog Paketi</button><button type="button" role="tab" data-content-tab="instagram" aria-selected="false">Instagram</button><button type="button" role="tab" data-content-tab="carousel" aria-selected="false">Carousel</button><button type="button" role="tab" data-content-tab="facebook" aria-selected="false">Facebook</button><button type="button" role="tab" data-content-tab="linkedin-long" aria-selected="false">LinkedIn Uzun</button><button type="button" role="tab" data-content-tab="x-flood" aria-selected="false">X Flood</button><button type="button" role="tab" data-content-tab="video" aria-selected="false">Video</button><button type="button" role="tab" data-content-tab="podcast" aria-selected="false">Podcast</button><button type="button" role="tab" data-content-tab="faq" aria-selected="false">SSS</button>
+          </div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="blog"><article><h3>Web sitesi blog yazısı</h3><pre data-content-output="blog"></pre><button class="quiet-button copy-button" type="button" data-copy-field="blog" disabled>Kopyala</button></article><article><h3>Hasta bilgilendirme broşürü</h3><pre data-content-output="brochure"></pre><button class="quiet-button copy-button" type="button" data-copy-field="brochure" disabled>Kopyala</button></article><article><h3>7 günlük içerik takvimi</h3><pre data-content-output="contentCalendar"></pre><button class="quiet-button copy-button" type="button" data-copy-field="contentCalendar" disabled>Kopyala</button></article><div class="tab-export-actions"><button class="quiet-button copy-tab-button" type="button" data-copy-tab="blog" disabled>Kopyala</button><button class="quiet-button" type="button" data-download-tab="blog" disabled>TXT indir</button></div></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="seo-blog" hidden><article><h3>SEO Blog Paketi</h3><pre data-content-output="blogSeoPackage"></pre><button class="quiet-button copy-button" type="button" data-copy-field="blogSeoPackage" disabled>Kopyala</button></article><div class="tab-export-actions"><button class="quiet-button copy-tab-button" type="button" data-copy-tab="seo-blog" disabled>Kopyala</button><button class="quiet-button" type="button" data-download-tab="seo-blog" disabled>TXT indir</button></div></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="instagram" hidden><article><h3>Instagram gönderi metni</h3><pre data-content-output="instagram"></pre><button class="quiet-button copy-button" type="button" data-copy-field="instagram" disabled>Kopyala</button></article><article><h3>5-8 hashtag</h3><pre data-content-output="hashtags"></pre><button class="quiet-button copy-button" type="button" data-copy-field="hashtags" disabled>Kopyala</button></article><article><h3>Görsel/carousel önerisi</h3><pre data-content-output="visualSuggestion"></pre><button class="quiet-button copy-button" type="button" data-copy-field="visualSuggestion" disabled>Kopyala</button></article><button class="quiet-button copy-tab-button" type="button" data-copy-tab="instagram" disabled>Instagram Sekmesini Kopyala</button></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="carousel" hidden><article><h3>Instagram Carousel</h3><pre data-content-output="carousel"></pre><button class="quiet-button copy-button" type="button" data-copy-field="carousel" disabled>Kopyala</button></article><button class="quiet-button copy-tab-button" type="button" data-copy-tab="carousel" disabled>Carousel Sekmesini Kopyala</button></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="facebook" hidden><article><h3>Facebook kısa gönderi</h3><pre data-content-output="facebook"></pre><button class="quiet-button copy-button" type="button" data-copy-field="facebook" disabled>Kopyala</button></article><article><h3>Facebook uzun gönderi</h3><pre data-content-output="facebookLong"></pre><button class="quiet-button copy-button" type="button" data-copy-field="facebookLong" disabled>Kopyala</button></article><button class="quiet-button copy-tab-button" type="button" data-copy-tab="facebook" disabled>Facebook Sekmesini Kopyala</button></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="linkedin-long" hidden><article><h3>LinkedIn uzun makale</h3><pre data-content-output="linkedinArticle"></pre><button class="quiet-button copy-button" type="button" data-copy-field="linkedinArticle" disabled>Kopyala</button></article><div class="tab-export-actions"><button class="quiet-button copy-tab-button" type="button" data-copy-tab="linkedin-long" disabled>Kopyala</button><button class="quiet-button" type="button" data-download-tab="linkedin-long" disabled>TXT indir</button></div></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="x-flood" hidden><article><h3>8 tweetlik X Flood</h3><pre data-content-output="xFlood"></pre><button class="quiet-button copy-button" type="button" data-copy-field="xFlood" disabled>Kopyala</button></article><div class="tab-export-actions"><button class="quiet-button copy-tab-button" type="button" data-copy-tab="x-flood" disabled>Kopyala</button><button class="quiet-button" type="button" data-download-tab="x-flood" disabled>TXT indir</button></div></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="video" hidden><article><h3>TikTok/Reels kısa video senaryosu</h3><pre data-content-output="video"></pre><button class="quiet-button copy-button" type="button" data-copy-field="video" disabled>Kopyala</button></article><article><h3>Video konuşma metinleri</h3><pre data-content-output="videoScripts"></pre><button class="quiet-button copy-button" type="button" data-copy-field="videoScripts" disabled>Kopyala</button></article><button class="quiet-button copy-tab-button" type="button" data-copy-tab="video" disabled>Video Sekmesini Kopyala</button></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="podcast" hidden><article><h3>Podcast metni</h3><pre data-content-output="podcast"></pre><button class="quiet-button copy-button" type="button" data-copy-field="podcast" disabled>Kopyala</button></article><button class="quiet-button copy-tab-button" type="button" data-copy-tab="podcast" disabled>Podcast Sekmesini Kopyala</button></div>
+          <div class="content-tab-panel" role="tabpanel" data-content-panel="faq" hidden><article><h3>10 sık sorulan soru ve cevap</h3><pre data-content-output="faq"></pre><button class="quiet-button copy-button" type="button" data-copy-field="faq" disabled>Kopyala</button></article><button class="quiet-button copy-tab-button" type="button" data-copy-tab="faq" disabled>SSS Sekmesini Kopyala</button></div>
+          <article class="physician-note wide-content"><h3>Hekim kontrol notu</h3><pre data-content-output="physicianNote"></pre></article>
+          <div class="content-export">
+            <label class="confirm-row"><input type="checkbox" data-content-confirm><span>Hekim onayı verdim; içeriklerin bilimsel doğruluğunu ve sağlık iletişimi uygunluğunu kontrol ettim.</span></label>
+            <button class="publish-button" type="button" data-content-approve disabled>Kopyalama ve İndirmeyi Aç</button>
+            <div class="export-actions" data-content-export-actions hidden>
+              <button class="quiet-button" type="button" data-content-copy-all>Tümünü Kopyala</button>
+              <button class="quiet-button" type="button" data-content-download>TXT Olarak İndir</button>
+            </div>
+            <p>Bu araç yalnızca taslak üretir. Siteye veya sosyal medya hesaplarına yayın yapmaz.</p>
+          </div>
+        </section>
+      </section>
+
+      <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+    </main>
+
+    <script src="/admin/admin.js" defer></script>
+  </body>
+</html>
