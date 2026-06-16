@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+
   "redirects": [
     {
       "source": "/:path*",
@@ -9,7 +10,7 @@
           "value": "ozgurozbebit.com"
         }
       ],
-      "destination": "https://ozgurozbebit.com.tr/:path*",
+      "destination": "https://www.ozgurozbebit.com.tr/:path*",
       "permanent": true
     },
     {
@@ -20,21 +21,11 @@
           "value": "www.ozgurozbebit.com"
         }
       ],
-      "destination": "https://ozgurozbebit.com.tr/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.ozgurozbebit.com.tr"
-        }
-      ],
-      "destination": "https://ozgurozbebit.com.tr/:path*",
+      "destination": "https://www.ozgurozbebit.com.tr/:path*",
       "permanent": true
     }
   ],
+
   "rewrites": [
     {
       "source": "/admin",
@@ -53,6 +44,7 @@
       "destination": "/admin/content/index.html"
     }
   ],
+
   "headers": [
     {
       "source": "/admin",
