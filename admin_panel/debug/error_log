@@ -1,0 +1,14 @@
+[13-Jun-2026 09:34:54 Europe/Istanbul] PHP Warning:  Undefined variable $url in /home/u2729492/admin.ozgurozbebit.com.tr/debug/meta_page_instagram_test.php on line 61
+[13-Jun-2026 09:34:54 Europe/Istanbul] PHP Warning:  Undefined variable $url in /home/u2729492/admin.ozgurozbebit.com.tr/debug/meta_page_instagram_test.php on line 65
+[15-Jun-2026 08:56:39 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function shell_exec() in /home/u2729492/admin.ozgurozbebit.com.tr/debug/ffmpeg_test.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/debug/ffmpeg_test.php on line 6
+[15-Jun-2026 08:59:11 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function shell_exec() in /home/u2729492/admin.ozgurozbebit.com.tr/debug/ffmpeg_test.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/debug/ffmpeg_test.php on line 24
+[17-Jun-2026 09:22:25 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function shell_exec() in /home/u2729492/admin.ozgurozbebit.com.tr/debug/ffmpeg_test.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/debug/ffmpeg_test.php on line 24

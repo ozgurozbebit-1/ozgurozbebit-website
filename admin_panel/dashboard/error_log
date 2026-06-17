@@ -1,0 +1,5 @@
+[11-Jun-2026 16:52:03 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u2729492_ozgur_ai.social_accounts' doesn't exist in /home/u2729492/admin.ozgurozbebit.com.tr/dashboard/publish.php:18
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/dashboard/publish.php(18): PDO->query()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/dashboard/publish.php on line 18

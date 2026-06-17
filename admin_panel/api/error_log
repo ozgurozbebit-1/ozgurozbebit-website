@@ -1,0 +1,75 @@
+[09-Jun-2026 10:33:47 Europe/Istanbul] PHP Fatal error:  Cannot use empty array elements in arrays in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate.php on line 39
+[09-Jun-2026 10:34:26 Europe/Istanbul] PHP Fatal error:  Cannot use empty array elements in arrays in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate.php on line 39
+[09-Jun-2026 10:35:32 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate.php on line 7
+[09-Jun-2026 10:35:35 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate.php on line 7
+[09-Jun-2026 14:53:11 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'content' in 'INSERT INTO' in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php:74
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php(74): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php on line 74
+[09-Jun-2026 14:57:51 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'content' in 'INSERT INTO' in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php:206
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php(206): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php on line 206
+[09-Jun-2026 15:00:44 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'content' in 'INSERT INTO' in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php:206
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php(206): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_from_plan.php on line 206
+[12-Jun-2026 09:54:14 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 225
+[12-Jun-2026 10:00:44 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 225
+[12-Jun-2026 10:09:51 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 229
+[12-Jun-2026 10:13:03 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 229
+[12-Jun-2026 10:13:16 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 229
+[12-Jun-2026 10:15:10 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 233
+[12-Jun-2026 10:15:13 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_now.php on line 233
+[12-Jun-2026 19:24:32 Europe/Istanbul] PHP Warning:  file_get_contents(https://graph.facebook.com/v20.0/oauth/access_token?client_id=1050261657563598&amp;redirect_uri=https%3A%2F%2Fadmin.ozgurozbebit.com.tr%2Fapi%2Fmeta_callback.php&amp;client_secret=39dce8943378897557d4db0dbfe3107c&amp;code=AQL9F8nMhfNP96cb5DWgJCOou7ERZsBgysZURBD5Z8oimpj5heumrAJlSITG80echJR4b36oy1aSJXGVFo_n5DMmLUMzcFRBGfv_eKKJgseAOSANWytZ4_1SFvUPYVXjhsL5NX-pY6cN_xkL_XW_9IXDOV23AM8vgEgD7cfRmmB_Hk8sFdIzav2C73dxTWupln90ZqGu06fHG46kJIVVQt-mBOx5hCrS9uOaMYrtq4UfaQ3Cap8yJEhujM5BNSnlIoi72Yuxy4gxlFCTYHogHEuD1l5eliBekUreK8R0wGLX1n6xuzkVAiJKFr2xsrqkNhGilV0AH6epKzlWVbM5qNKx7Sl-GD1-lrI7J_jecDAGeENh_t-B2szNQzJTutrAk49MZTYzv-hCzIGNwsaDsEksiFbqo5ZHsXMyJ5tZZicUmg): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php on line 25
+[12-Jun-2026 19:26:46 Europe/Istanbul] PHP Warning:  file_get_contents(https://graph.facebook.com/v20.0/oauth/access_token?client_id=1050261657563598&amp;redirect_uri=https%3A%2F%2Fadmin.ozgurozbebit.com.tr%2Fapi%2Fmeta_callback.php&amp;client_secret=39dce8943378897557d4db0dbfe3107c&amp;code=AQI4sA43kuH6DiK9ZRN6sH_emYztNy7FQocxAoSYZFiNpjgudRtCngnJVdE_sBxshj8Mqd6xk0TkjLtReLSVcgIdA0lwD-MvkndCqiMU5Hzc8NpCxKYw05YLlxMsg1u5VLPmemFvI1aW6fPTYGWoDq7nj2vgSr8Uup56wUdbMXvaHUtk8iKv1lRwkFVGi8IP0udOj6ZnZ84IuoTuPEVGC7nqDXezrN7IQ_q1hDP9vzH8cjaXc8grXN1id0JfKPzCqnQ_B8bIrVIbI-jZ18QdYmLyrOQN1fnlRJDZ033wj-dUosUo7hHNyNbB2S1KDe0vgd_DIYUKi9W5ys4kqH-wE0s5PCz3IF2AUuXJ7mRSjoKW5q00z3lxjrHru4mqCSEEhwr0-7rhRzi7evkDtTHHTBFY8s8QfZa9D9-AO0NM6UrB4Q): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php on line 25
+[12-Jun-2026 22:21:16 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'WHERE' in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php:101
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php on line 101
+[12-Jun-2026 22:21:50 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'WHERE' in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php:101
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php on line 101
+[12-Jun-2026 22:24:59 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'WHERE' in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php:103
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php(103): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php on line 103
+[12-Jun-2026 22:31:46 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'page_token' in 'INSERT INTO' in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php:118
+Stack trace:
+#0 /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php(118): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/meta_callback.php on line 118
+[13-Jun-2026 17:24:58 Europe/Istanbul] PHP Parse error:  Unmatched ']' in /home/u2729492/admin.ozgurozbebit.com.tr/api/upload_post_image.php on line 32
+[13-Jun-2026 17:26:59 Europe/Istanbul] PHP Parse error:  Unmatched ']' in /home/u2729492/admin.ozgurozbebit.com.tr/api/upload_post_image.php on line 32
+[13-Jun-2026 17:27:04 Europe/Istanbul] PHP Parse error:  Unmatched ']' in /home/u2729492/admin.ozgurozbebit.com.tr/api/upload_post_image.php on line 32
+[15-Jun-2026 10:20:41 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:20:59 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:22:45 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:22:52 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:23:08 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:23:15 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:27:05 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:27:11 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:27:12 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:27:23 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:27:35 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 311
+[15-Jun-2026 10:58:32 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 323
+[15-Jun-2026 10:58:46 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 323
+[15-Jun-2026 11:00:12 Europe/Istanbul] PHP Parse error:  syntax error, unexpected token "," in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_image.php on line 323
+[17-Jun-2026 09:55:30 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_shorts_package.php:94
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_shorts_package.php on line 94
+[17-Jun-2026 09:59:06 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_shorts_package.php:94
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_shorts_package.php on line 94
