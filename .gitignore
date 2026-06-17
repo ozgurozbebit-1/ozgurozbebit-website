@@ -6,3 +6,4 @@
 node_modules
 admin_panel/config/openai.php
 admin_panel/config/linkedin.php
+admin_panel/uploads/
