@@ -10,6 +10,16 @@ const mdqRoot = document.querySelector("[data-mdq]");
 const gadRoot = document.querySelector("[data-gad]");
 const contactDataElement = document.querySelector("#site-contact-data");
 
+if (window.location.protocol === "file:") {
+  const siteScript = Array.from(document.scripts).find((script) => /(?:^|\/)script\.js$/.test(script.src));
+  if (siteScript) {
+    const localBlogUrl = new URL("blog/index.html", siteScript.src).href;
+    document.querySelectorAll("[data-nav] a").forEach((link) => {
+      if (link.textContent.trim() === "Blog") link.href = localBlogUrl;
+    });
+  }
+}
+
 if (contactDataElement) {
   try {
     const contact = JSON.parse(contactDataElement.textContent);
