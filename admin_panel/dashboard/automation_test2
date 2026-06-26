@@ -1,0 +1,1418 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["user_id"])){
+    header("Location: ../index.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>V36.4 Tek Tuş Otomasyon Merkezi</title>
+
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f3f8f8;color:#123}
+.header{background:white;padding:20px 30px;border-bottom:1px solid #dbecec;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:bold;color:#073b3a}
+.badge{background:#d7f4f2;color:#078080;padding:8px 14px;border-radius:20px;font-weight:bold}
+.layout{display:flex}
+.sidebar{
+    width:290px;
+    min-width:290px;
+    padding:25px 18px;
+    box-sizing:border-box;
+}
+.menu a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:white;
+    padding:16px 14px;
+    margin-bottom:12px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#123;
+    font-weight:bold;
+    line-height:1.25;
+    white-space:normal;
+}
+.menu a.active{background:#078080;color:white}
+.main{flex:1;padding:25px}
+.card{background:white;padding:22px;border-radius:14px;margin-bottom:20px}
+input,textarea{width:100%;padding:13px;margin-top:8px;margin-bottom:15px;border:1px solid #cfe3e3;border-radius:10px;box-sizing:border-box}
+button{background:#078080;color:white;border:0;padding:13px 18px;border-radius:10px;font-weight:bold;cursor:pointer;margin-right:8px;margin-bottom:8px}
+button.smart{background:#8b5cf6;color:white}
+button.brand{background:#063f5c;color:white}
+button.publish{background:#16a34a;color:white}
+button.story{background:#db2777;color:white}
+.tip{background:#eefafa;padding:14px;border-radius:12px;line-height:1.6}
+.output{min-height:160px;background:#fbffff;border:1px solid #dbecec;border-radius:12px;padding:18px;white-space:pre-wrap;line-height:1.6}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.topGrid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+    margin-bottom:20px;
+}
+
+.topGrid .card{
+    margin-bottom:0;
+}
+
+.compactOutput{
+    min-height:140px;
+    max-height:260px;
+    overflow:auto;
+    font-size:13px;
+}
+
+@media(max-width:1200px){
+    .topGrid{
+        grid-template-columns:1fr;
+    }
+}
+.statusLine{padding:10px 12px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;margin-bottom:8px}
+.ok{background:#dcfce7;color:#166534}
+.wait{background:#fef9c3;color:#854d0e}
+.bad{background:#fee2e2;color:#991b1b}
+.preview img{max-width:100%;border-radius:14px;border:1px solid #dbecec;margin-top:15px}
+.download{display:inline-block;margin-top:12px;background:#078080;color:white;text-decoration:none;padding:12px 16px;border-radius:10px;font-weight:bold}
+.download.secondary{background:#063f5c}
+.download.story{background:#db2777}
+.platformBox{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:14px;margin-top:14px}
+.platformBox label{font-weight:bold;margin-right:14px}
+
+@media(max-width:900px){
+    .layout{display:block}
+    .sidebar{width:auto}
+    .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">🚀 Tek Tuş Otomasyon Merkezi</div>
+    <div>
+        Hoş geldin, <?php echo htmlspecialchars($_SESSION["user_name"] ?? "Kullanıcı"); ?>
+        <span class="badge">V36.4</span>
+    </div>
+</div>
+
+<div class="layout">
+
+<div class="sidebar">
+    <div class="menu">
+        <a href="index.php">🤖 İçerik Üret</a>
+        <a href="calendar.php">📅 İçerik Takvimi</a>
+        <a href="planner.php">🗓️ 30 Günlük Plan</a>
+        <a href="drafts.php">📝 Taslaklar</a>
+        <a href="image.php">🎨 Görsel Oluştur</a>
+        <a href="video.php">🎬 Short Video Merkezi</a>
+        <a class="active" href="automation.php">🚀 Tek Tuş Otomasyon</a>
+        <a href="youtube.php">📺 YouTube İçerikleri</a>
+        <a href="blog.php">📰 Blog Yazıları</a>
+        <a href="analytics.php">📊 Analitik</a>
+        <a href="settings.php">⚙️ Ayarlar</a>
+        <a href="../auth/logout.php">🚪 Çıkış</a>
+    </div>
+</div>
+
+<div class="main">
+
+<div class="card">
+    <h2>🚀 V32 Platforma Özel Yayın Merkezi</h2>
+
+    <div class="tip">
+        Konuyu gir. Sistem içerik, sosyal metin, Shorts, görsel prompt, AI görsel, kurumsal feed görseli ve story görselini aynı ekranda hazırlar.
+    </div>
+
+    <br>
+
+    <label>İçerik konusu</label>
+    <input id="autoTopic" placeholder="Örn: Depresyon nedir?">
+
+    <button type="button" class="smart" onclick="runAutomation()">
+        🚀 Tek Tuş Üret
+    </button>
+
+    <button type="button" onclick="copyAllAutomation()">
+        📋 Tüm Paketi Kopyala
+    </button>
+</div>
+
+<div class="topGrid">
+
+    <div class="card">
+        <h2>🧠 V36 İçerik Hafızası / Tekrar Kontrol</h2>
+
+        <button type="button" class="brand" onclick="checkContentMemory()">
+            🔎 Hafızada Kontrol Et
+        </button>
+
+        <div id="memoryCheckResult" class="output compactOutput">
+            Henüz hafıza kontrolü yapılmadı.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🧠 V35 Konu Analiz Motoru</h2>
+
+        <button type="button" class="brand" onclick="analyzeTopic()">
+            🔍 Konuyu Analiz Et
+        </button>
+
+        <div id="topicAnalysisResult" class="output compactOutput">
+            Henüz konu analizi yapılmadı.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🌐 V35 Araştırma Merkezi</h2>
+
+        <button type="button" class="brand" onclick="researchTopic()">
+            🌐 Araştırma Yap
+        </button>
+
+        <button type="button" class="smart" onclick="generateFromResearch()">
+            🧠 Araştırmaya Göre İçerik Üret
+        </button>
+
+        <div id="researchResult" class="output compactOutput">
+            Henüz araştırma yapılmadı.
+        </div>
+    </div>
+
+</div>
+
+<div class="card">
+    <h2>⚙️ İşlem Durumu</h2>
+
+    <div id="statusContent" class="output compactOutput">
+        Henüz işlem başlamadı.
+    </div>
+</div>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>📄 İçerik Paketi</h2>
+        <div id="contentResult" class="output">İçerik paketi burada görünecek.</div>
+    </div>
+
+    <div class="card">
+        <h2>📱 Sosyal Medya Metni</h2>
+        <div id="socialResult" class="output">Sosyal medya metni burada görünecek.</div>
+    </div>
+
+    <div class="card">
+        <h2>📺 YouTube Shorts Paketi</h2>
+        <div id="shortsResult" class="output">Shorts paketi burada görünecek.</div>
+    </div>
+
+    <div class="card">
+        <h2>🖼️ Görsel / Story / Yayın Alanı</h2>
+
+        <div id="visualResult" class="output">Görsel prompt burada görünecek.</div>
+
+        <br>
+
+        <button type="button" class="brand" onclick="generateAutomationImage()">
+            🎨 Görsel Oluştur
+        </button>
+        <input type="file" id="automationManualImage" accept="image/jpeg,image/png,image/webp">
+
+<button type="button" class="brand" onclick="uploadAutomationManualImage()">
+    📤 Kendi Görselimi Yükle
+</button>
+
+        <div class="tip">
+            <label>✍️ Alt başlık</label>
+            <textarea id="automationSubtitle" placeholder="Boş bırakırsan AI alt başlık üretir."></textarea>
+
+            <label>🎯 Görsel ortasına yazılacak metin</label>
+            <textarea id="automationMiddleText" placeholder="Örn:
+Obsesyon: İstenmeyen düşünceler
+Kompulsiyon: Tekrarlayan davranışlar"></textarea>
+
+            <button type="button" class="smart" onclick="generateAutomationSubtitle()">
+                🧠 Alt Başlık Üret
+            </button>
+
+            <button type="button" class="brand" onclick="brandAutomationImage()">
+                🏷️ Kurumsallaştır
+            </button>
+
+            <button type="button" class="story" onclick="createAutomationStoryImage()">
+                📱 Story Görseli Oluştur
+            </button>
+        </div>
+
+        <div class="platformBox">
+            <strong>🌐 Yayınlanacak Platformlar</strong><br><br>
+
+            <label><input type="checkbox" class="publishPlatform" value="facebook" checked style="width:auto;"> Facebook</label>
+            <label><input type="checkbox" class="publishPlatform" value="instagram" checked style="width:auto;"> Instagram</label>
+            <label><input type="checkbox" class="publishPlatform" value="linkedin" checked style="width:auto;"> LinkedIn</label>
+
+            <br><br>
+
+            <button type="button" class="publish" onclick="publishAutomationPost()">
+                🚀 Facebook + Instagram + LinkedIn Yayınla
+            </button>
+        </div>
+
+        <div id="imageStatus" class="tip">
+            AI görsel üretildiğinde burada görünecek.
+        </div>
+
+        <div id="imagePreview" class="preview"></div>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+let automationImageUrl = "";
+let automationBrandedImageUrl = "";
+let automationStoryImageUrl = "";
+let automationSubtitle = "";
+
+function htmlEscape(text){
+    return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function makeAbsoluteUrl(url){
+    url = (url || "").trim();
+    if(url === "") return "";
+    if(url.startsWith("http://") || url.startsWith("https://")) return url;
+    if(url.startsWith("/")) return window.location.origin + url;
+    return window.location.origin + "/" + url.replace(/^(\.\.\/)+/, "");
+}
+
+function setStatus(lines){
+    const box = document.getElementById("statusContent");
+    box.innerHTML = lines.map(function(item){
+        return `<div class="statusLine ${item.className || ""}">${htmlEscape(item.text)}</div>`;
+    }).join("");
+}
+
+async function runAutomation(){
+    const topic = document.getElementById("autoTopic").value.trim();
+
+    if(topic === ""){
+        alert("Önce içerik konusu yaz.");
+        return;
+    }
+
+    const canContinue = await checkDuplicateBeforeGenerate(topic);
+
+    if(!canContinue){
+        return;
+    }
+
+    automationImageUrl = "";
+    automationBrandedImageUrl = "";
+    automationStoryImageUrl = "";
+    automationSubtitle = "";
+
+    document.getElementById("imageStatus").innerText = "AI görsel üretildiğinde burada görünecek.";
+    document.getElementById("imagePreview").innerHTML = "";
+    document.getElementById("automationSubtitle").value = "";
+    document.getElementById("automationMiddleText").value = "";
+
+    document.getElementById("contentResult").innerText = "📄 İçerik paketi hazırlanıyor...";
+    document.getElementById("socialResult").innerText = "📱 Sosyal medya metni hazırlanıyor...";
+    document.getElementById("shortsResult").innerText = "📺 Shorts paketi hazırlanıyor...";
+    document.getElementById("visualResult").innerText = "🖼️ Görsel prompt hazırlanıyor...";
+
+    setStatus([
+        {text:"Başladı: " + topic, className:"wait"},
+        {text:"İçerik paketi hazırlanıyor...", className:"wait"},
+        {text:"Sosyal medya metni hazırlanıyor...", className:"wait"},
+        {text:"Shorts paketi hazırlanıyor...", className:"wait"},
+        {text:"Görsel prompt hazırlanıyor...", className:"wait"}
+    ]);
+
+    await generateAutoContent(topic);
+    await generateAutoSocial(topic);
+    await generateAutoShorts(topic);
+    await generateAutoVisualConcept(topic);
+
+    await saveContentMemory(topic, "", "", "automation");
+
+    setStatus([
+        {text:"Tamamlandı: " + topic, className:"ok"},
+        {text:"İçerik paketi hazır ✅", className:"ok"},
+        {text:"Sosyal medya metni hazır ✅", className:"ok"},
+        {text:"Shorts paketi hazır ✅", className:"ok"},
+        {text:"Görsel prompt hazır ✅", className:"ok"},
+        {text:"Şimdi Görsel Oluştur → Kurumsallaştır → Story Oluştur → Yayınla 🚀", className:"wait"}
+    ]);
+}
+
+async function generateAutoContent(topic){
+    const box = document.getElementById("contentResult");
+
+    try{
+        const response = await fetch("../api/generate.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({topic:topic,title:topic})
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            box.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(data.success){
+            box.innerText = data.content || data.text || data.result || JSON.stringify(data,null,2);
+        }else{
+            box.innerText = "İçerik üretilemedi:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        box.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+async function generateAutoSocial(topic){
+    const box = document.getElementById("socialResult");
+
+    try{
+        const response = await fetch("../api/generate_social_copy.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                platform:"Instagram",
+                topic:topic,
+                title:topic,
+                cta:"Daha fazla ruh sağlığı içeriği için takip edebilirsiniz.",
+                hashtags:["#psikiyatri","#ruhsagligi","#ozgurozbebit"]
+            })
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            box.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(data.success){
+            box.innerText = data.copy || data.social_copy || data.text || data.caption || JSON.stringify(data,null,2);
+        }else{
+            box.innerText = "Sosyal medya metni üretilemedi:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        box.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+async function generateAutoShorts(topic){
+    const box = document.getElementById("shortsResult");
+
+    try{
+        const response = await fetch("../api/generate_shorts_package.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({topic:topic})
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            box.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(!data.success){
+            box.innerText = "Shorts paketi üretilemedi:\n\n" + JSON.stringify(data,null,2);
+            return;
+        }
+
+        const hashtags = Array.isArray(data.hashtags) ? data.hashtags.join(" ") : "";
+        const tags = Array.isArray(data.youtube_tags) ? data.youtube_tags.join(", ") : "";
+        const titles = Array.isArray(data.title_options) ? data.title_options : [];
+
+        let titleList = "";
+        titles.forEach(function(t, i){
+            titleList += (i+1) + ". " + t + "\n";
+        });
+
+        box.innerText =
+`Ana Başlık:
+${data.main_title || ""}
+
+Alternatif Başlıklar:
+${titleList}
+
+Açıklama:
+${data.description || ""}
+
+Hashtagler:
+${hashtags}
+
+YouTube Etiketleri:
+${tags}
+
+Sabit Yorum:
+${data.pinned_comment || ""}`;
+
+    }catch(error){
+        box.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+async function generateAutoVisualConcept(topic){
+    const box = document.getElementById("visualResult");
+
+    try{
+        const response = await fetch("../api/generate_visual_concept.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({title:topic})
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            box.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(data.success){
+            box.innerText = data.concept || data.visual_prompt || data.prompt || JSON.stringify(data,null,2);
+        }else{
+            box.innerText = "Görsel konsept üretilemedi:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        box.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+async function generateAutomationImage(){
+    const topic = document.getElementById("autoTopic").value.trim();
+    const visualPrompt = document.getElementById("visualResult").innerText.trim();
+    const status = document.getElementById("imageStatus");
+    const preview = document.getElementById("imagePreview");
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    if(visualPrompt === "" || visualPrompt.includes("Görsel prompt burada") || visualPrompt.includes("hazırlanıyor") || visualPrompt.includes("üretilemedi") || visualPrompt.includes("Bağlantı hatası")){
+        alert("Önce Tek Tuş Üret ile görsel prompt oluştur.");
+        return;
+    }
+
+    automationImageUrl = "";
+    automationBrandedImageUrl = "";
+    automationStoryImageUrl = "";
+
+    status.innerText = "🖼️ AI görsel üretiliyor, lütfen bekleyin...";
+    preview.innerHTML = "";
+
+    const finalPrompt =
+`Profesyonel psikiyatri kliniği için modern, sade, güven veren ve yazısız sosyal medya görseli oluştur.
+
+KONU:
+${topic}
+
+GÖRSEL KONSEPT:
+${visualPrompt}
+
+TASARIM KURALLARI:
+- Kare format, 1024x1024.
+- Premium sağlık markası estetiği.
+- Fotoğraf gerçekçi, sinematik, minimal obje, doğa metaforu veya premium illüstrasyon olabilir.
+- İnsan figürü zorunlu değildir.
+- Konunun psikolojik anlamına uygun özgün metafor kullan.
+- Sol üstte başlık eklenebilmesi için temiz boş alan bırak.
+- Alt marka bandı için en altta sade ve sakin alan bırak.
+- Görsel temiz, ferah, etik ve profesyonel olsun.
+- Korkutucu, dramatik, damgalayıcı veya manipülatif olmasın.
+- Tanı veya tedavi garantisi çağrıştırmasın.
+- Görselde yazı, harf, slogan, tabela, logo, marka adı, watermark, imza olmasın.
+
+NEGATİF KURALLAR:
+no text, no letters, no words, no typography, no captions, no logo, no watermark, no signature, no brand name, no random characters`;
+
+    try{
+        const response = await fetch("../api/generate_image.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({prompt:finalPrompt})
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            status.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(data.success && data.image_url){
+            automationImageUrl = data.image_url;
+            status.innerText = "✅ AI görsel başarıyla üretildi. Şimdi Kurumsallaştır butonuna basabilirsin.";
+
+            preview.innerHTML =
+                '<img src="' + data.image_url + '" alt="AI Görsel">' +
+                '<br><a class="download" href="' + data.image_url + '" download>⬇️ Yazısız Görseli İndir</a>';
+
+            setStatus([
+                {text:"Yazısız AI görsel üretildi ✅", className:"ok"},
+                {text:"Şimdi Kurumsallaştır butonuna basabilirsin 🏷️", className:"wait"}
+            ]);
+
+        }else{
+            status.innerText = "Görsel üretilemedi:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        status.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+async function generateAutomationSubtitle(){
+    const topic = document.getElementById("autoTopic").value.trim();
+    const subtitleBox = document.getElementById("automationSubtitle");
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return "";
+    }
+
+    subtitleBox.value = "🧠 Alt başlık üretiliyor...";
+
+    try{
+        const response = await fetch("../api/generate_subtitle.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({title:topic})
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            subtitleBox.value = "";
+            alert("JSON olmayan cevap geldi:\n\n" + text.substring(0,1000));
+            return "";
+        }
+
+        if(data.success && data.subtitle){
+            automationSubtitle = data.subtitle;
+            subtitleBox.value = data.subtitle;
+            return data.subtitle;
+        }else{
+            subtitleBox.value = "";
+            alert("Alt başlık üretilemedi:\n\n" + JSON.stringify(data,null,2));
+            return "";
+        }
+
+    }catch(error){
+        subtitleBox.value = "";
+        alert("Bağlantı hatası:\n\n" + error.message);
+        return "";
+    }
+}
+
+async function brandAutomationImage(){
+    const topic = document.getElementById("autoTopic").value.trim();
+    const status = document.getElementById("imageStatus");
+    const preview = document.getElementById("imagePreview");
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    if(automationImageUrl === ""){
+        alert("Önce AI görsel oluştur.");
+        return;
+    }
+
+    let subtitle = document.getElementById("automationSubtitle").value.trim();
+    const middleText = document.getElementById("automationMiddleText").value.trim();
+
+    if(subtitle === "" || subtitle.includes("üretiliyor")){
+        subtitle = await generateAutomationSubtitle();
+    }
+
+    if(subtitle === ""){
+        subtitle = "Ruh sağlığı hakkında güvenilir ve bilgilendirici içerik.";
+    }
+
+    status.innerText = "🏷️ Kurumsal görsel hazırlanıyor, lütfen bekleyin...";
+
+    try{
+        const response = await fetch("../api/brand_image.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                image_url: automationImageUrl,
+                title: topic,
+                subtitle: subtitle,
+                middle_text: middleText
+            })
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            status.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(data.success && data.image_url){
+            automationBrandedImageUrl = data.image_url;
+            status.innerText = "✅ Kurumsal görsel başarıyla oluşturuldu. Artık story oluşturabilir veya yayınlayabilirsin.";
+
+            preview.innerHTML =
+                '<img src="' + data.image_url + '" alt="Kurumsal Görsel">' +
+                '<br><a class="download secondary" href="' + data.image_url + '" download>⬇️ Kurumsal Görseli İndir</a>' +
+                '<br><br><a class="download" href="' + automationImageUrl + '" download>⬇️ Yazısız Orijinali İndir</a>';
+
+            setStatus([
+                {text:"Kurumsal görsel hazır ✅", className:"ok"},
+                {text:"Story oluşturabilir veya 3 platforma yayınlayabilirsin 🚀", className:"wait"}
+            ]);
+
+        }else{
+            status.innerText = "Kurumsallaştırma hatası:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        status.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+async function createAutomationStoryImage(){
+    const topic = document.getElementById("autoTopic").value.trim();
+    const status = document.getElementById("imageStatus");
+    const preview = document.getElementById("imagePreview");
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    const sourceImage = automationImageUrl;
+
+    if(sourceImage === ""){
+        alert("Önce AI görsel oluştur ve tercihen kurumsallaştır.");
+        return;
+    }
+
+    let subtitle = document.getElementById("automationSubtitle").value.trim();
+    const middleText = document.getElementById("automationMiddleText").value.trim();
+
+    if(subtitle === "" || subtitle.includes("üretiliyor")){
+        subtitle = await generateAutomationSubtitle();
+    }
+
+    if(subtitle === ""){
+        subtitle = "Ruh sağlığı hakkında güvenilir ve bilgilendirici içerik.";
+    }
+
+    status.innerText = "📱 Story görseli hazırlanıyor, lütfen bekleyin...";
+
+    try{
+        const response = await fetch("../api/brand_story.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                image_url: sourceImage,
+                title: topic,
+                subtitle: subtitle,
+                middle_text: middleText
+            })
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{ data = JSON.parse(text); }
+        catch(e){
+            status.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(data.success && data.image_url){
+            automationStoryImageUrl = data.image_url;
+            status.innerText = "✅ Story görseli başarıyla oluşturuldu.";
+
+            preview.innerHTML +=
+                '<hr style="margin:22px 0;border:0;border-top:1px solid #dbecec;">' +
+                '<div class="tip"><strong>📱 Story Görseli Hazır</strong><br>Instagram/Facebook Story için indirip manuel paylaşabilirsin.</div>' +
+                '<img src="' + data.image_url + '" alt="Story Görseli">' +
+                '<br><a class="download story" href="' + data.image_url + '" download>⬇️ Story Görselini İndir</a>';
+
+            setStatus([
+                {text:"Story görseli hazır ✅", className:"ok"},
+                {text:"Feed otomatik yayınlanabilir, Story manuel paylaşılabilir 📱", className:"wait"}
+            ]);
+
+        }else{
+            status.innerText = "Story görseli oluşturma hatası:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        status.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+
+function extractPlatformText(platform){
+    function cleanPlatformText(text){
+        return text
+            .replace(/^Başlık\s*:\s*.*(\r?\n)+/i, "")
+            .replace(/^Baslik\s*:\s*.*(\r?\n)+/i, "")
+            .trim();
+    }
+    const content = document.getElementById("contentResult").innerText || "";
+    const social = document.getElementById("socialResult").innerText || "";
+    const topic = document.getElementById("autoTopic").value.trim();
+
+    if(platform === "linkedin"){
+    const match = content.match(/5\.\s*LINKEDIN YAZISI([\s\S]*?)(\n\s*\d+\.\s|$)/i);
+    if(match && match[1].trim() !== ""){
+        return cleanPlatformText(match[1].trim());
+    }
+}
+
+if(platform === "instagram"){
+    const match = content.match(/1\.\s*INSTAGRAM POSTU([\s\S]*?)(\n\s*2\.\s|$)/i);
+    if(match && match[1].trim() !== ""){
+        return cleanPlatformText(match[1].trim());
+    }
+}
+
+    if(platform === "facebook"){
+        const match = content.match(/1\.\s*INSTAGRAM POSTU([\s\S]*?)(\n\s*2\.\s|$)/i);
+        if(match && match[1].trim() !== ""){
+            return cleanPlatformText(match[1].trim());
+        }
+    }
+
+    if(
+        social.trim() !== "" &&
+        !social.includes("Sosyal medya metni burada") &&
+        !social.includes("hazırlanıyor") &&
+        !social.includes("üretilemedi") &&
+        !social.includes("Bağlantı hatası")
+    ){
+        return cleanPlatformText(social.trim());
+    }
+
+    return topic;
+}
+
+async function publishAutomationPost(){
+    const selectedPlatforms = Array.from(document.querySelectorAll(".publishPlatform:checked"))
+        .map(function(el){ return el.value; });
+
+    if(selectedPlatforms.length === 0){
+        alert("En az bir platform seçmelisin.");
+        return;
+    }
+
+    const rawImageUrl = automationBrandedImageUrl !== "" ? automationBrandedImageUrl : automationImageUrl;
+    const imageUrl = makeAbsoluteUrl(rawImageUrl);
+
+    if(imageUrl === ""){
+        alert("Yayın için görsel zorunlu. Önce görsel üret ve kurumsallaştır.");
+        return;
+    }
+
+    const platformTexts = {
+        facebook: extractPlatformText("facebook"),
+        instagram: extractPlatformText("instagram"),
+        linkedin: extractPlatformText("linkedin")
+    };
+
+    if(!automationBrandedImageUrl){
+        if(!confirm("Kurumsal görsel yok. Yazısız AI görsel ile yayınlamak istiyor musun?")){
+            return;
+        }
+    }
+
+    if(!confirm("Platforma özel metinlerle yayınlansın mı?\n\n" + selectedPlatforms.join(" + "))){
+        return;
+    }
+
+    const status = document.getElementById("imageStatus");
+    status.innerText = "🚀 Platforma özel metinlerle yayınlanıyor...";
+
+    try{
+        const formData = new FormData();
+        formData.append("post_text", platformTexts.instagram || platformTexts.facebook || platformTexts.linkedin || "");
+        formData.append("image_url", imageUrl);
+        formData.append("platforms", JSON.stringify(selectedPlatforms));
+        formData.append("platform_texts", JSON.stringify(platformTexts));
+
+        const response = await fetch("../api/publish_multi.php",{
+            method:"POST",
+            body:formData
+        });
+
+        const text = await response.text();
+
+        let data;
+        try{
+            data = JSON.parse(text);
+        }catch(e){
+            alert("JSON olmayan cevap geldi:\n\n" + text.substring(0,1500));
+            return;
+        }
+
+        status.innerText = "✅ V32 platforma özel yayın tamamlandı.";
+
+        setStatus([
+            {text:"V32 yayın işlemi tamamlandı ✅", className:"ok"},
+            {text:"Facebook / Instagram / LinkedIn kendi metniyle yayınlandı 🚀", className:"ok"}
+        ]);
+
+        alert("Yayın sonucu:\n\n" + JSON.stringify(data,null,2));
+
+    }catch(error){
+        alert("Bağlantı hatası:\n\n" + error.message);
+    }
+}
+
+function copyAllAutomation(){
+    const topic = document.getElementById("autoTopic").value.trim();
+    const content = document.getElementById("contentResult").innerText;
+    const social = document.getElementById("socialResult").innerText;
+    const shorts = document.getElementById("shortsResult").innerText;
+    const visual = document.getElementById("visualResult").innerText;
+    const image = automationImageUrl;
+    const brandedImage = automationBrandedImageUrl;
+    const storyImage = automationStoryImageUrl;
+
+    const all =
+`🚀 V36.4 TEK TUŞ ÜRETİM PAKETİ
+
+Konu:
+${topic}
+
+━━━━━━━━━━━━━━━━━━━━
+📄 İÇERİK PAKETİ
+━━━━━━━━━━━━━━━━━━━━
+${content}
+
+━━━━━━━━━━━━━━━━━━━━
+📱 SOSYAL MEDYA METNİ
+━━━━━━━━━━━━━━━━━━━━
+${social}
+
+━━━━━━━━━━━━━━━━━━━━
+📺 YOUTUBE SHORTS PAKETİ
+━━━━━━━━━━━━━━━━━━━━
+${shorts}
+
+━━━━━━━━━━━━━━━━━━━━
+🖼️ GÖRSEL PROMPT
+━━━━━━━━━━━━━━━━━━━━
+${visual}
+
+━━━━━━━━━━━━━━━━━━━━
+🎨 AI GÖRSEL
+━━━━━━━━━━━━━━━━━━━━
+${image || "Henüz görsel üretilmedi."}
+
+━━━━━━━━━━━━━━━━━━━━
+🏷️ KURUMSAL GÖRSEL
+━━━━━━━━━━━━━━━━━━━━
+${brandedImage || "Henüz kurumsal görsel oluşturulmadı."}
+
+━━━━━━━━━━━━━━━━━━━━
+📱 STORY GÖRSELİ
+━━━━━━━━━━━━━━━━━━━━
+${storyImage || "Henüz story görseli oluşturulmadı."}`;
+
+    const temp = document.createElement("textarea");
+    temp.value = all;
+    document.body.appendChild(temp);
+    temp.select();
+    temp.setSelectionRange(0, 999999);
+    document.execCommand("copy");
+    document.body.removeChild(temp);
+
+    alert("Tüm V36.4 paketi panoya kopyalandı ✅");
+}
+async function uploadAutomationManualImage(){
+    const input = document.getElementById("automationManualImage");
+    const status = document.getElementById("imageStatus");
+    const preview = document.getElementById("imagePreview");
+
+    if(!input.files || input.files.length === 0){
+        alert("Önce görsel seç.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("image", input.files[0]);
+
+    status.innerText = "📤 Görsel yükleniyor...";
+
+    try{
+        const response = await fetch("../api/upload_post_image.php",{
+            method:"POST",
+            body:formData
+        });
+
+        const text = await response.text();
+        let data;
+
+        try{
+            data = JSON.parse(text);
+        }catch(e){
+            status.innerText = "JSON olmayan cevap geldi:\n\n" + text.substring(0,1500);
+            return;
+        }
+
+        if(data.success && data.image_url){
+            automationImageUrl = data.image_url;
+            automationBrandedImageUrl = "";
+            automationStoryImageUrl = "";
+
+            status.innerText = "✅ Kendi görselin yüklendi. Şimdi Kurumsallaştır veya Yayınla.";
+
+            preview.innerHTML =
+                '<img src="' + data.image_url + '" alt="Yüklenen Görsel">' +
+                '<br><a class="download" href="' + data.image_url + '" download>⬇️ Görseli İndir</a>';
+        }else{
+            status.innerText = "Yükleme hatası:\n\n" + JSON.stringify(data,null,2);
+        }
+
+    }catch(error){
+        status.innerText = "Bağlantı hatası:\n\n" + error.message;
+    }
+}
+async function analyzeTopic(){
+
+    const topic = document.getElementById("autoTopic").value.trim();
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    const resultBox = document.getElementById("topicAnalysisResult");
+    resultBox.innerHTML = "🔍 Konu analiz ediliyor...";
+
+    try{
+        const response = await fetch("../api/analyze_topic.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({topic:topic})
+        });
+
+        const text = await response.text();
+
+        if(!text || text.trim() === ""){
+            resultBox.innerHTML =
+                "❌ API boş cevap döndü. analyze_topic.php içinde PHP hatası olabilir.";
+            return;
+        }
+
+        let data;
+
+        try{
+            data = JSON.parse(text);
+        }catch(e){
+            resultBox.innerHTML =
+                "❌ API JSON dönmedi:<br><br><pre>" +
+                htmlEscape(text.substring(0,2000)) +
+                "</pre>";
+            return;
+        }
+
+        if(!data.success){
+            resultBox.innerHTML =
+                "❌ " + (data.message || "Analiz başarısız.") +
+                "<br><br><pre>" + htmlEscape(JSON.stringify(data,null,2)) + "</pre>";
+            return;
+        }
+
+        resultBox.innerHTML = `
+            <b>Kategori:</b> ${htmlEscape(data.category || "")}<br><br>
+            <b>Neden:</b> ${htmlEscape(data.reason || "")}<br><br>
+            <b>Araştırma Gerekli mi:</b> ${data.research_needed ? "Evet" : "Hayır"}<br><br>
+<b>Arama Sorgusu:</b> ${htmlEscape(data.search_query || topic)}<br><br>
+<b>Güvenli Varsayım:</b> ${htmlEscape(data.safe_assumption || "")}<br><br>
+            <b>Önerilen İçerik:</b> ${htmlEscape(data.recommended_content || "")}<br><br>
+            <b>Platform:</b> ${htmlEscape(data.recommended_platform || "")}
+        `;
+
+    }catch(error){
+        resultBox.innerHTML = "❌ Bağlantı hatası: " + htmlEscape(error.message);
+    }
+}
+async function researchTopic(){
+
+    const topic = document.getElementById("autoTopic").value.trim();
+    const researchBox = document.getElementById("researchResult");
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    const analysisText = document.getElementById("topicAnalysisResult").innerText || "";
+    let searchQuery = topic;
+
+    const match = analysisText.match(/Arama Sorgusu:\s*(.+)/i);
+    if(match && match[1]){
+        searchQuery = match[1].trim();
+    }
+
+    researchBox.innerText = "🌐 Araştırma hazırlanıyor...";
+
+    try{
+        const response = await fetch("../api/research_topic.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                topic: topic,
+                search_query: searchQuery
+            })
+        });
+
+        const text = await response.text();
+
+        if(!text || text.trim() === ""){
+            researchBox.innerText = "❌ API boş cevap döndü.";
+            return;
+        }
+
+        let data;
+
+        try{
+            data = JSON.parse(text);
+        }catch(e){
+            researchBox.innerText = "❌ API JSON dönmedi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(!data.success){
+            researchBox.innerText = "❌ Araştırma başarısız:\n\n" + JSON.stringify(data,null,2);
+            return;
+        }
+
+        const knownFacts = Array.isArray(data.known_facts)
+            ? data.known_facts.map((x,i)=> (i+1) + ". " + x).join("\n")
+            : "";
+
+        const missingInfo = Array.isArray(data.missing_info)
+            ? data.missing_info.map((x,i)=> (i+1) + ". " + x).join("\n")
+            : "";
+
+        const expertiseAreas = Array.isArray(data.expertise_areas)
+            ? data.expertise_areas.map((x,i)=> (i+1) + ". " + x).join("\n")
+            : "";
+
+        researchBox.innerText =
+`🌐 V35 ARAŞTIRMA SONUCU
+
+Konu:
+${data.topic || topic}
+
+Arama Sorgusu:
+${data.search_query || searchQuery}
+
+Araştırma Özeti:
+${data.research_summary || ""}
+
+Bilinenler:
+${knownFacts}
+
+Eksik Bilgiler:
+${missingInfo}
+
+Uzmanlık Alanları:
+${expertiseAreas}
+
+İçerik Açısı:
+${data.content_angle || ""}
+
+Önerilen Post Konusu:
+${data.suggested_post_topic || ""}
+
+Risk Notu:
+${data.risk_note || ""}`;
+
+    }catch(error){
+        researchBox.innerText = "❌ Bağlantı hatası:\n\n" + error.message;
+    }
+}
+async function generateFromResearch(){
+
+    const topic = document.getElementById("autoTopic").value.trim();
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    const canContinue = await checkDuplicateBeforeGenerate(topic);
+
+    if(!canContinue){
+        return;
+    }
+
+    const researchText = document.getElementById("researchResult").innerText || "";
+
+    if(
+        researchText.trim() === "" ||
+        researchText.includes("Henüz araştırma yapılmadı") ||
+        researchText.includes("hazırlanıyor")
+    ){
+        alert("Önce Araştırma Yap.");
+        return;
+    }
+
+    document.getElementById("contentResult").innerText =
+        "🧠 Araştırmaya göre içerik paketi hazırlanıyor...";
+
+    document.getElementById("socialResult").innerText =
+        "📱 Araştırmaya göre sosyal medya metni hazırlanıyor...";
+
+    try{
+        const response = await fetch("../api/generate_from_research.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                topic: topic,
+                research: researchText
+            })
+        });
+
+        const text = await response.text();
+
+        if(!text || text.trim() === ""){
+            document.getElementById("contentResult").innerText =
+                "❌ API boş cevap döndü.";
+            return;
+        }
+
+        let data;
+
+        try{
+            data = JSON.parse(text);
+        }catch(e){
+            document.getElementById("contentResult").innerText =
+                "❌ API JSON dönmedi:\n\n" + text.substring(0,2000);
+            return;
+        }
+
+        if(!data.success){
+            document.getElementById("contentResult").innerText =
+                "❌ İçerik üretilemedi:\n\n" + JSON.stringify(data,null,2);
+            return;
+        }
+
+        document.getElementById("contentResult").innerText =
+            typeof data.content_package === "object"
+                ? JSON.stringify(data.content_package, null, 2)
+                : (data.content_package || "");
+
+        await saveContentMemory(
+            topic,
+            data.profession || "",
+            Array.isArray(data.expertise_areas)
+                ? data.expertise_areas.join(", ")
+                : "",
+            "research"
+        );
+
+        document.getElementById("socialResult").innerText =
+            typeof data.social_copy === "object"
+                ? JSON.stringify(data.social_copy, null, 2)
+                : (data.social_copy || "");
+
+        if(data.visual_prompt){
+            document.getElementById("visualResult").innerText =
+                data.visual_prompt;
+        }
+
+    }catch(error){
+        document.getElementById("contentResult").innerText =
+            "❌ Bağlantı hatası:\n\n" + error.message;
+    }
+}
+async function saveContentMemory(topic, mainCategory="", subCategory="", platform="automation"){
+
+    if(!topic || topic.trim() === ""){
+        return;
+    }
+
+    try{
+        await fetch("../api/save_content_memory.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                topic: topic,
+                main_category: mainCategory,
+                sub_category: subCategory,
+                platform: platform
+            })
+        });
+    }catch(error){
+        console.log("Content memory kayıt hatası:", error.message);
+    }
+}
+async function checkDuplicateBeforeGenerate(topic){
+
+    if(!topic || topic.trim() === ""){
+        return true;
+    }
+
+    try{
+        const response = await fetch("../api/check_content_memory.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({
+                topic: topic
+            })
+        });
+
+        const data = await response.json();
+
+        const matches = Array.isArray(data.matches)
+            ? data.matches
+            : (Array.isArray(data.results) ? data.results : []);
+
+        const count = Number(data.count || matches.length || 0);
+        const found = Boolean(data.found || count > 0);
+
+        if(data.success && found && count > 0){
+
+            let msg = "⚠ Bu konu daha önce işlendi.\n\n";
+            msg += "Benzer içerik sayısı: " + count + "\n";
+
+            if(matches.length > 0){
+                msg += "Son içerik: " + (matches[0].created_at || "Tarih yok") + "\n";
+                msg += "Konu: " + (matches[0].topic || "") + "\n";
+                msg += "Kategori: " + (matches[0].main_category || "") + "\n";
+            }
+
+            msg += "\nYine de devam etmek istiyor musunuz?";
+
+            return confirm(msg);
+        }
+
+        return true;
+
+    }catch(error){
+        console.log("Otomatik tekrar kontrol hatası:", error.message);
+        return true;
+    }
+}
+async function checkContentMemory(){
+
+    const topic = document.getElementById("autoTopic").value.trim();
+    const box = document.getElementById("memoryCheckResult");
+
+    if(topic === ""){
+        alert("Önce konu yaz.");
+        return;
+    }
+
+    box.innerText = "🔎 Hafıza taranıyor...";
+
+    try{
+
+        const response = await fetch("../api/check_content_memory.php",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({topic: topic})
+        });
+
+        const data = await response.json();
+
+        if(!data.success){
+            box.innerText = "❌ " + (data.message || "Hata oluştu.");
+            return;
+        }
+
+        const matches = Array.isArray(data.matches) ? data.matches : [];
+        const count = Number(data.count || matches.length || 0);
+
+        if(count === 0){
+            box.innerText = "✅ Bu konu daha önce işlenmemiş görünüyor.";
+            return;
+        }
+
+        let html = "⚠ Benzer içerikler bulundu (" + count + " adet)\n\n";
+
+        matches.forEach(function(item,index){
+
+            html += (index+1) + ". " + (item.topic || "Konu yok") + "\n";
+
+            if(item.created_at){
+                html += "Tarih: " + item.created_at + "\n";
+            }
+
+            if(item.main_category){
+                html += "Kategori: " + item.main_category + "\n";
+            }
+
+            if(item.sub_category){
+                html += "Alt kategori: " + item.sub_category + "\n";
+            }
+
+            html += "\n";
+        });
+
+        box.innerText = html;
+
+    }catch(error){
+        box.innerText = "❌ Bağlantı hatası: " + error.message;
+    }
+}
+
+function useSuggestedTopic(encodedTopic){
+    const topic = decodeURIComponent(encodedTopic || "");
+    document.getElementById("autoTopic").value = topic;
+    document.getElementById("autoTopic").focus();
+}
+
+
+
+
+</script>
+
+</body>
+</html>

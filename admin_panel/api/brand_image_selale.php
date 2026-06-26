@@ -1,4 +1,5 @@
 <?php
+die("SELALE BRAND IMAGE ÇALIŞIYOR");
 session_start();
 require_once "../config/title_engine.php";
 
@@ -322,7 +323,7 @@ if($middleText !== ""){
 }
 
     // V33.5 Premium hazır footer banner
-$footerPath = __DIR__ . "/../assets/premium_footer_banner.png";
+$footerPath = __DIR__ . "/../assets/premium_footer_banner_selale.png";
 
 if(file_exists($footerPath)){
     $footer = imagecreatefrompng($footerPath);

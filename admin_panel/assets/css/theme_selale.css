@@ -1,0 +1,127 @@
+/* ===============================
+   ŞELALE TOM AQUA THEME
+   =============================== */
+
+:root{
+    --teal:#14b8a6;
+    --teal2:#22d3ee;
+    --navy:#064e5f;
+    --navy2:#0f766e;
+    --purple:#2563eb;
+    --pink:#0ea5e9;
+}
+
+body{
+    background:
+        radial-gradient(circle at 18% 0%, rgba(34,211,238,.18), transparent 30%),
+        radial-gradient(circle at 96% 16%, rgba(20,184,166,.16), transparent 32%),
+        linear-gradient(135deg,#f7feff 0%,#ecfeff 45%,#eefdf8 100%) !important;
+}
+
+.logo{
+    color:#064e5f !important;
+    font-size:0 !important;
+}
+
+.logo::before{
+    content:"🌿 ŞELALE TOM";
+    font-size:22px;
+    font-weight:950;
+}
+
+.sidebar{
+    background:linear-gradient(180deg,#063344 0%,#0f766e 100%) !important;
+    box-shadow:18px 0 38px rgba(6,78,95,.14) !important;
+}
+
+.menu a{
+    color:rgba(255,255,255,.84) !important;
+}
+
+.menu a:hover{
+    background:rgba(255,255,255,.10) !important;
+    color:#fff !important;
+}
+
+.menu a.active{
+    color:#063344 !important;
+    background:linear-gradient(135deg,#a7f3d0,#67e8f9) !important;
+    box-shadow:0 14px 32px rgba(20,184,166,.25) !important;
+}
+
+.main > .card:first-child{
+    color:#fff !important;
+    background:
+        linear-gradient(135deg,rgba(6,78,95,.96),rgba(20,184,166,.90)),
+        radial-gradient(circle at 85% 8%,rgba(255,255,255,.24),transparent 30%) !important;
+    box-shadow:0 28px 68px rgba(6,78,95,.22) !important;
+    border:0 !important;
+}
+
+.main > .card:first-child h2{
+    color:#fff !important;
+}
+
+.main > .card:first-child h2::before{
+    content:"🌿 ";
+}
+
+.main > .card:first-child .tip{
+    background:rgba(255,255,255,.14) !important;
+    color:#eafffb !important;
+    border:1px solid rgba(255,255,255,.18) !important;
+}
+
+.main > .card:first-child label{
+    color:#eafffb !important;
+}
+
+button,
+.btn,
+.primary-btn,
+.secondary-btn,
+.generate-btn,
+.action-btn,
+.copy-btn,
+.publish-btn,
+.save-btn,
+.analyze-btn,
+.research-btn,
+.memory-btn,
+button[type="button"],
+button[type="submit"]{
+    background:linear-gradient(135deg,#14b8a6,#06b6d4,#2563eb) !important;
+    color:#fff !important;
+    border:none !important;
+    border-radius:14px !important;
+    font-weight:850 !important;
+    box-shadow:0 12px 28px rgba(20,184,166,.28) !important;
+}
+
+button:hover,
+.btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover,
+.generate-btn:hover,
+.action-btn:hover,
+.copy-btn:hover,
+.publish-btn:hover,
+.save-btn:hover,
+.analyze-btn:hover,
+.research-btn:hover,
+.memory-btn:hover{
+    transform:translateY(-2px);
+    background:linear-gradient(135deg,#0ea5e9,#0891b2,#2563eb) !important;
+    box-shadow:0 18px 40px rgba(14,165,233,.35) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#14b8a6 !important;
+    box-shadow:0 0 0 4px rgba(20,184,166,.14) !important;
+}
+
+.card{
+    border-color:rgba(20,184,166,.20) !important;
+}

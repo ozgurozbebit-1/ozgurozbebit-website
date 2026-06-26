@@ -9,7 +9,7 @@ exit;
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Tek Tuş Otomasyon Merkezi</title>
+<title>Şelale TOM | Aile Danışmanlığı İçerik Merkezi</title>
 <style>
 :root{
 --bg:#eef4f7;
@@ -909,6 +909,7 @@ box-shadow:0 0 0 7px rgba(52,211,153,.14);
 }
 
 </style>
+<link rel="stylesheet" href="../assets/css/theme_selale.css?v=1.0">
 </head>
 <body>
 <div class="header">
@@ -1251,7 +1252,14 @@ platform:"Instagram",
 topic:topic,
 title:topic,
 cta:"Daha fazla ruh sağlığı içeriği için takip edebilirsiniz.",
-hashtags:["#psikiyatri","#ruhsagligi","#ozgurozbebit"]
+hashtags:[
+"#ailedanismanligi",
+"#cocukgelisimi",
+"#ebeveynlik",
+"#ciftiliskileri",
+"#sinavkaygisi",
+"#selaleozbebit"
+]
 })
 });
 const text = await response.text();
@@ -1353,10 +1361,11 @@ return;
 automationImageUrl = "";
 automationBrandedImageUrl = "";
 automationStoryImageUrl = "";
-status.innerText = " AI görsel üretiliyor, lütfen bekleyin...";
+status.innerText = "AI görsel üretiliyor, lütfen bekleyin...";
 preview.innerHTML = "";
+
 const finalPrompt =
-`Profesyonel psikiyatri kliniği için modern, sade, güven veren ve yazısız sosyal medya görseli oluştur.
+`Aile danışmanlığı merkezi için modern, sade, güven veren ve yazısız sosyal medya görseli oluştur.
 KONU:
 ${topic}
 GÖRSEL KONSEPT:
@@ -1647,7 +1656,10 @@ function extractPlatformText(platform){
             ["(?:^|\\n)\\s*(?:1\\.?\\s*)?INSTAGRAM(?:\\s+POSTU|\\s+METNİ|\\s+METNI)?\\s*:?"],
             ["(?:^|\\n)\\s*(?:2\\.?\\s*)?FACEBOOK", "(?:^|\\n)\\s*(?:3\\.?\\s*)?LINKEDIN", "(?:^|\\n)\\s*THREADS", "(?:^|\\n)\\s*SHORTS", "(?:^|\\n)\\s*GÖRSEL"]
         );
-        return ensureHashtags(enrichIfTooShort(firstGood(ig, social, topic), topic, "instagram"), "#psikiyatri #ruhsagligi #ozgurozbebit");
+        return ensureHashtags(
+    enrichIfTooShort(firstGood(ig, social, topic), topic, "instagram"),
+    "#ailedanismanligi #cocukgelisimi #ebeveynlik #ciftiliskileri #selaleozbebit"
+);
     }
 
     if(platform === "facebook"){
@@ -1655,7 +1667,10 @@ function extractPlatformText(platform){
             ["(?:^|\\n)\\s*(?:2\\.?\\s*)?FACEBOOK(?:\\s+POSTU|\\s+METNİ|\\s+METNI)?\\s*:?"],
             ["(?:^|\\n)\\s*(?:3\\.?\\s*)?LINKEDIN", "(?:^|\\n)\\s*INSTAGRAM", "(?:^|\\n)\\s*THREADS", "(?:^|\\n)\\s*SHORTS", "(?:^|\\n)\\s*GÖRSEL"]
         );
-        return ensureHashtags(enrichIfTooShort(firstGood(fb, social, topic), topic, "facebook"), "#psikiyatri #ruhsagligi #ozgurozbebit");
+        return ensureHashtags(
+    enrichIfTooShort(firstGood(fb, social, topic), topic, "facebook"),
+    "#ailedanismanligi #cocukgelisimi #ebeveynlik #ciftiliskileri #selaleozbebit"
+);
     }
 
     if(platform === "linkedin"){
@@ -1663,7 +1678,10 @@ function extractPlatformText(platform){
             ["(?:^|\\n)\\s*(?:3\\.?|5\\.?)?\\s*LINKEDIN(?:\\s+YAZISI|\\s+POSTU|\\s+METNİ|\\s+METNI)?\\s*:?"],
             ["(?:^|\\n)\\s*FACEBOOK", "(?:^|\\n)\\s*INSTAGRAM", "(?:^|\\n)\\s*THREADS", "(?:^|\\n)\\s*SHORTS", "(?:^|\\n)\\s*GÖRSEL", "(?:^|\\n)\\s*HASHTAG"]
         );
-        return ensureHashtags(enrichIfTooShort(firstGood(li, social, topic), topic, "linkedin"), "#psikiyatri #ruhsagligi #mentalhealth #ozgurozbebit");
+        return ensureHashtags(
+    enrichIfTooShort(firstGood(li, social, topic), topic, "linkedin"),
+    "#AileDanismanligi #CocukGelisimi #Ebeveynlik #CiftIliskileri #SelaleOzbebit"
+);
     }
 
     return topic;
@@ -1700,7 +1718,7 @@ threads: extractPlatformText("threads")
 if(platformTexts.instagram.length > 2000){
     platformTexts.instagram =
         platformTexts.instagram.substring(0,1900) +
-        "\n\n#psikiyatri #ruhsağlığı";
+       "\n\n#AileDanismanligi #CocukGelisimi #Ebeveynlik #SelaleOzbebit";
 }
 
 if(normalPlatforms.length > 0 && !automationBrandedImageUrl){

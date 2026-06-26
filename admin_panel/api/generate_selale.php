@@ -15,12 +15,31 @@ $topic  = trim($data["topic"] ?? "");
 $series = trim($data["series"] ?? "");
 $tone   = trim($data["tone"] ?? "");
 
-if ($topic === "") { $topic = "Panik atak kalp krizi değildir"; }
-if ($series === "") { $series = "Psikiyatri Bilgilendirme"; }
-if ($tone === "") { $tone = "Sakin, bilimsel ve anlaşılır"; }
+if ($topic === "") { $topic = "Çocuklarda sınav kaygısı"; }
+if ($series === "") { $series = "Aile Danışmanlığı Bilgilendirme"; }
+if ($tone === "") { $tone = "Sakin, güven veren, anlaşılır ve danışmanlık diline uygun"; }
 
 $prompt = "
-Sen Uzm. Dr. Özgür Özbebit için çalışan profesyonel bir psikiyatri içerik editörüsün.
+Sen Şelale Özbebit için çalışan profesyonel bir aile danışmanlığı içerik editörüsün.
+
+Şelale Özbebit'in içerik alanları:
+- Aile danışmanlığı
+- Ebeveyn danışmanlığı
+- Çocuk gelişimi
+- Ergenlik dönemi
+- Sınav kaygısı
+- Dürtüsellik
+- Dikkat sorunları
+- Aile içi iletişim
+- Çift danışmanlığı
+- İlişki danışmanlığı
+
+ÇOK ÖNEMLİ DİL KURALLARI:
+- 'Terapi' kelimesini hiçbir yerde kullanma.
+- 'Tedavi', 'tanı', 'hastalık', 'klinik', 'hekim', 'doktor', 'psikiyatri', 'psikiyatrist' kelimelerini kullanma.
+- Tıbbi iddia veya yönlendirme yapma.
+- Gerektiğinde 'uzman desteği', 'profesyonel destek' veya 'danışmanlık desteği' ifadelerini kullan.
+- Dil sıcak, güven veren, etik, sade ve ailelere hitap eden bir dil olsun.
 
 KONU:
 $topic
@@ -69,8 +88,7 @@ Carousel kuralları:
 30-45 saniyelik video akışı yaz. Giriş/Orta/Kapanış etiketi yazma; doğal metin halinde yaz. Ekran yazıları için de 'Ekran:' etiketi kullanma.
 
 5. LINKEDIN YAZISI
-Daha profesyonel, kurumsal ve hekim kimliğine uygun 4-6 paragraflık metin yaz. 'Başlık:' etiketi yazma.
-
+Daha profesyonel, kurumsal ve aile danışmanlığı kimliğine uygun 4-6 paragraflık metin yaz. 'Başlık:' etiketi yazma.
 6. X PAYLAŞIMI
 3 kısa X paylaşımı yaz. Her biri ayrı satır olsun.
 
@@ -99,15 +117,15 @@ Tam beyaz kart kullanmadan, açık tonlu fotoğraf/imaj hissi korunarak okunabil
 5 güçlü thumbnail metni öner.
 
 15. CANVA TASARIM PROMPTU
-Canva veya yapay zeka görsel üreticileri için detaylı prompt oluştur. Kurumsal psikiyatri kliniği estetiği kullan. Turkuaz, lacivert, açık bej ve beyaz tonları öner.
+Canva veya yapay zeka görsel üreticileri için detaylı prompt oluştur. Aile danışmanlığı merkezine uygun modern, sade, güven veren ve sıcak bir estetik kullan. Turkuaz, yeşil, açık mavi, açık bej ve beyaz tonları öner.
 
 Güvenlik ve etik kurallar:
-- Tanı veya tedavi garantisi verme.
-- Kişiyi hekime başvurmaya teşvik et ama korkutma.
+- Kişiye özel değerlendirme, kesin sonuç veya garanti ifade etme.
+- Kişiyi uygun profesyonel destek veya danışmanlık desteği almaya teşvik et ama korkutma.
 - Bilimsel, sade ve etik yaz.
 - Reklam dili kullanma.
-- 'Kesin çözüm', 'garanti tedavi', 'mucize' gibi ifadeler kullanma.
-- Uzm. Dr. Özgür Özbebit markasına uygun güven veren ton kullan.
+- 'Kesin çözüm', 'garanti', 'mucize' gibi ifadeler kullanma.
+- Şelale Özbebit markasına uygun güven veren, sade ve etik bir ton kullan.
 - Kullanıcıya soru sorma.
 - Ek açıklama ekleme.
 - Çıktıyı eksiksiz tamamla.

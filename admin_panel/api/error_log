@@ -73,3 +73,50 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/generate_shorts_package.php on line 94
+[19-Jun-2026 14:04:15 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function escapeshellarg() in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php on line 107
+[19-Jun-2026 14:08:57 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function escapeshellarg() in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php on line 107
+[19-Jun-2026 14:10:09 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function escapeshellarg() in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php on line 107
+[19-Jun-2026 14:12:22 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function exec() in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php:122
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/create_short_video.php on line 122
+[21-Jun-2026 01:28:30 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php:93
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 93
+[21-Jun-2026 06:56:19 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php:93
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 93
+[21-Jun-2026 06:59:03 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php:96
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 96
+[21-Jun-2026 07:11:42 Europe/Istanbul] PHP Parse error:  syntax error, unexpected identifier "olabilir" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 58
+[21-Jun-2026 07:13:11 Europe/Istanbul] PHP Parse error:  syntax error, unexpected identifier "olabilir" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 58
+[21-Jun-2026 07:14:36 Europe/Istanbul] PHP Parse error:  syntax error, unexpected identifier "Arastirma" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 57
+[21-Jun-2026 07:14:38 Europe/Istanbul] PHP Parse error:  syntax error, unexpected identifier "Arastirma" in /home/u2729492/admin.ozgurozbebit.com.tr/api/analyze_topic.php on line 57
+[21-Jun-2026 18:20:15 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/suggest_related_topics.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/suggest_related_topics.php on line 81
+[21-Jun-2026 18:24:06 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/suggest_related_topics.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/suggest_related_topics.php on line 87
+[21-Jun-2026 18:30:10 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Undefined constant "OPENAI_API_KEY" in /home/u2729492/admin.ozgurozbebit.com.tr/api/suggest_related_topics.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/u2729492/admin.ozgurozbebit.com.tr/api/suggest_related_topics.php on line 87
+[24-Jun-2026 19:19:50 Europe/Istanbul] PHP Warning:  Undefined variable $carousel in /home/u2729492/admin.ozgurozbebit.com.tr/api/publish_instagram_carousel.php on line 157
+[24-Jun-2026 20:18:33 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_story.php on line 270
+[24-Jun-2026 20:18:44 Europe/Istanbul] PHP Parse error:  Unmatched '}' in /home/u2729492/admin.ozgurozbebit.com.tr/api/brand_story.php on line 270

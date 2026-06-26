@@ -75,11 +75,6 @@ if(count($imageUrls) < 2){
 
 $imageUrls = array_slice($imageUrls, 0, 10);
 
-/*
-    V29 FIX:
-    Instagram hesabını ayrı platform='instagram' satırından değil,
-    çalışan publish_now.php mantığı gibi aktif Facebook sayfasından alıyoruz.
-*/
 $stmt = $pdo->prepare("
     SELECT *
     FROM social_accounts
@@ -96,10 +91,7 @@ if(!$fb){
 }
 
 $pageId = $fb["page_id"] ?? "";
-$pageToken =
-    $fb["page_access_token"]
-    ?? $fb["page_token"]
-    ?? "";
+$pageToken = $fb["page_access_token"] ?? $fb["page_token"] ?? "";
 
 if(!$pageId || !$pageToken){
     out(["success"=>false, "message"=>"Facebook page_id veya page_token eksik"]);
@@ -118,21 +110,12 @@ if(!$igId){
     out([
         "success"=>false,
         "message"=>"Instagram Business ID alınamadı",
-        "debug"=>[
-            "page_id"=>$pageId,
-            "page_result"=>$pageRes
-        ]
+        "debug"=>$pageRes
     ]);
 }
 
 $children = [];
-$debug = [
-    [
-        "step" => "instagram_account",
-        "ig_id" => $igId,
-        "username" => $igUsername
-    ]
-];
+$debug = [];
 
 foreach($imageUrls as $url){
 
@@ -155,6 +138,7 @@ foreach($imageUrls as $url){
             "success" => false,
             "message" => "Carousel çocuk görsel container oluşturulamadı",
             "failed_url" => $url,
+            "response" => $res,
             "debug" => $debug
         ]);
     }
@@ -162,29 +146,33 @@ foreach($imageUrls as $url){
     $children[] = $res["json"]["id"];
 }
 
-sleep(5);
+sleep(6);
+
+$carouselCaption = mb_substr(strip_tags($postText), 0, 500, "UTF-8");
 
 $carousel = graphPost("https://graph.facebook.com/v23.0/".$igId."/media", [
     "media_type" => "CAROUSEL",
     "children" => implode(",", $children),
-    "caption" => $postText,
+    "caption" => $carouselCaption,
     "access_token" => $pageToken
 ]);
 
 $debug[] = [
     "step" => "carousel_container",
-    "result" => $carousel
+    "result" => $carousel,
+    "caption_length" => mb_strlen($carouselCaption, "UTF-8")
 ];
 
 if($carousel["http"] < 200 || $carousel["http"] >= 300 || empty($carousel["json"]["id"])){
     out([
         "success" => false,
         "message" => "Carousel ana container oluşturulamadı",
+        "response" => $carousel,
         "debug" => $debug
     ]);
 }
 
-sleep(8);
+sleep(5);
 
 $publish = graphPost("https://graph.facebook.com/v23.0/".$igId."/media_publish", [
     "creation_id" => $carousel["json"]["id"],
@@ -200,6 +188,7 @@ if($publish["http"] < 200 || $publish["http"] >= 300 || empty($publish["json"]["
     out([
         "success" => false,
         "message" => "Carousel yayınlanamadı",
+        "response" => $publish,
         "debug" => $debug
     ]);
 }
@@ -209,6 +198,5 @@ out([
     "message" => "Instagram carousel yayınlandı",
     "post_id" => $publish["json"]["id"],
     "image_count" => count($imageUrls),
-    "instagram_username" => $igUsername,
-    "debug" => $debug
+    "instagram_username" => $igUsername
 ]);

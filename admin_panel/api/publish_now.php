@@ -118,7 +118,7 @@ function instagramPublishImage($pdo, $postText, $imageUrl){
         throw new Exception("Instagram media container oluşturulamadı: " . ($containerRes["response"] ?: $containerRes["error"]));
     }
 
-    sleep(8);
+    sleep(20);
 
     $publishUrl = "https://graph.facebook.com/v23.0/" . $igId . "/media_publish";
 

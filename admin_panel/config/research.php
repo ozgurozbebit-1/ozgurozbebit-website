@@ -1,0 +1,3 @@
+<?php
+
+define("SERP_API_KEY", "ae1b9b9c85f2f5c58206a36716b48d51fec100036e869b710dc7436e044ab103");

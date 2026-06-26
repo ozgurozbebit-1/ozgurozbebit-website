@@ -829,85 +829,6 @@ button.threads{
     border-top:1px solid #d7e4e8;
 }
 
-/* V44 PREMIUM: Hero KPI / Bugün Neler Oldu Paneli */
-.heroStats{
-display:grid;
-grid-template-columns:repeat(4,minmax(0,1fr));
-gap:14px;
-margin:18px 0 20px;
-position:relative;
-z-index:1;
-}
-.heroStat{
-min-height:96px;
-padding:16px 18px;
-border-radius:20px;
-background:rgba(255,255,255,.14);
-border:1px solid rgba(255,255,255,.18);
-box-shadow:0 16px 34px rgba(6,42,61,.16);
-backdrop-filter:blur(12px);
-}
-.heroStatIcon{
-width:34px;
-height:34px;
-display:grid;
-place-items:center;
-border-radius:12px;
-margin-bottom:10px;
-background:rgba(255,255,255,.18);
-border:1px solid rgba(255,255,255,.16);
-font-size:17px;
-}
-.heroStat span{
-display:block;
-font-size:12px;
-font-weight:950;
-letter-spacing:.10em;
-text-transform:uppercase;
-color:rgba(234,255,251,.72);
-margin-bottom:5px;
-}
-.heroStat strong{
-display:block;
-font-size:25px;
-font-weight:950;
-letter-spacing:-.5px;
-color:#fff;
-line-height:1.1;
-}
-.heroStat small{
-display:block;
-margin-top:6px;
-font-size:12px;
-font-weight:750;
-color:rgba(234,255,251,.72);
-line-height:1.35;
-}
-.heroQuickStatus{
-display:flex;
-align-items:center;
-gap:10px;
-position:relative;
-z-index:1;
-margin:0 0 18px;
-color:#eafffb;
-font-size:13px;
-font-weight:850;
-}
-.heroQuickStatus b{
-width:10px;
-height:10px;
-border-radius:50%;
-background:#34d399;
-box-shadow:0 0 0 7px rgba(52,211,153,.14);
-}
-@media(max-width:1200px){
-.heroStats{grid-template-columns:repeat(2,minmax(0,1fr));}
-}
-@media(max-width:760px){
-.heroStats{grid-template-columns:1fr;}
-}
-
 </style>
 </head>
 <body>
@@ -940,42 +861,6 @@ Hoş geldin,
 <div class="main">
 <div class="card">
 <h2>Sosyal Medya Üretim</h2>
-
-<div class="heroQuickStatus">
-<b></b>
-<span>TOM aktif · İçerik, görsel, story, carousel, Threads ve yayın akışı hazır.</span>
-</div>
-
-<div class="heroStats">
-    <div class="heroStat">
-        <div class="heroStatIcon">🧠</div>
-        <span>İçerik</span>
-        <strong>Hazır</strong>
-        <small>Tek tuş içerik paketi</small>
-    </div>
-
-    <div class="heroStat">
-        <div class="heroStatIcon">🎨</div>
-        <span>Görsel</span>
-        <strong>Aktif</strong>
-        <small>Post + Story + Carousel</small>
-    </div>
-
-    <div class="heroStat">
-        <div class="heroStatIcon">📣</div>
-        <span>Yayın</span>
-        <strong>4 Kanal</strong>
-        <small>FB · IG · LI · Threads</small>
-    </div>
-
-    <div class="heroStat">
-        <div class="heroStatIcon">⚡</div>
-        <span>Akış</span>
-        <strong>Tek Tuş</strong>
-        <small>Analiz → Üretim → Yayın</small>
-    </div>
-</div>
-
 <label>İçerik konusu</label>
 <input id="autoTopic" placeholder="Örn: Depresyon nedir?">
 <button type="button" id="runAutomationBtn" class="smart">Tek Tuş Üret
