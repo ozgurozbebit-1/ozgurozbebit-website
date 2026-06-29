@@ -1160,6 +1160,96 @@ a.topic-card:hover {
   line-height: 1.55;
 }
 
+.blog-article-content .article-sources {
+  margin-top: 46px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.blog-article-content .article-sources h2 {
+  margin: 0 0 14px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+}
+
+.blog-article-content .article-sources p {
+  margin-bottom: 12px;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.stat-visual {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  margin: 34px 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.stat-donut {
+  width: min(100%, 220px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(var(--clay) 0 42%, var(--sage) 42% 83%, #ded8cd 83% 100%);
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(31, 50, 45, 0.08);
+}
+
+.stat-donut::after {
+  content: "";
+  position: absolute;
+  inset: 24%;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.stat-legend {
+  display: grid;
+  gap: 14px;
+}
+
+.stat-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.stat-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.stat-swatch.anxiety {
+  background: var(--clay);
+}
+
+.stat-swatch.depression {
+  background: var(--sage);
+}
+
+.stat-item strong {
+  display: block;
+  color: var(--ink);
+  font-size: 22px;
+}
+
+.stat-item span {
+  display: block;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
 .share-panel {
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
