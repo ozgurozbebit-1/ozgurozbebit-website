@@ -12,6 +12,70 @@ const gadRoot = document.querySelector("[data-gad]");
 const ocdRoot = document.querySelector("[data-ocd]");
 const contactDataElement = document.querySelector("#site-contact-data");
 
+const contactOverrides = {
+  email: "info@ozgurozbebit.com.tr",
+  emailHref: "mailto:info@ozgurozbebit.com.tr",
+  emailAppointmentHref: "mailto:info@ozgurozbebit.com.tr?subject=Randevu%20Talebi",
+  instagram: "https://www.instagram.com/drozgurozbebit",
+  linkedin: "https://www.linkedin.com/in/drozgurozbebit",
+  facebook: "https://www.facebook.com/drozgurozbebit/",
+};
+
+const showUnderConstruction = (event) => {
+  event.preventDefault();
+  window.alert("Yapım aşamasında.");
+};
+
+const applyChatContactOverrides = () => {
+  document.querySelectorAll('.chat-actions [data-contact-href="phone"]').forEach((element) => {
+    element.setAttribute("href", "#");
+    element.addEventListener("click", showUnderConstruction);
+  });
+
+  document.querySelectorAll('.chat-actions [data-contact-href="whatsapp"]').forEach((element) => {
+    element.hidden = false;
+    element.setAttribute("href", "#");
+    element.addEventListener("click", showUnderConstruction);
+  });
+
+  document.querySelectorAll('[data-contact-href="email"], [data-contact-href="emailAppointment"]').forEach((element) => {
+    const isAppointment = element.dataset.contactHref === "emailAppointment";
+    element.setAttribute("href", isAppointment ? contactOverrides.emailAppointmentHref : contactOverrides.emailHref);
+  });
+
+  document.querySelectorAll('[data-contact-text="email"]').forEach((element) => {
+    element.textContent = contactOverrides.email;
+  });
+
+  document.querySelectorAll('.chat-actions [data-contact-href="instagram"]').forEach((element) => {
+    element.hidden = false;
+    element.setAttribute("href", contactOverrides.instagram);
+  });
+
+  document.querySelectorAll('.chat-actions [data-contact-href="linkedin"]').forEach((element) => {
+    element.hidden = false;
+    element.setAttribute("href", contactOverrides.linkedin);
+  });
+
+  document.querySelectorAll(".chat-actions").forEach((actions) => {
+    if (!actions.querySelector('[data-contact-href="facebook"]')) {
+      const facebook = document.createElement("a");
+      facebook.dataset.contactHref = "facebook";
+      facebook.href = contactOverrides.facebook;
+      facebook.target = "_blank";
+      facebook.rel = "noreferrer";
+      facebook.textContent = "Facebook";
+      const contactLink = [...actions.querySelectorAll("a")].find((link) => link.textContent.trim() === "İletişim Bilgileri");
+      actions.insertBefore(facebook, contactLink || null);
+    }
+  });
+
+  document.querySelectorAll('.chat-actions a[href="/iletisim/"]').forEach((element) => {
+    element.setAttribute("href", "#");
+    element.addEventListener("click", showUnderConstruction);
+  });
+};
+
 if (window.location.protocol === "file:") {
   const siteScript = Array.from(document.scripts).find((script) => /(?:^|\/)script\.js$/.test(script.src));
   if (siteScript) {
@@ -61,6 +125,8 @@ if (contactDataElement) {
     console.error("İletişim bilgileri okunamadı.", error);
   }
 }
+
+applyChatContactOverrides();
 
 const syncHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 16);
