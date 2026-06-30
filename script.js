@@ -9,6 +9,7 @@ const chatClose = document.querySelector("[data-chat-close]");
 const phqRoot = document.querySelector("[data-phq]");
 const mdqRoot = document.querySelector("[data-mdq]");
 const gadRoot = document.querySelector("[data-gad]");
+const ocdRoot = document.querySelector("[data-ocd]");
 const contactDataElement = document.querySelector("#site-contact-data");
 
 if (window.location.protocol === "file:") {
@@ -333,5 +334,90 @@ if (gadRoot) {
     noteEl.textContent = total >= 8
       ? "8 ve üzeri puanlarda daha ayrıntılı klinik değerlendirme önerilir."
       : "Sonuçlar klinik görüşme ve günlük yaşam etkisiyle birlikte değerlendirilmelidir.";
+  });
+}
+
+if (ocdRoot) {
+  const ocdQuestions = [
+    "Kirlenme, mikrop veya bulaşma ihtimali zihninizi belirgin şekilde meşgul ediyor mu?",
+    "Temizlik, yıkama veya silme davranışlarını rahatlamak için tekrarlıyor musunuz?",
+    "Kapı, ocak, priz, kilit ya da benzeri şeyleri tekrar tekrar kontrol etme ihtiyacı duyuyor musunuz?",
+    "Bir işi tamamladığınız halde 'emin olamama' hissi nedeniyle yeniden bakıyor musunuz?",
+    "Aynı cümleyi, hareketi, duayı, saymayı veya zihinsel kontrolü tekrar etme ihtiyacı oluyor mu?",
+    "Eşyaların belirli bir düzende, simetrik ya da 'tam doğru' durması gerektiğini hissediyor musunuz?",
+    "Düzen bozulduğunda belirgin huzursuzluk veya gerginlik yaşıyor musunuz?",
+    "İstemediğiniz halde aklınıza gelen rahatsız edici düşünceler sizi korkutuyor veya suçlu hissettiriyor mu?",
+    "Bu düşünceleri bastırmak, etkisizleştirmek veya kontrol etmek için zihinsel uğraşlara giriyor musunuz?",
+    "Yakınlarınıza zarar verme, hata yapma veya uygunsuz bir şey söyleme ihtimali zihninize takılıyor mu?",
+    "Rahatlamak için güvence isteme, tekrar sorma veya onay alma ihtiyacı duyuyor musunuz?",
+    "Takıntılar veya tekrar eden davranışlar gün içinde belirgin zamanınızı alıyor mu?",
+    "Bu belirtiler iş, okul, aile, sosyal yaşam veya günlük sorumluluklarınızı zorlaştırıyor mu?",
+    "Belirtileri azaltmaya çalışsanız da kısa süre sonra aynı döngüye geri döndüğünüz oluyor mu?",
+  ];
+  const options = [
+    { value: 0, label: "Hiç" },
+    { value: 1, label: "Nadiren" },
+    { value: 2, label: "Bazen" },
+    { value: 3, label: "Sık" },
+    { value: 4, label: "Çok sık" },
+  ];
+  const questionsWrap = ocdRoot.querySelector("[data-ocd-questions]");
+  const form = ocdRoot.querySelector("[data-ocd-form]");
+  const scoreEl = ocdRoot.querySelector("[data-ocd-score]");
+  const levelEl = ocdRoot.querySelector("[data-ocd-level]");
+  const progressEl = ocdRoot.querySelector("[data-ocd-progress]");
+  const noteEl = ocdRoot.querySelector("[data-ocd-note]");
+
+  const getOcdLevel = (score) => {
+    if (score <= 18) return "Düşük düzey";
+    if (score <= 37) return "Orta düzey";
+    return "Yüksek düzey";
+  };
+
+  const getOcdNote = (score) => {
+    if (score <= 18) return "Yanıtlarınız düşük belirti düzeyine işaret ediyor; yine de rahatsızlık sürüyorsa klinik görüşme yararlı olabilir.";
+    if (score <= 37) return "Yanıtlarınız orta belirti düzeyine işaret ediyor; belirtilerin günlük yaşama etkisi bir uzmanla değerlendirilebilir.";
+    return "Yanıtlarınız yüksek belirti düzeyine işaret ediyor; psikiyatri uzmanı ile ayrıntılı değerlendirme almanız önerilir.";
+  };
+
+  ocdQuestions.forEach((question, index) => {
+    const fieldset = document.createElement("fieldset");
+    fieldset.className = "phq-question";
+
+    const legend = document.createElement("legend");
+    legend.textContent = `${index + 1}. ${question}`;
+    fieldset.appendChild(legend);
+
+    const optionWrap = document.createElement("div");
+    optionWrap.className = "phq-options";
+
+    options.forEach((option) => {
+      const label = document.createElement("label");
+      label.className = "phq-option";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = `ocd-${index}`;
+      input.value = String(option.value);
+
+      const text = document.createElement("span");
+      text.textContent = `${option.value} = ${option.label}`;
+
+      label.append(input, text);
+      optionWrap.appendChild(label);
+    });
+
+    fieldset.appendChild(optionWrap);
+    questionsWrap.appendChild(fieldset);
+  });
+
+  form.addEventListener("change", () => {
+    const selected = [...form.querySelectorAll('input[name^="ocd-"]:checked')];
+    const total = selected.reduce((sum, input) => sum + Number(input.value), 0);
+
+    scoreEl.textContent = String(total);
+    levelEl.textContent = getOcdLevel(total);
+    progressEl.textContent = `14 sorudan ${selected.length} tanesi yanıtlandı.`;
+    noteEl.textContent = getOcdNote(total);
   });
 }

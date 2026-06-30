@@ -898,7 +898,8 @@ a.topic-card:hover {
 }
 
 #gad7,
-#depresyon-testi {
+#depresyon-testi,
+#okb-testi {
   scroll-margin-top: 120px;
 }
 
@@ -944,6 +945,11 @@ a.topic-card:hover {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
+}
+
+
+.ocd-section .phq-options {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .phq-option {
@@ -1479,6 +1485,7 @@ a.topic-card:hover {
   .approach-article ul,
   .topic-grid,
   .phq-options,
+  .ocd-section .phq-options,
   .phq-result,
   .mdq-question,
   .mdq-options,
