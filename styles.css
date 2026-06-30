@@ -897,7 +897,8 @@ a.topic-card:hover {
   border-top: 1px solid var(--line);
 }
 
-#gad7 {
+#gad7,
+#depresyon-testi {
   scroll-margin-top: 120px;
 }
 
