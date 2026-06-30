@@ -1,6 +1,7 @@
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const toggle = document.querySelector("[data-nav-toggle]");
+const navDropdowns = document.querySelectorAll("[data-nav-dropdown]");
 const year = document.querySelector("[data-year]");
 const chatbox = document.querySelector("[data-chatbox]");
 const chatToggle = document.querySelector("[data-chat-toggle]");
@@ -74,12 +75,30 @@ toggle.addEventListener("click", () => {
   header.classList.toggle("is-open", isOpen);
   toggle.setAttribute("aria-expanded", String(isOpen));
   toggle.setAttribute("aria-label", isOpen ? "Menüyü kapat" : "Menüyü aç");
+  if (!isOpen) {
+    navDropdowns.forEach((dropdown) => {
+      dropdown.classList.remove("is-open");
+      dropdown.querySelector("[data-nav-dropdown-toggle]")?.setAttribute("aria-expanded", "false");
+    });
+  }
+});
+
+navDropdowns.forEach((dropdown) => {
+  const dropdownToggle = dropdown.querySelector("[data-nav-dropdown-toggle]");
+  dropdownToggle?.addEventListener("click", () => {
+    const isOpen = dropdown.classList.toggle("is-open");
+    dropdownToggle.setAttribute("aria-expanded", String(isOpen));
+  });
 });
 
 nav.addEventListener("click", (event) => {
   if (event.target.tagName !== "A") return;
   nav.classList.remove("is-open");
   header.classList.remove("is-open");
+  navDropdowns.forEach((dropdown) => {
+    dropdown.classList.remove("is-open");
+    dropdown.querySelector("[data-nav-dropdown-toggle]")?.setAttribute("aria-expanded", "false");
+  });
   toggle.setAttribute("aria-expanded", "false");
   toggle.setAttribute("aria-label", "Menüyü aç");
 });
