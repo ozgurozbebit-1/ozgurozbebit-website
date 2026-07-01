@@ -924,6 +924,38 @@ a.topic-card:hover {
   font-size: 15px;
 }
 
+.article-stagger-photo {
+  overflow: hidden;
+  width: min(680px, 100%);
+  margin: clamp(28px, 5vw, 54px) 0 clamp(18px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  box-shadow: 0 16px 36px rgba(32, 49, 45, 0.06);
+}
+
+.article-stagger-photo.is-right {
+  margin-left: auto;
+}
+
+.article-stagger-photo.is-left {
+  margin-right: auto;
+}
+
+.article-stagger-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article-stagger-photo figcaption {
+  padding: 13px 16px 15px;
+  color: var(--ink);
+  font-weight: 820;
+  font-size: 15px;
+}
+
 .brain-diagram {
   max-width: 760px;
   margin: 26px 0 22px auto;
