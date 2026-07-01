@@ -848,6 +848,98 @@ a.topic-card:hover {
   height: auto;
 }
 
+
+.process-detail-article {
+  max-width: 1180px;
+}
+
+.process-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+
+.process-visual {
+  position: sticky;
+  top: 120px;
+  display: grid;
+  gap: 10px;
+  border: 1px solid rgba(56, 90, 79, 0.18);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(111, 139, 121, 0.12), rgba(181, 111, 76, 0.08));
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.process-visual-item {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 10px 16px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 253, 248, 0.86);
+  padding: 18px;
+}
+
+.process-visual-item span {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--sage-dark);
+  color: var(--white);
+  font-weight: 850;
+}
+
+.process-visual-item strong {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.process-visual-item small {
+  grid-column: 2;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.process-visual-item.is-active span {
+  background: var(--clay);
+}
+
+.process-visual-line {
+  width: 2px;
+  height: 28px;
+  margin-left: 41px;
+  background: rgba(181, 111, 76, 0.34);
+}
+
+.process-detail-steps {
+  display: grid;
+  gap: 18px;
+}
+
+.process-detail-steps section {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.process-detail-steps section > span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--clay);
+  font-size: 20px;
+  font-weight: 850;
+}
+
+.process-detail-steps h2 {
+  margin-top: 0;
+}
+
 .brain-outline {
   fill: rgba(255, 253, 248, 0.72);
   stroke: var(--sage-dark);
@@ -1475,11 +1567,16 @@ a.topic-card:hover {
   .intro,
   .scales,
   .process,
+  .process-detail-layout,
   .detail-hero-with-image,
   .blog-card-featured,
   .share-panel,
   .contact-panel {
     grid-template-columns: 1fr;
+  }
+
+  .process-visual {
+    position: static;
   }
 
   .share-feedback {
