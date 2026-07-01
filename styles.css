@@ -833,6 +833,35 @@ a.topic-card:hover {
   margin-bottom: 0;
 }
 
+.article-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0 4px;
+}
+
+.article-image-grid figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.article-image-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.article-image-grid figcaption {
+  padding: 12px 14px 14px;
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 15px;
+}
+
 .brain-diagram {
   max-width: 760px;
   margin: 26px 0 22px auto;
@@ -1585,6 +1614,7 @@ a.topic-card:hover {
 
   .approach-article ul,
   .topic-grid,
+  .article-image-grid,
   .phq-options,
   .ocd-section .phq-options,
   .phq-result,
