@@ -340,8 +340,8 @@ section {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
-  gap: clamp(28px, 6vw, 80px);
+  grid-template-columns: minmax(320px, 0.9fr) minmax(220px, 0.42fr) minmax(300px, 0.8fr);
+  gap: clamp(24px, 4vw, 56px);
   align-items: start;
 }
 
@@ -2038,5 +2038,17 @@ a.topic-card:hover {
 .scale-symbol-card img {
   height: 100%;
   min-height: 100%;
+  aspect-ratio: auto;
+}
+
+
+.intro-symbol-card {
+  height: 100%;
+  min-height: 260px;
+}
+
+.intro-symbol-card img {
+  height: 100%;
+  min-height: 260px;
   aspect-ratio: auto;
 }
