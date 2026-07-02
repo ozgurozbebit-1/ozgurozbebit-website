@@ -10,6 +10,7 @@ const phqRoot = document.querySelector("[data-phq]");
 const mdqRoot = document.querySelector("[data-mdq]");
 const gadRoot = document.querySelector("[data-gad]");
 const ocdRoot = document.querySelector("[data-ocd]");
+const asrsRoot = document.querySelector("[data-asrs]");
 const contactDataElement = document.querySelector("#site-contact-data");
 
 const contactOverrides = {
@@ -486,4 +487,89 @@ if (ocdRoot) {
     progressEl.textContent = `14 sorudan ${selected.length} tanesi yanıtlandı.`;
     noteEl.textContent = getOcdNote(total);
   });
+}
+
+
+if (asrsRoot) {
+  const asrsQuestions = [
+    "Bir işi tamamlamanız gereken durumlarda, son ayrıntıları düzenlemekte veya bitirici işleri tamamlamakta ne sıklıkla zorlanırsınız?",
+    "Organizasyon gerektiren bir işe başlamanız gerektiğinde, işe koyulmakta ne sıklıkla güçlük yaşarsınız?",
+    "Randevu, toplantı veya önemli yükümlülüklerinizi unutmanız ne sıklıkla olur?",
+    "Uzun süre dikkat gerektiren bir iş yapmanız gerektiğinde erteleme eğiliminiz ne sıklıkla olur?",
+    "Uzun süre oturmanız gereken durumlarda yerinizde durmakta veya kıpırdanmadan beklemekte ne sıklıkla zorlanırsınız?",
+    "Kendinizi sürekli hareket halinde veya sanki bir motor tarafından çalıştırılıyormuş gibi hissetmeniz ne sıklıkla olur?",
+  ];
+  const asrsOptions = [
+    { value: 0, label: "Hiçbir zaman" },
+    { value: 1, label: "Nadiren" },
+    { value: 2, label: "Bazen" },
+    { value: 3, label: "Sık sık" },
+    { value: 4, label: "Çok sık" },
+  ];
+  const questionsWrap = asrsRoot.querySelector("[data-asrs-questions]");
+  const form = asrsRoot.querySelector("[data-asrs-form]");
+  const scoreEl = asrsRoot.querySelector("[data-asrs-score]");
+  const levelEl = asrsRoot.querySelector("[data-asrs-level]");
+  const progressEl = asrsRoot.querySelector("[data-asrs-progress]");
+  const noteEl = asrsRoot.querySelector("[data-asrs-note]");
+  const resultEl = asrsRoot.querySelector("[data-asrs-result-level]");
+  const whatsappButton = asrsRoot.querySelector("[data-asrs-whatsapp]");
+
+  const getAsrsResult = (score) => {
+    if (score <= 5) {
+      return { key: "low", level: "Düşük Risk", note: "Yanıtlarınız erişkin DEHB açısından belirgin bir risk göstermemektedir." };
+    }
+    if (score <= 11) {
+      return { key: "mild", level: "Hafif Risk", note: "Bazı dikkat ve organizasyon güçlükleri yaşadığınızı düşündüren belirtiler bulunmaktadır." };
+    }
+    if (score <= 17) {
+      return { key: "moderate", level: "Orta Risk", note: "Yanıtlarınız erişkin DEHB ile ilişkili olabilecek belirtiler göstermektedir." };
+    }
+    return { key: "high", level: "Yüksek Risk", note: "Yanıtlarınız dikkat eksikliği ve hiperaktivite bozukluğu ile ilişkili olabilecek belirgin belirtiler göstermektedir. Ayrıntılı değerlendirme için psikiyatri uzmanına başvurmanız önerilir." };
+  };
+
+  asrsQuestions.forEach((question, index) => {
+    const fieldset = document.createElement("fieldset");
+    fieldset.className = "phq-question";
+
+    const legend = document.createElement("legend");
+    legend.textContent = `${index + 1}. ${question}`;
+    fieldset.appendChild(legend);
+
+    const optionWrap = document.createElement("div");
+    optionWrap.className = "phq-options";
+
+    asrsOptions.forEach((option) => {
+      const label = document.createElement("label");
+      label.className = "phq-option";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = `asrs-${index}`;
+      input.value = String(option.value);
+
+      const text = document.createElement("span");
+      text.textContent = `${option.value} = ${option.label}`;
+
+      label.append(input, text);
+      optionWrap.appendChild(label);
+    });
+
+    fieldset.appendChild(optionWrap);
+    questionsWrap.appendChild(fieldset);
+  });
+
+  form.addEventListener("change", () => {
+    const selected = [...form.querySelectorAll('input[name^="asrs-"]:checked')];
+    const total = selected.reduce((sum, input) => sum + Number(input.value), 0);
+    const result = getAsrsResult(total);
+
+    scoreEl.textContent = String(total);
+    levelEl.textContent = result.level;
+    noteEl.textContent = result.note;
+    progressEl.textContent = `6 sorudan ${selected.length} tanesi yanıtlandı.`;
+    resultEl.dataset.asrsResultLevel = result.key;
+  });
+
+  whatsappButton?.addEventListener("click", showUnderConstruction);
 }

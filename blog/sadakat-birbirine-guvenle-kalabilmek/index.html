@@ -104,13 +104,27 @@
         document.querySelectorAll("[data-share]").forEach((link) => { link.href = targets[link.dataset.share]; });
         const nativeButton = document.querySelector("[data-native-share]");
         const feedback = document.querySelector("[data-share-feedback]");
+        const instagramUrl = "https://www.instagram.com/";
+        const copyForInstagram = async () => {
+          const shareText = `${title}\n${url}`;
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(shareText);
+            return true;
+          }
+          return false;
+        };
         nativeButton.addEventListener("click", async () => {
+          const instagramWindow = window.open(instagramUrl, "_blank", "noopener,noreferrer");
           try {
-            if (navigator.share) { await navigator.share({ title, url }); return; }
-            await navigator.clipboard.writeText(url);
-            feedback.textContent = "Bağlantı kopyalandı. Instagram'da paylaşabilirsiniz.";
+            const copied = await copyForInstagram();
+            feedback.textContent = copied
+              ? "Bağlantı kopyalandı. Instagram açılıyor; gönderi veya hikaye açıklamasına yapıştırabilirsiniz."
+              : "Instagram açılıyor. Bağlantıyı adres çubuğundan kopyalayabilirsiniz.";
           } catch (error) {
-            if (error.name !== "AbortError") feedback.textContent = "Bağlantı kopyalanamadı; adres çubuğundan kopyalayabilirsiniz.";
+            feedback.textContent = "Instagram açılıyor. Bağlantıyı adres çubuğundan kopyalayabilirsiniz.";
+          }
+          if (!instagramWindow) {
+            window.location.href = instagramUrl;
           }
         });
       })();
