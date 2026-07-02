@@ -1979,3 +1979,51 @@ a.topic-card:hover {
     grid-template-columns: 1fr;
   }
 }
+
+
+.visual-summary {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.42fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.visual-summary p + p {
+  margin-top: 14px;
+}
+
+.home-symbol-card {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 253, 248, 0.86);
+  box-shadow: 0 16px 36px rgba(32, 49, 45, 0.08);
+}
+
+.home-symbol-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.process-side-visual {
+  align-self: start;
+}
+
+.process-symbol-card {
+  max-width: 340px;
+  margin: 0 0 24px auto;
+}
+
+@media (max-width: 980px) {
+  .visual-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .process-symbol-card {
+    max-width: none;
+    margin-left: 0;
+  }
+}
