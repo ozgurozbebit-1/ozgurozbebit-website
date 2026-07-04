@@ -4,19 +4,13 @@ if(!isset($_SESSION["user_id"])){
     header("Location: ../index.php");
     exit;
 }
-require_once "../config/database.php";
-
-$total = $pdo->query("SELECT COUNT(*) FROM content_projects")->fetchColumn();
-$draft = $pdo->query("SELECT COUNT(*) FROM content_projects WHERE status='draft'")->fetchColumn();
-$published = $pdo->query("SELECT COUNT(*) FROM content_projects WHERE status='published'")->fetchColumn();
-$approved = $pdo->query("SELECT COUNT(*) FROM content_projects WHERE status='approved'")->fetchColumn();
 ?>
 
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Analitik V13</title>
+<title>Ayarlar V13</title>
 <style>
 body{margin:0;font-family:Arial;background:#f3f8f8;color:#123}
 .header{background:white;padding:20px 30px;border-bottom:1px solid #dbecec;display:flex;justify-content:space-between}
@@ -25,16 +19,15 @@ body{margin:0;font-family:Arial;background:#f3f8f8;color:#123}
 .layout{display:flex}.sidebar{width:250px;padding:25px}.main{flex:1;padding:25px}
 .menu a{display:block;background:white;padding:16px;margin-bottom:12px;border-radius:12px;text-decoration:none;color:#123;font-weight:bold}
 .menu a.active{background:#078080;color:white}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.stat{background:white;padding:25px;border-radius:14px;font-size:18px;font-weight:bold}
-.stat span{float:right;font-size:30px;color:#078080}
-.card{background:white;padding:22px;border-radius:14px;margin-top:20px}
+.card{background:white;padding:22px;border-radius:14px;margin-bottom:20px}
+input,textarea{width:100%;padding:13px;margin-top:8px;margin-bottom:15px;border:1px solid #cfe3e3;border-radius:10px;box-sizing:border-box}
+button{background:#078080;color:white;border:0;padding:13px 18px;border-radius:10px;font-weight:bold}
 </style>
 </head>
 <body>
 
 <div class="header">
-<div class="logo">📊 Analitik</div>
+<div class="logo">⚙️ Ayarlar</div>
 <div>Hoş geldin, <?php echo htmlspecialchars($_SESSION["user_name"] ?? "Kullanıcı"); ?> <span class="badge">V13</span></div>
 </div>
 
@@ -48,23 +41,28 @@ body{margin:0;font-family:Arial;background:#f3f8f8;color:#123}
 <a href="image.php">🎨 Görsel Oluştur</a>
 <a href="youtube.php">📺 YouTube İçerikleri</a>
 <a href="blog.php">📰 Blog Yazıları</a>
-<a class="active" href="analytics.php">📊 Analitik</a>
-<a href="settings.php">⚙️ Ayarlar</a>
+<a href="analytics.php">📊 Analitik</a>
+<a class="active" href="settings.php">⚙️ Ayarlar</a>
 <a href="../auth/logout.php">🚪 Çıkış</a>
 </div>
 </div>
 
 <div class="main">
-<div class="stats">
-<div class="stat">📦 Toplam <span><?php echo $total; ?></span></div>
-<div class="stat">📅 Taslak <span><?php echo $draft; ?></span></div>
-<div class="stat">✅ Onaylanan <span><?php echo $approved; ?></span></div>
-<div class="stat">📱 Yayınlanan <span><?php echo $published; ?></span></div>
-</div>
-
 <div class="card">
-<h2>Analitik Merkezi</h2>
-<p>V13 ile temel içerik istatistikleri aktif. Sonraki sürümde platform bazlı dağılım, haftalık üretim grafiği ve performans takibi eklenecek.</p>
+<h2>Marka Ayarları</h2>
+<label>Marka adı</label>
+<input value="Uzm. Dr. Özgür Özbebit">
+
+<label>Uzmanlık</label>
+<input value="Psikiyatri Uzmanı">
+
+<label>Renk paleti</label>
+<input value="Turkuaz, beyaz, lacivert">
+
+<label>Marka tonu</label>
+<textarea>Sakin, bilimsel, güven veren, etik ve anlaşılır.</textarea>
+
+<button>Kaydet</button>
 </div>
 </div>
 </div>
