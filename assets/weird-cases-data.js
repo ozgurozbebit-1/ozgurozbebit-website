@@ -2,7 +2,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "alien-hand-sendromu",
     title: "Alien Hand Sendromu",
-    coverImage: "",
+    coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
     youtubeThumbnail: "",
     imageAlt: "Alien Hand Sendromu kısa video kapak görseli",
     description: "Kişinin eli, sanki kendi iradesinden bağımsız hareket ediyormuş gibi algılanabilir. Bu kısa video, nadir görülen bu tablonun psikiyatri ve nöroloji kesişimindeki ilginç yönünü sade bir dille ele alır.",
@@ -11,7 +11,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "klinik-likantropi",
     title: "Klinik Likantropi",
-    coverImage: "",
+    coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
     youtubeThumbnail: "https://img.youtube.com/vi/1UBml7sMJms/hqdefault.jpg",
     imageAlt: "Klinik Likantropi kısa video kapak görseli",
     pageTitle: "Klinik Likantropi: İnsan Kendisini Bir Hayvan Sanabilir mi?",
@@ -22,7 +22,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "cotard-sendromu",
     title: "Cotard Sendromu",
-    coverImage: "",
+    coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
     youtubeThumbnail: "https://img.youtube.com/vi/LolthIao3mw/hqdefault.jpg",
     imageAlt: "Cotard Sendromu kısa video kapak görseli",
     pageTitle: "Cotard Sendromu: Kişi Gerçekten Öldüğüne İnanabilir mi?",
@@ -33,7 +33,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "herkes-robot",
     title: "Herkes Robot",
-    coverImage: "",
+    coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
     youtubeThumbnail: "https://img.youtube.com/vi/86oTUUAe5B4/hqdefault.jpg",
     imageAlt: "Herkes Robot kısa video kapak görseli",
     pageTitle: "Herkes Robot: Sanrılar Çağa Göre Değişir mi?",
@@ -44,7 +44,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "gorunmez-goril-deneyi",
     title: "Görünmez Goril Deneyi",
-    coverImage: "",
+    coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
     youtubeThumbnail: "https://img.youtube.com/vi/PR6qhUg5cis/hqdefault.jpg",
     imageAlt: "Görünmez Goril Deneyi kısa video kapak görseli",
     pageTitle: "Görünmez Goril Deneyi: Gözümüzün Önündekini Neden Fark Etmeyiz?",
