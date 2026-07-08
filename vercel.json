@@ -3,97 +3,97 @@
   "redirects": [
     {
       "source": "/depresyon-duygudurum.html",
-      "destination": "https://ozgurozbebit.com.tr/depresyon/",
+      "destination": "https://www.ozgurozbebit.com.tr/depresyon/",
       "permanent": true
     },
     {
       "source": "/anksiyete-bozukluklari.html",
-      "destination": "https://ozgurozbebit.com.tr/anksiyete/",
+      "destination": "https://www.ozgurozbebit.com.tr/anksiyete/",
       "permanent": true
     },
     {
       "source": "/obsesif-kompulsif-bozukluk.html",
-      "destination": "https://ozgurozbebit.com.tr/okb/",
+      "destination": "https://www.ozgurozbebit.com.tr/okb/",
       "permanent": true
     },
     {
       "source": "/bipolar-bozukluk.html",
-      "destination": "https://ozgurozbebit.com.tr/bipolar-bozukluk/",
+      "destination": "https://www.ozgurozbebit.com.tr/bipolar-bozukluk/",
       "permanent": true
     },
     {
       "source": "/dikkat-ve-islevsellik.html",
-      "destination": "https://ozgurozbebit.com.tr/dehb/",
+      "destination": "https://www.ozgurozbebit.com.tr/dehb/",
       "permanent": true
     },
     {
       "source": "/panik-bozukluk.html",
-      "destination": "https://ozgurozbebit.com.tr/panik-bozukluk/",
+      "destination": "https://www.ozgurozbebit.com.tr/panik-bozukluk/",
       "permanent": true
     },
     {
       "source": "/travma-sonrasi-stres-bozuklugu.html",
-      "destination": "https://ozgurozbebit.com.tr/travma-sonrasi-stres-bozuklugu/",
+      "destination": "https://www.ozgurozbebit.com.tr/travma-sonrasi-stres-bozuklugu/",
       "permanent": true
     },
     {
       "source": "/bagimliliklar.html",
-      "destination": "https://ozgurozbebit.com.tr/bagimliliklar/",
+      "destination": "https://www.ozgurozbebit.com.tr/bagimliliklar/",
       "permanent": true
     },
     {
       "source": "/cinsel-islev-bozukluklari.html",
-      "destination": "https://ozgurozbebit.com.tr/cinsel-islev-bozukluklari/",
+      "destination": "https://www.ozgurozbebit.com.tr/cinsel-islev-bozukluklari/",
       "permanent": true
     },
     {
       "source": "/fobiler.html",
-      "destination": "https://ozgurozbebit.com.tr/fobiler/",
+      "destination": "https://www.ozgurozbebit.com.tr/fobiler/",
       "permanent": true
     },
     {
       "source": "/psikotik-bozukluklar.html",
-      "destination": "https://ozgurozbebit.com.tr/psikotik-bozukluklar/",
+      "destination": "https://www.ozgurozbebit.com.tr/psikotik-bozukluklar/",
       "permanent": true
     },
     {
       "source": "/yeme-bozukluklari.html",
-      "destination": "https://ozgurozbebit.com.tr/yeme-bozukluklari/",
+      "destination": "https://www.ozgurozbebit.com.tr/yeme-bozukluklari/",
       "permanent": true
     },
     {
       "source": "/uyku-ve-stres.html",
-      "destination": "https://ozgurozbebit.com.tr/uyku-ve-stres/",
+      "destination": "https://www.ozgurozbebit.com.tr/uyku-ve-stres/",
       "permanent": true
     },
     {
       "source": "/ilac-tedavisi-ve-takip.html",
-      "destination": "https://ozgurozbebit.com.tr/ilac-tedavisi-ve-takip/",
+      "destination": "https://www.ozgurozbebit.com.tr/ilac-tedavisi-ve-takip/",
       "permanent": true
     },
     {
       "source": "/olcekler.html",
-      "destination": "https://ozgurozbebit.com.tr/olcekler/",
+      "destination": "https://www.ozgurozbebit.com.tr/olcekler/",
       "permanent": true
     },
     {
       "source": "/yaklasim.html",
-      "destination": "https://ozgurozbebit.com.tr/yaklasim/",
+      "destination": "https://www.ozgurozbebit.com.tr/yaklasim/",
       "permanent": true
     },
     {
       "source": "/surec.html",
-      "destination": "https://ozgurozbebit.com.tr/surec/",
+      "destination": "https://www.ozgurozbebit.com.tr/surec/",
       "permanent": true
     },
     {
       "source": "/okb-bilissel-model.html",
-      "destination": "https://ozgurozbebit.com.tr/okb-bilissel-model/",
+      "destination": "https://www.ozgurozbebit.com.tr/okb-bilissel-model/",
       "permanent": true
     },
     {
       "source": "/okb-psikodinamik-model.html",
-      "destination": "https://ozgurozbebit.com.tr/okb-psikodinamik-model/",
+      "destination": "https://www.ozgurozbebit.com.tr/okb-psikodinamik-model/",
       "permanent": true
     },
     {
@@ -104,7 +104,7 @@
           "value": "ozgurozbebit.com"
         }
       ],
-      "destination": "https://ozgurozbebit.com.tr/:path*",
+      "destination": "https://www.ozgurozbebit.com.tr/:path*",
       "permanent": true
     },
     {
@@ -115,7 +115,7 @@
           "value": "www.ozgurozbebit.com"
         }
       ],
-      "destination": "https://ozgurozbebit.com.tr/:path*",
+      "destination": "https://www.ozgurozbebit.com.tr/:path*",
       "permanent": true
     },
     {
@@ -123,10 +123,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.ozgurozbebit.com.tr"
+          "value": "ozgurozbebit.com.tr"
         }
       ],
-      "destination": "https://ozgurozbebit.com.tr/:path*",
+      "destination": "https://www.ozgurozbebit.com.tr/:path*",
       "permanent": true
     }
   ],
