@@ -2089,20 +2089,34 @@ a.topic-card:hover {
 }
 
 .weird-case-card.has-image {
+  padding-top: clamp(20px, 2.4vw, 26px);
+}
+
+.weird-case-cover-wrap {
+  position: relative;
+  width: min(calc(100% + 34px), 302px);
+  aspect-ratio: 16 / 9;
+  max-height: 170px;
+  margin: 0 auto 8px;
   overflow: hidden;
+  border-radius: 6px;
+  background: #d9ddd8;
+}
+
+.weird-case-cover-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: rgba(24, 42, 37, 0.1);
 }
 
 .weird-case-cover {
-  width: calc(100% + (2 * clamp(24px, 3vw, 34px)));
-  max-width: none;
-  aspect-ratio: 16 / 9;
-  margin:
-    calc(-1 * clamp(24px, 3vw, 34px))
-    calc(-1 * clamp(24px, 3vw, 34px))
-    10px;
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 7px 7px 0 0;
+  filter: saturate(0.84) contrast(0.96);
 }
 
 .weird-case-card h2 {
@@ -2117,6 +2131,10 @@ a.topic-card:hover {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
+}
+
+.weird-case-card.has-image p {
+  line-height: 1.72;
 }
 
 .weird-case-card .text-link {
@@ -2212,6 +2230,10 @@ a.topic-card:hover {
   .weird-cases-home,
   .weird-case-list {
     grid-template-columns: 1fr;
+  }
+
+  .weird-case-cover-wrap {
+    width: min(calc(100% + 34px), 302px);
   }
 
   .weird-case-detail h1 {
