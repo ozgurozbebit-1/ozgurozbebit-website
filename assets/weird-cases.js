@@ -31,8 +31,13 @@
 
   function createCard(video) {
     const article = document.createElement("article");
-    article.className = "weird-case-card";
+    article.className = video.image ? "weird-case-card has-image" : "weird-case-card";
+    const imageMarkup = video.image
+      ? `<img class="weird-case-cover" src="${video.image}" alt="${video.imageAlt || `${video.title} kısa video kapak görseli`}" loading="lazy">`
+      : "";
+
     article.innerHTML = `
+      ${imageMarkup}
       <span class="weird-case-badge">Kısa video</span>
       <h2>${video.title}</h2>
       <p>${video.description}</p>
