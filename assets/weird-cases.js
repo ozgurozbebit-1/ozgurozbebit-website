@@ -30,11 +30,12 @@
   }
 
   function createCard(video) {
+    const cardImage = video.coverImage || video.youtubeThumbnail || video.image || "";
     const article = document.createElement("article");
-    article.className = video.image ? "weird-case-card has-image" : "weird-case-card";
-    const imageMarkup = video.image
+    article.className = cardImage ? "weird-case-card has-image" : "weird-case-card";
+    const imageMarkup = cardImage
       ? `<div class="weird-case-cover-wrap">
-          <img class="weird-case-cover" src="${video.image}" alt="${video.imageAlt || `${video.title} kısa video kapak görseli`}" loading="lazy">
+          <img class="weird-case-cover" src="${cardImage}" alt="${video.imageAlt || `${video.title} kısa video kapak görseli`}" loading="lazy">
         </div>`
       : "";
 
