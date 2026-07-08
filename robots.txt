@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /api/
 
-Sitemap: https://ozgurozbebit.com.tr/sitemap.xml
+Sitemap: https://www.ozgurozbebit.com.tr/sitemap.xml
