@@ -10,7 +10,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "klinik-likantropi",
     title: "Klinik Likantropi",
-    image: "",
+    image: "https://img.youtube.com/vi/1UBml7sMJms/hqdefault.jpg",
     imageAlt: "Klinik Likantropi kısa video kapak görseli",
     pageTitle: "Klinik Likantropi: İnsan Kendisini Bir Hayvan Sanabilir mi?",
     description: "Kişinin kendisini kaplan, kurt, köpek veya başka bir hayvan olarak algılayabildiği son derece nadir bir psikiyatrik tablo.",
@@ -20,7 +20,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "cotard-sendromu",
     title: "Cotard Sendromu",
-    image: "",
+    image: "https://img.youtube.com/vi/LolthIao3mw/hqdefault.jpg",
     imageAlt: "Cotard Sendromu kısa video kapak görseli",
     pageTitle: "Cotard Sendromu: Kişi Gerçekten Öldüğüne İnanabilir mi?",
     description: "Kişinin öldüğüne, organlarının çalışmadığına veya artık var olmadığına inanabildiği son derece nadir bir psikiyatrik durum.",
@@ -30,7 +30,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "herkes-robot",
     title: "Herkes Robot",
-    image: "",
+    image: "https://img.youtube.com/vi/86oTUUAe5B4/hqdefault.jpg",
     imageAlt: "Herkes Robot kısa video kapak görseli",
     pageTitle: "Herkes Robot: Sanrılar Çağa Göre Değişir mi?",
     description: "Bir kişinin doktoru dahil çevresindeki herkesin robot olduğuna inanması, sanrıların yaşanılan çağın diliyle nasıl biçim değiştirebildiğini gösteriyor.",
@@ -40,7 +40,7 @@ window.WEIRD_CASES_VIDEOS = [
   {
     slug: "gorunmez-goril-deneyi",
     title: "Görünmez Goril Deneyi",
-    image: "",
+    image: "https://img.youtube.com/vi/PR6qhUg5cis/hqdefault.jpg",
     imageAlt: "Görünmez Goril Deneyi kısa video kapak görseli",
     pageTitle: "Görünmez Goril Deneyi: Gözümüzün Önündekini Neden Fark Etmeyiz?",
     description: "Ünlü Görünmez Goril Deneyi, bir göreve odaklandığımızda gözümüzün önündeki beklenmedik bir olayı bile fark etmeyebileceğimizi gösteriyor.",
