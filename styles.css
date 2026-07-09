@@ -1143,6 +1143,10 @@ a.topic-card:hover {
   margin-top: 28px;
 }
 
+#dehb-testi {
+  scroll-margin-top: 120px;
+}
+
 .phq-question {
   border: 1px solid var(--line);
   border-radius: 8px;
