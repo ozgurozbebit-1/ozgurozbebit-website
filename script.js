@@ -27,6 +27,19 @@ const showUnderConstruction = (event) => {
   window.alert("Yapım aşamasında.");
 };
 
+const hideTemporaryAppointmentButtons = () => {
+  document.querySelectorAll("a.button").forEach((button) => {
+    const label = button.textContent.replace(/\s+/g, " ").trim();
+    if (label.includes("Randevu Al") || label.includes("Randevu Talebi")) {
+      button.classList.add("appointment-cta-temporarily-hidden");
+      button.setAttribute("aria-hidden", "true");
+      button.setAttribute("tabindex", "-1");
+    }
+  });
+};
+
+hideTemporaryAppointmentButtons();
+
 const applyChatContactOverrides = () => {
   document.querySelectorAll('.chat-actions [data-contact-href="phone"]').forEach((element) => {
     element.setAttribute("href", "#");

@@ -303,6 +303,10 @@ h3 {
   color: var(--white);
 }
 
+.appointment-cta-temporarily-hidden {
+  display: none !important;
+}
+
 .button.secondary {
   border: 1px solid rgba(255, 253, 248, 0.58);
   color: var(--white);
