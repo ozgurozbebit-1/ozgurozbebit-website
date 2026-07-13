@@ -1449,6 +1449,18 @@ a.topic-card:hover {
   line-height: 1.78;
 }
 
+.blog-article-content ul {
+  margin: 0 0 24px 1.25em;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(19px, 2vw, 22px);
+  line-height: 1.78;
+}
+
+.blog-article-content li {
+  margin: 0 0 8px;
+}
+
 .blog-article-content .lead {
   color: var(--ink);
   font-size: clamp(21px, 2.5vw, 26px);
