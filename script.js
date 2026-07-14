@@ -101,6 +101,12 @@ const resourceHubContent = {
       text: "Düşünce, duygu ve davranış ilişkisini sade örneklerle anlatır.",
       href: "https://www.google.com/search?q=%C4%B0yi+Hissetmek+David+D.+Burns",
     },
+    dusunceVeDuygu: {
+      title: "Düşünce ve Duygu",
+      author: "Matthew McKay, Martha Davis, Patrick Fanning",
+      text: "Duygu düzenleme ve düşünce kalıplarını anlamaya yardımcı pratik bir kaynak.",
+      href: "https://www.google.com/search?q=D%C3%BC%C5%9F%C3%BCnce+ve+Duygu+Matthew+McKay",
+    },
     takintilarlaBasaCikma: {
       title: "Takıntılarla Başa Çıkma",
       author: "Lee Baer",
@@ -131,17 +137,41 @@ const resourceHubContent = {
       text: "Duygudurum atakları, takip ve aile desteği üzerine pratik bir kaynak.",
       href: "https://www.google.com/search?q=The+Bipolar+Disorder+Survival+Guide+David+Miklowitz",
     },
+    bipolarElKitabi: {
+      title: "Bipolar Bozukluğu Anlamak",
+      author: "Francis Mark Mondimore",
+      text: "Bipolar bozukluğun dönemleri, tedavisi ve izlemi üzerine anlaşılır bir kaynak.",
+      href: "https://www.google.com/search?q=Bipolar+Disorder+Francis+Mark+Mondimore",
+    },
+    nedenUyuruz: {
+      title: "Niçin Uyuruz?",
+      author: "Matthew Walker",
+      text: "Uykunun beyin, duygu durumu ve gündelik işlevsellik üzerindeki rolünü anlatır.",
+      href: "https://www.google.com/search?q=Ni%C3%A7in+Uyuruz+Matthew+Walker",
+    },
     bedenKayitTutar: {
       title: "Beden Kayıt Tutar",
       author: "Bessel van der Kolk",
       text: "Travmanın beden, zihin ve ilişkiler üzerindeki etkisini ele alır.",
       href: "https://www.google.com/search?q=Beden+Kay%C4%B1t+Tutar+Bessel+van+der+Kolk",
     },
+    travmaVeIyilesme: {
+      title: "Travma ve İyileşme",
+      author: "Judith Herman",
+      text: "Travmatik yaşantıların ruhsal etkileri ve iyileşme süreci üzerine temel bir kaynak.",
+      href: "https://www.google.com/search?q=Travma+ve+%C4%B0yile%C5%9Fme+Judith+Herman",
+    },
     bagimlilikKitabi: {
       title: "Bağımlılık Psikolojisi",
       author: "Gabor Maté",
       text: "Bağımlılığın acı, bağlanma ve baş etme yollarıyla ilişkisini anlatır.",
       href: "https://www.google.com/search?q=In+the+Realm+of+Hungry+Ghosts+Gabor+Mate",
+    },
+    bagimlilikBeyni: {
+      title: "Bağımlı Beyin",
+      author: "Marc Lewis",
+      text: "Bağımlılık döngüsünü öğrenme, ödül sistemi ve beyin plastisitesi üzerinden ele alır.",
+      href: "https://www.google.com/search?q=The+Biology+of+Desire+Marc+Lewis",
     },
     iliskiKitabi: {
       title: "Bağlanma",
@@ -266,72 +296,72 @@ const resourceHubContent = {
   categories: {
     depresyon: {
       tests: ["depresyon", "anksiyete", "uykuStres"],
-      books: ["ruhHalininKisaTarihi", "insaninAnlamArayisi"],
+      books: ["ruhHalininKisaTarihi", "insaninAnlamArayisi", "iyiHissetmek"],
       articles: ["tukenmislik", "travmaSessiz", "anksiyetePage"],
     },
     anksiyete: {
       tests: ["anksiyete", "sosyalFobi", "depresyon"],
-      books: ["anksiyeteFobi", "iyiHissetmek"],
+      books: ["anksiyeteFobi", "iyiHissetmek", "dusunceVeDuygu"],
       articles: ["titusAnksiyete", "panikPage", "uykuStresPage"],
     },
     okb: {
       tests: ["okb", "anksiyete", "depresyon"],
-      books: ["takintilarlaBasaCikma", "beyinKilitlenince"],
+      books: ["takintilarlaBasaCikma", "beyinKilitlenince", "anksiyeteFobi"],
       articles: ["bilisselModel", "psikodinamikModel", "anksiyetePage"],
     },
     dehb: {
       tests: ["dehb", "anksiyete", "depresyon"],
-      books: ["daginikZihinler", "drivenToDistraction"],
+      books: ["daginikZihinler", "drivenToDistraction", "dusunceVeDuygu"],
       articles: ["uykuStresPage", "tukenmislik", "anksiyetePage"],
     },
     bipolar: {
       tests: ["bipolar", "depresyon", "anksiyete"],
-      books: ["bipolarGuide", "insaninAnlamArayisi"],
+      books: ["bipolarGuide", "bipolarElKitabi", "insaninAnlamArayisi"],
       articles: ["psikofarmakoloji", "uykuStresPage", "dehbPage"],
     },
     uyku: {
       tests: ["anksiyete", "depresyon", "uykuStres"],
-      books: ["insaninAnlamArayisi", "iyiHissetmek"],
+      books: ["nedenUyuruz", "insaninAnlamArayisi", "iyiHissetmek"],
       articles: ["tukenmislik", "anksiyetePage", "depresyon"],
     },
     panik: {
       tests: ["anksiyete", "sosyalFobi", "depresyon"],
-      books: ["anksiyeteFobi", "iyiHissetmek"],
+      books: ["anksiyeteFobi", "iyiHissetmek", "dusunceVeDuygu"],
       articles: ["titusAnksiyete", "anksiyetePage", "uykuStresPage"],
     },
     travma: {
       tests: ["anksiyete", "depresyon", "uykuStres"],
-      books: ["bedenKayitTutar", "insaninAnlamArayisi"],
+      books: ["bedenKayitTutar", "travmaVeIyilesme", "insaninAnlamArayisi"],
       articles: ["travmaSessiz", "ihtiyaclar", "uykuStresPage"],
     },
     bagimlilik: {
       tests: ["depresyon", "anksiyete", "uykuStres"],
-      books: ["bagimlilikKitabi", "insaninAnlamArayisi"],
+      books: ["bagimlilikKitabi", "bagimlilikBeyni", "insaninAnlamArayisi"],
       articles: ["bagimlilikBlog", "psikofarmakoloji", "ihtiyaclar"],
     },
     cinsel: {
       tests: ["depresyon", "anksiyete", "sosyalFobi"],
-      books: ["iliskiKitabi", "insaninAnlamArayisi"],
+      books: ["iliskiKitabi", "dusunceVeDuygu", "insaninAnlamArayisi"],
       articles: ["cinselBlog", "ihtiyaclar", "sadakat"],
     },
     fobi: {
       tests: ["sosyalFobi", "anksiyete", "depresyon"],
-      books: ["anksiyeteFobi", "iyiHissetmek"],
+      books: ["anksiyeteFobi", "iyiHissetmek", "dusunceVeDuygu"],
       articles: ["anksiyetePage", "titusAnksiyete", "panikPage"],
     },
     yeme: {
       tests: ["depresyon", "anksiyete", "uykuStres"],
-      books: ["insaninAnlamArayisi", "iyiHissetmek"],
+      books: ["insaninAnlamArayisi", "iyiHissetmek", "dusunceVeDuygu"],
       articles: ["ihtiyaclar", "tukenmislik", "anksiyetePage"],
     },
     psikotik: {
       tests: ["bipolar", "depresyon", "anksiyete"],
-      books: ["insaninAnlamArayisi", "psikofarmakoloji"],
+      books: ["insaninAnlamArayisi", "psikofarmakoloji", "dusunceVeDuygu"],
       articles: ["bipolarPage", "psikofarmakoloji", "ihtiyaclar"],
     },
     ilac: {
       tests: ["depresyon", "anksiyete", "bipolar"],
-      books: ["psikofarmakoloji", "iyiHissetmek"],
+      books: ["psikofarmakoloji", "iyiHissetmek", "dusunceVeDuygu"],
       articles: ["psikofarmakoloji", "bipolarPage", "dehbPage"],
     },
     aile: {
@@ -341,7 +371,7 @@ const resourceHubContent = {
     },
     surec: {
       tests: ["depresyon", "anksiyete", "dehb"],
-      books: ["insaninAnlamArayisi", "iyiHissetmek"],
+      books: ["insaninAnlamArayisi", "iyiHissetmek", "dusunceVeDuygu"],
       articles: ["psikofarmakoloji", "ihtiyaclar", "uykuStresPage"],
     },
   },
