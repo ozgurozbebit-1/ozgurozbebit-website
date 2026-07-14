@@ -841,8 +841,9 @@ footer p {
   place-items: center;
   background: rgba(0, 128, 118, 0.08);
   color: var(--teal);
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 760;
+  box-shadow: inset 0 -18px 30px rgba(0, 128, 118, 0.06);
 }
 
 .resource-book-cover-image {
@@ -860,14 +861,16 @@ footer p {
   place-items: center;
   border: 1px solid rgba(32, 49, 45, 0.12);
   border-radius: 8px;
-  background: linear-gradient(160deg, #eaf3ef, #6d806d);
-  color: var(--sage-dark);
+  background: linear-gradient(160deg, #eef5f1 0%, #b9c9bd 48%, #6d806d 100%);
+  color: #1e342f;
   font-family: var(--serif);
-  font-size: 14px;
-  font-weight: 760;
-  line-height: 1.05;
+  font-size: 11px;
+  font-weight: 820;
+  line-height: 1.08;
   text-align: center;
   box-shadow: 0 10px 22px rgba(32, 49, 45, 0.1);
+  overflow: hidden;
+  padding: 10px 8px;
 }
 
 .resource-card-body {

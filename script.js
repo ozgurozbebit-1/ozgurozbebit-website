@@ -29,49 +29,49 @@ const resourceHubContent = {
       text: "Ruh halinizi değerlendirmek için kısa bir tarama testi.",
       href: "/depresyon-testi/",
       action: "Teste Başla →",
-      icon: "☑",
+      icon: "🧠",
     },
     anksiyete: {
       title: "Anksiyete Testi",
       text: "Kaygı belirtilerini değerlendirmek için kullanılabilir.",
       href: "/anksiyete-testi/",
       action: "Teste Başla →",
-      icon: "⌁",
+      icon: "😟",
     },
     sosyalFobi: {
       title: "Sosyal Fobi Taraması",
       text: "Sosyal ortamlardaki kaygı ve kaçınmayı ön değerlendirme amacıyla ele alır.",
       href: "/sosyal-fobi-testi/",
       action: "Teste Başla →",
-      icon: "◌",
+      icon: "👥",
     },
     okb: {
       title: "OKB Belirti Taraması",
       text: "Takıntı ve tekrar eden davranışları ön değerlendirme amacıyla inceler.",
       href: "/okb-testi/",
       action: "Teste Başla →",
-      icon: "↻",
+      icon: "🔄",
     },
     dehb: {
       title: "Dikkat Eksikliği Testi",
       text: "Dikkat, organizasyon ve hareketlilik belirtileri için kısa ön değerlendirme.",
       href: "/dikkat-eksikligi-testi/#dehb-testi",
       action: "Teste Başla →",
-      icon: "•",
+      icon: "🎯",
     },
     bipolar: {
       title: "Bipolar Tarama Testi",
       text: "Duygudurum dalgalanmalarını MDQ ile ön değerlendirme amacıyla ele alır.",
       href: "/bipolar-tarama-testi/",
       action: "Teste Başla →",
-      icon: "∿",
+      icon: "⚡",
     },
     uykuStres: {
       title: "Uyku ve Stres",
       text: "Stres ve uyku döngüsünü anlamaya yardımcı bir içerik.",
       href: "/uyku-ve-stres/",
       action: "İçeriğe Git →",
-      icon: "☁",
+      icon: "☁️",
     },
   },
   books: {
@@ -80,14 +80,12 @@ const resourceHubContent = {
       author: "David D. Burns",
       text: "Depresif düşünce kalıplarını anlaşılır bir dille ele alan klasik bir kaynak.",
       href: "https://www.google.com/search?q=Ruh+Halinin+K%C4%B1sa+Tarihi+David+D.+Burns",
-      image: "https://covers.openlibrary.org/b/isbn/0380810336-L.jpg",
     },
     insaninAnlamArayisi: {
       title: "İnsanın Anlam Arayışı",
       author: "Viktor E. Frankl",
       text: "Zor koşullarda yaşamın anlamını arama üzerine güçlü ve sade bir metin.",
       href: "https://www.google.com/search?q=%C4%B0nsan%C4%B1n+Anlam+Aray%C4%B1%C5%9F%C4%B1+Viktor+E.+Frankl",
-      image: "https://covers.openlibrary.org/b/isbn/0807014273-L.jpg",
     },
     anksiyeteFobi: {
       title: "Anksiyete ve Fobi Çalışma Kitabı",
@@ -117,7 +115,7 @@ const resourceHubContent = {
       title: "Beyin Kilitlenince",
       author: "Jeffrey M. Schwartz",
       text: "OKB döngüsü ve davranışsal değişim üzerine bilgilendirici bir metin.",
-      href: "https://www.google.com/search?q=Brain+Lock+Jeffrey+Schwartz",
+      href: "https://www.google.com/search?q=Beyin+Kilitlenince+Jeffrey+Schwartz",
     },
     daginikZihinler: {
       title: "Dağınık Zihinler",
@@ -125,23 +123,23 @@ const resourceHubContent = {
       text: "Dikkat sorunlarını gelişimsel ve duygusal yönleriyle ele alır.",
       href: "https://www.google.com/search?q=Da%C4%9F%C4%B1n%C4%B1k+Zihinler+Gabor+Mate",
     },
-    drivenToDistraction: {
-      title: "Driven to Distraction",
+    dikkatDaginikligiIleYasamak: {
+      title: "Dikkat Dağınıklığı ile Yaşamak",
       author: "Edward M. Hallowell, John J. Ratey",
       text: "Erişkin DEHB belirtilerini klinik örneklerle anlatan temel kaynaklardan biri.",
-      href: "https://www.google.com/search?q=Driven+to+Distraction+Hallowell+Ratey",
+      href: "https://www.google.com/search?q=Dikkat+Da%C4%9F%C4%B1n%C4%B1kl%C4%B1%C4%9F%C4%B1+ile+Ya%C5%9Famak+Hallowell+Ratey",
     },
     bipolarGuide: {
       title: "Bipolar Bozukluk İçin Rehber",
       author: "David J. Miklowitz",
       text: "Duygudurum atakları, takip ve aile desteği üzerine pratik bir kaynak.",
-      href: "https://www.google.com/search?q=The+Bipolar+Disorder+Survival+Guide+David+Miklowitz",
+      href: "https://www.google.com/search?q=Bipolar+Bozukluk+%C4%B0%C3%A7in+Rehber+David+Miklowitz",
     },
     bipolarElKitabi: {
       title: "Bipolar Bozukluğu Anlamak",
       author: "Francis Mark Mondimore",
       text: "Bipolar bozukluğun dönemleri, tedavisi ve izlemi üzerine anlaşılır bir kaynak.",
-      href: "https://www.google.com/search?q=Bipolar+Disorder+Francis+Mark+Mondimore",
+      href: "https://www.google.com/search?q=Bipolar+Bozuklu%C4%9Fu+Anlamak+Francis+Mark+Mondimore",
     },
     nedenUyuruz: {
       title: "Niçin Uyuruz?",
@@ -165,19 +163,19 @@ const resourceHubContent = {
       title: "Bağımlılık Psikolojisi",
       author: "Gabor Maté",
       text: "Bağımlılığın acı, bağlanma ve baş etme yollarıyla ilişkisini anlatır.",
-      href: "https://www.google.com/search?q=In+the+Realm+of+Hungry+Ghosts+Gabor+Mate",
+      href: "https://www.google.com/search?q=Ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k+Psikolojisi+Gabor+Mate",
     },
     bagimlilikBeyni: {
       title: "Bağımlı Beyin",
       author: "Marc Lewis",
       text: "Bağımlılık döngüsünü öğrenme, ödül sistemi ve beyin plastisitesi üzerinden ele alır.",
-      href: "https://www.google.com/search?q=The+Biology+of+Desire+Marc+Lewis",
+      href: "https://www.google.com/search?q=Ba%C4%9F%C4%B1ml%C4%B1+Beyin+Marc+Lewis",
     },
     iliskiKitabi: {
       title: "Bağlanma",
       author: "Amir Levine, Rachel Heller",
       text: "Yakın ilişkilerde bağlanma örüntülerini anlaşılır biçimde açıklar.",
-      href: "https://www.google.com/search?q=Attached+Amir+Levine+Rachel+Heller",
+      href: "https://www.google.com/search?q=Ba%C4%9Flanma+Amir+Levine+Rachel+Heller",
     },
     aileKitabi: {
       title: "Çocuğunuza Kulak Verin",
@@ -311,7 +309,7 @@ const resourceHubContent = {
     },
     dehb: {
       tests: ["dehb", "anksiyete", "depresyon"],
-      books: ["daginikZihinler", "drivenToDistraction", "dusunceVeDuygu"],
+      books: ["daginikZihinler", "dikkatDaginikligiIleYasamak", "dusunceVeDuygu"],
       articles: ["uykuStresPage", "tukenmislik", "anksiyetePage"],
     },
     bipolar: {
@@ -417,12 +415,21 @@ const createResourceCard = (item, type) => {
     image.loading = "lazy";
     image.decoding = "async";
     image.alt = `${item.title} görseli`;
+    if (type === "book") {
+      image.addEventListener("error", () => {
+        const fallback = document.createElement("span");
+        fallback.className = "resource-card-media resource-book-cover resource-book-cover-green";
+        fallback.setAttribute("aria-hidden", "true");
+        fallback.textContent = item.coverLabel || item.title;
+        image.replaceWith(fallback);
+      }, { once: true });
+    }
     card.appendChild(image);
   } else {
     const media = document.createElement("span");
     media.className = type === "book" ? "resource-card-media resource-book-cover resource-book-cover-green" : "resource-card-media resource-card-icon";
     media.setAttribute("aria-hidden", "true");
-    media.textContent = type === "book" ? "Kitap" : item.icon || "•";
+    media.textContent = type === "book" ? item.coverLabel || item.title : item.icon || "•";
     card.appendChild(media);
   }
 
