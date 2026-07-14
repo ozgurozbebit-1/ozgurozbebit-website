@@ -279,6 +279,7 @@ Güvenlik planı|Kriz anında kişinin kendini koruması için adım adım hazı
 Psikiyatrik yatış|Yoğun izlem, güvenlik veya tedavi düzenleme amacıyla hastaneye yatış sürecidir.
 Taburculuk planı|Yatış sonrası ilaç, kontrol, destek ve kriz planının düzenlenmesidir.
 Tedavi planı|Kişinin ihtiyaçlarına göre ilaç, psikoterapi, takip ve yaşam düzeni önerilerinin bütünüdür.
+Ajitasyon|Yoğun huzursuzluk, gerginlik ve artmış hareketlilikle kendini gösterebilen klinik durumdur.
 Obsesyon|Kişinin istemediği halde zihnine gelen, kaygı uyandıran tekrarlayıcı düşünce veya dürtüdür.
 Kompulsiyon|Obsesyonun yarattığı sıkıntıyı azaltmak için yapılan tekrarlayıcı davranış veya zihinsel eylemdir.
 Sanrı|Kanıta rağmen değişmeyen, gerçeklikle uyumsuz sabit inançtır.
@@ -290,6 +291,7 @@ Grandiyözite|Kişinin önemini, gücünü veya yeteneklerini gerçekçi olmayan
 Negatif belirti|Duygu, konuşma, motivasyon ve sosyal katılımda azalma gibi eksilme belirtileridir.
 Pozitif belirti|Sanrı, varsanı veya dezorganize davranış gibi olağan deneyime eklenen belirtilerdir.
 Dezorganize davranış|Amaca uygun olmayan, dağınık veya öngörülemez davranış örüntüsüdür.
+Psikoz|Gerçekliği değerlendirme becerisinde belirgin bozulma ile seyreden klinik durumdur.
 Mani|Taşkın veya irritabl duygu durum, enerji artışı ve işlevsellik bozulmasıyla giden dönemdir.
 Hipomani|Maniye göre daha hafif, enerji ve duygu durum artışıyla seyreden dönemdir.
 Karma özellik|Depresif ve manik belirtilerin aynı dönemde birlikte bulunmasıdır.
@@ -301,14 +303,41 @@ Kişiselleştirme|Kişinin kendisiyle ilgisi sınırlı olayları gereğinden fa
 Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bilgi isteme davranışıdır.
 `;
 
+const glossaryDetailPages = {
+  Anhedoni: "anhedoni",
+  Ajitasyon: "ajitasyon",
+  Depersonalizasyon: "depersonalizasyon",
+  Derealizasyon: "derealizasyon",
+  Dissosiyasyon: "dissosiyasyon",
+  Dopamin: "dopamin",
+  Dürtüsellik: "durtusellik",
+  Hipomani: "hipomani",
+  İçgörü: "icgoru",
+  Katatoni: "katatoni",
+  Kompulsiyon: "kompulsiyon",
+  Mani: "mani",
+  Obsesyon: "obsesyon",
+  Psikoz: "psikoz",
+  Remisyon: "remisyon",
+  Ruminasyon: "ruminasyon",
+  Sanrı: "sanri",
+  Serotonin: "serotonin",
+  Somatizasyon: "somatizasyon",
+  Varsanı: "varsani",
+};
+
 const PSYCHIATRY_GLOSSARY_TERMS = glossarySource
   .trim()
   .split("\n")
   .map((line) => {
     const [term, ...definitionParts] = line.split("|");
+    const termName = term.trim();
+    const detailSlug = glossaryDetailPages[termName] || "";
     return {
-      term: term.trim(),
+      term: termName,
       definition: definitionParts.join("|").trim(),
+      detailSlug,
+      detailUrl: detailSlug ? `/psikiyatri-sozlugu/${detailSlug}/` : "",
     };
   })
   .filter((item) => item.term && item.definition)
@@ -351,6 +380,13 @@ const renderGlossary = () => {
     const paragraph = document.createElement("p");
     paragraph.textContent = item.definition;
     article.append(heading, paragraph);
+    if (item.detailUrl) {
+      const link = document.createElement("a");
+      link.className = "glossary-detail-link";
+      link.href = item.detailUrl;
+      link.textContent = "Detaylı oku";
+      article.append(link);
+    }
     return article;
   };
 

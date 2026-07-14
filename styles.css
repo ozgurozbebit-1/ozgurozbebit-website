@@ -2718,6 +2718,8 @@ a.topic-card:hover {
 }
 
 .glossary-card {
+  display: flex;
+  flex-direction: column;
   min-height: 168px;
   padding: 22px;
   border: 1px solid rgba(32, 49, 45, 0.12);
@@ -2739,6 +2741,45 @@ a.topic-card:hover {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.62;
+}
+
+.glossary-detail-link {
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 16px;
+  color: var(--teal);
+  font-weight: 840;
+  text-decoration: underline;
+  text-decoration-color: rgba(181, 111, 76, 0.42);
+  text-underline-offset: 7px;
+}
+
+.glossary-term-note,
+.glossary-term-related {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 20px 22px;
+}
+
+.glossary-term-related {
+  display: grid;
+  gap: 12px;
+}
+
+.glossary-term-related a {
+  color: var(--teal);
+  font-weight: 820;
+}
+
+.glossary-back-link {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--sage-dark);
+  font-weight: 840;
+  text-decoration: underline;
+  text-decoration-color: rgba(181, 111, 76, 0.42);
+  text-underline-offset: 7px;
 }
 
 .glossary-empty {
