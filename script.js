@@ -27,10 +27,20 @@ const showUnderConstruction = (event) => {
   window.alert("Yapım aşamasında.");
 };
 
+const temporaryAppointmentCtasVisible = false;
+
 const hideTemporaryAppointmentButtons = () => {
-  document.querySelectorAll("a.button").forEach((button) => {
+  if (temporaryAppointmentCtasVisible) {
+    return;
+  }
+
+  document.querySelectorAll("a.button, a.topic-card").forEach((button) => {
     const label = button.textContent.replace(/\s+/g, " ").trim();
-    if (label.includes("Randevu Al") || label.includes("Randevu Talebi")) {
+    const href = button.getAttribute("href") || "";
+    const isAppointmentButton = label.includes("Randevu Al") || label.includes("Randevu Talebi");
+    const isAppointmentCard = button.classList.contains("topic-card") && href.includes("/randevu/");
+
+    if (isAppointmentButton || isAppointmentCard) {
       button.classList.add("appointment-cta-temporarily-hidden");
       button.setAttribute("aria-hidden", "true");
       button.setAttribute("tabindex", "-1");
