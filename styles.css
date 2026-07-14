@@ -853,6 +853,23 @@ footer p {
   box-shadow: 0 10px 22px rgba(32, 49, 45, 0.12);
 }
 
+.resource-book-cover {
+  display: inline-grid;
+  width: 72px;
+  height: 106px;
+  place-items: center;
+  border: 1px solid rgba(32, 49, 45, 0.12);
+  border-radius: 8px;
+  background: linear-gradient(160deg, #eaf3ef, #6d806d);
+  color: var(--sage-dark);
+  font-family: var(--serif);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.05;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(32, 49, 45, 0.1);
+}
+
 .resource-card-body {
   display: grid;
   gap: 6px;
@@ -1520,6 +1537,10 @@ a.topic-card:hover {
   transform: translateY(-2px);
 }
 
+.blog-list > .blog-card + .blog-card {
+  margin-top: 22px;
+}
+
 .blog-card-featured {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
@@ -1641,6 +1662,110 @@ a.topic-card:hover {
 .blog-article-content h2 {
   margin: clamp(46px, 7vw, 72px) 0 22px;
   font-size: clamp(30px, 4vw, 44px);
+}
+
+.blog-article-content h3 {
+  margin: 30px 0 10px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.15;
+}
+
+.blog-table-wrap {
+  margin: 28px 0 34px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.blog-comparison-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.blog-comparison-table th,
+.blog-comparison-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.blog-comparison-table th {
+  background: rgba(0, 132, 121, 0.1);
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.blog-comparison-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.blog-related-section {
+  max-width: 900px;
+  margin: 46px auto 0;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.blog-related-section h2 {
+  margin: 8px 0 22px;
+  color: var(--ink);
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.blog-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.blog-related-card {
+  display: grid;
+  gap: 10px;
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid rgba(32, 49, 45, 0.12);
+  border-radius: 8px;
+  background: var(--white);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.blog-related-card:hover {
+  border-color: rgba(181, 111, 76, 0.42);
+  box-shadow: 0 12px 28px rgba(32, 49, 45, 0.08);
+  transform: translateY(-2px);
+}
+
+.blog-related-card strong {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.blog-related-card span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.blog-disclaimer {
+  max-width: 900px;
+  margin: 26px auto 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--clay);
+  border-radius: 8px;
+  background: rgba(181, 111, 76, 0.08);
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .blog-article-content blockquote {
@@ -2443,6 +2568,142 @@ a.topic-card:hover {
   font-size: 20px;
 }
 
+.glossary-page {
+  background: #fffdf8;
+}
+
+.glossary-hero {
+  padding-bottom: 52px;
+}
+
+.glossary-hero h1 {
+  max-width: 920px;
+}
+
+.glossary-panel {
+  width: min(1380px, calc(100% - 56px));
+  margin: 0 auto 120px;
+  padding: clamp(22px, 3vw, 36px);
+  border: 1px solid rgba(32, 49, 45, 0.12);
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, rgba(238, 247, 244, 0.58), rgba(255, 253, 248, 0.96)),
+    #fffdf8;
+  box-shadow: 0 22px 70px rgba(32, 49, 45, 0.08);
+}
+
+.glossary-tools {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: end;
+}
+
+.glossary-search {
+  display: grid;
+  gap: 9px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.glossary-search input {
+  width: 100%;
+  border: 1px solid rgba(32, 49, 45, 0.18);
+  border-radius: 8px;
+  padding: 17px 18px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
+  font: inherit;
+  outline: none;
+}
+
+.glossary-search input:focus {
+  border-color: rgba(0, 132, 121, 0.65);
+  box-shadow: 0 0 0 4px rgba(0, 132, 121, 0.1);
+}
+
+.glossary-count {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 999px;
+  background: rgba(0, 132, 121, 0.1);
+  color: var(--teal);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.glossary-letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 16px;
+}
+
+.glossary-letter-button {
+  min-width: 42px;
+  min-height: 38px;
+  border: 1px solid rgba(32, 49, 45, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.glossary-letter-button[aria-pressed="true"] {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fffaf2;
+}
+
+.glossary-note {
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(187, 113, 75, 0.08);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.glossary-card {
+  min-height: 168px;
+  padding: 22px;
+  border: 1px solid rgba(32, 49, 45, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 32px rgba(32, 49, 45, 0.05);
+}
+
+.glossary-card h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(22px, 1.9vw, 30px);
+  line-height: 1.12;
+}
+
+.glossary-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.glossary-empty {
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 800;
+}
+
 @media (max-width: 980px) {
   .weird-cases-home,
   .weird-case-list {
@@ -2455,5 +2716,18 @@ a.topic-card:hover {
 
   .weird-case-detail h1 {
     font-size: clamp(38px, 10vw, 54px);
+  }
+
+  .glossary-tools,
+  .glossary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glossary-count {
+    width: fit-content;
+  }
+
+  .blog-related-grid {
+    grid-template-columns: 1fr;
   }
 }

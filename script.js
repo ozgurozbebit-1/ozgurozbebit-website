@@ -22,6 +22,479 @@ const contactOverrides = {
   facebook: "https://www.facebook.com/drozgurozbebit/",
 };
 
+const resourceHubContent = {
+  tests: {
+    depresyon: {
+      title: "Depresyon Testi",
+      text: "Ruh halinizi değerlendirmek için kısa bir tarama testi.",
+      href: "/depresyon-testi/",
+      action: "Teste Başla →",
+      icon: "☑",
+    },
+    anksiyete: {
+      title: "Anksiyete Testi",
+      text: "Kaygı belirtilerini değerlendirmek için kullanılabilir.",
+      href: "/anksiyete-testi/",
+      action: "Teste Başla →",
+      icon: "⌁",
+    },
+    sosyalFobi: {
+      title: "Sosyal Fobi Taraması",
+      text: "Sosyal ortamlardaki kaygı ve kaçınmayı ön değerlendirme amacıyla ele alır.",
+      href: "/sosyal-fobi-testi/",
+      action: "Teste Başla →",
+      icon: "◌",
+    },
+    okb: {
+      title: "OKB Belirti Taraması",
+      text: "Takıntı ve tekrar eden davranışları ön değerlendirme amacıyla inceler.",
+      href: "/okb-testi/",
+      action: "Teste Başla →",
+      icon: "↻",
+    },
+    dehb: {
+      title: "Dikkat Eksikliği Testi",
+      text: "Dikkat, organizasyon ve hareketlilik belirtileri için kısa ön değerlendirme.",
+      href: "/dikkat-eksikligi-testi/#dehb-testi",
+      action: "Teste Başla →",
+      icon: "•",
+    },
+    bipolar: {
+      title: "Bipolar Tarama Testi",
+      text: "Duygudurum dalgalanmalarını MDQ ile ön değerlendirme amacıyla ele alır.",
+      href: "/bipolar-tarama-testi/",
+      action: "Teste Başla →",
+      icon: "∿",
+    },
+    uykuStres: {
+      title: "Uyku ve Stres",
+      text: "Stres ve uyku döngüsünü anlamaya yardımcı bir içerik.",
+      href: "/uyku-ve-stres/",
+      action: "İçeriğe Git →",
+      icon: "☁",
+    },
+  },
+  books: {
+    ruhHalininKisaTarihi: {
+      title: "Ruh Halinin Kısa Tarihi",
+      author: "David D. Burns",
+      text: "Depresif düşünce kalıplarını anlaşılır bir dille ele alan klasik bir kaynak.",
+      href: "https://www.google.com/search?q=Ruh+Halinin+K%C4%B1sa+Tarihi+David+D.+Burns",
+      image: "https://covers.openlibrary.org/b/isbn/0380810336-L.jpg",
+    },
+    insaninAnlamArayisi: {
+      title: "İnsanın Anlam Arayışı",
+      author: "Viktor E. Frankl",
+      text: "Zor koşullarda yaşamın anlamını arama üzerine güçlü ve sade bir metin.",
+      href: "https://www.google.com/search?q=%C4%B0nsan%C4%B1n+Anlam+Aray%C4%B1%C5%9F%C4%B1+Viktor+E.+Frankl",
+      image: "https://covers.openlibrary.org/b/isbn/0807014273-L.jpg",
+    },
+    mutlulukTuzagi: {
+      title: "Mutluluk Tuzağı",
+      author: "Russ Harris",
+      text: "Kabul ve Kararlılık Terapisi yaklaşımını anlaşılır bir dille anlatır.",
+      href: "https://www.google.com/search?q=Mutluluk+Tuza%C4%9F%C4%B1+Russ+Harris",
+      image: "https://covers.openlibrary.org/b/isbn/1590305841-L.jpg",
+    },
+    anksiyeteFobi: {
+      title: "Anksiyete ve Fobi Çalışma Kitabı",
+      author: "Edmund J. Bourne",
+      text: "Kaygı belirtileri ve baş etme becerileri için yapılandırılmış bir kaynak.",
+      href: "https://www.google.com/search?q=Anksiyete+ve+Fobi+%C3%87al%C4%B1%C5%9Fma+Kitab%C4%B1+Edmund+Bourne",
+    },
+    iyiHissetmek: {
+      title: "İyi Hissetmek",
+      author: "David D. Burns",
+      text: "Düşünce, duygu ve davranış ilişkisini sade örneklerle anlatır.",
+      href: "https://www.google.com/search?q=%C4%B0yi+Hissetmek+David+D.+Burns",
+    },
+    takintilarlaBasaCikma: {
+      title: "Takıntılarla Başa Çıkma",
+      author: "Lee Baer",
+      text: "OKB belirtilerini ve takıntı döngüsünü anlamaya yardımcı bir kaynak.",
+      href: "https://www.google.com/search?q=Tak%C4%B1nt%C4%B1larla+Ba%C5%9Fa+%C3%87%C4%B1kma+Lee+Baer",
+    },
+    beyinKilitlenince: {
+      title: "Beyin Kilitlenince",
+      author: "Jeffrey M. Schwartz",
+      text: "OKB döngüsü ve davranışsal değişim üzerine bilgilendirici bir metin.",
+      href: "https://www.google.com/search?q=Brain+Lock+Jeffrey+Schwartz",
+    },
+    daginikZihinler: {
+      title: "Dağınık Zihinler",
+      author: "Gabor Maté",
+      text: "Dikkat sorunlarını gelişimsel ve duygusal yönleriyle ele alır.",
+      href: "https://www.google.com/search?q=Da%C4%9F%C4%B1n%C4%B1k+Zihinler+Gabor+Mate",
+    },
+    drivenToDistraction: {
+      title: "Driven to Distraction",
+      author: "Edward M. Hallowell, John J. Ratey",
+      text: "Erişkin DEHB belirtilerini klinik örneklerle anlatan temel kaynaklardan biri.",
+      href: "https://www.google.com/search?q=Driven+to+Distraction+Hallowell+Ratey",
+    },
+    bipolarGuide: {
+      title: "Bipolar Bozukluk İçin Rehber",
+      author: "David J. Miklowitz",
+      text: "Duygudurum atakları, takip ve aile desteği üzerine pratik bir kaynak.",
+      href: "https://www.google.com/search?q=The+Bipolar+Disorder+Survival+Guide+David+Miklowitz",
+    },
+    bedenKayitTutar: {
+      title: "Beden Kayıt Tutar",
+      author: "Bessel van der Kolk",
+      text: "Travmanın beden, zihin ve ilişkiler üzerindeki etkisini ele alır.",
+      href: "https://www.google.com/search?q=Beden+Kay%C4%B1t+Tutar+Bessel+van+der+Kolk",
+    },
+    bagimlilikKitabi: {
+      title: "Bağımlılık Psikolojisi",
+      author: "Gabor Maté",
+      text: "Bağımlılığın acı, bağlanma ve baş etme yollarıyla ilişkisini anlatır.",
+      href: "https://www.google.com/search?q=In+the+Realm+of+Hungry+Ghosts+Gabor+Mate",
+    },
+    iliskiKitabi: {
+      title: "Bağlanma",
+      author: "Amir Levine, Rachel Heller",
+      text: "Yakın ilişkilerde bağlanma örüntülerini anlaşılır biçimde açıklar.",
+      href: "https://www.google.com/search?q=Attached+Amir+Levine+Rachel+Heller",
+    },
+    aileKitabi: {
+      title: "Çocuğunuza Kulak Verin",
+      author: "Aletha Solter",
+      text: "Ebeveynlikte duygusal ihtiyaçları ve iletişimi anlamaya yardımcı olur.",
+      href: "https://www.google.com/search?q=%C3%87ocu%C4%9Funuza+Kulak+Verin+Aletha+Solter",
+    },
+  },
+  articles: {
+    tukenmislik: {
+      title: "Tükenmek: Her Şeye Yetişmeye Çalışırken",
+      text: "Tükenmişlik, sürekli güçlü görünme zorunluluğu ve kendine alan açabilmek üzerine.",
+      href: "/blog/tukenmek-her-seye-yetismeye-calisirken/",
+      image: "/assets/tukenmislik.jpg",
+      action: "Yazıyı Oku →",
+    },
+    travmaSessiz: {
+      title: "Görünmez Bir Yükle Yürümek",
+      text: "Travmanın gündelik yaşama sessizce sızan etkileri ve kendine şefkat üzerine.",
+      href: "/blog/gorunmez-bir-yukle-yurumek/",
+      image: "/assets/travmanin-sessiz-dili.jpg",
+      action: "Yazıyı Oku →",
+    },
+    anksiyetePage: {
+      title: "Anksiyete Bozuklukları",
+      text: "Kaygı belirtileri, bedensel etkiler, takip ve tedavi yaklaşımı hakkında bilgi alın.",
+      href: "/anksiyete/",
+      image: "/assets/anxiety-hero.webp",
+      action: "Sayfaya Git →",
+    },
+    titusAnksiyete: {
+      title: "Titus'tan Tinnitus'a",
+      text: "Bir tünelde yükselen kaygı, beden duyumları ve anlam arayışı üzerine bir yazı.",
+      href: "/blog/titustan-tinnitusa-bir-tunelde-yok-olan-anksiyete/",
+      image: "/assets/titus-tinnitus-anksiyete.jpg",
+      action: "Yazıyı Oku →",
+    },
+    okbPage: {
+      title: "Obsesif Kompulsif Bozukluk",
+      text: "Zihni meşgul eden düşünceler ve tekrar eden davranışlar hakkında bilgi alın.",
+      href: "/okb/",
+      image: "/assets/ocd-hero.webp",
+      action: "Sayfaya Git →",
+    },
+    bilisselModel: {
+      title: "OKB'de Bilişsel Model",
+      text: "Düşüncenin kendisi değil, düşünceye verilen anlamın rolü üzerine.",
+      href: "/okb-bilissel-model/",
+      image: "/assets/mini-ocd-checking.jpg",
+      action: "Yazıyı Oku →",
+    },
+    psikodinamikModel: {
+      title: "OKB'de Psikodinamik Model",
+      text: "Belirtinin arkasındaki içsel anlam ve kontrol ihtiyacı üzerine.",
+      href: "/okb-psikodinamik-model/",
+      image: "/assets/ocd-hero.webp",
+      action: "Yazıyı Oku →",
+    },
+    bipolarPage: {
+      title: "Bipolar Bozukluk",
+      text: "Duygudurum dalgalanmaları, takip ve tedavi süreci hakkında bilgi alın.",
+      href: "/bipolar-bozukluk/",
+      image: "/assets/bipolar-hero.webp",
+      action: "Sayfaya Git →",
+    },
+    dehbPage: {
+      title: "DEHB ve Dikkat Sorunları",
+      text: "Dikkat, organizasyon ve işlevsellik sorunlarını klinik açıdan ele alır.",
+      href: "/dehb/",
+      image: "/assets/attention-functionality-hero.webp",
+      action: "Sayfaya Git →",
+    },
+    uykuStresPage: {
+      title: "Uyku ve Stres",
+      text: "Stres ile uyku kalitesi arasındaki çift yönlü ilişkiyi açıklar.",
+      href: "/uyku-ve-stres/",
+      image: "/assets/sleep-stress-hero.webp",
+      action: "Sayfaya Git →",
+    },
+    panikPage: {
+      title: "Panik Bozukluk",
+      text: "Panik atak, bedensel kaygı belirtileri ve değerlendirme süreci hakkında bilgi alın.",
+      href: "/panik-bozukluk/",
+      image: "/assets/panic-disorder-hero.png",
+      action: "Sayfaya Git →",
+    },
+    bagimlilikBlog: {
+      title: "Patolojik Kumar Bağımlılığı",
+      text: "Kayıpları geri alma yanılgısı ve bağımlılık döngüsü üzerine bilgilendirici yazı.",
+      href: "/blog/patolojik-kumar-bagimliligi-bir-sonraki-el-yanilgisi/",
+      image: "/assets/patolojik-kumar-bagimliligi.jpg",
+      action: "Yazıyı Oku →",
+    },
+    psikofarmakoloji: {
+      title: "Psikofarmakolojide Uyum",
+      text: "Tedaviye uyum, ilaç reddi ve tedavi direnci üzerine bir yazı.",
+      href: "/blog/psikofarmakolojide-uyum-ve-tedavi-direnci/",
+      image: "/assets/psikofarmakoloji-uyum-direnc.jpg",
+      action: "Yazıyı Oku →",
+    },
+    cinselBlog: {
+      title: "Cinsel İşlev Bozuklukları",
+      text: "Cinsel işlev sorunlarına eşlik eden psikolojik zorlanmalar hakkında.",
+      href: "/blog/cinsel-islev-bozukluklari-psikolojik-eslikciler/",
+      image: "/assets/cinsel-islev-bozukluklari.jpg",
+      action: "Yazıyı Oku →",
+    },
+    ihtiyaclar: {
+      title: "Hepimizin Bir Şeylere İhtiyacı Var",
+      text: "Duygusal ihtiyaçları fark etmek, dile getirmek ve önemsemek üzerine.",
+      href: "/blog/hepimizin-bir-seylere-ihtiyaci-var/",
+      image: "/assets/hepimizin-bir-seylere-ihtiyaci-var.jpg",
+      action: "Yazıyı Oku →",
+    },
+  },
+  categories: {
+    depresyon: {
+      tests: ["depresyon", "anksiyete", "uykuStres"],
+      books: ["ruhHalininKisaTarihi", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      articles: ["tukenmislik", "travmaSessiz", "anksiyetePage"],
+    },
+    anksiyete: {
+      tests: ["anksiyete", "sosyalFobi", "depresyon"],
+      books: ["anksiyeteFobi", "mutlulukTuzagi", "iyiHissetmek"],
+      articles: ["titusAnksiyete", "panikPage", "uykuStresPage"],
+    },
+    okb: {
+      tests: ["okb", "anksiyete", "depresyon"],
+      books: ["takintilarlaBasaCikma", "beyinKilitlenince", "mutlulukTuzagi"],
+      articles: ["bilisselModel", "psikodinamikModel", "anksiyetePage"],
+    },
+    dehb: {
+      tests: ["dehb", "anksiyete", "depresyon"],
+      books: ["daginikZihinler", "drivenToDistraction", "mutlulukTuzagi"],
+      articles: ["uykuStresPage", "tukenmislik", "anksiyetePage"],
+    },
+    bipolar: {
+      tests: ["bipolar", "depresyon", "anksiyete"],
+      books: ["bipolarGuide", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      articles: ["psikofarmakoloji", "uykuStresPage", "dehbPage"],
+    },
+    uyku: {
+      tests: ["anksiyete", "depresyon", "uykuStres"],
+      books: ["mutlulukTuzagi", "insaninAnlamArayisi", "iyiHissetmek"],
+      articles: ["tukenmislik", "anksiyetePage", "depresyon"],
+    },
+    panik: {
+      tests: ["anksiyete", "sosyalFobi", "depresyon"],
+      books: ["anksiyeteFobi", "mutlulukTuzagi", "iyiHissetmek"],
+      articles: ["titusAnksiyete", "anksiyetePage", "uykuStresPage"],
+    },
+    travma: {
+      tests: ["anksiyete", "depresyon", "uykuStres"],
+      books: ["bedenKayitTutar", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      articles: ["travmaSessiz", "ihtiyaclar", "uykuStresPage"],
+    },
+    bagimlilik: {
+      tests: ["depresyon", "anksiyete", "uykuStres"],
+      books: ["bagimlilikKitabi", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      articles: ["bagimlilikBlog", "psikofarmakoloji", "ihtiyaclar"],
+    },
+    cinsel: {
+      tests: ["depresyon", "anksiyete", "sosyalFobi"],
+      books: ["iliskiKitabi", "mutlulukTuzagi", "insaninAnlamArayisi"],
+      articles: ["cinselBlog", "ihtiyaclar", "sadakat"],
+    },
+    fobi: {
+      tests: ["sosyalFobi", "anksiyete", "depresyon"],
+      books: ["anksiyeteFobi", "mutlulukTuzagi", "iyiHissetmek"],
+      articles: ["anksiyetePage", "titusAnksiyete", "panikPage"],
+    },
+    yeme: {
+      tests: ["depresyon", "anksiyete", "uykuStres"],
+      books: ["mutlulukTuzagi", "insaninAnlamArayisi", "iyiHissetmek"],
+      articles: ["ihtiyaclar", "tukenmislik", "anksiyetePage"],
+    },
+    psikotik: {
+      tests: ["bipolar", "depresyon", "anksiyete"],
+      books: ["insaninAnlamArayisi", "mutlulukTuzagi", "psikofarmakoloji"],
+      articles: ["bipolarPage", "psikofarmakoloji", "ihtiyaclar"],
+    },
+    ilac: {
+      tests: ["depresyon", "anksiyete", "bipolar"],
+      books: ["psikofarmakoloji", "iyiHissetmek", "mutlulukTuzagi"],
+      articles: ["psikofarmakoloji", "bipolarPage", "dehbPage"],
+    },
+    aile: {
+      tests: ["depresyon", "anksiyete", "uykuStres"],
+      books: ["aileKitabi", "iliskiKitabi", "insaninAnlamArayisi"],
+      articles: ["ihtiyaclar", "sadakat", "tukenmislik"],
+    },
+    surec: {
+      tests: ["depresyon", "anksiyete", "dehb"],
+      books: ["insaninAnlamArayisi", "mutlulukTuzagi", "iyiHissetmek"],
+      articles: ["psikofarmakoloji", "ihtiyaclar", "uykuStresPage"],
+    },
+  },
+};
+
+resourceHubContent.articles.sadakat = {
+  title: "Sadakat ve Güven",
+  text: "İlişkilerde güven, sınır ve emek üzerine bir blog yazısı.",
+  href: "/blog/sadakat-birbirine-guvenle-kalabilmek/",
+  image: "/assets/sadakat-guvenle-kalabilmek.jpg",
+  action: "Yazıyı Oku →",
+};
+
+resourceHubContent.articles.depresyon = {
+  title: "Depresyon ve Duygudurum",
+  text: "Depresyon belirtileri, değerlendirme ve tedavi süreci hakkında bilgi alın.",
+  href: "/depresyon/",
+  image: "/assets/depression-mood-hero.webp",
+  action: "Sayfaya Git →",
+};
+
+resourceHubContent.books.psikofarmakoloji = {
+  title: "Psikofarmakoloji Notları",
+  author: "Tedaviye uyum ve takip",
+  text: "İlaç tedavisi, takip ve tedaviye uyum konusunda destekleyici okuma.",
+  href: "/blog/psikofarmakolojide-uyum-ve-tedavi-direnci/",
+};
+
+const createResourceCard = (item, type) => {
+  const card = document.createElement("a");
+  card.className = type === "book" ? "resource-card resource-book-card" : "resource-card";
+  card.href = item.href;
+
+  if (/^https?:\/\//.test(item.href)) {
+    card.target = "_blank";
+    card.rel = "noopener";
+  }
+
+  if (item.image) {
+    const image = document.createElement("img");
+    image.className = type === "book" ? "resource-card-media resource-book-cover-image" : "resource-card-media";
+    image.src = item.image;
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.alt = `${item.title} görseli`;
+    card.appendChild(image);
+  } else {
+    const media = document.createElement("span");
+    media.className = type === "book" ? "resource-card-media resource-book-cover resource-book-cover-green" : "resource-card-media resource-card-icon";
+    media.setAttribute("aria-hidden", "true");
+    media.textContent = type === "book" ? "Kitap" : item.icon || "•";
+    card.appendChild(media);
+  }
+
+  const body = document.createElement("span");
+  body.className = "resource-card-body";
+
+  const title = document.createElement("strong");
+  title.textContent = item.title;
+  body.appendChild(title);
+
+  if (item.author) {
+    const author = document.createElement("span");
+    author.className = "resource-book-author";
+    author.textContent = item.author;
+    body.appendChild(author);
+  }
+
+  const text = document.createElement("small");
+  text.textContent = item.text;
+  body.appendChild(text);
+
+  const link = document.createElement("span");
+  link.className = "resource-link";
+  link.textContent = item.action || (type === "book" ? "Kitap Hakkında Bilgi →" : "Detaya Git →");
+  body.appendChild(link);
+
+  card.appendChild(body);
+  return card;
+};
+
+const renderResourceHubs = () => {
+  document.querySelectorAll("[data-resource-hub]").forEach((mount) => {
+    const categoryKey = mount.dataset.resourceHub;
+    const category = resourceHubContent.categories[categoryKey];
+
+    if (!category) {
+      return;
+    }
+
+    const section = document.createElement("section");
+    section.className = "depression-resource-hub";
+    section.setAttribute("aria-label", "İlgili kaynaklar ve değerlendirmeler");
+
+    const intro = document.createElement("div");
+    intro.className = "resource-hub-intro";
+    intro.innerHTML = '<p class="eyebrow">İlgili kaynaklar</p><h2>İlgili Kaynaklar ve Değerlendirmeler</h2><p>Bu başlıkla ilişkili testlere, destekleyici okuma önerilerine ve site içindeki benzer içeriklere buradan ulaşabilirsiniz.</p>';
+    section.appendChild(intro);
+
+    const columns = document.createElement("div");
+    columns.className = "resource-columns";
+
+    const columnDefinitions = [
+      { key: "tests", title: "İLGİLİ TESTLER", icon: "✓", type: "test", source: resourceHubContent.tests },
+      { key: "books", title: "ÖNERİLEN KİTAPLAR", icon: "▣", type: "book", source: resourceHubContent.books },
+      { key: "articles", title: "İLGİLİ YAZILAR", icon: "□", type: "article", source: resourceHubContent.articles },
+    ];
+
+    columnDefinitions.forEach((definition) => {
+      const column = document.createElement("section");
+      column.className = "resource-column";
+      column.setAttribute("aria-label", definition.title);
+
+      const heading = document.createElement("div");
+      heading.className = "resource-column-heading";
+
+      const icon = document.createElement("span");
+      icon.className = "resource-column-icon";
+      icon.setAttribute("aria-hidden", "true");
+      icon.textContent = definition.icon;
+
+      const title = document.createElement("h3");
+      title.textContent = definition.title;
+
+      heading.append(icon, title);
+      column.appendChild(heading);
+
+      (category[definition.key] || []).forEach((itemKey) => {
+        const item = definition.source[itemKey];
+        if (item) {
+          column.appendChild(createResourceCard(item, definition.type));
+        }
+      });
+
+      columns.appendChild(column);
+    });
+
+    const disclaimer = document.createElement("p");
+    disclaimer.className = "resource-disclaimer";
+    disclaimer.textContent = "Bu içerikler yalnızca bilgilendirme ve ön değerlendirme amacı taşır. Kişisel değerlendirme ve tedavi planlaması için psikiyatri uzmanı görüşü alınması önemlidir.";
+
+    section.append(columns, disclaimer);
+    mount.replaceWith(section);
+  });
+};
+
 const showUnderConstruction = (event) => {
   event.preventDefault();
   window.alert("Yapım aşamasında.");
@@ -48,6 +521,7 @@ const hideTemporaryAppointmentButtons = () => {
   });
 };
 
+renderResourceHubs();
 hideTemporaryAppointmentButtons();
 
 const applyChatContactOverrides = () => {
@@ -109,6 +583,35 @@ if (window.location.protocol === "file:") {
     });
   }
 }
+
+const getSitePath = (path) => {
+  if (window.location.protocol !== "file:") return path;
+  const siteScript = Array.from(document.scripts).find((script) => /(?:^|\/)script\.js$/.test(script.src));
+  return siteScript ? new URL(path.replace(/^\//, ""), siteScript.src).href : path;
+};
+
+const ensureGlossaryNavLink = () => {
+  document.querySelectorAll("[data-nav]").forEach((menu) => {
+    const existingGlossary = Array.from(menu.querySelectorAll("a")).find((link) => link.getAttribute("href")?.includes("psikiyatri-sozlugu"));
+    if (existingGlossary) {
+      existingGlossary.href = getSitePath("/psikiyatri-sozlugu/");
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.href = getSitePath("/psikiyatri-sozlugu/");
+    link.textContent = "Sözlük";
+
+    const blogLink = Array.from(menu.querySelectorAll("a")).find((item) => item.textContent.trim() === "Blog");
+    if (blogLink) {
+      blogLink.insertAdjacentElement("afterend", link);
+    } else {
+      menu.appendChild(link);
+    }
+  });
+};
+
+ensureGlossaryNavLink();
 
 if (contactDataElement) {
   try {
