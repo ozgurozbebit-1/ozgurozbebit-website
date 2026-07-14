@@ -61,7 +61,8 @@
         return;
       }
 
-      videos.forEach((video) => list.appendChild(createCard(video)));
+      const visibleVideos = list.classList.contains("compact") ? videos.slice(0, 3) : videos;
+      visibleVideos.forEach((video) => list.appendChild(createCard(video)));
     });
   }
 

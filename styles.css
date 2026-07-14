@@ -2417,6 +2417,47 @@ a.topic-card:hover {
 .weird-cases-home .weird-case-list {
   width: 100%;
   margin: 0;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.weird-cases-home .weird-case-card {
+  min-height: 0;
+  padding: 16px;
+}
+
+.weird-cases-home .weird-case-card.has-image {
+  display: grid;
+  grid-template-columns: minmax(132px, 172px) minmax(0, 1fr);
+  column-gap: 16px;
+  row-gap: 6px;
+  align-items: start;
+}
+
+.weird-cases-home .weird-case-cover-wrap {
+  grid-row: 1 / 5;
+  width: 100%;
+  max-height: none;
+  margin: 0;
+}
+
+.weird-cases-home .weird-case-card h2 {
+  font-size: clamp(20px, 1.7vw, 25px);
+  line-height: 1.05;
+}
+
+.weird-cases-home .weird-case-card p {
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.weird-cases-home .weird-case-badge {
+  padding: 5px 8px;
+  font-size: 10px;
+}
+
+.weird-cases-home .weird-case-card .text-link {
+  font-size: 14px;
 }
 
 .weird-case-card {
@@ -2712,6 +2753,15 @@ a.topic-card:hover {
 
   .weird-case-cover-wrap {
     width: min(calc(100% + 34px), 302px);
+  }
+
+  .weird-cases-home .weird-case-card.has-image {
+    display: flex;
+  }
+
+  .weird-cases-home .weird-case-cover-wrap {
+    width: min(calc(100% + 34px), 302px);
+    margin: 0 auto 8px;
   }
 
   .weird-case-detail h1 {
