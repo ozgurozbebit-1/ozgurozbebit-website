@@ -89,13 +89,6 @@ const resourceHubContent = {
       href: "https://www.google.com/search?q=%C4%B0nsan%C4%B1n+Anlam+Aray%C4%B1%C5%9F%C4%B1+Viktor+E.+Frankl",
       image: "https://covers.openlibrary.org/b/isbn/0807014273-L.jpg",
     },
-    mutlulukTuzagi: {
-      title: "Mutluluk Tuzağı",
-      author: "Russ Harris",
-      text: "Kabul ve Kararlılık Terapisi yaklaşımını anlaşılır bir dille anlatır.",
-      href: "https://www.google.com/search?q=Mutluluk+Tuza%C4%9F%C4%B1+Russ+Harris",
-      image: "https://covers.openlibrary.org/b/isbn/1590305841-L.jpg",
-    },
     anksiyeteFobi: {
       title: "Anksiyete ve Fobi Çalışma Kitabı",
       author: "Edmund J. Bourne",
@@ -273,72 +266,72 @@ const resourceHubContent = {
   categories: {
     depresyon: {
       tests: ["depresyon", "anksiyete", "uykuStres"],
-      books: ["ruhHalininKisaTarihi", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      books: ["ruhHalininKisaTarihi", "insaninAnlamArayisi"],
       articles: ["tukenmislik", "travmaSessiz", "anksiyetePage"],
     },
     anksiyete: {
       tests: ["anksiyete", "sosyalFobi", "depresyon"],
-      books: ["anksiyeteFobi", "mutlulukTuzagi", "iyiHissetmek"],
+      books: ["anksiyeteFobi", "iyiHissetmek"],
       articles: ["titusAnksiyete", "panikPage", "uykuStresPage"],
     },
     okb: {
       tests: ["okb", "anksiyete", "depresyon"],
-      books: ["takintilarlaBasaCikma", "beyinKilitlenince", "mutlulukTuzagi"],
+      books: ["takintilarlaBasaCikma", "beyinKilitlenince"],
       articles: ["bilisselModel", "psikodinamikModel", "anksiyetePage"],
     },
     dehb: {
       tests: ["dehb", "anksiyete", "depresyon"],
-      books: ["daginikZihinler", "drivenToDistraction", "mutlulukTuzagi"],
+      books: ["daginikZihinler", "drivenToDistraction"],
       articles: ["uykuStresPage", "tukenmislik", "anksiyetePage"],
     },
     bipolar: {
       tests: ["bipolar", "depresyon", "anksiyete"],
-      books: ["bipolarGuide", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      books: ["bipolarGuide", "insaninAnlamArayisi"],
       articles: ["psikofarmakoloji", "uykuStresPage", "dehbPage"],
     },
     uyku: {
       tests: ["anksiyete", "depresyon", "uykuStres"],
-      books: ["mutlulukTuzagi", "insaninAnlamArayisi", "iyiHissetmek"],
+      books: ["insaninAnlamArayisi", "iyiHissetmek"],
       articles: ["tukenmislik", "anksiyetePage", "depresyon"],
     },
     panik: {
       tests: ["anksiyete", "sosyalFobi", "depresyon"],
-      books: ["anksiyeteFobi", "mutlulukTuzagi", "iyiHissetmek"],
+      books: ["anksiyeteFobi", "iyiHissetmek"],
       articles: ["titusAnksiyete", "anksiyetePage", "uykuStresPage"],
     },
     travma: {
       tests: ["anksiyete", "depresyon", "uykuStres"],
-      books: ["bedenKayitTutar", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      books: ["bedenKayitTutar", "insaninAnlamArayisi"],
       articles: ["travmaSessiz", "ihtiyaclar", "uykuStresPage"],
     },
     bagimlilik: {
       tests: ["depresyon", "anksiyete", "uykuStres"],
-      books: ["bagimlilikKitabi", "insaninAnlamArayisi", "mutlulukTuzagi"],
+      books: ["bagimlilikKitabi", "insaninAnlamArayisi"],
       articles: ["bagimlilikBlog", "psikofarmakoloji", "ihtiyaclar"],
     },
     cinsel: {
       tests: ["depresyon", "anksiyete", "sosyalFobi"],
-      books: ["iliskiKitabi", "mutlulukTuzagi", "insaninAnlamArayisi"],
+      books: ["iliskiKitabi", "insaninAnlamArayisi"],
       articles: ["cinselBlog", "ihtiyaclar", "sadakat"],
     },
     fobi: {
       tests: ["sosyalFobi", "anksiyete", "depresyon"],
-      books: ["anksiyeteFobi", "mutlulukTuzagi", "iyiHissetmek"],
+      books: ["anksiyeteFobi", "iyiHissetmek"],
       articles: ["anksiyetePage", "titusAnksiyete", "panikPage"],
     },
     yeme: {
       tests: ["depresyon", "anksiyete", "uykuStres"],
-      books: ["mutlulukTuzagi", "insaninAnlamArayisi", "iyiHissetmek"],
+      books: ["insaninAnlamArayisi", "iyiHissetmek"],
       articles: ["ihtiyaclar", "tukenmislik", "anksiyetePage"],
     },
     psikotik: {
       tests: ["bipolar", "depresyon", "anksiyete"],
-      books: ["insaninAnlamArayisi", "mutlulukTuzagi", "psikofarmakoloji"],
+      books: ["insaninAnlamArayisi", "psikofarmakoloji"],
       articles: ["bipolarPage", "psikofarmakoloji", "ihtiyaclar"],
     },
     ilac: {
       tests: ["depresyon", "anksiyete", "bipolar"],
-      books: ["psikofarmakoloji", "iyiHissetmek", "mutlulukTuzagi"],
+      books: ["psikofarmakoloji", "iyiHissetmek"],
       articles: ["psikofarmakoloji", "bipolarPage", "dehbPage"],
     },
     aile: {
@@ -348,7 +341,7 @@ const resourceHubContent = {
     },
     surec: {
       tests: ["depresyon", "anksiyete", "dehb"],
-      books: ["insaninAnlamArayisi", "mutlulukTuzagi", "iyiHissetmek"],
+      books: ["insaninAnlamArayisi", "iyiHissetmek"],
       articles: ["psikofarmakoloji", "ihtiyaclar", "uykuStresPage"],
     },
   },
