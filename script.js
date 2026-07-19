@@ -643,6 +643,30 @@ const ensureGlossaryNavLink = () => {
 
 ensureGlossaryNavLink();
 
+const ensureResourceCenterNavLink = () => {
+  document.querySelectorAll("[data-nav]").forEach((menu) => {
+    const existingResourceCenter = Array.from(menu.querySelectorAll("a")).find((link) => link.getAttribute("href")?.includes("pdf-rehberler"));
+    if (existingResourceCenter) {
+      existingResourceCenter.href = getSitePath("/pdf-rehberler/");
+      existingResourceCenter.textContent = "Kaynak Merkezi";
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.href = getSitePath("/pdf-rehberler/");
+    link.textContent = "Kaynak Merkezi";
+
+    const testCenterLink = Array.from(menu.querySelectorAll("a")).find((item) => item.textContent.trim() === "Test Merkezi");
+    if (testCenterLink) {
+      testCenterLink.insertAdjacentElement("afterend", link);
+    } else {
+      menu.appendChild(link);
+    }
+  });
+};
+
+ensureResourceCenterNavLink();
+
 if (contactDataElement) {
   try {
     const contact = JSON.parse(contactDataElement.textContent);
@@ -907,6 +931,7 @@ if (gadRoot) {
   const levelEl = gadRoot.querySelector("[data-gad-level]");
   const progressEl = gadRoot.querySelector("[data-gad-progress]");
   const noteEl = gadRoot.querySelector("[data-gad-note]");
+  const guideSuggestion = gadRoot.querySelector("[data-gad-guide]");
 
   const getGadLevel = (score) => {
     if (score <= 4) return "Minimal düzey";
@@ -957,6 +982,7 @@ if (gadRoot) {
     noteEl.textContent = total >= 8
       ? "8 ve üzeri puanlarda daha ayrıntılı klinik değerlendirme önerilir."
       : "Sonuçlar klinik görüşme ve günlük yaşam etkisiyle birlikte değerlendirilmelidir.";
+    if (guideSuggestion) guideSuggestion.hidden = selected.length === 0;
   });
 }
 
@@ -990,6 +1016,7 @@ if (ocdRoot) {
   const levelEl = ocdRoot.querySelector("[data-ocd-level]");
   const progressEl = ocdRoot.querySelector("[data-ocd-progress]");
   const noteEl = ocdRoot.querySelector("[data-ocd-note]");
+  const guideSuggestion = ocdRoot.querySelector("[data-ocd-guide]");
 
   const getOcdLevel = (score) => {
     if (score <= 18) return "Düşük düzey";
@@ -1042,6 +1069,7 @@ if (ocdRoot) {
     levelEl.textContent = getOcdLevel(total);
     progressEl.textContent = `14 sorudan ${selected.length} tanesi yanıtlandı.`;
     noteEl.textContent = getOcdNote(total);
+    if (guideSuggestion) guideSuggestion.hidden = selected.length === 0;
   });
 }
 

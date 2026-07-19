@@ -55,6 +55,7 @@
   <url><loc>https://www.ozgurozbebit.com.tr/psikiyatride-en-tuhaf-vakalar/fregoli-sendromu/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/psikiyatride-en-tuhaf-vakalar/anton-sendromu/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/psikiyatride-en-tuhaf-vakalar/reduplikatif-paramnezi/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/psikiyatride-en-tuhaf-vakalar/oznel-cift-sanrisi/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/dehb/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/anksiyete/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/okb/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -81,4 +82,11 @@
   <url><loc>https://www.ozgurozbebit.com.tr/dikkat-eksikligi-testi/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/okb-testi/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.ozgurozbebit.com.tr/sosyal-fobi-testi/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/panik-atak-acil-durum-rehberi/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/kaygi-gunlugu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/okb-takip-formu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/cocuk-davranis-gozlem-formu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/uyku-hijyeni-rehberi/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ozgurozbebit.com.tr/pdf-rehberler/vajinismusu-anlamak/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
