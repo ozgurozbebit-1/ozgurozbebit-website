@@ -97,14 +97,26 @@
     const youtubeId = extractYouTubeId(video.youtubeUrl);
     if (player) {
       if (youtubeId) {
-        player.innerHTML = `
-          <iframe
-            src="https://www.youtube.com/embed/${youtubeId}"
-            title="${video.title}"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        `;
+        if (window.location.protocol === "file:") {
+          const thumbnail = video.coverImage || video.youtubeThumbnail || `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+          player.innerHTML = `
+            <a class="youtube-file-fallback" href="${video.youtubeUrl}" target="_blank" rel="noopener">
+              <img src="${thumbnail}" alt="${video.imageAlt || `${video.title} kısa video kapak görseli`}">
+              <span>Videoyu YouTube'da izleyin</span>
+            </a>
+          `;
+        } else {
+          const origin = window.location.origin ? `?origin=${encodeURIComponent(window.location.origin)}&rel=0&playsinline=1` : "?rel=0&playsinline=1";
+          player.innerHTML = `
+            <iframe
+              src="https://www.youtube.com/embed/${youtubeId}${origin}"
+              title="${video.title}"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          `;
+        }
       } else {
         player.innerHTML = '<div class="video-placeholder">YouTube bağlantısı eklendiğinde video burada görünecek.</div>';
       }
