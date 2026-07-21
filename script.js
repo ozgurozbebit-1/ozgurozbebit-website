@@ -11,6 +11,7 @@ const mdqRoot = document.querySelector("[data-mdq]");
 const gadRoot = document.querySelector("[data-gad]");
 const ocdRoot = document.querySelector("[data-ocd]");
 const asrsRoot = document.querySelector("[data-asrs]");
+const socialPhobiaRoot = document.querySelector("[data-social-phobia]");
 const contactDataElement = document.querySelector("#site-contact-data");
 
 const contactOverrides = {
@@ -1156,4 +1157,171 @@ if (asrsRoot) {
   });
 
   whatsappButton?.addEventListener("click", showUnderConstruction);
+}
+
+if (socialPhobiaRoot) {
+  const socialPhobiaQuestions = [
+    "Başkalarının yanında konuşurken hata yapmaktan veya küçük düşmekten endişelenirim.",
+    "Tanımadığım kişilerle konuşmam gerektiğinde belirgin bir gerginlik yaşarım.",
+    "Topluluk önünde konuşmam gereken durumlardan kaçınırım.",
+    "İnsanların beni izlediğini düşündüğümde rahat hareket etmekte zorlanırım.",
+    "Bir gruba sonradan katılmak veya konuşmaya dâhil olmak benim için zordur.",
+    "Başkalarının yanında yemek yerken, yazı yazarken veya bir iş yaparken gerilirim.",
+    "Yetkili veya otorite konumundaki biriyle konuşurken yoğun kaygı yaşarım.",
+    "Sosyal ortamlardan önce uzun süre olumsuz şeyler düşünürüm.",
+    "Sosyal bir ortamdan sonra söylediklerimi ve yaptıklarımı tekrar tekrar değerlendiririm.",
+    "Kaygı yaşayacağımı düşündüğüm için davetleri, toplantıları veya görüşmeleri ertelerim.",
+    "Eleştirilme, reddedilme veya yetersiz bulunma ihtimali beni fazlasıyla rahatsız eder.",
+    "Sosyal ortamlarda yüz kızarması, terleme, titreme, çarpıntı veya sesin titremesi gibi belirtiler yaşarım.",
+    "Kaygım iş, okul, aile veya arkadaşlık ilişkilerimi olumsuz etkiler.",
+    "Sosyal ortamlarda kendimi rahatlatmak için telefona bakma, sessiz kalma veya bir yakının yanından ayrılmama gibi güvenlik davranışları kullanırım.",
+    "Sosyal kaygı nedeniyle yapmak istediğim bazı şeyleri yapamadığımı hissederim.",
+  ];
+  const socialPhobiaOptions = [
+    { value: 0, label: "Hiçbir zaman" },
+    { value: 1, label: "Nadiren" },
+    { value: 2, label: "Bazen" },
+    { value: 3, label: "Sık sık" },
+    { value: 4, label: "Neredeyse her zaman" },
+  ];
+  const socialPhobiaResults = [
+    {
+      max: 11,
+      level: "Belirgin sosyal kaygı bulgusu yok",
+      note: "Yanıtlarınız, sosyal ortamlardaki kaygının şu anda yaşamınızı belirgin ölçüde zorlaştırmadığını düşündürüyor. Zaman zaman yaşanan çekingenlik ve heyecan olağandır.",
+    },
+    {
+      max: 23,
+      level: "Hafif düzeyde sosyal kaygı belirtileri",
+      note: "Bazı sosyal ortamlarda kaygı veya çekingenlik yaşayabilirsiniz. Bu durumun hangi ortamlarda arttığını ve kaçınmaya yol açıp açmadığını gözlemlemek yararlı olabilir.",
+    },
+    {
+      max: 35,
+      level: "Orta düzeyde sosyal kaygı belirtileri",
+      note: "Sosyal kaygının bazı durumlarda davranışlarınızı ve günlük yaşamınızı etkiliyor olabileceği görülüyor. Kaçınma davranışları artıyorsa profesyonel değerlendirme faydalı olabilir.",
+    },
+    {
+      max: 47,
+      level: "Yüksek düzeyde sosyal kaygı belirtileri",
+      note: "Yanıtlarınız, sosyal ortamlarda belirgin kaygı ve kaçınma yaşadığınızı düşündürüyor. Bu durum işlevselliğinizi etkiliyorsa bir psikiyatri uzmanıyla görüşmeniz önerilir.",
+    },
+    {
+      max: 60,
+      level: "Çok yüksek düzeyde sosyal kaygı belirtileri",
+      note: "Sosyal kaygı belirtileriniz günlük yaşamınızı belirgin biçimde etkiliyor olabilir. Ayrıntılı değerlendirme ve uygun destek için bir psikiyatri uzmanına başvurmanız önemlidir.",
+    },
+  ];
+
+  const form = socialPhobiaRoot.querySelector("[data-social-phobia-form]");
+  const questionsWrap = socialPhobiaRoot.querySelector("[data-social-phobia-questions]");
+  const submitButton = socialPhobiaRoot.querySelector("[data-social-phobia-submit]");
+  const resetButton = socialPhobiaRoot.querySelector("[data-social-phobia-reset]");
+  const progressText = socialPhobiaRoot.querySelector("[data-social-phobia-progress-text]");
+  const progressPercent = socialPhobiaRoot.querySelector("[data-social-phobia-percent]");
+  const progressBar = socialPhobiaRoot.querySelector("[data-social-phobia-progress-bar]");
+  const errorEl = socialPhobiaRoot.querySelector("[data-social-phobia-error]");
+  const resultEl = socialPhobiaRoot.querySelector("[data-social-phobia-result]");
+  const scoreEl = socialPhobiaRoot.querySelector("[data-social-phobia-score]");
+  const levelEl = socialPhobiaRoot.querySelector("[data-social-phobia-level]");
+  const noteEl = socialPhobiaRoot.querySelector("[data-social-phobia-note]");
+  const reviewEl = socialPhobiaRoot.querySelector("[data-social-phobia-review]");
+  const answers = Array(socialPhobiaQuestions.length).fill(null);
+
+  const getSocialPhobiaResult = (score) => socialPhobiaResults.find((result) => score <= result.max) || socialPhobiaResults.at(-1);
+
+  const updateSocialPhobiaProgress = () => {
+    const answered = answers.filter((answer) => answer !== null).length;
+    const percent = Math.round((answered / socialPhobiaQuestions.length) * 100);
+
+    progressText.textContent = `${answered} / ${socialPhobiaQuestions.length} yanıtlandı`;
+    progressPercent.textContent = `%${percent}`;
+    progressBar.style.width = `${percent}%`;
+  };
+
+  const clearSocialPhobiaError = () => {
+    errorEl.hidden = true;
+    errorEl.textContent = "";
+  };
+
+  socialPhobiaQuestions.forEach((question, index) => {
+    const fieldset = document.createElement("fieldset");
+    fieldset.className = "phq-question social-phobia-question";
+    fieldset.dataset.socialPhobiaQuestionIndex = String(index);
+
+    const legend = document.createElement("legend");
+    legend.textContent = `${index + 1}. ${question}`;
+    fieldset.appendChild(legend);
+
+    const optionWrap = document.createElement("div");
+    optionWrap.className = "phq-options social-phobia-options";
+
+    socialPhobiaOptions.forEach((option) => {
+      const label = document.createElement("label");
+      label.className = "phq-option";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = `social-phobia-${index}`;
+      input.value = String(option.value);
+
+      const text = document.createElement("span");
+      text.textContent = `${option.value} = ${option.label}`;
+
+      label.append(input, text);
+      optionWrap.appendChild(label);
+    });
+
+    fieldset.appendChild(optionWrap);
+    questionsWrap.appendChild(fieldset);
+  });
+
+  const showSocialPhobiaResult = () => {
+    const firstMissing = answers.findIndex((answer) => answer === null);
+
+    if (firstMissing !== -1) {
+      const missingQuestion = questionsWrap.querySelector(`[data-social-phobia-question-index="${firstMissing}"]`);
+      errorEl.textContent = "Lütfen sonucu görmek için tüm soruları yanıtlayın.";
+      errorEl.hidden = false;
+      missingQuestion?.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+
+    const score = answers.reduce((sum, answer) => sum + answer, 0);
+    const result = getSocialPhobiaResult(score);
+
+    scoreEl.textContent = `${score} / 60`;
+    levelEl.textContent = result.level;
+    noteEl.textContent = result.note;
+    reviewEl.innerHTML = "";
+    socialPhobiaQuestions.forEach((question, index) => {
+      const item = document.createElement("li");
+      const option = socialPhobiaOptions.find((entry) => entry.value === answers[index]);
+      item.innerHTML = `<strong>${index + 1}. ${question}</strong><span>${option.value} = ${option.label}</span>`;
+      reviewEl.appendChild(item);
+    });
+    resultEl.hidden = false;
+    clearSocialPhobiaError();
+    resultEl.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  form.addEventListener("change", (event) => {
+    if (!event.target.matches('input[type="radio"]')) return;
+    const index = Number(event.target.name.replace("social-phobia-", ""));
+    answers[index] = Number(event.target.value);
+    clearSocialPhobiaError();
+    updateSocialPhobiaProgress();
+  });
+
+  submitButton.addEventListener("click", showSocialPhobiaResult);
+
+  resetButton.addEventListener("click", () => {
+    answers.fill(null);
+    form.reset();
+    resultEl.hidden = true;
+    clearSocialPhobiaError();
+    updateSocialPhobiaProgress();
+    socialPhobiaRoot.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  updateSocialPhobiaProgress();
 }
