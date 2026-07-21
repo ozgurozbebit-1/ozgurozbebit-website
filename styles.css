@@ -2252,6 +2252,7 @@ a.topic-card:hover {
   display: grid;
   gap: 18px;
   margin-top: 34px;
+  scroll-margin-top: 120px;
   border: 1px solid rgba(56, 90, 79, 0.18);
   border-radius: 18px;
   background: linear-gradient(145deg, rgba(255, 253, 248, 0.98), rgba(246, 243, 237, 0.76));
