@@ -1667,6 +1667,26 @@ a.topic-card:hover {
   font-size: clamp(21px, 2.5vw, 26px);
 }
 
+.blog-article-inline-image {
+  margin: clamp(38px, 6vw, 58px) 0;
+}
+
+.blog-article-inline-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.blog-article-inline-image figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .blog-article-content h2 {
   margin: clamp(46px, 7vw, 72px) 0 22px;
   font-size: clamp(30px, 4vw, 44px);
