@@ -154,6 +154,17 @@ window.WEIRD_CASES_VIDEOS = [
     youtubeUrl: "https://youtube.com/shorts/4uhdxkT0OkY?feature=share"
   },
   {
+    slug: "somatoparafreni",
+    title: "“Bu Kol Benim Değil!” Kendi Kolunu Başkasına Ait Sanan Kadın",
+    coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
+    youtubeThumbnail: "https://img.youtube.com/vi/wbaqH9FEHLI/hqdefault.jpg",
+    imageAlt: "Somatoparafreni kısa video kapak görseli",
+    pageTitle: "“Bu Kol Benim Değil!” Kendi Kolunu Başkasına Ait Sanan Kadın",
+    description: "Somatoparafrenide kişi kendi kolunu görüp ona dokunabilse de o uzvun kendisine ait olduğuna inanmayabilir.",
+    detailHtml: "<p>Bir kadın kendi koluna baktı ve son derece ciddi bir şekilde şunu söyledi: “Bu kol benim değil. Yanımdaki kadının.” Üstelik kolunu görüyor, ona dokunuyor ve bedenine bağlı olduğunu da fark ediyor. Buna rağmen o kolun kendisine ait olduğuna inanmıyor.</p><p>Bu sıra dışı durumun adı <strong>somatoparafreni</strong>. Genellikle beynin beden algısı, mekânsal farkındalık ve uzuvların bize ait olduğu hissiyle ilişkili bazı bölgelerindeki hasarlarla bağlantılı olarak ortaya çıkabilir.</p><p>Buradaki sorun kolun hareket etmesi değildir. Sorun, beynin o uzuv için oluşturduğu “Bu benim” hissinin kaybolmasıdır. Beynimiz bize yalnızca hareket etme gücü vermez; aynı zamanda bedenimizin hangi parçalarının bize ait olduğunu da sürekli olarak bildirir.</p><p>Somatoparafreni, görmek, dokunmak ve bir şeyin bize ait olduğunu hissetmenin aslında birbirinden farklı süreçler olduğunu gösterir. Kişi kolunu görebilir, onun işlevini fark edebilir; ancak yine de bedenine ait olduğuna dair temel inancı kaybolmuş olabilir.</p><p>Peki beyniniz bir gün kendi kolunuzu size yabancı gösterseydi, siz ne hissederdiniz?</p><p>Bu içerik, <strong>Psikiyatride İlginç Vakalar</strong> serisinin bir parçasıdır ve eğitim amacıyla hazırlanmıştır.</p>",
+    youtubeUrl: "https://youtube.com/shorts/wbaqH9FEHLI?feature=share"
+  },
+  {
     slug: "reduplikatif-paramnezi",
     title: "Evimin Bir Kopyası Var! | Reduplikatif Paramnezi",
     coverImage: "/assets/images/weird-cases/covers/psikiyatride-en-tuhaf-vakalar.png",
