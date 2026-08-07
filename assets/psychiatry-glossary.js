@@ -372,7 +372,7 @@ const glossaryDetailPages = {
   "Psikotik özellik": "psikotik-ozellik",
   "Pozitif belirti": "pozitif-belirti",
   "Dezorganize davranış": "dezorganize-davranis",
-  Katatoni: "katatoni",
+  Affekt: "affekt",
   "Kişilik bozukluğu": "kisilik-bozuklugu",
   "Borderline kişilik örüntüsü": "borderline-kisilik-oruntusu",
   "Narsisistik kişilik örüntüsü": "narsisistik-kisilik-oruntusu",
