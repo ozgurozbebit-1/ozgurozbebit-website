@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { pilotTerms } from "./glossary-pilot-data.mjs";
+import { allGlossaryPilotTerms as pilotTerms, thirdBatchSlugs } from "./glossary-pilot-data.mjs";
 
 const root = process.cwd();
 const glossaryTerms = new Set(
@@ -81,8 +81,8 @@ function render(term) {
 }
 
 const requested = process.argv.slice(2);
-const selected = requested.includes("--second-batch") ? pilotTerms.slice(40) : (requested.length ? pilotTerms.filter((term) => requested.includes(term.slug)) : []);
-const unknownSlugs = requested.filter((slug) => slug !== "--second-batch" && !selected.some((term) => term.slug === slug));
+const selected = requested.includes("--third-batch") ? pilotTerms.filter((term) => thirdBatchSlugs.includes(term.slug)) : (requested.includes("--second-batch") ? pilotTerms.slice(40, 80) : (requested.length ? pilotTerms.filter((term) => requested.includes(term.slug)) : []));
+const unknownSlugs = requested.filter((slug) => slug !== "--second-batch" && slug !== "--third-batch" && !selected.some((term) => term.slug === slug));
 const errors = validateTerms();
 const linkErrors = pilotTerms.flatMap((term) => term.relatedSiteLinks.filter((link) => !siteLinkExists(link.href)).map((link) => `${term.term}: bulunamayan site bağlantısı ${link.href}`));
 const rendered = selected.map((term) => ({ term, html: render(term) }));
