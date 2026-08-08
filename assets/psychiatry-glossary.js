@@ -304,6 +304,16 @@ Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bi
 `;
 
 const glossaryDetailPages = {
+  "Açık uçlu soru": "acik-uclu-soru",
+  "Adaptasyon": "adaptasyon",
+  "Afazi": "afazi",
+  "Akut stres tepkisi": "akut-stres-tepkisi",
+  "Apraksi": "apraksi",
+  "Bilinç": "bilinc",
+  "Blokaj": "blokaj",
+  "Dezorganize konuşma": "dezorganize-konusma",
+  "Ekolali": "ekolali",
+  "Ekopraksi": "ekopraksi",
   Anhedoni: "anhedoni",
   Ajitasyon: "ajitasyon",
   Depersonalizasyon: "depersonalizasyon",

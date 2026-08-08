@@ -2067,5 +2067,289 @@ const psychosisBaseTerm = defineTerm({
 });
 
 export const thirdBatchSlugs = [...pilotTerms.slice(20, 40), ...thirdAdditionalTerms.filter((term) => !excludedThirdSlugs.has(term.slug)), ...thirdReplacements].map((term) => term.slug);
-export const allGlossaryPilotTerms = [...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm, derealizationBaseTerm, maniBaseTerm, hypomaniaBaseTerm, psychosisBaseTerm]
+
+const fourthBatchNewTerms = [
+  defineTerm({
+    term: "Açık uçlu soru",
+    slug: "acik-uclu-soru",
+    shortDefinition: "Açık uçlu soru, kişinin düşünce, duygu ve deneyimlerini yalnızca evet-hayır biçiminde yanıtlamak yerine kendi sözcükleriyle ayrıntılı olarak anlatmasına alan açan soru biçimidir.",
+    intro: "Psikiyatrik görüşmede açık uçlu sorular kişinin yaşadıklarını kendi öncelik sırasıyla anlatmasını kolaylaştırabilir. Amaç yalnız daha fazla bilgi toplamak değil, deneyimin kişiye özgü anlamını da anlayabilmektir.",
+    sections: [
+      section("Açık Uçlu Soru Nasıl Sorulur?", "“Son günlerde sizi en çok zorlayan şey nedir?” veya “Bu durum başladığından beri hayatınızda neler değişti?” gibi sorular tek bir kısa cevabı zorunlu kılmaz. Kişi önemli gördüğü ayrıntıları seçebilir ve görüşmenin başlangıcında kendi anlatısını daha serbest biçimde kurabilir."),
+      section("Kapalı Uçlu Sorudan Farkı Nedir?", "Kapalı uçlu sorular belirli bir bilgiyi netleştirmek için yararlıdır ve çoğu zaman kısa yanıt ister. Açık uçlu soru ise konuyu genişletir. Klinik görüşmede iki soru biçimi birbirinin alternatifi değil, farklı amaçlarla birlikte kullanılan araçlardır."),
+      section("Psikiyatrik Görüşmede Neden Kullanılır?", "Belirtilerin kişi tarafından nasıl yaşandığını, hangi olayların önemli bulunduğunu ve günlük işlevselliğin nasıl etkilendiğini anlamaya yardımcı olabilir. Ayrıca görüşmecinin çok erken varsayım yapmasını azaltarak kişinin kendi sözcüklerine daha fazla yer verilmesini sağlar."),
+      section("Her Konuda Açık Uçlu Soru Yeterli midir?", "Hayır. Süre, sıklık, ilaç kullanımı, güvenlik riski veya belirli tıbbi ayrıntılar gerektiğinde daha doğrudan sorularla netleştirilir. İyi bir klinik görüşme serbest anlatım ile hedefli değerlendirme arasında dengeli biçimde ilerler.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" }
+    ],
+    seo: {
+      title: "Açık Uçlu Soru Nedir? | Psikiyatri Sözlüğü",
+      description: "Açık uçlu sorunun psikiyatrik görüşmedeki işlevini, kapalı uçlu sorulardan farkını ve kullanım amacını açıklar.",
+      ogTitle: "Açık Uçlu Soru Nedir?",
+      ogDescription: "Açık uçlu soruların klinik görüşmede neden kullanıldığını sade biçimde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin deneyimlerini kendi sözcükleriyle ayrıntılı biçimde anlatmasına alan açan soru biçimi."
+    }
+  }),
+
+  defineTerm({
+    term: "Adaptasyon",
+    slug: "adaptasyon",
+    shortDefinition: "Adaptasyon, kişinin yeni, değişen veya zorlayıcı yaşam koşullarına düşünsel, duygusal ve davranışsal olarak uyum sağlayabilme sürecidir.",
+    intro: "Adaptasyon tek seferlik bir tepki değil, koşullar değiştikçe yeniden şekillenebilen dinamik bir süreçtir. Yeni duruma uyum sağlamak her zaman rahatsızlık yaşamamak anlamına gelmez.",
+    sections: [
+      section("Adaptasyon Süreci Nasıl İşler?", "Kişi önce yeni koşulu anlamlandırmaya, ardından günlük düzenini ve beklentilerini buna göre değiştirmeye çalışabilir. Taşınma, iş değişikliği, hastalık, ilişki değişiklikleri veya yaşamın farklı dönemlerine geçiş adaptasyon gerektiren durumlara örnek olabilir."),
+      section("Stres ile İlişkisi Nedir?", "Yeni koşullar belirsizlik ve kontrol kaybı hissi yaratarak stres yanıtını artırabilir. Zaman içinde kişi sorun çözme yolları geliştirdikçe ve çevresel kaynaklara eriştikçe stres azalabilir. Ancak aynı olayın uyum yükü kişiden kişiye farklı olabilir."),
+      section("Adaptasyon ile Uyum Bozukluğu Aynı Şey midir?", "Hayır. Adaptasyon insan yaşamının doğal bir parçasıdır. Uyum bozukluğu ise belirli bir stres etkeni sonrasında ortaya çıkan, kişinin koşullarına göre belirgin sıkıntı veya işlev kaybıyla ilişkili klinik bir tablodur."),
+      section("Uyumu Etkileyen Etkenler Nelerdir?", "Önceki deneyimler, sosyal destek, ekonomik koşullar, fiziksel sağlık, kişisel baş etme yolları ve değişimin niteliği uyum sürecini etkileyebilir. Adaptasyon kapasitesi sabit bir kişilik özelliği gibi değerlendirilmemelidir. Aynı kişi farklı yaşam dönemlerinde benzer değişikliklere farklı biçimlerde uyum sağlayabilir.")
+    ],
+    relatedTerms: [
+      { term: "Uyum bozukluğu", slug: "uyum-bozuklugu" },
+      { term: "Stres yanıtı", slug: "stres-yaniti" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "Adaptasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Adaptasyonun değişen yaşam koşullarına uyum sürecindeki anlamını ve uyum bozukluğundan farkını açıklar.",
+      ogTitle: "Adaptasyon Nedir?",
+      ogDescription: "Adaptasyon kavramını stres, değişim ve günlük işlevsellik bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Yeni veya değişen yaşam koşullarına düşünsel, duygusal ve davranışsal olarak uyum sağlama süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Afazi",
+    slug: "afazi",
+    shortDefinition: "Afazi, daha önce kazanılmış dil becerilerinin beyin hasarı veya beyin işlevlerindeki bozulma nedeniyle konuşma, anlama, okuma ya da yazma alanlarında etkilenmesidir.",
+    intro: "Afazi bir zekâ kaybı anlamına gelmez ve psikiyatrik bir hastalık değildir. Bununla birlikte iletişim güçlüğü ruhsal durum değerlendirmesini önemli ölçüde etkileyebileceği için psikiyatride de tanınması gereken bir nörolojik belirtidir.",
+    sections: [
+      section("Afazi Nasıl Görülebilir?", "Bazı kişiler söylemek istedikleri sözcüğü bulmakta zorlanırken bazıları akıcı konuşmasına rağmen sözcükleri uygun anlamda kullanamayabilir. Söylenenleri anlama, isimlendirme, tekrar etme, okuma veya yazma becerileri farklı ölçülerde etkilenebilir."),
+      section("Konuşamamak Her Zaman Afazi midir?", "Hayır. Konuşma güçlüğü motor konuşma bozuklukları, bilinç değişikliği, yoğun konfüzyon veya başka nörolojik ve tıbbi durumlarla ilişkili olabilir. Afazide temel sorun dil sisteminin işlenmesindedir ve hangi dil alanlarının etkilendiği nörolojik değerlendirmede incelenir."),
+      section("Psikiyatrik Değerlendirmeyi Nasıl Etkiler?", "Dil bozukluğu olan kişi soruları anlamakta veya deneyimini ifade etmekte zorlanabilir. Bu durum yanlışlıkla düşünce bozukluğu, ilgisizlik veya iş birliği göstermeme şeklinde yorumlanmamalıdır. Görüşme yöntemi kişinin iletişim kapasitesine göre uyarlanmalıdır."),
+      section("Ani Afazi Neden Acildir?", "Daha önce olmayan konuşma veya anlama bozukluğunun aniden başlaması inme gibi acil nörolojik durumların belirtisi olabilir. Özellikle yüz veya kol güçsüzlüğü, görme değişikliği, denge sorunu ya da ani bilinç değişikliği eşlik ediyorsa acil tıbbi değerlendirme gerekir.")
+    ],
+    relatedTerms: [
+      { term: "Bilinç", slug: "bilinc" },
+      { term: "Konfüzyon", slug: "konfuzyon" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Dezorganize konuşma", slug: "dezorganize-konusma" }
+    ],
+    seo: {
+      title: "Afazi Nedir? | Psikiyatri Sözlüğü",
+      description: "Afazinin dil becerileri üzerindeki etkisini, psikiyatrik belirtilerden farkını ve ani başlangıçta neden acil olduğunu açıklar.",
+      ogTitle: "Afazi Nedir?",
+      ogDescription: "Afaziyi konuşma güçlüğü ve nörolojik değerlendirme bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Beyin hasarı veya işlev bozukluğu nedeniyle kazanılmış dil becerilerinde ortaya çıkan bozulma."
+    }
+  }),
+
+  defineTerm({
+    term: "Akut stres tepkisi",
+    slug: "akut-stres-tepkisi",
+    shortDefinition: "Akut stres tepkisi, ani ve yoğun bir tehdit veya zorlayıcı olayın hemen ardından ortaya çıkabilen kısa süreli bedensel, duygusal, bilişsel ve davranışsal tepkileri anlatan genel bir terimdir.",
+    intro: "Şaşkınlık, korku, bedensel uyarılma veya geçici dalgınlık gibi belirtiler ağır bir olayın erken döneminde görülebilir. Bu tepkilerin varlığı tek başına kalıcı bir psikiyatrik bozukluk gelişeceği anlamına gelmez.",
+    sections: [
+      section("Akut Stres Tepkisi Nasıl Görülebilir?", "Kişi olayın hemen ardından titreme, çarpıntı, yoğun korku, donakalma, çevresine yabancılaşma hissi, dikkatini toplamakta güçlük veya olayla ilgili görüntülerin zihnine tekrar gelmesini yaşayabilir. Tepkiler kişinin deneyimine ve olayın niteliğine göre değişir."),
+      section("Normal Stres Yanıtından Farkı Nedir?", "Tehdit karşısında bedensel uyarılma doğal bir korunma sistemidir. Akut stres tepkisi ifadesi bu yanıtların ani ve zorlayıcı bir olay sonrasında belirginleşmesini anlatır. Yoğunluk tek başına tanı koymak için yeterli değildir."),
+      section("Akut Stres Bozukluğu ile Aynı Şey midir?", "Hayır. Akut stres tepkisi daha genel ve erken dönem tepkilerini tanımlayan bir ifadedir. Akut stres bozukluğu ise travmatik olay sonrasında belirli belirti kümeleri, süre ve işlevsellik ölçütleriyle değerlendirilen klinik bir tanıdır."),
+      section("Ne Zaman Değerlendirme Gerekir?", "Kişi temel gereksinimlerini karşılayamıyorsa, belirgin dissosiyasyon veya bilinç değişikliği varsa, güvenliğini sağlayamıyorsa ya da belirtiler giderek ağırlaşıyorsa profesyonel değerlendirme gerekir. Bedensel yaralanma olasılığı bulunan olaylarda tıbbi değerlendirme de ihmal edilmemelidir.")
+    ],
+    relatedTerms: [
+      { term: "Akut stres bozukluğu", slug: "akut-stres-bozuklugu" },
+      { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" },
+      { term: "Stres yanıtı", slug: "stres-yaniti" },
+      { term: "Dissosiyasyon", slug: "dissosiyasyon" }
+    ],
+    seo: {
+      title: "Akut Stres Tepkisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Akut stres tepkisinin zorlayıcı olayların hemen ardından nasıl görülebileceğini ve akut stres bozukluğundan farkını açıklar.",
+      ogTitle: "Akut Stres Tepkisi Nedir?",
+      ogDescription: "Zorlayıcı olayların hemen ardından gelişebilen kısa süreli stres tepkilerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ani ve zorlayıcı bir olayın hemen ardından görülebilen kısa süreli stres tepkileri."
+    }
+  }),
+
+  defineTerm({
+    term: "Apraksi",
+    slug: "apraksi",
+    shortDefinition: "Apraksi, kas gücü ve temel hareket kapasitesi yeterli olmasına rağmen daha önce öğrenilmiş amaçlı bir hareketin planlanması veya doğru sırayla uygulanmasında ortaya çıkan nörolojik güçlüktür.",
+    intro: "Apraksi isteksizlik, tembellik veya psikiyatrik bir davranış sorunu değildir. Beynin öğrenilmiş hareketleri düzenleyen ağlarının etkilenmesiyle ilişkilidir ve günlük yaşam becerilerini belirgin biçimde zorlaştırabilir.",
+    sections: [
+      section("Apraksi Nasıl Fark Edilebilir?", "Kişi kendisinden tanıdık bir hareketi göstermesi istendiğinde hareketin sırasını karıştırabilir veya elindeki nesneyi nasıl kullanacağını bildiği halde uygun motor planı oluşturmakta zorlanabilir. Görünüm etkilenen beyin bölgesine ve apraksinin türüne göre değişir."),
+      section("Kas Güçsüzlüğünden Farkı Nedir?", "Kas güçsüzlüğünde hareket için gerekli fiziksel kuvvet azalmıştır. Aprakside ise temel güç korunabilir; sorun öğrenilmiş hareket programının planlanması veya uygulanmasıdır. Bu ayrım nörolojik muayene ile yapılır."),
+      section("Psikiyatrik Belirtilerle Karışabilir mi?", "Belirgin hareket başlatma güçlüğü bazen akinezi, avolisyon veya ağır psikomotor yavaşlama ile yüzeysel olarak benzer görünebilir. Ancak mekanizmaları farklıdır. Kişinin komutu anlayıp anlamadığı, kas gücü ve nörolojik bulgular birlikte değerlendirilmelidir."),
+      section("Yeni Başlayan Apraksi Neden Değerlendirilmelidir?", "Daha önce yapabildiği amaçlı hareketleri aniden gerçekleştiremeyen bir kişide inme veya başka akut nörolojik nedenler düşünülebilir. Yeni başlayan belirtiye konuşma bozukluğu, güç kaybı veya bilinç değişikliği eşlik ediyorsa acil tıbbi değerlendirme gerekir. Belirtinin başlangıç zamanı ve daha önce bulunup bulunmadığı ayırıcı değerlendirme açısından önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Afazi", slug: "afazi" },
+      { term: "Akinezi", slug: "akinezi" },
+      { term: "Avolisyon", slug: "avolisyon" },
+      { term: "Bilinç", slug: "bilinc" }
+    ],
+    seo: {
+      title: "Apraksi Nedir? | Psikiyatri Sözlüğü",
+      description: "Apraksinin öğrenilmiş hareketlerin planlanmasındaki nörolojik güçlük olduğunu ve psikiyatrik belirtilerden nasıl ayrıldığını açıklar.",
+      ogTitle: "Apraksi Nedir?",
+      ogDescription: "Apraksiyi kas güçsüzlüğü, akinezi ve davranışsal isteksizlikten ayırarak açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kas gücü korunmasına rağmen öğrenilmiş amaçlı hareketlerin planlanması veya uygulanmasında güçlük."
+    }
+  }),
+
+  defineTerm({
+    term: "Bilinç",
+    slug: "bilinc",
+    shortDefinition: "Bilinç, kişinin hem kendisinin hem de çevresinin farkında olmasını, uyanıklığını sürdürmesini ve çevreden gelen bilgileri anlamlı biçimde işleyebilmesini sağlayan temel zihinsel durumdur.",
+    intro: "Klinik değerlendirmede bilinç yalnız kişinin gözlerinin açık olup olmamasıyla değerlendirilmez. Uyanıklık düzeyi, çevreyle ilişki kurabilme, dikkat ve değişen uyaranlara uygun tepki verebilme birlikte ele alınır.",
+    sections: [
+      section("Bilinç Değerlendirmesinde Neye Bakılır?", "Kişinin uyanıklığı, sorulara uygun yanıt verip vermediği, bulunduğu ortamla bağlantısı, dikkatini sürdürebilmesi ve çevresindeki değişiklikleri fark edebilmesi değerlendirilir. Bilinç düzeyi normal uyanıklıktan belirgin yanıtsızlığa kadar farklı derecelerde bozulabilir."),
+      section("Bilinç ile Yönelim Aynı Şey midir?", "Hayır. Yönelim kişinin kim olduğunu, nerede bulunduğunu ve zamanı ne ölçüde bildiğini ifade eder. Bilinci açık bir kişide bazı yönelim güçlükleri bulunabileceği gibi bilinç bozulduğunda yönelim ve dikkat de sıklıkla etkilenir."),
+      section("Psikiyatrik Görüşmede Neden Önemlidir?", "Bilinç ve dikkat belirgin biçimde bozulmuşsa kişinin verdiği bilgilerin güvenilirliği ve diğer ruhsal belirtilerin yorumu değişebilir. Ani gelişen zihinsel karışıklığın yalnız psikiyatrik bir durum olarak kabul edilmesi ciddi tıbbi nedenlerin gözden kaçmasına yol açabilir."),
+      section("Bilinç Değişikliği Ne Zaman Acildir?", "Yeni başlayan uykuya eğilim, yanıtsızlık, belirgin dalgalanma, yönelim kaybı veya dikkat bozukluğu acil tıbbi değerlendirme gerektirebilir. Enfeksiyon, metabolik bozukluk, ilaç veya madde etkileri ve nörolojik hastalıklar olası nedenler arasındadır.")
+    ],
+    relatedTerms: [
+      { term: "Bilinç bulanıklığı", slug: "bilinc-bulanikligi" },
+      { term: "Konfüzyon", slug: "konfuzyon" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" }
+    ],
+    seo: {
+      title: "Bilinç Nedir? | Psikiyatri Sözlüğü",
+      description: "Bilinç kavramını uyanıklık, farkındalık ve dikkat bağlamında açıklar; ani bilinç değişikliğinin neden tıbbi değerlendirme gerektirdiğini belirtir.",
+      ogTitle: "Bilinç Nedir?",
+      ogDescription: "Bilinç düzeyinin klinik değerlendirmedeki anlamını sade biçimde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin kendisinin ve çevresinin farkında olmasını ve uyanıklığını sürdürmesini sağlayan zihinsel durum."
+    }
+  }),
+
+  defineTerm({
+    term: "Blokaj",
+    slug: "blokaj",
+    shortDefinition: "Blokaj, kişinin konuşurken veya düşüncesini sürdürürken zihinsel akışının aniden kesilmesi ve ne söylemekte olduğunu kısa süreli olarak sürdürememesi şeklinde gözlenen bir düşünce-akış belirtisidir.",
+    intro: "Konuşma sırasında herkes zaman zaman ne söyleyeceğini unutabilir. Klinik anlamdaki blokaj ise özellikle belirgin, tekrarlayıcı olduğunda ve başka düşünce veya algı belirtileriyle birlikte bulunduğunda önem kazanır.",
+    sections: [
+      section("Blokaj Nasıl Görülür?", "Kişi bir cümlenin ortasında aniden durabilir, düşüncenin kaybolduğunu söyleyebilir veya kısa bir sessizlikten sonra tamamen başka bir konudan devam edebilir. Görüşmeci açısından konuşma akışında beklenmedik ve açıklanamayan bir kesinti şeklinde fark edilebilir."),
+      section("Dalgınlıktan Farkı Nedir?", "Yorgunluk, kaygı veya dikkat dağılması sırasında kişi ne söyleyeceğini geçici olarak unutabilir. Blokaj değerlendirilirken kesintinin sıklığı, belirginliği, kişinin bunu nasıl deneyimlediği ve eşlik eden başka düşünce bozukluğu belirtileri dikkate alınır."),
+      section("Hangi Klinik Durumlarla İlişkili Olabilir?", "Düşünce blokajı özellikle psikotik bozuklukların değerlendirilmesinde tanımlanabilir ancak tek başına belirli bir tanıyı göstermez. Yoğun kaygı, dikkat bozukluğu, ilaç veya madde etkileri ve bazı nörolojik durumlar da konuşma akışını etkileyebilir."),
+      section("Değerlendirmede Neler İncelenir?", "Konuşmanın genel organizasyonu, çağrışımların izlenebilirliği, sanrı veya varsanı gibi psikotik belirtiler, duygudurum, dikkat ve bilişsel işlevler birlikte ele alınır. Tek bir konuşma kesintisinden tanısal sonuç çıkarılmaz. Kesintilerin görüşme boyunca tekrarlayıp tekrarlamadığı ve kişinin bunları nasıl açıkladığı da dikkate alınır.")
+    ],
+    relatedTerms: [
+      { term: "Dezorganize konuşma", slug: "dezorganize-konusma" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Pozitif belirti", slug: "pozitif-belirti" },
+      { term: "Dikkat", slug: "dikkat" }
+    ],
+    seo: {
+      title: "Blokaj Nedir? | Psikiyatri Sözlüğü",
+      description: "Düşünce blokajının konuşma akışındaki ani kesilme biçimindeki görünümünü ve sıradan dalgınlıktan farkını açıklar.",
+      ogTitle: "Blokaj Nedir?",
+      ogDescription: "Blokaj kavramını düşünce ve konuşma akışı bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Konuşma veya düşünce akışının aniden kesilmesiyle gözlenen klinik belirti."
+    }
+  }),
+
+  defineTerm({
+    term: "Dezorganize konuşma",
+    slug: "dezorganize-konusma",
+    shortDefinition: "Dezorganize konuşma, düşünceler arasındaki bağlantının belirgin biçimde bozulması nedeniyle konuşmanın amacını, mantıksal akışını veya anlaşılabilirliğini sürdürmekte güçlük ortaya çıkmasıdır.",
+    intro: "Dezorganize konuşma yalnız hızlı konuşmak, konu değiştirmek veya heyecanlı olmak anlamına gelmez. Klinik değerlendirmede kişinin düşünce bağlantılarının ne ölçüde izlenebildiği ve iletişimin anlaşılabilirliği incelenir.",
+    sections: [
+      section("Dezorganize Konuşma Nasıl Görülebilir?", "Yanıtlar sorudan giderek uzaklaşabilir, düşünceler arasında anlaşılması güç geçişler olabilir veya konuşmanın hedefi kaybolabilir. Daha ağır durumlarda sözcükler ve cümleler arasındaki mantıksal bağlantı belirgin biçimde zayıflayabilir."),
+      section("Hızlı Konuşmadan Farkı Nedir?", "Bir kişinin hızlı konuşmasına rağmen düşünce akışı anlaşılır ve hedefe yönelik olabilir. Dezorganizasyonda temel sorun konuşma hızından çok düşüncelerin birbirine bağlanma biçimidir. Mani sırasında görülen çağrışım hızlanması da ayrıca değerlendirilir."),
+      section("Psikoz ile İlişkisi Nedir?", "Belirgin dezorganize konuşma psikotik tabloların pozitif belirtilerinden biri olarak görülebilir. Bununla birlikte bilinç değişikliği, nörolojik hastalık, madde etkileri ve başka klinik durumlar da konuşmanın organizasyonunu bozabilir."),
+      section("Ani Başlangıç Neden Önemlidir?", "Daha önce düzenli konuşan bir kişide saatler veya günler içinde gelişen belirgin konuşma bozukluğuna bilinç veya dikkat değişikliği eşlik ediyorsa yalnız psikiyatrik neden düşünülmemelidir. Akut tıbbi ve nörolojik nedenlerin değerlendirilmesi gerekir. Konuşma değişikliğinin başlangıç hızı ve eşlik eden nörolojik belirtiler klinik ayrım açısından özellikle önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Pozitif belirti", slug: "pozitif-belirti" },
+      { term: "Dezorganize davranış", slug: "dezorganize-davranis" },
+      { term: "Blokaj", slug: "blokaj" },
+      { term: "Bilinç", slug: "bilinc" }
+    ],
+    seo: {
+      title: "Dezorganize Konuşma Nedir? | Psikiyatri Sözlüğü",
+      description: "Dezorganize konuşmanın düşünce akışındaki bozulmayla ilişkisini, hızlı konuşmadan farkını ve klinik önemini açıklar.",
+      ogTitle: "Dezorganize Konuşma Nedir?",
+      ogDescription: "Dezorganize konuşmayı düşünce organizasyonu ve psikoz bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Düşünceler arasındaki bağlantının bozulması nedeniyle konuşmanın anlaşılabilirliğinin ve hedefinin zayıflaması."
+    }
+  }),
+
+  defineTerm({
+    term: "Ekolali",
+    slug: "ekolali",
+    shortDefinition: "Ekolali, başka bir kişinin söylediği sözcük, ifade veya cümlenin hemen ardından ya da bir süre sonra tekrarlanması şeklinde görülen konuşma davranışıdır.",
+    intro: "Ekolali tek başına belirli bir psikiyatrik veya nörogelişimsel tanıyı göstermez. Gelişim dönemine, kişinin iletişim kapasitesine ve eşlik eden diğer belirtilere göre farklı anlamlar taşıyabilir.",
+    sections: [
+      section("Ekolali Nasıl Görülebilir?", "Kişi kendisine yöneltilen soruyu yanıtlamak yerine sorunun tamamını veya bir bölümünü tekrar edebilir. Bazı tekrarlar hemen gerçekleşirken daha önce duyulmuş ifadelerin saatler veya günler sonra tekrarlanması da görülebilir."),
+      section("Çocuklukta Her Tekrar Ekolali Sorunu mudur?", "Hayır. Dil gelişiminin bazı dönemlerinde çocuklar duydukları ifadeleri öğrenme amacıyla tekrar edebilir. Klinik değerlendirmede yaş, dil gelişim düzeyi, tekrarın iletişim amacı taşıyıp taşımadığı ve başka gelişimsel özelliklerin bulunup bulunmadığı önemlidir."),
+      section("Hangi Durumlarda Görülebilir?", "Ekolali otizm spektrum bozukluğunda görülebilir ve bazı kişilerde iletişim işlevi taşıyabilir. Katatoni, bazı nörolojik tablolar ve başka iletişim bozukluklarında da ortaya çıkabileceği için tek başına tanısal değildir."),
+      section("Değerlendirmede Neler Ele Alınır?", "Tekrarın biçimi, ne zaman ortaya çıktığı, kişinin dili anlama düzeyi, sosyal iletişim becerileri ve tekrarlanan ifadenin bir ihtiyacı anlatmak için kullanılıp kullanılmadığı incelenir. Davranış yalnız dış görünümüne göre yorumlanmamalıdır. Özellikle çocuklarda değerlendirme genel dil gelişimi ve iletişim örüntüsüyle birlikte yapılmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Otizm spektrum bozukluğu", slug: "otizm-spektrum-bozuklugu" },
+      { term: "Katatoni", slug: "katatoni" },
+      { term: "Dezorganize konuşma", slug: "dezorganize-konusma" },
+      { term: "Ekopraksi", slug: "ekopraksi" }
+    ],
+    seo: {
+      title: "Ekolali Nedir? | Psikiyatri Sözlüğü",
+      description: "Ekolalinin sözcük ve cümle tekrarlarıyla nasıl görüldüğünü, gelişimsel tekrarlardan ve tanısal yorumlardan nasıl ayrıldığını açıklar.",
+      ogTitle: "Ekolali Nedir?",
+      ogDescription: "Ekolaliyi iletişim, gelişim ve klinik değerlendirme bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Başka bir kişinin söylediği sözcük veya ifadelerin hemen ya da gecikmeli olarak tekrarlanması."
+    }
+  }),
+
+  defineTerm({
+    term: "Ekopraksi",
+    slug: "ekopraksi",
+    shortDefinition: "Ekopraksi, kişinin karşısındaki kişinin hareketlerini istemsiz veya belirgin biçimde otomatik olarak taklit etmesi şeklinde gözlenen motor davranıştır.",
+    intro: "Bir hareketi bilinçli biçimde öğrenmek amacıyla taklit etmek ekopraksi değildir. Klinik ekopraksi kişinin isteğinden bağımsız veya kontrol etmesi güç bir taklit davranışı olarak değerlendirilir.",
+    sections: [
+      section("Ekopraksi Nasıl Görülebilir?", "Kişi karşısındaki kişinin elini kaldırması, yüzüne dokunması veya başka bir hareket yapmasının ardından aynı hareketi belirgin biçimde tekrar edebilir. Davranışın istemli olup olmadığı ve farklı ortamlarda nasıl ortaya çıktığı değerlendirilir."),
+      section("Normal Taklitten Farkı Nedir?", "İnsanlar sosyal öğrenme sırasında veya iletişim kurarken birbirlerinin bazı hareketlerini doğal biçimde taklit edebilir. Ekopraksi terimi ise istemsiz, otomatik veya bağlama göre belirgin derecede uygunsuz motor taklit davranışını ifade eder."),
+      section("Katatoni ile İlişkisi Nedir?", "Ekopraksi katatonide görülebilen motor belirtilerden biridir ancak tek başına katatoni tanısı koydurmaz. Katatonik tabloda hareketsizlik, aşırı motor etkinlik, negativizm, postür değişiklikleri veya ekolali gibi başka belirtiler de birlikte değerlendirilebilir."),
+      section("Değerlendirmede Neler Araştırılır?", "Davranışın ne zaman başladığı, kişinin bunu kontrol edip edemediği, eşlik eden motor ve konuşma belirtileri, bilinç ve nörolojik durum incelenir. Yeni başlayan olağandışı motor davranışlarda psikiyatrik nedenlerin yanı sıra tıbbi ve nörolojik nedenler de düşünülür. Davranışın sürekli mi yoksa belirli durumlarda mı ortaya çıktığı da klinik değerlendirmeye katkı sağlar.")
+    ],
+    relatedTerms: [
+      { term: "Katatoni", slug: "katatoni" },
+      { term: "Ekolali", slug: "ekolali" },
+      { term: "Dezorganize davranış", slug: "dezorganize-davranis" },
+      { term: "Bilinç", slug: "bilinc" }
+    ],
+    seo: {
+      title: "Ekopraksi Nedir? | Psikiyatri Sözlüğü",
+      description: "Ekopraksinin istemsiz motor taklit davranışı olarak anlamını, normal taklitten farkını ve katatoniyle ilişkisini açıklar.",
+      ogTitle: "Ekopraksi Nedir?",
+      ogDescription: "Ekopraksiyi motor taklit davranışı ve katatoni bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Başka bir kişinin hareketlerinin istemsiz veya otomatik biçimde taklit edilmesi."
+    }
+  })
+];
+
+export const allGlossaryPilotTerms = [
+  ...fourthBatchNewTerms,...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm, derealizationBaseTerm, maniBaseTerm, hypomaniaBaseTerm, psychosisBaseTerm]
   .map((term) => ({ ...term, ...qualityOverrides.get(term.slug) }));
