@@ -136,6 +136,82 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["algi-bozuklugu", {
+    shortDefinition: "Algı bozukluğu, duyusal bilgilerin algılanması veya anlamlandırılmasında olağan deneyimden belirgin farklılıkların ortaya çıkmasını ifade eden geniş bir klinik kavramdır.",
+    intro: "Algı bozukluğu tek bir belirtiyi tanımlamaz. Gerçek bir uyaranın yanlış yorumlanmasından dışarıda karşılığı olmayan bir duyusal deneyime kadar farklı algısal değişiklikler bu başlık altında ele alınabilir.",
+    sections: [
+      section("Algı Bozukluğu Hangi Biçimlerde Görülebilir?", "Algısal değişiklikler görme, işitme, dokunma, koku veya tat gibi farklı duyusal alanlarda ortaya çıkabilir. Kişi gerçek bir sesi veya görüntüyü farklı yorumlayabilir ya da çevrede karşılığı olmayan bir duyusal deneyim yaşayabilir. Algının yoğunluğu, süresi ve kişinin deneyime ne kadar inandığı klinik değerlendirmede önem taşır."),
+      section("İllüzyon ile Varsanı Arasındaki Fark Nedir?", "İllüzyonda dış dünyada gerçek bir uyaran vardır ancak bu uyaran yanlış algılanır veya farklı yorumlanır. Örneğin karanlıkta bir nesnenin başka bir şeye benzetilmesi illüzyona örnek olabilir. Varsanıda ise algılanan ses, görüntü veya başka duyusal deneyimin dış dünyada karşılığı yoktur. Bu iki kavram klinik olarak birbirinden ayrılır."),
+      section("Algısal Değişiklikler Her Zaman Psikoz Anlamına mı Gelir?", "Hayır. Yoğun stres, uykusuzluk, bazı nörolojik durumlar, maddeler, ilaçlar veya duyusal yetersizlikler sırasında da algısal değişiklikler ortaya çıkabilir. Psikotik bir tablo değerlendirilirken algı belirtileri tek başına ele alınmaz; düşünce içeriği, gerçekliği değerlendirme, davranış değişiklikleri ve işlevsellik birlikte değerlendirilir."),
+      section("Ne Zaman Değerlendirme Önemlidir?", "Yeni başlayan, tekrarlayan veya kişinin gerçekliği değerlendirmesini ve günlük yaşamını belirgin biçimde etkileyen algısal değişikliklerde ayrıntılı değerlendirme önemlidir. Özellikle ani başlayan belirtilerde tıbbi ve nörolojik nedenlerin yanı sıra madde veya ilaç etkileri de göz önünde bulundurulur. Tek bir algısal deneyim üzerinden belirli bir psikiyatrik tanıya varılmaz.")
+    ],
+    relatedTerms: [
+      { term: "Algı", slug: "algi" },
+      { term: "Varsanı", slug: "varsani" },
+      { term: "İllüzyon", slug: "illuzyon" },
+      { term: "Psikoz", slug: "psikoz" }
+    ]
+  }],
+  ["algi", {
+    shortDefinition: "Algı, duyu organlarından gelen bilgilerin beyin tarafından seçilmesi, düzenlenmesi ve anlamlandırılması sürecidir.",
+    intro: "Algı yalnızca görmek veya duymak değildir. Beyin, çevreden gelen duyusal bilgileri geçmiş deneyimler, dikkat ve içinde bulunulan bağlamla birlikte yorumlayarak anlamlı bir bütün oluşturur.",
+    sections: [
+      section("Algı Nasıl Oluşur?", "Görme, işitme, dokunma, tat ve koku gibi duyusal sistemlerden gelen bilgiler sinir sistemi tarafından işlenir. Ancak beyin bu bilgileri pasif biçimde kaydetmez; önemli olanları seçer, önceki deneyimlerle karşılaştırır ve anlamlandırır. Bu nedenle aynı uyaran farklı kişiler tarafından veya aynı kişi tarafından farklı zamanlarda farklı biçimde algılanabilir."),
+      section("Dikkat Algıyı Nasıl Etkiler?", "Çevrede aynı anda çok sayıda uyaran bulunur ancak bunların yalnızca bir bölümüne odaklanabiliriz. Dikkatin yöneldiği bilgi daha belirgin hale gelirken diğer uyaranlar geri planda kalabilir. Yoğun kaygı, yorgunluk veya uykusuzluk sırasında dikkat belirli uyaranlara daha fazla yönelebilir ve kişinin çevreyi yorumlama biçimi değişebilir."),
+      section("Algı ile Duyum Aynı Şey midir?", "Duyum, fiziksel bir uyaranın duyu organları tarafından alınmasını ifade eder. Algı ise bu duyusal bilginin beyinde anlam kazanmasıdır. Örneğin kulağın bir sesi algılaması duyusal sürecin başlangıcıdır; sesin bir insan konuşması, müzik veya tehlike sinyali olarak tanınması ise algısal işlemenin parçasıdır."),
+      section("Algısal Değişiklikler Ne Zaman Klinik Önem Taşır?", "Yanlış algılamalar yorgunluk, karanlık ortam, yoğun stres veya dikkatin dağılması gibi günlük koşullarda kısa süreli olarak görülebilir. Ancak dışarıda karşılığı olmayan duyusal deneyimlerin tekrarlaması, gerçekliği değerlendirmeyi etkilemesi veya belirgin işlev kaybı oluşturması durumunda ayrıntılı değerlendirme önemlidir. Bu tür yaşantılar tek başına belirli bir psikiyatrik tanı anlamına gelmez.")
+    ],
+    relatedTerms: [
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Varsanı", slug: "varsani" },
+      { term: "İllüzyon", slug: "illuzyon" }
+    ]
+  }],
+  ["akran-zorbaligi", {
+    shortDefinition: "Akran zorbalığı, benzer yaş veya sosyal konumdaki kişiler arasında güç dengesizliği içeren ve tekrarlayıcı biçimde zarar verme amacı taşıyan davranışları ifade eder.",
+    intro: "Akranlar arasında yaşanan her tartışma veya anlaşmazlık zorbalık değildir. Zorbalıkta davranışın tekrarlanması, hedef alınan kişinin kendisini savunmakta zorlanması ve taraflar arasında belirgin bir güç eşitsizliği bulunması önemlidir.",
+    sections: [
+      section("Akran Zorbalığı Hangi Biçimlerde Görülebilir?", "Zorbalık yalnızca fiziksel saldırı şeklinde ortaya çıkmaz. Küçümseme, lakap takma, tehdit etme, sosyal gruptan dışlama, söylenti yayma veya çevrim içi ortamda hedef gösterme gibi sözel ve ilişkisel davranışlar da zorbalık kapsamında değerlendirilebilir. Bazı durumlarda birden fazla zorbalık biçimi aynı anda görülebilir."),
+      section("Çatışma ile Zorbalık Arasındaki Fark Nedir?", "Sıradan akran çatışmalarında tarafların güçleri genellikle birbirine daha yakındır ve anlaşmazlık tek bir olayla sınırlı kalabilir. Zorbalıkta ise aynı kişi veya grup tekrar tekrar hedef alınır ve hedef olan kişi durumu durdurmakta güçlük yaşayabilir. Bu nedenle yalnızca olayın ne olduğuna değil, tekrar edip etmediğine ve güç dengesine de bakılır."),
+      section("Akran Zorbalığı Çocuk ve Ergenleri Nasıl Etkileyebilir?", "Sürekli hedef alınmak okuldan kaçınma, ders başarısında düşme, sosyal geri çekilme, uyku sorunları, kaygı veya özgüvende azalma gibi sonuçlarla ilişkili olabilir. Bazı çocuklar yaşadıklarını doğrudan anlatmak yerine okula gitmek istememe, sık bedensel yakınmalar bildirme veya arkadaşlık ilişkilerinden uzaklaşma gibi davranış değişiklikleri gösterebilir."),
+      section("Ne Zaman Yetişkin Desteği Gerekir?", "Zorbalığın tekrar etmesi, çocuğun kendisini güvende hissetmemesi veya okul ve sosyal yaşamının belirgin biçimde etkilenmesi durumunda yetişkinlerin müdahalesi önemlidir. Aile, okul ve gerektiğinde ilgili profesyoneller birlikte hareket etmelidir. Çocuğa yalnızca karşılık vermesini veya durumu görmezden gelmesini söylemek sorumluluğu hedef alınan kişiye yükleyebilir ve sorunun çözümünü zorlaştırabilir.")
+    ],
+    relatedTerms: [
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Okul reddi", slug: "okul-reddi" }
+    ]
+  }],
+  ["akinezi", {
+    shortDefinition: "Akinezi, istemli hareketlerin başlatılmasında belirgin azalma veya güçlük görülmesini ifade eden klinik bir bulgudur.",
+    intro: "Akinezi yalnızca yavaş hareket etmek değildir. Kişinin yapmak istediği bir hareketi başlatması gecikebilir veya hareket miktarı genel olarak azalabilir.",
+    sections: [
+      section("Akinezi Günlük Yaşamda Nasıl Görülebilir?", "Kişi yürümeye başlarken, sandalyeden kalkarken veya elini uzatmak gibi istemli bir hareketi başlatırken belirgin gecikme yaşayabilir. Hareketler daha seyrek hale gelebilir ve kişi uzun süre aynı pozisyonda kalabilir. Yüz mimiklerinin azalması veya kendiliğinden yapılan küçük hareketlerin belirginleşmesi de tabloya eşlik edebilir."),
+      section("Akinezi ile Psikomotor Retardasyon Aynı Şey midir?", "Hayır. Psikomotor retardasyonda düşünce, konuşma ve bedensel hareketlerin genel hızında yavaşlama ön plandadır. Akinezide ise özellikle hareketin başlatılması ve kendiliğinden hareket üretimi etkilenir. İki bulgu bazı kişilerde birlikte görülebilir ancak aynı klinik kavram değildir."),
+      section("Akinezi Hangi Durumlarla İlişkili Olabilir?", "Akinezi özellikle Parkinson hastalığı ve bazı nörolojik durumlarla ilişkilidir. Bunun yanında bazı ilaçların etkileri veya ağır psikiyatrik tablolar sırasında hareket miktarında belirgin azalma görülebilir. Bu nedenle yeni başlayan akinezi yalnızca psikiyatrik bir belirti olarak yorumlanmamalıdır."),
+      section("Değerlendirmede Neler Önemlidir?", "Belirtinin ne zaman başladığı, giderek artıp artmadığı, kas sertliği, titreme, denge sorunu veya başka nörolojik bulguların eşlik edip etmediği değerlendirmede önem taşır. Kişinin hareket etmek istememesi ile hareket başlatmakta fizyolojik olarak zorlanması birbirinden ayrılmalıdır. Yeni veya ilerleyici hareket değişikliklerinde tıbbi değerlendirme önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Psikomotor retardasyon", slug: "psikomotor-retardasyon" },
+      { term: "Katatoni", slug: "katatoni" },
+      { term: "Akatizi", slug: "akatizi" }
+    ]
+  }],
+  ["affekt", {
+    shortDefinition: "Affekt, kişinin o anda gözlenebilen duygusal dışavurumunu; yüz ifadesi, ses tonu, jestler ve davranışlar üzerinden tanımlayan klinik bir terimdir.",
+    intro: "Affekt kişinin iç dünyasındaki bütün duyguları doğrudan göstermez. Klinik değerlendirmede kişinin ne hissettiğini söylemesi ile bu duygunun dışarıdan nasıl göründüğü birlikte ele alınır.",
+    sections: [
+      section("Affekt Nasıl Değerlendirilir?", "Değerlendirmede yüz ifadesi, göz teması, ses tonundaki değişiklikler, jestler ve kişinin konuştuğu konuya verdiği duygusal tepki göz önünde bulundurulur. Affekt canlı, kısıtlı, künt veya değişken biçimde tanımlanabilir. Bununla birlikte tek bir görüşmedeki görünüm kişinin genel duygusal yapısını bütünüyle temsil etmeyebilir."),
+      section("Duygudurum ile Affekt Aynı Şey midir?", "Hayır. Duygudurum, kişinin daha uzun süre devam eden genel duygusal yaşantısını ifade eder ve çoğunlukla kişinin kendi anlatımından anlaşılır. Affekt ise görüşme sırasında gözlenebilen anlık duygusal dışavurumdur. Örneğin kişi kendisini günlerdir üzgün hissettiğini söyleyebilir; bu duygudurum bilgisidir. Konuşurken yüz ifadesinin ve ses tonunun nasıl değiştiği ise affekt değerlendirmesinin parçasıdır."),
+      section("Affektin İçerikle Uyumu Neden Önemlidir?", "Duygusal dışavurumun konuşulan konuyla uyumlu olup olmadığı klinik gözlemde dikkate alınabilir. Üzücü bir olay anlatılırken üzüntü ifadesinin görülmesi beklenebilir; ancak insanların duygularını gösterme biçimleri kültür, kişilik ve içinde bulunulan koşullara göre değişir. Bu nedenle tek başına alışılmadık görünen bir yüz ifadesi veya tepki psikiyatrik bir bozukluk anlamına gelmez."),
+      section("Künt veya Kısıtlı Affekt Ne Anlama Gelir?", "Kısıtlı affektte kişinin duygusal dışavurumunun çeşitliliği ve yoğunluğu azalabilir. Künt affektte bu azalma daha belirgin olabilir. Bu özellikler bazı psikiyatrik veya nörolojik durumlarda görülebilse de yalnızca affekt gözlemine dayanarak tanı konulmaz. Kullanılan ilaçlar, kişinin o anki yorgunluğu, kaygısı ve sosyal ortam gibi etkenler de dışavurumu değiştirebilir.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Künt duygulanım", slug: "kunt-duygulanim" },
+      { term: "Şizofreni", slug: "sizofreni" }
+    ]
+  }],
   ["psikoz", {
     shortDefinition: "Psikoz, kişinin gerçekliği değerlendirme süreçlerinde belirgin bozulmanın ortaya çıkabildiği ve sanrı, varsanı veya düşünce organizasyonunda değişikliklerin görülebildiği bir klinik durumdur.",
     intro: "Psikoz tek başına belirli bir hastalığın adı değildir. Farklı psikiyatrik, tıbbi veya maddeyle ilişkili durumlarda ortaya çıkabilen bir belirti kümesini ifade eder.",
