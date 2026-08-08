@@ -136,6 +136,164 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["tetikleyici", {
+    shortDefinition: "Tetikleyici, kişide belirli bir düşünceyi, duyguyu, bedensel tepkiyi veya geçmiş deneyimle bağlantılı bir hatırlamayı başlatabilen içsel ya da dışsal uyaranı ifade eden genel bir psikolojik terimdir.",
+    intro: "Tetikleyiciler kişiden kişiye değişir. Bir ses, koku, yer, konuşma, beden duyumu veya belirli bir düşünce geçmişteki bir deneyimle bağlantılı olarak güçlü bir duygusal tepki başlatabilir.",
+    sections: [
+      section("Tetikleyici Nasıl Etki Edebilir?", "Kişi belirli bir uyaranla karşılaştığında kaygı, korku, öfke veya yoğun bedensel uyarılma yaşayabilir. Bazen tepkinin neden bu kadar güçlü olduğu ilk anda anlaşılmayabilir; uyaran önceki bir deneyimle öğrenilmiş bir bağlantıyı harekete geçirmiş olabilir."),
+      section("Her Rahatsız Edici Şey Tetikleyici midir?", "Hayır. Günlük yaşamda hoşlanmadığımız veya bizi rahatsız eden birçok durum olabilir. Tetikleyici kavramı genellikle belirli bir uyaranın kişide tekrarlayıcı ve belirgin bir duygusal veya fizyolojik tepkiyi başlatmasıyla ilişkilidir."),
+      section("Travma ile İlişkisi Nedir?", "Travmatik deneyimlerden sonra olayın bazı ayrıntıları tehdit sinyali gibi öğrenilebilir. Benzer bir ses, koku veya durum daha sonra gerçek tehlike bulunmasa bile güçlü stres yanıtı oluşturabilir. Ancak her tetikleyici travmatik yaşantıyla ilişkili olmak zorunda değildir."),
+      section("Tetikleyiciyi Tanımak Neden Yararlı Olabilir?", "Tepkilerin hangi koşullarda arttığını fark etmek kişinin duygu ve beden yanıtlarını daha iyi anlamasına yardımcı olabilir. Amaç bütün tetikleyicilerden kaçınmak değil, tepkinin örüntüsünü ve günlük işlevsellik üzerindeki etkisini daha gerçekçi biçimde değerlendirmektir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Stres yanıtı", slug: "stres-yaniti" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["tikinarcasina-yeme-bozuklugu", {
+    shortDefinition: "Tıkınırcasına yeme bozukluğu, kısa bir zaman diliminde kontrol kaybı hissiyle birlikte alışılmıştan belirgin biçimde fazla miktarda yiyecek tüketilen tekrarlayıcı dönemlerle karakterize bir yeme bozukluğudur.",
+    intro: "Tıkınırcasına yeme dönemleri yalnızca fazla yemek yemek anlamına gelmez. Temel özelliklerden biri, kişi yemek sırasında ne kadar yediğini veya davranışı ne zaman durduracağını kontrol etmekte zorlandığını hissetmesidir.",
+    sections: [
+      section("Tıkınırcasına Yeme Dönemi Nasıl Yaşanabilir?", "Kişi planladığından daha fazla yemek yediğini, davranışı durdurmakta zorlandığını veya yemek sırasında kontrolünü kaybetmiş gibi hissettiğini belirtebilir. Sonrasında utanç, suçluluk veya yoğun rahatsızlık yaşanabilir."),
+      section("Ara Sıra Fazla Yemek ile Aynı Şey midir?", "Hayır. Özel bir öğünde veya kutlama sırasında normalden fazla yemek tek başına yeme bozukluğu anlamına gelmez. Klinik değerlendirmede kontrol kaybı hissinin, tekrar sıklığının, duygusal sıkıntının ve davranışın zaman içindeki örüntüsünün bulunması önemlidir."),
+      section("Bulimiya Nervoza ile Farkı Nedir?", "Her iki tabloda da tıkınırcasına yeme dönemleri görülebilir. Bulimiya nervozada bu dönemleri tekrarlayıcı telafi davranışları izlerken tıkınırcasına yeme bozukluğunda bu tür düzenli telafi örüntüsü temel özellik değildir."),
+      section("Değerlendirmede Neler Ele Alınır?", "Yeme davranışının hangi duygusal ve çevresel koşullarda ortaya çıktığı, kontrol kaybı hissi, beden algısı, eşlik eden ruhsal belirtiler ve kişinin günlük yaşamına etkisi değerlendirilir. Yaklaşım yalnız beden ağırlığına veya dış görünüşe indirgenmez.")
+    ],
+    relatedTerms: [
+      { term: "Yeme bozukluğu", slug: "yeme-bozuklugu" },
+      { term: "Bulimiya nervoza", slug: "bulimiya-nervoza" },
+      { term: "Anoreksiya nervoza", slug: "anoreksiya-nervoza" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" }
+    ]
+  }],
+
+  ["travmatik-baglanma", {
+    shortDefinition: "Travmatik bağlanma, zarar verici veya istismar içeren bir ilişkide korku, bağımlılık, aralıklı yakınlık ve güçlü duygusal bağın birlikte sürmesiyle açıklanan ilişkisel bir örüntüdür.",
+    intro: "Travmatik bağlanma resmi bir psikiyatrik tanı değildir. Terim, kişinin kendisine zarar veren bir ilişkiyi neden yalnızca mantıksal değerlendirmeyle kolayca sonlandıramadığını anlamaya yardımcı olmak için kullanılabilir.",
+    sections: [
+      section("Travmatik Bağlanma Nasıl Gelişebilir?", "İlişkide incitici davranışların ardından özür, yakınlık veya yoğun ilgi dönemleri geliyorsa kişi tehdit ile rahatlama arasında güçlü bir duygusal döngü yaşayabilir. Bu değişkenlik ilişkinin sona erdirilmesini psikolojik olarak daha güç hale getirebilir."),
+      section("Neden İlişkiden Ayrılmak Zor Olabilir?", "Korku, ekonomik veya sosyal bağımlılık, yalnız kalma kaygısı, umut, suçluluk ve kişinin zaman içinde benlik değerinin zedelenmesi ayrılmayı güçleştirebilir. Bu nedenle dışarıdan bakıldığında basit görünen bir karar kişinin deneyiminde çok daha karmaşık olabilir."),
+      section("Bağlanma Örüntüleriyle İlişkisi Nedir?", "Erken dönem ilişkisel deneyimler yakınlık ve güven beklentilerini etkileyebilir ancak travmatik bağlanmayı tek başına çocukluk yaşantılarıyla açıklamak doğru değildir. Güncel ilişkinin güç dengesi, şiddet veya kontrol örüntüleri ayrıca değerlendirilmelidir."),
+      section("Güvenlik Neden Önceliklidir?", "İlişkide fiziksel şiddet, tehdit, zorlayıcı kontrol veya güvenliği tehlikeye atan davranışlar varsa konu yalnız duygusal bağ çerçevesinde ele alınmamalıdır. Kişinin güvenliği, erişebildiği destek kaynakları ve mevcut riskler profesyonel değerlendirmede önceliklidir.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Kaygılı bağlanma", slug: "kaygili-baglanma" },
+      { term: "Kaçıngan bağlanma", slug: "kacingan-baglanma" },
+      { term: "Duygusal ihmal", slug: "duygusal-ihmal" }
+    ]
+  }],
+
+  ["uyku-hijyeni", {
+    shortDefinition: "Uyku hijyeni, düzenli ve dinlendirici uykuyu desteklemeyi amaçlayan günlük alışkanlıklar, çevresel koşullar ve uyku-uyanıklık düzenine ilişkin genel davranışsal ilkelerin bütünüdür.",
+    intro: "Uyku hijyeni tek başına her uyku bozukluğunun tedavisi değildir. Ancak kişinin uyku düzenini bozan alışkanlıkların fark edilmesine ve biyolojik saatle daha uyumlu bir günlük düzen kurulmasına yardımcı olabilir.",
+    sections: [
+      section("Düzenli Uyku Saatleri Neden Önemlidir?", "Her gün çok farklı saatlerde yatmak ve kalkmak biyolojik saatin çevresel zamanla uyumunu zorlaştırabilir. Özellikle uyanma saatinin görece düzenli olması uyku-uyanıklık ritminin daha öngörülebilir hale gelmesine katkıda bulunabilir."),
+      section("Uyku Ortamı Nasıl Etkiler?", "Işık, gürültü, sıcaklık ve yatağın kullanım biçimi uykuya geçişi etkileyebilir. Yatak odasının dinlenmeyle ilişkilendirilmesi ve mümkün olduğunca uykuya uygun bir çevrenin oluşturulması davranışsal uyku düzenlemelerinde önem taşır."),
+      section("Gündüz Alışkanlıklarının Rolü Nedir?", "Fiziksel aktivite, gün ışığına maruz kalma, kafein ve diğer uyarıcıların zamanlaması ile gündüz uykuları gece uykusunu etkileyebilir. Bu faktörlerin etkisi kişiden kişiye değişebileceği için kişinin kendi örüntüsünün gözlenmesi yararlıdır."),
+      section("Uyku Hijyeni Ne Zaman Yeterli Olmayabilir?", "Uzun süren insomnia, belirgin gündüz uykululuğu, solunumla ilişkili gece belirtileri veya alışılmadık uyku davranışları yalnız alışkanlıklarla açıklanmayabilir. Kalıcı veya işlevselliği etkileyen uyku sorunlarında altta yatan uyku, ruhsal veya tıbbi durumların değerlendirilmesi gerekir.")
+    ],
+    relatedTerms: [
+      { term: "İnsomnia", slug: "insomnia" },
+      { term: "Sirkadiyen ritim", slug: "sirkadiyen-ritim" },
+      { term: "Melatonin", slug: "melatonin" },
+      { term: "Hipersomnia", slug: "hipersomnia" },
+      { term: "Parasomni", slug: "parasomni" }
+    ]
+  }],
+
+  ["uyum-bozuklugu", {
+    shortDefinition: "Uyum bozukluğu, belirlenebilir bir stres etkeni sonrasında ortaya çıkan ve kişinin günlük işlevselliğini etkileyen duygusal veya davranışsal belirtilerle karakterize bir klinik tablodur.",
+    intro: "Uyum bozukluğu yaşamın zorlayıcı olaylarına verilen her üzüntü veya kaygı tepkisini hastalık olarak tanımlamaz. Klinik değerlendirmede tepkinin şiddeti, bağlamı, süresi ve kişinin yaşamındaki etkisi önemlidir.",
+    sections: [
+      section("Hangi Stres Etkenleriyle İlişkili Olabilir?", "İş kaybı, ayrılık, taşınma, sağlık sorunu, aile içi değişiklikler veya başka önemli yaşam olayları sonrasında duygusal ve davranışsal güçlükler gelişebilir. Aynı olay farklı kişilerde farklı düzeyde stres oluşturabilir."),
+      section("Normal Stres Tepkisinden Nasıl Ayrılır?", "Zorlayıcı bir olay sonrasında üzülmek, kaygılanmak veya geçici olarak zorlanmak doğal olabilir. Uyum bozukluğunda belirtiler kişinin koşullarına göre beklenenden belirgin olabilir ve sosyal, mesleki veya günlük işlevselliği etkileyebilir."),
+      section("Hangi Belirtiler Görülebilir?", "Kaygı, çökkünlük, huzursuzluk, öfke, uyku değişiklikleri veya günlük sorumlulukları sürdürmekte güçlük görülebilir. Klinik görünüm kişiden kişiye değişir ve belirtilerin başka bir ruhsal bozuklukla daha iyi açıklanıp açıklanmadığı değerlendirilir."),
+      section("Zamanlama Neden Önemlidir?", "Belirtilerin stres etkeniyle zaman içindeki bağlantısı değerlendirmede temel önemdedir. Stresör ortadan kalktıktan sonra belirtilerin nasıl seyrettiği ve başka bir ruhsal tablonun ölçütlerinin gelişip gelişmediği de takip edilir. Kişinin olay öncesindeki işlev düzeyiyle karşılaştırma yapılması klinik tabloyu daha iyi anlamaya yardımcı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "Stres yanıtı", slug: "stres-yaniti" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Çökkün duygudurum", slug: "cokkun-duygudurum" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
+  ["yansitma", {
+    shortDefinition: "Yansıtma, kişinin kendisinde kabul etmekte veya fark etmekte zorlandığı duygu, düşünce ya da dürtüleri başka bir kişiye aitmiş gibi algılamasıyla açıklanan bir savunma mekanizmasıdır.",
+    intro: "Yansıtma çoğu zaman bilinçli bir yanıltma değildir. Kişi kendi içsel deneyimini doğrudan fark etmek yerine bu özelliği karşısındaki kişide daha belirgin biçimde algılayabilir.",
+    sections: [
+      section("Yansıtma Nasıl Görülebilir?", "Kendi öfkesini fark etmekte zorlanan bir kişi karşısındakinin kendisine çok öfkeli olduğuna güçlü biçimde inanabilir. Benzer biçimde kişinin kendi güvensizliği veya rekabet duyguları başkalarının niyetlerine ilişkin yorumlarını etkileyebilir."),
+      section("Yansıtma ile Bilinçli Suçlama Aynı Şey midir?", "Hayır. Bilinçli suçlamada kişi kendi sorumluluğunu bilerek başka birine yükleyebilir. Yansıtma kavramında ise süreç çoğunlukla farkında olmadan işler ve kişinin kendi içsel yaşantısını nasıl algıladığıyla ilişkilidir."),
+      section("Yansıtma İlişkileri Nasıl Etkileyebilir?", "Kişi kendi duygularını karşısındakine ait sanıyorsa iletişimde yanlış anlamalar ve tekrarlayıcı çatışmalar ortaya çıkabilir. Başka kişinin gerçek niyetleri yerine kişinin kendi içsel beklentileri ilişkiyi yorumlamada daha fazla rol oynayabilir."),
+      section("Mentalizasyon ile İlişkisi Nedir?", "Mentalizasyon kişinin hem kendi hem de başkalarının zihinsel durumlarını kesinlikten uzak, merakla değerlendirmesini içerir. Kendi duygularını fark etmek ve karşı tarafın farklı bir iç dünyaya sahip olabileceğini düşünmek yansıtıcı yorumların sorgulanmasını kolaylaştırabilir. Özellikle yoğun duygular sırasında yorumların ne kadar kesin kabul edildiğini fark etmek ilişkisel yanlış anlamaları azaltabilir.")
+    ],
+    relatedTerms: [
+      { term: "İnkar", slug: "inkar" },
+      { term: "Bastırma", slug: "bastirma" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" }
+    ]
+  }],
+
+  ["yeme-bozuklugu", {
+    shortDefinition: "Yeme bozukluğu, yeme davranışı, beden algısı veya kilo ve şekille ilişkili düşüncelerde belirgin bozulmaların fiziksel sağlık ve psikososyal işlevsellik üzerinde etkiler oluşturabildiği bozuklukların genel adıdır.",
+    intro: "Yeme bozuklukları tek bir görünümden oluşmaz. Kısıtlayıcı yeme, tıkınırcasına yeme veya başka yeme davranışı değişiklikleri farklı tanısal örüntüler içinde görülebilir.",
+    sections: [
+      section("Yeme Bozuklukları Hangi Biçimlerde Görülebilir?", "Anoreksiya nervoza, bulimiya nervoza ve tıkınırcasına yeme bozukluğu farklı yeme bozukluğu örnekleridir. Her birinde yeme davranışı, beden algısı, kontrol hissi ve fiziksel sağlık üzerindeki etkilerin örüntüsü farklıdır."),
+      section("Yalnız Dış Görünüşe Bakarak Anlaşılır mı?", "Hayır. Yeme bozuklukları farklı beden yapılarındaki kişilerde görülebilir ve kişinin dış görünüşü sorunun şiddetini güvenilir biçimde göstermez. Yeme davranışı, düşünceler, fiziksel belirtiler ve günlük işlevsellik birlikte değerlendirilmelidir."),
+      section("Yeme Davranışının Duygularla İlişkisi Nedir?", "Kaygı, utanç, kontrol ihtiyacı veya duygu düzenleme güçlükleri bazı kişilerde yeme davranışlarıyla ilişki kurabilir. Bununla birlikte yeme bozukluklarını yalnız psikolojik bir nedene indirgemek doğru değildir; biyolojik ve sosyal etkenler de rol oynayabilir."),
+      section("Neden Bütüncül Değerlendirme Gerekir?", "Yeme bozuklukları hem ruhsal hem fiziksel sağlık üzerinde etkiler oluşturabilir. Bu nedenle değerlendirmede yeme örüntüsü, eşlik eden ruhsal belirtiler, tıbbi durum ve kişinin sosyal yaşamı birlikte ele alınır; yalnız kilo veya kalori üzerinden değerlendirme yapılmaz.")
+    ],
+    relatedTerms: [
+      { term: "Anoreksiya nervoza", slug: "anoreksiya-nervoza" },
+      { term: "Bulimiya nervoza", slug: "bulimiya-nervoza" },
+      { term: "Tıkınırcasına yeme bozukluğu", slug: "tikinarcasina-yeme-bozuklugu" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
+  ["yurutucu-islevler", {
+    shortDefinition: "Yürütücü işlevler, hedef belirleme, planlama, dikkat yönetimi, çalışma belleği, dürtü kontrolü ve davranışı değişen koşullara göre düzenleme gibi üst düzey bilişsel süreçlerin genel adıdır.",
+    intro: "Yürütücü işlevler tek bir zihinsel beceri değildir. Günlük yaşamda bir görevi başlatmaktan planı sürdürmeye, hataları fark etmekten gerektiğinde strateji değiştirmeye kadar birçok süreç birlikte çalışır.",
+    sections: [
+      section("Yürütücü İşlevlere Neler Dahildir?", "Planlama, organizasyon, çalışma belleği, bilişsel esneklik, davranışın inhibisyonu ve hedefe yönelik dikkatin sürdürülmesi temel yürütücü işlev alanları arasında sayılabilir. Bu beceriler karmaşık görevlerde birbirleriyle etkileşim halindedir."),
+      section("Günlük Yaşamda Nasıl Kullanılır?", "Bir işi adımlara ayırmak, yapılacakları sıraya koymak, dikkati dağıtan uyaranlara rağmen görevi sürdürmek veya plan işe yaramadığında yeni bir strateji geliştirmek yürütücü işlevlerin günlük örnekleridir."),
+      section("DEHB ile İlişkisi Nedir?", "DEHB'de dikkat düzenleme, görev başlatma, çalışma belleği ve dürtü kontrolü gibi yürütücü alanlarda güçlükler görülebilir. Ancak yürütücü işlev sorunu yalnız DEHB'ye özgü değildir ve uyku, stres, duygudurum veya nörolojik durumlar da performansı etkileyebilir."),
+      section("Yürütücü İşlev Güçlüğü Nasıl Değerlendirilir?", "Kişinin günlük yaşam örüntüsü, eğitim ve çalışma performansı, dikkat ve bellek işlevleri ile farklı görevlerdeki davranışı birlikte incelenir. Tek bir test sonucu kişinin bütün yürütücü kapasitesini açıklamak için yeterli değildir.")
+    ],
+    relatedTerms: [
+      { term: "Çalışma belleği", slug: "calisma-bellegi" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "Semantik bellek", slug: "semantik-bellek" }
+    ]
+  }],
+
+  ["zihin-okuma", {
+    shortDefinition: "Zihin okuma, kişinin karşısındaki kişinin ne düşündüğünü veya kendisi hakkında nasıl değerlendirme yaptığını yeterli kanıt olmadan bildiğini varsaymasıyla tanımlanan bilişsel bir çarpıtmadır.",
+    intro: "Zihin okuma sırasında belirsiz sosyal bilgiler kesin sonuçlar gibi yorumlanabilir. Kişi karşısındakine sormadan veya alternatif açıklamaları değerlendirmeden olumsuz bir yargının varlığından emin olabilir.",
+    sections: [
+      section("Zihin Okuma Nasıl Görülebilir?", "Bir kişinin konuşma sırasında kısa süre sessiz kalmasını 'beni sıkıcı buluyor' şeklinde yorumlamak veya bir mesajın geç yanıtlanmasını 'bana kızgın' sonucuna bağlamak zihin okumaya örnek olabilir. Gerçekte aynı davranışın birçok farklı açıklaması bulunabilir."),
+      section("Empati ile Zihin Okuma Aynı Şey midir?", "Hayır. Empati başka kişinin bakış açısını anlamaya çalışmayı içerir ancak kesinlik iddiası taşımaz. Zihin okumada ise kişinin yorumu sanki karşı tarafın zihnindeki gerçek bilgiymiş gibi kabul edilir."),
+      section("Sosyal Kaygıyla İlişkisi Nedir?", "Sosyal kaygı yaşayan kişi başkalarının kendisini olumsuz değerlendirdiğini varsaymaya daha yatkın olabilir. Bu varsayımlar utanç ve kaçınmayı artırabilir; kaçınma arttıkça kişinin yorumunu sınayabileceği gerçek sosyal deneyimler azalabilir."),
+      section("Nasıl Yeniden Değerlendirilebilir?", "Kişinin elindeki somut kanıtlar, alternatif açıklamalar ve karşı tarafın davranışını gerçekten bilip bilmediği sorgulanabilir. Amaç bütün sosyal sezgileri reddetmek değil, tahmin ile doğrulanmış bilgiyi birbirinden ayırmaktır. Mümkün olduğunda açık iletişim kurmak, varsayımların gerçek bilgiyle sınanmasına yardımcı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Kişiselleştirme", slug: "kisilestirme" },
+      { term: "Seçici soyutlama", slug: "secici-soyutlama" },
+      { term: "Katastrofizasyon", slug: "katastrofizasyon" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" }
+    ]
+  }],
+
   ["risk-degerlendirmesi", {
     shortDefinition: "Risk değerlendirmesi, kişinin kendisine veya başkasına zarar verme, ciddi işlev kaybı yaşama ya da mevcut ruhsal ve tıbbi durum nedeniyle güvenliğinin bozulma olasılığını sistematik biçimde değerlendirme sürecidir.",
     intro: "Psikiyatride risk değerlendirmesi tek bir soruya veya puana dayanmaz. Mevcut düşünceler, davranışlar, geçmiş öykü, ruhsal durum, madde kullanımı, sosyal koşullar ve koruyucu etkenler birlikte ele alınır.",
