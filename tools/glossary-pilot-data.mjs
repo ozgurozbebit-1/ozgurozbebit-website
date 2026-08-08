@@ -4328,7 +4328,562 @@ const eleventhBatchNewTerms = [
   })
 ];
 
+
+const twelfthBatchNewTerms = [
+  defineTerm({
+    term: "İlaç kan düzeyi",
+    slug: "ilac-kan-duzeyi",
+    shortDefinition: "İlaç kan düzeyi, bazı ilaçların kandaki miktarının etkinlik, güvenlik ve kişisel değişkenlik açısından değerlendirilmesine yardımcı olmak amacıyla laboratuvar yöntemiyle ölçülmesidir.",
+    intro: "Her psikiyatrik ilaç için rutin kan düzeyi ölçümü yapılmaz. Ölçümün gerekli olup olmadığı kullanılan ilaca, klinik duruma, eşlik eden hastalıklara ve izlem hedeflerine göre değişir.",
+    sections: [
+      section("İlaç Kan Düzeyi Neden Ölçülür?", "Bazı ilaçlarda kandaki düzey ile beklenen etki veya yan etki riski arasında klinik olarak yararlı bir ilişki bulunabilir. Ölçüm, tedavi yanıtının değerlendirilmesine, beklenmeyen yan etkilerin araştırılmasına veya belirli durumlarda güvenli kullanımın izlenmesine katkıda bulunabilir."),
+      section("Tek Bir Sonuç Yeterli midir?", "Hayır. Kan düzeyi ölçümü kişinin belirtileri, yan etkileri, kullandığı doz, son dozun zamanı ve diğer klinik bilgilerle birlikte yorumlanır. Laboratuvar değerinin hedef aralıkta olması tek başına tedavinin etkili veya tamamen güvenli olduğunu göstermez."),
+      section("Sonucu Hangi Etkenler Değiştirebilir?", "İlacın alınma zamanı, metabolizma hızı, böbrek ve karaciğer işlevleri, başka ilaçlarla etkileşimler ve bazı kişisel biyolojik özellikler kandaki düzeyi etkileyebilir. Bu nedenle ölçümün hangi zamanda yapıldığı da yorum açısından önem taşıyabilir."),
+      section("Kan Düzeyine Göre Doz Değiştirilebilir mi?", "Laboratuvar sonucuna bakarak kişinin kendi başına doz değiştirmesi uygun değildir. Doz kararında yalnız sayı değil klinik yanıt, yan etkiler, eşlik eden hastalıklar ve kullanılan diğer ilaçlar birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "İzlem", slug: "izlem" },
+      { term: "Farmakokinetik", slug: "farmakokinetik" },
+      { term: "Etkileşim", slug: "etkilesim" },
+      { term: "Doz titrasyonu", slug: "doz-titrasyonu" }
+    ],
+    seo: {
+      title: "İlaç Kan Düzeyi Nedir? | Psikiyatri Sözlüğü",
+      description: "İlaç kan düzeyi ölçümünün neden yapıldığını, hangi etkenlerden etkilendiğini ve neden tek başına doz kararı vermediğini açıklar.",
+      ogTitle: "İlaç Kan Düzeyi Nedir?",
+      ogDescription: "Psikiyatride terapötik ilaç izleminin temel mantığını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bazı ilaçların kandaki miktarının etkinlik ve güvenlik açısından değerlendirilmesine yardımcı olan laboratuvar ölçümü."
+    }
+  }),
+
+  defineTerm({
+    term: "İlaç uyumu",
+    slug: "ilac-uyumu",
+    shortDefinition: "İlaç uyumu, kişinin reçete edilen ilacı önerilen kullanım planına ne ölçüde uygun biçimde kullandığını ifade eden klinik bir kavramdır.",
+    intro: "Güncel yaklaşımda ilaç kullanımındaki güçlükleri yalnız kişinin isteksizliği veya sorumsuzluğu olarak değerlendirmek yerine nedenlerini anlamak önemlidir. Yan etkiler, unutkanlık, maliyet, hastalıkla ilgili inançlar ve tedaviye dair kaygılar kullanım düzenini etkileyebilir.",
+    sections: [
+      section("İlaç Uyumu Neden Önemlidir?", "İlacın düzensiz veya planlanandan farklı kullanılması beklenen etkinin azalmasına, belirtilerin yeniden ortaya çıkmasına veya bazı ilaçlarda güvenlik sorunlarına yol açabilir. Bununla birlikte sorun yalnız kişinin davranışı olarak görülmemeli, kullanım güçlüğünün nedeni araştırılmalıdır."),
+      section("İlaç Kullanımını Neler Zorlaştırabilir?", "Yan etkiler, karmaşık kullanım planları, günlük rutinin değişmesi, unutkanlık, ilaç hakkındaki endişeler, damgalanma korkusu veya tedavinin gerekliliğine ilişkin farklı düşünceler etkili olabilir. Kişinin yaşadığı güçlüğün açıkça konuşulması çözüm geliştirmeyi kolaylaştırır."),
+      section("Uyum ile İş Birliği Aynı Şey midir?", "Tam olarak değildir. Uyum terimi verilen öneriye ne ölçüde uyulduğunu anlatırken ortak karar verme yaklaşımı kişinin tedavi seçenekleri hakkında bilgilendirilmesini ve karar sürecine aktif katılımını vurgular. Güncel klinik yaklaşımda bu iş birliği önemlidir."),
+      section("İlaç Düzensiz Kullanılıyorsa Ne Yapılır?", "Öncelikle nedenin anlaşılması gerekir. Yan etki, kullanım güçlüğü veya tedaviye ilişkin kaygılar varsa bunlar klinik görüşmede ele alınabilir. Reçeteli ilacın dozu veya kullanım biçimi kişisel karar ile değiştirilmemelidir.")
+    ],
+    relatedTerms: [
+      { term: "Bilgilendirilmiş onam", slug: "bilgilendirilmis-onam" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Psikoeğitim", slug: "psikoegitim" },
+      { term: "Etkileşim", slug: "etkilesim" }
+    ],
+    seo: {
+      title: "İlaç Uyumu Nedir? | Psikiyatri Sözlüğü",
+      description: "İlaç uyumunu etkileyen yan etki, unutkanlık ve tedaviye ilişkin inançları damgalamadan açıklar ve ortak karar vermenin önemini ele alır.",
+      ogTitle: "İlaç Uyumu Nedir?",
+      ogDescription: "İlaç kullanım düzenini etkileyen etkenleri ve tedavi iş birliğini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin reçete edilen ilacı önerilen kullanım planına ne ölçüde uygun kullandığını ifade eden klinik kavram."
+    }
+  }),
+
+  defineTerm({
+    term: "İntihar riski",
+    slug: "intihar-riski",
+    shortDefinition: "İntihar riski, kişinin yaşamına son verme düşünceleri veya davranışları açısından mevcut güvenlik durumunun klinik olarak değerlendirilmesini ifade eder.",
+    intro: "İntihar riski tek bir soru, test puanı veya tanıyla kesin olarak belirlenemez. Değerlendirme mevcut düşünceler, ruhsal belirtiler, yakın dönem değişiklikleri, önceki öykü, destek kaynakları ve kişinin kendisini güvende tutabilme kapasitesi gibi birçok etkeni birlikte ele alır.",
+    sections: [
+      section("İntihar Riski Değerlendirmesinde Neler Ele Alınır?", "Kişinin yaşamına son verme düşüncelerinin bulunup bulunmadığı, bu düşüncelerin yoğunluğu ve yakın dönemde değişip değişmediği değerlendirilir. Eşlik eden umutsuzluk, ağır ruhsal belirtiler, madde kullanımı, yakın dönem kayıplar ve destek sistemindeki değişiklikler de klinik bağlam içinde ele alınabilir."),
+      section("Koruyucu Etkenler Neden Önemlidir?", "Güvenilir kişilerle bağlantı, yardım isteme kapasitesi, tedaviye erişim, yaşamla bağ kurmayı sağlayan sorumluluklar ve geleceğe yönelik nedenler koruyucu bağlamın parçaları olabilir. Koruyucu etkenlerin bulunması riskin hiç olmadığı anlamına gelmez; risk ve koruyucu etkenler birlikte değerlendirilir."),
+      section("Risk Düzeyi Zamanla Değişebilir mi?", "Evet. Ruhsal belirtiler, yaşam olayları, madde kullanımı, kişilerarası krizler veya tedavi sürecindeki değişiklikler güvenlik durumunu kısa sürede değiştirebilir. Bu nedenle risk değerlendirmesi yalnız bir kez yapılan sabit bir sınıflandırma değildir."),
+      section("Acil Değerlendirme Ne Zaman Gerekir?", "Kişi kendisini güvende tutamayacağını düşünüyor, yaşamına son verme düşünceleri yoğunlaşıyor veya yakın güvenlik konusunda ciddi kaygı oluşuyorsa gecikmeden acil profesyonel değerlendirme gerekir. Güvenlik planı klinik değerlendirmenin veya acil yardımın yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "Güvenlik planı", slug: "guvenlik-plani" },
+      { term: "Acil psikiyatri", slug: "acil-psikiyatri" },
+      { term: "Kendine zarar verme", slug: "kendine-zarar-verme" },
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" }
+    ],
+    seo: {
+      title: "İntihar Riski Nedir? | Psikiyatri Sözlüğü",
+      description: "İntihar riskinin tek bir testle belirlenemediğini; düşünceler, güvenlik, koruyucu etkenler ve acil değerlendirme gereksinimiyle birlikte ele alındığını açıklar.",
+      ogTitle: "İntihar Riski Nedir?",
+      ogDescription: "İntihar riskinin güvenli ve klinik değerlendirme çerçevesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin yaşamına son verme düşünceleri ve davranışları açısından mevcut güvenlik durumunun klinik değerlendirmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "İzlem",
+    slug: "izlem",
+    shortDefinition: "İzlem, tedavi veya değerlendirme sürecinde belirtilerin, işlevselliğin, yan etkilerin, güvenliğin ve klinik değişimin zaman içinde düzenli biçimde takip edilmesidir.",
+    intro: "Psikiyatrik değerlendirme yalnız ilk görüşmeden ibaret değildir. Belirtilerin zaman içindeki seyri, uygulanan yaklaşımın etkisi ve kişinin yaşam koşullarındaki değişiklikler izlem görüşmelerinde yeniden değerlendirilir. Düzenli izlem, klinik tablodaki küçük ancak anlamlı değişikliklerin erken fark edilmesini de kolaylaştırabilir.",
+    sections: [
+      section("İzlemde Neler Değerlendirilir?", "Belirtilerin şiddeti ve sıklığı, günlük yaşam işlevselliği, uyku, iş veya okul yaşamı, kişilerarası ilişkiler ve kullanılan tedavilerin etkileri değerlendirilebilir. İlaç kullanılıyorsa yan etkiler ve kullanım düzeni de izlemin parçası olabilir."),
+      section("İzlem Sıklığı Nasıl Belirlenir?", "Her kişi için aynı takip aralığı uygun değildir. Belirtilerin şiddeti, yeni başlanmış bir tedavi, güvenlik kaygıları, yan etki riski ve klinik durumun ne kadar hızlı değiştiği izlem sıklığını etkileyebilir."),
+      section("Belirti Ölçekleri İzlemde Kullanılabilir mi?", "Evet. Bazı standart ölçekler belirtilerin zaman içindeki değişimini daha sistematik görmek için kullanılabilir. Ancak ölçek puanları klinik görüşmenin, işlevsellik değerlendirmesinin ve kişinin kendi deneyiminin yerine geçmez."),
+      section("İyi Hissetmek İzlemi Gereksiz Hale Getirir mi?", "Belirtilerin düzelmesi önemli olmakla birlikte tedavinin sürdürülmesi, olası nüks belirtilerinin tanınması veya ilaç güvenliğinin değerlendirilmesi açısından izlem bir süre daha gerekli olabilir. Takip planı kişisel klinik duruma göre belirlenir.")
+    ],
+    relatedTerms: [
+      { term: "İlaç kan düzeyi", slug: "ilac-kan-duzeyi" },
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Nüks", slug: "nuks" }
+    ],
+    seo: {
+      title: "İzlem Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatride izlemin belirtiler, işlevsellik, yan etkiler ve klinik değişimi zaman içinde değerlendirmedeki rolünü açıklar.",
+      ogTitle: "İzlem Nedir?",
+      ogDescription: "Psikiyatrik takip sürecinin temel amaçlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirtilerin, işlevselliğin ve tedavi etkilerinin zaman içinde düzenli olarak değerlendirilmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "İçselleştirilmiş stigma",
+    slug: "icsellestirilmis-stigma",
+    shortDefinition: "İçselleştirilmiş stigma, kişinin ruhsal hastalıklarla ilgili toplumsal önyargıları kendisine yönelterek değersizlik, utanç veya yetersizlik düşünceleri geliştirmesidir.",
+    intro: "Toplumsal damgalanma yalnız dışarıdan gelen ayrımcılıkla sınırlı değildir. Kişi zamanla çevresinde duyduğu olumsuz kalıp yargıları kendi kimliğinin parçası gibi kabul etmeye başlayabilir. Bu durum kişinin yardım arama davranışını, sosyal katılımını ve geleceğe ilişkin beklentilerini de etkileyebilir.",
+    sections: [
+      section("İçselleştirilmiş Stigma Nasıl Gelişebilir?", "Ruhsal hastalıkların zayıflık, tehlikelilik veya kişisel başarısızlıkla eş tutulduğu mesajlara uzun süre maruz kalmak kişinin kendisini benzer biçimde değerlendirmesine yol açabilir. Bu süreç sosyal çevre, medya ve geçmiş ayrımcılık deneyimlerinden etkilenebilir."),
+      section("Kişiyi Nasıl Etkileyebilir?", "Utanç, düşük özsaygı, yardım aramaktan kaçınma, sosyal geri çekilme veya gelecek hakkında umutsuzluk gelişebilir. Kişi yalnız başkalarının kendisini reddedeceğini düşünmekle kalmayıp kendi değerini de tanı üzerinden sorgulayabilir."),
+      section("Tanı Kişinin Kimliğinin Tamamı mıdır?", "Hayır. Psikiyatrik tanı belirli belirtileri ve klinik örüntüyü tanımlayan bir çerçevedir; kişinin değerlerini, becerilerini, ilişkilerini ve yaşam öyküsünü bütünüyle açıklamaz. Kişiyi yalnız tanısı üzerinden değerlendirmek damgalamayı güçlendirebilir."),
+      section("İçselleştirilmiş Stigma Azalabilir mi?", "Evet. Doğru bilgiye erişim, destekleyici ilişkiler, akran desteği, kişinin güçlü yönlerine odaklanılması ve ayrımcı inanışların sorgulanması bu süreci değiştirmeye yardımcı olabilir. Damgalanmanın azaltılması yalnız bireyin değil toplumun da sorumluluğudur.")
+    ],
+    relatedTerms: [
+      { term: "Damgalanma", slug: "damgalanma" },
+      { term: "Psikoeğitim", slug: "psikoegitim" },
+      { term: "Sosyal destek", slug: "sosyal-destek" },
+      { term: "Benlik", slug: "benlik" }
+    ],
+    seo: {
+      title: "İçselleştirilmiş Stigma Nedir? | Psikiyatri Sözlüğü",
+      description: "İçselleştirilmiş stigmanın toplumsal önyargıların kişinin benlik algısına dönüşmesiyle nasıl oluştuğunu ve yardım aramayı nasıl etkileyebildiğini açıklar.",
+      ogTitle: "İçselleştirilmiş Stigma Nedir?",
+      ogDescription: "Ruhsal hastalıklarla ilişkili önyargıların benlik algısına etkisini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Toplumsal ruh sağlığı önyargılarının kişinin kendi benlik değerlendirmesine dönüşmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "İşlev kaybı",
+    slug: "islev-kaybi",
+    shortDefinition: "İşlev kaybı, ruhsal veya bedensel bir durum nedeniyle kişinin günlük yaşam, iş, okul, öz bakım veya sosyal ilişkilerindeki kapasitesinin önceki düzeyine göre azalmasıdır.",
+    intro: "Psikiyatride yalnız belirtilerin varlığı değil, bu belirtilerin kişinin yaşamını ne ölçüde etkilediği de önemlidir. Aynı belirti iki kişide farklı düzeyde işlev kaybına yol açabilir. Değerlendirme bu nedenle kişinin kendi önceki işlev düzeyiyle karşılaştırılarak yapılır.",
+    sections: [
+      section("İşlevsellik Hangi Alanlarda Değerlendirilir?", "İş veya okul görevlerini sürdürebilme, günlük sorumlulukları yerine getirme, öz bakım, sosyal ilişkiler, aile yaşamı ve boş zaman etkinlikleri değerlendirilebilir. Hangi alanın daha çok etkilendiği kişinin yaşam koşullarına göre değişir."),
+      section("Belirti Şiddeti ile İşlev Kaybı Aynı Şey midir?", "Hayır. Belirtiler hafif görünse bile kişinin mesleki veya sosyal yaşamı belirgin biçimde etkilenebilir. Bunun tersine bazı kişiler yoğun belirtilere rağmen belirli alanlarda işlevlerini sürdürebilir. Bu nedenle iki kavram ayrı ayrı değerlendirilir."),
+      section("İşlev Kaybı Geçici Olabilir mi?", "Evet. Akut ruhsal dönemler, yoğun stres veya bedensel hastalık sırasında işlevsellik geçici olarak azalabilir. Belirtilerin düzelmesi, çevresel destekler ve uygun tedaviyle işlevsellik yeniden artabilir."),
+      section("İşlevsellik Neden Tanıda Önemlidir?", "Birçok psikiyatrik değerlendirmede belirtilerin klinik önemini anlamak için günlük yaşam üzerindeki etkisine bakılır. Ancak işlev kaybının nedeni yalnız ruhsal hastalık olmayabilir; tıbbi, sosyal ve çevresel etkenler de değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "İşlev Kaybı Nedir? | Psikiyatri Sözlüğü",
+      description: "İşlev kaybının iş, okul, öz bakım ve ilişkiler üzerindeki etkisini ve belirti şiddetinden neden ayrı değerlendirilmesi gerektiğini açıklar.",
+      ogTitle: "İşlev Kaybı Nedir?",
+      ogDescription: "Psikiyatride günlük yaşam işlevlerindeki azalmanın nasıl değerlendirildiğini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruhsal veya bedensel durum nedeniyle günlük yaşam kapasitesinin önceki düzeye göre azalması."
+    }
+  }),
+
+  defineTerm({
+    term: "Karakter",
+    slug: "karakter",
+    shortDefinition: "Karakter, kişinin değerleri, seçimleri, sorumluluk anlayışı ve yaşam deneyimleriyle şekillenen davranışsal ve ahlaki eğilimlerini ifade etmek için kullanılan geniş bir kavramdır.",
+    intro: "Karakter psikiyatrik tanı değildir ve kişiliğin tamamıyla eş anlamlı kullanılmamalıdır. Günlük dilde karakter sözcüğü olumlu veya olumsuz yargılar içerebilirken klinik değerlendirmede kişiyi ahlaki olarak sınıflandırmaktan kaçınılır. Aynı davranış farklı yaşam koşullarında ve farklı değer sistemleri içinde farklı anlamlar taşıyabilir.",
+    sections: [
+      section("Karakter ile Kişilik Arasında Ne Fark Vardır?", "Kişilik düşünme, hissetme, ilişki kurma ve davranış örüntülerini kapsayan daha geniş psikolojik yapıyı ifade eder. Karakter ise sıklıkla değerler, seçimler ve öğrenilmiş davranış eğilimleriyle ilişkilendirilir. İki kavramın sınırları kuramsal yaklaşımlara göre değişebilir."),
+      section("Karakter Doğuştan mı Gelir?", "Kişinin mizacı biyolojik yatkınlıklarla ilişkili olabilirken karakter özellikleri gelişim, aile, kültür, eğitim ve yaşam deneyimleriyle önemli ölçüde şekillenebilir. Bu ayrım kesin bir biyoloji-çevre ayrılığı anlamına gelmez."),
+      section("Karakter Zamanla Değişebilir mi?", "Evet. Değerler, davranış alışkanlıkları ve ilişki kurma biçimleri yeni deneyimler, sorumluluklar ve öğrenme süreçleriyle değişebilir. İnsan davranışını değişmez bir karakter etiketiyle açıklamak aşırı basitleştirici olabilir."),
+      section("Kötü Karakter Psikiyatrik Tanı mıdır?", "Hayır. Ahlaki değerlendirmeler ile psikiyatrik tanılar aynı şey değildir. Psikiyatrik değerlendirme kişinin davranışlarını belirti, gelişimsel öykü, işlevsellik ve klinik örüntü içinde ele alır; kişiyi iyi veya kötü olarak sınıflandırmaz.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Mizaç", slug: "mizac" },
+      { term: "Benlik", slug: "benlik" },
+      { term: "Kimlik", slug: "kimlik" }
+    ],
+    seo: {
+      title: "Karakter Nedir? | Psikiyatri Sözlüğü",
+      description: "Karakter kavramını kişilik ve mizaçtan farklarıyla, değerler ve yaşam deneyimleri çerçevesinde açıklar.",
+      ogTitle: "Karakter Nedir?",
+      ogDescription: "Karakteri psikiyatrik tanı ve ahlaki etiketlerden ayırarak açıklar."
+    },
+    schema: {
+      definedTermDescription: "Değerler, seçimler ve yaşam deneyimleriyle şekillenen davranışsal eğilimleri tanımlayan psikolojik kavram."
+    }
+  }),
+
+  defineTerm({
+    term: "Karbamazepin",
+    slug: "karbamazepin",
+    shortDefinition: "Karbamazepin, nörolojide bazı nöbet bozukluklarında ve psikiyatride belirli bipolar bozukluk durumlarında kullanılabilen reçeteli bir ilaçtır.",
+    intro: "Karbamazepinin kullanım alanı, uygunluğu ve izlem gereksinimleri kişiye göre değişir. Etkileşim potansiyeli ve bazı laboratuvar izlemleri nedeniyle reçeteli kullanımda düzenli klinik değerlendirme önemlidir. İlacın yarar ve risk dengesi kişinin yaşı, eşlik eden hastalıkları, diğer ilaçları ve önceki tedavi yanıtlarıyla birlikte değerlendirilir. Bu değerlendirme zaman içinde yeniden yapılabilir.",
+    sections: [
+      section("Karbamazepin Psikiyatride Nerede Kullanılır?", "Bazı bipolar bozukluk tablolarında özellikle manik dönemlerin tedavisi veya duygudurum düzenlenmesi amacıyla değerlendirilebilir. Her bipolar bozukluk hastası için ilk veya tek seçenek değildir ve tedavi seçimi klinik özelliklere göre yapılır."),
+      section("İlaç Etkileşimleri Neden Önemlidir?", "Karbamazepin bazı karaciğer enzimlerini etkileyerek başka ilaçların kandaki düzeylerini değiştirebilir; başka ilaçlar da karbamazepinin düzeyini etkileyebilir. Bu nedenle kullanılan bütün reçeteli, reçetesiz ve bitkisel ürünlerin klinisyene bildirilmesi önemlidir."),
+      section("Neden Laboratuvar İzlemi Gerekebilir?", "Klinik duruma göre kan hücreleri, karaciğer işlevleri, elektrolitler veya ilaç kan düzeyi gibi değerlendirmeler istenebilir. Hangi testlerin ve hangi aralıklarla yapılacağı kişisel tıbbi duruma göre belirlenir."),
+      section("Karbamazepin Kendi Kendine Değiştirilebilir mi?", "Hayır. Reçeteli kullanımda dozun artırılması, azaltılması veya ilacın bırakılması kişisel karar ile yapılmamalıdır. Ani değişiklikler bazı kişilerde klinik sorunlara yol açabilir ve tedavi planı ilgili hekimle değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum düzenleyici", slug: "duygudurum-duzenleyici" },
+      { term: "İlaç kan düzeyi", slug: "ilac-kan-duzeyi" },
+      { term: "Etkileşim", slug: "etkilesim" }
+    ],
+    seo: {
+      title: "Karbamazepin Nedir? | Psikiyatri Sözlüğü",
+      description: "Karbamazepinin psikiyatrideki genel kullanımını, ilaç etkileşimlerini ve neden klinik ve laboratuvar izlem gerektirebildiğini açıklar.",
+      ogTitle: "Karbamazepin Nedir?",
+      ogDescription: "Karbamazepini güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Nörolojik hastalıklarda ve bazı bipolar bozukluk durumlarında kullanılabilen reçeteli ilaç."
+    }
+  }),
+
+  defineTerm({
+    term: "Karma özellik",
+    slug: "karma-ozellik",
+    shortDefinition: "Karma özellik, bir duygudurum döneminde kişinin baskın depresif veya manik tablosuna karşıt yöndeki bazı belirtilerin de aynı dönemde bulunmasını tanımlayan klinik belirleyicidir.",
+    intro: "Karma özellik terimi yalnız kişinin aynı gün içinde mutlu ve üzgün hissetmesi anlamına gelmez. Duygudurum döneminin niteliği, belirtilerin süresi ve eşlik eden aktivasyon belirtileri klinik olarak birlikte değerlendirilir. Özellikle enerji, uyku, düşünce hızı ve davranışlardaki değişimin kişinin olağan durumundan farklı olup olmadığı önemlidir.",
+    sections: [
+      section("Karma Özellik Nasıl Görülebilir?", "Depresif bir dönemde artmış enerji, konuşkanlık veya düşünce hızında artış gibi manik yöndeki bazı belirtiler bulunabilir. Manik veya hipomanik dönemde ise belirgin çökkünlük gibi depresif belirtiler eşlik edebilir. Görünüm kişiden kişiye değişebilir."),
+      section("Karma Özellik Bipolar Bozukluk Demek midir?", "Tek başına otomatik olarak bipolar bozukluk tanısı koydurmaz. Kişinin yaşam boyu duygudurum öyküsü, önceki mani veya hipomani dönemleri, kullanılan ilaçlar ve diğer klinik bilgiler birlikte değerlendirilmelidir."),
+      section("Neden Klinik Olarak Önemlidir?", "Karma belirtilerin bulunması duygudurum döneminin deneyimini, ajitasyonu, uyku düzenini ve güvenlik değerlendirmesini etkileyebilir. Tedavi yaklaşımı belirlenirken bu belirtilerin tanınması önem taşıyabilir."),
+      section("Karma Özellik Nasıl Değerlendirilir?", "Belirti listesi tek başına yeterli değildir. Süre, şiddet, kişinin olağan durumundan değişiklik, işlevsellik ve belirtilerin başka nedenlerle açıklanıp açıklanamayacağı klinik görüşmede ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Mani", slug: "mani" },
+      { term: "Hipomani", slug: "hipomani" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },],
+    seo: {
+      title: "Karma Özellik Nedir? | Psikiyatri Sözlüğü",
+      description: "Karma özelliğin depresif ve manik belirtilerin aynı duygudurum döneminde birlikte bulunmasını nasıl tanımladığını açıklar.",
+      ogTitle: "Karma Özellik Nedir?",
+      ogDescription: "Duygudurum dönemlerinde karma özellik kavramını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir duygudurum döneminde karşıt kutba ait bazı belirtilerin eş zamanlı bulunmasını tanımlayan klinik belirleyici."
+    }
+  }),
+
+  defineTerm({
+    term: "Karşı aktarım",
+    slug: "karsi-aktarim",
+    shortDefinition: "Karşı aktarım, terapistin danışan veya hastayla ilişkisinde ortaya çıkan kendi duygusal, düşünsel ve davranışsal tepkilerini fark edip klinik süreç içinde değerlendirmesini ifade eden kavramdır.",
+    intro: "Karşı aktarım yalnız terapistin kişisel sorunu veya hatası anlamına gelmez. Terapötik ilişkide ortaya çıkan tepkiler uygun biçimde fark edildiğinde ilişkiyi ve kişinin kişilerarası örüntülerini anlamaya yardımcı olabilecek klinik bilgi sağlayabilir.",
+    sections: [
+      section("Karşı Aktarım Nasıl Ortaya Çıkabilir?", "Terapist bazı görüşmelerde alışılmadık ölçüde koruyucu, kızgın, yetersiz, uzak veya baskı altında hissedebilir. Bu tepkiler terapistin kendi yaşam öyküsünden kaynaklanabileceği gibi terapötik ilişkide oluşan karşılıklı etkileşimin de bir parçası olabilir."),
+      section("Aktarımdan Farkı Nedir?", "Aktarım kişinin geçmiş ilişkilerindeki beklenti ve duygularının terapötik ilişkiye taşınmasını anlatır. Karşı aktarım ise terapistin kişiye verdiği tepkilerle ilgilidir. Güncel yaklaşımlarda iki süreç karşılıklı ilişkinin parçaları olarak ele alınabilir."),
+      section("Karşı Aktarım Neden Fark Edilmelidir?", "Fark edilmeyen yoğun duygusal tepkiler klinik kararları, sınırları veya terapötik ilişkiyi etkileyebilir. Terapistin kendi tepkisini gözlemlemesi, kişinin davranışlarını daha dengeli değerlendirmesine ve kişisel varsayımlarını klinik gerçeklerden ayırmasına yardımcı olur."),
+      section("Karşı Aktarım Nasıl Yönetilir?", "Öz farkındalık, süpervizyon, ekip görüşmesi ve mesleki sınırların korunması önemli araçlardır. Amaç duyguların tamamen ortadan kaldırılması değil, bu tepkilerin düşünülmeden klinik kararlara yön vermesini önlemektir.")
+    ],
+    relatedTerms: [
+      { term: "Aktarım", slug: "aktarim" },
+      { term: "Psikodinamik terapi", slug: "psikodinamik-terapi" },
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Sınır", slug: "sinir" }
+    ],
+    seo: {
+      title: "Karşı Aktarım Nedir? | Psikiyatri Sözlüğü",
+      description: "Karşı aktarımın terapistin terapötik ilişkideki kendi duygusal tepkilerini fark etmesiyle ilgili klinik kavram olduğunu açıklar.",
+      ogTitle: "Karşı Aktarım Nedir?",
+      ogDescription: "Karşı aktarımı aktarım ve terapötik ilişki çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Terapistin terapötik ilişkide ortaya çıkan kendi duygusal ve düşünsel tepkilerini değerlendirmesiyle ilgili kavram."
+    }
+  }),
+
+  defineTerm({
+    term: "Karşıt olma karşı gelme bozukluğu",
+    slug: "karsit-olma-karsi-gelme-bozuklugu",
+    shortDefinition: "Karşıt olma karşı gelme bozukluğu, çocuk veya ergende gelişim düzeyine göre belirgin, süreklilik gösteren öfkeli veya huzursuz duygu durumu, tartışmacılık ve karşı gelme örüntüsüyle tanımlanan bozukluktur.",
+    intro: "Çocukların zaman zaman kurallara itiraz etmesi, öfkelenmesi veya yetişkinlerle tartışması tek başına psikiyatrik bozukluk anlamına gelmez. Klinik değerlendirme davranışın süresini, sıklığını, yaşa göre beklenen düzeyi ve farklı ortamlardaki işlevsel etkisini dikkate alır.",
+    sections: [
+      section("Hangi Davranışlar Görülebilir?", "Sık öfkelenme, kolay kızma, yetişkinlerle veya otorite figürleriyle tartışma, kurallara etkin biçimde karşı çıkma veya başkalarını rahatsız etmeye yönelik davranışlar görülebilir. Ancak tek bir davranış veya kısa süreli dönem tanı için yeterli değildir."),
+      section("Normal Gelişimsel Karşı Gelmeden Nasıl Ayrılır?", "Özellikle küçük çocuklarda bağımsızlık arayışı ve sınırları test etme gelişimin doğal parçalarıdır. Klinik önem davranışların yaşıtlarına göre belirgin olması, uzun süre devam etmesi ve aile, okul veya sosyal yaşamda ciddi güçlük oluşturmasıyla artar."),
+      section("Başka Durumlarla Birlikte Görülebilir mi?", "DEHB, öğrenme güçlükleri, duygudurum veya kaygı sorunları ve aile içi stres gibi durumlar eşlik edebilir. Davranışın nedenini yalnız çocuğun kişiliğine bağlamak yerine gelişimsel, ailesel, okul ve ruhsal etkenler birlikte değerlendirilir."),
+      section("Değerlendirmede Aile ve Okul Neden Önemlidir?", "Davranışın farklı ortamlarda nasıl ortaya çıktığını anlamak için ebeveynlerden ve uygun olduğunda okuldan bilgi alınabilir. Amaç çocuğu sorunlu olarak etiketlemek değil, davranışı sürdüren koşulları ve ihtiyaç duyulan desteği belirlemektir.")
+    ],
+    relatedTerms: [
+      { term: "Davranım bozukluğu", slug: "davranim-bozuklugu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" },
+      { term: "Ebeveyn tutumu", slug: "ebeveyn-tutumu" }
+    ],
+    seo: {
+      title: "Karşıt Olma Karşı Gelme Bozukluğu Nedir? | Psikiyatri Sözlüğü",
+      description: "Karşıt olma karşı gelme bozukluğunu normal gelişimsel karşı gelmeden ayıran süreklilik, işlevsellik ve değerlendirme özellikleriyle açıklar.",
+      ogTitle: "Karşıt Olma Karşı Gelme Bozukluğu Nedir?",
+      ogDescription: "Çocuk ve ergenlerde karşı gelme örüntüsünü damgalamadan açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuk veya ergende süreklilik gösteren öfkeli duygu durumu, tartışmacılık ve karşı gelme örüntüsüyle tanımlanan bozukluk."
+    }
+  }),
+
+  defineTerm({
+    term: "Kesilme belirtileri",
+    slug: "kesilme-belirtileri",
+    shortDefinition: "Kesilme belirtileri, bazı ilaçların özellikle uzun süreli kullanımdan sonra hızlı azaltılması veya bırakılması sırasında ortaya çıkabilen geçici fiziksel veya ruhsal belirtilerdir.",
+    intro: "Kesilme belirtileri her ilaçta görülmez ve bağımlılık ile tamamen aynı kavram değildir. Hangi belirtilerin ortaya çıkabileceği kullanılan ilaca, kullanım süresine, kişisel özelliklere ve azaltma biçimine göre değişir. Belirtilerin başlangıç zamanı ve ilaç değişikliğiyle ilişkisi klinik ayrımda yardımcı olabilir.",
+    sections: [
+      section("Kesilme Belirtileri Neden Ortaya Çıkabilir?", "Sinir sistemi bazı ilaçların uzun süreli etkisine uyum sağlayabilir. İlacın etkisi kısa sürede ortadan kalktığında bu uyumun yeniden dengelenmesi sırasında çeşitli belirtiler ortaya çıkabilir. Mekanizma kullanılan ilaç grubuna göre farklılık gösterir."),
+      section("Kesilme ile Hastalığın Tekrarı Aynı Şey midir?", "Hayır. Kesilme belirtileri bazen asıl hastalığın geri dönmesine benzeyebilir ancak zamanlama, belirti örüntüsü ve kullanılan ilaçla ilişkisi ayrımda yardımcı olabilir. Bu ayrım klinik değerlendirme gerektirir."),
+      section("Her İlaç Aniden Bırakılabilir mi?", "Hayır. Bazı reçeteli ilaçlarda ani bırakma belirgin kesilme belirtilerine veya başka klinik sorunlara yol açabilir. İlacın azaltılması veya bırakılması gerekiyorsa plan ilgili hekimle birlikte oluşturulmalıdır."),
+      section("Kesilme Belirtileri Ortaya Çıkarsa Ne Yapılır?", "Belirtilerin nedeni, şiddeti ve kullanılan ilaç birlikte değerlendirilmelidir. Kişinin kendi başına tekrar doz başlatması, artırması veya farklı bir azaltma planı uygulaması yerine klinik değerlendirme alması daha güvenlidir.")
+    ],
+    relatedTerms: [
+      { term: "Benzodiazepin", slug: "benzodiazepin" },
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Doz titrasyonu", slug: "doz-titrasyonu" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Kesilme Belirtileri Nedir? | Psikiyatri Sözlüğü",
+      description: "Bazı psikiyatrik ilaçların hızlı azaltılması veya bırakılması sırasında görülebilen kesilme belirtilerini ve nüksten farkını açıklar.",
+      ogTitle: "Kesilme Belirtileri Nedir?",
+      ogDescription: "İlaç kesilme belirtilerini güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bazı ilaçların hızlı azaltılması veya bırakılması sırasında ortaya çıkabilen geçici fiziksel veya ruhsal belirtiler."
+    }
+  }),
+
+  defineTerm({
+    term: "Kimlik",
+    slug: "kimlik",
+    shortDefinition: "Kimlik, kişinin kendisini kim olarak gördüğünü, değerlerini, aidiyetlerini, yaşam hedeflerini ve farklı rollerini zaman içinde bir bütünlük içinde deneyimlemesini ifade eden psikolojik kavramdır.",
+    intro: "Kimlik tek bir özellikten oluşmaz. Meslek, aile, kültür, ilişkiler, değerler ve kişisel hedefler kişinin kendisini anlamlandırma biçimine farklı ölçülerde katkıda bulunabilir. Bu alanların önemi yaşamın farklı dönemlerinde değişebilir ve yeniden düzenlenebilir.",
+    sections: [
+      section("Kimlik Nasıl Gelişir?", "Kimlik gelişimi çocuklukta başlayan ancak özellikle ergenlik ve genç yetişkinlikte yoğunlaşan bir süreçtir. Kişi farklı roller, değerler ve yaşam seçenekleri arasında deneyim kazanarak kendisine ilişkin daha bütünlüklü bir anlatı oluşturabilir."),
+      section("Kimlik Değişebilir mi?", "Evet. Yeni ilişkiler, yaşam olayları, mesleki roller, kültürel deneyimler ve kişisel gelişim kişinin kendisini tanımlama biçimini değiştirebilir. Kimliğin değişmesi her zaman psikolojik sorun anlamına gelmez."),
+      section("Kimlik ile Benlik Aynı Şey midir?", "Yakın kavramlar olmakla birlikte tamamen aynı değildir. Benlik kişinin kendisiyle ilgili düşünce ve deneyimlerinin daha geniş bütününü ifade edebilir; kimlik ise kişinin kim olduğu ve yaşamda nerede durduğuna ilişkin daha örgütlü süreklilik duygusunu vurgular."),
+      section("Kimlik Güçlüğü Ne Zaman Klinik Önem Taşır?", "Kimliğe ilişkin belirsizlik gelişimsel dönemlerde olağan olabilir. Ancak kişinin kendilik algısında yoğun ve süreğen kararsızlık, ilişkilerde ciddi dengesizlik veya belirgin işlev kaybı varsa daha kapsamlı değerlendirme gerekebilir.")
+    ],
+    relatedTerms: [
+      { term: "Benlik", slug: "benlik" },
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Karakter", slug: "karakter" },
+      { term: "Ergenlik", slug: "ergenlik" }
+    ],
+    seo: {
+      title: "Kimlik Nedir? | Psikiyatri Sözlüğü",
+      description: "Kimlik kavramını değerler, roller, aidiyetler ve benlik sürekliliği üzerinden açıklar ve gelişim boyunca değişebileceğini ele alır.",
+      ogTitle: "Kimlik Nedir?",
+      ogDescription: "Kimliğin psikolojik ve gelişimsel anlamını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin kendisini kim olarak gördüğüne, değerlerine, aidiyetlerine ve yaşam rollerine ilişkin bütünlük duygusu."
+    }
+  }),
+
+  defineTerm({
+    term: "Kişilik",
+    slug: "kisilik",
+    shortDefinition: "Kişilik, kişinin düşünme, hissetme, ilişki kurma, çevresini yorumlama ve davranma biçimlerinde zaman içinde görece süreklilik gösteren bireysel örüntülerin bütünüdür.",
+    intro: "Kişilik yalnız birkaç sıfatla veya tek bir test sonucuyla açıklanamaz. Biyolojik yatkınlıklar, gelişimsel deneyimler, kültür ve yaşam boyunca edinilen öğrenmeler kişilik özelliklerinin oluşumuna katkıda bulunur. Kişilik özellikleri kişinin çevreyle etkileşim biçimini etkilerken içinde bulunulan koşullar da davranışın nasıl ortaya çıkacağını belirleyebilir.",
+    sections: [
+      section("Kişilik Hangi Özellikleri Kapsar?", "Duygusal tepkiler, sosyal ilişki biçimleri, dürtü kontrolü, yeniliğe açıklık, sorumluluk anlayışı, stresle baş etme ve kendini algılama gibi birçok alan kişiliğin parçaları olabilir. Bu özellikler herkeste farklı düzeylerde bulunur."),
+      section("Kişilik Değişmez midir?", "Hayır. Kişilik özelliklerinde belli bir süreklilik bulunabilse de insanlar yaşam deneyimleri, ilişkiler, yaş ve psikolojik çalışmalarla değişebilir. Özellikle davranış biçimleri ve ilişki örüntülerinde zaman içinde esneklik gelişebilir."),
+      section("Kişilik ile Kişilik Bozukluğu Aynı Şey midir?", "Hayır. Her insanın kişilik özellikleri vardır. Kişilik bozukluğu ise belirli örüntülerin uzun süreli, katı ve farklı yaşam alanlarında belirgin işlev kaybı veya sıkıntıyla ilişkili olduğu klinik durumları ifade eder."),
+      section("Kişilik Nasıl Değerlendirilir?", "Klinik görüşme, yaşam öyküsü, ilişkilerdeki süreklilik gösteren örüntüler ve gerektiğinde yapılandırılmış değerlendirme araçları kullanılabilir. Tek bir davranış veya çevrimiçi kişilik testi klinik tanı için yeterli değildir.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Karakter", slug: "karakter" },
+      { term: "Mizaç", slug: "mizac" },
+      { term: "Kimlik", slug: "kimlik" }
+    ],
+    seo: {
+      title: "Kişilik Nedir? | Psikiyatri Sözlüğü",
+      description: "Kişiliği düşünme, hissetme ve ilişki kurma örüntülerinin bütünü olarak açıklar ve kişilik bozukluğundan farkını ele alır.",
+      ogTitle: "Kişilik Nedir?",
+      ogDescription: "Kişilik kavramını gelişimsel ve klinik çerçevesiyle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Düşünme, hissetme, ilişki kurma ve davranma biçimlerinde görece süreklilik gösteren bireysel örüntülerin bütünü."
+    }
+  }),
+
+  defineTerm({
+    term: "Klinik görüşme",
+    slug: "klinik-gorusme",
+    shortDefinition: "Klinik görüşme, kişinin belirtilerinin, yaşam ve sağlık öyküsünün, işlevselliğinin, ihtiyaçlarının ve güvenlik durumunun uzman tarafından sistematik biçimde değerlendirildiği temel klinik süreçtir.",
+    intro: "Psikiyatrik değerlendirme yalnız test veya ölçeklerden oluşmaz. Klinik görüşme kişinin yaşadığı güçlüğü kendi yaşam bağlamı içinde anlamaya ve farklı açıklamaları birlikte değerlendirmeye yardımcı olur. Görüşmenin içeriği başvuru nedeni ve klinik gereksinime göre şekillenir.",
+    sections: [
+      section("Klinik Görüşmede Neler Sorulabilir?", "Başvuru nedeni, belirtilerin ne zaman başladığı, nasıl değiştiği, uyku, iştah, enerji, düşünce ve duygu durumu, günlük işlevsellik, tıbbi öykü ve kullanılan ilaçlar ele alınabilir. Sorular kişinin başvuru nedenine göre değişir."),
+      section("Geçmiş Öykü Neden Önemlidir?", "Önceki ruhsal dönemler, tedaviler, aile öyküsü, gelişimsel deneyimler ve önemli yaşam olayları mevcut belirtilerin daha doğru anlaşılmasına yardımcı olabilir. Amaç yalnız geçmişi toplamak değil, belirtilerin zaman içindeki örüntüsünü anlamaktır."),
+      section("Klinik Görüşme Bir Test midir?", "Hayır. Yapılandırılmış sorular kullanılabilse de klinik görüşme mekanik bir test değildir. Uzman kişinin verdiği bilgileri gözlem, tıbbi bağlam, işlevsellik ve gerektiğinde ek değerlendirmelerle birlikte yorumlar."),
+      section("Tek Görüşmede Her Şey Anlaşılır mı?", "Her zaman değil. Bazı belirtilerin seyri zaman içinde daha iyi anlaşılır veya ek bilgi gerekebilir. Bu nedenle tanısal değerlendirme ve klinik formülasyon gerektiğinde birden fazla görüşme ve izlem sonucunda netleşebilir.")
+    ],
+    relatedTerms: [
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "Formülasyon", slug: "formulasyon" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" }
+    ],
+    seo: {
+      title: "Klinik Görüşme Nedir? | Psikiyatri Sözlüğü",
+      description: "Klinik görüşmenin belirtileri, öyküyü, işlevselliği ve güvenliği değerlendirmedeki rolünü ve neden tek bir testten farklı olduğunu açıklar.",
+      ogTitle: "Klinik Görüşme Nedir?",
+      ogDescription: "Psikiyatrik klinik görüşmenin temel bileşenlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirtilerin, öykünün, işlevselliğin ve ihtiyaçların uzman tarafından sistematik biçimde değerlendirildiği klinik süreç."
+    }
+  }),
+
+  defineTerm({
+    term: "Konsültasyon",
+    slug: "konsultasyon",
+    shortDefinition: "Konsültasyon, bir sağlık uzmanının kişinin değerlendirme veya tedavi sürecinde başka bir uzmanlık alanından görüş ve katkı istemesi sürecidir.",
+    intro: "Psikiyatrik belirtiler bazen bedensel hastalıklar, kullanılan ilaçlar veya başka uzmanlık alanlarının değerlendirmesini gerektiren durumlarla ilişkili olabilir. Konsültasyon farklı uzmanlıkların aynı klinik soruya birlikte katkı sağlamasına yardımcı olur. Böylece karmaşık durumlarda değerlendirme tek bir uzmanlık alanının bakış açısıyla sınırlı kalmaz.",
+    sections: [
+      section("Konsültasyon Neden İstenir?", "Belirtilerin olası tıbbi nedenlerinin değerlendirilmesi, ilaç etkileşimlerinin incelenmesi veya başka bir uzmanlık alanına özgü klinik sorunun yanıtlanması amacıyla konsültasyon istenebilir. Amaç sorumluluğu başka bir uzmana devretmek değil, değerlendirmeyi tamamlamaktır."),
+      section("Psikiyatri Konsültasyonu Nerelerde Yapılır?", "Genel hastanelerde yatan hastalar, acil servisler, cerrahi veya dahiliye klinikleri gibi farklı ortamlarda psikiyatrik değerlendirme gerekebilir. Bedensel hastalığa eşlik eden ruhsal belirtiler veya tedaviye uyum güçlükleri bu değerlendirmelerin konusu olabilir."),
+      section("Konsültasyon Sevk ile Aynı Şey midir?", "Tam olarak değildir. Sevkte kişinin bakımının başka bir birime aktarılması söz konusu olabilir. Konsültasyonda ise ana tedavi ekibi devam ederken başka bir uzman belirli bir konuda görüş bildirir ve ekipler birlikte çalışabilir."),
+      section("Bilgi Paylaşımı Nasıl Olur?", "Konsültasyon için gerekli tıbbi bilgiler sağlık hizmetinin gizlilik ve mahremiyet ilkeleri çerçevesinde paylaşılır. Hangi bilgilerin gerekli olduğu ve paylaşımın kapsamı klinik gereksinime göre belirlenir.")
+    ],
+    relatedTerms: [
+      { term: "Liyezon psikiyatrisi", slug: "liyezon-psikiyatrisi" },
+      { term: "Gizlilik", slug: "gizlilik" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" }
+    ],
+    seo: {
+      title: "Konsültasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Konsültasyonun farklı uzmanlık alanlarının değerlendirme ve tedavi sürecine birlikte katkı sağlamasını nasıl ifade ettiğini açıklar.",
+      ogTitle: "Konsültasyon Nedir?",
+      ogDescription: "Sağlık hizmetlerinde konsültasyon sürecini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir sağlık uzmanının değerlendirme veya tedavi sürecinde başka bir uzmanlık alanından görüş istemesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Kortizol",
+    slug: "kortizol",
+    shortDefinition: "Kortizol, adrenal bezlerden salgılanan ve enerji metabolizması, bağışıklık sistemi, günlük ritim ve stres yanıtının düzenlenmesinde rol alan steroid hormondur.",
+    intro: "Kortizol sıklıkla stres hormonu olarak adlandırılsa da yalnız psikolojik stres sırasında salgılanmaz. Gün boyunca doğal bir ritim gösterir ve vücudun birçok normal fizyolojik işlevinde görev alır. Bu nedenle tek bir kortizol değerini kişinin ruhsal durumunun doğrudan göstergesi olarak yorumlamak uygun değildir.",
+    sections: [
+      section("Kortizol Vücutta Ne Yapar?", "Kan şekeri ve enerji kullanımının düzenlenmesi, bağışıklık yanıtının ayarlanması ve dolaşım sisteminin stres koşullarına uyum sağlaması gibi süreçlerde rol oynar. Bu etkiler normal fizyolojinin parçasıdır."),
+      section("Kortizol Gün Boyunca Aynı mıdır?", "Hayır. Kortizol düzeyi günlük biyolojik ritme göre değişir ve genellikle günün farklı saatlerinde farklı değerler gösterir. Uyku düzeni, fiziksel hastalık, ilaçlar ve ölçüm zamanı sonucu etkileyebilir."),
+      section("Psikiyatride Neden Araştırılır?", "Depresyon, travma ve kronik stres gibi alanlarda HPA aksı ve kortizol düzenlenmesine ilişkin grup düzeyinde araştırmalar yapılmıştır. Bulgular önemli olsa da tek bir kortizol değeri psikiyatrik tanı koyan biyobelirteç değildir."),
+      section("Yüksek Kortizol Stresli Olduğumu Gösterir mi?", "Tek başına hayır. Kortizol değerinin yorumu örneğin alındığı zaman, kullanılan yöntem, tıbbi hastalıklar ve ilaçlar gibi birçok etkene bağlıdır. Psikolojik stres düzeyini yalnız tek bir laboratuvar sonucuyla belirlemek uygun değildir.")
+    ],
+    relatedTerms: [
+      { term: "HPA aksı", slug: "hpa-aksi" },
+      { term: "Hipokampus", slug: "hipokampus" },
+      { term: "Amigdala", slug: "amigdala" },],
+    seo: {
+      title: "Kortizol Nedir? | Psikiyatri Sözlüğü",
+      description: "Kortizolün stres yanıtı, günlük ritim ve metabolizmadaki rolünü ve tek bir kortizol ölçümünün psikiyatrik tanı koydurmadığını açıklar.",
+      ogTitle: "Kortizol Nedir?",
+      ogDescription: "Kortizolü HPA aksı ve stres yanıtıyla ilişkisi üzerinden açıklar."
+    },
+    schema: {
+      definedTermDescription: "Adrenal bezlerden salgılanan, metabolizma ve stres yanıtının düzenlenmesinde rol alan steroid hormon."
+    }
+  }),
+
+  defineTerm({
+    term: "Koruyucu ruh sağlığı",
+    slug: "koruyucu-ruh-sagligi",
+    shortDefinition: "Koruyucu ruh sağlığı, ruhsal sorunların ortaya çıkma olasılığını azaltmayı, erken belirtileri fark etmeyi ve bireysel ve toplumsal dayanıklılığı güçlendirmeyi amaçlayan yaklaşım ve uygulamaların bütünüdür.",
+    intro: "Ruh sağlığını korumak yalnız hastalık ortaya çıktıktan sonra tedavi sunmak anlamına gelmez. Risk etkenlerini azaltmak, destekleyici çevreler oluşturmak ve erken yardım yollarını erişilebilir kılmak da ruh sağlığı hizmetlerinin önemli parçalarıdır.",
+    sections: [
+      section("Koruyucu Ruh Sağlığı Hangi Düzeylerde Ele Alınır?", "Toplumun tamamına yönelik ruh sağlığı okuryazarlığı çalışmaları, risk grubundaki kişilere yönelik erken destekler ve mevcut hastalığı olan kişilerde nüks veya işlev kaybını azaltmaya yönelik uygulamalar farklı koruma düzeyleri olarak ele alınabilir."),
+      section("Risk Etkenlerini Azaltmak Ne Anlama Gelir?", "Şiddet, sosyal izolasyon, kronik stres, madde kullanımı ve sağlık hizmetine erişim güçlüğü gibi etkenlerin azaltılması ruh sağlığını destekleyebilir. Risk etkenleri kişinin iradesinden bağımsız toplumsal ve ekonomik koşullarla da ilişkili olabilir."),
+      section("Koruyucu Etkenler Nelerdir?", "Güvenli ilişkiler, sosyal destek, düzenli yaşam, anlamlı etkinlikler, okul veya iş ortamında destek, sorun çözme becerileri ve gerektiğinde profesyonel yardıma erişim koruyucu bağlamın parçaları olabilir."),
+      section("Koruyucu Ruh Sağlığı Hastalığı Tamamen Önler mi?", "Hayır. Biyolojik yatkınlıklar ve öngörülemeyen yaşam olayları nedeniyle tüm ruhsal sorunların önlenmesi mümkün değildir. Amaç riski azaltmak, erken tanımayı kolaylaştırmak ve sorun ortaya çıktığında daha hızlı destek sağlamaktır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoeğitim", slug: "psikoegitim" },
+      { term: "Sosyal destek", slug: "sosyal-destek" },],
+    seo: {
+      title: "Koruyucu Ruh Sağlığı Nedir? | Psikiyatri Sözlüğü",
+      description: "Koruyucu ruh sağlığının riskleri azaltma, dayanıklılığı güçlendirme ve erken desteği kolaylaştırmadaki rolünü açıklar.",
+      ogTitle: "Koruyucu Ruh Sağlığı Nedir?",
+      ogDescription: "Ruh sağlığında koruma ve erken müdahale yaklaşımını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruhsal sorun riskini azaltmayı ve bireysel ve toplumsal dayanıklılığı güçlendirmeyi amaçlayan yaklaşım."
+    }
+  }),
+
+  defineTerm({
+    term: "Kriz müdahalesi",
+    slug: "kriz-mudahalesi",
+    shortDefinition: "Kriz müdahalesi, kişinin olağan baş etme yollarının yetersiz kaldığı ani ve yoğun ruhsal zorlanma döneminde güvenliği, temel ihtiyaçları ve kısa vadeli dengeyi desteklemeye yönelik hızlı klinik yaklaşımdır.",
+    intro: "Kriz müdahalesinin amacı kişinin bütün yaşam sorunlarını tek görüşmede çözmek değildir. Öncelik mevcut güvenliği değerlendirmek, krizi ağırlaştıran etkenleri anlamak ve kişinin ulaşabileceği destekleri harekete geçirmektir.",
+    sections: [
+      section("Kriz Olarak Ne Değerlendirilebilir?", "Yakın bir kayıp, ciddi kişilerarası çatışma, travmatik olay, ağırlaşan ruhsal belirtiler veya kişinin olağan baş etme kapasitesini aşan başka bir durum kriz oluşturabilir. Aynı olay farklı kişilerde farklı düzeyde kriz yaratabilir."),
+      section("İlk Öncelik Nedir?", "Kişinin ve çevresinin güvenliği, mevcut tıbbi veya psikiyatrik aciller ve kişinin kendisini güvende tutabilme kapasitesi değerlendirilir. Gerektiğinde daha yoğun veya acil sağlık hizmetine yönlendirme yapılabilir."),
+      section("Kriz Müdahalesinde Ne Yapılır?", "Sorun kısa ve somut biçimde tanımlanır, mevcut destek kaynakları belirlenir ve kişinin önündeki en yakın güvenli adımlar planlanır. Karmaşık uzun dönem sorunlardan önce krizi sürdüren acil ihtiyaçlara odaklanılır."),
+      section("Kriz Geçince Destek Biter mi?", "Her zaman değil. Kriz yatıştıktan sonra altta yatan ruhsal sorunlar, sosyal güçlükler veya tekrar riskini artıran etkenler için izlem gerekebilir. Güvenlik planı ve sonraki destek basamakları klinik duruma göre gözden geçirilir.")
+    ],
+    relatedTerms: [
+      { term: "Güvenlik planı", slug: "guvenlik-plani" },
+      { term: "Acil psikiyatri", slug: "acil-psikiyatri" },
+      { term: "İntihar riski", slug: "intihar-riski" },
+      { term: "Sosyal destek", slug: "sosyal-destek" }
+    ],
+    seo: {
+      title: "Kriz Müdahalesi Nedir? | Psikiyatri Sözlüğü",
+      description: "Kriz müdahalesinin ani ruhsal zorlanmada güvenlik, kısa vadeli denge ve destek kaynaklarını harekete geçirmeye nasıl odaklandığını açıklar.",
+      ogTitle: "Kriz Müdahalesi Nedir?",
+      ogDescription: "Ruhsal krizlerde güvenli ve kısa vadeli müdahale yaklaşımını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ani yoğun ruhsal zorlanmada güvenliği ve kısa vadeli dengeyi desteklemeye yönelik hızlı klinik yaklaşım."
+    }
+  }),
+
+  defineTerm({
+    term: "Kusurluluk şeması",
+    slug: "kusurluluk-semasi",
+    shortDefinition: "Kusurluluk şeması, kişinin kendisini temel olarak eksik, hatalı, değersiz veya sevgiye layık olmayan biri olarak görmeye yatkın olduğu kalıcı bilişsel ve duygusal örüntüyü ifade eder.",
+    intro: "Şema terapi yaklaşımında bu kavram kişinin yaşam boyunca tekrar eden bazı benlik ve ilişki örüntülerini anlamak için kullanılır. Kusurluluk şeması psikiyatrik tanı değildir ve kişinin gerçekten kusurlu olduğu anlamına gelmez. Bu örüntü farklı ilişkilerde ve farklı yaşam dönemlerinde farklı yoğunluklarda ortaya çıkabilir.",
+    sections: [
+      section("Kusurluluk Şeması Nasıl Hissedilebilir?", "Kişi eleştirilme, reddedilme veya gerçek benliğinin görülmesi durumunda başkalarının kendisini değersiz bulacağına inanabilir. Utanç, yoğun öz eleştiri veya olumlu geri bildirimleri kabul etmekte zorlanma görülebilir."),
+      section("İlişkileri Nasıl Etkileyebilir?", "Kişi reddedilmekten kaçınmak için aşırı uyum gösterebilir, yakın ilişkilerden uzak durabilir veya kendisini sürekli başkalarıyla karşılaştırabilir. Bazı kişiler ise kusurluluk duygusunu telafi etmek için dışarıdan kusursuz görünmeye yoğun çaba gösterebilir."),
+      section("Şema Nereden Gelişebilir?", "Eleştirel veya aşağılayıcı ilişkiler, reddedilme deneyimleri ve kişinin kabul edilme koşullarına ilişkin erken öğrenmeleri katkıda bulunabilir. Bununla birlikte tek bir çocukluk olayı veya ebeveyn davranışı şemayı otomatik olarak açıklamaz."),
+      section("Kusurluluk Şeması Değişebilir mi?", "Evet. Kişinin otomatik öz değerlendirmelerini fark etmesi, bunları daha gerçekçi biçimde sorgulaması ve güvenli ilişkilerde yeni deneyimler yaşaması şemanın etkisini azaltabilir. Şema kişinin değişmez kimliği değildir.")
+    ],
+    relatedTerms: [
+      { term: "Şema terapi", slug: "sema-terapi" },
+      { term: "Benlik", slug: "benlik" },
+      { term: "Duygusal yoksunluk", slug: "duygusal-yoksunluk" },
+      { term: "İçselleştirilmiş stigma", slug: "icsellestirilmis-stigma" }
+    ],
+    seo: {
+      title: "Kusurluluk Şeması Nedir? | Psikiyatri Sözlüğü",
+      description: "Kusurluluk şemasının değersizlik ve utanç duyguları, öz eleştiri ve ilişkiler üzerindeki etkisini şema terapi çerçevesinde açıklar.",
+      ogTitle: "Kusurluluk Şeması Nedir?",
+      ogDescription: "Kusurluluk şemasını damgalamadan ve değişebilir bir örüntü olarak açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin kendisini temel olarak eksik veya değersiz görmeye yatkın olduğu kalıcı bilişsel ve duygusal şema."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...twelfthBatchNewTerms,
   ...eleventhBatchNewTerms,
   ...tenthBatchNewTerms,
   ...ninthBatchNewTerms,
