@@ -136,6 +136,184 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["labil-duygulanim", {
+    shortDefinition: "Labil duygulanım, kişinin dışarıdan gözlenen duygusal ifadesinin kısa süre içinde belirgin ve hızlı değişiklikler göstermesini ifade eden klinik bir terimdir.",
+    intro: "Labil duygulanımda duygusal tepki bir konudan diğerine hızla değişebilir veya uyaranın şiddetine göre beklenenden daha oynak görünebilir. Bu gözlem tek başına belirli bir psikiyatrik tanı anlamına gelmez.",
+    sections: [
+      section("Labil Duygulanım Nasıl Görülebilir?", "Kişi kısa bir görüşme içinde ağlamadan gülmeye, öfkeden sakinliğe veya yoğun heyecandan çökkün bir ifadeye hızlı biçimde geçebilir. Değişikliklerin hızı ve gözlenen uyaranla ilişkisi klinik görüşmede dikkate alınır."),
+      section("Duygudurum ile Labil Duygulanım Aynı Şey midir?", "Hayır. Duygudurum kişinin daha uzun süreli içsel duygusal durumunu anlatırken duygulanım görüşme sırasında dışarıdan gözlenen ifadeyi tanımlar. Bu nedenle duygulanım hızlı değişse bile kişinin temel duygudurumu daha uzun süre farklı bir yönde devam edebilir."),
+      section("Duygusal Olmak Labilite Anlamına mı Gelir?", "Hayır. Güçlü duygular yaşamak veya bunları açık biçimde ifade etmek tek başına labil duygulanım değildir. Klinik kavramda duygusal ifadenin hızla değişmesi, bağlamla uyumu ve kişinin olağan ifade biçiminden ne ölçüde farklılaştığı önemlidir."),
+      section("Hangi Durumlarda Görülebilir?", "Duygu düzenleme güçlüklerinde, bazı duygudurum veya nörolojik durumlarda ve yoğun stres dönemlerinde duygusal ifade daha değişken hale gelebilir. Tek başına bu bulgu üzerinden tanı konmaz; eşlik eden belirtiler, süre ve kişinin genel işlevselliği birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Affekt", slug: "affekt" },
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Künt duygulanım", slug: "kunt-duygulanim" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" }
+    ]
+  }],
+
+  ["madde-kullanim-bozuklugu", {
+    shortDefinition: "Madde kullanım bozukluğu, bir maddenin kullanımını kontrol etmekte güçlük, olumsuz sonuçlara rağmen kullanımı sürdürme ve kullanımın kişinin yaşamında giderek daha merkezi hale gelmesiyle ilişkili bir klinik tablodur.",
+    intro: "Madde kullanım bozukluğu yalnızca kullanılan miktarla tanımlanmaz. Kontrol kaybı, işlevsellik üzerindeki etkiler, riskli sonuçlara rağmen kullanımın devamı ve kişinin kullanımı azaltma çabaları birlikte değerlendirilir.",
+    sections: [
+      section("Madde Kullanım Bozukluğu Nasıl Görülebilir?", "Kişi başlangıçta planladığından daha uzun süre kullanabilir, kullanımı azaltma girişimlerinde zorlanabilir veya zamanının önemli bölümünü maddeyle ilişkili uğraşlara ayırabilir. Aile, iş, eğitim ve sosyal yaşam da zaman içinde etkilenebilir."),
+      section("Her Madde Kullanımı Bağımlılık Anlamına mı Gelir?", "Hayır. Bir maddenin kullanılmış olması tek başına madde kullanım bozukluğu tanısı koydurmaz. Klinik değerlendirmede kullanım üzerindeki kontrol, ortaya çıkan sonuçlar, işlev kaybı ve belirtilerin zaman içindeki örüntüsü ele alınır."),
+      section("Tolerans ve Yoksunluk Neden Değerlendirilir?", "Bazı maddelerde aynı etkiyi elde etmek için giderek daha fazla kullanım ihtiyacı hissedilmesi toleransla, kullanım azaltıldığında veya kesildiğinde ortaya çıkan bedensel ve ruhsal belirtiler ise yoksunlukla ilişkili olabilir. Ancak bu bulgular tek başına bütün klinik tabloyu açıklamaz."),
+      section("Değerlendirmede Güvenlik Neden Önemlidir?", "Kullanılan maddenin türüne, kişinin tıbbi durumuna ve kullanım örüntüsüne göre ani azaltma veya bırakma bazı durumlarda tıbbi risk taşıyabilir. Bu nedenle özellikle yoğun veya uzun süreli kullanım öyküsünde güvenli yaklaşım kişiye özgü tıbbi ve psikiyatrik değerlendirme gerektirir.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Alkol kullanım bozukluğu", slug: "alkol-kullanim-bozuklugu" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" }
+    ]
+  }],
+
+  ["melatonin", {
+    shortDefinition: "Melatonin, başlıca karanlıkla birlikte salınımı artan ve vücudun uyku-uyanıklık zamanlamasının düzenlenmesinde rol oynayan doğal bir hormondur.",
+    intro: "Melatonin doğrudan bir uyku düğmesi gibi çalışmaz. Temel işlevlerinden biri biyolojik saate gece zamanının başladığına ilişkin sinyal vermek ve sirkadiyen ritmin düzenlenmesine katkıda bulunmaktır.",
+    sections: [
+      section("Melatonin Ne Zaman Salgılanır?", "Melatonin düzeyi genellikle akşam karanlıkla birlikte yükselmeye başlar, gece boyunca daha yüksek seyreder ve sabaha doğru azalır. Bu ritim kişinin iç biyolojik saati ve çevresel ışık koşullarıyla yakından ilişkilidir."),
+      section("Işık Melatonini Nasıl Etkiler?", "Özellikle akşam saatlerinde güçlü ışığa maruz kalmak biyolojik saate gündüz sinyali verebilir ve melatonin zamanlamasını etkileyebilir. Bu nedenle uyku düzeni yalnızca melatonin miktarıyla değil, ışık-karanlık döngüsü ve günlük rutinlerle birlikte değerlendirilir."),
+      section("Melatonin ile Uyku Aynı Şey midir?", "Hayır. Melatonin uyku zamanlamasında rol oynayan biyolojik sistemlerden yalnızca biridir. Uyku basıncı, stres, ruhsal durum, çevresel koşullar, kullanılan maddeler ve başka bedensel süreçler de kişinin uykuya geçişini ve uyku kalitesini etkiler."),
+      section("Melatonin Ürünleri Her Uyku Sorununa Çözüm müdür?", "Hayır. Farklı uyku sorunlarının nedenleri ve biyolojik zamanlamaları birbirinden farklı olabilir. Bu nedenle melatonin içeren ürünlerin uygunluğu, zamanlaması ve olası etkileşimleri kişiye göre değişebilir; özellikle düzenli ilaç kullanan veya tıbbi hastalığı bulunan kişilerde profesyonel değerlendirme önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "İnsomnia", slug: "insomnia" },
+      { term: "Hipersomnia", slug: "hipersomnia" },
+      { term: "Kabus bozukluğu", slug: "kabus-bozuklugu" },
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Dikkat", slug: "dikkat" }
+    ]
+  }],
+
+  ["mentalizasyon", {
+    shortDefinition: "Mentalizasyon, kişinin kendi davranışlarını ve başkalarının davranışlarını düşünceler, duygular, niyetler, ihtiyaçlar ve inançlar gibi zihinsel durumlar üzerinden anlamlandırabilme kapasitesidir.",
+    intro: "Mentalizasyon başkasının zihninden geçenleri kesin olarak bilmek anlamına gelmez. Aksine hem kendi yorumlarımızın hem de başkalarının davranışlarına ilişkin çıkarımlarımızın yanılabilir olduğunu fark etmeyi içerir.",
+    sections: [
+      section("Mentalizasyon Günlük Yaşamda Nasıl Kullanılır?", "Bir arkadaşın sessizliğini doğrudan ilgisizlik olarak kabul etmek yerine yorgun, üzgün veya başka bir konuyla meşgul olabileceğini düşünmek mentalizasyon örneğidir. Benzer biçimde kişi kendi davranışının altında hangi duygu veya ihtiyacın bulunduğunu da sorgulayabilir."),
+      section("Mentalizasyon ile Zihin Okuma Aynı Şey midir?", "Hayır. Zihin okumada kişi karşısındakinin ne düşündüğünü yeterli kanıt olmadan kesin kabul edebilir. Mentalizasyonda ise farklı olasılıklar göz önünde bulundurulur ve başka bir kişinin iç dünyasının tam olarak bilinemeyeceği kabul edilir."),
+      section("Yoğun Duygular Mentalizasyonu Etkileyebilir mi?", "Evet. Yoğun korku, öfke veya terk edilme kaygısı sırasında kişi başka insanların davranışlarını daha hızlı ve kesin biçimde yorumlayabilir. Duygusal uyarılmışlığın artması alternatif açıklamaları değerlendirmeyi zorlaştırabilir."),
+      section("Bağlanma ile İlişkisi Nedir?", "Güvenli ve öngörülebilir ilişkiler kişinin kendi ve başkalarının zihinsel durumlarını merak etmesine alan sağlayabilir. Mentalizasyon kavramı bu nedenle bağlanma, duygu düzenleme ve kişilerarası ilişkilerle yakından ilişkili olarak ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Kaygılı bağlanma", slug: "kaygili-baglanma" },
+      { term: "Kaçıngan bağlanma", slug: "kacingan-baglanma" }
+    ]
+  }],
+
+  ["narsisistik-kisilik-oruntusu", {
+    shortDefinition: "Narsisistik kişilik örüntüsü, benlik değerini düzenleme, takdir edilme ihtiyacı, empati kurma ve kişilerarası ilişkiler alanlarında süreklilik gösteren güçlüklerle ilişkilendirilen bir kişilik örüntüsüdür.",
+    intro: "Narsisistik kişilik örüntüsü günlük dilde kullanılan bencillik veya kendini beğenmişlik etiketleriyle aynı değildir. Klinik değerlendirmede uzun süreli benlik ve ilişki örüntüleri ele alınır.",
+    sections: [
+      section("Narsisistik Örüntü Nasıl Görülebilir?", "Kişi başkalarının takdirine güçlü biçimde ihtiyaç duyabilir, kendi değerini başarı veya statü üzerinden düzenleyebilir ve eleştiri karşısında yoğun incinme yaşayabilir. Bazı kişiler dışarıdan çok özgüvenli görünürken içsel benlik değerleri daha kırılgan olabilir."),
+      section("Kendine Güvenmek Narsisistik Olmak mıdır?", "Hayır. Sağlıklı özsaygı kişinin güçlü ve zayıf yanlarını daha dengeli biçimde kabul edebilmesini sağlar. Narsisistik örüntüde ise benlik değerinin dış onaya aşırı bağımlı hale gelmesi ve ilişkilerde tekrarlayıcı güçlükler bulunması daha önemlidir."),
+      section("Empati Tamamen Yok mudur?", "Hayır. Empati kapasitesi kişiden kişiye ve koşullara göre değişebilir. Özellikle kişinin benlik değeri tehdit altında hissettiği dönemlerde başkasının bakış açısını dikkate almak zorlaşabilir. Bir kişiyi empatisiz olarak etiketlemek klinik değerlendirme yerine geçmez."),
+      section("Kişilik Örüntüsü Değişebilir mi?", "Evet. Kişilik örüntüleri uzun süreli olsa da tamamen sabit değildir. Kişinin kendi kırılganlıklarını, ilişki döngülerini ve başkalarının deneyimlerini daha iyi anlaması zaman içinde daha esnek ilişki kurma biçimlerinin gelişmesine katkıda bulunabilir.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Kaçıngan kişilik örüntüsü", slug: "kacingan-kisilik-oruntusu" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Bağlanma", slug: "baglanma" }
+    ]
+  }],
+
+  ["negatif-belirti", {
+    shortDefinition: "Negatif belirti, özellikle şizofreni spektrumu ve bazı psikotik bozukluklarda olağan psikolojik işlevlerin azalmasını veya kaybını tanımlamak için kullanılan klinik bir terimdir.",
+    intro: "Negatif belirtiler, sanrı veya varsanı gibi deneyimlerin ortaya çıkmasını değil; motivasyon, duygusal ifade, konuşma üretimi veya sosyal ilgi gibi işlevlerde azalmayı ifade eder.",
+    sections: [
+      section("Negatif Belirtilere Neler Örnek Verilebilir?", "Duygusal ifadenin azalması, amaçlı etkinlik başlatmada güçlük, konuşma üretiminde azalma, sosyal etkileşime ilginin azalması veya haz deneyiminde güçlük negatif belirti alanları arasında değerlendirilebilir."),
+      section("Negatif Belirti ile Depresyon Aynı Şey midir?", "Hayır. Enerji azalması, sosyal geri çekilme ve isteksizlik her iki durumda da görülebilir. Depresyonda çökkün duygudurum, suçluluk ve umutsuzluk gibi belirtiler daha belirgin olabilirken negatif belirtilerin klinik bağlamı farklıdır."),
+      section("İlaç Etkileri veya Başka Etkenler Benzer Görünüm Oluşturabilir mi?", "Evet. Sedasyon, depresif belirtiler, madde kullanımı, sosyal izolasyon veya aktif psikotik belirtilerin yarattığı geri çekilme negatif belirtilere benzeyen bir görünüm oluşturabilir. Bu nedenle birincil ve ikincil nedenlerin ayrılması önemlidir."),
+      section("Neden İşlevsellikle Yakından İlişkilidir?", "Motivasyon, sosyal etkileşim ve amaçlı davranışın azalması eğitim, çalışma, ilişkiler ve özbakım alanlarını etkileyebilir. Değerlendirmede yalnız gözlenen davranış değil, kişinin içsel motivasyonu ve günlük yaşamındaki değişiklikler de ele alınır. Bu belirtilerin zaman içindeki seyri de işlev kaybının anlaşılmasına yardımcı olur.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Künt duygulanım", slug: "kunt-duygulanim" },
+      { term: "Avolisyon", slug: "avolisyon" },
+      { term: "Apati", slug: "apati" },
+      { term: "Dezorganize davranış", slug: "dezorganize-davranis" }
+    ]
+  }],
+
+  ["nuks", {
+    shortDefinition: "Nüks, bir hastalık veya bozukluğun belirtileri belirgin biçimde azaldıktan ya da kontrol altına alındıktan sonra aynı klinik tablonun yeniden ortaya çıkmasını ifade eden genel bir tıbbi terimdir.",
+    intro: "Psikiyatride nüks kavramı depresif, bipolar, psikotik veya madde kullanım bozuklukları gibi birçok durumda kullanılabilir. Terimin tam anlamı hastalığın doğal seyri ve kullanılan klinik tanıma göre değişebilir.",
+    sections: [
+      section("Nüks Ne Anlama Gelir?", "Kişinin belirtileri belirgin biçimde geriledikten sonra aynı bozukluğa ait belirtilerin yeniden güçlenmesi nüks olarak adlandırılabilir. Bu durum önceki düzelmenin başarısız olduğu anlamına gelmez; birçok hastalık zaman içinde dalgalı seyredebilir."),
+      section("Nüks ile Yeni Bir Hastalık Aynı Şey midir?", "Hayır. Nüks önceki klinik tablonun yeniden belirginleşmesini anlatır. Yeni başlayan farklı belirtiler ise başka bir durumun göstergesi olabilir. Bu nedenle belirtilerin önceki dönemlerle benzerliği ve zaman içindeki seyri önemlidir."),
+      section("Erken Belirtiler Neden Önemlidir?", "Bazı kişilerde uyku düzeninde bozulma, sosyal geri çekilme, işlevsellikte düşme veya daha önceki döneme benzeyen ruhsal değişiklikler nüksten önce ortaya çıkabilir. Kişinin kendi erken uyarı işaretlerini tanıması klinik takip açısından yararlı olabilir."),
+      section("Nüks Riski Tek Bir Nedene Bağlanabilir mi?", "Hayır. Hastalığın özellikleri, stres, uyku düzeni, madde kullanımı, tedaviye devamlılık, fiziksel sağlık ve sosyal koşullar gibi birçok etken seyri etkileyebilir. Risk değerlendirmesi kişiye özgü yapılır ve tek bir etkene indirgenmez.")
+    ],
+    relatedTerms: [
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
+  ["obsesif-kompulsif-bozukluk", {
+    shortDefinition: "Obsesif kompulsif bozukluk, istem dışı ve tekrarlayıcı obsesyonlar ile bunların yarattığı sıkıntıyı azaltmak veya korkulan sonucu önlemek amacıyla yapılan kompulsiyonların görülebildiği bir psikiyatrik bozukluktur.",
+    intro: "Obsesyonlar yalnızca çok düşünmek, kompulsiyonlar ise yalnızca alışkanlık sahibi olmak anlamına gelmez. Klinik önem, belirtilerin zaman alması, yoğun sıkıntı yaratması veya günlük işlevselliği etkilemesiyle artar.",
+    sections: [
+      section("Obsesyon Nedir?", "Obsesyonlar kişinin istemediği halde tekrar tekrar zihnine gelen düşünce, dürtü veya zihinsel görüntüler olabilir. Kişi bunları rahatsız edici bulabilir ve çoğu zaman düşüncelerin kendi değerleriyle uyumsuz olduğunu fark eder."),
+      section("Kompulsiyon Nedir?", "Kompulsiyon, obsesyonun yarattığı kaygıyı azaltmak veya korkulan bir sonucu önlemek amacıyla tekrarlanan davranış ya da zihinsel eylemdir. Kısa süreli rahatlama sağlasa da bu rahatlama davranışın tekrar edilmesini güçlendirebilir."),
+      section("Titiz veya Düzenli Olmak OKB midir?", "Hayır. Düzenli, kontrollü veya titiz olmak tek başına obsesif kompulsif bozukluk anlamına gelmez. OKB'de kişinin istemediği düşünceler ve bunlarla ilişkili ritüeller belirgin zaman kaybına veya sıkıntıya yol açabilir."),
+      section("Güvence Arama OKB ile İlişkili Olabilir mi?", "Evet. Bazı kişiler kuşkularını azaltmak amacıyla çevresinden tekrar tekrar güvence isteyebilir. Bu davranış kompulsif döngünün bir parçası haline gelebilir. Klinik değerlendirmede obsesyonun içeriğinden çok düşünce ve davranış arasındaki işlevsel ilişki önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Güvence arama", slug: "guvence-arama" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" }
+    ]
+  }],
+
+  ["okul-reddi", {
+    shortDefinition: "Okul reddi, bir çocuk veya ergenin yoğun duygusal sıkıntı nedeniyle okula gitmekte belirgin güçlük yaşaması veya okuldan kaçınmasıyla tanımlanan davranışsal bir durumdur.",
+    intro: "Okul reddi başlı başına bir psikiyatrik tanı değildir. Ayrılma kaygısı, sosyal anksiyete, zorbalık, akademik güçlükler, depresif belirtiler veya başka okul ve aile etkenleriyle ilişkili olabilir.",
+    sections: [
+      section("Okul Reddi Nasıl Görülebilir?", "Çocuk sabahları yoğun kaygı yaşayabilir, okula gitmemek için direnebilir veya okul saatlerinde baş ve karın ağrısı gibi bedensel yakınmalar bildirebilir. Evde kalmasına izin verildiğinde sıkıntının hızla azalması bazı vakalarda görülebilir."),
+      section("Okul Reddi ile Okuldan Kaçma Aynı Şey midir?", "Her zaman değil. Okul reddinde çoğunlukla okula gitme düşüncesi belirgin kaygı veya duygusal sıkıntıyla ilişkilidir ve aile genellikle durumun farkındadır. Başka nedenlerle okuldan izinsiz uzaklaşma farklı bir davranış örüntüsü olabilir."),
+      section("Hangi Etkenler Araştırılır?", "Ayrılma kaygısı, akran ilişkileri, zorbalık, sosyal değerlendirilme korkusu, öğrenme güçlükleri, öğretmen veya okul ortamıyla ilgili sorunlar ve aile içindeki değişiklikler değerlendirilir. Tek bir neden varsayılmamalıdır."),
+      section("Neden Erken Değerlendirme Önemlidir?", "Okuldan uzak kalma süresi uzadıkça geri dönüş daha zor hale gelebilir ve akademik, sosyal ve ailevi sorunlar artabilir. Yaklaşımda yalnız çocuğun kaygısı değil, aile ve okul sistemiyle birlikte işlevsel bir geri dönüş planı oluşturulması önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Ergen anksiyetesi", slug: "ergen-anksiyetesi" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["otizm-spektrum-bozuklugu", {
+    shortDefinition: "Otizm spektrum bozukluğu, sosyal iletişim ve etkileşimde farklılıklar ile sınırlı veya tekrarlayıcı davranış, ilgi ve duyusal özelliklerin gelişimsel olarak görülebildiği nörogelişimsel bir durumdur.",
+    intro: "Otizm tek tip bir görünüm oluşturmaz. Dil, bilişsel kapasite, duyusal özellikler, günlük yaşam becerileri ve destek gereksinimleri kişiden kişiye önemli ölçüde değişebilir.",
+    sections: [
+      section("Sosyal İletişim Alanında Hangi Farklılıklar Görülebilir?", "Karşılıklı konuşmayı sürdürme, sözel olmayan ipuçlarını yorumlama, sosyal bağlama göre iletişimi ayarlama veya ilişkiler kurma biçimlerinde farklılıklar görülebilir. Bu özelliklerin görünümü yaşa, dil düzeyine ve kişinin çevresel koşullarına göre değişebilir."),
+      section("Tekrarlayıcı Davranış ve İlgi Alanları Ne Anlama Gelir?", "Belirli rutinlere güçlü ihtiyaç, değişikliklere karşı zorlanma, yoğun ve odaklanmış ilgi alanları veya tekrarlayıcı hareketler görülebilir. Bu davranışların bazıları kişiye düzen, öngörülebilirlik veya duyusal rahatlama sağlayabilir."),
+      section("Duyusal Hassasiyet Otizmle İlişkili Olabilir mi?", "Evet. Ses, ışık, dokunma, koku veya başka duyusal uyaranlara karşı artmış ya da azalmış tepkiler görülebilir. Ancak duyusal hassasiyet yalnızca otizme özgü değildir ve tek başına tanı anlamına gelmez."),
+      section("Otizm Sonradan Edinilen Bir Hastalık mıdır?", "Otizm nörogelişimsel bir durumdur ve özellikleri gelişimin erken dönemlerinden itibaren bulunur; ancak talepler arttıkça veya kişinin telafi yöntemleri yetersiz kaldıkça daha ileri yaşlarda fark edilebilir. Değerlendirmede gelişim öyküsü ve kişinin güçlü yönleri de dikkate alınır.")
+    ],
+    relatedTerms: [
+      { term: "Duyusal hassasiyet", slug: "duyusal-hassasiyet" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
   ["katastrofizasyon", {
     shortDefinition: "Katastrofizasyon, bir durumun olası sonuçlarını gerçekçi kanıtların ötesinde çok kötü, dayanılmaz veya felaket düzeyinde yorumlama eğilimini ifade eden bir bilişsel çarpıtmadır.",
     intro: "Katastrofizasyon sırasında kişi belirsiz veya zorlayıcı bir olayın en olumsuz sonucuna odaklanabilir ve bu sonucun gerçekleşme ihtimalini olduğundan daha yüksek değerlendirebilir.",
