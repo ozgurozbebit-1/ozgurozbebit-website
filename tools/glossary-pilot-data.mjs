@@ -136,6 +136,92 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["duygusal-ihmal", {
+    shortDefinition: "Duygusal ihmal, özellikle çocukluk döneminde kişinin duygusal ihtiyaçlarının bakım verenler tarafından yeterince fark edilmemesi, karşılanmaması veya düzenli biçimde göz ardı edilmesi durumunu anlatan bir kavramdır.",
+    intro: "Duygusal ihmal her zaman açık kötü davranışlarla görünür hale gelmez. Çocuğun duygularının sürekli küçümsenmesi, destek aradığında karşılık bulamaması veya duygusal ihtiyaçlarının fark edilmemesi gibi daha sessiz örüntülerle de ortaya çıkabilir.",
+    sections: [
+      section("Duygusal İhmal Nasıl Görülebilir?", "Çocuğun üzüntü, korku, öfke veya sevinç gibi duygularına düzenli biçimde yanıt verilmemesi, duygularının önemsizleştirilmesi veya zorlandığı zamanlarda duygusal desteğin sınırlı olması buna örnek olabilir. Burada tek bir olaydan çok, ilişkinin süreklilik gösteren örüntüsü önemlidir."),
+      section("Duygusal İhmal ile Fiziksel İhmal Aynı Şey midir?", "Hayır. Fiziksel ihmal beslenme, sağlık, güvenlik veya temel bakım ihtiyaçlarının yeterince karşılanmamasıyla ilişkilidir. Duygusal ihmalde ise kişinin görülme, anlaşılma, desteklenme ve duygularına karşılık verilme ihtiyacı ön plandadır. İki durum birlikte de görülebilir."),
+      section("Yetişkinlikte Hangi Alanlarla İlişkili Olabilir?", "Çocuklukta duygusal ihtiyaçların sürekli karşılıksız kalması bazı kişilerde duygularını tanımakta zorlanma, yardım istemekten kaçınma, ilişkilerde yakınlık güçlükleri veya kendi ihtiyaçlarını önemsiz görme gibi örüntülerle ilişkili olabilir. Ancak bu özelliklerin varlığı geçmişte mutlaka ihmal yaşandığını kanıtlamaz."),
+      section("Değerlendirmede Neden Yaşam Öyküsü Önemlidir?", "Duygusal ihmal geriye dönük olarak tek bir belirti üzerinden belirlenemez. Aile ilişkileri, gelişimsel dönem, bakım verenlerin koşulları ve kişinin yaşantısına verdiği anlam birlikte ele alınır. Amaç kişiyi veya ailesini basit biçimde suçlamak değil, geçmiş ilişkisel deneyimlerin bugünkü işlevlerle olası bağlantılarını anlamaktır.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["duyusal-hassasiyet", {
+    shortDefinition: "Duyusal hassasiyet, ses, ışık, dokunma, koku, tat veya bedensel duyumlar gibi uyaranların kişi tarafından alışılmıştan daha yoğun ya da rahatsız edici biçimde algılanabilmesini ifade eder.",
+    intro: "Duyusal hassasiyet tek başına psikiyatrik bir tanı değildir. Bazı kişilerde belirgin bir bireysel özellik olarak bulunabilirken, nörogelişimsel durumlar, kaygı veya yoğun stres dönemlerinde daha belirgin hale gelebilir.",
+    sections: [
+      section("Duyusal Hassasiyet Günlük Yaşamda Nasıl Görülebilir?", "Kişi sıradan kabul edilen sesleri çok yüksek, bazı ışıkları rahatsız edici veya belirli kumaş ve dokuları tahammül edilmesi güç bulabilir. Kalabalık ve çok uyaranlı ortamlarda zihinsel yorgunluk, huzursuzluk veya ortamdan uzaklaşma isteği ortaya çıkabilir."),
+      section("Her Rahatsız Edici Uyaran Duyusal Hassasiyet midir?", "Hayır. Çok yüksek ses, güçlü ışık veya yoğun koku çoğu kişiyi rahatsız edebilir. Duyusal hassasiyet kavramı, başkalarının daha kolay tolere ettiği uyaranların kişide tekrarlayıcı ve belirgin bir rahatsızlık oluşturması durumlarında daha anlamlıdır."),
+      section("Kaygı Duyusal Hassasiyeti Artırabilir mi?", "Yoğun kaygı veya bedensel uyarılmışlık sırasında kişi çevresindeki seslere, bedensel duyumlara veya başka uyaranlara daha fazla odaklanabilir. Bu nedenle hassasiyet bazı dönemlerde artıp azalabilir. Bununla birlikte her duyusal hassasiyet kaygıyla açıklanamaz."),
+      section("Ne Zaman Değerlendirme Yararlı Olabilir?", "Duyusal hassasiyet okul, iş, sosyal yaşam veya günlük rutinleri belirgin biçimde etkiliyorsa ayrıntılı değerlendirme yararlı olabilir. Belirtilerin çocukluktan beri bulunup bulunmadığı, hangi duyusal alanlarda görüldüğü ve dikkat, kaygı veya nörogelişimsel özelliklerle ilişkisi birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["emdr", {
+    shortDefinition: "EMDR, Türkçede Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme olarak adlandırılan, özellikle travma sonrası stres belirtilerinin ele alınmasında kullanılan yapılandırılmış bir psikoterapi yaklaşımıdır.",
+    intro: "EMDR yalnızca göz hareketlerinden oluşan bir teknik değildir. Travmatik anılarla ilişkili düşünceler, duygular ve bedensel tepkiler yapılandırılmış bir süreç içinde ele alınırken çift yönlü uyarım yöntemlerinden yararlanılabilir.",
+    sections: [
+      section("EMDR Süreci Nasıl Yapılandırılır?", "Yaklaşım genellikle öykü alma, hazırlık, hedef anının belirlenmesi, işlemleme ve oturum sonunda kişinin yeniden dengelenmesi gibi aşamalar içerir. Uygulama kişinin zorlayıcı anıyla ilişkili görüntülerini, düşüncelerini, duygularını ve bedensel hislerini güvenli bir klinik çerçevede ele almayı amaçlar."),
+      section("Çift Yönlü Uyarım Ne Anlama Gelir?", "EMDR sırasında göz hareketleri, ritmik dokunsal uyarım veya işitsel uyaranlar gibi dikkati sağ ve sol arasında dönüşümlü yönlendiren yöntemler kullanılabilir. Ancak tedavi yaklaşımının etkisini yalnızca bu uyarıma indirgemek doğru değildir; yapılandırılmış psikoterapi süreci bir bütün olarak değerlendirilir."),
+      section("EMDR En Çok Hangi Durumda Bilinir?", "EMDR en güçlü biçimde travma sonrası stres bozukluğu alanındaki kullanımıyla bilinir. Farklı psikolojik sorunlarda da araştırılmıştır ancak her kişi ve her sorun için otomatik olarak uygun yöntem olduğu söylenemez. Hangi yaklaşımın kullanılacağı klinik değerlendirmeye göre belirlenir."),
+      section("Travmatik Anıyı Ayrıntılı Anlatmak Zorunlu mudur?", "EMDR uygulamasında kişinin yaşadığı olayın her ayrıntısını uzun biçimde sözlü olarak anlatması her zaman gerekli değildir. Bununla birlikte travmayla ilişkili materyalin ele alınması yoğun duygular doğurabilir. Bu nedenle uygulamanın eğitimli bir ruh sağlığı uzmanı tarafından kişinin hazır oluşu ve güvenliği dikkate alınarak yürütülmesi önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Dissosiyasyon", slug: "dissosiyasyon" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["epizodik-bellek", {
+    shortDefinition: "Epizodik bellek, kişinin kendi yaşamında belirli bir zaman ve yerde gerçekleşmiş olayları bağlamlarıyla birlikte hatırlamasını sağlayan uzun süreli bellek sistemidir.",
+    intro: "Epizodik bellek yalnızca bir bilginin doğru olduğunu bilmekten farklıdır. Kişinin bir doğum günü, yolculuk veya görüşme gibi yaşanmış bir olayı nerede ve ne zaman gerçekleştiğiyle birlikte zihinsel olarak yeniden canlandırabilmesiyle ilişkilidir.",
+    sections: [
+      section("Epizodik Bellek Hangi Tür Anıları İçerir?", "Kişinin geçen hafta yaptığı bir görüşmeyi, çocuklukta gittiği bir yeri veya yakın zamanda yaşadığı belirli bir olayı hatırlaması epizodik belleğe örnektir. Bu anılar olayın içeriğinin yanında zaman, yer ve kişisel deneyim gibi bağlamsal bilgiler de içerebilir."),
+      section("Epizodik Bellek ile Semantik Bellek Arasındaki Fark Nedir?", "Semantik bellek genel bilgiler, kavramlar ve gerçeklerle ilişkilidir. Örneğin bir ülkenin başkentini bilmek semantik belleğe girerken o şehre yaptığınız belirli bir yolculuğu hatırlamak epizodik bellektir. İki bellek sistemi günlük yaşamda sürekli olarak birbirleriyle etkileşir."),
+      section("Dikkat Epizodik Belleği Nasıl Etkileyebilir?", "Bir olay yaşanırken kişi yeterince dikkat etmiyorsa bilginin belleğe kaydedilmesi zayıf olabilir. Daha sonra hatırlayamama, ilk bakışta bellek sorunu gibi görünse de aslında bilginin başlangıçta yeterince işlenmemesinden kaynaklanabilir. Bu nedenle dikkat ve bellek işlevleri birlikte değerlendirilir."),
+      section("Epizodik Bellek Güçlüğü Hangi Durumlarda Görülebilir?", "Yoğun stres, uykusuzluk, depresif dönemler ve bazı nörolojik durumlar epizodik bellek performansını etkileyebilir. Yaşla birlikte bazı değişiklikler de görülebilir. Tek bir unutkanlık olayı yerine güçlüğün sürekliliği, ilerleyip ilerlemediği ve günlük işlev üzerindeki etkisi önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Çalışma belleği", slug: "calisma-bellegi" },
+      { term: "Amnezi", slug: "amnezi" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Semantik bellek", slug: "semantik-bellek" },
+      { term: "Bilinç bulanıklığı", slug: "bilinc-bulanikligi" }
+    ]
+  }],
+
+  ["ergen-anksiyetesi", {
+    shortDefinition: "Ergen anksiyetesi, ergenlik döneminde okul, sosyal ilişkiler, gelecek, beden algısı, aileden bağımsızlaşma veya başka yaşam alanlarıyla ilişkili olarak ortaya çıkan belirgin kaygı yaşantılarını ifade eden genel bir kavramdır.",
+    intro: "Ergenlik döneminde kaygı yaşamak gelişimin doğal bir parçası olabilir. Klinik önem, kaygının şiddeti, ne kadar sürdüğü, kaçınmaya yol açıp açmadığı ve ergenin okul, sosyal yaşam ve günlük işlevlerini ne ölçüde etkilediğiyle ilişkilidir.",
+    sections: [
+      section("Ergenlikte Kaygı Neden Artabilir?", "Akademik beklentiler, akran ilişkileri, sosyal kabul, beden değişiklikleri ve gelecek planları ergenlikte daha görünür hale gelir. Aynı zamanda kişinin ailesinden daha bağımsız kararlar almaya başlaması yeni sorumluluklar yaratabilir. Bu değişimler geçici kaygı dönemlerine zemin hazırlayabilir."),
+      section("Normal Kaygı ile Klinik Düzeyde Kaygı Nasıl Ayrılır?", "Sınav öncesi heyecan veya yeni bir sosyal ortama girerken kaygı duymak olağandır. Kaygı çok yoğun hale geliyor, uzun süre devam ediyor, ergenin önemli etkinliklerden kaçınmasına neden oluyor veya uyku, okul ve ilişkiler üzerinde belirgin sorun yaratıyorsa daha ayrıntılı değerlendirme gerekebilir."),
+      section("Ergenlerde Kaygı Her Zaman Açıkça Söylenir mi?", "Hayır. Bazı ergenler kaygılarını doğrudan ifade etmek yerine huzursuzluk, irritabilite, karın veya baş ağrısı gibi bedensel yakınmalar, okuldan kaçınma ya da sosyal ortamlardan geri çekilme yaşayabilir. Bu belirtilerin başka nedenleri de olabileceği için bağlam önemlidir."),
+      section("Aileler Nasıl Yaklaşabilir?", "Ergenin kaygısını küçümsemeden dinlemek, hemen çözüm vermek yerine neyin zor geldiğini anlamaya çalışmak ve yaşına uygun bağımsızlığı desteklemek yararlı olabilir. Kaygı günlük işlevleri belirgin biçimde bozuyorsa veya giderek artıyorsa bir ruh sağlığı uzmanından değerlendirme almak uygun olabilir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Dikkat eksikliği", slug: "dikkat-eksikligi" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
   ["dikkat-eksikligi", {
     shortDefinition: "Dikkat eksikliği, kişinin dikkatini gerekli uyaranlara yöneltme veya belirli bir görev üzerinde yeterince sürdürebilme konusunda yaşadığı güçlüğü ifade eden genel bir klinik tanımlamadır.",
     intro: "Dikkat eksikliği tek başına DEHB anlamına gelmez. Uyku, kaygı, depresif belirtiler, fiziksel hastalıklar, kullanılan maddeler veya çevresel koşullar da kişinin dikkat performansını etkileyebilir.",
