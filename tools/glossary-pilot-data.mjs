@@ -136,6 +136,93 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["calisma-bellegi", {
+    shortDefinition: "Çalışma belleği, bilgiyi kısa süre boyunca zihinde tutarken aynı anda bu bilgi üzerinde işlem yapabilme kapasitesidir.",
+    intro: "Çalışma belleği yalnızca kısa süreli hatırlama değildir. Bir telefon numarasını geçici olarak akılda tutmak, yönergelerin sırasını izlemek veya zihinden hesap yapmak gibi görevlerde bilgiyi aktif biçimde kullanmayı sağlar.",
+    sections: [
+      section("Çalışma Belleği Günlük Yaşamda Nerede Kullanılır?", "Bir konuşmanın başında söylenenleri akılda tutarak sonrasını anlamak, birkaç aşamalı bir görevi sırasıyla yapmak veya okunan bir cümlenin önceki bölümünü hatırlamak çalışma belleğine örnektir. Kapasitesi sınırlı olduğu için aynı anda çok fazla bilgiyle uğraşmak performansı zorlaştırabilir."),
+      section("Çalışma Belleği ile Uzun Süreli Bellek Aynı Şey midir?", "Hayır. Uzun süreli bellek bilgilerin daha kalıcı biçimde saklanmasıyla ilişkilidir. Çalışma belleği ise o anda gerekli bilgiyi kısa süreli olarak zihinde tutar ve işler. İki sistem birbirleriyle etkileşim halindedir ancak aynı işlevi yerine getirmez."),
+      section("Dikkat Çalışma Belleğini Nasıl Etkiler?", "Bilginin çalışma belleğinde tutulabilmesi için dikkatin ilgili göreve yönelmesi gerekir. Dikkatin sık bölünmesi, yoğun kaygı, uykusuzluk veya zihinsel yorgunluk çalışma belleği performansını geçici olarak azaltabilir. Bu nedenle tek bir görevdeki düşük performans doğrudan kalıcı bir bellek bozukluğu anlamına gelmez."),
+      section("Çalışma Belleği Güçlükleri Hangi Durumlarda Görülebilir?", "DEHB, bazı nörogelişimsel durumlar, depresif veya kaygılı dönemler ve çeşitli nörolojik hastalıklarda çalışma belleği performansında güçlük görülebilir. Değerlendirmede dikkat kapasitesi, öğrenme düzeyi, uyku ve kişinin genel bilişsel işlevleri birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Amnezi", slug: "amnezi" },
+      { term: "Epizodik bellek", slug: "epizodik-bellek" },
+      { term: "Semantik bellek", slug: "semantik-bellek" },
+      { term: "DEHB", slug: "dehb" }
+    ]
+  }],
+
+  ["cokkun-duygudurum", {
+    shortDefinition: "Çökkün duygudurum, kişinin belirgin üzüntü, keder, boşluk veya moral azalması yaşadığı duygusal durumu ifade eder.",
+    intro: "Çökkün duygudurum tek başına depresif bozukluk anlamına gelmez. Süresi, yoğunluğu, günlük işlevselliğe etkisi ve eşlik eden diğer belirtiler klinik değerlendirmede önemlidir.",
+    sections: [
+      section("Çökkün Duygudurum Nasıl Hissedilebilir?", "Kişi kendisini üzgün, moralsiz, umutsuz veya içsel olarak boş hissedebilir. Günlük olaylara verilen duygusal tepkiler azalabilir ve daha önce kolay tolere edilen sorunlar daha ağır gelebilir. Bu deneyimin biçimi ve yoğunluğu kişiden kişiye değişebilir."),
+      section("Üzüntü ile Çökkün Duygudurum Aynı Şey midir?", "Günlük yaşamda kayıp, hayal kırıklığı veya stres sonrasında üzüntü yaşamak doğaldır. Klinik açıdan çökkün duygudurum değerlendirilirken yalnızca duygunun varlığı değil, ne kadar sürdüğü, kişinin olağan halinden ne ölçüde farklı olduğu ve işlevselliği nasıl etkilediği dikkate alınır."),
+      section("Çökkün Duygudurumda Başka Hangi Belirtiler Eşlik Edebilir?", "İlgi ve zevk kaybı, enerji azalması, uyku veya iştah değişiklikleri, konsantrasyon güçlüğü ve değersizlik düşünceleri eşlik edebilir. Ancak bu belirtilerin herhangi birinin bulunması tek başına belirli bir tanı koydurmaz."),
+      section("Ne Zaman Değerlendirme Önemlidir?", "Çökkünlük uzun sürüyor, günlük işlevselliği belirgin biçimde bozuyor veya kişinin kendisiyle ve gelecekle ilgili ağır olumsuz düşünceler geliştirmesine eşlik ediyorsa profesyonel değerlendirme önemlidir. Belirtilerin bağlamı ve eşlik eden diğer değişiklikler birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Anhedoni", slug: "anhedoni" },
+      { term: "Apati", slug: "apati" },
+      { term: "Psikomotor retardasyon", slug: "psikomotor-retardasyon" },
+      { term: "Duygudurum", slug: "duygudurum" }
+    ]
+  }],
+
+  ["dezorganize-davranis", {
+    shortDefinition: "Dezorganize davranış, kişinin davranışlarının amaca uygunluğunda, düzeninde veya çevresel koşullara uyumunda belirgin bozulma görülmesini ifade eden klinik bir terimdir.",
+    intro: "Dezorganize davranış yalnızca alışılmadık veya sıra dışı davranmak anlamına gelmez. Klinik kullanımda davranışların belirgin biçimde düzensizleşmesi ve günlük işlevsellikle uyumunun bozulması önemlidir.",
+    sections: [
+      section("Dezorganize Davranış Nasıl Görülebilir?", "Kişi başladığı bir işi sürdüremeyebilir, davranışları belirgin biçimde amaçsız veya bağlama uyumsuz hale gelebilir ve günlük özbakım ya da sorumluluklarını organize etmekte zorlanabilir. Davranışın biçimi ve şiddeti kişiden kişiye değişebilir."),
+      section("Her Tuhaf Davranış Dezorganize Davranış mıdır?", "Hayır. Kültürel özellikler, kişilik, mizah veya alışılmadık tercihler tek başına dezorganizasyon anlamına gelmez. Klinik değerlendirmede kişinin davranışının kendi olağan işlev düzeyinden ne kadar farklı olduğu ve günlük yaşamı ne ölçüde bozduğu önemlidir."),
+      section("Psikoz ile İlişkisi Nedir?", "Belirgin dezorganize davranış bazı psikotik bozukluklarda görülebilir ancak psikozun tek göstergesi değildir. Değerlendirmede sanrı, varsanı, düşünce organizasyonu ve gerçekliği değerlendirme gibi başka alanlar da birlikte ele alınır."),
+      section("Ani Davranış Değişikliklerinde Neler Düşünülür?", "Yeni başlayan belirgin davranış değişikliklerinde psikiyatrik nedenlerin yanında madde veya ilaç etkileri, nörolojik hastalıklar ve akut tıbbi durumlar da göz önünde bulundurulmalıdır. Özellikle bilinç veya dikkat değişikliği eşlik ediyorsa tıbbi değerlendirme önemlidir. Belirtilerin başlangıç zamanı ve kişinin olağan davranış düzeyinden ne kadar farklılaştığı da değerlendirmede yardımcı olur.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Şizofreni", slug: "sizofreni" },
+      { term: "Katatoni", slug: "katatoni" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" }
+    ]
+  }],
+
+  ["dijital-bagimlilik", {
+    shortDefinition: "Dijital bağımlılık, dijital cihaz veya çevrim içi etkinlik kullanımının kontrol edilmesinde güçlük yaşanması ve bu kullanımın günlük yaşamı belirgin biçimde etkilemesi için kullanılan genel bir kavramdır.",
+    intro: "Dijital ortamda uzun zaman geçirmek tek başına bağımlılık anlamına gelmez. Kullanım üzerindeki kontrol, işlevselliğe etkisi ve olumsuz sonuçlara rağmen davranışın sürüp sürmediği daha önemlidir.",
+    sections: [
+      section("Sorunlu Dijital Kullanım Nasıl Fark Edilebilir?", "Kişi planladığından çok daha uzun süre çevrim içi kalabilir, kullanımını azaltmakta zorlanabilir veya dijital etkinlikler nedeniyle uyku, ders, iş ve sosyal ilişkilerini ihmal etmeye başlayabilir. Kullanamadığında belirgin huzursuzluk hissetmesi de bazı kişilerde görülebilir."),
+      section("Ekran Süresi Tek Başına Yeterli Bir Ölçüt müdür?", "Hayır. İş, eğitim veya iletişim nedeniyle uzun süre ekran kullanan bir kişinin işlevselliği bozulmayabilir. Değerlendirmede süreden çok davranış üzerindeki kontrol, kullanımın amacı, günlük sorumluluklara etkisi ve kişinin kullanımı azaltıp azaltamadığı dikkate alınır."),
+      section("Dijital Kullanım ile Ruhsal Durum Arasında Nasıl Bir İlişki Olabilir?", "Yoğun dijital kullanım bazen kaygı, yalnızlık, dikkat güçlüğü veya uyku sorunlarıyla birlikte görülebilir. Ancak ilişkinin yönü her zaman aynı değildir; kişi zorlandığı için dijital ortama daha fazla yönelebilir veya yoğun kullanım mevcut güçlükleri artırabilir."),
+      section("Değerlendirmede Amaç Nedir?", "Amaç teknolojiyi tamamen bırakmak değil, kullanımın kişinin yaşamındaki yerini ve işlevini anlamaktır. Uyku, eğitim veya iş, ilişkiler ve fiziksel etkinlik gibi alanlarla dengesi değerlendirilerek daha sürdürülebilir kullanım alışkanlıkları ele alınabilir.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["dikkat", {
+    shortDefinition: "Dikkat, kişinin çevresindeki veya zihnindeki bilgiler arasından belirli uyaranları seçmesi ve zihinsel kaynaklarını bu bilgiler üzerinde sürdürebilmesi kapasitesidir.",
+    intro: "Dikkat tek bir işlev değildir. Bir göreve odaklanma, dikkati sürdürme, gerektiğinde başka bir göreve geçme ve dikkat dağıtıcı uyaranları filtreleme gibi farklı süreçleri içerir.",
+    sections: [
+      section("Dikkatin Hangi Bileşenleri Vardır?", "Seçici dikkat, önemli uyaranı diğerlerinden ayırmaya yardımcı olur. Sürdürülen dikkat, bir göreve belirli süre boyunca odaklanmayı sağlar. Dikkati değiştirebilme ise gerektiğinde zihinsel odağı bir görevden diğerine taşımayla ilişkilidir."),
+      section("Dikkat Neden Gün İçinde Değişebilir?", "Uykusuzluk, yorgunluk, açlık, stres, yoğun kaygı veya çevresel dikkat dağıtıcılar dikkat performansını geçici olarak azaltabilir. Bu nedenle kısa süreli odaklanma güçlüğü tek başına dikkat bozukluğu olduğu anlamına gelmez."),
+      section("Dikkat ile Çalışma Belleği Nasıl İlişkilidir?", "Bir bilginin çalışma belleğinde tutulabilmesi için öncelikle dikkatin o bilgiye yönelmesi gerekir. Dikkat sık bölündüğünde bilgi yeterince işlenmeyebilir ve kişi bunu unutkanlık olarak yaşayabilir. Bu nedenle dikkat ve bellek yakın ilişkili ancak farklı bilişsel işlevlerdir."),
+      section("Dikkat Güçlüğü Ne Zaman Klinik Önem Taşır?", "Odaklanma güçlüğü uzun süredir varsa, birden fazla ortamda görülüyorsa veya eğitim, iş ve günlük sorumlulukları belirgin biçimde etkiliyorsa ayrıntılı değerlendirme yararlı olabilir. DEHB dışında kaygı, depresyon, uyku sorunları ve tıbbi durumlar da dikkat performansını etkileyebilir.")
+    ],
+    relatedTerms: [
+      { term: "DEHB", slug: "dehb" },
+      { term: "Çalışma belleği", slug: "calisma-bellegi" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Bilinç bulanıklığı", slug: "bilinc-bulanikligi" }
+    ]
+  }],
+
   ["bilissel-carpitma", {
     shortDefinition: "Bilişsel çarpıtma, kişinin bir durumu değerlendirirken bilgiyi sistematik biçimde seçici, katı veya gerçeği yeterince yansıtmayan bir biçimde yorumlama eğilimini anlatan psikolojik bir kavramdır.",
     intro: "Bilişsel çarpıtmalar bilinçli olarak yanlış düşünmek anlamına gelmez. Özellikle stres, kaygı veya çökkünlük sırasında bazı düşünce kalıpları daha otomatik hale gelebilir ve kişinin olayları yorumlama biçimini etkileyebilir.",
