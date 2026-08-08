@@ -64,7 +64,7 @@ function validateRenderedHtml(term, html) {
     for (const type of ["DefinedTerm", "MedicalWebPage", "BreadcrumbList"]) if (!types.includes(type)) errors.push(`${term.slug}: ${type} schema çıktıda yok`);
   } catch { errors.push(`${term.slug}: JSON-LD geçersiz`); }
   const wordCount = textWordCount(html);
-  if (wordCount < 350 || wordCount > 650) errors.push(`${term.slug}: çıktı kelime sayısı ${wordCount}; 350–650 aralığında değil`);
+  if (wordCount < 280 || wordCount > 600) errors.push(`${term.slug}: çıktı kelime sayısı ${wordCount}; 280–600 kalite aralığında değil`);
   return errors;
 }
 
