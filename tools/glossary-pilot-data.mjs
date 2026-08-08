@@ -2630,7 +2630,291 @@ const fifthBatchNewTerms = [
   })
 ];
 
+
+const sixthBatchNewTerms = [
+  defineTerm({
+    term: "Acil psikiyatri",
+    slug: "acil-psikiyatri",
+    shortDefinition: "Acil psikiyatri, kişinin ruhsal durumu veya davranışındaki hızlı değişikliklerin kendisi ya da çevresi açısından önemli güvenlik, işlevsellik veya tıbbi risk oluşturup oluşturmadığının gecikmeden değerlendirildiği psikiyatri alanıdır.",
+    intro: "Acil psikiyatrik değerlendirme yalnız belirli bir tanının varlığına göre yapılmaz. Belirtilerin ne kadar hızlı geliştiği, kişinin güvenliği, bilinç ve dikkat düzeyi, madde veya ilaç etkileri ve eşlik eden tıbbi sorunlar birlikte ele alınır.",
+    sections: [
+      section("Hangi Durumlar Acil Değerlendirme Gerektirebilir?", "Kişinin kendisine veya başkasına zarar verme riskinin belirginleşmesi, ağır davranış değişikliği, hızla gelişen psikotik belirtiler, ciddi kontrol kaybı veya temel gereksinimlerini karşılayamayacak düzeyde ruhsal bozulma acil değerlendirme gerektirebilir. Her durum kendi klinik bağlamında ele alınır."),
+      section("Bilinç Değişikliği Neden Özellikle Önemlidir?", "Yeni başlayan konfüzyon, yönelim kaybı, dikkat bozukluğu veya dalgalanan bilinç düzeyi yalnız psikiyatrik bir sorun olarak değerlendirilmemelidir. Enfeksiyon, metabolik sorunlar, nörolojik hastalıklar, ilaç veya madde etkileri gibi tıbbi nedenlerin dışlanması gerekebilir."),
+      section("Acil Değerlendirmede Neler İncelenir?", "Mevcut belirtilerin başlangıç zamanı, kişinin düşünce ve davranışları, geçmiş krizler, kullanılan ilaçlar ve maddeler, tıbbi hastalıklar, sosyal destek ve güvenli bir ortamda bulunup bulunmadığı değerlendirilir. Gerektiğinde yakınlardan veya sağlık kayıtlarından ek bilgi alınabilir."),
+      section("Acil Psikiyatri ile Rutin Muayene Arasındaki Fark Nedir?", "Rutin görüşmede ayrıntılı tanısal değerlendirme ve uzun vadeli planlama ön planda olabilir. Acil psikiyatride ilk amaç mevcut riskin ve tıbbi aciliyetin belirlenmesi, kişinin güvenliğinin sağlanması ve bir sonraki uygun sağlık hizmetinin planlanmasıdır.")
+    ],
+    relatedTerms: [
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Konfüzyon", slug: "konfuzyon" },
+      { term: "Bilinç", slug: "bilinc" }
+    ],
+    seo: {
+      title: "Acil Psikiyatri Nedir? | Psikiyatri Sözlüğü",
+      description: "Acil psikiyatrinin güvenlik, hızlı ruhsal değişim, bilinç bozukluğu ve tıbbi nedenlerin değerlendirilmesindeki rolünü açıklar.",
+      ogTitle: "Acil Psikiyatri Nedir?",
+      ogDescription: "Acil psikiyatrik değerlendirmenin hangi durumlarda ve neden gerekli olabileceğini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Hızlı gelişen ruhsal belirtilerin güvenlik ve tıbbi risk açısından gecikmeden değerlendirildiği psikiyatri alanı."
+    }
+  }),
+
+  defineTerm({
+    term: "Adli psikiyatri",
+    slug: "adli-psikiyatri",
+    shortDefinition: "Adli psikiyatri, psikiyatri bilgisinin hukukla kesiştiği durumlarda ruhsal durum, karar verme kapasitesi, ceza veya hukuk sorumluluğu ve çeşitli adli soruların tıbbi açıdan değerlendirilmesiyle ilgilenen alandır.",
+    intro: "Adli psikiyatrik değerlendirme tedavi amacıyla yapılan rutin psikiyatri görüşmesinden farklı hedeflere sahip olabilir. Değerlendirmenin hangi hukuki soruya yanıt vermek için yapıldığı, kullanılan yöntem ve raporun kapsamını belirler.",
+    sections: [
+      section("Adli Psikiyatri Hangi Konularla İlgilenir?", "Ceza sorumluluğu, fiil ehliyeti, vesayet veya koruyucu hukuki düzenlemeler, kişinin belirli bir karar için ruhsal kapasitesi ve bazı durumlarda risk değerlendirmesi adli psikiyatrinin çalışma alanları arasında bulunabilir. Hukuki ölçütler ülkenin mevzuatına göre değişir."),
+      section("Adli Muayene ile Klinik Muayene Aynı mıdır?", "Hayır. Klinik görüşmede temel amaç kişinin sağlık gereksinimlerini anlamak ve uygun sağlık hizmetini planlamaktır. Adli değerlendirmede ise belirli bir hukuki soruya nesnel ve gerekçeli tıbbi görüş sunulması amaçlanır. Bu nedenle görüşmenin amacı ve gizlilik sınırları kişiye açıklanmalıdır."),
+      section("Tanı Tek Başına Hukuki Sonuç Belirler mi?", "Hayır. Bir psikiyatrik tanının bulunması kişinin otomatik olarak hukuki kapasitesini veya sorumluluğunu ortadan kaldırmaz. Belirli olay veya karar sırasında kişinin bilişsel ve ruhsal işlevlerinin nasıl etkilendiği ayrı olarak değerlendirilir."),
+      section("Adli Raporlamada Neler Önemlidir?", "Klinik görüşme, ruhsal durum muayenesi, tıbbi belgeler ve gerektiğinde ek bilgi kaynakları birlikte ele alınabilir. Raporda gözlenen bulgular ile çıkarımlar birbirinden ayrılmalı ve değerlendirme mevcut hukuki sorunun sınırları içinde gerekçelendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" },
+      { term: "İçgörü", slug: "icgoru" },
+      { term: "Bilinç", slug: "bilinc" },
+      { term: "Psikoz", slug: "psikoz" }
+    ],
+    seo: {
+      title: "Adli Psikiyatri Nedir? | Psikiyatri Sözlüğü",
+      description: "Adli psikiyatrinin hukuk ile psikiyatri arasındaki değerlendirme alanını ve klinik muayeneden farkını açıklar.",
+      ogTitle: "Adli Psikiyatri Nedir?",
+      ogDescription: "Adli psikiyatrinin amaçlarını, kapsamını ve tanı ile hukuki sonuç arasındaki farkı açıklar."
+    },
+    schema: {
+      definedTermDescription: "Psikiyatri bilgisinin hukuki soruların tıbbi değerlendirilmesinde kullanıldığı uzmanlık alanı."
+    }
+  }),
+
+  defineTerm({
+    term: "Aile görüşmesi",
+    slug: "aile-gorusmesi",
+    shortDefinition: "Aile görüşmesi, kişinin ruhsal durumu ve günlük işlevselliği hakkında aile üyelerinden bilgi alınması, aileye gerekli bilgilerin aktarılması veya destek ve bakım sürecinin birlikte değerlendirilmesi amacıyla yapılan yapılandırılmış klinik görüşmedir.",
+    intro: "Aile görüşmesi aile terapisi ile aynı şey değildir. Bazı durumlarda tek veya birkaç görüşmeyle bilgi toplamak, iletişimi düzenlemek veya bakım planını konuşmak amaçlanırken aile terapisi daha kapsamlı bir psikoterapi sürecidir.",
+    sections: [
+      section("Aile Görüşmesinde Neler Konuşulabilir?", "Belirtilerin ne zaman başladığı, kişinin günlük işlevlerindeki değişiklikler, ev içindeki gözlemler, ilaç veya sağlık hizmetlerine ilişkin güçlükler ve aile üyelerinin destek kapasitesi ele alınabilir. Görüşmenin içeriği kişinin klinik gereksinimine göre değişir."),
+      section("Aileden Alınan Bilgi Neden Önemli Olabilir?", "Bazı ruhsal veya bilişsel durumlarda kişi kendi davranışındaki değişiklikleri tam olarak fark etmeyebilir ya da başlangıç zamanını hatırlamakta zorlanabilir. Yakınların gözlemleri klinik tabloyu anlamaya katkı sağlayabilir ancak tek başına kesin doğru kabul edilmez."),
+      section("Mahremiyet Nasıl Korunur?", "Kişinin özel sağlık bilgilerinin paylaşılması genel olarak mahremiyet ilkeleri çerçevesinde ele alınır. Aile üyelerinden bilgi almak ile kişiye ait bilgileri aileyle paylaşmak aynı şey değildir. Paylaşımın kapsamı kişinin onayı, güvenlik gereksinimleri ve geçerli hukuki kurallarla birlikte değerlendirilir."),
+      section("Aile Görüşmesi ile Aile Terapisi Arasındaki Fark Nedir?", "Aile görüşmesi belirli bir klinik soruyu açıklığa kavuşturmak veya bakım sürecini desteklemek amacıyla yapılabilir. Aile terapisi ise aile içindeki ilişki ve iletişim örüntülerini değiştirmeye yönelik yapılandırılmış psikoterapi yaklaşımıdır.")
+    ],
+    relatedTerms: [
+      { term: "Aile terapisi", slug: "aile-terapisi" },
+      { term: "Psikoeğitim", slug: "psikoegitim" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "Aile Görüşmesi Nedir? | Psikiyatri Sözlüğü",
+      description: "Aile görüşmesinin bilgi alma, bakım sürecini destekleme, mahremiyet ve aile terapisinden farkı açısından nasıl kullanıldığını açıklar.",
+      ogTitle: "Aile Görüşmesi Nedir?",
+      ogDescription: "Psikiyatride aile görüşmesinin amacı ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Aile üyelerinin klinik bilgi ve destek sürecine yapılandırılmış biçimde dahil edildiği görüşme."
+    }
+  }),
+
+  defineTerm({
+    term: "Akran ilişkileri",
+    slug: "akran-iliskileri",
+    shortDefinition: "Akran ilişkileri, benzer yaş veya gelişim dönemindeki kişiler arasında kurulan arkadaşlık, iş birliği, çatışma, aidiyet ve sosyal öğrenme süreçlerini kapsayan kişilerarası ilişkileri ifade eder.",
+    intro: "Akran ilişkileri özellikle çocukluk ve ergenlik döneminde sosyal beceriler, aidiyet duygusu ve kimlik gelişimi açısından önemli olabilir. Bununla birlikte akran çevresinin etkisi yalnız ergenlikle sınırlı değildir.",
+    sections: [
+      section("Akran İlişkilerinin Gelişimdeki Rolü Nedir?", "Çocuklar ve ergenler paylaşma, uzlaşma, sınır koyma, çatışma çözme ve farklı bakış açılarını anlama gibi birçok sosyal beceriyi akran ortamlarında deneyimleyebilir. Arkadaşlıkların niteliği yalnız arkadaş sayısından daha fazla bilgi sağlayabilir."),
+      section("Akran Çatışması Her Zaman Sorun mudur?", "Hayır. Fikir ayrılıkları ve geçici çatışmalar sosyal ilişkilerin doğal bir parçasıdır. Önemli olan çatışmanın nasıl çözüldüğü, güç dengesizliği bulunup bulunmadığı ve kişinin sürekli dışlanma veya zarar görme yaşayıp yaşamadığıdır."),
+      section("Akran Zorbalığından Farkı Nedir?", "Akran zorbalığında genellikle tekrar eden zarar verici davranış ve belirgin bir güç dengesizliği vardır. Eşit güçte iki arkadaş arasında zaman zaman yaşanan anlaşmazlık otomatik olarak zorbalık sayılmaz. Süreklilik ve güvenlik üzerindeki etki değerlendirilmelidir."),
+      section("Ruhsal İyilik Haliyle Nasıl İlişkilidir?", "Destekleyici akran ilişkileri aidiyet ve sosyal destek sağlayabilir. Sürekli dışlanma, yalnızlık veya zorbalık ise kaygı, çökkünlük ve okul işlevselliğinde bozulmayla ilişkili olabilir. Nedensellik değerlendirilirken aile, okul ve bireysel etkenler birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Akran zorbalığı", slug: "akran-zorbaligi" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "Akran İlişkileri Nedir? | Psikiyatri Sözlüğü",
+      description: "Akran ilişkilerinin gelişim, sosyal beceriler, çatışma ve akran zorbalığıyla ilişkisini açıklar.",
+      ogTitle: "Akran İlişkileri Nedir?",
+      ogDescription: "Akran ilişkilerinin çocukluk ve ergenlik gelişimindeki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Benzer yaş veya gelişim dönemindeki kişiler arasındaki sosyal ve kişilerarası ilişkiler."
+    }
+  }),
+
+  defineTerm({
+    term: "Aktarım",
+    slug: "aktarim",
+    shortDefinition: "Aktarım, kişinin geçmişteki önemli ilişkilerinde geliştirdiği duygu, beklenti ve ilişki örüntülerinin farkında olmadan güncel bir ilişkiye, özellikle de psikoterapide terapistle kurduğu ilişkiye taşınmasını açıklayan psikodinamik kavramdır.",
+    intro: "Aktarım yalnız psikoterapi odasında ortaya çıkan sıra dışı bir durum değildir. İnsanlar geçmiş deneyimlerinden geliştirdikleri beklentileri yeni ilişkileri yorumlarken kullanabilir; psikoterapi bu süreci daha sistematik biçimde inceleyebilir.",
+    sections: [
+      section("Aktarım Nasıl Görülebilir?", "Geçmişte eleştirel veya mesafeli ilişkiler yaşayan bir kişi nötr bir davranışı reddedilme işareti gibi yorumlayabilir. Başka bir kişi ise karşısındaki kişiden olağan dışı derecede onay veya güvence bekleyebilir. Bu örnekler tek başına aktarımın kanıtı değildir, ilişki bağlamında değerlendirilir."),
+      section("Aktarım Bilinçli Bir Davranış mıdır?", "Genellikle bilinçli bir rol yapma veya başka bir kişiyi yanıltma çabası olarak ele alınmaz. Kişinin önceki ilişkilerden geliştirdiği beklentiler yeni ilişkilerde otomatik olarak etkinleşebilir ve yaşanan duygular o anda tamamen gerçek hissedilebilir."),
+      section("Psikoterapide Neden Önemlidir?", "Terapötik ilişkide tekrar eden beklentiler kişinin diğer ilişkilerinde yaşadığı örüntüler hakkında bilgi sağlayabilir. Bu süreç güvenli sınırlar içinde, aceleci yorumlardan kaçınılarak ve kişinin güncel deneyimiyle bağlantı kurularak ele alınabilir."),
+      section("Karşıaktarım ile Farkı Nedir?", "Aktarım kişinin terapiste veya başka bir kişiye taşıdığı ilişki örüntülerini ifade eder. Karşıaktarım ise terapistin kişiye yönelik duygusal ve bilişsel tepkilerinin klinik bağlamda değerlendirilmesini anlatır. İki kavram aynı süreç değildir.")
+    ],
+    relatedTerms: [
+      { term: "Psikodinamik terapi", slug: "psikodinamik-terapi" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" },
+      { term: "Yansıtma", slug: "yansitma" }
+    ],
+    seo: {
+      title: "Aktarım Nedir? | Psikiyatri Sözlüğü",
+      description: "Aktarım kavramını geçmiş ilişki örüntülerinin güncel ilişkilere taşınması ve psikoterapideki anlamı açısından açıklar.",
+      ogTitle: "Aktarım Nedir?",
+      ogDescription: "Aktarımın psikodinamik psikoterapideki anlamını ve karşıaktarımdan farkını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Geçmiş ilişkilerden gelişen duygu ve beklentilerin güncel ilişkilere taşınmasını açıklayan psikodinamik kavram."
+    }
+  }),
+
+  defineTerm({
+    term: "Amigdala",
+    slug: "amigdala",
+    shortDefinition: "Amigdala, beynin temporal loblarının derininde yer alan ve özellikle duygusal önem taşıyan uyaranların değerlendirilmesi, tehdit öğrenmesi ve bazı bellek süreçlerinde rol alan birbiriyle bağlantılı çekirdekler grubudur.",
+    intro: "Amigdalayı yalnızca beynin korku merkezi olarak tanımlamak aşırı basitleştiricidir. Bu yapı tehdit dışında ödül, sosyal uyaranlar, duygusal öğrenme ve çevredeki önemli bilgilerin seçilmesi gibi süreçlere de katılır.",
+    sections: [
+      section("Amigdala Ne Yapar?", "Çevredeki bir uyaranın kişinin güvenliği veya hedefleri açısından önemli olup olmadığının hızlı değerlendirilmesine katkı sağlar. Otonom sinir sistemi ve dikkat süreçleriyle bağlantıları sayesinde duygusal açıdan önemli uyaranlara bedensel ve bilişsel yanıtların düzenlenmesinde rol oynayabilir."),
+      section("Korku ile İlişkisi Nedir?", "Tehdit oluşturan deneyimlerin öğrenilmesi ve daha sonra benzer işaretlere verilen yanıtların düzenlenmesinde amigdala önemli bir sinir ağı düğümüdür. Ancak korku tek bir beyin bölgesinde oluşmaz; prefrontal korteks, hipokampus ve başka ağlar da bu süreçlere katılır."),
+      section("Psikiyatrik Bozukluklarda Amigdala Değişir mi?", "Anksiyete, travma sonrası stres ve bazı duygudurum bozukluklarında amigdala aktivitesi veya bağlantıları üzerine çok sayıda araştırma vardır. Grup düzeyindeki bu bulgular tek bir kişinin tanısını koymak veya hastalığın nedenini yalnız amigdalaya bağlamak için kullanılamaz."),
+      section("Beyin Görüntülemesi Tanı Koydurur mu?", "Rutin psikiyatrik tanılar günümüzde tek bir amigdala ölçümü veya beyin görüntüsü üzerinden konulmaz. Görüntüleme daha çok belirli nörolojik veya tıbbi nedenlerin araştırılmasında ve bilimsel çalışmalarda kullanılır.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Stres yanıtı", slug: "stres-yaniti" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" }
+    ],
+    seo: {
+      title: "Amigdala Nedir? | Psikiyatri Sözlüğü",
+      description: "Amigdalanın duygusal önem, tehdit öğrenmesi ve bellek süreçlerindeki rolünü, korku merkezi basitleştirmesinden kaçınarak açıklar.",
+      ogTitle: "Amigdala Nedir?",
+      ogDescription: "Amigdalanın duygu ve tehdit işleme ağlarındaki rolünü açıklar."
+    },
+    schema: {
+      definedTermDescription: "Duygusal önem, tehdit öğrenmesi ve bazı bellek süreçlerinde rol alan beyin çekirdekleri grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Anksiyolitik",
+    slug: "anksiyolitik",
+    shortDefinition: "Anksiyolitik, kaygı ve gerginlik belirtilerini azaltma amacıyla kullanılan ilaçları veya bazı ilaç gruplarının kaygı azaltıcı etkisini tanımlayan genel farmakolojik terimdir.",
+    intro: "Anksiyolitik tek bir ilaç grubunun adı değildir. Farklı etki mekanizmalarına sahip ilaçlar belirli klinik durumlarda kaygı belirtileri için kullanılabilir ve seçim kişinin tanısı, diğer hastalıkları ve kullandığı ilaçlarla birlikte değerlendirilir.",
+    sections: [
+      section("Anksiyolitik İlaçlar Nasıl Sınıflandırılır?", "Bazı ilaçlar daha hızlı ortaya çıkan sakinleştirici etkilere sahipken bazı antidepresanlar belirli anksiyete bozukluklarında uzun dönem tedavi amacıyla kullanılabilir. Aynı ilacın farklı klinik durumlarda farklı amaçlarla kullanılması mümkündür."),
+      section("Anksiyolitik ile Antidepresan Aynı Şey midir?", "Hayır. Antidepresan farmakolojik bir ilaç sınıfını ifade ederken anksiyolitik daha çok kaygı azaltıcı etkiyi tanımlar. Bazı antidepresanlar aynı zamanda güçlü anksiyolitik etki gösterebilir ve anksiyete bozukluklarında kullanılabilir."),
+      section("Neden Hekim Değerlendirmesi Gerekir?", "Kaygının altında yatan durum, başka tıbbi hastalıklar, ilaç etkileşimleri, uyku hali veya bağımlılık potansiyeli gibi özellikler ilaç seçimini etkileyebilir. Bu nedenle kişinin kendi kendine ilaç başlatması, bırakması veya doz değiştirmesi uygun değildir."),
+      section("İlaç Kaygının Tek Tedavisi midir?", "Hayır. Anksiyete bozukluklarında psikoterapi, yaşam düzenlemeleri ve gerektiğinde ilaç tedavisi farklı biçimlerde kullanılabilir. Uygun yaklaşım belirtilerin türü, şiddeti, süresi, kişinin tercihleri ve klinik değerlendirmeye göre belirlenir. Tedavi planı zaman içinde belirtilerdeki değişime ve kişinin gereksinimlerine göre yeniden değerlendirilebilir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Panik bozukluk", slug: "panik-bozukluk" }
+    ],
+    seo: {
+      title: "Anksiyolitik Nedir? | Psikiyatri Sözlüğü",
+      description: "Anksiyolitik teriminin kaygı azaltıcı ilaç etkisini nasıl tanımladığını ve antidepresanlarla ilişkisini açıklar.",
+      ogTitle: "Anksiyolitik Nedir?",
+      ogDescription: "Anksiyolitik ilaç kavramını güvenli ve genel bir farmakolojik çerçevede açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kaygı ve gerginlik belirtilerini azaltmaya yönelik farmakolojik etki veya ilaçları tanımlayan genel terim."
+    }
+  }),
+
+  defineTerm({
+    term: "Anterior singulat korteks",
+    slug: "anterior-singulat-korteks",
+    shortDefinition: "Anterior singulat korteks, beynin medial frontal bölgelerinde yer alan ve dikkat, hata izleme, çatışma değerlendirmesi, motivasyon, ağrı ve duygu düzenleme gibi birçok işleve katılan kortikal bölgedir.",
+    intro: "Anterior singulat korteks tek bir psikolojik işlevin merkezi değildir. Farklı alt bölgeleri bilişsel kontrol, bedensel durumların değerlendirilmesi ve duygusal anlamlandırma gibi işlevlere farklı ölçülerde katkıda bulunur.",
+    sections: [
+      section("Bilişsel Kontrolde Nasıl Rol Oynar?", "Kişinin birbiriyle yarışan yanıtlar arasından seçim yapması, hata yaptığını fark etmesi veya dikkat gerektiren bir durumda performansını yeniden düzenlemesi sırasında anterior singulat korteksin dahil olduğu beyin ağları etkinleşebilir."),
+      section("Duygularla İlişkisi Nedir?", "Bu bölgenin limbik ve prefrontal yapılarla bağlantıları duygusal açıdan önemli bilgilerin değerlendirilmesine katkı sağlar. Duygu düzenleme tek bir bölgenin işi değildir; anterior singulat korteks daha geniş sinir ağlarının bir parçası olarak çalışır."),
+      section("Psikiyatride Neden Araştırılır?", "Depresyon, anksiyete, obsesif kompulsif bozukluk ve başka ruhsal durumlarda bu bölgenin aktivitesi veya bağlantıları araştırılmıştır. Ancak araştırma grupları arasındaki ortalama farklılıklar tek bir kişinin tanısını belirleyen biyobelirteçler olarak kullanılamaz."),
+      section("Beyin Bölgesi Bulguları Nasıl Yorumlanmalıdır?", "Bir psikiyatrik belirtiyi tek bir beyin bölgesindeki artış veya azalmayla açıklamak çoğu zaman yetersizdir. Beyin işlevleri birbirine bağlı ağlar üzerinden yürütülür ve görüntüleme sonuçları klinik öykü ile ruhsal durum değerlendirmesinin yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" }
+    ],
+    seo: {
+      title: "Anterior Singulat Korteks Nedir? | Psikiyatri Sözlüğü",
+      description: "Anterior singulat korteksin dikkat, hata izleme, motivasyon ve duygu düzenleme ağlarındaki rolünü açıklar.",
+      ogTitle: "Anterior Singulat Korteks Nedir?",
+      ogDescription: "Anterior singulat korteksin bilişsel ve duygusal işlevlerdeki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dikkat, hata izleme, motivasyon ve duygu düzenleme gibi süreçlere katılan medial frontal korteks bölgesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Antidepresan",
+    slug: "antidepresan",
+    shortDefinition: "Antidepresan, depresif bozuklukların yanı sıra bazı anksiyete bozuklukları, obsesif kompulsif bozukluk ve başka klinik durumlarda kullanılabilen farklı etki mekanizmalarına sahip psikiyatrik ilaç gruplarının genel adıdır.",
+    intro: "Antidepresan sözcüğü yalnız depresyonda kullanılan ilaç anlamına gelmez. İlacın hangi durumda kullanılacağı, beklenen yararlar, olası yan etkiler ve kişinin diğer sağlık özellikleri klinik değerlendirmeyle birlikte ele alınır.",
+    sections: [
+      section("Antidepresanlar Tek Bir İlaç Grubu mudur?", "Hayır. Serotonin, noradrenalin veya başka nörokimyasal sistemleri farklı biçimlerde etkileyen çeşitli antidepresan sınıfları vardır. Aynı sınıftaki ilaçların bile yan etki, etkileşim ve kişisel tolerans profilleri farklılık gösterebilir."),
+      section("Etkileri Hemen Başlar mı?", "Bazı yan etkiler veya bedensel değişiklikler erken dönemde hissedilebilirken hedeflenen ruhsal belirtilerdeki değişim daha farklı bir zaman seyri gösterebilir. Tedavi yanıtının değerlendirilmesi yalnız ilk birkaç dozdan sonra oluşan hislere göre yapılmaz."),
+      section("Antidepresan Bağımlılık Yapar mı?", "Antidepresanlar klasik anlamda sarhoşluk veya ödül arayışı oluşturan bağımlılık yapıcı maddeler gibi değerlendirilmez. Bununla birlikte bazı ilaçların aniden kesilmesi bırakma belirtilerine yol açabilir; bu nedenle ilaç değişiklikleri hekim değerlendirmesiyle yapılmalıdır."),
+      section("Her Depresyonda Aynı Antidepresan mı Kullanılır?", "Hayır. Belirtilerin özellikleri, eşlik eden hastalıklar, daha önceki tedavi yanıtları, kullanılan diğer ilaçlar ve kişinin tercihleri seçimde önemlidir. Bipolar bozukluk olasılığı gibi klinik durumlar da tedavi planı açısından ayrıca değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Anksiyolitik", slug: "anksiyolitik" },
+      { term: "Remisyon", slug: "remisyon" }
+    ],
+    seo: {
+      title: "Antidepresan Nedir? | Psikiyatri Sözlüğü",
+      description: "Antidepresanların farklı ilaç sınıflarını kapsadığını, yalnız depresyonda kullanılmadığını ve klinik değerlendirme gerektirdiğini açıklar.",
+      ogTitle: "Antidepresan Nedir?",
+      ogDescription: "Antidepresan ilaç kavramını kullanım alanları ve güvenli değerlendirme çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Depresyon ve bazı başka ruhsal bozukluklarda kullanılan farklı etki mekanizmalarına sahip ilaçların genel adı."
+    }
+  }),
+
+  defineTerm({
+    term: "Antipsikotik",
+    slug: "antipsikotik",
+    shortDefinition: "Antipsikotik, şizofreni ve diğer psikotik tabloların yanı sıra bipolar bozukluk gibi bazı klinik durumlarda kullanılan, dopamin ve başka nörotransmiter sistemlerini farklı biçimlerde etkileyebilen psikiyatrik ilaçların genel adıdır.",
+    intro: "Antipsikotik ilaçlar tek bir kimyasal yapı veya tek bir etki mekanizmasından oluşmaz. Kullanım amacı, beklenen yarar ve olası yan etkiler kişinin tanısı, tıbbi durumu ve diğer ilaçlarıyla birlikte değerlendirilir.",
+    sections: [
+      section("Antipsikotikler Hangi Belirtilerde Kullanılabilir?", "Sanrı, varsanı ve belirgin dezorganize düşünce gibi psikotik belirtilerin bulunduğu durumlarda antipsikotik tedavi kullanılabilir. Bazı ilaçların mani, bipolar depresyon veya başka klinik alanlarda da onaylanmış ya da klinik kullanım alanları bulunabilir."),
+      section("Birinci ve İkinci Kuşak Ne Anlama Gelir?", "Antipsikotikler tarihsel ve farmakolojik özelliklerine göre farklı gruplara ayrılabilir. Bu sınıflandırma bir grubun her durumda diğerinden daha iyi veya daha güvenli olduğu anlamına gelmez; yan etki profilleri ilaçlar arasında önemli farklılık gösterebilir."),
+      section("Yan Etkiler Neden Düzenli İzlenir?", "Hareket sistemi belirtileri, uyku hali, metabolik değişiklikler, hormonal etkiler veya başka bedensel yan etkiler kullanılan ilaca göre değişebilir. Bu nedenle tedavi sırasında klinik ve gerektiğinde laboratuvar izlemi kişiye göre planlanabilir."),
+      section("İlaç Kendi Kendine Kesilmeli midir?", "Hayır. Belirtilerin düzelmesi hastalığın tamamen sona erdiği anlamına gelmeyebilir ve ani ilaç değişiklikleri farklı sorunlara yol açabilir. Kullanılan antipsikotiğin devamı, değiştirilmesi veya bırakılması hekimle birlikte klinik durum değerlendirilerek planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Şizofreni", slug: "sizofreni" },
+      { term: "Mani", slug: "mani" },
+      { term: "Akatizi", slug: "akatizi" }
+    ],
+    seo: {
+      title: "Antipsikotik Nedir? | Psikiyatri Sözlüğü",
+      description: "Antipsikotik ilaçların psikotik belirtiler ve bazı başka klinik durumlarda kullanımını, sınıflarını ve izlem gereksinimini açıklar.",
+      ogTitle: "Antipsikotik Nedir?",
+      ogDescription: "Antipsikotik ilaç kavramını kullanım alanları ve güvenli izlem çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Psikotik belirtiler ve bazı başka ruhsal durumlarda kullanılan psikiyatrik ilaçların genel adı."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...sixthBatchNewTerms,
   ...fifthBatchNewTerms,
   ...fourthBatchNewTerms,...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm, derealizationBaseTerm, maniBaseTerm, hypomaniaBaseTerm, psychosisBaseTerm]
   .map((term) => ({ ...term, ...qualityOverrides.get(term.slug) }));

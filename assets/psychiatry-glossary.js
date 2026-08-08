@@ -304,6 +304,16 @@ Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bi
 `;
 
 const glossaryDetailPages = {
+  "Acil psikiyatri": "acil-psikiyatri",
+  "Adli psikiyatri": "adli-psikiyatri",
+  "Aile görüşmesi": "aile-gorusmesi",
+  "Akran ilişkileri": "akran-iliskileri",
+  "Aktarım": "aktarim",
+  "Amigdala": "amigdala",
+  "Anksiyolitik": "anksiyolitik",
+  "Anterior singulat korteks": "anterior-singulat-korteks",
+  "Antidepresan": "antidepresan",
+  "Antipsikotik": "antipsikotik",
   "Psikodinamik terapi": "psikodinamik-terapi",
   "Destekleyici psikoterapi": "destekleyici-psikoterapi",
   "Maruz bırakma": "maruz-birakma",
