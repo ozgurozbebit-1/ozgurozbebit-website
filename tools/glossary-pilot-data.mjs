@@ -4045,7 +4045,291 @@ const tenthBatchNewTerms = [
   })
 ];
 
+
+const eleventhBatchNewTerms = [
+  defineTerm({
+    term: "Grup terapisi",
+    slug: "grup-terapisi",
+    shortDefinition: "Grup terapisi, benzer ya da farklı ruhsal güçlükleri bulunan birden fazla kişinin eğitimli bir terapist veya terapistler eşliğinde düzenli oturumlarda birlikte çalıştığı psikoterapi biçimidir.",
+    intro: "Grup terapisi yalnız kişilerin sırayla sorunlarını anlattığı bir toplantı değildir. Grup üyeleri kendi deneyimlerini ele alırken diğer üyelerin geri bildirimleri, kişilerarası etkileşimler ve grup içinde ortaya çıkan örüntüler de terapötik çalışmanın parçası olabilir.",
+    sections: [
+      section("Grup Terapisi Nasıl İşler?", "Grubun amacı ve yöntemi kullanılan terapi yaklaşımına göre değişebilir. Bazı gruplar belirli bir sorun veya beceri alanına odaklanırken bazıları kişilerarası ilişkileri ve duygusal örüntüleri daha geniş biçimde ele alır. Oturumların yapısı, üye sayısı ve süresi programa göre farklılık gösterebilir."),
+      section("Grubun Sağladığı Farklı Deneyim Nedir?", "Kişi benzer güçlükleri yaşayan başkalarının deneyimlerini duyarak yalnız olmadığını fark edebilir. Başkalarının bakış açılarını görmek, kendi davranışlarının ilişkiler üzerindeki etkisini anlamak ve güvenli bir ortamda yeni iletişim biçimlerini denemek önemli öğrenme fırsatları sağlayabilir."),
+      section("Gizlilik Grup İçinde Nasıl Ele Alınır?", "Terapist mesleki gizlilik ilkelerine bağlıdır ve grup üyelerinden de diğer katılımcıların paylaşımlarını grup dışında aktarmamaları beklenir. Bununla birlikte grup ortamında birden fazla katılımcı bulunduğundan gizliliğin sınırları başlangıçta açık biçimde konuşulmalıdır."),
+      section("Grup Terapisi Herkes İçin Uygun mudur?", "Her kişinin ihtiyacı, güvenliği, belirtileri ve grup ortamına katılım kapasitesi farklıdır. Bazı durumlarda bireysel terapi, başka bir grup türü veya farklı bir destek biçimi daha uygun olabilir. Grup terapisine uygunluk yalnız tanı adına göre değil, kişinin mevcut klinik özellikleri ve hedefleriyle birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Aile terapisi", slug: "aile-terapisi" },
+      { term: "Psikoeğitim", slug: "psikoegitim" },
+      { term: "Sosyal destek", slug: "sosyal-destek" }
+    ],
+    seo: {
+      title: "Grup Terapisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Grup terapisinin kişilerarası etkileşim, geri bildirim ve ortak deneyimler üzerinden nasıl çalıştığını ve kimler için değerlendirilebileceğini açıklar.",
+      ogTitle: "Grup Terapisi Nedir?",
+      ogDescription: "Grup terapisinin temel özelliklerini, gizlilik çerçevesini ve bireysel terapiden farklı yönlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Birden fazla kişinin terapist eşliğinde grup etkileşimlerinden de yararlanarak birlikte çalıştığı psikoterapi biçimi."
+    }
+  }),
+
+  defineTerm({
+    term: "Güvenli bağlanma",
+    slug: "guvenli-baglanma",
+    shortDefinition: "Güvenli bağlanma, yakın ilişkilerde destek ve yakınlık arayabilme ile gerektiğinde bağımsız hareket edebilme kapasitesinin görece dengeli biçimde birlikte bulunabildiği bağlanma örüntüsüdür.",
+    intro: "Güvenli bağlanma kusursuz ilişkiler yaşamak, hiç kaygılanmamak veya sürekli yakınlık istemek anlamına gelmez. Bağlanma kavramları psikiyatrik tanı değildir ve kişinin bütün ilişkilerini tek bir etiketle açıklamak için kullanılmamalıdır.",
+    sections: [
+      section("Güvenli Bağlanma Nasıl Görülebilir?", "Kişi ihtiyaç duyduğunda yakınından destek isteyebilir, karşısındaki kişinin ihtiyaçlarına yanıt verebilir ve geçici ayrılık veya anlaşmazlıkları ilişkinin tamamen sona ereceği biçiminde yorumlamadan yönetebilir. Yakınlık ile bireysel alanın birlikte korunabilmesi önemli özelliklerden biridir."),
+      section("Çocuklukta Nasıl Gelişebilir?", "Bağlanma kuramında bakım verenin genel olarak ulaşılabilir, öngörülebilir ve çocuğun ihtiyaçlarına yeterince duyarlı olması güven duygusunun gelişmesine katkıda bulunan etkenlerden biri olarak ele alınır. Bununla birlikte bağlanma biçimini tek bir ebeveyn davranışı veya tek bir çocukluk olayıyla açıklamak doğru değildir."),
+      section("Yetişkinlikte Değişebilir mi?", "Evet. Bağlanma örüntüleri erken deneyimlerden etkilenebilse de değişmez değildir. Güvenilir ilişkiler, kişinin kendi ihtiyaçlarını daha iyi tanıması, iletişim becerilerinin gelişmesi ve yeni ilişkisel deneyimler zaman içinde daha dengeli örüntülerin oluşmasına katkıda bulunabilir."),
+      section("Güvenli Bağlanma Bir Tanı mıdır?", "Hayır. Güvenli, kaygılı, kaçıngan veya dezorganize bağlanma gibi terimler ilişkisel örüntüleri anlamaya yardımcı olan kavramlardır. Bir kişinin bağlanma biçiminden doğrudan kişilik bozukluğu, travma bozukluğu veya başka bir psikiyatrik tanı çıkarılamaz.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Kaygılı bağlanma", slug: "kaygili-baglanma" },
+      { term: "Kaçıngan bağlanma", slug: "kacingan-baglanma" },
+      { term: "Dezorganize bağlanma", slug: "dezorganize-baglanma" }
+    ],
+    seo: {
+      title: "Güvenli Bağlanma Nedir? | Psikiyatri Sözlüğü",
+      description: "Güvenli bağlanmanın yakınlık, destek arama ve bağımsızlık arasındaki dengeyi nasıl tanımladığını ve bağlanma örüntülerinin değişebilirliğini açıklar.",
+      ogTitle: "Güvenli Bağlanma Nedir?",
+      ogDescription: "Güvenli bağlanmayı gelişimsel ve ilişkisel sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Yakınlık ve destek arama ile bağımsızlığın görece dengeli biçimde sürdürülebildiği bağlanma örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Güvenlik planı",
+    slug: "guvenlik-plani",
+    shortDefinition: "Güvenlik planı, kişinin yoğun bir ruhsal kriz sırasında kendisini daha güvende tutabilmesine yardımcı olmak amacıyla önceden ve iş birliği içinde oluşturulan kişiselleştirilmiş destek planıdır.",
+    intro: "Güvenlik planı yalnızca acil telefon numaralarının yazıldığı bir liste değildir. Amaç yaklaşan krizin erken işaretlerini fark etmek, kişinin kullanabileceği baş etme yollarını ve destek kaynaklarını önceden belirlemek ve gerektiğinde profesyonel yardıma ulaşmayı kolaylaştırmaktır.",
+    sections: [
+      section("Güvenlik Planının Amacı Nedir?", "Yoğun sıkıntı dönemlerinde düşünmek, seçenekleri değerlendirmek ve yardım istemek zorlaşabilir. Önceden hazırlanmış bir plan, kişinin krizin erken belirtilerini fark etmesine ve daha önce üzerinde uzlaşılan güvenli adımları hatırlamasına yardımcı olabilir. Plan kişinin ihtiyaçlarına göre bireyselleştirilir."),
+      section("Plan Hangi Unsurları İçerebilir?", "Kişinin kendisinde fark ettiği uyarı işaretleri, sakinleşmesine veya dikkatini güvenli biçimde başka yöne yöneltmesine yardımcı olan yöntemler, ulaşabileceği güvenilir kişiler ve profesyonel destek kaynakları planın parçaları olabilir. İçerik klinik görüşme sırasında kişiyle birlikte belirlenir."),
+      section("Güvenlik Planı Risk Değerlendirmesinin Yerine Geçer mi?", "Hayır. Güvenlik planı risk değerlendirmesini veya gerekli klinik müdahaleyi değiştiren bir araç değildir. Riskin düzeyi, kişinin mevcut düşünceleri, kendisini güvende tutabilme kapasitesi, destek kaynakları ve eşlik eden ruhsal belirtiler ayrıca değerlendirilmelidir."),
+      section("Plan Ne Zaman Yeniden Gözden Geçirilir?", "Yaşam koşulları, destek ağı veya kriz örüntüsü değiştiğinde planın güncellenmesi gerekebilir. Kişi kendisini güvende tutamayacağını düşünüyor, yaşamına son verme düşünceleri yoğunlaşıyor veya kriz hızla ağırlaşıyorsa yalnız plana dayanmak yerine gecikmeden acil profesyonel değerlendirme gerekir.")
+    ],
+    relatedTerms: [
+      { term: "İntihar riski", slug: "intihar-riski" },
+      { term: "Kendine zarar verme", slug: "kendine-zarar-verme" },
+      { term: "Acil psikiyatri", slug: "acil-psikiyatri" },
+      { term: "Sosyal destek", slug: "sosyal-destek" }
+    ],
+    seo: {
+      title: "Güvenlik Planı Nedir? | Psikiyatri Sözlüğü",
+      description: "Güvenlik planının kriz işaretlerini, destek kaynaklarını ve profesyonel yardım yollarını önceden belirlemedeki rolünü güvenli biçimde açıklar.",
+      ogTitle: "Güvenlik Planı Nedir?",
+      ogDescription: "Ruhsal krizlerde kullanılan güvenlik planının amacı, sınırları ve klinik değerlendirmeyle ilişkisini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruhsal kriz sırasında güvenliği desteklemek için önceden ve iş birliği içinde oluşturulan kişiselleştirilmiş destek planı."
+    }
+  }),
+
+  defineTerm({
+    term: "Halüsinasyon",
+    slug: "halusinasyon",
+    shortDefinition: "Halüsinasyon, dış ortamda karşılık gelen bir uyaran bulunmadığı halde kişinin gerçek bir algı gibi deneyimlediği görme, işitme, dokunma, koku veya tat yaşantısını ifade eden klinik terimdir.",
+    intro: "Türkçede varsanı terimiyle aynı anlamda kullanılabilir. Halüsinasyon tek başına belirli bir psikiyatrik tanıyı göstermez; psikiyatrik, nörolojik, tıbbi ve maddeyle ilişkili farklı durumlarda ortaya çıkabilir.",
+    sections: [
+      section("Halüsinasyon Hangi Duyularda Görülebilir?", "En sık sözü edilen biçim işitsel halüsinasyonlardır ancak görsel, dokunsal, kokusal veya tatsal algı yaşantıları da görülebilir. Algının niteliği, ne zaman ortaya çıktığı, kişinin deneyime ne ölçüde inandığı ve eşlik eden belirtiler klinik açıdan önem taşır."),
+      section("Halüsinasyon ile Yanılsama Aynı Şey midir?", "Hayır. Halüsinasyonda algıya karşılık gelen dış uyaran bulunmaz. Yanılsamada ise gerçek bir dış uyaran vardır fakat kişi onu farklı veya hatalı biçimde algılar. Örneğin belirsiz bir görüntünün başka bir nesne sanılması yanılsama niteliğinde olabilir."),
+      section("Yalnız Psikozda mı Görülür?", "Hayır. Psikotik bozuklukların yanında ağır duygudurum dönemleri, bazı nörolojik hastalıklar, bilinç değişiklikleri, madde veya ilaç etkileri ve uykuya geçiş gibi özel durumlarda da algısal yaşantılar görülebilir. Bu nedenle bağlam ve eşlik eden bulgular değerlendirilir."),
+      section("Yeni Başlayan Halüsinasyon Neden Değerlendirilmelidir?", "Özellikle ilk kez ortaya çıkan, hızla değişen veya bilinç ve dikkat bozukluğuyla birlikte görülen algısal yaşantılarda yalnız psikiyatrik neden varsayılmamalıdır. Tıbbi ve nörolojik nedenler ile kullanılan maddeler veya ilaçlar da göz önünde bulundurulmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Varsanı", slug: "varsani" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Şizofreni", slug: "sizofreni" }
+    ],
+    seo: {
+      title: "Halüsinasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Halüsinasyonun dış uyaran olmadan yaşanan algısal deneyimi nasıl tanımladığını, yanılsamadan farkını ve farklı klinik nedenlerini açıklar.",
+      ogTitle: "Halüsinasyon Nedir?",
+      ogDescription: "Halüsinasyon veya varsanı kavramını duyusal türleri ve klinik değerlendirme çerçevesiyle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dış ortamda karşılık gelen bir uyaran olmadan gerçek bir algı gibi yaşanan duyusal deneyim."
+    }
+  }),
+
+  defineTerm({
+    term: "Hasta hakları",
+    slug: "hasta-haklari",
+    shortDefinition: "Hasta hakları, sağlık hizmeti alan kişinin bilgi edinme, mahremiyet, saygı görme, karar süreçlerine katılma ve güvenli sağlık hizmetine erişme gibi temel haklarını ifade eden etik ve hukuki çerçevedir.",
+    intro: "Hasta haklarının ayrıntıları ülkenin mevzuatına ve sağlık hizmetinin niteliğine göre farklılaşabilir. Psikiyatride bu haklar özellikle bilgilendirilmiş onam, gizlilik, kişinin karar verme kapasitesi ve güvenlikle ilgili durumların dengeli biçimde ele alınması açısından önemlidir.",
+    sections: [
+      section("Bilgi Edinme ve Kararlara Katılma Ne Anlama Gelir?", "Kişinin değerlendirme, önerilen yaklaşım, olası yarar ve riskler ile alternatifler hakkında anlayabileceği biçimde bilgi alması önemlidir. Uygun durumlarda kişi kendi sağlık hizmetiyle ilgili kararlara aktif biçimde katılır ve sorularını ifade edebilir."),
+      section("Mahremiyet ve Gizlilik Nasıl Korunur?", "Sağlık bilgilerinin korunması ve görüşmelerin mahremiyet içinde yürütülmesi temel ilkeler arasındadır. Bilgilerin hangi koşullarda ve kimlerle paylaşılabileceği etik ve yasal kurallarla belirlenir. Güvenlikle ilgili bazı özel durumlarda gizliliğin sınırları ayrıca değerlendirilir."),
+      section("Psikiyatrik Hastalık Hakları Ortadan Kaldırır mı?", "Hayır. Bir psikiyatrik tanının bulunması kişinin temel haklarını otomatik olarak ortadan kaldırmaz. Karar verme kapasitesi ve belirli bir müdahale için onam verebilme durumu gerektiğinde somut klinik koşullar içinde değerlendirilir; yalnız tanı adına dayanarak varsayım yapılmamalıdır."),
+      section("Hak İhlali Düşünülürse Ne Yapılabilir?", "Başvuru yolları sağlık kurumunun yapısına ve yürürlükteki mevzuata göre değişebilir. Kişi kurumun hasta hakları birimlerinden, ilgili idari kanallardan veya gerektiğinde hukuki danışmanlıktan bilgi alabilir. Web sayfasındaki genel bilgiler belirli bir hukuki uyuşmazlık için kişisel hukuk danışmanlığı yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "Bilgilendirilmiş onam", slug: "bilgilendirilmis-onam" },
+      { term: "Gizlilik", slug: "gizlilik" },
+      { term: "Adli psikiyatri", slug: "adli-psikiyatri" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Hasta Hakları Nedir? | Psikiyatri Sözlüğü",
+      description: "Hasta haklarını bilgi edinme, onam, mahremiyet ve sağlık kararlarına katılım çerçevesinde açıklar ve psikiyatrideki önemini ele alır.",
+      ogTitle: "Hasta Hakları Nedir?",
+      ogDescription: "Hasta haklarının psikiyatrik değerlendirme ve sağlık hizmetlerindeki temel ilkelerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Sağlık hizmeti alan kişinin bilgi, mahremiyet, saygı, katılım ve güvenlikle ilgili temel haklarını kapsayan etik ve hukuki çerçeve."
+    }
+  }),
+
+  defineTerm({
+    term: "Hipnotik",
+    slug: "hipnotik",
+    shortDefinition: "Hipnotik, uykuya dalmayı veya uykuyu sürdürmeyi kolaylaştırmak amacıyla kullanılan ve farklı farmakolojik mekanizmalara sahip olabilen ilaçlar için kullanılan genel klinik terimdir.",
+    intro: "Hipnotikler tek bir ilaç sınıfı değildir ve her uyku güçlüğünde aynı yaklaşım kullanılmaz. Uykusuzluğun süresi, nedeni, eşlik eden hastalıklar, kullanılan diğer ilaçlar ve bağımlılık ya da yan etki riskleri klinik değerlendirmede önem taşır.",
+    sections: [
+      section("Hipnotik İlaçlar Nasıl Etki Gösterebilir?", "Farklı hipnotik ilaçlar beyindeki farklı reseptör ve nörotransmitter sistemleri üzerinden etki gösterebilir. Bazıları merkezi sinir sistemi aktivitesini azaltırken bazıları uyku-uyanıklık döngüsünü düzenleyen başka mekanizmaları etkiler. Bu nedenle bütün hipnotikler aynı etki ve risk profiline sahip değildir."),
+      section("Neden Kısa ve Uzun Dönem Kullanım Ayrılır?", "Bazı hipnotiklerde uzun süreli kullanım tolerans, bağımlılık, gündüz sedasyonu veya bırakma sırasında güçlüklerle ilişkili olabilir. Ancak bu risklerin düzeyi kullanılan ilaca ve kişisel özelliklere göre değişir. Kullanım süresine ilişkin kararlar kişisel klinik değerlendirmeye dayanmalıdır."),
+      section("Diğer İlaç ve Maddeler Neden Önemlidir?", "Sedatif etkisi bulunan başka ilaçlar veya maddeler bazı hipnotiklerin merkezi sinir sistemi üzerindeki etkisini artırabilir. Farmakokinetik etkileşimler de kandaki ilaç düzeyini değiştirebilir. Bu nedenle kişinin kullandığı reçeteli, reçetesiz ve diğer ürünlerin bilinmesi önemlidir."),
+      section("Hipnotik İlaç Kendi Kendine Başlanıp Bırakılabilir mi?", "Reçeteli bir hipnotiğin başlatılması, dozu veya bırakılması kişisel öneri olmadan değiştirilmemelidir. Özellikle uzun süre kullanılan bazı ilaçların aniden kesilmesi sorun oluşturabilir. Uyku yakınmasının altında yatan neden ve ilaç dışı yaklaşımlar da tedavi planında değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Benzodiazepin", slug: "benzodiazepin" },
+      { term: "Etkileşim", slug: "etkilesim" },
+      { term: "Farmakokinetik", slug: "farmakokinetik" },
+      { term: "Farmakodinamik", slug: "farmakodinamik" }
+    ],
+    seo: {
+      title: "Hipnotik Nedir? | Psikiyatri Sözlüğü",
+      description: "Hipnotik ilaçların uyku üzerindeki genel kullanımını, farklı mekanizmalarını, etkileşim ve güvenli kullanım konularını açıklar.",
+      ogTitle: "Hipnotik Nedir?",
+      ogDescription: "Hipnotik ilaç kavramını güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Uykuya dalmayı veya uykuyu sürdürmeyi kolaylaştırmak amacıyla kullanılan ilaçlar için genel klinik terim."
+    }
+  }),
+
+  defineTerm({
+    term: "Hipokampus",
+    slug: "hipokampus",
+    shortDefinition: "Hipokampus, beynin medial temporal bölgesinde yer alan ve özellikle yeni anıların oluşumu, öğrenme, mekânsal ve bağlamsal bilginin işlenmesiyle ilişkili önemli bir beyin yapısıdır.",
+    intro: "Hipokampus psikiyatri ve nörobilim araştırmalarında sık incelenir ancak tek bir beyin bölgesinin büyüklüğü veya etkinliği kişinin psikiyatrik tanısını tek başına belirlemez. Beyin işlevleri birbirine bağlı geniş sinir ağlarının ortak çalışmasıyla ortaya çıkar.",
+    sections: [
+      section("Hipokampus Bellekte Nasıl Rol Oynar?", "Yeni deneyimlerin uzun süreli belleğe aktarılmasında ve olayların zaman, yer ve bağlamla ilişkilendirilmesinde hipokampal sistemler önemli rol oynar. Hipokampus bütün bellek türlerinin tek merkezi değildir; farklı bellek süreçleri farklı beyin ağlarının katkısını içerir."),
+      section("Stresle İlişkisi Nedir?", "Hipokampus stres hormonlarının etkilerine duyarlı beyin bölgelerinden biridir ve stres yanıtını düzenleyen sistemlerle karşılıklı bağlantıları bulunur. Uzun süreli veya yoğun stresin hipokampal işlevlerle ilişkisi araştırılmıştır ancak bireysel düzeyde basit bir neden-sonuç ilişkisi kurulamaz."),
+      section("Psikiyatrik Bozukluklarda Neden Araştırılır?", "Depresyon, travmayla ilişkili bozukluklar ve bazı psikotik tablolar dahil çeşitli durumlarda hipokampal yapı ve işlev üzerine grup düzeyinde farklılıklar bildirilmiştir. Bu bulgular araştırma açısından değerlidir fakat tek bir kişinin görüntüleme sonucundan psikiyatrik tanı çıkarmaya uygun değildir."),
+      section("Hipokampus Diğer Beyin Bölgelerinden Bağımsız mı Çalışır?", "Hayır. Amigdala, prefrontal bölgeler ve başka limbik yapılarla yoğun bağlantıları vardır. Duygusal önem, bağlam, öğrenme ve bellek gibi süreçler bu ağların birlikte çalışmasıyla oluşur. Bu nedenle hipokampusu tek başına bir duygu veya hastalık merkezi gibi tanımlamak aşırı basitleştirici olur.")
+    ],
+    relatedTerms: [
+      { term: "Amigdala", slug: "amigdala" },
+      { term: "Anterior singulat korteks", slug: "anterior-singulat-korteks" },
+      { term: "Glutamat", slug: "glutamat" },
+      { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" }
+    ],
+    seo: {
+      title: "Hipokampus Nedir? | Psikiyatri Sözlüğü",
+      description: "Hipokampusun bellek, öğrenme ve stres sistemleriyle ilişkisini ve psikiyatri araştırmalarındaki bulguların bireysel tanı anlamına gelmediğini açıklar.",
+      ogTitle: "Hipokampus Nedir?",
+      ogDescription: "Hipokampusun bellek ve bağlamsal öğrenmedeki rolünü nörobiyolojik sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Yeni anıların oluşumu, öğrenme ve bağlamsal bilginin işlenmesinde rol alan medial temporal beyin yapısı."
+    }
+  }),
+
+  defineTerm({
+    term: "Histrionik kişilik örüntüsü",
+    slug: "histrionik-kisilik-oruntusu",
+    shortDefinition: "Histrionik kişilik örüntüsü, dikkat ve onay ihtiyacının belirginleşebildiği, duyguların yoğun ve dışa dönük ifade edilebildiği ve kişilerarası ilişkilerde tekrarlayan bazı örüntülerin görülebildiği kişilik yapılanmasını ifade eder.",
+    intro: "Dışa dönük olmak, duygularını güçlü biçimde ifade etmek veya ilgi görmekten hoşlanmak tek başına kişilik bozukluğu anlamına gelmez. Klinik önem, örüntünün uzun süreli, farklı durumlarda tekrarlayan ve kişinin ilişkileri ya da işlevselliği üzerinde belirgin güçlük oluşturmasıyla değerlendirilir.",
+    sections: [
+      section("Histrionik Örüntü Nasıl Görülebilir?", "Kişi çevresinden ilgi veya onay görmediğinde belirgin rahatsızlık yaşayabilir, duygularını oldukça görünür biçimde ifade edebilir veya ilişkilerde kabul görmeye güçlü önem verebilir. Bu özelliklerin biçimi kültür, kişilik ve içinde bulunulan sosyal ortama göre değişebilir."),
+      section("Dramatik Davranış Tek Başına Tanı mıdır?", "Hayır. Bir kişinin zaman zaman dramatik tepki vermesi, dikkat çekici giyinmesi veya sosyal ortamlarda canlı davranması klinik tanı için yeterli değildir. Kişilik değerlendirmesi tek davranış yerine uzun dönemli ilişki, benlik algısı, duygu düzenleme ve işlevsellik örüntülerine dayanır."),
+      section("Başka Kişilik Örüntüleriyle Karışabilir mi?", "Yoğun duygusal ifadeler, onay ihtiyacı veya ilişkilerdeki güçlükler farklı kişilik örüntülerinde de görülebilir. Borderline, narsisistik veya bağımlı özelliklerle bazı ortak görünümler bulunabilir. Ayırıcı değerlendirme belirtilerin arkasındaki temel ilişki ve benlik örüntüsünü birlikte ele alır."),
+      section("Kişilik Örüntüsü Değişebilir mi?", "Evet. Kişilik özellikleri görece süreklilik gösterebilse de değişmez değildir. Kişinin ilişkisel örüntülerini fark etmesi, duygu düzenleme ve iletişim becerilerini geliştirmesi ve yeni ilişkisel deneyimler yaşaması daha esnek davranış biçimlerinin gelişmesine katkıda bulunabilir. Tanı kişiyi bütünüyle tanımlayan bir etiket değildir.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Narsisistik kişilik örüntüsü", slug: "narsisistik-kisilik-oruntusu" },
+      { term: "Bağlanma", slug: "baglanma" }
+    ],
+    seo: {
+      title: "Histrionik Kişilik Örüntüsü Nedir? | Psikiyatri Sözlüğü",
+      description: "Histrionik kişilik örüntüsünü dikkat ve onay ihtiyacı, duygusal ifade ve kişilerarası ilişkiler çerçevesinde damgalamadan açıklar.",
+      ogTitle: "Histrionik Kişilik Örüntüsü Nedir?",
+      ogDescription: "Histrionik kişilik özelliklerini tek davranıştan tanı çıkarmadan klinik bağlamıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dikkat ve onay ihtiyacı ile yoğun duygusal ifade ve kişilerarası örüntülerin belirginleşebildiği kişilik yapılanması."
+    }
+  }),
+
+  defineTerm({
+    term: "HPA aksı",
+    slug: "hpa-aksi",
+    shortDefinition: "HPA aksı, hipotalamus, hipofiz bezi ve adrenal bezler arasındaki hormonal iletişim üzerinden organizmanın stres yanıtının düzenlenmesine katkıda bulunan nöroendokrin sistemdir.",
+    intro: "HPA aksı günlük ritimler, fiziksel ve psikolojik stresler ve çok sayıda biyolojik geri bildirim mekanizmasıyla ilişkilidir. Psikiyatrik bozuklukları yalnız HPA aksının fazla veya az çalışmasıyla açıklamak doğru değildir.",
+    sections: [
+      section("HPA Aksı Nasıl Çalışır?", "Stresle ilişkili sinyaller hipotalamusta başlayan hormonal iletişimi harekete geçirebilir. Hipofiz üzerinden adrenal bezlere iletilen bu sinyaller kortizol dahil stres yanıtıyla ilişkili hormonların düzenlenmesine katkıda bulunur. Sistem aynı zamanda geri bildirim mekanizmalarıyla kendi etkinliğini sınırlar."),
+      section("Kortizol ile İlişkisi Nedir?", "Kortizol enerji kullanımının düzenlenmesi, bağışıklık yanıtı ve günlük uyku-uyanıklık ritmi dahil birçok fizyolojik süreçte rol oynar. Kortizol yalnız bir stres hormonu olarak değerlendirilmemelidir ve tek bir ölçüm kişinin psikolojik stres düzeyini güvenilir biçimde açıklamaz."),
+      section("Psikiyatride Neden Araştırılır?", "Depresyon, travmayla ilişkili bozukluklar ve kronik stres gibi alanlarda HPA aksındaki grup düzeyindeki farklılıklar araştırılmıştır. Ancak araştırma sonuçları kişiler arasında değişkendir ve günümüzde sıradan bir HPA aksı veya kortizol ölçümü tek başına psikiyatrik tanı koyan test olarak kullanılmaz."),
+      section("Beyinle Nasıl Etkileşir?", "Hipokampus, amigdala ve prefrontal bölgeler stres yanıtının algılanması ve düzenlenmesiyle ilişkili ağların parçalarıdır. HPA aksı ile bu beyin bölgeleri arasında çift yönlü ilişkiler bulunur. Psikolojik deneyim, sinir sistemi ve hormonal yanıt birbirinden tamamen bağımsız süreçler değildir.")
+    ],
+    relatedTerms: [
+      { term: "Hipokampus", slug: "hipokampus" },
+      { term: "Amigdala", slug: "amigdala" },
+      { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" }
+    ],
+    seo: {
+      title: "HPA Aksı Nedir? | Psikiyatri Sözlüğü",
+      description: "HPA aksının hipotalamus, hipofiz ve adrenal bezler üzerinden stres ve kortizol yanıtını nasıl düzenlediğini ve psikiyatrideki araştırma rolünü açıklar.",
+      ogTitle: "HPA Aksı Nedir?",
+      ogDescription: "HPA aksını stres yanıtı, kortizol ve beyin ağlarıyla ilişkisi üzerinden açıklar."
+    },
+    schema: {
+      definedTermDescription: "Hipotalamus, hipofiz ve adrenal bezler arasındaki hormonal iletişimle stres yanıtını düzenleyen nöroendokrin sistem."
+    }
+  }),
+
+  defineTerm({
+    term: "ICD",
+    slug: "icd",
+    shortDefinition: "ICD, Dünya Sağlık Örgütü tarafından geliştirilen ve hastalıklar ile sağlıkla ilişkili durumların uluslararası düzeyde tanımlanması, kodlanması ve sınıflandırılması için kullanılan sistemdir.",
+    intro: "ICD yalnız psikiyatrik bozuklukları kapsamaz; bütün tıp alanlarını içeren geniş bir sınıflandırmadır. Ruhsal, davranışsal ve nörogelişimsel bozukluklar da sistem içinde ayrı bölümlerde tanımlanır.",
+    sections: [
+      section("ICD Ne Amaçla Kullanılır?", "Sağlık sorunlarının ortak bir dil ve kodlama sistemiyle kaydedilmesine yardımcı olur. Klinik iletişim, sağlık istatistikleri, epidemiyolojik araştırmalar ve sağlık sistemlerinin planlanması gibi birçok alanda kullanılabilir. Sınıflandırma farklı ülkeler arasında verilerin karşılaştırılmasını da kolaylaştırır."),
+      section("ICD Bir Psikiyatrik Tanı Testi midir?", "Hayır. ICD tanısal sınıflandırma ve kodlama çerçevesi sağlar ancak kişinin bir ölçüt listesini kendi başına işaretlemesi otomatik olarak tanı aldığı anlamına gelmez. Belirtilerin niteliği, süresi, işlevsellik, gelişimsel ve kültürel bağlam ile ayırıcı tanı klinik değerlendirmede birlikte ele alınır."),
+      section("ICD ile DSM Arasında Ne Fark Vardır?", "ICD Dünya Sağlık Örgütü tarafından hazırlanır ve bütün hastalıkları kapsar. DSM ise Amerikan Psikiyatri Birliği tarafından yayımlanır ve ruhsal bozukluklara odaklanır. İki sistem birçok alanda benzer kavramlar kullanırken terminoloji, kodlama veya tanısal çerçevede bazı farklılıklar bulunabilir."),
+      section("Sınıflandırmalar Neden Zamanla Değişir?", "Tıbbi ve bilimsel bilgi geliştikçe sınıflandırmalar da gözden geçirilir. Bazı tanımlar değişebilir, yeni kategoriler eklenebilir veya eski kavramlar yeniden düzenlenebilir. ICD klinik iletişimi kolaylaştıran önemli bir araçtır ancak kişinin bireysel yaşam öyküsünün ve klinik formülasyonun yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "DSM", slug: "dsm" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Komorbidite", slug: "komorbidite" }
+    ],
+    seo: {
+      title: "ICD Nedir? | Psikiyatri Sözlüğü",
+      description: "ICD'nin Dünya Sağlık Örgütü tarafından kullanılan uluslararası hastalık sınıflandırması olduğunu, psikiyatrideki rolünü ve DSM'den farkını açıklar.",
+      ogTitle: "ICD Nedir?",
+      ogDescription: "ICD hastalık sınıflandırmasının amacı, psikiyatride kullanımı ve DSM ile ilişkisini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dünya Sağlık Örgütü tarafından geliştirilen hastalıklar ve sağlıkla ilişkili durumların uluslararası sınıflandırma sistemi."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...eleventhBatchNewTerms,
   ...tenthBatchNewTerms,
   ...ninthBatchNewTerms,
   ...eighthBatchNewTerms,

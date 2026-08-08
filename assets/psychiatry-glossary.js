@@ -504,6 +504,16 @@ const glossaryDetailPages = {
   "Gizlilik": "gizlilik",
   "Glutamat": "glutamat",
   "Grandiyözite": "grandiyozite",
+  "Grup terapisi": "grup-terapisi",
+  "Güvenli bağlanma": "guvenli-baglanma",
+  "Güvenlik planı": "guvenlik-plani",
+  "Halüsinasyon": "halusinasyon",
+  "Hasta hakları": "hasta-haklari",
+  "Hipnotik": "hipnotik",
+  "Hipokampus": "hipokampus",
+  "Histrionik kişilik örüntüsü": "histrionik-kisilik-oruntusu",
+  "HPA aksı": "hpa-aksi",
+  "ICD": "icd",
 };
 
 const PSYCHIATRY_GLOSSARY_TERMS = glossarySource
