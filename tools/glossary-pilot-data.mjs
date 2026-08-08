@@ -136,6 +136,87 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["ayrilma-kaygisi", {
+    shortDefinition: "Ayrılma kaygısı, kişinin bağlandığı kişilerden ayrılma veya onları kaybetme olasılığı karşısında yaşadığı yoğun kaygıyı ifade eder.",
+    intro: "Ayrılmaya ilişkin kaygı çocuk gelişiminin bazı dönemlerinde beklenen bir durumdur. Klinik açıdan önemli hale gelmesi; kaygının yaş ve gelişim düzeyine göre aşırı olması, süreklilik göstermesi ve günlük yaşamı belirgin biçimde etkilemesiyle ilişkilidir.",
+    sections: [
+      section("Ayrılma Kaygısı Nasıl Görülebilir?", "Kişi bağlandığı kişiden uzak kalacağı durumlarda yoğun endişe yaşayabilir, ayrılmayı gerektiren etkinliklerden kaçınabilir veya yakınının başına kötü bir şey geleceğine ilişkin sürekli düşünceler geliştirebilir. Çocuklarda okula gitmek istememe, yalnız kalmakta güçlük veya ayrılık öncesinde bedensel yakınmalar görülebilir."),
+      section("Çocuklukta Her Ayrılma Kaygısı Sorun mudur?", "Hayır. Özellikle erken çocukluk döneminde bakım veren kişiden ayrılmaya tepki göstermek gelişimin doğal bir parçası olabilir. Değerlendirmede çocuğun yaşı, gelişimsel düzeyi, kaygının ne kadar sürdüğü ve eğitim, sosyal yaşam ya da aile düzenini ne ölçüde etkilediği dikkate alınır."),
+      section("Ayrılma Kaygısı Yetişkinlerde de Görülür mü?", "Evet. Yetişkinlerde eş, çocuk, ebeveyn veya yakın olunan başka bir kişiden ayrılmaya ilişkin yoğun endişe görülebilir. Kişi yalnız kalmaktan kaçınabilir, yakınlarının güvenliğini sık sık kontrol etme ihtiyacı hissedebilir veya ayrılık gerektiren iş ve seyahatlerden uzak durabilir."),
+      section("Ne Zaman Değerlendirme Önemlidir?", "Kaygı beklenen gelişimsel düzeyin belirgin biçimde ötesindeyse, uzun sürüyorsa veya okul, iş, sosyal yaşam ve aile ilişkilerini etkiliyorsa profesyonel değerlendirme yararlı olabilir. Değerlendirmede yakın zamanda yaşanan kayıplar, yaşam değişiklikleri ve eşlik eden başka kaygı belirtileri de göz önünde bulundurulur.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Yaygın anksiyete bozukluğu", slug: "yaygin-anksiyete-bozuklugu" },
+      { term: "Agorafobi", slug: "agorafobi" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" }
+    ]
+  }],
+
+  ["bagimlilik", {
+    shortDefinition: "Bağımlılık, bir maddeyi kullanma veya belirli bir davranışı sürdürme üzerinde kontrolün azalması ve olumsuz sonuçlara rağmen davranışın devam etmesiyle ilişkili klinik bir kavramdır.",
+    intro: "Bağımlılık irade zayıflığı olarak açıklanamaz. Ödül, motivasyon, öğrenme ve kontrol süreçleriyle ilişkili karmaşık bir durumdur ve kişinin biyolojik, psikolojik ve sosyal koşulları birlikte değerlendirilir.",
+    sections: [
+      section("Bağımlılıkta Kontrol Kaybı Ne Anlama Gelir?", "Kişi kullanımını veya davranışını azaltmayı planladığı halde bunu sürdürmekte zorlanabilir. Madde veya davranış giderek daha fazla zaman ve zihinsel alan kaplayabilir. İş, eğitim, ilişkiler veya sağlık üzerinde sorunlar ortaya çıkmasına rağmen davranışın devam etmesi klinik açıdan önemlidir."),
+      section("Her Sık Kullanım Bağımlılık mıdır?", "Hayır. Bir davranışın sık tekrarlanması tek başına bağımlılık tanımı için yeterli değildir. Kontrol kaybı, yoğun istek, günlük sorumlulukların etkilenmesi ve zarar görülmesine rağmen davranışın sürmesi gibi özellikler birlikte değerlendirilir. Bu nedenle yalnızca sıklığa bakılarak kişiye bağımlılık tanısı konulmaz."),
+      section("Tolerans ve Yoksunluk Her Zaman Olur mu?", "Bazı madde kullanım bozukluklarında aynı etki için zamanla daha fazla maddeye ihtiyaç duyulması tolerans, kullanım azaltıldığında belirtilerin ortaya çıkması ise yoksunluk olarak tanımlanabilir. Ancak bağımlılık kavramı yalnızca bu iki özelliğe indirgenmez ve farklı maddelerde klinik görünüm değişebilir."),
+      section("Bağımlılık Neden Bütüncül Değerlendirilir?", "Madde veya davranışın kendisinin yanında kişinin ruhsal durumu, fiziksel sağlığı, aile ve sosyal çevresi, işlevselliği ve eşlik eden başka sorunlar da önemlidir. Damgalayıcı ifadeler yerine sorunun işlevselliğe etkisini ve kişinin değişim kapasitesini dikkate alan bir yaklaşım klinik değerlendirme açısından daha uygundur.")
+    ],
+    relatedTerms: [
+      { term: "Alkol kullanım bozukluğu", slug: "alkol-kullanim-bozuklugu" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["baglanma", {
+    shortDefinition: "Bağlanma, kişinin özellikle yakın ve güvenilir ilişkiler aracılığıyla güvenlik, korunma ve duygusal yakınlık kurmasını açıklayan gelişimsel ve psikolojik bir kavramdır.",
+    intro: "Bağlanma yalnızca çocukluk dönemine ait değildir. Erken bakım deneyimleri önemli olmakla birlikte kişinin ilişkileri yaşam boyunca yeni deneyimler ve sosyal bağlar aracılığıyla değişmeye devam edebilir.",
+    sections: [
+      section("Bağlanma Sistemi Ne İşe Yarar?", "Bağlanma sistemi özellikle tehdit, korku, hastalık veya belirsizlik dönemlerinde güvenilir bir kişiye yakınlık arama eğilimiyle ilişkilidir. Çocuklukta bakım veren kişinin ulaşılabilir olması güvenlik hissini desteklerken, yetişkinlikte benzer ihtiyaçlar yakın ilişkiler içinde farklı biçimlerde görülebilir."),
+      section("Bağlanma Biçimleri Değişmez Özellikler midir?", "Hayır. Bağlanma örüntüleri kişinin ilişkilerindeki eğilimleri anlamaya yardımcı olabilir ancak değişmez kişilik etiketleri değildir. Farklı ilişkilerde farklı davranışlar görülebilir ve güvenilir ilişkiler, yaşam deneyimleri veya psikolojik destek kişinin ilişki kurma biçimini zaman içinde etkileyebilir."),
+      section("Bağlanma ile Bağımlılık Aynı Şey midir?", "Hayır. Yakınlık aramak ve bir ilişkide güven hissetmek insan gelişiminin doğal bir parçasıdır. Bağlanma kavramı, madde veya davranış bağımlılığıyla aynı anlamı taşımaz. Ayrıca bir kişiye önem vermek ya da ayrılık sırasında üzülmek tek başına sağlıksız bir ilişki örüntüsü anlamına gelmez."),
+      section("Bağlanma Neden Klinik Görüşmelerde Ele Alınabilir?", "Yakın ilişkilerde güven, terk edilme korkusu, yakınlık kurma veya destek isteme biçimleri kişinin yaşadığı güçlükleri anlamada yararlı bilgiler sağlayabilir. Ancak bağlanma örüntüsü tek başına psikiyatrik tanı değildir ve kişinin tüm ilişkilerini tek bir kavramla açıklamak için kullanılmamalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["bastirma", {
+    shortDefinition: "Bastırma, psikodinamik kuramda kabul edilmesi zor düşünce, dürtü veya duyguların bilinçli farkındalığın dışında tutulmasını açıklamak için kullanılan bir savunma mekanizması kavramıdır.",
+    intro: "Bastırma günlük dilde bir duyguyu bilinçli biçimde göstermemekle aynı anlamda kullanılmayabilir. Psikodinamik kullanımda süreç büyük ölçüde bilinçdışı kabul edilir.",
+    sections: [
+      section("Bastırma Nasıl Tanımlanır?", "Psikodinamik kurama göre kişi için yoğun çatışma veya kaygı yaratan bazı zihinsel içerikler bilinçli farkındalığın dışında tutulabilir. Bu yaklaşım doğrudan gözlenebilen tek bir belirtiyi değil, zihinsel çatışmaların nasıl düzenlendiğine ilişkin kuramsal bir açıklamayı ifade eder."),
+      section("Bastırma ile Bilinçli Olarak Düşünmemek Aynı Şey midir?", "Hayır. Kişinin bir konuyu şimdilik düşünmemeye bilinçli biçimde karar vermesi farklı bir süreçtir. Bastırma kavramında kişinin hangi içeriği dışarıda tuttuğunun doğrudan farkında olmadığı kabul edilir. Bu ayrım özellikle psikodinamik terminolojinin doğru kullanılması açısından önemlidir."),
+      section("Bastırma Bellek Kaybı Anlamına Gelir mi?", "Bastırma ile amnezi aynı kavram değildir. Bellek sorunlarının nörolojik, tıbbi, maddeyle ilişkili veya dissosiyatif birçok nedeni olabilir. Geçmişte yaşanan bir olayı hatırlayamama durumu yalnızca bastırma kavramıyla açıklanmamalı ve gerektiğinde farklı nedenler değerlendirilmelidir."),
+      section("Bu Kavram Günümüzde Nasıl Kullanılır?", "Bastırma psikodinamik kuram ve psikoterapi literatüründe kullanılan tarihsel ve kuramsal öneme sahip bir kavramdır. Klinik bir değerlendirmede kişinin yaşadığı belirtileri tek başına açıklayan kanıtlanmış bir mekanizma gibi ele alınmaz; kişinin öyküsü, mevcut belirtileri ve diğer olası açıklamalar birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Dissosiyasyon", slug: "dissosiyasyon" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" }
+    ]
+  }],
+
+  ["bilinc-bulanikligi", {
+    shortDefinition: "Bilinç bulanıklığı, kişinin çevresinin ve yaşananların farkına varma, dikkatini sürdürme ve bilgiyi düzenli biçimde işleme kapasitesinde belirgin bozulma görülen klinik bir durumdur.",
+    intro: "Bilinç bulanıklığı yalnızca dalgınlık veya unutkanlık değildir. Özellikle yeni başlayan ve saatler ya da günler içinde değişkenlik gösteren bilinç ve dikkat bozuklukları tıbbi açıdan önemli olabilir.",
+    sections: [
+      section("Bilinç Bulanıklığı Nasıl Görülebilir?", "Kişi bulunduğu yeri veya zamanı karıştırabilir, konuşulanları takip etmekte zorlanabilir ve dikkati kolayca dağılabilir. Yanıtları yavaşlayabilir veya düşünceleri düzensiz görünebilir. Belirtilerin şiddeti gün içinde değişebilir ve kişi bazı zamanlarda daha açık, bazı zamanlarda daha karışık görünebilir."),
+      section("Bilinç Bulanıklığı ile Unutkanlık Aynı Şey midir?", "Hayır. Bellek sorunlarında temel güçlük bilgiyi öğrenme veya hatırlamayla ilgili olabilirken bilinç bulanıklığında dikkat, farkındalık ve çevreyle sağlıklı etkileşim kurma kapasitesi de etkilenir. Özellikle ani başlayan yönelim ve dikkat değişikliği basit unutkanlık olarak değerlendirilmemelidir."),
+      section("Psikoz ile Nasıl Ayrılır?", "Psikozda sanrı veya varsanı gibi belirtiler bulunabilir ancak kişinin bilinç düzeyi ve dikkati her zaman bozulmuş değildir. Bilinç bulanıklığında ise dikkat ve farkındalıkta belirgin değişiklik ön plandadır. Bazı tıbbi durumlarda algısal değişiklikler de tabloya eşlik edebileceği için ayrım klinik değerlendirmeyle yapılır."),
+      section("Ani Bilinç Değişikliği Neden Önemlidir?", "Yeni başlayan bilinç bulanıklığı enfeksiyonlar, metabolik bozukluklar, ilaç veya madde etkileri, nörolojik hastalıklar ve başka akut tıbbi durumlarla ilişkili olabilir. Özellikle ani gelişen belirgin dikkat ve bilinç değişikliği geciktirilmeden tıbbi değerlendirme gerektirebilir.")
+    ],
+    relatedTerms: [
+      { term: "Amnezi", slug: "amnezi" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" }
+    ]
+  }],
+
   ["avolisyon", {
     shortDefinition: "Avolisyon, kişinin amaçlı davranışları başlatma ve sürdürme isteğinde belirgin azalma görülmesini ifade eden klinik bir belirtidir.",
     intro: "Avolisyon tembellik veya isteksizlikle eş anlamlı değildir. Kişi yapmak istediği işleri planlamak, başlatmak veya sürdürmekte belirgin güçlük yaşayabilir ve bu durum günlük işlevselliğini etkileyebilir.",
