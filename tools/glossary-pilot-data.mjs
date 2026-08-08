@@ -2913,7 +2913,291 @@ const sixthBatchNewTerms = [
   })
 ];
 
+
+const seventhBatchNewTerms = [
+  defineTerm({
+    term: "Antisosyal kişilik örüntüsü",
+    slug: "antisosyal-kisilik-oruntusu",
+    shortDefinition: "Antisosyal kişilik örüntüsü, başkalarının haklarını, toplumsal kuralları ve ilişkisel sınırları tekrar tekrar ihlal eden davranışların eşlik edebildiği kalıcı kişilik özellikleri bütününü ifade eder.",
+    intro: "Bu kavram günlük dilde kullanılan 'asosyal' sözcüğüyle aynı değildir. Sosyal ortamlardan uzak durmayı değil; dürtüsellik, sorumsuzluk, aldatıcı davranışlar veya başkalarının haklarını önemsememeyle ilişkili daha geniş ve süreğen bir örüntüyü tanımlar.",
+    sections: [
+      section("Antisosyal Kişilik Örüntüsü Nasıl Tanımlanır?", "Değerlendirmede yalnız tek bir olay değil, farklı yaşam alanlarında tekrarlayan ve uzun süredir devam eden davranış örüntüleri önemlidir. Kuralları ihlal etme, sorumlulukları sürdürmede güçlük, dürtüsel kararlar veya kişilerarası ilişkilerde başkalarının sınırlarını gözetmeme gibi özellikler görülebilir. Bu davranışların bağlamı ve sürekliliği ayrıntılı biçimde değerlendirilir."),
+      section("Antisosyal ile Asosyal Aynı Şey midir?", "Hayır. Asosyal sözcüğü günlük dilde sosyal ortamlardan uzak durma veya yalnızlığı tercih etme anlamında kullanılabilir. Antisosyal kişilik örüntüsü ise sosyal geri çekilmeden farklı olarak başkalarının haklarını ihlal eden, kurallarla çatışan veya sorumsuz davranışların kalıcı örüntüsünü ifade eder."),
+      section("Tanı İçin Tek Bir Davranış Yeterli midir?", "Hayır. Bir kişinin zaman zaman öfkelenmesi, kural ihlali yapması veya hatalı karar vermesi tek başına kişilik bozukluğu anlamına gelmez. Kişilik değerlendirmesinde davranışların erken dönemlerden itibaren ne kadar süreğen olduğu, farklı ortamlarda görülüp görülmediği ve işlevselliği nasıl etkilediği incelenir."),
+      section("Damgalayıcı Yorumlardan Neden Kaçınılmalıdır?", "Kişilik örüntülerini ahlaki etiketlere indirgemek klinik değerlendirmeyi bozabilir. Davranışların gelişimsel geçmiş, çevresel etkenler, madde kullanımı, eşlik eden ruhsal durumlar ve bireysel özelliklerle ilişkisi birlikte ele alınmalıdır. Klinik tanımlama kişinin değerini veya değişme kapasitesini belirleyen bir hüküm değildir.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Dürtüsellik", slug: "durtusellik" },
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" }
+    ],
+    seo: {
+      title: "Antisosyal Kişilik Örüntüsü Nedir? | Psikiyatri Sözlüğü",
+      description: "Antisosyal kişilik örüntüsünün asosyal olmakla farkını, süreğen davranış özelliklerini ve klinik değerlendirme çerçevesini açıklar.",
+      ogTitle: "Antisosyal Kişilik Örüntüsü Nedir?",
+      ogDescription: "Antisosyal kişilik örüntüsünü damgalayıcı olmayan klinik bir çerçevede açıklar."
+    },
+    schema: {
+      definedTermDescription: "Başkalarının haklarını ve toplumsal sınırları tekrar tekrar ihlal eden kalıcı kişilik özellikleri örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "ASRS",
+    slug: "asrs",
+    shortDefinition: "ASRS, erişkinlerde dikkat eksikliği ve hiperaktivite bozukluğu ile ilişkili belirtileri taramak amacıyla kullanılan öz bildirim temelli bir değerlendirme ölçeğidir.",
+    intro: "ASRS bir tanı testi değildir. Ölçek kişinin dikkat, dürtüsellik ve hiperaktiviteyle ilişkili bazı deneyimlerini sistematik biçimde sorgulamaya yardımcı olur ve elde edilen sonuç klinik görüşme ile birlikte değerlendirilir.",
+    sections: [
+      section("ASRS Ne Amaçla Kullanılır?", "ASRS erişkinlerde DEHB ile ilişkili olabilecek belirtilerin fark edilmesini ve klinik değerlendirmede hangi alanların daha ayrıntılı ele alınabileceğinin belirlenmesini kolaylaştırabilir. Tarama amacı taşır ve tek başına tanı koymak veya tanıyı dışlamak için yeterli değildir."),
+      section("Öz Bildirim Ölçeği Ne Demektir?", "Sorular kişinin kendi deneyimlerine verdiği yanıtlara dayanır. Bu nedenle yanıtlar kişinin belirtileri nasıl algıladığı, hatırladığı ve yorumladığından etkilenebilir. Gerekli durumlarda çocukluk öyküsü, aileden alınan bilgiler, okul veya iş yaşamındaki işlevsellik gibi ek kaynaklar değerlendirilir."),
+      section("Yüksek Puan DEHB Tanısı Anlamına Gelir mi?", "Hayır. Dikkat dağınıklığı ve dürtüsellik uyku bozuklukları, anksiyete, depresyon, madde kullanımı, yoğun stres veya başka tıbbi ve psikiyatrik durumlarda da görülebilir. Bu nedenle yüksek tarama puanı kapsamlı değerlendirme ihtiyacına işaret edebilir ancak tanıyı tek başına belirlemez."),
+      section("ASRS Klinik Görüşmenin Yerine Geçer mi?", "Hayır. DEHB değerlendirmesinde belirtilerin çocukluk döneminden itibaren seyri, birden fazla yaşam alanındaki etkisi ve başka açıklamaların bulunup bulunmadığı incelenir. Ölçekler bu süreci destekleyen araçlardır; ayrıntılı klinik görüşmenin yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "DEHB", slug: "dehb" },
+      { term: "Tarama testi", slug: "tarama-testi" },
+      { term: "Ölçek", slug: "olcek" },
+      { term: "Dikkat", slug: "dikkat" }
+    ],
+    seo: {
+      title: "ASRS Nedir? | Psikiyatri Sözlüğü",
+      description: "ASRS'nin erişkin DEHB belirtilerini taramada nasıl kullanıldığını ve neden tek başına tanı koydurmadığını açıklar.",
+      ogTitle: "ASRS Nedir?",
+      ogDescription: "ASRS erişkin DEHB tarama ölçeğinin amacı ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Erişkin DEHB belirtilerini taramak amacıyla kullanılan öz bildirim ölçeği."
+    }
+  }),
+
+  defineTerm({
+    term: "Atak",
+    slug: "atak",
+    shortDefinition: "Atak, bir hastalık veya belirti grubunun belirgin biçimde başladığı, yoğunlaştığı veya önceki düzeye göre belirginleştiği sınırlı bir dönemi tanımlayan genel klinik terimdir.",
+    intro: "Atak sözcüğü tek bir psikiyatrik bozukluğa özgü değildir. Panik atak, migren atağı veya başka klinik durumlarda farklı anlam ayrıntıları taşıyabilir; bu nedenle kavram her zaman kullanıldığı hastalık bağlamında değerlendirilir.",
+    sections: [
+      section("Atak Ne Anlama Gelir?", "Bir belirtinin veya belirti kümesinin alışılmış düzeyden daha belirgin hale geldiği dönem atak olarak adlandırılabilir. Başlangıç biçimi ani veya daha kademeli olabilir. Süre ve belirtilerin özellikleri söz konusu klinik duruma göre değişir."),
+      section("Atak ile Epizod Aynı Şey midir?", "Bu iki terim bazı bağlamlarda birbirine yakın kullanılsa da tamamen eş anlamlı olmak zorunda değildir. Epizod genellikle belirli tanı ölçütleri ve süreyle tanımlanan hastalık dönemini ifade ederken atak daha geniş biçimde belirti yoğunlaşmasını anlatabilir."),
+      section("Her Belirti Artışı Atak Sayılır mı?", "Hayır. Günlük dalgalanmalar, kısa süreli stres tepkileri veya küçük belirti değişiklikleri her zaman ayrı bir atak olarak değerlendirilmez. Belirtilerin şiddeti, süresi, kişinin önceki durumu ve işlevsellik üzerindeki etkisi birlikte incelenir."),
+      section("Atakların İzlenmesi Neden Önemlidir?", "Atakların ne zaman başladığı, ne kadar sürdüğü, öncesinde hangi değişikliklerin olduğu ve sonrasında nasıl düzeldiği hastalığın seyrini anlamaya yardımcı olabilir. Bu bilgiler nüks, relaps veya dönemsel hastalık örüntülerini değerlendirirken kullanılabilir.")
+    ],
+    relatedTerms: [
+      { term: "Epizod", slug: "epizod" },
+      { term: "Nüks", slug: "nuks" },
+      { term: "Relaps", slug: "relaps" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Atak Nedir? | Psikiyatri Sözlüğü",
+      description: "Atak kavramının belirti veya hastalık döneminin belirginleşmesini nasıl ifade ettiğini ve epizoddan farkını açıklar.",
+      ogTitle: "Atak Nedir?",
+      ogDescription: "Atak teriminin klinik kullanımını ve hastalık seyriyle ilişkisini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirti veya hastalık özelliklerinin belirgin biçimde başladığı ya da yoğunlaştığı klinik dönem."
+    }
+  }),
+
+  defineTerm({
+    term: "Atipik antipsikotik",
+    slug: "atipik-antipsikotik",
+    shortDefinition: "Atipik antipsikotik, çoğunlukla ikinci kuşak antipsikotikler olarak adlandırılan ve dopaminin yanı sıra başka nörotransmiter sistemleri üzerinde de farklı etkiler gösteren antipsikotik ilaç grubunu ifade eder.",
+    intro: "Atipik sözcüğü bu ilaçların olağandışı veya deneysel olduğu anlamına gelmez. Tarihsel olarak daha eski antipsikotiklerden farklı farmakolojik ve yan etki özelliklerini tanımlamak için kullanılan bir sınıflandırmadır.",
+    sections: [
+      section("Atipik Antipsikotikler Nerelerde Kullanılır?", "Şizofreni ve başka psikotik bozuklukların yanı sıra bazı ilaçlar bipolar bozukluk veya başka klinik durumlarda kullanılabilir. Kullanım alanları ve ruhsatlandırılmış endikasyonlar ilaçtan ilaca farklılık gösterebilir."),
+      section("Tipik Antipsikotiklerden Farkı Nedir?", "İkinci kuşak ilaçların dopamin reseptörleri dışında serotonin gibi başka sistemler üzerinde de belirgin etkileri olabilir. Bununla birlikte 'atipik' sınıfının bütün ilaçlarında aynı etkinlik veya yan etki profili bulunduğu anlamına gelmez."),
+      section("Yan Etki Profilleri Aynı mıdır?", "Hayır. Metabolik değişiklikler, kilo artışı, uyku hali, hareket sistemi belirtileri, hormonal etkiler veya başka yan etkiler ilaçlar arasında değişebilir. Bu nedenle seçim ve izlem kişisel klinik özelliklere göre yapılır."),
+      section("Hangi İlacın Kullanılacağı Nasıl Belirlenir?", "Tanı, belirtilerin özellikleri, önceki tedavi yanıtı, eşlik eden tıbbi hastalıklar, kullanılan diğer ilaçlar ve yan etki riski değerlendirilir. Antipsikotik ilaçların başlanması, değiştirilmesi veya bırakılması hekim değerlendirmesi gerektirir. Tedavi sırasında etkinlik ile yan etkiler birlikte izlenir ve klinik gereksinimler zaman içinde yeniden değerlendirilebilir.")
+    ],
+    relatedTerms: [
+      { term: "Antipsikotik", slug: "antipsikotik" },
+      { term: "Tipik antipsikotik", slug: "tipik-antipsikotik" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Şizofreni", slug: "sizofreni" }
+    ],
+    seo: {
+      title: "Atipik Antipsikotik Nedir? | Psikiyatri Sözlüğü",
+      description: "Atipik antipsikotiklerin ikinci kuşak antipsikotikleri ifade ettiğini, tipik antipsikotiklerden farkını ve izlem gereksinimini açıklar.",
+      ogTitle: "Atipik Antipsikotik Nedir?",
+      ogDescription: "Atipik antipsikotik kavramını kullanım alanları ve yan etki farklılıklarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "İkinci kuşak olarak sınıflandırılan ve farklı nörotransmiter sistemleri üzerinde etkili antipsikotik ilaçlar."
+    }
+  }),
+
+  defineTerm({
+    term: "Atomoksetin",
+    slug: "atomoksetin",
+    shortDefinition: "Atomoksetin, dikkat eksikliği ve hiperaktivite bozukluğunun tedavisinde kullanılabilen, stimülan sınıfında olmayan ve noradrenerjik sistem üzerinde etkili bir psikiyatrik ilaçtır.",
+    intro: "Atomoksetin her DEHB tanısı alan kişi için otomatik olarak uygun bir seçenek değildir. İlaç seçimi belirtilerin özellikleri, eşlik eden hastalıklar, diğer ilaçlar ve kişinin klinik gereksinimleri dikkate alınarak yapılır.",
+    sections: [
+      section("Atomoksetin Nasıl Bir İlaçtır?", "Atomoksetin stimülan olmayan bir DEHB ilacı olarak sınıflandırılır ve noradrenalin geri alımını etkileyen farmakolojik özelliklere sahiptir. Stimülan olmaması etkisiz veya daha hafif olduğu anlamına gelmez; farklı bir etki mekanizmasını ifade eder."),
+      section("Hangi Durumlarda Kullanılabilir?", "Temel kullanım alanı DEHB'dir. Hangi yaş grubunda, hangi klinik özelliklerle ve hangi koşullarda tercih edileceği ülkeye özgü ruhsat bilgileri ve hekim değerlendirmesine göre değişebilir."),
+      section("Etkisi ve Yan Etkileri Nasıl Değerlendirilir?", "Tedavi sırasında dikkat, dürtüsellik, hiperaktivite ve günlük işlevsellikteki değişiklikler izlenebilir. İştah, uyku, kalp hızı, kan basıncı veya başka yan etkiler açısından takip gerekebilir. İzlem kişinin tıbbi özelliklerine göre planlanır."),
+      section("Atomoksetin Kendi Kendine Başlanabilir mi?", "Hayır. DEHB belirtilerinin başka ruhsal veya tıbbi durumlarla karışabilmesi ve ilaçların kişiye özgü riskler taşıyabilmesi nedeniyle klinik değerlendirme gerekir. İlaç başlama, bırakma veya değişiklik kararları hekimle birlikte verilmelidir. Tedavinin yararı yalnız dikkat belirtileriyle değil, kişinin okul, iş, ilişki ve günlük yaşam işlevselliğindeki değişikliklerle birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "DEHB", slug: "dehb" },
+      { term: "Stimülan", slug: "stimulan" },
+      { term: "Noradrenalin", slug: "noradrenalin" },
+      { term: "ASRS", slug: "asrs" }
+    ],
+    seo: {
+      title: "Atomoksetin Nedir? | Psikiyatri Sözlüğü",
+      description: "Atomoksetinin stimülan olmayan bir DEHB ilacı olduğunu, etki mekanizmasını ve klinik izlem gereksinimini açıklar.",
+      ogTitle: "Atomoksetin Nedir?",
+      ogDescription: "Atomoksetini DEHB tedavisindeki yeri ve güvenli kullanım çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "DEHB tedavisinde kullanılabilen, stimülan olmayan noradrenerjik etkili ilaç."
+    }
+  }),
+
+  defineTerm({
+    term: "Ayırıcı tanı",
+    slug: "ayirici-tani",
+    shortDefinition: "Ayırıcı tanı, benzer belirtilerle ortaya çıkabilen farklı psikiyatrik, nörolojik, tıbbi veya maddeyle ilişkili durumların sistematik biçimde değerlendirilerek birbirinden ayrılması sürecidir.",
+    intro: "Psikiyatride aynı belirti farklı nedenlerle ortaya çıkabilir. Örneğin dikkat bozukluğu yalnız DEHB'de, uykusuzluk yalnız depresyonda veya ajitasyon yalnız psikozda görülmez; bu nedenle belirtilerin bağlamı ayrıntılı değerlendirilir.",
+    sections: [
+      section("Ayırıcı Tanı Neden Gereklidir?", "Benzer görünen belirtilerin nedenleri ve gerektirdiği yaklaşımlar farklı olabilir. Bir hastalığın belirtilerini başka bir durumun açıklayıp açıklamadığını değerlendirmek yanlış tanı ve uygunsuz tedavi riskini azaltmaya yardımcı olur."),
+      section("Ayırıcı Tanıda Neler Değerlendirilir?", "Belirtilerin başlangıç zamanı, süresi, tetikleyiciler, hastalık öyküsü, ilaç ve madde kullanımı, fiziksel hastalıklar, aile öyküsü ve işlevsellik incelenebilir. Gerekli durumlarda fizik muayene, laboratuvar veya başka tıbbi değerlendirmelerden yararlanılır."),
+      section("Birden Fazla Tanı Aynı Anda Olabilir mi?", "Evet. Ayırıcı tanı her zaman yalnız tek bir hastalığın seçilmesi anlamına gelmez. Bir kişide birden fazla ruhsal veya bedensel durum birlikte bulunabilir ve bu durum komorbidite olarak tanımlanabilir."),
+      section("Ölçekler Ayırıcı Tanıyı Tek Başına Yapar mı?", "Hayır. Tarama testleri ve ölçekler belirli belirti alanlarını sistematik biçimde değerlendirmeye yardımcı olabilir ancak benzer tabloları tek başına güvenilir biçimde ayıramaz. Klinik görüşme, öykü ve gerektiğinde tıbbi inceleme temel önemdedir. Değerlendirme sırasında yeni bilgiler ortaya çıktıkça olası tanılar yeniden gözden geçirilebilir ve klinik formülasyon değişebilir.")
+    ],
+    relatedTerms: [
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Tanı ölçütleri", slug: "tani-olcutleri" },
+      { term: "Komorbidite", slug: "komorbidite" },
+      { term: "Tarama testi", slug: "tarama-testi" }
+    ],
+    seo: {
+      title: "Ayırıcı Tanı Nedir? | Psikiyatri Sözlüğü",
+      description: "Ayırıcı tanının benzer belirtilere yol açan farklı psikiyatrik ve tıbbi durumları nasıl birbirinden ayırmaya çalıştığını açıklar.",
+      ogTitle: "Ayırıcı Tanı Nedir?",
+      ogDescription: "Ayırıcı tanının psikiyatrik değerlendirmedeki rolünü açıklar."
+    },
+    schema: {
+      definedTermDescription: "Benzer belirtilere yol açan farklı klinik durumların sistematik biçimde birbirinden ayrılması süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Bakım veren yükü",
+    slug: "bakim-veren-yuku",
+    shortDefinition: "Bakım veren yükü, kronik hastalık, engellilik veya işlevsellik kaybı yaşayan bir yakına uzun süre destek sunan kişinin duygusal, fiziksel, sosyal ve ekonomik açıdan yaşadığı zorlanmaların bütününü ifade eder.",
+    intro: "Bakım vermek yakınlık ve dayanışmanın önemli bir parçası olabilir ancak uzun süreli sorumluluklar kişinin kendi ihtiyaçlarını ertelemesine, yorgunluk yaşamasına veya sosyal yaşamının daralmasına yol açabilir.",
+    sections: [
+      section("Bakım Veren Yükü Hangi Alanlarda Görülebilir?", "Sürekli sorumluluk hissi, uyku bozukluğu, zaman yetersizliği, sosyal izolasyon, fiziksel yorgunluk ve ekonomik güçlükler bakım veren yükünün parçaları olabilir. Her bakım veren aynı düzeyde zorlanma yaşamaz ve yük zaman içinde değişebilir."),
+      section("Duygusal Zorlanma Ne Şekilde Ortaya Çıkabilir?", "Kaygı, üzüntü, öfke, suçluluk veya çaresizlik gibi birbirinden farklı duygular görülebilir. Kişinin zaman zaman yorulması veya destek ihtiyacı hissetmesi bakım verdiği kişiyi önemsemediği anlamına gelmez."),
+      section("Bakım Verenin İhtiyaçları Neden Değerlendirilmelidir?", "Bakım verenin fiziksel ve ruhsal sağlığı bozulduğunda hem kendi yaşam kalitesi hem de bakımın sürdürülebilirliği etkilenebilir. Sosyal destek, görev paylaşımı ve uygun sağlık veya sosyal hizmet kaynaklarına erişim bu nedenle önem taşır."),
+      section("Bakım Veren Yükü Tek Başına Bir Hastalık mıdır?", "Hayır. Bu kavram bakım verme sürecinin kişide oluşturduğu çok boyutlu zorlanmayı tanımlar. Bununla birlikte uzun süren yük kişinin depresyon, anksiyete veya tükenmişlik benzeri belirtiler açısından değerlendirilmesini gerektirebilir.")
+    ],
+    relatedTerms: [
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" },
+      { term: "Psikoeğitim", slug: "psikoegitim" }
+    ],
+    seo: {
+      title: "Bakım Veren Yükü Nedir? | Psikiyatri Sözlüğü",
+      description: "Bakım veren yükünün duygusal, fiziksel, sosyal ve ekonomik boyutlarını ve destek gereksinimiyle ilişkisini açıklar.",
+      ogTitle: "Bakım Veren Yükü Nedir?",
+      ogDescription: "Uzun süreli bakım sorumluluğunun bakım veren üzerindeki etkilerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Uzun süreli bakım sorumluluğunun bakım veren kişide oluşturduğu duygusal, fiziksel ve sosyal zorlanma."
+    }
+  }),
+
+  defineTerm({
+    term: "Bazal ganglionlar",
+    slug: "bazal-ganglionlar",
+    shortDefinition: "Bazal ganglionlar, beynin derin bölgelerinde bulunan ve hareketlerin seçimi, alışkanlık öğrenimi, ödül süreçleri ve bazı bilişsel işlevlerde rol alan birbiriyle bağlantılı çekirdekler grubudur.",
+    intro: "Bazal ganglionlar yalnız hareket merkezleri değildir. Motor devrelerin yanında bilişsel, motivasyonel ve davranışsal süreçlerle ilişkili farklı sinir ağlarına katılırlar.",
+    sections: [
+      section("Bazal Ganglionların Hareketle İlişkisi Nedir?", "İstemli hareketlerin başlatılması ve gereksiz hareketlerin baskılanması için korteks, talamus ve bazal ganglionlar arasında döngüler bulunur. Parkinson hastalığı gibi nörolojik durumlarda bu devrelerin işleyişindeki değişiklikler belirgin motor belirtiler oluşturabilir."),
+      section("Alışkanlık ve Öğrenmede Nasıl Rol Oynarlar?", "Tekrarlanan davranışların zamanla daha otomatik hale gelmesi ve ödül sonuçlarına göre davranışların pekişmesi bazal ganglion ağlarıyla ilişkilidir. Bu süreçlerde özellikle striatum ve dopaminerjik sistemlerin önemli rolleri vardır."),
+      section("Psikiyatride Neden Önemlidir?", "Obsesif kompulsif bozukluk, tik bozuklukları, bağımlılık ve bazı dürtü kontrol sorunlarında kortiko-striatal devreler araştırılmaktadır. Ancak bu ilişkiler tek bir beyin yapısının tek başına bir psikiyatrik bozukluğa neden olduğu anlamına gelmez."),
+      section("Bazal Ganglion Bulguları Tanı Koydurur mu?", "Rutin psikiyatrik tanılar bazal ganglionların görüntülenmesiyle konulmaz. Beyin görüntüleme belirli nörolojik veya tıbbi nedenlerin araştırılmasında yararlı olabilir ancak psikiyatrik tanı klinik öykü ve ruhsal durum değerlendirmesine dayanır. Araştırmalarda gözlenen grup düzeyindeki beyin farklılıkları tek bir kişinin hastalığını açıklayan kesin biyolojik işaretler olarak yorumlanmamalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Dopamin", slug: "dopamin" },
+      { term: "Ödül sistemi", slug: "odul-sistemi" },
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" },
+      { term: "Dürtüsellik", slug: "durtusellik" }
+    ],
+    seo: {
+      title: "Bazal Ganglionlar Nedir? | Psikiyatri Sözlüğü",
+      description: "Bazal ganglionların hareket, alışkanlık, ödül ve psikiyatrik araştırmalardaki rolünü açıklar.",
+      ogTitle: "Bazal Ganglionlar Nedir?",
+      ogDescription: "Bazal ganglionların motor ve davranışsal sinir ağlarındaki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Hareket, alışkanlık öğrenimi ve ödül süreçlerine katılan derin beyin çekirdekleri grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Bağımlı kişilik örüntüsü",
+    slug: "bagimli-kisilik-oruntusu",
+    shortDefinition: "Bağımlı kişilik örüntüsü, günlük kararlar, sorumluluklar ve ilişkilerde başkalarının desteğine belirgin ölçüde ihtiyaç duyma, ayrılma veya yalnız kalma konusunda yoğun kaygı yaşama eğilimiyle tanımlanan kalıcı kişilik özellikleri bütünüdür.",
+    intro: "Yakın ilişkilerde destek istemek veya başkalarına güvenmek tek başına sorun değildir. Klinik olarak önemli bağımlı örüntü, bu ihtiyacın kişinin özerkliğini ve günlük işlevselliğini belirgin biçimde sınırladığı durumları ifade eder.",
+    sections: [
+      section("Bağımlı Kişilik Örüntüsünde Neler Görülebilir?", "Kişi küçük günlük kararlar için bile yoğun güvence arayabilir, sorumluluğu başkasına bırakabilir veya destek kaybetmemek için kendi görüşlerini ifade etmekte zorlanabilir. Bu özelliklerin farklı ilişkilerde ne kadar süreğen olduğu değerlendirilir."),
+      section("Yakınlık İhtiyacından Farkı Nedir?", "İnsanların destek, sevgi ve yakınlık istemesi doğal bir gereksinimdir. Bağımlı örüntüde ise başkalarının yardımına duyulan ihtiyaç kişinin kendi kararlarını vermesini, sınır koymasını veya bağımsız davranmasını belirgin biçimde güçleştirebilir."),
+      section("Ayrılık Kaygısı Nasıl Görülebilir?", "Önemli bir ilişkinin sona ermesi kişinin tek başına baş edemeyeceğine ilişkin yoğun kaygı oluşturabilir. Bu durumda kişi hızla başka bir destek ilişkisi arayabilir veya sağlıksız bir ilişkiyi yalnız kalma korkusu nedeniyle sürdürmekte zorlanabilir."),
+      section("Tanı Nasıl Değerlendirilir?", "Tek bir ilişki veya geçici stres dönemindeki davranışlar yeterli değildir. Kişilik değerlendirmesinde örüntünün uzun süredir var olup olmadığı, farklı yaşam alanlarında görülüp görülmediği ve kişinin işlevselliğini nasıl etkilediği incelenir.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Güvence arama", slug: "guvence-arama" }
+    ],
+    seo: {
+      title: "Bağımlı Kişilik Örüntüsü Nedir? | Psikiyatri Sözlüğü",
+      description: "Bağımlı kişilik örüntüsünün destek ihtiyacı, özerklik, ayrılık kaygısı ve klinik değerlendirme açısından özelliklerini açıklar.",
+      ogTitle: "Bağımlı Kişilik Örüntüsü Nedir?",
+      ogDescription: "Bağımlı kişilik örüntüsünü yakınlık ihtiyacından ayırarak açıklar."
+    },
+    schema: {
+      definedTermDescription: "Karar verme ve özerklik alanlarında başkalarının desteğine aşırı ihtiyaçla seyreden kalıcı kişilik örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Benlik",
+    slug: "benlik",
+    shortDefinition: "Benlik, kişinin kendisini nasıl algıladığına, kim olduğunu düşündüğüne, özelliklerini nasıl değerlendirdiğine ve yaşam içindeki sürekliliğini nasıl deneyimlediğine ilişkin düşünce, duygu ve temsillerin bütününü ifade eder.",
+    intro: "Benlik tek ve değişmez bir yapı değildir. Kişinin yaşam deneyimleri, ilişkileri, kültürel çevresi ve gelişim dönemi kendisi hakkındaki algısının zaman içinde değişmesine katkıda bulunabilir.",
+    sections: [
+      section("Benlik Algısı Neleri İçerir?", "Kişinin güçlü ve zayıf gördüğü yönleri, sosyal rolleri, bedeniyle ilişkisi, değerleri, hedefleri ve başkalarıyla ilişkilerde kendisini nasıl konumlandırdığı benlik algısının parçaları olabilir. Bu alanlar birbirleriyle tamamen uyumlu olmak zorunda değildir."),
+      section("Benlik ile Özsaygı Aynı Şey midir?", "Hayır. Benlik daha geniş biçimde kişinin kendisiyle ilgili zihinsel ve duygusal temsilini ifade eder. Özsaygı ise kişinin kendisine verdiği değer ve kendisini ne ölçüde yeterli veya değerli gördüğüyle daha yakından ilişkilidir."),
+      section("Benlik Zaman İçinde Değişebilir mi?", "Evet. Ergenlik, ebeveynlik, meslek değişikliği, hastalık, kayıp veya başka önemli yaşam olayları kişinin kendisini tanımlama biçimini etkileyebilir. Değişim her zaman bozulma anlamına gelmez; gelişimin doğal bir parçası olabilir."),
+      section("Psikiyatride Benlik Neden Önemlidir?", "Bazı ruhsal durumlarda kişinin kendilik algısı, kimlik sürekliliği veya kendisine ilişkin değerlendirmeleri belirgin biçimde etkilenebilir. Klinik görüşmede bu değişikliklerin süresi, bağlamı ve günlük yaşam üzerindeki etkisi değerlendirilir. Kişinin kendisini nasıl tanımladığı ile davranışları, ilişkileri ve yaşam hedefleri arasındaki uyum da değerlendirmeye önemli bilgiler sağlayabilir.")
+    ],
+    relatedTerms: [
+      { term: "Kimlik", slug: "kimlik" },
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Depersonalizasyon", slug: "depersonalizasyon" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" }
+    ],
+    seo: {
+      title: "Benlik Nedir? | Psikiyatri Sözlüğü",
+      description: "Benlik kavramının kişinin kendisiyle ilgili algı, duygu ve düşüncelerini nasıl kapsadığını ve özsaygıdan farkını açıklar.",
+      ogTitle: "Benlik Nedir?",
+      ogDescription: "Benlik kavramını kimlik, özsaygı ve gelişim bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin kendisiyle ilgili algı, duygu, düşünce ve süreklilik deneyimlerinin bütünü."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...seventhBatchNewTerms,
   ...sixthBatchNewTerms,
   ...fifthBatchNewTerms,
   ...fourthBatchNewTerms,...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm, derealizationBaseTerm, maniBaseTerm, hypomaniaBaseTerm, psychosisBaseTerm]

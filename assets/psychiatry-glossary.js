@@ -304,6 +304,16 @@ Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bi
 `;
 
 const glossaryDetailPages = {
+  "Antisosyal kişilik örüntüsü": "antisosyal-kisilik-oruntusu",
+  "ASRS": "asrs",
+  "Atak": "atak",
+  "Atipik antipsikotik": "atipik-antipsikotik",
+  "Atomoksetin": "atomoksetin",
+  "Ayırıcı tanı": "ayirici-tani",
+  "Bakım veren yükü": "bakim-veren-yuku",
+  "Bazal ganglionlar": "bazal-ganglionlar",
+  "Bağımlı kişilik örüntüsü": "bagimli-kisilik-oruntusu",
+  "Benlik": "benlik",
   "Acil psikiyatri": "acil-psikiyatri",
   "Adli psikiyatri": "adli-psikiyatri",
   "Aile görüşmesi": "aile-gorusmesi",
