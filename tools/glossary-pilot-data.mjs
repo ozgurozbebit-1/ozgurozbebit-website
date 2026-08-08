@@ -136,6 +136,90 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["bilissel-carpitma", {
+    shortDefinition: "Bilişsel çarpıtma, kişinin bir durumu değerlendirirken bilgiyi sistematik biçimde seçici, katı veya gerçeği yeterince yansıtmayan bir biçimde yorumlama eğilimini anlatan psikolojik bir kavramdır.",
+    intro: "Bilişsel çarpıtmalar bilinçli olarak yanlış düşünmek anlamına gelmez. Özellikle stres, kaygı veya çökkünlük sırasında bazı düşünce kalıpları daha otomatik hale gelebilir ve kişinin olayları yorumlama biçimini etkileyebilir.",
+    sections: [
+      section("Bilişsel Çarpıtmalar Nasıl Görülebilir?", "Kişi tek bir olumsuz deneyimden çok geniş sonuçlar çıkarabilir, olumlu bilgileri önemsizleştirebilir veya belirsiz bir durumu en olumsuz biçimde yorumlayabilir. Bu düşünceler çoğu zaman hızlı ve otomatik ortaya çıktığı için kişi başlangıçta bunların bir yorum olduğunu değil, doğrudan gerçeğin kendisini yansıttığını düşünebilir."),
+      section("Her Olumsuz Düşünce Bilişsel Çarpıtma mıdır?", "Hayır. Gerçekçi biçimde olumsuz sonuçlara ulaşmak mümkündür. Bilişsel çarpıtma kavramında önemli olan düşüncenin olumsuz olması değil, mevcut kanıtların seçici değerlendirilmesi, istisnaların gözden kaçırılması veya sonucun eldeki bilgilerden daha kesin ve geniş hale getirilmesidir."),
+      section("Bilişsel Çarpıtmalar Duyguları Nasıl Etkileyebilir?", "Bir olayın nasıl yorumlandığı kişinin o olay karşısındaki duygusal tepkisini etkileyebilir. Aynı durum farklı biçimlerde değerlendirildiğinde kaygı, suçluluk, öfke veya üzüntünün yoğunluğu da değişebilir. Bununla birlikte duygusal yaşantılar yalnızca düşüncelerle açıklanmaz; yaşam koşulları ve bedensel etkenler de önemlidir."),
+      section("Bilişsel Değerlendirmede Amaç Nedir?", "Amaç kişinin düşüncelerini zorla olumlu hale getirmek değildir. Düşüncenin hangi kanıtlara dayandığını, farklı açıklamaların mümkün olup olmadığını ve yorumun kişinin davranışları üzerindeki etkisini incelemek daha dengeli bir değerlendirme sağlayabilir. Bu yaklaşım özellikle bilişsel davranışçı terapi içinde sık kullanılır.")
+    ],
+    relatedTerms: [
+      { term: "Aşırı genelleme", slug: "asiri-genelleme" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" }
+    ]
+  }],
+
+  ["bilissel-davranisci-terapi", {
+    shortDefinition: "Bilişsel davranışçı terapi, düşünceler, duygular ve davranışlar arasındaki ilişkileri ele alan, yapılandırılmış ve hedef odaklı psikoterapi yaklaşımlarından biridir.",
+    intro: "Bilişsel davranışçı terapi tek bir teknikten oluşmaz. Kişinin yaşadığı güçlüğe göre düşünce değerlendirme, davranış değişikliği, maruz bırakma, beceri geliştirme veya problem çözme gibi farklı yöntemlerden yararlanılabilir.",
+    sections: [
+      section("Bilişsel Davranışçı Terapi Nasıl Çalışır?", "Terapi sürecinde yaşanan belirli durumlar, bu durumlarda ortaya çıkan düşünceler, duygular ve davranışlar birlikte incelenebilir. Amaç kişinin otomatik yorumlarını fark etmesi, işe yaramayan davranış döngülerini tanıması ve daha işlevsel baş etme yollarını deneyebilmesidir."),
+      section("Terapi Sadece Düşünceleri Değiştirmeye mi Odaklanır?", "Hayır. Davranışlar da yaklaşımın temel parçalarındandır. Kaçınma, erteleme veya güvence arama gibi davranışların kısa vadede rahatlama sağlarken uzun vadede sorunu nasıl sürdürebildiği değerlendirilebilir. Gerektiğinde davranışsal deneyler ve kademeli uygulamalar kullanılabilir."),
+      section("Bilişsel Davranışçı Terapi Hangi Sorunlarda Kullanılır?", "Kaygı bozuklukları, depresif bozukluklar, obsesif kompulsif belirtiler, travmayla ilişkili sorunlar ve başka birçok klinik durumda farklı bilişsel davranışçı protokoller kullanılabilir. Ancak aynı yöntem herkes için aynı biçimde uygulanmaz; kişinin özellikleri ve klinik gereksinimleri dikkate alınır."),
+      section("Terapi Süreci Kişiye Göre Değişir mi?", "Evet. Görüşmelerin hedefleri, kullanılan yöntemler ve sürenin nasıl planlanacağı kişinin yaşadığı güçlüklerin niteliğine göre değişebilir. Bilişsel davranışçı yaklaşım genellikle aktif iş birliğine dayanır ve görüşme dışında gözlem veya uygulamalar içerebilir; bunlar kişinin ihtiyaçlarına göre planlanır.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Aşırı genelleme", slug: "asiri-genelleme" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" }
+    ]
+  }],
+
+  ["bipolar-2-bozukluk", {
+    shortDefinition: "Bipolar II bozukluk, en az bir hipomanik dönem ve en az bir majör depresif dönem öyküsüyle tanımlanan, geçmişte tam manik dönem bulunmayan bir duygudurum bozukluğudur.",
+    intro: "Bipolar II bozukluk yalnızca duygudurumun sık değişmesi anlamına gelmez. Hipomani ve majör depresyon dönemlerinin belirli klinik özellikleri taşıması ve geçmişte manik dönem bulunmaması tanısal ayrım açısından önemlidir.",
+    sections: [
+      section("Bipolar II Bozuklukta Hangi Dönemler Görülür?", "Kişinin yaşam öyküsünde hipomanik dönemler ile majör depresif dönemler bulunur. Hipomanide enerji ve etkinlik artışı, uyku ihtiyacında azalma, konuşkanlık veya davranışlarda kişinin olağan halinden belirgin değişiklik görülebilir. Depresif dönemlerde ise çökkünlük, ilgi kaybı ve başka depresif belirtiler ön planda olabilir."),
+      section("Bipolar II ile Bipolar I Arasındaki Temel Fark Nedir?", "Bipolar I bozuklukta en az bir manik dönem bulunması temel tanısal özelliktir. Bipolar II bozuklukta ise geçmişte tam manik dönem bulunmaz; hipomanik ve majör depresif dönemler söz konusudur. Bu ayrım yalnızca belirtilerin sayısına değil, dönemin ağırlığı ve işlevselliğe etkisine dayanır."),
+      section("Hipomani Her Zaman Kolay Fark Edilir mi?", "Hayır. Artmış enerji veya üretkenlik kişi tarafından başlangıçta sorun olarak görülmeyebilir ve depresif dönemler kadar yardım arama nedeni olmayabilir. Bu nedenle değerlendirmede yalnızca mevcut belirtiler değil, geçmiş dönemlerde uyku, enerji, konuşma, etkinlik ve davranışlarda olağandışı değişiklik olup olmadığı da araştırılır."),
+      section("Neden Ayrıntılı Yaşam Öyküsü Önemlidir?", "Tek bir depresif dönem veya kısa süreli enerji artışı bipolar II bozukluk tanısı için yeterli değildir. Dönemlerin süresi, birbirleriyle ilişkisi, kişinin olağan işlev düzeyinden ne kadar farklı olduğu, kullanılan maddeler veya ilaçlar ve başka tıbbi durumlar birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Hipomani", slug: "hipomani" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "Mani", slug: "mani" }
+    ]
+  }],
+
+  ["borderline-kisilik-oruntusu", {
+    shortDefinition: "Borderline kişilik örüntüsü, duyguların düzenlenmesi, kişilerarası ilişkiler, benlik algısı ve dürtü kontrolü alanlarında süreklilik gösteren güçlüklerle ilişkili bir kişilik örüntüsünü ifade eder.",
+    intro: "Borderline kişilik örüntüsü tek bir davranış, yoğun duygusallık veya ilişki sorunu üzerinden tanımlanmaz. Örüntünün farklı yaşam alanlarında uzun süredir bulunması ve kişinin işlevselliği üzerindeki etkisi birlikte değerlendirilir.",
+    sections: [
+      section("Borderline Kişilik Örüntüsünde Hangi Alanlar Etkilenebilir?", "Kişilerarası ilişkiler yoğun ve değişken yaşanabilir, terk edilme ihtimaline karşı belirgin hassasiyet görülebilir ve kişinin kendisiyle ilgili değerlendirmeleri zaman içinde keskin biçimde değişebilir. Duyguların hızlı yükselmesi ve yatışmasının güç olması da bazı kişilerde belirgin bir özellik olabilir."),
+      section("Dürtüsellik Neden Önemlidir?", "Bazı kişiler yoğun duygular sırasında sonuçlarını yeterince değerlendirmeden davranabilir. Ancak dürtüsellik farklı psikiyatrik durumlarda da görülebilir ve tek başına borderline kişilik örüntüsünü göstermez. Davranışların hangi koşullarda ortaya çıktığı ve ne kadar süreklilik taşıdığı önemlidir."),
+      section("Borderline Örüntüsü ile Bipolar Bozukluk Aynı Şey midir?", "Hayır. Her iki durumda da duygudurum değişiklikleri tarif edilebilse de klinik zaman örüntüsü ve eşlik eden özellikler farklıdır. Bipolar bozuklukta belirli sürelerle devam eden depresif, manik veya hipomanik dönemler değerlendirilirken borderline örüntüsünde ilişkilere ve günlük olaylara bağlı hızlı duygusal değişimler daha belirgin olabilir."),
+      section("Kişilik Örüntüsü Değişmez Bir Etiket midir?", "Hayır. Kişilik örüntüsü kişinin bütün kimliğini tanımlamaz ve belirtilerin şiddeti yaşam boyunca değişebilir. Değerlendirmede kişinin güçlü yönleri, ilişkileri, yaşam öyküsü ve mevcut stres etkenleri de dikkate alınır. Uygun psikolojik yaklaşımlarla işlevsellik ve duygusal düzenleme alanlarında belirgin gelişmeler görülebilir.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["bulimiya-nervoza", {
+    shortDefinition: "Bulimiya nervoza, tekrarlayan tıkınırcasına yeme dönemleri ile bunların ardından kilo alımını önlemeye yönelik tekrarlayıcı telafi davranışlarının görüldüğü bir yeme bozukluğudur.",
+    intro: "Bulimiya nervoza yalnızca fazla yemek yemek anlamına gelmez. Tıkınırcasına yeme sırasında kontrol kaybı hissi, sonrasında gelişen telafi davranışları ve beden ağırlığı ya da biçiminin kişinin kendisini değerlendirmesindeki etkisi birlikte ele alınır.",
+    sections: [
+      section("Tıkınırcasına Yeme Dönemi Ne Anlama Gelir?", "Bu dönemlerde kişi yeme davranışı üzerinde kontrolünü kaybettiğini hissedebilir ve kısa bir süre içinde olağandışı biçimde fazla yediğini düşünebilir. Klinik değerlendirmede yalnızca yenilen miktar değil, kontrol kaybı deneyimi ve bu dönemlerin tekrarlayıcı olup olmadığı da önem taşır."),
+      section("Telafi Davranışları Neden Önemlidir?", "Bulimiya nervozada tıkınırcasına yeme sonrasında kilo alımını önlemek amacıyla tekrarlayıcı telafi davranışları görülebilir. Bu davranışlar fiziksel sağlık açısından risk taşıyabilir. Burada önemli olan belirli yöntemlerin ayrıntısı değil, davranışların tekrarlayıcı hale gelmesi ve yeme döngüsünün bir parçası olmasıdır."),
+      section("Bulimiya Nervoza Dış Görünüşten Anlaşılır mı?", "Hayır. Kişinin dış görünümü bulimiya nervoza olup olmadığını göstermez. Belirtiler çevreden uzun süre fark edilmeyebilir ve kişi yoğun utanç veya suçluluk yaşayabilir. Değerlendirme beden görünümüne değil, yeme davranışı, kontrol kaybı, telafi davranışları ve kişinin bu süreçle ilgili yaşantısına dayanır."),
+      section("Neden Hem Ruhsal Hem Bedensel Değerlendirme Önemlidir?", "Tekrarlayan yeme ve telafi döngüleri sıvı-elektrolit dengesi, sindirim sistemi, ağız ve diş sağlığı gibi bedensel alanları etkileyebilir. Aynı zamanda kaygı, depresif belirtiler ve beden algısıyla ilgili güçlükler eşlik edebilir. Bu nedenle belirgin veya tekrarlayıcı belirtilerde psikiyatrik ve tıbbi değerlendirme birlikte önem taşır.")
+    ],
+    relatedTerms: [
+      { term: "Anoreksiya nervoza", slug: "anoreksiya-nervoza" },
+      { term: "Tıkınırcasına yeme bozukluğu", slug: "tikinarcasina-yeme-bozuklugu" },
+      { term: "Yeme bozukluğu", slug: "yeme-bozuklugu" }
+    ]
+  }],
+
   ["ayrilma-kaygisi", {
     shortDefinition: "Ayrılma kaygısı, kişinin bağlandığı kişilerden ayrılma veya onları kaybetme olasılığı karşısında yaşadığı yoğun kaygıyı ifade eder.",
     intro: "Ayrılmaya ilişkin kaygı çocuk gelişiminin bazı dönemlerinde beklenen bir durumdur. Klinik açıdan önemli hale gelmesi; kaygının yaş ve gelişim düzeyine göre aşırı olması, süreklilik göstermesi ve günlük yaşamı belirgin biçimde etkilemesiyle ilişkilidir.",
