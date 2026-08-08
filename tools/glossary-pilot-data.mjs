@@ -3479,7 +3479,291 @@ const eighthBatchNewTerms = [
   })
 ];
 
+
+const ninthBatchNewTerms = [
+  defineTerm({
+    term: "Dezorganize bağlanma",
+    slug: "dezorganize-baglanma",
+    shortDefinition: "Dezorganize bağlanma, yakınlık ve güven arayışının aynı zamanda korku, kaçınma veya çelişkili tepkilerle birlikte görülebildiği bağlanma örüntüsünü ifade eden gelişimsel bir kavramdır.",
+    intro: "Kavram başlangıçta çocuk ve bakım veren arasındaki bağlanma davranışlarını açıklamak için geliştirilmiştir. Günlük dilde veya sosyal medyada kullanılan bağlanma etiketleri klinik değerlendirmeyle aynı anlama gelmez ve tek başına psikiyatrik tanı oluşturmaz.",
+    sections: [
+      section("Dezorganize Bağlanma Ne Anlama Gelir?", "Çocuk yakınlık ve korunma için bakım verene yönelirken aynı kişiyle ilişkili korku veya belirsizlik de yaşayabilir. Bu durumda yaklaşma, uzaklaşma, donakalma veya çelişkili davranışlar bir arada gözlenebilir. Örüntü tek bir davranıştan değil, ilişkinin bağlamı içinde değerlendirilen tekrarlayan tepkilerden anlaşılır."),
+      section("Neden Ortaya Çıkabilir?", "Bakım verenin çocuğa zaman zaman güven veren, zaman zaman korkutucu veya öngörülemez biçimde yanıt vermesi gelişimsel açıdan önemli olabilir. Travma, aile stresi ve bakım koşulları da araştırılmıştır. Bununla birlikte belirli bir bağlanma örüntüsünden tek başına kesin neden-sonuç ilişkisi çıkarılmaz."),
+      section("Yetişkin İlişkilerini Doğrudan Açıklar mı?", "Çocukluk bağlanma deneyimleri sonraki ilişkiler üzerinde etkili olabilir ancak yetişkin davranışları yalnız erken bağlanmayla belirlenmez. Kişilik özellikleri, yeni ilişkisel deneyimler, sosyal çevre ve yaşam olayları gelişim boyunca etkisini sürdürür."),
+      section("Dezorganize Bağlanma Bir Psikiyatrik Tanı mıdır?", "Hayır. Dezorganize bağlanma bir bağlanma örüntüsünü tanımlayan gelişimsel kavramdır. Kişiye yalnız bu etiket üzerinden kişilik bozukluğu, travma bozukluğu veya başka bir psikiyatrik tanı atfetmek uygun değildir. Klinik değerlendirme belirtiler, işlevsellik ve yaşam öyküsünü birlikte ele alır.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Kaygılı bağlanma", slug: "kaygili-baglanma" },
+      { term: "Kaçıngan bağlanma", slug: "kacingan-baglanma" },
+      { term: "Travmatik bağlanma", slug: "travmatik-baglanma" }
+    ],
+    seo: {
+      title: "Dezorganize Bağlanma Nedir? | Psikiyatri Sözlüğü",
+      description: "Dezorganize bağlanmanın yakınlık ve korkunun birlikte görülebildiği gelişimsel örüntüyü nasıl tanımladığını açıklar.",
+      ogTitle: "Dezorganize Bağlanma Nedir?",
+      ogDescription: "Dezorganize bağlanmayı gelişimsel ve klinik sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Yakınlık arayışı ile korku veya çelişkili tepkilerin birlikte görülebildiği gelişimsel bağlanma örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Direnç",
+    slug: "direnc",
+    shortDefinition: "Direnç, psikoterapi veya değişim sürecinde kişinin zorlayıcı duygu, düşünce ya da deneyimlerle karşılaşmaktan kaçınmasına, bazı konuları ele almakta zorlanmasına veya değişime karşı ikircikli kalmasına verilen klinik addır.",
+    intro: "Direnç kişinin isteksiz, sorunlu veya iş birliğine kapalı olduğu anlamına gelmez. Çoğu zaman değişimin oluşturduğu belirsizlik, kaygı, korunma ihtiyacı veya mevcut baş etme yollarının işleviyle ilişkili anlaşılması gereken bir süreçtir.",
+    sections: [
+      section("Direnç Psikoterapide Nasıl Görülebilir?", "Kişi belirli konuları sürekli değiştirebilir, önemli görüşmeleri erteleyebilir, yeni davranışları denemekte zorlanabilir veya bir yandan değişmek isterken diğer yandan mevcut örüntülerini koruyabilir. Bu davranışların anlamı kişinin yaşam öyküsü ve terapötik ilişki içinde değerlendirilir."),
+      section("Direnç Bilinçli Bir Davranış mıdır?", "Her zaman değil. Bazı kaçınmalar kişi tarafından açıkça fark edilirken bazıları daha otomatik olabilir. Psikodinamik yaklaşımlar direnç kavramını bilinçdışı çatışmalar ve savunmalarla da ilişkilendirir. Başka terapi yaklaşımları ise kaçınma, motivasyon veya değişime hazır oluş üzerinden farklı biçimde açıklayabilir."),
+      section("Direnç Terapinin Başarısız Olduğu Anlamına Gelir mi?", "Hayır. Zorlanma ve kararsızlık değişim süreçlerinin doğal parçaları olabilir. Direncin fark edilmesi hangi konuların daha güvenli, yavaş veya farklı bir yöntemle ele alınması gerektiğini anlamaya yardımcı olabilir."),
+      section("Terapistin Rolü Nedir?", "Direnci suçlayıcı biçimde yorumlamak yerine kişinin neyi korumaya çalıştığını, hangi korku veya beklentilerin devreye girdiğini ve terapötik ilişkinin nasıl yaşandığını anlamak önemlidir. Hedef kişiyi zorlamak değil, değişimin önündeki engelleri iş birliği içinde keşfetmektir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Psikodinamik terapi", slug: "psikodinamik-terapi" },
+      { term: "Motivasyonel görüşme", slug: "motivasyonel-gorusme" },
+      { term: "Tetikleyici", slug: "tetikleyici" }
+    ],
+    seo: {
+      title: "Direnç Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikoterapide direnç kavramının değişime yönelik zorlanma, kaçınma ve ikirciklilikle ilişkisini açıklar.",
+      ogTitle: "Direnç Nedir?",
+      ogDescription: "Psikoterapide direnci suçlayıcı olmayan klinik bir yaklaşımla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Değişim veya farkındalık sürecinde ortaya çıkan bilinçli ya da otomatik psikolojik zorlanma."
+    }
+  }),
+
+  defineTerm({
+    term: "DSM",
+    slug: "dsm",
+    shortDefinition: "DSM, Amerikan Psikiyatri Birliği tarafından yayımlanan ve ruhsal bozuklukların tanımlanması ile sınıflandırılmasında ortak bir dil sağlamayı amaçlayan tanısal sınıflandırma sistemidir.",
+    intro: "DSM bir kişinin bilgisayardaki kontrol listesine göre otomatik biçimde tanı almasını sağlayan sistem değildir. Tanı ölçütleri klinik görüşme, belirtilerin süresi, işlevsellik, gelişimsel bağlam ve ayırıcı tanıyla birlikte değerlendirilir.",
+    sections: [
+      section("DSM Ne Amaçla Kullanılır?", "Ruhsal bozuklukların tanımlanmasında klinisyenler ve araştırmacılar arasında ortak terminoloji oluşturmayı amaçlar. Belirti kümeleri, süre ölçütleri ve bazı dışlama koşulları tanımlar. Böylece araştırma sonuçlarının ve klinik iletişimin daha karşılaştırılabilir hale gelmesine katkıda bulunur."),
+      section("DSM Bir Tanı Testi midir?", "Hayır. DSM'de yer alan ölçütlerin bazılarını kişinin kendisinde görmesi tek başına tanı anlamına gelmez. Belirtilerin şiddeti, süresi, işlevsellik üzerindeki etkisi, başka psikiyatrik veya tıbbi açıklamalar ve kişinin gelişimsel özellikleri klinik değerlendirmede birlikte ele alınır."),
+      section("DSM ile ICD Arasında Ne Fark Vardır?", "DSM Amerikan Psikiyatri Birliği tarafından yayımlanır. ICD ise Dünya Sağlık Örgütü tarafından geliştirilen ve psikiyatrik bozuklukların yanında bütün hastalıkları kapsayan uluslararası sınıflandırmadır. İki sistem arasında önemli benzerlikler olduğu gibi terminoloji ve ölçütlerde farklılıklar bulunabilir."),
+      section("Tanılar Değişebilir mi?", "Psikiyatrik sınıflandırmalar bilimsel bilgi geliştikçe gözden geçirilir. Tanı kategorileri hastalıkların bütün biyolojik ve psikolojik gerçekliğini eksiksiz temsil eden değişmez yapılar değildir. DSM klinik düşünmeyi destekleyen bir sınıflandırmadır; kişinin bireysel öyküsünün ve klinik formülasyonun yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Komorbidite", slug: "komorbidite" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "DSM Nedir? | Psikiyatri Sözlüğü",
+      description: "DSM'nin ruhsal bozuklukların sınıflandırılmasındaki rolünü, tanı testi olmadığını ve klinik değerlendirmeyle ilişkisini açıklar.",
+      ogTitle: "DSM Nedir?",
+      ogDescription: "DSM tanı sınıflandırmasının amacı ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Amerikan Psikiyatri Birliği tarafından yayımlanan ruhsal bozuklukların tanısal sınıflandırma sistemi."
+    }
+  }),
+
+  defineTerm({
+    term: "Duygudurum düzenleyici",
+    slug: "duygudurum-duzenleyici",
+    shortDefinition: "Duygudurum düzenleyici, özellikle bipolar bozuklukta mani, hipomani veya depresif dönemlerin tedavisi ya da tekrarının önlenmesi amacıyla kullanılabilen farklı farmakolojik özelliklere sahip ilaçları tanımlayan genel klinik terimdir.",
+    intro: "Duygudurum düzenleyiciler tek bir ilaç sınıfı değildir. Lityum, bazı antiepileptik ilaçlar ve belirli antipsikotikler klinik bağlama göre duygudurum düzenleyici özellikleri nedeniyle kullanılabilir.",
+    sections: [
+      section("Duygudurum Düzenleyici Ne Amaçla Kullanılır?", "Bipolar bozuklukta duygudurum dönemlerinin şiddetini azaltmak, yeni dönemlerin ortaya çıkma riskini düşürmek veya belirli akut dönemleri tedavi etmek amacıyla kullanılabilir. Hangi ilacın mani, depresyon veya koruyucu tedavide daha uygun olduğu birbirinden farklı olabilir."),
+      section("Her Duygudurum Düzenleyici Aynı mıdır?", "Hayır. İlaçların etki mekanizmaları, hangi duygudurum dönemlerinde daha güçlü kanıta sahip oldukları ve yan etki profilleri farklıdır. Bu nedenle genel sınıf adı kullanılsa da ilaç seçimi kişiye özgü klinik özelliklere dayanır."),
+      section("İzlem Neden Önemlidir?", "Bazı ilaçlarda metabolik etkiler, organ işlevleri, gebelikle ilişkili riskler, ilaç etkileşimleri veya kan düzeyi izlemi gibi konular önemli olabilir. Gereken kontroller kullanılan ilaca ve kişinin tıbbi özelliklerine göre değişir."),
+      section("İlaç Kendi Kendine Değiştirilebilir mi?", "Hayır. Bipolar bozuklukta tedavinin hızlı değiştirilmesi veya ilacın kontrolsüz bırakılması belirtilerin yeniden ortaya çıkmasıyla ilişkili olabilir. Başlama, değiştirme veya bırakma kararları tanı, önceki dönemler, yan etkiler ve tedavi yanıtı birlikte değerlendirilerek hekim tarafından planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "Bipolar II bozukluk", slug: "bipolar-2-bozukluk" },
+      { term: "Mani", slug: "mani" },
+      { term: "Hipomani", slug: "hipomani" }
+    ],
+    seo: {
+      title: "Duygudurum Düzenleyici Nedir? | Psikiyatri Sözlüğü",
+      description: "Duygudurum düzenleyici ilaçların bipolar bozukluktaki yerini, farklılıklarını ve klinik izlem gereksinimini açıklar.",
+      ogTitle: "Duygudurum Düzenleyici Nedir?",
+      ogDescription: "Duygudurum düzenleyici kavramını güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bipolar bozuklukta duygudurum dönemlerini tedavi etmek veya tekrarını azaltmak amacıyla kullanılan ilaçlar için genel terim."
+    }
+  }),
+
+  defineTerm({
+    term: "Entelektüalizasyon",
+    slug: "entelektualizasyon",
+    shortDefinition: "Entelektüalizasyon, duygusal açıdan zorlayıcı bir deneyimin hissettirdiği duygular yerine konuyu soyut, teknik, mantıksal veya aşırı analitik biçimde ele alarak psikolojik mesafe oluşturmayı sağlayan savunma mekanizmasıdır.",
+    intro: "Bir konuyu düşünerek anlamaya çalışmak tek başına entelektüalizasyon değildir. Kavram, düşünmenin duygusal deneyimle teması azaltan bir korunma yolu haline geldiği durumları anlatır.",
+    sections: [
+      section("Entelektüalizasyon Nasıl Görülebilir?", "Kişi kayıp, hastalık, ilişki çatışması veya başka zorlayıcı bir olay hakkında ayrıntılı bilgiler verebilir ancak olayın kendisinde oluşturduğu üzüntü, korku veya öfkeyle temas etmekte zorlanabilir. Konuyu sürekli açıklamak duyguyu yaşamaktan daha güvenli hissedilebilir."),
+      section("Bilgi Sahibi Olmakla Aynı Şey midir?", "Hayır. Bilgi edinmek ve sorunları mantıksal biçimde değerlendirmek çoğu zaman yararlıdır. Entelektüalizasyon terimi, bilişsel açıklamanın kişinin duygusal deneyimini sürekli olarak uzak tutmak için kullanıldığı örüntüyü tanımlar."),
+      section("Neden Savunma Mekanizması Denir?", "Savunma mekanizmaları yoğun kaygı veya çatışma karşısında psikolojik dengeyi korumaya yardımcı olabilir. Entelektüalizasyon da kişinin zor bir deneyime dayanabilmesini sağlayabilir. Bu nedenle her durumda olumsuz veya patolojik kabul edilmez."),
+      section("Ne Zaman Sorun Oluşturabilir?", "Kişi sürekli düşünsel açıklamalara yönelip duygularını fark etmekte, paylaşmakta veya ilişkiler içinde işlemekte zorlandığında psikolojik esneklik sınırlanabilir. Psikoterapide amaç mantıksal düşünmeyi bırakmak değil, düşüncelerle duygusal deneyim arasında daha bütüncül bir bağlantı kurabilmektir. Kişinin hem ne düşündüğünü hem de bunun kendisinde hangi duyguları uyandırdığını fark edebilmesi bu bütünleşmeyi destekleyebilir.")
+    ],
+    relatedTerms: [
+      { term: "Bastırma", slug: "bastirma" },
+      { term: "İnkar", slug: "inkar" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ],
+    seo: {
+      title: "Entelektüalizasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Entelektüalizasyon savunmasının zorlayıcı duyguları aşırı analitik ve düşünsel biçimde ele alma yoluyla nasıl mesafe oluşturduğunu açıklar.",
+      ogTitle: "Entelektüalizasyon Nedir?",
+      ogDescription: "Entelektüalizasyon savunma mekanizmasını örnekleri ve sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Zorlayıcı duygularla temas yerine konuyu aşırı analitik ve düşünsel biçimde ele almaya dayalı savunma mekanizması."
+    }
+  }),
+
+  defineTerm({
+    term: "Enürezis",
+    slug: "enurezis",
+    shortDefinition: "Enürezis, gelişimsel olarak mesane kontrolünün beklendiği yaşa ulaşmış bir çocukta idrar kaçırmanın tekrarlayan biçimde ortaya çıkmasını tanımlayan klinik terimdir.",
+    intro: "Enürezis özellikle gece uykusunda görülebilir ve çocuğun isteyerek yaptığı bir davranış değildir. Mesane gelişimi, uyku, ailesel yatkınlık, idrar üretiminin gece düzenlenmesi ve bazı tıbbi veya psikososyal etkenler rol oynayabilir.",
+    sections: [
+      section("Enürezis Hangi Şekillerde Görülebilir?", "En sık gece uykusunda yatağın ıslanması biçiminde görülür. Bazı çocuklarda gündüz idrar kaçırma veya sıkışma yakınmaları da bulunabilir. Daha önce uzun süre kuru kaldıktan sonra yeniden başlayan durumlarla çocukluğun erken döneminden beri süren durumlar farklı değerlendirme gerektirebilir."),
+      section("Çocuk Bunu Bilerek mi Yapar?", "Genellikle hayır. İdrar kaçırmayı tembellik, dikkatsizlik veya itaatsizlik olarak yorumlamak çocuğun utanmasına ve özgüveninin etkilenmesine neden olabilir. Suçlama veya cezalandırma yerine destekleyici ve mahremiyete saygılı yaklaşım önemlidir."),
+      section("Tıbbi Değerlendirme Neden Gerekebilir?", "İdrar yolu yakınmaları, aşırı susama, kabızlık, horlama, gündüz kaçırma veya daha önce düzelmişken yeniden başlayan idrar kaçırma gibi durumlarda tıbbi nedenlerin değerlendirilmesi gerekebilir. Öykü ve fiziksel değerlendirme hangi incelemelerin gerekli olduğunu belirler."),
+      section("Ruhsal Etkenlerle İlişkisi Var mıdır?", "Stres veya önemli yaşam değişiklikleri bazı çocuklarda belirtilerin başlaması veya artmasıyla ilişkili olabilir ancak enürezis yalnız psikolojik nedenlere bağlanmamalıdır. Çocuğun gelişimsel, tıbbi ve psikososyal özellikleri birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Enkoprezis", slug: "enkoprezis" },
+      { term: "Ebeveyn tutumu", slug: "ebeveyn-tutumu" },
+      { term: "Akran ilişkileri", slug: "akran-iliskileri" },
+      { term: "Sosyal destek", slug: "sosyal-destek" }
+    ],
+    seo: {
+      title: "Enürezis Nedir? | Psikiyatri Sözlüğü",
+      description: "Enürezisin çocuklarda tekrarlayan idrar kaçırma durumunu, olası etkenleri ve suçlayıcı olmayan değerlendirme yaklaşımını açıklar.",
+      ogTitle: "Enürezis Nedir?",
+      ogDescription: "Enürezisi gelişimsel, tıbbi ve psikososyal yönleriyle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Mesane kontrolünün beklendiği gelişim dönemindeki çocukta tekrarlayan idrar kaçırma durumu."
+    }
+  }),
+
+  defineTerm({
+    term: "Epizod",
+    slug: "epizod",
+    shortDefinition: "Epizod, belirli bir hastalığa ait belirtilerin tanımlanabilir bir zaman aralığında birlikte ortaya çıktığı ve başlangıç, seyir ve sonlanma özellikleri bulunan klinik dönemi ifade eder.",
+    intro: "Psikiyatride depresif epizod, manik epizod veya başka dönemsel tablolar gibi kullanımlar vardır. Epizod kavramı tek bir belirtiyi değil, belirli süre ve klinik özelliklerle birlikte ortaya çıkan belirti örüntüsünü anlatır.",
+    sections: [
+      section("Epizod Ne Anlama Gelir?", "Bir hastalıkta belirtilerin belirli bir dönemde tanısal açıdan anlamlı biçimde ortaya çıkması epizod olarak tanımlanabilir. Epizodun süresi ve hangi belirtileri içermesi gerektiği söz konusu bozukluğun tanı ölçütlerine göre değişebilir."),
+      section("Epizod ile Atak Aynı Şey midir?", "Terimler bazı günlük kullanımlarda birbirinin yerine geçebilir ancak klinik olarak tamamen aynı olmak zorunda değildir. Atak daha genel biçimde belirtilerin başlaması veya belirginleşmesini anlatabilirken epizod çoğu zaman tanımlanmış bir hastalık dönemini ifade eder."),
+      section("Bir Kişide Birden Fazla Epizod Olabilir mi?", "Evet. Dönemsel seyreden bozukluklarda kişi yaşamı boyunca birden fazla epizod yaşayabilir. İki dönem arasındaki belirtilerin düzeyi, remisyon süresi ve işlevsellik hastalığın uzun dönemli seyrini değerlendirmede önemlidir."),
+      section("Epizodların Kaydı Neden Önemlidir?", "Başlangıç zamanı, süresi, belirtilerin şiddeti, işlevsellik etkisi ve dönemler arasındaki iyilik hali klinik değerlendirmeye önemli bilgiler sağlar. Bu bilgiler prognoz, nüks riski ve uzun dönem tedavi planının şekillendirilmesinde kullanılabilir.")
+    ],
+    relatedTerms: [
+      { term: "Atak", slug: "atak" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Nüks", slug: "nuks" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" }
+    ],
+    seo: {
+      title: "Epizod Nedir? | Psikiyatri Sözlüğü",
+      description: "Epizod kavramının psikiyatride belirli süre ve belirtilerle tanımlanan hastalık dönemini nasıl ifade ettiğini açıklar.",
+      ogTitle: "Epizod Nedir?",
+      ogDescription: "Epizod teriminin atak, remisyon ve hastalık seyriyle ilişkisini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirli bir hastalığa ait belirtilerin tanımlanabilir zaman aralığında birlikte görüldüğü klinik dönem."
+    }
+  }),
+
+  defineTerm({
+    term: "Ergen depresyonu",
+    slug: "ergen-depresyonu",
+    shortDefinition: "Ergen depresyonu, ergenlik döneminde çökkün duygudurum veya belirgin irritabilite, ilgi kaybı, enerji azalması, uyku ya da iştah değişiklikleri ve günlük işlevsellikte bozulmayla ortaya çıkabilen depresif tablodur.",
+    intro: "Ergenlerde depresyon her zaman yalnız üzüntü biçiminde görülmez. Öfke, tahammülsüzlük, okul başarısında düşme, sosyal geri çekilme veya daha önce önem verilen etkinliklere ilgide azalma da dikkat çekebilir.",
+    sections: [
+      section("Ergenlerde Depresyon Nasıl Görülebilir?", "Süreğen çökkünlük veya irritabiliteye enerji kaybı, motivasyon azalması, uyku düzeninde değişiklik, konsantrasyon güçlüğü ve değersizlik düşünceleri eşlik edebilir. Belirtiler okul, arkadaşlıklar, aile ilişkileri ve öz bakım üzerinde etkili olabilir."),
+      section("Normal Ergenlik Dalgalanmalarından Nasıl Ayrılır?", "Ergenlikte duygu değişimleri görülebilir. Depresyonda ise belirtiler daha kalıcıdır, kişinin farklı yaşam alanlarını etkiler ve günlük işlevsellikte belirgin değişiklik yaratabilir. Tek bir kötü gün veya dönemsel moral bozukluğu depresyon tanısı anlamına gelmez."),
+      section("Risk İşaretleri Neden Önemlidir?", "Umutsuzluk, yaşamın anlamsız olduğuna ilişkin düşünceler, kendine zarar verme davranışı veya yaşamına son verme düşüncelerinin ortaya çıkması ciddiye alınmalıdır. Böyle bir durumda ergenin güvenliği değerlendirilir ve gecikmeden profesyonel yardım alınması gerekir."),
+      section("Değerlendirmede Aile ve Çevrenin Rolü Nedir?", "Ergenin kendi anlatımı temel olmakla birlikte aile, okul veya yakın çevreden alınan bilgiler işlevsellikteki değişimleri anlamaya yardımcı olabilir. Gizlilik ve ergenin mahremiyeti korunurken güvenlikle ilgili önemli bilgiler ayrıca ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Çökkün duygudurum", slug: "cokkun-duygudurum" },
+      { term: "Kendine zarar verme", slug: "kendine-zarar-verme" },
+      { term: "Sosyal destek", slug: "sosyal-destek" }
+    ],
+    seo: {
+      title: "Ergen Depresyonu Nedir? | Psikiyatri Sözlüğü",
+      description: "Ergen depresyonunun irritabilite, ilgi kaybı ve işlevsellik değişiklikleriyle nasıl görülebileceğini ve risk işaretlerini açıklar.",
+      ogTitle: "Ergen Depresyonu Nedir?",
+      ogDescription: "Ergenlerde depresyon belirtilerini ve değerlendirmede dikkat edilen noktaları açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ergenlik döneminde çökkünlük veya irritabilite, ilgi kaybı ve işlevsellik azalmasıyla ortaya çıkabilen depresif tablo."
+    }
+  }),
+
+  defineTerm({
+    term: "Ergenlik",
+    slug: "ergenlik",
+    shortDefinition: "Ergenlik, çocukluktan yetişkinliğe geçişte bedensel olgunlaşmanın yanı sıra kimlik, özerklik, ilişkiler, duygusal düzenleme ve sosyal roller açısından hızlı değişimlerin yaşandığı gelişim dönemidir.",
+    intro: "Ergenlik yalnız hormonal değişikliklerden ibaret değildir. Beyin gelişimi, aile ilişkileri, akran çevresi, okul yaşamı, kültürel beklentiler ve bireysel deneyimler bu dönemin nasıl yaşandığını birlikte etkiler.",
+    sections: [
+      section("Ergenlikte Hangi Değişimler Yaşanır?", "Bedensel büyüme ve cinsel olgunlaşmaya bilişsel, duygusal ve sosyal değişimler eşlik eder. Soyut düşünme gelişir, gelecek planları önem kazanır ve kişi kendisini ailesinden daha bağımsız tanımlamaya başlayabilir."),
+      section("Duygu Dalgalanmaları Normal midir?", "Bu dönemde duyguların yoğun yaşanması ve zaman zaman hızlı değişmesi görülebilir. Ancak uzun süren çökkünlük, belirgin kaygı, ciddi davranış değişiklikleri veya okul ve sosyal işlevsellikte bozulma yalnız ergenliğe bağlanmamalıdır."),
+      section("Akran İlişkileri Neden Önem Kazanır?", "Akranlar aidiyet, kimlik gelişimi ve sosyal öğrenme açısından daha belirgin rol üstlenebilir. Arkadaşlıkların güçlenmesi aile bağlarının önemini kaybettiği anlamına gelmez; ergen hem özerklik hem de güvenilir yetişkin desteğine ihtiyaç duyabilir."),
+      section("Aileler Ergene Nasıl Yaklaşabilir?", "Yaşa uygun özerklik tanımak, sınırları açık biçimde konuşmak ve mahremiyete saygı göstermek önemlidir. Ergenin davranışlarını yalnız disiplin açısından değil, gelişimsel gereksinimleri, duyguları ve içinde bulunduğu sosyal bağlamla birlikte anlamaya çalışmak iletişimi destekleyebilir. Açık iletişim ile güvenli sınırlar arasında denge kurulması, ergenin hem bağımsızlaşmasını hem de gerektiğinde destek isteyebilmesini kolaylaştırabilir.")
+    ],
+    relatedTerms: [
+      { term: "Akran ilişkileri", slug: "akran-iliskileri" },
+      { term: "Ebeveyn tutumu", slug: "ebeveyn-tutumu" },
+      { term: "Dürtüsellik", slug: "durtusellik" },
+      { term: "Ergen anksiyetesi", slug: "ergen-anksiyetesi" }
+    ],
+    seo: {
+      title: "Ergenlik Nedir? | Psikiyatri Sözlüğü",
+      description: "Ergenliği bedensel, bilişsel, duygusal ve sosyal değişimlerin birlikte yaşandığı gelişim dönemi olarak açıklar.",
+      ogTitle: "Ergenlik Nedir?",
+      ogDescription: "Ergenlik dönemindeki temel gelişimsel değişimleri ve aile ilişkilerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocukluktan yetişkinliğe geçişte bedensel, bilişsel, duygusal ve sosyal değişimlerin yoğunlaştığı gelişim dönemi."
+    }
+  }),
+
+  defineTerm({
+    term: "Etkileşim",
+    slug: "etkilesim",
+    shortDefinition: "Etkileşim, bir ilacın etkisinin başka bir ilaç, madde, bitkisel ürün, besin veya kişinin kullandığı diğer tedaviler nedeniyle güçlenmesi, azalması ya da yan etki riskinin değişmesi durumunu ifade eder.",
+    intro: "İlaç etkileşimi her zaman ciddi bir sorun oluşacağı anlamına gelmez. Bazı kombinasyonlar güvenle kullanılabilirken bazıları yakın izlem, doz ayarlaması veya farklı bir seçeneğin değerlendirilmesini gerektirebilir.",
+    sections: [
+      section("İlaç Etkileşimi Nasıl Oluşabilir?", "Bir ilaç başka bir ilacın emilimini, metabolizmasını veya vücuttan atılımını değiştirebilir. Başka durumlarda iki ilacın benzer etkileri birleşerek sedasyon, kanama, ritim değişikliği veya başka yan etkilerin olasılığını artırabilir."),
+      section("Sadece Reçeteli İlaçlar mı Etkileşir?", "Hayır. Reçetesiz kullanılan ilaçlar, bazı bitkisel ürünler, takviyeler, alkol ve belirli besinler de ilaçlarla etkileşebilir. Bu nedenle klinik değerlendirmede kişinin kullandığı bütün ürünleri belirtmesi önemlidir."),
+      section("Etkileşim Varsa İlaç Kesilmeli midir?", "Her zaman değil. Etkileşimin klinik önemi kullanılan ilaçlara, dozlara, kişinin sağlık durumuna ve başka risk faktörlerine göre değişir. Bir etkileşim uyarısı tedavinin otomatik olarak bırakılması gerektiği anlamına gelmez."),
+      section("Güvenli Kullanım İçin Ne Yapılır?", "Hekim ve eczacının kullanılan tüm ilaç ve ürünlerden haberdar olması değerlendirmeyi kolaylaştırır. Yeni bir ilaç eklendiğinde veya beklenmeyen bir belirti ortaya çıktığında olası etkileşimler gözden geçirilebilir. Reçeteli ilaçlarda değişiklikler profesyonel değerlendirme olmadan yapılmamalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Doz titrasyonu", slug: "doz-titrasyonu" },
+      { term: "Benzodiazepin", slug: "benzodiazepin" },
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Antipsikotik", slug: "antipsikotik" }
+    ],
+    seo: {
+      title: "İlaç Etkileşimi Nedir? | Psikiyatri Sözlüğü",
+      description: "İlaç etkileşiminin başka ilaç, madde, bitkisel ürün veya besinlerle ilaç etkisini nasıl değiştirebildiğini açıklar.",
+      ogTitle: "İlaç Etkileşimi Nedir?",
+      ogDescription: "İlaç etkileşimi kavramını güvenli ilaç kullanımı çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir ilaç veya maddenin başka bir tedavinin etkisini ya da yan etki olasılığını değiştirmesi."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...ninthBatchNewTerms,
   ...eighthBatchNewTerms,
   ...seventhBatchNewTerms,
   ...sixthBatchNewTerms,

@@ -304,6 +304,16 @@ Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bi
 `;
 
 const glossaryDetailPages = {
+  "Dezorganize bağlanma": "dezorganize-baglanma",
+  "Direnç": "direnc",
+  "DSM": "dsm",
+  "Duygudurum düzenleyici": "duygudurum-duzenleyici",
+  "Entelektüalizasyon": "entelektualizasyon",
+  "Enürezis": "enurezis",
+  "Epizod": "epizod",
+  "Ergen depresyonu": "ergen-depresyonu",
+  "Ergenlik": "ergenlik",
+  "Etkileşim": "etkilesim",
   "Benzodiazepin": "benzodiazepin",
   "Bilgilendirilmiş onam": "bilgilendirilmis-onam",
   "Bölme": "bolme",
