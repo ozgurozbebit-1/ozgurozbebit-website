@@ -304,6 +304,16 @@ Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bi
 `;
 
 const glossaryDetailPages = {
+  "Psikodinamik terapi": "psikodinamik-terapi",
+  "Destekleyici psikoterapi": "destekleyici-psikoterapi",
+  "Maruz bırakma": "maruz-birakma",
+  "Tepki önleme": "tepki-onleme",
+  "Psikoeğitim": "psikoegitim",
+  "Motivasyonel görüşme": "motivasyonel-gorusme",
+  "Şema terapi": "sema-terapi",
+  "Kabul ve kararlılık terapisi": "kabul-ve-kararlilik-terapisi",
+  "Diyalektik davranış terapisi": "diyalektik-davranis-terapisi",
+  "Aile terapisi": "aile-terapisi",
   "Açık uçlu soru": "acik-uclu-soru",
   "Adaptasyon": "adaptasyon",
   "Afazi": "afazi",

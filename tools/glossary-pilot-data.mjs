@@ -2350,6 +2350,287 @@ const fourthBatchNewTerms = [
   })
 ];
 
+
+const fifthBatchNewTerms = [
+  defineTerm({
+    term: "Psikodinamik terapi",
+    slug: "psikodinamik-terapi",
+    shortDefinition: "Psikodinamik terapi, kişinin güncel duygusal ve kişilerarası güçlüklerini geçmiş deneyimler, ilişki örüntüleri, çatışmalar ve çoğu zaman doğrudan fark edilmeyen psikolojik süreçlerle birlikte ele alan psikoterapi yaklaşımıdır.",
+    intro: "Psikodinamik yaklaşım yalnız geçmişi konuşmak anlamına gelmez. Geçmiş deneyimlerin bugünkü ilişkiler, beklentiler, duygular ve davranışlar üzerindeki olası etkileri güncel yaşamla bağlantılı biçimde değerlendirilir.",
+    sections: [
+      section("Psikodinamik Terapide Neler Ele Alınır?", "Kişinin tekrarlayan ilişki örüntüleri, zorlayıcı duyguları, kendisi ve başkaları hakkındaki beklentileri ile çatışma yaşadığı alanlar üzerinde durulabilir. Amaç kişinin yaşadıklarına ilişkin farkındalığını ve psikolojik esnekliğini geliştirmesine yardımcı olmaktır."),
+      section("Geçmiş Deneyimler Neden Konuşulur?", "Çocukluk ve geçmiş ilişkiler bugünkü deneyimleri tek başına belirlemez. Bununla birlikte erken ilişkilerden öğrenilen bazı beklentiler ve baş etme yolları yetişkin yaşamında tekrar edebilir. Terapi bu bağlantıları kesin neden-sonuç ilişkileri kurmadan araştırır."),
+      section("Terapötik İlişkinin Rolü Nedir?", "Kişinin görüşme sırasında terapistle kurduğu ilişki de bazı kişilerarası beklentilerin anlaşılması için bilgi sağlayabilir. Terapötik ilişki güvenli sınırlar içinde incelenir; amaç kişiyi yargılamak değil, tekrarlayan ilişki örüntülerini birlikte fark edebilmektir."),
+      section("Her Psikoterapi Psikodinamik midir?", "Hayır. Psikodinamik terapi psikoterapi yöntemlerinden biridir. Bilişsel davranışçı, kişilerarası, davranışsal ve başka yaklaşımlar farklı kuramsal çerçeveler ve teknikler kullanabilir. Uygun yöntem kişinin başvuru nedeni, tercihleri ve klinik gereksinimleriyle birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" },
+      { term: "Bağlanma", slug: "baglanma" }
+    ],
+    seo: {
+      title: "Psikodinamik Terapi Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikodinamik terapinin ilişki örüntüleri, geçmiş deneyimler ve güncel duygusal güçlükler üzerinden nasıl çalıştığını açıklar.",
+      ogTitle: "Psikodinamik Terapi Nedir?",
+      ogDescription: "Psikodinamik terapi yaklaşımını sade ve bilimsel bir çerçevede açıklar."
+    },
+    schema: {
+      definedTermDescription: "Güncel ruhsal ve kişilerarası güçlükleri geçmiş deneyimler ve psikolojik örüntülerle birlikte ele alan psikoterapi yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Destekleyici psikoterapi",
+    slug: "destekleyici-psikoterapi",
+    shortDefinition: "Destekleyici psikoterapi, kişinin mevcut baş etme becerilerini, günlük işlevselliğini, problem çözme kapasitesini ve psikolojik dayanıklılığını desteklemeyi amaçlayan psikoterapi yaklaşımıdır.",
+    intro: "Destekleyici psikoterapide amaç her zaman kişiliğin derin yapısını değiştirmek değildir. Güncel güçlüklerin daha yönetilebilir hale gelmesi ve kişinin mevcut güçlü yönlerini kullanabilmesi ön planda olabilir.",
+    sections: [
+      section("Destekleyici Psikoterapide Neler Yapılır?", "Kişinin yaşadığı sorunları daha anlaşılır hale getirmek, güçlü yönlerini fark etmek, gerçekçi problem çözme seçenekleri geliştirmek ve stresli dönemlerde işlevselliği korumak üzerinde çalışılabilir. Görüşmeler kişinin ihtiyaçlarına göre farklı derecede yapılandırılmış olabilir."),
+      section("Destek Vermek ile Aynı Şey midir?", "Günlük yaşamda yakınların sunduğu duygusal destek çok değerlidir ancak destekleyici psikoterapi profesyonel sınırlar ve klinik değerlendirme içinde yürütülür. Terapötik yaklaşım kişinin belirtilerini, işlevselliğini ve mevcut yaşam koşullarını sistematik biçimde ele alır."),
+      section("Hangi Durumlarda Kullanılabilir?", "Yoğun stres dönemleri, kronik ruhsal veya fiziksel hastalıklarla yaşama, yaşam değişiklikleri ve işlevselliğin korunmasının önemli olduğu farklı klinik durumlarda destekleyici yöntemlerden yararlanılabilir. Uygulamanın biçimi kişiden kişiye değişir."),
+      section("Diğer Psikoterapilerden Farkı Nedir?", "Bazı psikoterapi modelleri belirli düşünce, davranış veya ilişki örüntülerini değiştirmeye daha yoğun odaklanabilir. Destekleyici psikoterapi ise kişinin mevcut kapasitesini koruma ve güçlendirmeye daha fazla ağırlık verebilir. Yaklaşımlar gerektiğinde birbirini dışlamadan kullanılabilir. Görüşmenin odağı kişinin klinik gereksinimleri zaman içinde değiştikçe yeniden düzenlenebilir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "Destekleyici Psikoterapi Nedir? | Psikiyatri Sözlüğü",
+      description: "Destekleyici psikoterapinin baş etme becerileri, dayanıklılık ve günlük işlevselliği desteklemedeki rolünü açıklar.",
+      ogTitle: "Destekleyici Psikoterapi Nedir?",
+      ogDescription: "Destekleyici psikoterapinin amaç ve sınırlarını sade biçimde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Baş etme kapasitesi ve günlük işlevselliğin desteklenmesini amaçlayan psikoterapi yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Maruz bırakma",
+    slug: "maruz-birakma",
+    shortDefinition: "Maruz bırakma, kişinin korktuğu ancak nesnel olarak güvenli olan durum, düşünce, duyum veya uyaranlarla planlı ve kontrollü biçimde karşılaşmasını içeren davranışsal psikoterapi tekniğidir.",
+    intro: "Maruz bırakmanın amacı kişiyi hazırlıksız biçimde korkusuyla karşı karşıya bırakmak değildir. Uygulama güvenlik, kişinin katılımı ve ele alınan sorunun özellikleri dikkate alınarak yapılandırılır.",
+    sections: [
+      section("Maruz Bırakma Nasıl Çalışır?", "Kaçınma kısa vadede kaygıyı azaltabilir ancak korkulan durumun tehlikeli olduğu inancının sınanmasını engelleyebilir. Planlı karşılaşmalar kişinin kaygının zaman içindeki değişimini ve korktuğu sonuçların gerçekleşip gerçekleşmediğini gözlemlemesine olanak sağlayabilir."),
+      section("Hangi Biçimlerde Uygulanabilir?", "Gerçek yaşam durumlarıyla karşılaşma, bazı bedensel duyumların güvenli biçimde oluşturulması veya zihinsel imgelerle çalışma farklı uygulama biçimleri arasında olabilir. Kullanılan yöntem sorunun türüne ve kişinin klinik durumuna göre belirlenir."),
+      section("Maruz Bırakma Zorla Yapılır mı?", "Hayır. Psikoterapide maruz bırakma iş birliği ve bilgilendirilmiş katılım temelinde yürütülmelidir. Kişinin korkusunu küçümsemek veya onu hazırlıksız şekilde yoğun bir durumun içine sokmak yapılandırılmış maruz bırakma uygulaması değildir."),
+      section("Hangi Sorunlarda Kullanılabilir?", "Özgül fobiler, sosyal anksiyete, panik bozukluk ve obsesif kompulsif bozukluk gibi bazı durumlarda maruz bırakma temelli yöntemler kullanılabilir. Uygulamanın biçimi ve uygunluğu kişisel değerlendirmeye göre değişir. Korkulan uyaranın gerçek bir tehlike içerip içermediğinin önceden değerlendirilmesi önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Özgül fobi", slug: "ozgul-fobi" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ],
+    seo: {
+      title: "Maruz Bırakma Nedir? | Psikiyatri Sözlüğü",
+      description: "Maruz bırakma tekniğinin korkulan ancak güvenli uyaranlarla planlı karşılaşma yoluyla nasıl uygulandığını açıklar.",
+      ogTitle: "Maruz Bırakma Nedir?",
+      ogDescription: "Maruz bırakmanın amacı, uygulama biçimi ve psikoterapideki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Korkulan ancak güvenli uyaranlarla planlı ve kontrollü karşılaşmayı içeren davranışsal psikoterapi tekniği."
+    }
+  }),
+
+  defineTerm({
+    term: "Tepki önleme",
+    slug: "tepki-onleme",
+    shortDefinition: "Tepki önleme, özellikle obsesif kompulsif bozuklukta kaygı veya rahatsızlığı azaltmak amacıyla yapılan kompulsif davranışların gerçekleştirilmemesi üzerinde çalışılan davranışsal yöntemdir.",
+    intro: "Tepki önleme çoğu zaman maruz bırakmayla birlikte ele alınır. Amaç kişinin kaygısını önemsememek değil, kaygı ile kompulsiyon arasındaki öğrenilmiş döngüyü güvenli ve yapılandırılmış biçimde incelemektir.",
+    sections: [
+      section("Kompulsiyon Döngüsünde Ne Olur?", "Takıntılı düşünce veya kuşku kaygıyı artırabilir ve kişi bu rahatsızlığı azaltmak için kontrol etme, tekrar etme veya güvence arama gibi davranışlara yönelebilir. Rahatlama kısa süreli olduğunda döngü yeniden güçlenebilir."),
+      section("Tepki Önlemede Ne Yapılır?", "Kişi uygun biçimde planlanmış bir durumda kompulsiyonu hemen yerine getirmeden rahatsızlığın nasıl değiştiğini gözlemlemeyi öğrenebilir. Çalışmanın düzeyi kişinin toleransı, belirtilerin şiddeti ve tedavi hedefleri dikkate alınarak belirlenir."),
+      section("Tepki Önleme İrade Testi midir?", "Hayır. Kompulsiyonlar basit alışkanlıklar veya irade zayıflığı olarak değerlendirilmez. Tepki önleme yapılandırılmış psikoterapötik çalışma içinde, kişinin belirtilerinin işlevini anlaması ve farklı yanıtlar geliştirmesi amacıyla uygulanır."),
+      section("Her Tekrarlayıcı Davranışta Kullanılır mı?", "Hayır. Tekrarlayıcı davranışın obsesif kompulsif döngünün parçası olup olmadığı değerlendirilmelidir. Tikler, nörogelişimsel davranışlar, bağımlılık örüntüleri veya başka klinik durumlar farklı yaklaşım gerektirebilir. Davranışın hangi işlevi gördüğünün anlaşılması uygun psikoterapötik yöntemin seçilmesine yardımcı olur. Belirtinin hangi durumlarda arttığının gözlenmesi de bu ayrımı destekleyebilir.")
+    ],
+    relatedTerms: [
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Güvence arama", slug: "guvence-arama" }
+    ],
+    seo: {
+      title: "Tepki Önleme Nedir? | Psikiyatri Sözlüğü",
+      description: "Tepki önlemenin obsesif kompulsif bozuklukta kompulsiyon döngüsüyle ilişkisini ve maruz bırakmayla birlikte kullanımını açıklar.",
+      ogTitle: "Tepki Önleme Nedir?",
+      ogDescription: "Tepki önleme yöntemini kompulsiyon ve kaygı döngüsü üzerinden açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kompulsif davranışın gerçekleştirilmemesi üzerinde çalışılan yapılandırılmış davranışsal psikoterapi yöntemi."
+    }
+  }),
+
+  defineTerm({
+    term: "Psikoeğitim",
+    slug: "psikoegitim",
+    shortDefinition: "Psikoeğitim, kişinin yaşadığı ruhsal durum, belirtiler, olası seyir, değerlendirme süreci ve baş etme seçenekleri hakkında anlaşılır ve bilimsel bilgi edinmesini amaçlayan yapılandırılmış bilgilendirme yaklaşımıdır.",
+    intro: "Psikoeğitim yalnız bilgi vermek değildir. Kişinin kendi deneyimini daha iyi anlamasına, belirtileri izlemesine ve sağlık hizmetleriyle ilgili karar süreçlerine daha bilinçli katılmasına yardımcı olmayı hedefler.",
+    sections: [
+      section("Psikoeğitimde Hangi Konular Ele Alınabilir?", "Belirtilerin özellikleri, hastalığın seyri, stres etkenleri, uyku ve günlük yaşam düzeni, erken uyarı işaretleri ve mevcut destek seçenekleri konuşulabilir. İçeriğin kişinin tanısına, yaşına ve bilgi ihtiyacına uygun olması önemlidir."),
+      section("Psikoeğitim Tanı Koymak mıdır?", "Hayır. Psikoeğitim klinik değerlendirme sonucunda elde edilen bilgilerin anlaşılır hale getirilmesine yardımcı olabilir ancak kendi başına tanı yöntemi değildir. Genel bilgilerin kişinin kişisel durumuna doğrudan uygulanması doğru olmayabilir."),
+      section("Aileler Psikoeğitime Dahil Edilebilir mi?", "Kişinin onayı ve klinik gereksinimler doğrultusunda yakınların bazı süreçleri anlaması destekleyici olabilir. Aileyle paylaşılacak bilgilerin kapsamı mahremiyet ve kişinin tercihleri dikkate alınarak belirlenmelidir."),
+      section("Neden Yararlı Olabilir?", "Belirtileri ve olası tetikleyicileri tanımak, yanlış inanışları azaltmak ve hangi durumda profesyonel yardım aranacağını bilmek kişinin sürece daha etkin katılmasını sağlayabilir. Psikoeğitim diğer tedavi ve destek yöntemlerinin yerine geçen tek başına bir uygulama değildir. Verilen bilgilerin anlaşılması ve kişinin sorularına göre yeniden ele alınması sürecin önemli bir parçasıdır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "Psikoeğitim Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikoeğitimin ruhsal belirtileri ve değerlendirme sürecini anlamaya yardımcı olan yapılandırılmış bilgilendirme yaklaşımı olduğunu açıklar.",
+      ogTitle: "Psikoeğitim Nedir?",
+      ogDescription: "Psikoeğitimin amacı, kapsamı ve klinik süreçteki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruhsal durum ve belirtiler hakkında bilimsel ve anlaşılır bilgi sunan yapılandırılmış bilgilendirme yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Motivasyonel görüşme",
+    slug: "motivasyonel-gorusme",
+    shortDefinition: "Motivasyonel görüşme, kişinin bir davranışı değiştirme konusundaki kararsızlığını anlamasına ve kendi değişim nedenlerini ortaya koymasına yardımcı olmayı amaçlayan iş birliğine dayalı görüşme yaklaşımıdır.",
+    intro: "Motivasyonel görüşmede kişiyi ikna etmek, suçlamak veya baskı altında karar vermeye zorlamak hedeflenmez. Değişimle ilgili avantajlar, kaygılar ve kişinin kendi değerleri birlikte araştırılır.",
+    sections: [
+      section("Kararsızlık Neden Önemlidir?", "Bir davranışın zararlarını bilmek o davranışı bırakmayı otomatik olarak kolaylaştırmaz. Kişi değişmek isterken aynı zamanda mevcut davranışın sağladığını düşündüğü bazı yararları kaybetmekten çekinebilir. Bu ikili durum ambivalans olarak ele alınır."),
+      section("Motivasyonel Görüşmede Nasıl Konuşulur?", "Açık uçlu sorular, yansıtıcı dinleme, kişinin güçlü yanlarını fark etmesine yardımcı olan ifadeler ve söylediklerinin özetlenmesi kullanılabilir. Görüşmeci değişimin nedenlerini kişinin kendisinin ifade etmesine alan açar."),
+      section("Bağımlılık Alanında Neden Kullanılır?", "Madde veya alkol kullanımında kişi davranışının zararlarını fark etse bile değişime hazır olmayabilir. Motivasyonel görüşme değişime yönelik kişisel nedenlerin araştırılmasını sağlayabilir ancak bağımlılık tedavisinin tümünü tek başına oluşturmaz."),
+      section("Sadece Bağımlılıkta mı Kullanılır?", "Hayır. Sağlık davranışları, tedaviye katılım ve başka davranış değişikliği alanlarında da motivasyonel görüşme ilkelerinden yararlanılabilir. Uygulamanın kapsamı sorunun niteliğine ve kişinin hedeflerine göre değişir. Kişinin değişime hazır oluş düzeyi görüşmeler boyunca aynı kalmak zorunda değildir.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Madde kullanım bozukluğu", slug: "madde-kullanim-bozuklugu" },
+      { term: "Alkol kullanım bozukluğu", slug: "alkol-kullanim-bozuklugu" },
+      { term: "Psikoterapi", slug: "psikoterapi" }
+    ],
+    seo: {
+      title: "Motivasyonel Görüşme Nedir? | Psikiyatri Sözlüğü",
+      description: "Motivasyonel görüşmenin değişim konusundaki kararsızlığı ele alan iş birliğine dayalı yaklaşımını açıklar.",
+      ogTitle: "Motivasyonel Görüşme Nedir?",
+      ogDescription: "Motivasyonel görüşmeyi değişim, kararsızlık ve kişisel motivasyon üzerinden açıklar."
+    },
+    schema: {
+      definedTermDescription: "Davranış değişikliği konusundaki kararsızlığı ele alan iş birliğine dayalı görüşme yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Şema terapi",
+    slug: "sema-terapi",
+    shortDefinition: "Şema terapi, kişinin kendisi, başkaları ve ilişkiler hakkında erken dönemlerden itibaren gelişebilen kalıcı düşünce-duygu örüntülerini ve bunlara eşlik eden baş etme biçimlerini ele alan bütünleştirici psikoterapi yaklaşımıdır.",
+    intro: "Şema terapi bilişsel, davranışsal, bağlanma ve deneyimsel yaklaşımlardan yararlanır. Şema kavramı, tek bir düşünceden daha geniş ve tekrarlayıcı psikolojik örüntüleri ifade eder.",
+    sections: [
+      section("Şema Nedir?", "Şemalar kişinin kendisini ve ilişkilerini anlamlandırırken kullandığı geniş zihinsel ve duygusal örüntüler olarak ele alınabilir. Örneğin terk edilme, yetersizlik veya güvensizlik beklentileri farklı yaşam olaylarında tekrar tekrar etkinleşebilir."),
+      section("Şemalar Nasıl Sürer?", "Kişi bazı durumlarda şemasını doğrulayan bilgileri daha kolay fark edebilir, şemayı tetikleyen durumlardan kaçınabilir veya aynı ilişki örüntülerini yeniden yaşayabilir. Bu süreçler çoğu zaman bilinçli seçimlerden daha karmaşıktır."),
+      section("Şema Terapide Ne Üzerinde Çalışılır?", "Şemaların hangi durumlarda etkinleştiği, bu sırada ortaya çıkan duygular ve kişinin baş etme davranışları birlikte incelenebilir. Bilişsel çalışmaların yanında deneyimsel ve kişilerarası yöntemlerden de yararlanılabilir."),
+      section("Bilişsel Davranışçı Terapiden Farkı Nedir?", "Şema terapi bilişsel davranışçı gelenekten etkilenmiştir ancak daha uzun süreli kişilik ve ilişki örüntülerine, erken deneyimlere ve karşılanmamış duygusal ihtiyaçlara daha fazla odaklanabilir. Hangi yaklaşımın uygun olduğu kişinin klinik özelliklerine göre değişir. Terapi hedefleri kişinin güncel sorunları ve tekrarlayan örüntülerine göre birlikte belirlenir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" }
+    ],
+    seo: {
+      title: "Şema Terapi Nedir? | Psikiyatri Sözlüğü",
+      description: "Şema terapinin kalıcı düşünce-duygu ve ilişki örüntülerini nasıl ele aldığını ve BDT ile ilişkisini açıklar.",
+      ogTitle: "Şema Terapi Nedir?",
+      ogDescription: "Şema terapi yaklaşımının temel kavramlarını sade biçimde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kalıcı düşünce, duygu ve ilişki örüntülerini ele alan bütünleştirici psikoterapi yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Kabul ve kararlılık terapisi",
+    slug: "kabul-ve-kararlilik-terapisi",
+    shortDefinition: "Kabul ve kararlılık terapisi, zorlayıcı düşünce ve duyguları bütünüyle ortadan kaldırmaya çalışmak yerine onlarla daha esnek ilişki kurmayı ve kişinin değerleri doğrultusunda davranabilmesini hedefleyen psikoterapi yaklaşımıdır.",
+    intro: "Bu yaklaşımda kabul, yaşanan her durumu onaylamak veya değiştirmemek anlamına gelmez. Kontrol edilemeyen içsel deneyimlerle mücadeleyi azaltırken değiştirilebilir davranışlar üzerinde çalışmak amaçlanır.",
+    sections: [
+      section("Psikolojik Esneklik Ne Anlama Gelir?", "Psikolojik esneklik kişinin zorlayıcı bir düşünce veya duygu ortaya çıktığında yalnız bu deneyime göre hareket etmek yerine içinde bulunduğu durumu ve değerlerini dikkate alabilmesidir. Amaç rahatsızlığın hiçbir zaman ortaya çıkmaması değildir."),
+      section("Kabul Kavramı Nasıl Kullanılır?", "Kabul, düşünce ve duyguların var olmasına yer açabilmeyi ifade eder. Bu yaklaşım kişinin gerçek bir tehlike, haksızlık veya değiştirilebilir sorun karşısında pasif kalmasını önermez; içsel deneyimle gereksiz mücadeleyi azaltmayı hedefler."),
+      section("Değerler Neden Önemlidir?", "Kişinin nasıl bir yaşam sürmek istediği, ilişkilerde veya iş yaşamında hangi yönleri önemli bulduğu ele alınabilir. Değerler ulaşılacak tek bir sonuçtan çok davranışlara yön veren bir pusula gibi kullanılır."),
+      section("Hangi Yöntemlerden Yararlanılır?", "Farkındalık çalışmaları, düşüncelere mesafe kazandırma, kabul ve değer odaklı davranış planlama gibi yöntemlerden yararlanılabilir. Uygulama kişinin yaşadığı güçlüğe ve terapötik hedeflere göre şekillenir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" }
+    ],
+    seo: {
+      title: "Kabul ve Kararlılık Terapisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Kabul ve kararlılık terapisinin psikolojik esneklik, kabul ve değer odaklı davranış kavramlarını açıklar.",
+      ogTitle: "Kabul ve Kararlılık Terapisi Nedir?",
+      ogDescription: "Kabul ve kararlılık terapisi yaklaşımının temel ilkelerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Psikolojik esneklik, kabul ve değer odaklı davranışı geliştirmeyi amaçlayan psikoterapi yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Diyalektik davranış terapisi",
+    slug: "diyalektik-davranis-terapisi",
+    shortDefinition: "Diyalektik davranış terapisi, kabul ve değişim stratejilerini birlikte kullanan; duygu düzenleme, sıkıntıya dayanma, farkındalık ve kişilerarası beceriler üzerinde çalışan yapılandırılmış psikoterapi yaklaşımıdır.",
+    intro: "Diyalektik davranış terapisi başlangıçta kronik kendine zarar verme davranışları ve borderline kişilik bozukluğu alanında geliştirilmiş, daha sonra farklı klinik sorunlara uyarlanmış bir yaklaşımdır.",
+    sections: [
+      section("Diyalektik Ne Anlama Gelir?", "Diyalektik yaklaşım görünüşte karşıt iki gerçeğin aynı anda geçerli olabileceği düşüncesini kullanır. Kişinin yaşadığı duygusal acının kabul edilmesi ile bazı davranışların değişmesi gerektiği fikri birlikte ele alınabilir."),
+      section("Hangi Beceriler Üzerinde Çalışılır?", "Farkındalık, yoğun duyguları düzenleme, kriz sırasında zararlı davranışlara yönelmeden sıkıntıyla kalabilme ve kişilerarası ilişkilerde ihtiyaçları daha etkili ifade edebilme temel beceri alanları arasındadır."),
+      section("Kendine Zarar Verme Davranışı Nasıl Ele Alınır?", "Kendine zarar verme davranışının hangi duygusal ve kişilerarası koşullarda ortaya çıktığı incelenebilir ve daha güvenli alternatif baş etme yolları geliştirilmesi hedeflenir. Güncel güvenlik riski bulunduğunda risk değerlendirmesi ve uygun klinik müdahale önceliklidir."),
+      section("Sadece Borderline Kişilik Örüntüsünde mi Kullanılır?", "Hayır. Diyalektik davranış terapisi farklı klinik alanlara uyarlanmıştır ancak her kişide aynı biçimde uygulanmaz. Yöntemin uygunluğu kişinin belirtileri, hedefleri, güvenlik durumu ve klinik değerlendirmesiyle birlikte belirlenir. Programın yoğunluğu ve kullanılan bileşenler uygulama bağlamına göre farklılaşabilir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Kendine zarar verme", slug: "kendine-zarar-verme" }
+    ],
+    seo: {
+      title: "Diyalektik Davranış Terapisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Diyalektik davranış terapisinin kabul, değişim, duygu düzenleme ve sıkıntıya dayanma becerilerini nasıl ele aldığını açıklar.",
+      ogTitle: "Diyalektik Davranış Terapisi Nedir?",
+      ogDescription: "Diyalektik davranış terapisinin temel beceri alanlarını ve yaklaşımını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kabul ve değişim stratejileriyle duygu düzenleme ve davranış becerileri üzerinde çalışan psikoterapi yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Aile terapisi",
+    slug: "aile-terapisi",
+    shortDefinition: "Aile terapisi, bireysel güçlükleri yalnız tek bir kişinin özelliği olarak değil, aile üyeleri arasındaki iletişim, ilişki örüntüleri, roller ve yaşam koşullarıyla birlikte ele alan psikoterapi yaklaşımıdır.",
+    intro: "Aile terapisi bir kişiyi sorunun kaynağı veya suçlusu ilan etmeyi amaçlamaz. Aile sistemindeki etkileşimlerin nasıl sürdüğünü ve üyelerin birbirlerini nasıl etkilediğini anlamaya çalışır.",
+    sections: [
+      section("Aile Terapisinde Neler Ele Alınır?", "İletişim biçimleri, çatışmalar, sınırlar, ebeveynlik rolleri, yaşam geçişleri ve aile üyelerinin birbirlerinden beklentileri üzerinde çalışılabilir. Görüşmeler bütün aileyle veya klinik hedefe göre bazı aile üyeleriyle yürütülebilir."),
+      section("Bireysel Psikoterapiden Farkı Nedir?", "Bireysel psikoterapi kişinin kendi deneyim ve örüntülerine daha doğrudan odaklanırken aile terapisi ilişkisel sistemi ön plana çıkarır. Bu yaklaşımlar birbirinin alternatifi olmak zorunda değildir ve bazı durumlarda birlikte kullanılabilir."),
+      section("Aile Üyelerinden Birinin Tanısı Olması Gerekir mi?", "Hayır. İletişim sorunları, yaşam değişiklikleri, ebeveynlik güçlükleri veya aile içindeki tekrarlayıcı çatışmalar gibi konular da ele alınabilir. Bununla birlikte ruhsal hastalık bulunan ailelerde hastalıkla ilgili süreçlerin anlaşılması ayrıca önemli olabilir."),
+      section("Güvenlik Sorunlarında Nasıl Yaklaşılır?", "Aile içinde şiddet, tehdit veya zorlayıcı kontrol varsa yalnız ortak iletişimi geliştirmeye odaklanmak yeterli olmayabilir. Güvenlik ve bireysel ihtiyaçlar öncelikli değerlendirilir; ortak görüşmenin uygun olup olmadığı klinik koşullara göre belirlenir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ],
+    seo: {
+      title: "Aile Terapisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Aile terapisinin iletişim, ilişki örüntüleri ve aile sistemi üzerinden nasıl çalıştığını ve bireysel terapiden farkını açıklar.",
+      ogTitle: "Aile Terapisi Nedir?",
+      ogDescription: "Aile terapisi yaklaşımının amaçlarını ve kapsamını sade biçimde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Aile üyeleri arasındaki iletişim ve ilişki örüntülerini sistemik biçimde ele alan psikoterapi yaklaşımı."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...fifthBatchNewTerms,
   ...fourthBatchNewTerms,...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm, derealizationBaseTerm, maniBaseTerm, hypomaniaBaseTerm, psychosisBaseTerm]
   .map((term) => ({ ...term, ...qualityOverrides.get(term.slug) }));
