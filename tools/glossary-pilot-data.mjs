@@ -136,6 +136,80 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["avolisyon", {
+    shortDefinition: "Avolisyon, kişinin amaçlı davranışları başlatma ve sürdürme isteğinde belirgin azalma görülmesini ifade eden klinik bir belirtidir.",
+    intro: "Avolisyon tembellik veya isteksizlikle eş anlamlı değildir. Kişi yapmak istediği işleri planlamak, başlatmak veya sürdürmekte belirgin güçlük yaşayabilir ve bu durum günlük işlevselliğini etkileyebilir.",
+    sections: [
+      section("Avolisyon Günlük Yaşamda Nasıl Görülebilir?", "Kişi kişisel bakım, ev işleri, eğitim veya çalışma gibi günlük sorumlulukları başlatmakta zorlanabilir. Yapılması gerekenleri bildiği halde harekete geçmek güç olabilir ve etkinlikler yarım kalabilir. Bu durum zamanla sosyal yaşamın ve bağımsız işlevselliğin azalmasına yol açabilir."),
+      section("Avolisyon ile Depresyondaki İsteksizlik Aynı Şey midir?", "Her iki durumda da etkinlik düzeyinde azalma görülebilir ancak nedenleri aynı değildir. Depresyonda çökkün duygudurum, umutsuzluk, enerji azalması veya zevk alamama ön planda olabilir. Avolisyon ise özellikle amaçlı davranışı başlatma ve sürdürme kapasitesindeki azalmayı tanımlar. Klinik değerlendirmede eşlik eden belirtiler ayrımı kolaylaştırır."),
+      section("Avolisyon Şizofrenide Neden Önemlidir?", "Avolisyon, şizofrenide görülebilen negatif belirtilerden biridir. Negatif belirtiler kişinin normalde sahip olduğu motivasyon, duygusal ifade veya sosyal etkileşim gibi işlevlerde azalmayı ifade eder. Ancak avolisyon yalnızca tek bir bozukluğa özgü değildir ve tek başına şizofreni tanısı anlamına gelmez."),
+      section("Değerlendirmede Hangi Etkenler Göz Önünde Bulundurulur?", "Uyku bozuklukları, depresif belirtiler, kullanılan ilaçlar, madde kullanımı, fiziksel hastalıklar ve çevresel koşullar motivasyon ve etkinlik düzeyini etkileyebilir. Bu nedenle belirgin ve kalıcı işlev kaybında kişinin olağan davranış düzeyi, belirtilerin başlangıcı ve eşlik eden diğer değişiklikler birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Apati", slug: "apati" },
+      { term: "Anhedoni", slug: "anhedoni" },
+      { term: "Şizofreni", slug: "sizofreni" }
+    ]
+  }],
+  ["asiri-genelleme", {
+    shortDefinition: "Aşırı genelleme, tek bir olaydan veya sınırlı sayıdaki deneyimden hareketle çok daha geniş ve kesin sonuçlara ulaşma eğilimini tanımlayan bilişsel bir çarpıtmadır.",
+    intro: "Aşırı genellemede kişi bir deneyimi yalnızca o olayın koşulları içinde değerlendirmek yerine benzer tüm durumlara yayılan genel bir kural gibi yorumlayabilir.",
+    sections: [
+      section("Aşırı Genelleme Nasıl Görülebilir?", "Bir sınavda başarısız olan kişinin “Ben hiçbir şeyi başaramam” ya da bir ilişkide hayal kırıklığı yaşayan kişinin “İnsanlara asla güvenilmez” sonucuna varması aşırı genellemeye örnek olabilir. Ortak özellik, tek veya sınırlı bir deneyimin geleceğe ve farklı durumlara geniş biçimde uygulanmasıdır."),
+      section("Aşırı Genelleme ile Gerçekçi Sonuç Çıkarma Arasındaki Fark Nedir?", "Geçmiş deneyimlerden öğrenmek günlük yaşamın doğal bir parçasıdır. Sorun, eldeki kanıtın desteklediğinden daha geniş ve kesin bir sonuca ulaşılmasıdır. Gerçekçi değerlendirmede benzerliklerin yanında farklılıklar, istisnalar ve yeni koşullar da hesaba katılır."),
+      section("Dil Kullanımı Bu Düşünce Biçimini Nasıl Gösterebilir?", "“Her zaman”, “hiçbir zaman”, “herkes” veya “hiç kimse” gibi mutlak ifadeler bazen aşırı genellemenin ipucu olabilir. Ancak bu kelimelerin kullanılması tek başına bilişsel çarpıtma olduğu anlamına gelmez. Düşüncenin hangi kanıtlara dayandığı ve istisnaların göz ardı edilip edilmediği önemlidir."),
+      section("Aşırı Genelleme Neden Önemlidir?", "Bu düşünce biçimi kişinin kendisi, ilişkileri veya geleceği hakkında katı ve olumsuz sonuçlara ulaşmasına katkıda bulunabilir. Özellikle kaygı ve depresif dönemlerde olumsuz deneyimler daha geniş biçimde yorumlanabilir. Bilişsel değerlendirmede amaç düşünceyi zorla olumlu hale getirmek değil, ulaşılan sonucun mevcut kanıtlarla ne ölçüde desteklendiğini incelemektir.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" }
+    ]
+  }],
+  ["anoreksiya-nervoza", {
+    shortDefinition: "Anoreksiya nervoza, beslenmenin belirgin biçimde kısıtlanması, kilo alma veya kilo artışıyla ilgili yoğun korku ve beden ağırlığı ya da biçiminin kişinin kendisini değerlendirmesinde aşırı önem kazanmasıyla ilişkili bir yeme bozukluğudur.",
+    intro: "Anoreksiya nervoza yalnızca iştahsızlık veya zayıf görünmek istemek değildir. Beslenme davranışı, beden algısı, kilo alma korkusu ve kişinin fiziksel sağlığı üzerindeki etkiler birlikte değerlendirilir.",
+    sections: [
+      section("Anoreksiya Nervoza Nasıl Görülebilir?", "Kişi yemek yeme konusunda giderek daha katı kurallar geliştirebilir, öğünlerden kaçınabilir veya beden ağırlığı ve görünümüyle ilgili düşüncelere yoğun biçimde odaklanabilir. Bu davranışlar zamanla sosyal yaşamı, okul veya iş düzenini ve fiziksel sağlığı etkileyebilir. Belirtiler her kişide aynı biçimde ortaya çıkmaz."),
+      section("Beden Algısı Neden Önemlidir?", "Bazı kişiler bedenlerini olduğundan farklı algılayabilir veya beden ağırlığı ve biçimine kendilik değerinde aşırı önem verebilir. Dışarıdan yapılan yorumlar kişinin yaşadığı içsel deneyimi tam olarak yansıtmayabilir. Bu nedenle değerlendirmede yalnızca görünüm değil, kişinin bedenine ilişkin düşünceleri ve bu düşüncelerin davranışlarını nasıl etkilediği de ele alınır."),
+      section("Anoreksiya Nervoza Yalnızca Genç Kadınlarda mı Görülür?", "Hayır. Her yaştan ve her cinsiyetten kişide görülebilir. Belirtilerin fark edilmesi bazı gruplarda gecikebilir çünkü yeme bozukluklarıyla ilgili toplumsal kalıplar herkesin aynı görünmesini bekletebilir. Tanısal değerlendirme kişinin cinsiyetine veya dış görünümüne değil, klinik belirtilerin bütününe dayanır."),
+      section("Neden Tıbbi Değerlendirme de Önemlidir?", "Uzun süreli ve belirgin beslenme kısıtlaması kalp-damar sistemi, hormonlar, kemik sağlığı, enerji düzeyi ve diğer bedensel işlevleri etkileyebilir. Bu nedenle anoreksiya nervoza yalnızca psikolojik belirtiler üzerinden ele alınmaz. Belirgin beslenme değişikliği, fiziksel güçsüzlük veya günlük işlevsellikte bozulma olduğunda psikiyatrik ve tıbbi değerlendirme birlikte önem taşır.")
+    ],
+    relatedTerms: [
+      { term: "Bulimiya nervoza", slug: "bulimiya-nervoza" },
+      { term: "Tıkınırcasına yeme bozukluğu", slug: "tikinarcasina-yeme-bozuklugu" },
+      { term: "Yeme bozukluğu", slug: "yeme-bozuklugu" }
+    ]
+  }],
+  ["amnezi", {
+    shortDefinition: "Amnezi, kişinin daha önce öğrenilmiş bilgileri hatırlamasında veya yeni bilgileri kalıcı belleğe aktarmasında belirgin güçlük yaşamasını ifade eden klinik bir bellek bozukluğudur.",
+    intro: "Amnezi basit unutkanlıkla aynı şey değildir. Bellek kaybının hangi dönemi etkilediği, yeni bilgi öğrenme kapasitesinin korunup korunmadığı ve eşlik eden nörolojik ya da psikiyatrik belirtiler değerlendirmede önemlidir.",
+    sections: [
+      section("Amnezi Hangi Biçimlerde Görülebilir?", "Bazı kişiler geçmişte yaşanan olayları hatırlamakta zorlanırken bazı kişiler yeni bilgileri öğrenip daha sonra hatırlamakta güçlük yaşayabilir. Bellek kaybı belirli bir zaman aralığıyla sınırlı olabilir veya daha geniş bir dönemi etkileyebilir. Günlük yaşamda aynı soruları tekrar sorma, yakın zamanda yapılan konuşmaları unutma veya belirli olayların bazı bölümlerini hatırlayamama görülebilir."),
+      section("Anterograd ve Retrograd Amnezi Nedir?", "Anterograd amnezide temel güçlük, olaydan veya hastalıktan sonra yeni anılar oluşturmak ve bunları daha sonra hatırlamaktır. Retrograd amnezide ise daha önce edinilmiş anıların hatırlanması etkilenir. İki tür aynı kişide birlikte bulunabilir ve bellek kaybının kapsamı altta yatan nedene göre değişebilir."),
+      section("Amnezi ile Günlük Unutkanlık Arasındaki Fark Nedir?", "Yoğunluk, stres, uykusuzluk veya dikkatin dağılması sırasında isimleri ya da küçük ayrıntıları unutmak sık görülebilir. Amnezide ise bellek kaybı daha belirgindir ve kişinin günlük işlevselliğini etkileyebilir. Kişinin yalnızca bilgiyi hatırlamakta zorlanması ile bilginin başlangıçta yeterince öğrenilememiş olması da birbirinden ayrılmalıdır."),
+      section("Amnezi Hangi Durumlarla İlişkili Olabilir?", "Kafa travması, bazı nörolojik hastalıklar, nöbetler, ağır metabolik bozukluklar, maddeler veya bazı dissosiyatif durumlar bellek kaybıyla ilişkili olabilir. Ani başlayan, belirgin veya ilerleyici bellek kaybında yalnız psikiyatrik nedenlere odaklanılmamalı; nörolojik ve tıbbi nedenler de değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Epizodik bellek", slug: "epizodik-bellek" },
+      { term: "Semantik bellek", slug: "semantik-bellek" },
+      { term: "Dissosiyasyon", slug: "dissosiyasyon" }
+    ]
+  }],
+  ["alkol-kullanim-bozuklugu", {
+    shortDefinition: "Alkol kullanım bozukluğu, alkol kullanımını kontrol etmede güçlük, kullanımın günlük yaşamı etkilemesi ve olumsuz sonuçlara rağmen kullanımın sürmesiyle ilişkili bir klinik tablodur.",
+    intro: "Alkol kullanım bozukluğu yalnızca ne kadar alkol tüketildiğiyle tanımlanmaz. Kullanım üzerindeki kontrol, kişinin sorumlulukları, ilişkileri, sağlığı ve günlük işlevselliği üzerindeki etkiler birlikte değerlendirilir.",
+    sections: [
+      section("Alkol Kullanım Bozukluğu Nasıl Fark Edilebilir?", "Kişi azaltmaya veya bırakmaya çalışmasına rağmen kullanımını kontrol etmekte zorlanabilir. Alkolle ilgili düşünceler günlük yaşamda giderek daha fazla yer kaplayabilir ve kullanım; iş, eğitim, aile ilişkileri veya sosyal sorumluluklarla çatışmaya başlayabilir. Zarar gördüğünü fark etmesine rağmen kullanımın sürmesi de klinik açıdan önemlidir."),
+      section("Yoğun Kullanım ile Bozukluk Aynı Şey midir?", "Hayır. Bir kişinin belirli bir dönemde fazla alkol tüketmesi tek başına alkol kullanım bozukluğu olduğu anlamına gelmez. Değerlendirmede kullanımın sürekliliği, kontrol kaybı, işlevselliğe etkisi ve ortaya çıkan sorunlara rağmen sürüp sürmediği dikkate alınır. Bu nedenle yalnızca miktara bakarak tanısal sonuç çıkarılmaz."),
+      section("Tolerans ve Yoksunluk Ne Anlama Gelir?", "Bazı kişiler aynı etkiyi hissetmek için zamanla daha fazla alkol kullanma ihtiyacı duyabilir; bu durum tolerans olarak adlandırılır. Kullanım azaltıldığında veya bırakıldığında bedensel ve ruhsal belirtilerin ortaya çıkması ise yoksunlukla ilişkili olabilir. Ancak alkol kullanım bozukluğu yalnızca tolerans veya yoksunluğun varlığıyla tanımlanmaz."),
+      section("Ne Zaman Değerlendirme Önemlidir?", "Alkol kullanımı kişinin sağlığını, ilişkilerini, işini veya günlük sorumluluklarını etkiliyorsa ya da kişi kullanımını kontrol etmekte zorlanıyorsa profesyonel değerlendirme anlamlıdır. Ani biçimde kullanım bırakılması bazı kişiler için tıbbi risk taşıyabileceğinden, belirgin ve uzun süreli kullanım öyküsünde bırakma süreci de bireysel olarak değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Yoksunluk", slug: "yoksunluk" },
+      { term: "Tolerans", slug: "tolerans" }
+    ]
+  }],
   ["algi-bozuklugu", {
     shortDefinition: "Algı bozukluğu, duyusal bilgilerin algılanması veya anlamlandırılmasında olağan deneyimden belirgin farklılıkların ortaya çıkmasını ifade eden geniş bir klinik kavramdır.",
     intro: "Algı bozukluğu tek bir belirtiyi tanımlamaz. Gerçek bir uyaranın yanlış yorumlanmasından dışarıda karşılığı olmayan bir duyusal deneyime kadar farklı algısal değişiklikler bu başlık altında ele alınabilir.",
