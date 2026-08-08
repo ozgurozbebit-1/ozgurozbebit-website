@@ -4882,7 +4882,570 @@ const twelfthBatchNewTerms = [
   })
 ];
 
+
+const thirteenthBatchNewTerms = [
+  defineTerm({
+    term: "Lamotrijin",
+    slug: "lamotrijin",
+    shortDefinition: "Lamotrijin, epilepside ve psikiyatride özellikle bipolar bozukluğun bazı dönemlerinde kullanılan reçeteli bir ilaçtır.",
+    intro: "Lamotrijin psikiyatride daha çok bipolar bozuklukta duygudurum dönemlerinin önlenmesi bağlamında değerlendirilir. Kullanım amacı, doz planı ve izlem gereksinimi kişisel klinik özelliklere göre belirlenir; her bipolar tablo için aynı şekilde kullanılmaz.",
+    sections: [
+      section("Lamotrijin Psikiyatride Nerede Kullanılır?", "Lamotrijin özellikle bipolar bozuklukta depresif dönemlerin tekrarını azaltmaya yönelik uzun dönem tedavi planlarında değerlendirilebilir. Akut mani tedavisindeki rolü farklıdır ve tedavi seçimi kişinin geçmiş dönemleri, eşlik eden belirtileri ve önceki tedavi yanıtlarıyla birlikte yapılır."),
+      section("Doz Neden Yavaş Artırılır?", "Lamotrijin kullanımında doz çoğunlukla basamaklı biçimde artırılır. Bunun önemli nedenlerinden biri bazı cilt reaksiyonlarının riskini azaltmaktır. Doz artırma hızı kullanılan diğer ilaçlara ve kişisel tıbbi özelliklere göre değişebileceğinden standart bir kişisel doz önerisi verilemez."),
+      section("Cilt Bulguları Neden Önemlidir?", "Yeni başlayan döküntü veya başka belirgin cilt bulguları klinik değerlendirme gerektirebilir. Her döküntü ciddi bir reaksiyon anlamına gelmez ancak lamotrijin kullanımı sırasında yeni bir cilt bulgusunun kendi kendine yorumlanması yerine sağlık profesyoneli tarafından değerlendirilmesi önemlidir."),
+      section("Lamotrijin Kendi Kendine Değiştirilebilir mi?", "Hayır. Reçeteli bir ilacın dozunun artırılması, azaltılması, kesilmesi veya ara verildikten sonra yeniden başlanması kişisel kararla yapılmamalıdır. Özellikle kullanım kesintilerinden sonra yeniden başlama planı klinik değerlendirmeye göre değişebilir.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum düzenleyici", slug: "duygudurum-duzenleyici" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Farmakokinetik", slug: "farmakokinetik" },
+      { term: "Kesilme belirtileri", slug: "kesilme-belirtileri" }
+    ],
+    seo: {
+      title: "Lamotrijin Nedir? | Psikiyatri Sözlüğü",
+      description: "Lamotrijinin bipolar bozukluktaki genel kullanımını, yavaş doz artırma gereksinimini ve cilt bulgularının neden önemli olduğunu açıklar.",
+      ogTitle: "Lamotrijin Nedir?",
+      ogDescription: "Lamotrijini güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Epilepside ve bazı bipolar bozukluk durumlarında kullanılan reçeteli ilaç."
+    }
+  }),
+
+  defineTerm({
+    term: "Limbik sistem",
+    slug: "limbik-sistem",
+    shortDefinition: "Limbik sistem, duygu, motivasyon, bellek ve stres yanıtı gibi süreçlere katkıda bulunan birbiriyle bağlantılı beyin bölgelerini tanımlamak için kullanılan nörobiyolojik kavramdır.",
+    intro: "Limbik sistem tek bir anatomik yapı değildir. Amigdala, hipokampus ve bunlarla bağlantılı kortikal ve subkortikal bölgelerden oluşan işlevsel ağları anlatmak için kullanılan tarihsel ve klinik bir terimdir.",
+    sections: [
+      section("Limbik Sistem Hangi Süreçlerde Rol Alır?", "Duygusal uyaranların değerlendirilmesi, öğrenme, bellek, motivasyon ve stres yanıtının düzenlenmesi gibi süreçlerde limbik ağların katkısı vardır. Bu işlevler tek bir bölge tarafından değil, birçok beyin bölgesinin karşılıklı etkileşimiyle ortaya çıkar."),
+      section("Amigdala ve Hipokampus Aynı Görevi mi Yapar?", "Hayır. Amigdala özellikle duygusal önem ve tehdit gibi uyaranların değerlendirilmesiyle ilişkilendirilirken hipokampus yeni anıların oluşumu ve bağlamsal öğrenmede önemli rol oynar. Bununla birlikte iki yapı birçok durumda birlikte çalışan ağların parçalarıdır."),
+      section("Psikiyatrik Bozukluklarda Neden Araştırılır?", "Depresyon, anksiyete, travma sonrası stres ve başka ruhsal durumlarda limbik ağların işlevleri araştırılmıştır. Ancak grup düzeyindeki beyin görüntüleme bulguları tek bir kişide tanı koyan veya hastalığı kesin gösteren biyobelirteçler değildir."),
+      section("Limbik Sistem Beynin Geri Kalanından Bağımsız mıdır?", "Hayır. Prefrontal korteks, beyin sapı ve başka birçok bölgeyle yoğun bağlantılar bulunur. Duygu ve davranış bu ağların birlikte çalışmasıyla şekillenir; karmaşık insan davranışını yalnız limbik sistem üzerinden açıklamak aşırı basitleştirici olur.")
+    ],
+    relatedTerms: [
+      { term: "Amigdala", slug: "amigdala" },
+      { term: "Hipokampus", slug: "hipokampus" },
+      { term: "Anterior singulat korteks", slug: "anterior-singulat-korteks" },
+      { term: "HPA aksı", slug: "hpa-aksi" }
+    ],
+    seo: {
+      title: "Limbik Sistem Nedir? | Psikiyatri Sözlüğü",
+      description: "Limbik sistemin duygu, bellek, motivasyon ve stres yanıtındaki rolünü ve tek bir beyin yapısı olmadığını açıklar.",
+      ogTitle: "Limbik Sistem Nedir?",
+      ogDescription: "Limbik sistemi beyin ağları bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Duygu, motivasyon, bellek ve stres süreçlerine katkıda bulunan bağlantılı beyin bölgeleri ağı."
+    }
+  }),
+
+  defineTerm({
+    term: "Lityum",
+    slug: "lityum",
+    shortDefinition: "Lityum, bipolar bozukluğun tedavi ve uzun dönem izleminde kullanılan, kan düzeyi ve klinik güvenlik izlemi gerektiren klasik duygudurum düzenleyici ilaçtır.",
+    intro: "Lityum psikiyatride uzun yıllardır kullanılan önemli ilaçlardan biridir. Tedavi aralığının kişisel ve klinik olarak dikkatle izlenmesi gerektiğinden yalnız reçete edilen doz değil, kan düzeyi, eşlik eden hastalıklar ve diğer ilaçlar da değerlendirilir.",
+    sections: [
+      section("Lityum Hangi Durumlarda Kullanılır?", "Bipolar bozuklukta manik dönemlerin tedavisinde ve yeni duygudurum dönemlerinin önlenmesinde değerlendirilebilir. Kullanım kararı kişinin önceki dönemleri, tedavi yanıtı, tıbbi hastalıkları ve başka ilaçlarıyla birlikte ele alınır."),
+      section("Kan Düzeyi Neden Ölçülür?", "Lityumun kandaki düzeyinin klinik olarak yararlı ve güvenli aralıkta tutulması önemlidir. Kan düzeyi tek başına tedavi kararını belirlemez ancak belirtiler, yan etkiler, böbrek işlevleri ve diğer klinik bilgilerle birlikte yorumlanır."),
+      section("Sıvı Dengesi ve Etkileşimler Neden Önemlidir?", "Vücudun sıvı ve tuz dengesindeki belirgin değişiklikler ile bazı ilaç etkileşimleri lityum düzeyini etkileyebilir. Bu nedenle yeni ilaç başlanması, önemli tıbbi hastalık veya belirgin sıvı kaybı gibi durumlar klinik açıdan önem taşıyabilir."),
+      section("Lityum Dozu Kendi Kendine Değiştirilebilir mi?", "Hayır. Doz değişikliği veya ilacın kesilmesi kişisel kararla yapılmamalıdır. Lityum kullanımı sırasında kan düzeyi ve gerekli laboratuvar izlemleri kişinin tıbbi durumuna göre planlanır ve sonuçlar klinik değerlendirmeyle birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum düzenleyici", slug: "duygudurum-duzenleyici" },
+      { term: "İlaç kan düzeyi", slug: "ilac-kan-duzeyi" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Etkileşim", slug: "etkilesim" }
+    ],
+    seo: {
+      title: "Lityum Nedir? | Psikiyatri Sözlüğü",
+      description: "Lityumun bipolar bozukluktaki genel kullanımını, kan düzeyi izlemini ve ilaç etkileşimlerinin neden önemli olduğunu açıklar.",
+      ogTitle: "Lityum Nedir?",
+      ogDescription: "Lityumu güvenli ilaç bilgisi ve klinik izlem çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bipolar bozuklukta kullanılan ve düzenli klinik ve laboratuvar izlem gerektiren duygudurum düzenleyici."
+    }
+  }),
+
+  defineTerm({
+    term: "Liyezon psikiyatrisi",
+    slug: "liyezon-psikiyatrisi",
+    shortDefinition: "Liyezon psikiyatrisi, bedensel hastalıklar ile ruhsal belirtiler arasındaki ilişkiyi hastane ve diğer tıbbi bakım ortamlarında değerlendiren psikiyatri alanıdır.",
+    intro: "Bedensel ve ruhsal sağlık birbirinden tamamen ayrı değildir. Tıbbi hastalıklar ruhsal belirtileri etkileyebilir; ruhsal durumlar da kişinin hastalıkla baş etmesini, tedaviye katılımını ve hastane sürecini değiştirebilir. Bu nedenle değerlendirme biyolojik, psikolojik ve sosyal etkenleri birlikte ele almayı gerektirebilir.",
+    sections: [
+      section("Liyezon Psikiyatrisi Hangi Durumlarla İlgilenir?", "Genel hastanede yatan veya başka tıbbi branşlar tarafından izlenen kişilerde depresyon, anksiyete, deliryum, uyum güçlüğü, ilaç yan etkileri ve karar verme kapasitesi gibi birçok konu değerlendirilebilir."),
+      section("Konsültasyondan Farkı Nedir?", "Konsültasyon belirli bir klinik soruyla başka bir uzmandan görüş istemeyi anlatır. Liyezon yaklaşımı ise psikiyatri ile diğer tıbbi ekipler arasında daha sürekli iletişim, ortak bakım planlama ve eğitim işlevlerini de kapsayabilir."),
+      section("Bedensel Belirti Psikolojik Kabul Edilir mi?", "Hayır. Liyezon psikiyatrisinin amacı açıklanamayan her bedensel yakınmayı psikolojik olarak etiketlemek değildir. Tıbbi nedenlerin değerlendirilmesi sürerken ruhsal, davranışsal ve sosyal etkenlerin hastalık deneyimine nasıl katkıda bulunduğu incelenir."),
+      section("Neden Multidisipliner Çalışma Gerektirir?", "Karmaşık tıbbi durumlarda psikiyatrist, ilgili tıbbi branşlar, hemşirelik, psikoloji ve başka sağlık çalışanlarının bilgileri birbirini tamamlayabilir. Amaç kişiyi yalnız tek bir hastalık veya belirti üzerinden değerlendirmemektir.")
+    ],
+    relatedTerms: [
+      { term: "Konsültasyon", slug: "konsultasyon" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Liyezon Psikiyatrisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Liyezon psikiyatrisinin bedensel hastalıklar ile ruhsal durumlar arasındaki ilişkiyi hastane ortamında nasıl değerlendirdiğini açıklar.",
+      ogTitle: "Liyezon Psikiyatrisi Nedir?",
+      ogDescription: "Tıp ile psikiyatri arasındaki ortak bakım alanını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bedensel hastalıklar ile ruhsal durumların etkileşimini tıbbi bakım ortamlarında ele alan psikiyatri alanı."
+    }
+  }),
+
+  defineTerm({
+    term: "Mahremiyet",
+    slug: "mahremiyet",
+    shortDefinition: "Mahremiyet, kişinin bedeni, özel yaşamı, kişisel bilgileri ve görüşme içeriği üzerindeki sınırlarının sağlık hizmeti sırasında korunması ilkesidir.",
+    intro: "Psikiyatrik görüşmeler çok kişisel bilgiler içerebilir. Bu nedenle kişinin hangi bilgileri, kiminle ve hangi koşullarda paylaşacağına ilişkin sınırlar sağlık hizmetinin temel etik konularındandır. Mahremiyetin korunması güvene dayalı klinik ilişkinin sürdürülebilmesine de katkı sağlar.",
+    sections: [
+      section("Mahremiyet ile Gizlilik Aynı Şey midir?", "Yakın kavramlar olmakla birlikte mahremiyet kişinin özel alanına ve sınırlarına saygıyı, gizlilik ise elde edilen bilgilerin yetkisiz kişilerle paylaşılmamasını daha çok vurgular. Klinik uygulamada iki ilke genellikle birlikte korunur."),
+      section("Psikiyatrik Görüşmede Mahremiyet Nasıl Korunur?", "Görüşmenin uygun fiziksel ortamda yapılması, yalnız gerekli kişilerin bulunması ve özel bilgilerin bakım gereksinimi dışında gereksiz biçimde paylaşılmaması temel uygulamalardır. Kişinin görüşmeye kimin katılacağı konusunda mümkün olduğunca bilgilendirilmesi önemlidir."),
+      section("Mahremiyetin Sınırları Var mıdır?", "Bazı güvenlik, yasal yükümlülük veya sağlık hizmetinin sürdürülebilmesiyle ilgili durumlarda bilgi paylaşımı gerekebilir. Bu sınırlar ülkeye, mevzuata ve klinik duruma göre değişebileceğinden genel ilkeler kişisel hukuki danışmanlık yerine geçmez."),
+      section("Psikiyatrik Tanı Mahremiyet Hakkını Azaltır mı?", "Hayır. Ruhsal hastalık tanısı kişinin mahremiyet ve saygı haklarını ortadan kaldırmaz. Sağlık hizmetinde kişinin yalnız klinik olarak gerekli bilgilerinin uygun kişiler tarafından ve gerekli ölçüde kullanılması esastır.")
+    ],
+    relatedTerms: [
+      { term: "Gizlilik", slug: "gizlilik" },
+      { term: "Hasta hakları", slug: "hasta-haklari" },
+      { term: "Bilgilendirilmiş onam", slug: "bilgilendirilmis-onam" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Mahremiyet Nedir? | Psikiyatri Sözlüğü",
+      description: "Mahremiyetin psikiyatrik görüşmelerde kişinin özel alanı ve bilgilerinin korunması açısından ne anlama geldiğini açıklar.",
+      ogTitle: "Mahremiyet Nedir?",
+      ogDescription: "Psikiyatride mahremiyet ve gizlilik sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin özel yaşamı, bedeni ve kişisel bilgilerinin sağlık hizmetinde korunması ilkesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Maluliyet",
+    slug: "maluliyet",
+    shortDefinition: "Maluliyet, hastalık veya yaralanma nedeniyle kişinin çalışma gücünde ya da mesleki işlevlerinde belirli ölçütlere göre azalma bulunmasını ifade eden tıbbi ve hukuki değerlendirme kavramıdır.",
+    intro: "Maluliyet yalnız bir psikiyatrik veya tıbbi tanının adına bakılarak belirlenmez. Hastalığın süresi, tedaviye rağmen devam eden etkileri, işlev kaybı ve ilgili mevzuattaki ölçütler birlikte değerlendirilir.",
+    sections: [
+      section("Tanı Tek Başına Maluliyet Anlamına Gelir mi?", "Hayır. Aynı tanıya sahip iki kişinin çalışma ve günlük yaşam işlevleri çok farklı olabilir. Değerlendirmede belirtilerin sürekliliği, tedavi yanıtı ve kişinin mesleki görevlerini ne ölçüde yerine getirebildiği önem taşır."),
+      section("Psikiyatrik Değerlendirmede Neler İncelenir?", "Klinik öykü, ruhsal durum, tedavi süreci, işlev kaybı ve gerektiğinde geçmiş sağlık kayıtları incelenebilir. Değerlendirmenin amacı yalnız belirti saymak değil, hastalığın çalışma kapasitesi üzerindeki gerçek etkisini ortaya koymaktır."),
+      section("Maluliyet ile İşlev Kaybı Aynı Şey midir?", "Hayır. İşlev kaybı klinik bir kavramdır ve günlük yaşamın birçok alanını kapsayabilir. Maluliyet ise belirli hukuki ve idari ölçütlerle ilişkilidir. Her işlev kaybı otomatik olarak hukuki anlamda maluliyet oluşturmaz."),
+      section("Kurallar Her Yerde Aynı mıdır?", "Hayır. Maluliyet değerlendirmelerinde kullanılan ölçütler ülkeye, kuruma, sigorta sistemine ve yürürlükteki mevzuata göre değişebilir. Bu nedenle genel psikiyatrik açıklamalar kişisel hukuki veya resmi kurul değerlendirmesinin yerine geçmez.")
+    ],
+    relatedTerms: [
+      { term: "İşlev kaybı", slug: "islev-kaybi" },
+      { term: "Ehliyet değerlendirmesi", slug: "ehliyet-degerlendirmesi" },
+      { term: "Adli psikiyatri", slug: "adli-psikiyatri" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Maluliyet Nedir? | Psikiyatri Sözlüğü",
+      description: "Maluliyetin yalnız tanıya değil işlev kaybı ve hukuki ölçütlere göre değerlendirilen tıbbi-hukuki bir kavram olduğunu açıklar.",
+      ogTitle: "Maluliyet Nedir?",
+      ogDescription: "Maluliyet değerlendirmesini klinik ve hukuki sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Hastalık veya yaralanma nedeniyle çalışma gücündeki azalmanın tıbbi ve hukuki ölçütlerle değerlendirilmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "MAOI",
+    slug: "maoi",
+    shortDefinition: "MAOI, monoamin oksidaz enzimini inhibe eden ve bazı depresif bozukluklarda kullanılabilen, etkileşimler açısından özel dikkat gerektiren antidepresan ilaç grubudur.",
+    intro: "Monoamin oksidaz inhibitörleri günümüzde birçok durumda ilk seçenek değildir ancak belirli klinik tablolarda değerlendirilebilir. Başka ilaçlar ve bazı besinlerle önemli etkileşim potansiyelleri nedeniyle kullanımları yakın klinik izlem gerektirir. Tedavi planı oluşturulurken kişinin kullandığı diğer ilaçların ayrıntılı biçimde gözden geçirilmesi özellikle önemlidir.",
+    sections: [
+      section("MAOI İlaçlar Nasıl Etki Gösterir?", "Monoamin oksidaz enziminin aktivitesini azaltarak serotonin, noradrenalin ve dopamin gibi monoaminlerin sinir sistemi içindeki kullanılabilirliğini etkilerler. Bu mekanizma antidepresan etkiye katkıda bulunabilir ancak klinik yanıt yalnız tek bir nörotransmitter düzeyiyle açıklanamaz."),
+      section("Etkileşimler Neden Özellikle Önemlidir?", "Bazı ilaçlarla birlikte kullanım ciddi etkileşimlere yol açabileceğinden kişinin kullandığı reçeteli, reçetesiz ve bitkisel ürünlerin değerlendirilmesi gerekir. İlaç geçişleri sırasında gerekli bekleme süreleri de kullanılan ajanlara göre değişebilir."),
+      section("Beslenmeyle İlgili Neden Özel Kurallar Olabilir?", "Bazı MAOI türlerinde tiramin içeriği yüksek belirli gıdalarla etkileşim klinik açıdan önemli olabilir. Hangi besin kısıtlamalarının gerekli olduğu kullanılan ilaca göre değiştiğinden genel listeler yerine reçeteleyen sağlık ekibinin önerileri esas alınmalıdır."),
+      section("MAOI Kendi Kendine Başlanıp Bırakılabilir mi?", "Hayır. MAOI kullanımı, başka antidepresanlara geçiş veya tedavinin bırakılması kişisel kararla planlanmamalıdır. Etkileşim ve kesilme riskleri nedeniyle ilaç değişiklikleri reçeteleyen hekim tarafından değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Etkileşim", slug: "etkilesim" },
+      { term: "Farmakodinamik", slug: "farmakodinamik" },
+      { term: "Farmakokinetik", slug: "farmakokinetik" }
+    ],
+    seo: {
+      title: "MAOI Nedir? | Psikiyatri Sözlüğü",
+      description: "MAOI antidepresanların etki mekanizmasını, ilaç ve besin etkileşimlerini ve neden özel klinik dikkat gerektirdiğini açıklar.",
+      ogTitle: "MAOI Nedir?",
+      ogDescription: "Monoamin oksidaz inhibitörlerini güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Monoamin oksidaz enzimini inhibe eden ve özel etkileşim önlemleri gerektirebilen antidepresan grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "MDQ",
+    slug: "mdq",
+    shortDefinition: "MDQ, bipolar spektrum belirtilerine ilişkin geçmiş yaşam deneyimlerini taramak amacıyla kullanılan kısa öz bildirim ölçeğidir.",
+    intro: "Mood Disorder Questionnaire olarak bilinen MDQ bir tanı testi değildir. Pozitif bir tarama sonucu kişinin bipolar bozukluğu olduğunu kanıtlamaz; yalnız daha ayrıntılı klinik değerlendirme gereksinimine işaret edebilir. Ölçek özellikle geçmişte fark edilmemiş olası mani veya hipomani belirtilerinin sistematik biçimde sorgulanmasına yardımcı olabilir. Sonuç klinik bağlamla birlikte yorumlanmalıdır.",
+    sections: [
+      section("MDQ Ne Tür Sorular İçerir?", "Ölçek kişinin geçmişte olağandışı yükselmiş veya değişmiş duygudurum, enerji, uyku gereksinimi, konuşkanlık ve davranış değişiklikleri yaşayıp yaşamadığını sorgular. Belirtilerin aynı dönemde ortaya çıkıp çıkmadığı ve yaşam üzerindeki etkisi de önem taşıyabilir."),
+      section("Yüksek Puan Bipolar Bozukluk Demek midir?", "Hayır. Benzer belirtiler başka ruhsal durumlarda, madde kullanımında, uyku bozukluğunda veya kişinin yaşam koşullarında da görülebilir. Bu nedenle tarama sonucu klinik görüşme ve ayrıntılı yaşam boyu duygudurum öyküsüyle birlikte değerlendirilir."),
+      section("Düşük Puan Bipolar Bozukluğu Kesin Dışlar mı?", "Hayır. Tarama araçlarının duyarlılık ve özgüllük sınırlılıkları vardır. Kişinin geçmiş dönemlerini hatırlama biçimi, belirtilerin niteliği ve uygulandığı klinik ortam sonucu etkileyebilir."),
+      section("MDQ Ne Amaçla Yararlıdır?", "Özellikle depresif belirtilerle başvuran kişilerde geçmişte mani veya hipomani olasılığının daha sistematik sorgulanmasına yardımcı olabilir. Ancak nihai tanısal değerlendirme klinik görüşmeye dayanır.")
+    ],
+    relatedTerms: [
+      { term: "Mani", slug: "mani" },
+      { term: "Hipomani", slug: "hipomani" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "MDQ Nedir? | Psikiyatri Sözlüğü",
+      description: "MDQ'nun bipolar spektrum belirtilerini taramaya yardımcı olduğunu ancak tek başına bipolar bozukluk tanısı koymadığını açıklar.",
+      ogTitle: "MDQ Nedir?",
+      ogDescription: "Bipolar bozukluk taramasında MDQ ölçeğinin sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bipolar spektrum belirtilerini taramaya yardımcı olan kısa öz bildirim ölçeği."
+    }
+  }),
+
+  defineTerm({
+    term: "Mental durum muayenesi",
+    slug: "mental-durum-muayenesi",
+    shortDefinition: "Mental durum muayenesi, kişinin görüşme sırasındaki görünüm, davranış, konuşma, duygu durumu, düşünce, algı, biliş ve içgörü gibi alanlarının sistematik biçimde değerlendirilmesidir.",
+    intro: "Mental durum muayenesi psikiyatrik değerlendirmenin görüşme anındaki kesitini sunar. Kişinin tüm yaşam öyküsünü veya tanısını tek başına belirlemez; klinik öykü ve diğer bilgilerle birlikte yorumlanır. Bulguların zaman içindeki değişimi de klinik seyri anlamada önemli olabilir.",
+    sections: [
+      section("Hangi Alanlar Değerlendirilir?", "Görünüm ve davranış, konuşmanın hızı ve niteliği, duygudurum ve duygulanım, düşünce akışı ve içeriği, algısal deneyimler, dikkat, bellek, yönelim, içgörü ve yargılama gibi alanlar sistematik biçimde gözden geçirilebilir."),
+      section("Mental Durum Muayenesi Bir Test midir?", "Hayır. Bazı bilişsel alanlarda yapılandırılmış sorular kullanılabilse de muayene klinik görüşme ve gözleme dayanır. Bulgular kişinin kültürel bağlamı, eğitim düzeyi, tıbbi durumu ve görüşme koşulları dikkate alınarak yorumlanır."),
+      section("Tek Görüşmedeki Bulgular Yeterli midir?", "Her zaman değil. Ruhsal belirtiler günler veya haftalar içinde değişebilir. Bir kişinin görüşme sırasında sakin görünmesi daha önce ciddi belirtiler yaşamadığı anlamına gelmeyebilir; bu nedenle zaman içindeki öykü önemlidir."),
+      section("Neden Düzenli Kaydedilir?", "Mental durumdaki değişikliklerin izlenmesi klinik seyri, tedavi yanıtını veya yeni gelişen sorunları fark etmeye yardımcı olabilir. Özellikle bilinç, dikkat veya davranışta hızlı değişim bulunması tıbbi değerlendirme gereksinimini artırabilir.")
+    ],
+    relatedTerms: [
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Bilinç", slug: "bilinc" },
+      { term: "Ajitasyon", slug: "ajitasyon" },
+      { term: "Psikoz", slug: "psikoz" }
+    ],
+    seo: {
+      title: "Mental Durum Muayenesi Nedir? | Psikiyatri Sözlüğü",
+      description: "Mental durum muayenesinde görünüm, konuşma, duygu, düşünce, algı ve bilişin nasıl sistematik değerlendirildiğini açıklar.",
+      ogTitle: "Mental Durum Muayenesi Nedir?",
+      ogDescription: "Psikiyatrik değerlendirmenin temel kesitsel muayenesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin görüşme anındaki psikolojik ve bilişsel durumunun sistematik klinik değerlendirmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Mizaç",
+    slug: "mizac",
+    shortDefinition: "Mizaç, duygusal tepki verme, hareketlilik, dikkat ve çevresel uyaranlara yaklaşım gibi alanlarda erken dönemden itibaren gözlenebilen görece biyolojik temelli bireysel eğilimleri ifade eder.",
+    intro: "Mizaç kişinin değişmez kaderi veya psikiyatrik tanısı değildir. Biyolojik yatkınlıklar erken davranış eğilimlerine katkıda bulunurken çevre, öğrenme, ilişkiler ve yaşam deneyimleri bu özelliklerin nasıl ifade edildiğini etkiler. Aynı mizaç özelliği farklı çevresel koşullarda farklı davranış biçimleriyle ortaya çıkabilir.",
+    sections: [
+      section("Mizaç Hangi Özellikleri Kapsayabilir?", "Yeni durumlara yaklaşım, duygusal yoğunluk, sakinleşme hızı, hareketlilik düzeyi ve dikkat gibi özelliklerde kişiler arasında erken dönemden itibaren farklılıklar görülebilir. Bu farklılıklar tek başına iyi veya kötü özellikler olarak değerlendirilmez."),
+      section("Mizaç ile Karakter Aynı Şey midir?", "Hayır. Mizaç daha çok erken ortaya çıkan ve biyolojik yatkınlıklarla ilişkili eğilimleri vurgular. Karakter ise değerler, seçimler, öğrenilmiş davranışlar ve yaşam deneyimleriyle daha yakından ilişkilendirilen bir kavramdır."),
+      section("Mizaç ile Kişilik Arasında Nasıl Bir İlişki Vardır?", "Mizaç kişiliğin gelişimine katkıda bulunan öğelerden biri olabilir ancak kişilik bundan daha geniştir. Gelişimsel deneyimler, kültür, ilişkiler ve kişinin seçimleri zaman içinde kişilik örüntülerinin oluşumuna katkıda bulunur."),
+      section("Belirli Bir Mizaç Psikiyatrik Hastalık Demek midir?", "Hayır. Bazı mizaç özellikleri belirli ruhsal durumlarla istatistiksel olarak ilişkilendirilebilir ancak tek bir özellik kişisel düzeyde tanı koydurmaz. Klinik değerlendirme belirti, süre ve işlevselliğe dayanır.")
+    ],
+    relatedTerms: [
+      { term: "Karakter", slug: "karakter" },
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Benlik", slug: "benlik" },
+      { term: "Ergenlik", slug: "ergenlik" }
+    ],
+    seo: {
+      title: "Mizaç Nedir? | Psikiyatri Sözlüğü",
+      description: "Mizacı erken dönemden itibaren gözlenen duygusal ve davranışsal eğilimler olarak açıklar; karakter ve kişilikten farkını ele alır.",
+      ogTitle: "Mizaç Nedir?",
+      ogDescription: "Mizaç kavramını gelişimsel ve klinik sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Erken dönemden itibaren gözlenebilen görece biyolojik temelli duygusal ve davranışsal eğilimler."
+    }
+  }),
+
+  defineTerm({
+    term: "Multidisipliner yaklaşım",
+    slug: "multidisipliner-yaklasim",
+    shortDefinition: "Multidisipliner yaklaşım, kişinin gereksinimlerine birden fazla uzmanlık alanının kendi bilgi ve becerileriyle katkıda bulunduğu ortak değerlendirme ve bakım modelidir.",
+    intro: "Ruhsal sorunlar yalnız belirtilerden oluşmaz; bedensel sağlık, aile, sosyal yaşam, işlevsellik ve kullanılan tedaviler birbirini etkileyebilir. Bu nedenle karmaşık durumlarda farklı disiplinlerin katkısı değerlendirmeyi genişletebilir. Ekip üyelerinin birbirini tamamlayan bilgileri bakımın daha tutarlı biçimde planlanmasına yardımcı olabilir.",
+    sections: [
+      section("Hangi Uzmanlıklar Birlikte Çalışabilir?", "Klinik duruma göre psikiyatri, diğer tıbbi branşlar, psikoloji, hemşirelik, sosyal hizmet, ergoterapi ve başka sağlık disiplinleri bakım sürecine katkıda bulunabilir. Her kişinin aynı ekip yapısına ihtiyacı yoktur."),
+      section("Herkes Aynı İşi mi Yapar?", "Hayır. Her disiplin kendi mesleki yetkinliği ve sorumluluğu içinde değerlendirme yapar. Ortak hedef kişinin ihtiyaçlarının bütüncül biçimde anlaşılması ve birbirinden kopuk öneriler yerine uyumlu bir bakım planının oluşturulmasıdır."),
+      section("İletişim Neden Önemlidir?", "Farklı uzmanların birbirinden habersiz karar vermesi tedavi planında çelişkilere veya gereksiz tekrarlarla karşılaşılmasına yol açabilir. Gerekli klinik bilgilerin gizlilik ve mahremiyet ilkeleri içinde paylaşılması koordinasyonu kolaylaştırır."),
+      section("Multidisipliner Yaklaşım Her Durumda Gerekli midir?", "Hayır. Basit ve tek uzmanlık alanında yönetilebilen durumlarda geniş ekip çalışması gerekmeyebilir. Yaklaşım özellikle birden fazla tıbbi, psikolojik veya sosyal gereksinimin aynı anda bulunduğu karmaşık durumlarda önem kazanır.")
+    ],
+    relatedTerms: [
+      { term: "Konsültasyon", slug: "konsultasyon" },
+      { term: "Liyezon psikiyatrisi", slug: "liyezon-psikiyatrisi" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Multidisipliner Yaklaşım Nedir? | Psikiyatri Sözlüğü",
+      description: "Multidisipliner yaklaşımın farklı sağlık disiplinlerinin ortak değerlendirme ve bakım planlamasına nasıl katkı sağladığını açıklar.",
+      ogTitle: "Multidisipliner Yaklaşım Nedir?",
+      ogDescription: "Ruh sağlığında ekip temelli değerlendirme yaklaşımını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Birden fazla uzmanlık alanının ortak değerlendirme ve bakım sürecine katkıda bulunduğu model."
+    }
+  }),
+
+  defineTerm({
+    term: "Mükemmeliyetçilik",
+    slug: "mukemmeliyetcilik",
+    shortDefinition: "Mükemmeliyetçilik, kişinin kendisi veya başkaları için çok yüksek standartlar belirlemesi ve hata yapmayı aşırı olumsuz değerlendirmesiyle ilişkili düşünce ve davranış eğilimidir.",
+    intro: "Yüksek standartlara sahip olmak tek başına psikolojik sorun değildir. Mükemmeliyetçilik, kişinin değerini yalnız kusursuz performansa bağlaması, hatalara karşı yoğun öz eleştiri geliştirmesi veya günlük işlevselliğinin bu beklentiler nedeniyle bozulması durumunda klinik açıdan önem kazanabilir.",
+    sections: [
+      section("Sağlıklı Çaba ile Mükemmeliyetçilik Nasıl Ayrılır?", "Esnek yüksek standartlarda kişi hata yapabilmeyi kabul eder ve hedeflerini koşullara göre değiştirebilir. İşlev bozucu mükemmeliyetçilikte ise küçük hatalar başarısızlık olarak değerlendirilebilir ve kişinin öz değeri performansa aşırı bağlanabilir."),
+      section("Erteleme ile İlişkili Olabilir mi?", "Evet. Bir görevi kusursuz yapma beklentisi başlamakta zorlanmaya, aşırı kontrol etmeye veya işi teslim edememeye yol açabilir. Dışarıdan motivasyon eksikliği gibi görünen davranışın altında hata yapma korkusu bulunabilir."),
+      section("Anksiyete ve Öz Eleştiriyle Nasıl İlişkilidir?", "Sürekli değerlendirilme kaygısı, hata arama ve başarıları küçümseme kişinin stresini artırabilir. Bununla birlikte mükemmeliyetçilik farklı kişilerde farklı biçimde ortaya çıkar ve tek başına belirli bir psikiyatrik tanı anlamına gelmez."),
+      section("Değişebilir mi?", "Evet. Gerçekçi standartların geliştirilmesi, hata hakkının kabul edilmesi, ya hep ya hiç düşüncelerinin fark edilmesi ve kişinin değerini yalnız performansla ölçmemesi bu örüntünün etkisini azaltabilir.")
+    ],
+    relatedTerms: [
+      { term: "Kusurluluk şeması", slug: "kusurluluk-semasi" },
+      { term: "Şema terapi", slug: "sema-terapi" },
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ],
+    seo: {
+      title: "Mükemmeliyetçilik Nedir? | Psikiyatri Sözlüğü",
+      description: "Mükemmeliyetçiliği sağlıklı yüksek standartlardan ayıran hata korkusu, öz eleştiri ve işlevsellik özellikleriyle açıklar.",
+      ogTitle: "Mükemmeliyetçilik Nedir?",
+      ogDescription: "Mükemmeliyetçiliğin işlevsel ve işlev bozucu yönlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Aşırı yüksek standartlar ve hatalara karşı katı değerlendirmelerle ilişkili düşünce ve davranış eğilimi."
+    }
+  }),
+
+  defineTerm({
+    term: "Non-REM uykusu",
+    slug: "non-rem-uykusu",
+    shortDefinition: "Non-REM uykusu, hızlı göz hareketlerinin belirgin olmadığı ve hafif uykudan derin yavaş dalga uykusuna uzanan farklı evreleri içeren temel uyku dönemidir.",
+    intro: "Normal gece uykusu tek tip değildir. Non-REM ve REM dönemleri gece boyunca döngüler halinde birbirini izler; farklı evrelerde beyin etkinliği, kas tonusu ve fizyolojik işlevlerde değişiklikler görülür. Uyku kalitesi yalnız toplam süreyle değil bu evrelerin düzeni ve sürekliliğiyle de ilişkilidir.",
+    sections: [
+      section("Non-REM Uykusunun Evreleri Nelerdir?", "Non-REM uyku yüzeysel uykudan daha derin uykuya doğru ilerleyen evrelerden oluşur. Özellikle derin yavaş dalga uykusunda kişinin dış uyaranlarla uyandırılması daha zor olabilir ve belirli fizyolojik yenilenme süreçleri belirginleşir."),
+      section("Derin Uyku Neden Önemlidir?", "Bedensel toparlanma, bağışıklık işlevleri, enerji dengesi ve bazı öğrenme ve bellek süreçleri uyku mimarisiyle ilişkilidir. Ancak sağlıklı uyku yalnız derin uyku miktarına değil tüm uyku evrelerinin düzenli döngüsüne bağlıdır."),
+      section("Non-REM ve REM Arasındaki Fark Nedir?", "REM döneminde hızlı göz hareketleri, belirgin beyin aktivitesi ve canlı rüyalar daha sık görülürken Non-REM döneminde farklı derinliklerde uyku evreleri bulunur. Her iki dönem de normal uyku mimarisinin parçalarıdır."),
+      section("Uyku Evreleri Nasıl Ölçülür?", "Uyku laboratuvarında beyin dalgaları, göz hareketleri, kas aktivitesi ve başka fizyolojik sinyallerin kaydedildiği polisomnografi kullanılabilir. Tüketici cihazlarının verdiği uyku evresi tahminleri klinik ölçümle aynı değildir.")
+    ],
+    relatedTerms: [
+      { term: "Bilinç", slug: "bilinc" },
+      { term: "GABA", slug: "gaba" },
+      { term: "Hipnotik", slug: "hipnotik" }
+    ],
+    seo: {
+      title: "Non-REM Uykusu Nedir? | Psikiyatri Sözlüğü",
+      description: "Non-REM uykusunun hafif ve derin evrelerini, REM uykusundan farkını ve uyku mimarisindeki yerini açıklar.",
+      ogTitle: "Non-REM Uykusu Nedir?",
+      ogDescription: "Non-REM uyku evrelerini ve temel işlevlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Hızlı göz hareketlerinin belirgin olmadığı, hafif ve derin uyku evrelerini içeren uyku dönemi."
+    }
+  }),
+
+  defineTerm({
+    term: "Noradrenalin",
+    slug: "noradrenalin",
+    shortDefinition: "Noradrenalin, merkezi sinir sistemi ve otonom sinir sisteminde uyanıklık, dikkat, motivasyon ve stres yanıtının düzenlenmesine katkıda bulunan kimyasal habercidir.",
+    intro: "Noradrenalin hem nörotransmitter hem de bazı bağlamlarda hormon olarak işlev görebilir. Psikiyatride dikkat, uyanıklık ve duygudurum süreçleriyle ilişkisi araştırılmış olsa da ruhsal durumlar tek bir nörotransmitterin azlığı veya fazlalığıyla açıklanamaz. Noradrenerjik sistemler farklı beyin ağlarıyla birlikte çalışarak davranış ve biliş üzerinde etkili olur. Bu etkiler bağlama ve beyin bölgesine göre değişebilir.",
+    sections: [
+      section("Noradrenalin Beyinde Ne Yapar?", "Dikkatin yönlendirilmesi, çevresel değişikliklere uyanıklık, motivasyon ve stres sırasında davranışsal hazırlık gibi süreçlere katkıda bulunur. Etkileri bulunduğu beyin bölgesine ve hangi reseptörlerin aktive olduğuna göre değişebilir."),
+      section("Stres Yanıtıyla Nasıl İlişkilidir?", "Tehdit veya yoğun talep sırasında noradrenerjik sistemlerin etkinliği artabilir ve kişinin çevresine daha hızlı yanıt vermesine katkıda bulunabilir. Bu fizyolojik mekanizma tek başına anksiyete bozukluğu anlamına gelmez."),
+      section("Psikiyatrik İlaçlarla İlişkisi Nedir?", "Bazı antidepresanlar ve DEHB tedavisinde kullanılan bazı ilaçlar noradrenerjik sinyallemeyi etkiler. Ancak ilacın klinik etkisi yalnız noradrenalin düzeyindeki basit bir değişimle açıklanamayacak kadar karmaşıktır."),
+      section("Noradrenalin Ölçümü Tanı Koydurur mu?", "Hayır. Beyindeki nörotransmitter işlevini sıradan bir kan testiyle doğrudan ölçmek mümkün değildir ve periferik ölçümler psikiyatrik tanı için kullanılmaz. Tanı klinik belirti, süre ve işlevsellik üzerinden değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Atomoksetin", slug: "atomoksetin" },
+      { term: "Nörotransmitter", slug: "norotransmitter" }
+    ],
+    seo: {
+      title: "Noradrenalin Nedir? | Psikiyatri Sözlüğü",
+      description: "Noradrenalinin dikkat, uyanıklık ve stres yanıtındaki rolünü ve tek başına psikiyatrik tanı belirlemediğini açıklar.",
+      ogTitle: "Noradrenalin Nedir?",
+      ogDescription: "Noradrenalinin sinir sistemi ve psikiyatrideki temel rolünü açıklar."
+    },
+    schema: {
+      definedTermDescription: "Uyanıklık, dikkat ve stres yanıtının düzenlenmesine katkıda bulunan nörotransmitter."
+    }
+  }),
+
+  defineTerm({
+    term: "Nöroplastisite",
+    slug: "noroplastisite",
+    shortDefinition: "Nöroplastisite, beynin deneyim, öğrenme, çevresel değişiklik ve bazı hastalık süreçlerine yanıt olarak bağlantılarını ve işlevsel örgütlenmesini değiştirebilme kapasitesidir.",
+    intro: "Beyin yetişkinlikte tamamen sabit bir yapı değildir. Sinir ağları yeni deneyimlerle güçlenebilir, zayıflayabilir veya yeniden örgütlenebilir; ancak nöroplastisite sınırsız ve her değişimin olumlu olduğu anlamına gelen bir kavram değildir. Değişimin kapsamı yaş, deneyimin süresi ve ilgili beyin sistemine göre farklılık gösterebilir.",
+    sections: [
+      section("Nöroplastisite Nasıl Gerçekleşir?", "Sinapsların gücündeki değişiklikler, yeni bağlantıların oluşması, bazı bağlantıların azalması ve belirli bölgelerde yapısal değişiklikler nöroplastik süreçlerin parçaları olabilir. Mekanizmalar yaşa, beyin bölgesine ve deneyimin niteliğine göre değişir."),
+      section("Öğrenme ile İlişkisi Nedir?", "Yeni becerilerin kazanılması ve bilgilerin bellekte daha kalıcı hale gelmesi sinir ağlarında tekrar ve deneyime bağlı değişikliklerle ilişkilidir. Bu nedenle öğrenme, nöroplastisitenin günlük yaşamdaki en temel örneklerinden biridir."),
+      section("Psikoterapi veya İlaçlar Beyni Değiştirir mi?", "Psikoterapi, öğrenme ve bazı ilaç tedavileriyle ilişkili nörobiyolojik değişiklikler araştırılmaktadır. Ancak belirli bir beyin değişikliğini tek kişide tedavinin işe yaradığını gösteren basit bir biyobelirteç olarak kullanmak mümkün değildir."),
+      section("Nöroplastisite Her Zaman Faydalı mıdır?", "Hayır. Beyin tekrar eden deneyimlere uyum sağlarken bazı işlev bozucu alışkanlıklar veya korku öğrenmeleri de güçlenebilir. Nöroplastisite beynin değişebilme kapasitesini anlatır; değişimin yönünün mutlaka olumlu olduğunu söylemez.")
+    ],
+    relatedTerms: [
+      { term: "Hipokampus", slug: "hipokampus" },
+      { term: "Glutamat", slug: "glutamat" },
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Antidepresan", slug: "antidepresan" }
+    ],
+    seo: {
+      title: "Nöroplastisite Nedir? | Psikiyatri Sözlüğü",
+      description: "Nöroplastisiteyi beynin öğrenme ve deneyime bağlı değişebilme kapasitesi olarak açıklar ve kavramın sınırlarını ele alır.",
+      ogTitle: "Nöroplastisite Nedir?",
+      ogDescription: "Beynin deneyimle değişebilme kapasitesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Beynin deneyim ve öğrenmeye bağlı olarak bağlantılarını ve işlevsel örgütlenmesini değiştirebilme kapasitesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Nörotransmitter",
+    slug: "norotransmitter",
+    shortDefinition: "Nörotransmitter, sinir hücrelerinin birbirleriyle veya hedef hücrelerle iletişim kurmasına yardımcı olan kimyasal haberci maddelerin genel adıdır.",
+    intro: "Serotonin, dopamin, noradrenalin, glutamat ve GABA gibi birçok farklı nörotransmitter bulunur. Her biri tek bir duygu veya hastalıktan sorumlu değildir; beyin işlevleri çok sayıda kimyasal ve elektriksel sistemin birlikte çalışmasıyla ortaya çıkar. Aynı nörotransmitter farklı beyin bölgelerinde farklı işlevlere katkıda bulunabilir.",
+    sections: [
+      section("Nörotransmitterler Nasıl Çalışır?", "Bir sinir hücresinden salınan kimyasal haberci hücreler arasındaki küçük boşluğu geçerek hedef hücredeki belirli reseptörlere bağlanabilir. Sonuç hedef reseptörün türüne göre hücre aktivitesini artırabilir, azaltabilir veya daha karmaşık biçimde düzenleyebilir."),
+      section("Her Nörotransmitterin Tek Bir Görevi mi Vardır?", "Hayır. Aynı nörotransmitter farklı beyin bölgelerinde farklı işlevlere katkıda bulunabilir. Örneğin dikkat, hareket, öğrenme ve duygudurum gibi süreçler birbirinden ayrı tek kimyasal sistemler tarafından yönetilmez."),
+      section("Psikiyatrik Hastalıklar Kimyasal Dengesizlik midir?", "Ruhsal hastalıkları yalnız bir nörotransmitterin eksikliği veya fazlalığı olarak açıklamak güncel bilimsel bilgiyi aşırı basitleştirir. Genetik, gelişimsel, psikolojik, çevresel ve çok sayıda nörobiyolojik etken birlikte rol oynayabilir."),
+      section("İlaçlar Nörotransmitterleri Nasıl Etkiler?", "Psikiyatrik ilaçlar nörotransmitterlerin salınması, geri alımı, yıkımı veya reseptörleri üzerinde etkili olabilir. Ancak klinik etkinin ortaya çıkması çoğu zaman daha geniş sinir ağı değişikliklerini ve zaman içinde gelişen uyarlanmaları içerir.")
+    ],
+    relatedTerms: [
+      { term: "GABA", slug: "gaba" },
+      { term: "Glutamat", slug: "glutamat" },
+      { term: "Noradrenalin", slug: "noradrenalin" },
+      { term: "Farmakodinamik", slug: "farmakodinamik" }
+    ],
+    seo: {
+      title: "Nörotransmitter Nedir? | Psikiyatri Sözlüğü",
+      description: "Nörotransmitterlerin sinir hücreleri arasındaki iletişimde nasıl çalıştığını ve psikiyatrik hastalıkların neden basit kimyasal dengesizliklerle açıklanamayacağını anlatır.",
+      ogTitle: "Nörotransmitter Nedir?",
+      ogDescription: "Beyindeki kimyasal habercilerin temel işlevlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Sinir hücreleri arasında iletişime aracılık eden kimyasal haberci madde."
+    }
+  }),
+
+  defineTerm({
+    term: "Nüks önleme",
+    slug: "nuks-onleme",
+    shortDefinition: "Nüks önleme, daha önce azalmış veya düzelmiş ruhsal belirtilerin yeniden belirginleşme olasılığını azaltmaya yönelik kişiselleştirilmiş izlem ve baş etme planıdır.",
+    intro: "Ruhsal belirtilerin düzelmesi tedavi sürecinin önemli bir aşamasıdır ancak bazı durumlarda belirtiler tekrar ortaya çıkabilir. Nüks önleme yaklaşımı erken uyarı işaretlerini tanımayı ve sorun büyümeden uygun destek basamaklarını devreye sokmayı amaçlar.",
+    sections: [
+      section("Erken Uyarı İşaretleri Nelerdir?", "Uyku düzenindeki değişiklik, sosyal geri çekilme, günlük rutinin bozulması veya kişiye özgü daha önceki dönemlerin başlangıcında görülen belirtiler erken işaretler olabilir. Her kişi için aynı belirtiler geçerli değildir."),
+      section("Nüks Önleme Planında Neler Bulunabilir?", "Kişinin kendi erken belirtileri, hangi durumda kiminle iletişim kuracağı, rutinlerini nasıl koruyacağı ve planlanmış klinik izlemi ne zaman öne çekeceği belirlenebilir. Plan kişiye özgü ve uygulanabilir olmalıdır."),
+      section("İlaç veya Psikoterapi Tek Başına Yeterli midir?", "Nüks riskini azaltan yaklaşım tanıya ve kişisel duruma göre değişir. İlaç tedavisi, psikoterapi, psikoeğitim, uyku ve günlük düzen, sosyal destek ve düzenli izlem farklı kişilerde farklı ağırlıkta rol oynayabilir."),
+      section("Nüks Olması Tedavinin Başarısız Olduğu Anlamına mı Gelir?", "Hayır. Bazı ruhsal bozuklukların doğal seyri dönemsel olabilir. Nüksün erken fark edilmesi ve yeni döneme hızlı müdahale edilmesi belirtilerin süresini veya işlev kaybını azaltmaya yardımcı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "İzlem", slug: "izlem" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Psikoeğitim", slug: "psikoegitim" },
+      { term: "Güvenlik planı", slug: "guvenlik-plani" }
+    ],
+    seo: {
+      title: "Nüks Önleme Nedir? | Psikiyatri Sözlüğü",
+      description: "Nüks önlemenin erken uyarı işaretleri, kişisel plan, düzenli izlem ve baş etme stratejileriyle nasıl oluşturulduğunu açıklar.",
+      ogTitle: "Nüks Önleme Nedir?",
+      ogDescription: "Ruhsal belirtilerin tekrarını azaltmaya yönelik planlamayı açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruhsal belirtilerin tekrarını azaltmaya yönelik erken uyarı, izlem ve baş etme planı."
+    }
+  }),
+
+  defineTerm({
+    term: "Obsesif kompulsif kişilik",
+    slug: "obsesif-kompulsif-kisilik",
+    shortDefinition: "Obsesif kompulsif kişilik, düzen, kontrol, kurallar ve mükemmeliyetçiliğe yönelik katı eğilimlerin kişinin esnekliğini ve ilişkilerini belirgin biçimde etkileyebildiği kişilik örüntüsünü ifade eder.",
+    intro: "Obsesif kompulsif kişilik ile obsesif kompulsif bozukluk aynı şey değildir. Kişilik örüntüsünde uzun süreli düzen, kontrol ve mükemmeliyetçilik eğilimleri ön plandayken OKB'de obsesyonlar ve kompulsiyonlar farklı bir klinik çerçevede değerlendirilir.",
+    sections: [
+      section("Bu Kişilik Örüntüsü Nasıl Görülebilir?", "Kişi ayrıntılara, kurallara, listelere veya düzene yoğun biçimde odaklanabilir ve bu nedenle asıl amacı gözden kaçırabilir. Görevleri başkalarına devretmekte zorlanma veya işin yalnız kendi yöntemine göre yapılmasını isteme görülebilir."),
+      section("Mükemmeliyetçilik Neden Sorun Oluşturabilir?", "Yüksek standartlar işi kaliteli yapmaya yardımcı olabilir ancak katı mükemmeliyetçilik görevin tamamlanmasını geciktirebilir, esnekliği azaltabilir ve ilişkilerde çatışmalara yol açabilir. Klinik önem işlevsellikteki etkiyle değerlendirilir."),
+      section("OKB ile Aynı Şey midir?", "Hayır. OKB'de kişiyi zorlayan tekrarlayıcı düşünceler ve bunlarla ilişkili davranışlar ön plandadır. Obsesif kompulsif kişilik örüntüsünde ise uzun süreli kontrol, düzen ve katılık özellikleri kişinin karakteristik ilişki ve davranış biçiminin parçası olabilir."),
+      section("Düzenli Olmak Tanı İçin Yeterli midir?", "Hayır. Düzenli, titiz veya sorumluluk sahibi olmak tek başına kişilik bozukluğu anlamına gelmez. Örüntünün uzun süreli, farklı ortamlarda belirgin ve kişinin ya da çevresinin işlevselliğini önemli ölçüde etkileyen nitelikte olması gerekir.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Mükemmeliyetçilik", slug: "mukemmeliyetcilik" },
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Histrionik kişilik örüntüsü", slug: "histrionik-kisilik-oruntusu" }
+    ],
+    seo: {
+      title: "Obsesif Kompulsif Kişilik Nedir? | Psikiyatri Sözlüğü",
+      description: "Obsesif kompulsif kişilik örüntüsünü düzen, kontrol ve mükemmeliyetçilik özellikleriyle açıklar ve OKB'den farkını ele alır.",
+      ogTitle: "Obsesif Kompulsif Kişilik Nedir?",
+      ogDescription: "Obsesif kompulsif kişilik örüntüsünü OKB'den ayırarak açıklar."
+    },
+    schema: {
+      definedTermDescription: "Düzen, kontrol ve mükemmeliyetçilik eğilimlerinin baskın olduğu uzun süreli kişilik örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Onay arayıcılık",
+    slug: "onay-arayicilik",
+    shortDefinition: "Onay arayıcılık, kişinin kendi değerini ve kararlarının doğruluğunu büyük ölçüde başkalarının kabulü, övgüsü veya değerlendirmesine bağlama eğilimidir.",
+    intro: "Başkalarının görüşünü önemsemek normal sosyal yaşamın parçasıdır. Onay arayıcılık, kişinin kendi ihtiyaç ve değerlerini geri plana atacak ölçüde dış değerlendirmeye bağımlı hale geldiğinde psikolojik açıdan sorun oluşturabilir. Bu örüntü özellikle eleştiri, reddedilme veya belirsizlik karşısında daha belirgin hale gelebilir. Kişi kendi tercihinden emin olsa bile başkalarının tepkisini sürekli kontrol etme ihtiyacı hissedebilir ve bu durum karar verme sürecini zorlaştırabilir.",
+    sections: [
+      section("Onay Arayıcılık Nasıl Görülebilir?", "Kişi eleştirilmekten yoğun biçimde kaçınabilir, karar vermeden önce sürekli başkalarının fikrini sorabilir veya kabul görmek için kendi sınırlarını aşabilir. Sosyal ilişkilerde hayır demekte zorlanma da görülebilir."),
+      section("Öz Değer ile Nasıl İlişkilidir?", "Kişinin kendisine ilişkin olumlu değerlendirmesi yalnız başarıya veya başkalarının övgüsüne dayanıyorsa dış geri bildirimlerdeki küçük değişiklikler bile özsaygıyı güçlü biçimde etkileyebilir."),
+      section("İlişkileri Nasıl Etkileyebilir?", "Reddedilme korkusuyla aşırı uyum gösterme, çatışmadan sürekli kaçınma veya kendi ihtiyaçlarını ifade edememe ilişkilerde dengesizlik yaratabilir. Başkalarını memnun etme çabası zaman içinde yorgunluk ve kırgınlığa dönüşebilir."),
+      section("Onay İhtiyacı Azalabilir mi?", "Evet. Kişinin kendi değerlerini netleştirmesi, kararlarının sorumluluğunu üstlenmesi, sınır koyma becerilerini geliştirmesi ve eleştiriyi kişisel değerin bütünü olarak görmemesi dış onaya bağımlılığı azaltabilir.")
+    ],
+    relatedTerms: [
+      { term: "Şema terapi", slug: "sema-terapi" },
+      { term: "Kusurluluk şeması", slug: "kusurluluk-semasi" },
+      { term: "Benlik", slug: "benlik" },
+      { term: "Kişilik", slug: "kisilik" }
+    ],
+    seo: {
+      title: "Onay Arayıcılık Nedir? | Psikiyatri Sözlüğü",
+      description: "Onay arayıcılığın öz değer, karar verme ve ilişkiler üzerindeki etkisini ve normal sosyal onay ihtiyacından farkını açıklar.",
+      ogTitle: "Onay Arayıcılık Nedir?",
+      ogDescription: "Dış onaya aşırı bağımlılığın psikolojik etkilerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin değerini ve kararlarını büyük ölçüde başkalarının onayına bağlama eğilimi."
+    }
+  }),
+
+  defineTerm({
+    term: "PANSS",
+    slug: "panss",
+    shortDefinition: "PANSS, şizofrenide pozitif belirtiler, negatif belirtiler ve genel psikopatoloji alanlarını yapılandırılmış biçimde değerlendirmek amacıyla kullanılan klinisyen ölçeğidir.",
+    intro: "Positive and Negative Syndrome Scale olarak bilinen PANSS özellikle araştırma ve klinik izlemde belirti şiddetini standart biçimde değerlendirmeye yardımcı olur. Tek başına şizofreni tanısı koyan bir test değildir. Ölçeğin sağlıklı yorumlanması eğitimli değerlendirici ve klinik bağlam gerektirir. Puanların anlamı yalnız toplam skor üzerinden değil farklı belirti alanlarının dağılımı ve kişinin genel işlevselliğiyle birlikte değerlendirilmelidir.",
+    sections: [
+      section("Pozitif Belirtiler Ne Anlama Gelir?", "Varsanı, sanrı ve düşünce organizasyonundaki bazı bozulmalar gibi kişinin olağan deneyimine eklenen belirtiler pozitif belirti alanında değerlendirilir. Pozitif sözcüğü burada iyi veya olumlu anlamına gelmez."),
+      section("Negatif Belirtiler Nelerdir?", "Duygusal ifade azalması, sosyal geri çekilme, konuşma üretiminde azalma veya motivasyon kaybı gibi işlevlerde azalmayı ifade eden belirtiler negatif belirti alanında ele alınabilir."),
+      section("PANSS Puanı Tanı Koyar mı?", "Hayır. Ölçek mevcut belirtilerin şiddetini yapılandırılmış biçimde ölçmeye yardımcı olur. Şizofreni tanısı klinik öykü, belirtilerin süresi, işlevsellik, ayırıcı tanı ve başka nedenlerin değerlendirilmesiyle konur."),
+      section("PANSS Neden Tekrarlanabilir?", "Tedavi veya klinik seyir sırasında belirti alanlarındaki değişimi daha sistematik izlemek için aynı ölçek farklı zamanlarda uygulanabilir. Puan değişimi yine kişinin işlevselliği ve genel klinik durumu ile birlikte yorumlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Şizofreni", slug: "sizofreni" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Varsanı", slug: "varsani" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "PANSS Nedir? | Psikiyatri Sözlüğü",
+      description: "PANSS ölçeğinin şizofrenide pozitif, negatif ve genel belirtileri değerlendirdiğini ancak tek başına tanı koymadığını açıklar.",
+      ogTitle: "PANSS Nedir?",
+      ogDescription: "PANSS ölçeğinin kullanım alanını ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Şizofrenide pozitif, negatif ve genel belirtilerin şiddetini değerlendiren klinisyen ölçeği."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...thirteenthBatchNewTerms,
   ...twelfthBatchNewTerms,
   ...eleventhBatchNewTerms,
   ...tenthBatchNewTerms,
