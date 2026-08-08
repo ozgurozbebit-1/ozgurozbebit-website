@@ -136,6 +136,184 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["oyun-oynama-bozuklugu", {
+    shortDefinition: "Oyun oynama bozukluğu, dijital veya video oyunları üzerindeki kontrolün belirgin biçimde azalması, oyunun diğer yaşam alanlarının önüne geçmesi ve olumsuz sonuçlara rağmen davranışın sürmesiyle ilişkili klinik bir tablodur.",
+    intro: "Çok oyun oynamak tek başına oyun oynama bozukluğu anlamına gelmez. Klinik değerlendirmede oyun süresinden çok davranış üzerindeki kontrol, önceliklerin değişmesi ve günlük işlevsellik üzerindeki kalıcı etkiler önem taşır.",
+    sections: [
+      section("Oyun Oynama Bozukluğu Nasıl Görülebilir?", "Kişi oyun süresini azaltmakta zorlanabilir, okul, iş, uyku veya sosyal ilişkiler gibi alanları giderek daha fazla ihmal edebilir ve sorunları fark etmesine rağmen oyun davranışını sürdürmeye devam edebilir. Davranış zaman içinde kişinin günlük yaşamında daha merkezi bir konuma gelebilir."),
+      section("Yoğun Oyun Oynamak Her Zaman Bozukluk mudur?", "Hayır. Bir kişinin belirli dönemlerde uzun süre oyun oynaması, oyunlarla güçlü biçimde ilgilenmesi veya rekabetçi oyunlara zaman ayırması tek başına klinik bozukluk anlamına gelmez. Belirgin kontrol kaybı ve işlev kaybı olup olmadığı değerlendirilmelidir."),
+      section("Oyun Davranışının İşlevi Neden Önemlidir?", "Oyun eğlence, sosyalleşme veya stres azaltma amacıyla kullanılabilir. Bazı kişilerde ise zorlayıcı duygulardan uzaklaşmanın temel yolu haline gelebilir. Davranışın hangi koşullarda arttığı ve kişinin başka baş etme yollarının bulunup bulunmadığı klinik açıdan önemlidir."),
+      section("Değerlendirmede Hangi Alanlara Bakılır?", "Uyku düzeni, akademik veya mesleki işlevsellik, aile ve arkadaş ilişkileri, fiziksel aktivite, duygudurum ve eşlik eden başka ruhsal belirtiler birlikte ele alınır. Amaç oyun oynamayı başlı başına sorun olarak görmek değil, kişinin yaşamındaki denge ve kontrol düzeyini değerlendirmektir.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Kumar oynama bozukluğu", slug: "kumar-oynama-bozuklugu" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
+  ["ozgul-fobi", {
+    shortDefinition: "Özgül fobi, belirli bir nesne veya durum karşısında ortaya çıkan, gerçek tehlikeyle orantısız olabilen yoğun korku ve kaçınmayla karakterize bir anksiyete bozukluğudur.",
+    intro: "Özgül fobide korku belirli bir uyaranla bağlantılıdır. Kişi korkusunun aşırı olduğunu fark edebilse bile karşılaşma sırasında yoğun kaygı yaşayabilir ve günlük yaşamını bu uyaranı önleyecek biçimde düzenleyebilir.",
+    sections: [
+      section("Özgül Fobi Nasıl Görülebilir?", "Hayvanlar, yükseklik, uçuş, kapalı ortamlar veya belirli tıbbi durumlarla karşılaşma gibi farklı uyaranlar yoğun korku oluşturabilir. Kişi bu uyaranla karşılaşmaktan kaçınabilir veya karşılaşmaya ancak belirgin sıkıntıyla dayanabilir."),
+      section("Normal Korku ile Fobi Arasındaki Fark Nedir?", "Korku yaşamı koruyan doğal bir tepkidir ve gerçek tehlikeler karşısında işlevseldir. Özgül fobide ise korkunun yoğunluğu gerçek riskle orantısız olabilir, uzun süre devam edebilir ve kişinin günlük kararlarını veya işlevselliğini belirgin biçimde etkileyebilir."),
+      section("Kaçınma Neden Önemlidir?", "Korkulan uyaranla karşılaşmamak kısa vadede kaygıyı azaltabilir. Ancak sürekli kaçınma kişinin korkusuyla ilgili yeni ve daha gerçekçi deneyimler yaşamasını engelleyebilir ve zaman içinde korkunun devam etmesine katkıda bulunabilir."),
+      section("Değerlendirmede Neler Ele Alınır?", "Korkunun hangi durumlarda ortaya çıktığı, ne kadar süredir devam ettiği, kaçınmanın yaşamı ne ölçüde kısıtladığı ve benzer belirtilerin başka anksiyete tablolarıyla açıklanıp açıklanamayacağı incelenir. Tek bir korku tepkisi üzerinden tanı konmaz.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "Güvence arama", slug: "guvence-arama" }
+    ]
+  }],
+
+  ["paranoid-dusunce", {
+    shortDefinition: "Paranoid düşünce, kişinin başkalarının kendisine zarar verme, aldatma, dışlama veya kötü niyet taşıdığı yönünde kuşku ve tehdit yorumları geliştirmesini ifade eden klinik bir kavramdır.",
+    intro: "Paranoid düşünceler farklı yoğunluklarda görülebilir. Her kuşku paranoid düşünce değildir ve paranoid düşüncenin bulunması tek başına psikotik bozukluk tanısı anlamına gelmez.",
+    sections: [
+      section("Paranoid Düşünce Nasıl Görülebilir?", "Kişi başkalarının sözlerini veya davranışlarını kendisine yönelik gizli bir tehdit, küçümseme ya da kötü niyet olarak yorumlayabilir. Belirsiz olaylara tehdit anlamı yükleme eğilimi arttıkça kişilerarası güven azalabilir ve sosyal geri çekilme gelişebilir."),
+      section("Gerçekçi Kuşku ile Paranoid Düşünce Nasıl Ayrılır?", "Gerçek yaşamda insanların kötü niyetli davranması mümkündür. Klinik değerlendirmede kişinin yorumunun eldeki kanıtlarla ne kadar uyumlu olduğu, alternatif açıklamalara ne ölçüde açık olduğu ve inancın günlük yaşam üzerindeki etkisi göz önünde bulundurulur."),
+      section("Paranoid Düşünce Her Zaman Sanrı mıdır?", "Hayır. Kuşku ve güvensizlik bir süreklilik üzerinde değişebilir. Sanrısal düzeydeki inanışlar genellikle çok güçlü biçimde benimsenir ve karşıt kanıtlarla değiştirilmesi oldukça güç olabilir. Daha hafif paranoid düşüncelerde kişi belirsizlik veya yanılma olasılığını koruyabilir."),
+      section("Hangi Bağlamlar Değerlendirilir?", "Yoğun stres, uykusuzluk, madde etkileri, duygudurum değişiklikleri ve psikotik belirtiler paranoid düşünceleri etkileyebilir. Yeni başlayan veya hızla artan kuşkular özellikle başka davranış, algı veya bilinç değişiklikleriyle birlikteyse kapsamlı değerlendirme gerektirir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Sanrısal bozukluk", slug: "sanrisal-bozukluk" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Psikotik özellik", slug: "psikotik-ozellik" }
+    ]
+  }],
+
+  ["parasomni", {
+    shortDefinition: "Parasomni, uykuya geçiş sırasında, uyku içinde veya uyanma döneminde ortaya çıkabilen olağandışı davranış, hareket, duygu veya yaşantıları kapsayan genel bir uyku bozukluğu terimidir.",
+    intro: "Parasomni tek bir hastalığı ifade etmez. Farklı uyku evreleriyle ilişkili çeşitli tablolar bu başlık altında değerlendirilir ve belirtilerin biçimi yaşa ve uyku düzenine göre değişebilir.",
+    sections: [
+      section("Parasomniler Nasıl Görülebilir?", "Uyku sırasında konuşma, yataktan kalkma, yoğun korkuyla uyanma, karmaşık hareketler veya canlı rüya deneyimleri gibi farklı belirtiler görülebilir. Bazı olaylar kişi tarafından hiç hatırlanmazken bazıları sabah ayrıntılı biçimde hatırlanabilir."),
+      section("Kabus ile Parasomni Aynı Şey midir?", "Kabuslar parasomni başlığı altında değerlendirilebilen durumlardan biridir ancak tüm parasomniler kabus değildir. Farklı parasomniler uykunun farklı evrelerinde ortaya çıkabilir ve olay sırasında kişinin uyanıklık düzeyi birbirinden farklı olabilir."),
+      section("Uykusuzluk Parasomnileri Etkileyebilir mi?", "Uyku yoksunluğu, düzensiz uyku saatleri, stres veya bazı maddeler bazı kişilerde parasomni olaylarını kolaylaştırabilir. Bununla birlikte her olayın nedeni aynı değildir ve tekrarlayan belirtilerde kişinin genel uyku düzeni ayrıntılı biçimde değerlendirilir."),
+      section("Ne Zaman Değerlendirme Gerekir?", "Olaylar sıklaşıyor, uyku kalitesini bozuyor, gündüz işlevselliğini etkiliyor veya uyku sırasında kişinin kendisi ya da çevresi için güvenlik riski oluşturuyorsa profesyonel değerlendirme önemlidir. Bazı nörolojik durumlar da benzer gece davranışları oluşturabilir. Olayların yaklaşık ne zaman ortaya çıktığı ve sabah hatırlanıp hatırlanmadığı ayırıcı değerlendirmede yararlı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "İnsomnia", slug: "insomnia" },
+      { term: "Hipersomnia", slug: "hipersomnia" },
+      { term: "Kabus bozukluğu", slug: "kabus-bozuklugu" },
+      { term: "Melatonin", slug: "melatonin" }
+    ]
+  }],
+
+  ["pozitif-belirti", {
+    shortDefinition: "Pozitif belirti, özellikle psikotik bozukluklarda olağan zihinsel yaşantıya eklenen sanrı, varsanı veya belirgin dezorganize düşünce ve davranış gibi belirtileri tanımlayan klinik bir terimdir.",
+    intro: "Buradaki pozitif sözcüğü iyi veya olumlu anlamına gelmez. Olağan işlevlere yeni bir yaşantı veya davranışın eklenmesini ifade eder ve negatif belirti kavramından bu yönüyle ayrılır.",
+    sections: [
+      section("Pozitif Belirtilere Neler Örnek Verilebilir?", "Gerçeklikle uyumsuz güçlü inanışlar, dışarıda karşılığı bulunmayan algısal yaşantılar, konuşmanın belirgin biçimde dağılması veya davranışların anlaşılması güç hale gelmesi pozitif belirti alanında değerlendirilebilir."),
+      section("Pozitif ve Negatif Belirti Arasındaki Fark Nedir?", "Pozitif belirtilerde olağan yaşantıya eklenen deneyimler ön plandayken negatif belirtilerde motivasyon, duygusal ifade veya sosyal ilgi gibi işlevlerde azalma görülür. Aynı kişide iki belirti grubu farklı oranlarda birlikte bulunabilir."),
+      section("Pozitif Belirti Her Zaman Şizofreni Anlamına mı Gelir?", "Hayır. Psikotik belirtiler farklı psikiyatrik, nörolojik veya tıbbi durumlarda ve bazı madde etkilerinde görülebilir. Bu nedenle tek bir belirti üzerinden belirli bir bozukluk tanısına ulaşılmaz."),
+      section("Yeni Başlayan Belirtilerde Neler Değerlendirilir?", "Belirtilerin başlangıç zamanı, süresi, duygudurumla ilişkisi, madde veya ilaç kullanımı, bilinç ve dikkat düzeyi ile tıbbi belirtiler birlikte incelenir. Özellikle akut bilinç değişikliği eşlik ediyorsa tıbbi nedenlerin dışlanması önem taşır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Negatif belirti", slug: "negatif-belirti" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Dezorganize davranış", slug: "dezorganize-davranis" },
+      { term: "Psikotik özellik", slug: "psikotik-ozellik" }
+    ]
+  }],
+
+  ["psikomotor-ajitasyon", {
+    shortDefinition: "Psikomotor ajitasyon, içsel gerginlik veya huzursuzlukla birlikte amaçsız ya da artmış motor hareketlerin gözlendiği klinik bir belirtiyi ifade eder.",
+    intro: "Psikomotor ajitasyon tek başına bir psikiyatrik tanı değildir. Kaygıdan mani veya psikoza, ilaç ve madde etkilerinden bazı tıbbi durumlara kadar farklı bağlamlarda ortaya çıkabilir.",
+    sections: [
+      section("Psikomotor Ajitasyon Nasıl Görülebilir?", "Kişi yerinde oturmakta zorlanabilir, sürekli dolaşabilir, ellerini veya bacaklarını tekrar tekrar hareket ettirebilir ya da belirgin motor huzursuzluk gösterebilir. Davranış çoğu zaman kişinin hissettiği içsel gerilimle birlikte değerlendirilir."),
+      section("Huzursuz Olmak ile Psikomotor Ajitasyon Aynı Şey midir?", "Her zaman değil. Günlük stres sırasında hareketli veya sabırsız olmak doğal olabilir. Klinik ajitasyonda motor etkinlik daha belirgin, kontrol edilmesi daha güç ve kişinin mevcut ruhsal veya tıbbi durumuyla ilişkili olabilir."),
+      section("Hangi Durumlarda Görülebilir?", "Yoğun anksiyete, manik dönemler, psikotik tablolar, bazı ilaçların yan etkileri, madde etkileri veya yoksunluk durumları motor huzursuzluğa yol açabilir. Altta yatan neden yalnız davranışın görünümüne bakılarak belirlenemez."),
+      section("Ani Ajitasyon Neden Dikkat Gerektirir?", "Yeni başlayan belirgin ajitasyonda kişinin bilinç düzeyi, yönelimi, tıbbi durumu ve güvenliği değerlendirilmelidir. Konfüzyon, ateş, nörolojik belirtiler veya hızlı zihinsel durum değişikliği eşlik ediyorsa acil tıbbi değerlendirme gerekebilir. Belirtinin daha önce bulunup bulunmadığı ve başlangıç hızının bilinmesi de nedenin anlaşılmasına katkı sağlar.")
+    ],
+    relatedTerms: [
+      { term: "Mani", slug: "mani" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["psikososyal-destek", {
+    shortDefinition: "Psikososyal destek, kişinin ruhsal iyilik hali, sosyal ilişkileri, günlük yaşam becerileri ve çevresel kaynaklarını güçlendirmeyi amaçlayan çok yönlü destek yaklaşımlarını ifade eden genel bir kavramdır.",
+    intro: "Psikososyal destek yalnızca konuşmaya dayalı profesyonel görüşmelerden oluşmaz. Aile, sosyal çevre, eğitim, çalışma yaşamı ve toplumsal kaynakların kişinin işlevselliğine katkısı da bu çerçevede ele alınabilir.",
+    sections: [
+      section("Psikososyal Destek Neleri Kapsayabilir?", "Kişinin günlük yaşamını düzenlemesine, sosyal ilişkilerini sürdürmesine, eğitim veya işe katılımını desteklemesine ve mevcut sosyal kaynaklara erişmesine yönelik farklı uygulamalar psikososyal destek kapsamında değerlendirilebilir."),
+      section("Sosyal Destek Neden Önemlidir?", "Güvenilir ilişkiler ve ulaşılabilir destek kaynakları stresli dönemlerde kişinin yalnızlık duygusunu azaltabilir ve günlük sorunlarla baş etmesini kolaylaştırabilir. Destek biçiminin kişinin ihtiyacına ve tercihine uygun olması önemlidir."),
+      section("Psikososyal Destek Psikoterapi ile Aynı Şey midir?", "Hayır. Psikoterapi belirli kuramsal ve klinik yöntemlerle yürütülen yapılandırılmış bir süreçtir. Psikososyal destek ise daha geniştir ve sosyal, çevresel, işlevsel ve ailesel ihtiyaçlara yönelik müdahaleleri de içerebilir."),
+      section("Destek Planı Nasıl Belirlenir?", "Kişinin güçlü yönleri, mevcut sosyal ağı, günlük yaşamda zorlandığı alanlar ve hedefleri birlikte ele alınır. Standart bir destek paketi yerine kişinin yaşam koşullarına uygun ve uygulanabilir kaynakların belirlenmesi daha işlevseldir. Destek gereksinimleri zaman içinde değişebileceği için planın belirli aralıklarla yeniden değerlendirilmesi de yararlı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Rehabilitasyon", slug: "rehabilitasyon" },
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Bağlanma", slug: "baglanma" }
+    ]
+  }],
+
+  ["psikoterapi", {
+    shortDefinition: "Psikoterapi, ruhsal ve kişilerarası güçlükleri anlamaya ve değiştirmeye yönelik, eğitimli bir profesyonel ile belirli bir kuramsal çerçeve içinde yürütülen yapılandırılmış psikolojik çalışma sürecidir.",
+    intro: "Psikoterapi tek bir yöntem değildir. Bilişsel davranışçı, psikodinamik, kişilerarası ve travma odaklı yaklaşımlar gibi farklı modeller bulunur ve uygun yaklaşım kişinin ihtiyaçlarına göre değişebilir.",
+    sections: [
+      section("Psikoterapide Ne Üzerinde Çalışılır?", "Düşünce ve davranış örüntüleri, duyguların düzenlenmesi, kişilerarası ilişkiler, geçmiş deneyimlerin güncel yaşama etkileri veya belirli belirtiler farklı terapi yaklaşımlarında ele alınabilir. Çalışmanın odağı kişinin başvuru nedenine göre belirlenir."),
+      section("Tüm Psikoterapiler Aynı mıdır?", "Hayır. Terapi modellerinin dayandığı kuramsal açıklamalar, kullanılan yöntemler ve seansların yapısı birbirinden farklı olabilir. Bazı yaklaşımlar daha yapılandırılmış ve belirti odaklıyken bazıları ilişki örüntüleri veya daha geniş kişisel deneyimler üzerinde durabilir."),
+      section("Psikoterapi Herkes İçin Aynı Sonucu Verir mi?", "Hayır. Sonuçlar kişinin yaşadığı güçlüğe, kullanılan yönteme, terapötik ilişkiye, hedeflere ve başka birçok etkene göre değişebilir. Hiçbir psikoterapi yöntemi her kişi veya her sorun için aynı düzeyde etkili kabul edilemez."),
+      section("Uygun Yaklaşım Nasıl Belirlenir?", "Başvuru nedeni, belirtilerin niteliği ve süresi, kişinin tercihleri, eşlik eden tıbbi veya ruhsal durumlar ve uygulanacak yöntemin bilimsel dayanağı birlikte değerlendirilir. Gerektiğinde psikoterapi başka sağlık hizmetleriyle birlikte planlanabilir.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" },
+      { term: "EMDR", slug: "emdr" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["psikotik-ozellik", {
+    shortDefinition: "Psikotik özellik, sanrı, varsanı veya gerçekliği değerlendirme yetisinde belirgin bozulma gibi psikotik belirtilerin başka bir klinik tabloya eşlik ettiğini ifade etmek için kullanılan bir terimdir.",
+    intro: "Psikotik özellik tek başına belirli bir tanı adı değildir. Bazı duygudurum bozukluklarında veya başka klinik durumlarda belirtilerin niteliğini daha ayrıntılı tanımlamak amacıyla kullanılabilir.",
+    sections: [
+      section("Psikotik Özellik Ne Anlama Gelir?", "Kişide gerçeklikle uyumsuz güçlü inanışlar veya dış uyaran olmadan algısal yaşantılar gibi belirtiler bulunabilir. Bu belirtilerin hangi hastalık döneminde ve hangi diğer ruhsal belirtilerle birlikte ortaya çıktığı tanısal açıdan önem taşır."),
+      section("Psikotik Özellik ile Psikotik Bozukluk Aynı Şey midir?", "Hayır. Psikotik bozukluklarda psikotik belirtiler klinik tablonun temel bileşenlerinden biridir. Psikotik özellik ifadesi ise örneğin bir duygudurum dönemine psikotik belirtilerin eşlik ettiğini belirtmek için kullanılabilir."),
+      section("Duygudurumla İlişki Neden Önemlidir?", "Psikotik belirtilerin yalnızca belirgin depresif veya manik dönemler sırasında ortaya çıkıp çıkmadığı, duygudurum belirtileri dışında devam edip etmediği ve içeriklerinin duygudurumla ilişkisi klinik değerlendirmede yol gösterici olabilir."),
+      section("Başka Nedenler Neden Araştırılır?", "Madde veya ilaç etkileri, bazı nörolojik hastalıklar, metabolik sorunlar ve akut bilinç değişiklikleri psikotik benzeri belirtiler oluşturabilir. Özellikle yeni başlangıçlı belirtilerde tıbbi ve psikiyatrik değerlendirme birlikte ele alınmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Pozitif belirti", slug: "pozitif-belirti" },
+      { term: "Negatif belirti", slug: "negatif-belirti" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Kısa psikotik bozukluk", slug: "kisa-psikotik-bozukluk" }
+    ]
+  }],
+
+  ["rehabilitasyon", {
+    shortDefinition: "Psikiyatrik rehabilitasyon, ruhsal bozuklukların günlük yaşam üzerindeki etkilerini azaltmaya ve kişinin bağımsızlık, sosyal katılım ve işlevsellik düzeyini güçlendirmeye yönelik yaklaşımların genel adıdır.",
+    intro: "Rehabilitasyon yalnız belirtileri azaltmaya odaklanmaz. Kişinin eğitim, çalışma, sosyal ilişkiler, özbakım ve toplum yaşamına katılım gibi günlük yaşam hedefleri de sürecin temel parçaları olabilir.",
+    sections: [
+      section("Psikiyatrik Rehabilitasyonun Temel Hedefi Nedir?", "Amaç kişinin yalnızca hastalık belirtileriyle değil, yaşam hedefleri ve güçlü yönleriyle birlikte değerlendirilmesidir. Bağımsız yaşam becerilerinin geliştirilmesi, sosyal katılımın artması ve anlamlı günlük rollerin desteklenmesi önemli hedefler arasındadır."),
+      section("Hangi Alanlar Üzerinde Çalışılabilir?", "Günlük yaşam becerileri, sosyal iletişim, eğitim veya işe dönüş, zaman yönetimi, toplumsal kaynaklara erişim ve destek ağı oluşturma gibi alanlar kişinin ihtiyaçlarına göre rehabilitasyon planına dahil edilebilir."),
+      section("Rehabilitasyon Tedavi ile Aynı Şey midir?", "Tam olarak değil. Klinik tedaviler belirtileri ve hastalık sürecini hedefleyebilirken rehabilitasyon kişinin bu belirtilerle birlikte günlük yaşamını nasıl sürdürebildiğine ve işlevselliğini nasıl geliştirebildiğine daha fazla odaklanır. İki yaklaşım birbirini tamamlayabilir."),
+      section("Kişisel Hedefler Neden Önemlidir?", "İşlevsellik yalnız dışarıdan belirlenen ölçütlerle değerlendirilmez. Kişinin hangi yaşam alanlarını geliştirmek istediği, hangi rolleri anlamlı bulduğu ve mevcut güçlü yönleri planın merkezinde yer almalıdır. Bu yaklaşım rehabilitasyonu kişiye özgü hale getirir. Hedeflerin ulaşılabilir basamaklara ayrılması kişinin ilerlemesini daha görünür hale getirebilir.")
+    ],
+    relatedTerms: [
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
   ["labil-duygulanim", {
     shortDefinition: "Labil duygulanım, kişinin dışarıdan gözlenen duygusal ifadesinin kısa süre içinde belirgin ve hızlı değişiklikler göstermesini ifade eden klinik bir terimdir.",
     intro: "Labil duygulanımda duygusal tepki bir konudan diğerine hızla değişebilir veya uyaranın şiddetine göre beklenenden daha oynak görünebilir. Bu gözlem tek başına belirli bir psikiyatrik tanı anlamına gelmez.",
