@@ -136,6 +136,92 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["guvence-arama", {
+    shortDefinition: "Güvence arama, kişinin belirsizlik veya kaygı karşısında başkalarından tekrar tekrar rahatlatıcı bilgi, onay ya da kesinlik istemesiyle görülebilen bir davranış örüntüsüdür.",
+    intro: "Güvence istemek günlük yaşamın doğal bir parçasıdır. Klinik açıdan önemli olan, kişinin kısa süre rahatlamasına rağmen aynı kuşkunun yeniden ortaya çıkması ve güvence aramanın tekrarlayıcı hale gelmesidir.",
+    sections: [
+      section("Güvence Arama Günlük Yaşamda Nasıl Görülebilir?", "Kişi bir kararının doğru olup olmadığını tekrar tekrar sorabilir, bedensel bir belirti hakkında sürekli onay isteyebilir veya sosyal bir olayda yanlış bir şey yapıp yapmadığını başkalarına yeniden kontrol ettirebilir. İlk yanıt rahatlatıcı olsa da belirsizlik kısa süre sonra geri dönebilir."),
+      section("Güvence Arama Neden Kaygıyı Sürdürebilir?", "Güvence kısa vadede kaygıyı azaltabilir ancak kişi kendi belirsizliğini tolere etmek yerine dışarıdan kesinlik aramaya alışabilir. Böylece aynı kuşku tekrar ortaya çıktığında yeniden güvence isteme ihtiyacı doğabilir ve davranış zamanla bir döngü haline gelebilir."),
+      section("Her Onay İsteme Sorun mudur?", "Hayır. Önemli bir karar öncesinde fikir almak veya sağlıkla ilgili bir konuda bilgi istemek olağandır. Sorun, aynı konunun yeterli bilgiye rağmen tekrar tekrar sorulması, kişinin kendi kararlarına güvenememesi veya güvence aramanın günlük yaşamı belirgin biçimde meşgul etmesi durumunda daha görünür hale gelir."),
+      section("Hangi Durumlarla Birlikte Görülebilir?", "Güvence arama anksiyete bozukluklarında, obsesif kompulsif belirtilerde ve sosyal değerlendirilme kaygısında görülebilir. Ancak tek başına belirli bir tanı göstermez. Değerlendirmede davranışın neyi azaltmaya çalıştığı ve kısa ve uzun vadede kişiyi nasıl etkilediği önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" }
+    ]
+  }],
+
+  ["hiperaktivite", {
+    shortDefinition: "Hiperaktivite, kişinin yaşına ve içinde bulunduğu ortama göre beklenenden fazla motor hareketlilik veya yerinde durmakta güçlük göstermesini ifade eden klinik bir belirtidir.",
+    intro: "Hiperaktivite yalnızca hareketli veya enerjik olmak anlamına gelmez. Klinik değerlendirmede davranışın sürekliliği, farklı ortamlarda görülmesi ve kişinin günlük işlevlerini ne ölçüde etkilediği önemlidir.",
+    sections: [
+      section("Hiperaktivite Nasıl Görülebilir?", "Çocuklarda sık sık ayağa kalkma, koşma, tırmanma veya sessiz etkinliklerde zorlanma görülebilir. Yetişkinlerde ise sürekli bir iç huzursuzluk, uzun süre oturamama, sık hareket etme veya sürekli meşgul olma ihtiyacı daha belirgin olabilir."),
+      section("Hareketli Olmak ile Hiperaktivite Aynı Şey midir?", "Hayır. Bazı kişiler doğal olarak daha hareketli ve enerjiktir. Hiperaktivite kavramı, hareketliliğin kişinin yaşına, gelişim düzeyine ve ortamın beklentilerine göre belirgin biçimde fazla olması ve eğitim, iş veya sosyal yaşamda güçlük oluşturması durumunda klinik anlam kazanır."),
+      section("Hiperaktivite DEHB ile Nasıl İlişkilidir?", "Hiperaktivite DEHB'nin temel belirti alanlarından biridir ancak her DEHB'li kişide aynı yoğunlukta bulunmaz. Bazı kişilerde dikkatsizlik daha belirginken bazılarında hiperaktivite ve dürtüsellik ön planda olabilir. Belirtilerin gelişimsel öyküsü ve birden fazla ortamda görülmesi değerlendirmede önemlidir."),
+      section("Başka Durumlarda da Hiperaktivite Görülebilir mi?", "Evet. Yoğun kaygı, bazı duygudurum dönemleri, uyku yetersizliği veya madde ve ilaç etkileri hareketliliği artırabilir. Bu nedenle yalnızca kişinin çok hareketli görünmesine bakılarak tanı konulmaz; belirtilerin başlangıcı, seyri ve eşlik eden diğer özellikler birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "DEHB", slug: "dehb" },
+      { term: "Dikkat eksikliği", slug: "dikkat-eksikligi" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "Dikkat", slug: "dikkat" }
+    ]
+  }],
+
+  ["hipersomnia", {
+    shortDefinition: "Hipersomnia, yeterli veya uzamış gece uykusuna rağmen gündüz aşırı uykululuk, uzun uyku süreleri ya da uyanmakta belirgin güçlük yaşanmasını ifade eden bir uyku belirtisidir.",
+    intro: "Hipersomnia yalnızca ara sıra fazla uyumak anlamına gelmez. Klinik değerlendirmede gündüz uykululuğunun sürekliliği, gece uykusunun niteliği ve kişinin günlük işlevlerini nasıl etkilediği birlikte ele alınır.",
+    sections: [
+      section("Hipersomnia Günlük Yaşamda Nasıl Görülebilir?", "Kişi gece uzun süre uyumasına rağmen sabah uyanmakta zorlanabilir, gün içinde sık sık uyuklayabilir veya dikkatini sürdürmekte güçlük yaşayabilir. Aşırı uykululuk iş, okul, araç kullanma ve sosyal yaşam gibi alanlarda işlev kaybına yol açabilir."),
+      section("Uzun Uyku Süresi Her Zaman Hipersomnia mıdır?", "Hayır. Yoğun fiziksel yorgunluk, uykusuz kalınan günlerin ardından telafi uykusu veya geçici hastalık dönemlerinde daha uzun uyumak olağan olabilir. Hipersomnia değerlendirmesinde durumun tekrarlayıcı olması ve kişinin gündüz işlevselliğini etkilemesi daha önemlidir."),
+      section("Hipersomnia Hangi Durumlarla İlişkili Olabilir?", "Bazı uyku bozuklukları, depresif dönemler, nörolojik veya tıbbi hastalıklar ve kullanılan bazı ilaçlar gündüz aşırı uykululuğa yol açabilir. Uyku apnesi gibi gece uykusunun kalitesini bozan durumlarda kişi yeterince uzun uyuduğunu düşünse bile dinlenmemiş uyanabilir."),
+      section("Değerlendirmede Neler İncelenir?", "Uyku saatleri, gece uyanmaları, horlama veya solunum sorunları, gündüz uyuklama ihtiyacı, kullanılan ilaçlar ve ruhsal belirtiler birlikte değerlendirilir. Gerektiğinde uyku günlüğü veya uyku tıbbına yönelik ileri incelemelerden yararlanılabilir.")
+    ],
+    relatedTerms: [
+      { term: "İnsomnia", slug: "insomnia" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Çökkün duygudurum", slug: "cokkun-duygudurum" },
+      { term: "Duygudurum", slug: "duygudurum" }
+    ]
+  }],
+
+  ["illuzyon", {
+    shortDefinition: "İllüzyon, dış dünyada gerçekten var olan bir uyaranın yanlış veya farklı biçimde algılanmasını ifade eden bir algı olayıdır.",
+    intro: "İllüzyonda ortada gerçek bir uyaran bulunur ancak kişi bu uyaranı farklı yorumlar. Bu yönüyle, dışarıda karşılığı bulunmayan bir algı yaşantısını ifade eden varsanıdan ayrılır.",
+    sections: [
+      section("İllüzyona Basit Bir Örnek Nedir?", "Loş ışıkta asılı bir ceketin kısa süreliğine bir insan silueti sanılması veya uzaktaki bir sesin kişinin adının söylenmesi gibi algılanması illüzyona örnek olabilir. Dikkat yeniden yöneltildiğinde kişi çoğu zaman gerçek uyaranı doğru biçimde fark eder."),
+      section("İllüzyon ile Varsanı Arasındaki Fark Nedir?", "İllüzyonda yanlış algılanan gerçek bir dış uyaran vardır. Varsanıda ise dışarıda karşılık gelen bir uyaran olmaksızın algı yaşantısı ortaya çıkar. Bu ayrım klinik değerlendirmede önemlidir ancak kişinin yaşantısı yalnızca bu tanımlardan biri üzerinden yorumlanmaz."),
+      section("Sağlıklı Kişilerde İllüzyon Olabilir mi?", "Evet. Yorgunluk, karanlık, yoğun beklenti veya dikkatin sınırlı olduğu koşullarda herkes kısa süreli algı yanılmaları yaşayabilir. Tek bir illüzyon yaşantısı psikiyatrik bozukluk anlamına gelmez."),
+      section("Ne Zaman Klinik Önem Taşır?", "Algı yanılmaları sıklaşıyor, bilinç veya dikkat değişikliğiyle birlikte ortaya çıkıyor ya da kişi çevresini değerlendirmekte belirgin güçlük yaşıyorsa tıbbi ve psikiyatrik değerlendirme gerekebilir. Özellikle akut bilinç değişikliklerinde altta yatan tıbbi nedenlerin araştırılması önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Algı", slug: "algi" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Bilinç bulanıklığı", slug: "bilinc-bulanikligi" }
+    ]
+  }],
+
+  ["inkar", {
+    shortDefinition: "İnkar, kişinin duygusal olarak zorlayıcı bir gerçekliğin, durumun veya yaşantının bazı yönlerini kabul etmekte güçlük yaşamasıyla ilişkili bir savunma mekanizmasıdır.",
+    intro: "İnkar bilinçli olarak yalan söylemekle aynı şey değildir. Psikodinamik açıdan kişi, baş etmekte zorlandığı bir gerçeğin anlamını veya etkisini kısmen farkındalık dışında tutabilir.",
+    sections: [
+      section("İnkar Nasıl Görülebilir?", "Kişi açık belirtilere rağmen bir sorunun varlığını küçümseyebilir, olumsuz sonuçları önemsemeyebilir veya yaşanan bir değişikliğin kendisini etkilemediğini söyleyebilir. Bu tutum bazen yoğun kaygı, kayıp veya tehdit karşısında kısa süreli psikolojik korunma sağlayabilir."),
+      section("İnkar ile Bilinçli Reddetme Aynı Şey midir?", "Hayır. Bilinçli reddetmede kişi gerçeği bilmesine rağmen çeşitli nedenlerle kabul etmediğini açıkça seçebilir. Savunma mekanizması olarak inkarda ise kişinin farkındalığı daha karmaşık olabilir ve durumun duygusal anlamı tam olarak işlenmeyebilir."),
+      section("İnkar Her Zaman Zararlı mıdır?", "Kısa süreli inkâr, ağır bir haber veya ani kayıp karşısında kişinin duygusal olarak duruma uyum sağlamasına zaman tanıyabilir. Ancak sorun uzun süre kabul edilmediğinde gerekli yardımın gecikmesine, ilişkisel çatışmalara veya riskli davranışların sürmesine katkıda bulunabilir."),
+      section("Bağımlılıkta İnkar Nasıl Ele Alınır?", "Madde veya davranışsal bağımlılık sorunlarında kişi kullanımın sonuçlarını küçümseyebilir ya da kontrolün tamamen kendisinde olduğunu düşünebilir. Bununla birlikte bu durum kişiyi suçlamak veya iradesiz olarak görmek için kullanılmamalıdır; değerlendirmede motivasyon, farkındalık ve değişime hazır oluş birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Bastırma", slug: "bastirma" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
   ["duygusal-ihmal", {
     shortDefinition: "Duygusal ihmal, özellikle çocukluk döneminde kişinin duygusal ihtiyaçlarının bakım verenler tarafından yeterince fark edilmemesi, karşılanmaması veya düzenli biçimde göz ardı edilmesi durumunu anlatan bir kavramdır.",
     intro: "Duygusal ihmal her zaman açık kötü davranışlarla görünür hale gelmez. Çocuğun duygularının sürekli küçümsenmesi, destek aradığında karşılık bulamaması veya duygusal ihtiyaçlarının fark edilmemesi gibi daha sessiz örüntülerle de ortaya çıkabilir.",
