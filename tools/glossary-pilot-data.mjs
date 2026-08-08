@@ -6562,7 +6562,374 @@ const fifteenthBatchNewTerms = [
   })
 ];
 
+const sixteenthBatchNewTerms = [
+  defineTerm({
+    term: "Sınır",
+    slug: "sinir",
+    shortDefinition: "Sınır, kişinin kendi duygusal, fiziksel ve kişilerarası alanını tanımlamasına ve başkalarıyla ilişkilerinde neyi kabul edip etmeyeceğini belirlemesine yardımcı olan psikolojik kavramdır.",
+    intro: "Sağlıklı sınırlar duvar örmek veya herkesten uzaklaşmak anlamına gelmez. Kişinin ihtiyaçlarını, sorumluluklarını ve kişisel alanını fark ederek ilişkiler içinde esnek ancak anlaşılır bir çerçeve kurabilmesini ifade eder. Sınırların biçimi ilişkiye, kültüre ve yaşam dönemine göre değişebilir.",
+    sections: [
+      section("Kişilerarası Sınırlar Nasıl Görülür?", "Kişi hangi konuları paylaşmak istediğini, ne kadar yakınlığa hazır olduğunu, hangi davranışları kabul etmediğini ve kendi sorumluluğuyla başkasının sorumluluğunu nasıl ayırdığını sınırlar aracılığıyla ifade edebilir. Bunlar sözlü biçimde belirtilebileceği gibi davranışlar ve ilişki düzeni üzerinden de ortaya çıkabilir."),
+      section("Katı ve Geçirgen Sınır Ne Demektir?", "Katı sınırlar kişinin yakınlık kurmasını ve yardım kabul etmesini zorlaştırabilir. Aşırı geçirgen sınırlar ise kişinin istemediği sorumlulukları üstlenmesine veya kendi ihtiyaçlarını sürekli geri plana atmasına yol açabilir. Sağlıklı sınır çoğu zaman duruma göre esneyebilen ancak kişinin temel haklarını koruyan bir dengeyi ifade eder."),
+      section("Sınır Koymak Bencillik midir?", "Hayır. Kendi zamanını, bedenini, özel bilgilerini veya duygusal kapasitesini korumak başkalarını değersizleştirmek anlamına gelmez. Bununla birlikte sınır koyma biçimi önemlidir; tehdit, cezalandırma veya kontrol yerine açık, saygılı ve mümkün olduğunca tutarlı iletişim daha işlevsel olabilir."),
+      section("Klinik Değerlendirmede Neden Önemlidir?", "Kişilerarası sınırlar bağlanma deneyimleri, aile örüntüleri, travma, özsaygı ve iletişim becerileriyle ilişkili olabilir. Tek bir sınır davranışından kişilik tanısı çıkarılmaz. Klinik değerlendirme kişinin farklı ilişkilerdeki örüntülerini, yaşadığı sıkıntıyı ve işlevsellik üzerindeki etkileri birlikte ele alır.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Sosyal iletişim", slug: "sosyal-iletisim" },
+      { term: "Aile terapisi", slug: "aile-terapisi" },
+      { term: "Çift terapisi", slug: "cift-terapisi" }
+    ],
+    seo: {
+      title: "Sınır Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikolojide sınır kavramını kişilerarası alan, yakınlık, sorumluluk ve sağlıklı ilişki örüntüleri üzerinden açıklar.",
+      ogTitle: "Sınır Nedir?",
+      ogDescription: "Kişilerarası sınırların anlamını ve sağlıklı sınır koymayı açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin duygusal, fiziksel ve kişilerarası alanını ve ilişkilerde kabul edilebilir davranışları tanımlamasına yardımcı olan kavram."
+    }
+  }),
+
+  defineTerm({
+    term: "Şema",
+    slug: "sema",
+    shortDefinition: "Şema, kişinin kendisi, diğer insanlar ve dünya hakkında geliştirdiği, yeni deneyimleri yorumlama biçimini etkileyebilen köklü bilişsel ve duygusal örüntüdür.",
+    intro: "Şemalar yaşam boyunca edinilen deneyimlerden etkilenebilir ve bilgiyi hızlı biçimde anlamlandırmaya yardımcı olabilir. Her şema sorunlu değildir. Klinik açıdan önem, katı ve tekrar eden şemaların kişinin ilişkilerini, duygularını veya davranışlarını belirgin biçimde zorlaştırdığı durumlarda artar.",
+    sections: [
+      section("Şemalar Nasıl Oluşabilir?", "Erken ilişkiler, aile ortamı, sosyal deneyimler, kültür ve kişinin mizacı şemaların gelişimine katkıda bulunabilir. Örneğin kişi tekrar tekrar eleştirildiği ortamlarda kendisini yetersiz görmeye daha yatkın bir örüntü geliştirebilir. Ancak erken yaşantılar kişinin geleceğini tek başına ve değişmez biçimde belirlemez."),
+      section("Şema ile Otomatik Düşünce Aynı mıdır?", "Hayır. Otomatik düşünceler belirli bir durumda hızla ortaya çıkan daha yüzeysel bilişlerdir. Şemalar ise bu düşünceleri etkileyebilen daha genel ve köklü anlamlandırma örüntüleridir. Aynı şema farklı durumlarda farklı otomatik düşüncelerin ortaya çıkmasına katkıda bulunabilir."),
+      section("Şema Her Zaman Doğru mudur?", "Şemalar kişiye son derece gerçekçi gelebilir ancak geçmiş deneyimlerden türeyen seçici yorumları sürdürebilir. Kişi şemayla uyumlu bilgileri daha kolay fark edip aksi örnekleri gözden kaçırabilir. Bu nedenle klinik çalışmada şemanın ne kadar esnek olduğu ve mevcut kanıtlarla ne ölçüde uyuştuğu incelenebilir."),
+      section("Şemalar Değişebilir mi?", "Evet. Yeni ilişkiler, farklı yaşam deneyimleri, farkındalık ve psikoterapi süreçleri şemaların daha esnek hale gelmesine katkıda bulunabilir. Amaç geçmiş deneyimleri yok saymak değil, kişinin eski örüntülerin bugünkü yaşamını otomatik biçimde yönetip yönetmediğini fark edebilmesidir.")
+    ],
+    relatedTerms: [
+      { term: "Şema terapi", slug: "sema-terapi" },
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Benlik", slug: "benlik" }
+    ],
+    seo: {
+      title: "Şema Nedir? | Psikiyatri Sözlüğü",
+      description: "Şema kavramını kişinin kendisi ve dünya hakkındaki köklü bilişsel-duygusal örüntüler ve otomatik düşüncelerle ilişkisi üzerinden açıklar.",
+      ogTitle: "Şema Nedir?",
+      ogDescription: "Psikolojide şemaların nasıl geliştiğini ve değişebildiğini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin kendisi, başkaları ve dünya hakkındaki köklü bilişsel ve duygusal anlamlandırma örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Terk edilme şeması",
+    slug: "terk-edilme-semasi",
+    shortDefinition: "Terk edilme şeması, yakın ilişkilerin sürdürülemeyeceği, önemli kişilerin uzaklaşacağı veya ihtiyaç duyulduğunda erişilebilir olmayacağı beklentisinin tekrar eden biçimde yaşanmasıdır.",
+    intro: "Şema terapi yaklaşımında tanımlanan bu örüntü psikiyatrik tanı değildir. Kişinin geçmiş ilişkilerinden, kayıp deneyimlerinden veya bakım verenlerle yaşadığı tutarsızlıklardan etkilenebilir. Bununla birlikte benzer kaygılar farklı nedenlerle de ortaya çıkabilir ve tek bir davranış üzerinden şema sonucu çıkarılmaz.",
+    sections: [
+      section("Terk Edilme Şeması Nasıl Görülebilir?", "Kişi yakın ilişkilerde küçük uzaklaşmaları bile ilişkinin sona ereceğinin işareti gibi yorumlayabilir, sık güvence arayabilir veya karşı tarafın ilgisindeki değişimlere yoğun duyarlılık gösterebilir. Bazı kişiler ise terk edilmekten korunmak için yakınlıktan kaçınabilir. Aynı şema farklı kişilerde farklı davranışlarla görülebilir."),
+      section("Bağlanma Kaygısıyla Aynı mıdır?", "Kavramlar ilişkili olsa da aynı teorik yapıyı ifade etmez. Bağlanma kuramı yakın ilişkilerde güvenlik ve erişilebilirlik beklentilerine odaklanırken şema terapi daha geniş bilişsel ve duygusal örüntüler tanımlar. Klinik değerlendirmede bu kavramlar otomatik olarak birbirinin yerine kullanılmaz."),
+      section("Her Ayrılık Korkusu Şema mıdır?", "Hayır. Önem verilen bir ilişkiyi kaybetme kaygısı birçok kişide ve bazı yaşam dönemlerinde anlaşılır bir tepki olabilir. Şema kavramı daha çok farklı ilişkilerde tekrar eden, yoğun ve kişinin yorumlarını belirgin biçimde yönlendiren bir örüntüyü anlatır."),
+      section("Bu Örüntü Değişebilir mi?", "Kişinin tetikleyicilerini fark etmesi, geçmiş ve bugünkü ilişkileri birbirinden ayırabilmesi ve daha güvenli ilişki deneyimleri geliştirmesi zaman içinde değişime katkıda bulunabilir. Psikoterapide amaç kişinin tüm yakınlık ihtiyacını ortadan kaldırmak değil, beklentilerini daha esnek ve gerçekçi biçimde değerlendirebilmesini desteklemektir.")
+    ],
+    relatedTerms: [
+      { term: "Şema", slug: "sema" },
+      { term: "Şema terapi", slug: "sema-terapi" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Güvence arama", slug: "guvence-arama" }
+    ],
+    seo: {
+      title: "Terk Edilme Şeması Nedir? | Psikiyatri Sözlüğü",
+      description: "Terk edilme şemasını yakın ilişkilerin kaybedileceği beklentisi, bağlanma ve güvence arama örüntüleriyle birlikte açıklar.",
+      ogTitle: "Terk Edilme Şeması Nedir?",
+      ogDescription: "Terk edilme şemasının ilişkilerde nasıl görülebileceğini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Yakın ilişkilerin sürdürülemeyeceği veya önemli kişilerin erişilebilir olmayacağı yönündeki tekrar eden beklenti örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Yetersiz özdenetim",
+    slug: "yetersiz-ozdenetim",
+    shortDefinition: "Yetersiz özdenetim, dürtüleri erteleme, rahatsızlığa dayanma veya uzun vadeli hedefler doğrultusunda davranışı düzenleme alanlarında tekrar eden güçlükleri tanımlayan şema kavramıdır.",
+    intro: "Şema terapi yaklaşımındaki yetersiz özdenetim kavramı tek başına psikiyatrik tanı değildir. Kişi bazı alanlarda oldukça disiplinli iken başka alanlarda dürtülerini düzenlemekte zorlanabilir. Davranışın anlamı yaş, gelişim dönemi, DEHB gibi klinik durumlar, çevresel koşullar ve kişinin yaşam öyküsüyle birlikte değerlendirilmelidir.",
+    sections: [
+      section("Yetersiz Özdenetim Nasıl Görülebilir?", "Kişi sıkıcı veya zor görevleri sürdürmekte, anlık isteği ertelemekte, öfke veya hayal kırıklığına tolerans göstermekte güçlük yaşayabilir. Kısa vadeli rahatlama sağlayan davranışlar uzun vadeli hedeflerin önüne geçebilir. Bu örüntünün sıklığı ve sonuçları kişiden kişiye değişir."),
+      section("Dürtüsellik ile Aynı Şey midir?", "Tam olarak değil. Dürtüsellik sonuçları yeterince değerlendirmeden hızlı davranma eğilimini anlatır. Yetersiz özdenetim ise daha geniş biçimde rahatsızlığa tolerans, görev sürdürme ve istekleri erteleme gibi alanları da kapsayabilir. İki kavram birbiriyle ilişkili olsa da otomatik olarak eş anlamlı değildir."),
+      section("İrade Zayıflığı Olarak Görülmeli midir?", "Hayır. Özdenetim biyolojik özellikler, dikkat süreçleri, duygular, öğrenilmiş alışkanlıklar, uyku, stres ve çevresel koşullardan etkilenebilir. Davranışları yalnız ahlaki veya karakter temelli bir açıklamayla değerlendirmek sorunun gerçek nedenlerini gözden kaçırabilir."),
+      section("Değerlendirmede Nelere Bakılır?", "Güçlüğün hangi durumlarda ortaya çıktığı, ne kadar süredir devam ettiği, kişinin okul, iş, ilişkiler veya sağlık davranışlarını nasıl etkilediği incelenir. Çocuklukta başlayan yaygın dürtüsellik veya dikkat sorunlarında gelişimsel ve nörogelişimsel etkenlerin ayrıca değerlendirilmesi önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Şema", slug: "sema" },
+      { term: "Dürtüsellik", slug: "durtusellik" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "DEHB", slug: "dehb" }
+    ],
+    seo: {
+      title: "Yetersiz Özdenetim Nedir? | Psikiyatri Sözlüğü",
+      description: "Yetersiz özdenetim şemasını dürtüsellik, görev sürdürme ve rahatsızlığa tolerans güçlükleri üzerinden açıklar.",
+      ogTitle: "Yetersiz Özdenetim Nedir?",
+      ogDescription: "Yetersiz özdenetim kavramını klinik ve gelişimsel bağlamda açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dürtüleri erteleme, rahatsızlığa dayanma ve uzun vadeli hedeflere göre davranışı düzenlemede tekrar eden güçlük örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Çocuk psikiyatrisi",
+    slug: "cocuk-psikiyatrisi",
+    shortDefinition: "Çocuk psikiyatrisi, çocuk ve ergenlerin duygusal, davranışsal, gelişimsel ve psikiyatrik sorunlarının değerlendirilmesi ve tedavisiyle ilgilenen tıp uzmanlık alanıdır.",
+    intro: "Çocukluk ve ergenlik döneminde ruhsal belirtiler yetişkinlerden farklı biçimlerde ortaya çıkabilir. Değerlendirme yalnız çocuğun belirtilerine değil gelişim düzeyine, aile ve okul ortamına, akran ilişkilerine ve bedensel sağlığa da odaklanır. Çocuk psikiyatrisi bu çoklu bağlamı birlikte ele alır.",
+    sections: [
+      section("Çocuk Psikiyatrisi Hangi Durumlarla İlgilenir?", "DEHB, otizm spektrum bozukluğu, anksiyete, depresyon, davranış sorunları, tik bozuklukları, yeme ve uyku sorunları gibi çok farklı alanlar değerlendirilebilir. Her davranış veya gelişimsel farklılık psikiyatrik bozukluk anlamına gelmez. Yaş, gelişim basamağı ve işlevsellik birlikte değerlendirilir."),
+      section("Değerlendirme Yalnız Çocukla mı Yapılır?", "Genellikle hayır. Çocuğun yaşına ve başvuru nedenine göre ebeveynlerden, öğretmenlerden veya başka bakım verenlerden bilgi alınabilir. Çocuğun kendi anlatımı da gelişim düzeyine uygun biçimde önemlidir. Farklı kaynaklardan gelen bilgilerin birbirinden farklı olması sık görülebilir ve klinik değerlendirmede birlikte ele alınır."),
+      section("Gelişimsel Dönem Neden Önemlidir?", "Aynı davranış farklı yaşlarda farklı anlam taşıyabilir. Küçük çocuklarda gelişimin doğal parçası olabilen bazı korkular daha ileri yaşta belirgin işlev kaybına yol açıyorsa farklı değerlendirilebilir. Dil, bilişsel gelişim, okul becerileri ve sosyal gelişim klinik yorumun temel parçalarıdır."),
+      section("Tedavi Nasıl Planlanır?", "Tedavi planı çocuğun gereksinimine göre psikoeğitim, aile çalışmaları, okul düzenlemeleri, psikoterapi yaklaşımları veya gerekli durumlarda ilaç tedavisini içerebilir. İlaç başlama veya doz düzenleme kararları çocuk ve ergen psikiyatrisi uzmanı tarafından bireysel değerlendirmeyle yapılır.")
+    ],
+    relatedTerms: [
+      { term: "Ergenlik", slug: "ergenlik" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Otizm spektrum bozukluğu", slug: "otizm-spektrum-bozuklugu" },
+      { term: "Akran ilişkileri", slug: "akran-iliskileri" }
+    ],
+    seo: {
+      title: "Çocuk Psikiyatrisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Çocuk psikiyatrisinin gelişimsel, duygusal ve davranışsal sorunları aile, okul ve gelişim bağlamında nasıl değerlendirdiğini açıklar.",
+      ogTitle: "Çocuk Psikiyatrisi Nedir?",
+      ogDescription: "Çocuk ve ergen ruh sağlığının değerlendirme çerçevesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuk ve ergenlerin psikiyatrik, duygusal, davranışsal ve gelişimsel sorunlarıyla ilgilenen tıp uzmanlık alanı."
+    }
+  }),
+
+  defineTerm({
+    term: "Tik bozukluğu",
+    slug: "tik-bozuklugu",
+    shortDefinition: "Tik bozukluğu, ani, hızlı, tekrarlayıcı motor hareketler veya seslerin belirli süre ve örüntülerle ortaya çıktığı nörogelişimsel bozukluklar grubunu ifade eder.",
+    intro: "Tikler göz kırpma, yüz hareketleri, baş veya omuz hareketleri gibi motor biçimde ya da boğaz temizleme ve çeşitli sesler çıkarma şeklinde görülebilir. Tiklerin türü ve yoğunluğu zaman içinde değişebilir. Her geçici tik mutlaka kalıcı bir tik bozukluğu anlamına gelmez.",
+    sections: [
+      section("Tikler Nasıl Görülebilir?", "Motor tikler göz kırpma, yüz buruşturma, omuz silkme veya ani baş hareketleri biçiminde olabilir. Vokal tikler boğaz temizleme, öksürür gibi ses çıkarma veya başka kısa sesleri içerebilir. Karmaşık tikler daha uzun hareket veya ses dizilerinden oluşabilir."),
+      section("Tikler İstemli midir?", "Tikler tamamen istemli davranışlar değildir. Bazı kişiler tik öncesinde artan bir içsel gerilim veya dürtü hissedebilir ve tiki kısa süre baskılayabilir. Ancak uzun süre baskılama zorlayıcı olabilir ve sonrasında tiklerde artış yaşanabilir. Çocuğu tiki nedeniyle azarlamak veya cezalandırmak uygun değildir."),
+      section("Stres Tikleri Etkiler mi?", "Stres, yorgunluk, heyecan ve dikkat odağının tiklere yönelmesi bazı kişilerde tik sıklığını artırabilir. Bununla birlikte tiklerin nedeni yalnız psikolojik stres değildir. Nörogelişimsel ve biyolojik etkenler önemlidir ve belirtiler doğal olarak dönemsel dalgalanmalar gösterebilir."),
+      section("Ne Zaman Değerlendirme Gerekir?", "Tikler çocuğun okul yaşamını, sosyal ilişkilerini veya günlük işlevlerini etkiliyorsa ya da eşlik eden dikkat, obsesif kompulsif belirtiler veya başka davranış sorunları bulunuyorsa değerlendirme yararlı olabilir. Tedavi gereksinimi yalnız tiklerin varlığına değil yarattığı sıkıntı ve işlev kaybına göre belirlenir.")
+    ],
+    relatedTerms: [
+      { term: "Tourette sendromu", slug: "tourette-sendromu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Çocuk psikiyatrisi", slug: "cocuk-psikiyatrisi" },
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" }
+    ],
+    seo: {
+      title: "Tik Bozukluğu Nedir? | Psikiyatri Sözlüğü",
+      description: "Tik bozukluklarında motor ve vokal tiklerin nasıl görüldüğünü, istemlilikten farkını ve değerlendirme gerektiren durumları açıklar.",
+      ogTitle: "Tik Bozukluğu Nedir?",
+      ogDescription: "Motor ve vokal tikleri gelişimsel bağlamda açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ani ve tekrarlayıcı motor hareketler veya seslerle seyreden nörogelişimsel bozukluklar grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Tourette sendromu",
+    slug: "tourette-sendromu",
+    shortDefinition: "Tourette sendromu, çocukluk döneminde başlayan, birden fazla motor tik ve en az bir vokal tik öyküsüyle seyreden nörogelişimsel bir tik bozukluğudur.",
+    intro: "Tourette sendromunda tiklerin türü, yeri ve yoğunluğu zaman içinde değişebilir. Toplumdaki yaygın inanışın aksine uygunsuz sözcükler söyleme şeklindeki koprolali her kişide görülmez. Tanı ve tedavi değerlendirmesi tiklerin süresi, başlangıç yaşı ve kişinin işlevselliği dikkate alınarak yapılır.",
+    sections: [
+      section("Tourette Sendromunda Hangi Tikler Görülür?", "Göz kırpma, yüz hareketleri, omuz silkme veya baş hareketleri gibi motor tikler ile boğaz temizleme, kısa sesler veya sözcükler gibi vokal tikler görülebilir. Tiklerin hepsinin aynı anda bulunması gerekmez; belirtiler zaman içinde değişebilir ve dönem dönem azalabilir."),
+      section("Koprolali Herkeste Olur mu?", "Hayır. İstem dışı uygunsuz veya küfürlü sözcükler söyleme anlamındaki koprolali Tourette sendromunun zorunlu belirtisi değildir ve vakaların yalnız bir bölümünde görülür. Medyada bu özelliğin aşırı vurgulanması hastalıkla ilgili yanlış algı ve stigmayı artırabilir."),
+      section("Başka Durumlar Eşlik Edebilir mi?", "DEHB ve obsesif kompulsif belirtiler Tourette sendromuyla birlikte görülebilir. Bazı kişilerde anksiyete, öğrenme sorunları veya sosyal güçlükler de eşlik edebilir. Bu nedenle değerlendirme yalnız görünen tiklerin sayılmasına değil kişinin genel gelişimi ve günlük işlevlerine odaklanır."),
+      section("Tedavi Her Zaman Gerekir mi?", "Hayır. Hafif ve kişiyi rahatsız etmeyen tiklerde bilgilendirme ve izlem yeterli olabilir. Belirgin sıkıntı veya işlev kaybı varsa davranışsal yaklaşımlar ve bazı durumlarda ilaç tedavileri değerlendirilebilir. Tedavi hedefi tikleri mutlaka tamamen ortadan kaldırmak değil yaşam üzerindeki yükü azaltmaktır.")
+    ],
+    relatedTerms: [
+      { term: "Tik bozukluğu", slug: "tik-bozuklugu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" },
+      { term: "Stigma", slug: "stigma" }
+    ],
+    seo: {
+      title: "Tourette Sendromu Nedir? | Psikiyatri Sözlüğü",
+      description: "Tourette sendromunda motor ve vokal tikleri, koprolali hakkındaki yanlış inanışları ve eşlik eden durumları açıklar.",
+      ogTitle: "Tourette Sendromu Nedir?",
+      ogDescription: "Tourette sendromunu tikler ve eşlik eden nörogelişimsel özelliklerle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuklukta başlayan, çoklu motor tikler ve vokal tik öyküsüyle seyreden nörogelişimsel tik bozukluğu."
+    }
+  }),
+
+  defineTerm({
+    term: "Öğrenme güçlüğü",
+    slug: "ogrenme-guclugu",
+    shortDefinition: "Öğrenme güçlüğü, kişinin okuma, yazma, matematik veya başka akademik becerileri öğrenirken yaşadığı zorlukları tanımlayan geniş ve tanısal olmayan bir ifadedir.",
+    intro: "Öğrenme güçlüğü tek başına özgül öğrenme bozukluğu tanısı anlamına gelmez. Eğitim fırsatları, öğretim yöntemi, dikkat sorunları, dil gelişimi, görme veya işitme sorunları, duygusal durum ve başka etkenler akademik performansı etkileyebilir. Bu nedenle nedenin ayrıntılı değerlendirilmesi gerekir.",
+    sections: [
+      section("Öğrenme Güçlüğü Hangi Alanlarda Görülebilir?", "Çocuk okuma hızında, okuduğunu anlamada, yazımda, yazılı anlatımda, sayı kavramlarında veya matematik işlemlerinde zorlanabilir. Bazı çocuklarda güçlük tek bir alanda belirginken bazılarında birden fazla akademik beceri etkilenebilir. Sorunun ders başarısındaki genel düşüklükten nasıl ayrıldığı önemlidir."),
+      section("Düşük Zekâ Anlamına Gelir mi?", "Hayır. Akademik bir alanda güçlük yaşamak kişinin genel zekâ düzeyinin düşük olduğunu göstermez. Özgül öğrenme sorunları normal veya yüksek bilişsel kapasiteye sahip kişilerde de görülebilir. Değerlendirmede güçlü ve zorlanılan alanların birlikte belirlenmesi daha yararlıdır."),
+      section("DEHB ile Karışabilir mi?", "Evet. Dikkati sürdürmekte güçlük, ödevleri tamamlayamama veya sınıfta yönergeleri kaçırma akademik performansı etkileyebilir. DEHB ile özgül öğrenme bozukluğu birlikte de görülebilir. Bu nedenle yalnız okul notlarına bakılarak hangi durumun bulunduğu kesinleştirilemez."),
+      section("Değerlendirme Nasıl Yapılır?", "Gelişimsel ve eğitim öyküsü, öğretmen gözlemleri, akademik performans ve gerektiğinde standart testler birlikte ele alınabilir. Görme, işitme veya dil sorunları gibi başka nedenlerin dışlanması da önemlidir. Destek planı çocuğun güçlü yönlerine ve zorlandığı akademik alanlara göre bireyselleştirilir.")
+    ],
+    relatedTerms: [
+      { term: "Özgül öğrenme bozukluğu", slug: "ozgul-ogrenme-bozuklugu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Çocuk psikiyatrisi", slug: "cocuk-psikiyatrisi" }
+    ],
+    seo: {
+      title: "Öğrenme Güçlüğü Nedir? | Psikiyatri Sözlüğü",
+      description: "Öğrenme güçlüğünü tanısal olmayan geniş bir kavram olarak açıklar ve özgül öğrenme bozukluğu ile DEHB'den farkını ele alır.",
+      ogTitle: "Öğrenme Güçlüğü Nedir?",
+      ogDescription: "Akademik öğrenme güçlüklerinin değerlendirme çerçevesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Okuma, yazma, matematik veya başka akademik becerileri öğrenirken yaşanan zorlukları tanımlayan geniş ifade."
+    }
+  }),
+
+  defineTerm({
+    term: "Özgül öğrenme bozukluğu",
+    slug: "ozgul-ogrenme-bozuklugu",
+    shortDefinition: "Özgül öğrenme bozukluğu, uygun eğitim fırsatlarına rağmen okuma, yazılı anlatım veya matematik becerilerinde yaşa ve gelişim düzeyine göre kalıcı güçlüklerle seyreden nörogelişimsel bozukluktur.",
+    intro: "Bu tanı yalnız düşük okul notlarına veya tek bir test sonucuna dayanmaz. Akademik güçlüğün sürekliliği, eğitim öyküsü, kişinin bilişsel ve gelişimsel özellikleri ve başka olası nedenler birlikte değerlendirilir. Güçlük kişinin zekâsının düşük olduğu anlamına gelmez.",
+    sections: [
+      section("Hangi Akademik Alanlar Etkilenebilir?", "Okuma doğruluğu ve akıcılığı, okuduğunu anlama, yazım, yazılı anlatım, sayı kavramı, matematik işlemleri veya matematiksel akıl yürütme etkilenebilir. Günlük dilde disleksi özellikle okuma alanındaki güçlükler için kullanılabilir ancak klinik sınıflandırma daha geniş bir değerlendirme yapar."),
+      section("Tanı Nasıl Değerlendirilir?", "Sorunun okul çağında başlaması, uygun destek ve öğretime rağmen sürmesi ve akademik işlev üzerinde anlamlı etkisinin bulunması önemlidir. Standart akademik testler katkı sağlayabilir ancak sonuçlar gelişimsel öykü ve eğitim koşullarıyla birlikte değerlendirilir."),
+      section("DEHB ile Birlikte Görülebilir mi?", "Evet. DEHB ve özgül öğrenme bozukluğu aynı kişide birlikte bulunabilir. Dikkat güçlüğü akademik performansı kötüleştirebilirken öğrenme bozukluğu da derslerden kaçınmaya veya motivasyon kaybına yol açabilir. Bu nedenle iki durumun belirtileri ayrıntılı biçimde ayrıştırılmalıdır."),
+      section("Destek Neleri İçerebilir?", "Eğitimsel düzenlemeler, bireyselleştirilmiş öğretim yöntemleri, beceriye özgü destek ve gerektiğinde okul ile aile arasında iş birliği yararlı olabilir. Tedavi veya destek planı çocuğun zorlandığı alanlar kadar güçlü olduğu alanları da dikkate almalıdır. Tek bir yöntem herkes için uygun değildir.")
+    ],
+    relatedTerms: [
+      { term: "Öğrenme güçlüğü", slug: "ogrenme-guclugu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Çocuk psikiyatrisi", slug: "cocuk-psikiyatrisi" },
+      { term: "Dikkat eksikliği", slug: "dikkat-eksikligi" }
+    ],
+    seo: {
+      title: "Özgül Öğrenme Bozukluğu Nedir? | Psikiyatri Sözlüğü",
+      description: "Özgül öğrenme bozukluğunu okuma, yazma ve matematik alanlarındaki kalıcı güçlükler ve DEHB ile ilişkisi üzerinden açıklar.",
+      ogTitle: "Özgül Öğrenme Bozukluğu Nedir?",
+      ogDescription: "Özgül öğrenme bozukluğunun değerlendirme ve destek çerçevesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Okuma, yazılı anlatım veya matematik becerilerinde kalıcı akademik güçlüklerle seyreden nörogelişimsel bozukluk."
+    }
+  }),
+
+  defineTerm({
+    term: "Toplum ruh sağlığı",
+    slug: "toplum-ruh-sagligi",
+    shortDefinition: "Toplum ruh sağlığı, ruhsal sorunların yalnız bireysel tedavisine değil önleme, erken tanı, rehabilitasyon, sosyal katılım ve hizmetlere erişim gibi toplum düzeyindeki yaklaşımlara odaklanan alandır.",
+    intro: "Ruh sağlığını etkileyen koşullar yalnız kişinin biyolojisi veya bireysel davranışlarıyla sınırlı değildir. Yoksulluk, barınma, eğitim, işsizlik, ayrımcılık, sosyal destek ve sağlık hizmetlerine erişim gibi toplumsal etkenler de önemlidir. Toplum ruh sağlığı bu geniş çerçevede koruyucu ve destekleyici sistemler geliştirmeyi hedefler.",
+    sections: [
+      section("Toplum Ruh Sağlığının Amaçları Nelerdir?", "Ruhsal hastalıkların ortaya çıkmasını azaltmak, sorunları erken fark etmek, tedaviye erişimi kolaylaştırmak ve ruhsal hastalık yaşayan kişilerin toplum içinde işlevselliğini desteklemek temel hedefler arasındadır. Hizmetlerin yalnız hastane merkezli değil kişinin yaşadığı çevreye yakın biçimde sunulması da önemli bir ilkedir."),
+      section("Koruyucu Ruh Sağlığı ile İlişkisi Nedir?", "Koruyucu ruh sağlığı risk etkenlerini azaltma ve dayanıklılığı güçlendirme çalışmalarını içerir. Okullarda zorbalığı önleme, intihar riskini azaltmaya yönelik halk sağlığı programları, ebeveyn destekleri ve stigma karşıtı çalışmalar toplum ruh sağlığı yaklaşımının parçaları olabilir."),
+      section("Rehabilitasyon Neden Önemlidir?", "Belirtilerin azalması her zaman kişinin eğitim, iş, sosyal ilişkiler ve bağımsız yaşam alanlarında eski işlevine döndüğü anlamına gelmez. Psikososyal rehabilitasyon kişinin günlük yaşam becerilerini, sosyal katılımını ve yaşam kalitesini desteklemeye çalışır."),
+      section("Stigma Hizmete Erişimi Etkiler mi?", "Evet. Ruhsal hastalıkların zayıflık veya tehlikelilikle eş tutulması kişilerin yardım aramasını geciktirebilir ve toplumsal dışlanmaya katkıda bulunabilir. Doğru bilgilendirme, ayrımcı olmayan dil ve hak temelli hizmetler toplum ruh sağlığının önemli bileşenleridir.")
+    ],
+    relatedTerms: [
+      { term: "Koruyucu ruh sağlığı", slug: "koruyucu-ruh-sagligi" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "Rehabilitasyon", slug: "rehabilitasyon" },
+      { term: "Stigma", slug: "stigma" }
+    ],
+    seo: {
+      title: "Toplum Ruh Sağlığı Nedir? | Psikiyatri Sözlüğü",
+      description: "Toplum ruh sağlığını koruyucu hizmetler, rehabilitasyon, sosyal etkenler ve ruh sağlığı hizmetlerine erişim üzerinden açıklar.",
+      ogTitle: "Toplum Ruh Sağlığı Nedir?",
+      ogDescription: "Toplum temelli ruh sağlığı yaklaşımının temel hedeflerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruh sağlığını önleme, erken müdahale, rehabilitasyon ve hizmetlere erişim açısından toplum düzeyinde ele alan alan."
+    }
+  }),
+
+  defineTerm({
+    term: "Zorunlu yatış",
+    slug: "zorunlu-yatis",
+    shortDefinition: "Zorunlu yatış, kişinin rızası olmaksızın psikiyatrik bir kuruma yatırılmasının belirli klinik, güvenlik ve hukuki koşullar altında değerlendirildiği uygulamayı ifade eder.",
+    intro: "Zorunlu yatış yalnız bir psikiyatrik tanının varlığına dayanmaz. Kişinin karar verme kapasitesi, kendisi veya başkaları açısından ciddi risk, tedavi gereksinimi, daha az kısıtlayıcı seçeneklerin yeterliliği ve yürürlükteki mevzuat birlikte değerlendirilir. Hukuki ölçütler ülkeye göre değişebilir.",
+    sections: [
+      section("Zorunlu Yatış Ne Zaman Gündeme Gelebilir?", "Ağır ruhsal belirtiler nedeniyle kişinin güvenliğinin ciddi biçimde tehlikeye girdiği veya gerekli değerlendirme ve tedavinin başka şekilde sürdürülemediği bazı durumlarda gündeme gelebilir. Ancak risk değerlendirmesi kişiye özel yapılır ve yalnız tanı adına bakılarak karar verilmez."),
+      section("Kişinin Hakları Devam Eder mi?", "Evet. Zorunlu yatış kişinin insan haklarını, saygınlığını, mahremiyetini ve bilgilendirilme hakkını ortadan kaldırmaz. Kullanılan kısıtlamaların gerekli ve orantılı olması, düzenli olarak yeniden değerlendirilmesi ve mümkün olduğunda kişinin kararlara katılımının desteklenmesi önemlidir."),
+      section("Hukuki Kurallar Her Yerde Aynı mıdır?", "Hayır. Yetkili makamlar, değerlendirme süreçleri, süreler, itiraz yolları ve resmi prosedürler ülkeye ve mevzuata göre değişebilir. Bu nedenle genel psikiyatrik bilgi kişisel hukuki danışmanlık veya belirli bir ülkenin güncel mevzuatının yerine geçmez."),
+      section("Amaç Ceza Vermek midir?", "Hayır. Zorunlu yatış cezalandırma yöntemi değildir. Temel amaç ciddi risk altında olan kişiye güvenli değerlendirme ve gerekli tedavinin sağlanmasıdır. Klinik durum iyileştikçe ve güvenlik koşulları değiştikçe yatış gereksiniminin yeniden değerlendirilmesi gerekir.")
+    ],
+    relatedTerms: [
+      { term: "Psikiyatrik yatış", slug: "psikiyatrik-yatis" },
+      { term: "Acil psikiyatri", slug: "acil-psikiyatri" },
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" },
+      { term: "Hasta hakları", slug: "hasta-haklari" }
+    ],
+    seo: {
+      title: "Zorunlu Yatış Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatride zorunlu yatışın klinik, güvenlik ve hukuki çerçevesini ve kişinin haklarının devam ettiğini açıklar.",
+      ogTitle: "Zorunlu Yatış Nedir?",
+      ogDescription: "Zorunlu yatışı haklar ve güvenlik çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin rızası olmadan psikiyatrik kuruma yatışının belirli klinik ve hukuki koşullarda değerlendirilmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Taburculuk planı",
+    slug: "taburculuk-plani",
+    shortDefinition: "Taburculuk planı, psikiyatrik yatış sonrasında kişinin tedavisinin, güvenliğinin ve toplum içindeki bakımının kesintisiz sürdürülebilmesi için oluşturulan yapılandırılmış geçiş planıdır.",
+    intro: "Taburculuk yalnız hastaneden çıkış tarihinin belirlenmesi değildir. İlaçların nasıl sürdürüleceği, kontrol randevuları, psikososyal gereksinimler, aile veya sosyal destek, erken uyarı belirtileri ve gerektiğinde kriz durumunda hangi hizmetlere başvurulacağı önceden planlanabilir. Plan kişinin gereksinimlerine göre bireyselleştirilir.",
+    sections: [
+      section("Taburculuk Planında Neler Yer Alabilir?", "Kontrol randevuları, mevcut tedavilerin nasıl sürdürüleceği, reçeteler, laboratuvar veya başka izlem gereksinimleri, psikoterapi veya rehabilitasyon hizmetleri ve sosyal destek kaynakları planlanabilir. Kişinin barınma, ulaşım veya bakım desteği gibi pratik ihtiyaçları da klinik devamlılığı etkileyebilir."),
+      section("Nüks Önleme Neden Önemlidir?", "Bazı ruhsal bozukluklarda belirtilerin yeniden ortaya çıkması mümkündür. Kişinin erken uyarı işaretlerini tanıması, uyku veya madde kullanımı gibi risk alanlarını fark etmesi ve kiminle iletişime geçeceğini bilmesi tedavi sürekliliğine katkıda bulunabilir."),
+      section("Aile veya Yakınlar Sürece Katılabilir mi?", "Kişinin onayı ve mahremiyet sınırları gözetilerek yakınların desteği yararlı olabilir. Özellikle ilaç takibi, randevular, günlük yaşam düzeni veya erken belirti değişikliklerini fark etme açısından destek sağlayabilirler. Ancak taburculuk planı kişinin özerkliğini gereksiz biçimde sınırlamamalıdır."),
+      section("Taburculuk Sonrası İzlem Neden Gereklidir?", "Hastane ortamından günlük yaşama geçiş bazı kişiler için hassas bir dönem olabilir. Belirtiler, yan etkiler, işlevsellik ve güvenlik ihtiyaçları yeniden değerlendirilebilir. Yeni sorunlar ortaya çıkarsa plan güncellenebilir; taburculuk tedavinin sona erdiği anlamına gelmez.")
+    ],
+    relatedTerms: [
+      { term: "Psikiyatrik yatış", slug: "psikiyatrik-yatis" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Nüks önleme", slug: "nuks-onleme" },
+      { term: "Sosyal destek", slug: "sosyal-destek" }
+    ],
+    seo: {
+      title: "Taburculuk Planı Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatrik taburculuk planını tedavi sürekliliği, izlem, nüks önleme ve sosyal destek açısından açıklar.",
+      ogTitle: "Taburculuk Planı Nedir?",
+      ogDescription: "Psikiyatrik yatış sonrası güvenli geçiş planını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Psikiyatrik yatış sonrasında tedavi, güvenlik ve toplum içindeki bakımın sürekliliğini sağlayan geçiş planı."
+    }
+  }),
+
+  defineTerm({
+    term: "Tedavi planı",
+    slug: "tedavi-plani",
+    shortDefinition: "Tedavi planı, kişinin klinik gereksinimleri, hedefleri, tercihleri ve riskleri doğrultusunda uygulanacak müdahaleleri ve izlem sürecini yapılandıran bireyselleştirilmiş klinik yol haritasıdır.",
+    intro: "Psikiyatrik tedavi planı yalnız ilaç listesinden oluşmaz. Psikoterapi, psikoeğitim, yaşam düzenlemeleri, sosyal destek, rehabilitasyon, gerekli tıbbi incelemeler ve izlem hedefleri de planın parçası olabilir. Plan tanıya göre otomatik hazırlanmaz; kişinin yaşam koşulları ve öncelikleriyle birlikte şekillendirilir.",
+    sections: [
+      section("Tedavi Planı Nasıl Oluşturulur?", "Klinik görüşme, öykü, mental durum muayenesi, işlevsellik, güvenlik değerlendirmesi ve kişinin beklentileri birlikte ele alınır. Hangi sorunların öncelikli olduğu belirlenir ve kısa ile uzun vadeli hedefler oluşturulabilir. Gerektiğinde farklı uzmanlık alanları sürece dahil olabilir."),
+      section("Her Aynı Tanıda Plan Aynı mıdır?", "Hayır. Aynı tanıya sahip iki kişinin belirti şiddeti, eşlik eden hastalıkları, önceki tedavi yanıtları, yan etki deneyimleri, yaşam koşulları ve tercihleri farklı olabilir. Bu nedenle klinik kılavuzlar genel çerçeve sağlasa da bireysel plan bunlara mekanik biçimde indirgenmez."),
+      section("Tedavi Planı Değişebilir mi?", "Evet. Tedavi yanıtı, yan etkiler, yeni belirtiler, yaşam koşullarındaki değişiklikler veya kişinin hedeflerinin farklılaşması nedeniyle plan zaman içinde güncellenebilir. İzlem görüşmeleri bu nedenle yalnız reçete yenilemek için değil tedavinin bütününü yeniden değerlendirmek için önemlidir."),
+      section("Kişinin Kararlara Katılımı Neden Önemlidir?", "Tedavinin amacı yalnız klinik belirtileri azaltmak değil kişinin yaşam hedeflerini ve işlevselliğini desteklemektir. Olası yararlar, riskler ve alternatiflerin anlaşılır biçimde konuşulması ortak karar vermeyi güçlendirebilir. İlaç başlama, bırakma veya doz değişikliği kişisel olarak değil ilgili hekimle planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Formülasyon", slug: "formulasyon" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Tedavi yanıtı", slug: "tedavi-yaniti" }
+    ],
+    seo: {
+      title: "Tedavi Planı Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatrik tedavi planının hedefler, müdahaleler, ortak karar verme ve izlem doğrultusunda nasıl yapılandırıldığını açıklar.",
+      ogTitle: "Tedavi Planı Nedir?",
+      ogDescription: "Bireyselleştirilmiş psikiyatrik tedavi planının temel bileşenlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Klinik gereksinimler, hedefler ve tercihler doğrultusunda müdahaleleri ve izlemi yapılandıran bireyselleştirilmiş plan."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...sixteenthBatchNewTerms,
   ...fifteenthBatchNewTerms,
   ...fourteenthBatchNewTerms,
   ...thirteenthBatchNewTerms,

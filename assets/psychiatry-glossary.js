@@ -594,6 +594,19 @@ const glossaryDetailPages = {
   "Tedaviye direnç": "tedaviye-direnc",
   "Ödül sistemi": "odul-sistemi",
   "Özsaygı": "ozsaygi",
+  "Sınır": "sinir",
+  "Şema": "sema",
+  "Terk edilme şeması": "terk-edilme-semasi",
+  "Yetersiz özdenetim": "yetersiz-ozdenetim",
+  "Çocuk psikiyatrisi": "cocuk-psikiyatrisi",
+  "Tik bozukluğu": "tik-bozuklugu",
+  "Tourette sendromu": "tourette-sendromu",
+  "Öğrenme güçlüğü": "ogrenme-guclugu",
+  "Özgül öğrenme bozukluğu": "ozgul-ogrenme-bozuklugu",
+  "Toplum ruh sağlığı": "toplum-ruh-sagligi",
+  "Zorunlu yatış": "zorunlu-yatis",
+  "Taburculuk planı": "taburculuk-plani",
+  "Tedavi planı": "tedavi-plani",
 };
 
 const PSYCHIATRY_GLOSSARY_TERMS = glossarySource
