@@ -136,6 +136,94 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["insomnia", {
+    shortDefinition: "İnsomnia, uyumak için yeterli fırsat bulunmasına rağmen uykuya dalmada, uykuyu sürdürmede veya istenenden erken uyanmada yaşanan güçlüğü ifade eden bir uyku sorunudur.",
+    intro: "İnsomnia yalnızca az uyumak anlamına gelmez. Kişinin uykuya ilişkin güçlüklerinin gündüz işlevselliği, enerji, dikkat veya duygudurum üzerinde etkili olması klinik açıdan önemlidir.",
+    sections: [
+      section("İnsomnia Nasıl Görülebilir?", "Kişi yatağa girdikten sonra uzun süre uyuyamayabilir, gece boyunca sık sık uyanabilir veya sabah planladığından çok daha erken uyanıp yeniden uyuyamayabilir. Bazı kişiler yeterli süre yatakta kalmasına rağmen uykusunun dinlendirici olmadığını da ifade edebilir."),
+      section("Her Uykusuz Gece İnsomnia mıdır?", "Hayır. Stres, seyahat, geçici hastalık, çevresel gürültü veya yaşam düzenindeki değişiklikler kısa süreli uyku güçlüklerine yol açabilir. Klinik değerlendirmede sorunun ne kadar süredir bulunduğu, ne sıklıkta yaşandığı ve gündüz yaşamını ne ölçüde etkilediği önemlidir."),
+      section("Kaygı ve Duygudurum Uykuya Nasıl Etki Edebilir?", "Yoğun kaygı zihinsel uyarılmışlığı artırabilir ve kişinin uykuya geçişini zorlaştırabilir. Depresif veya başka duygudurum dönemlerinde de uyku süresi ve düzeni değişebilir. Bununla birlikte insomnia tek başına belirli bir psikiyatrik tanı göstermez."),
+      section("Değerlendirmede Neler Ele Alınır?", "Uyku saatleri, yatakta geçirilen süre, gece uyanmaları, gündüz uykululuğu, kafein veya madde kullanımı, ilaçlar ve eşlik eden ruhsal ya da tıbbi belirtiler birlikte değerlendirilir. Gerektiğinde uyku günlüğü gibi yöntemlerle uyku örüntüsü daha ayrıntılı izlenebilir.")
+    ],
+    relatedTerms: [
+      { term: "Hipersomnia", slug: "hipersomnia" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Kabus bozukluğu", slug: "kabus-bozuklugu" }
+    ]
+  }],
+
+  ["islevsellik", {
+    shortDefinition: "İşlevsellik, kişinin günlük yaşamındaki sorumluluklarını, ilişkilerini, özbakımını, eğitim veya iş yaşamını ne ölçüde sürdürebildiğini ifade eden genel bir klinik kavramdır.",
+    intro: "Psikiyatrik değerlendirmede yalnızca belirtilerin varlığı değil, bu belirtilerin kişinin yaşamındaki etkisi de önemlidir. Aynı belirti iki kişide farklı düzeyde işlev kaybına yol açabilir.",
+    sections: [
+      section("İşlevsellik Hangi Alanları Kapsar?", "Kişinin işe veya okula devam edebilmesi, günlük sorumluluklarını yerine getirmesi, sosyal ilişkilerini sürdürebilmesi ve özbakımını koruyabilmesi işlevselliğin temel alanlarıdır. Ayrıca karar verme, planlama ve günlük rutinleri organize etme gibi bilişsel süreçler de etkili olabilir."),
+      section("Belirti Şiddeti ile İşlev Kaybı Her Zaman Aynı mıdır?", "Hayır. Bazı kişiler belirgin belirtiler yaşamasına rağmen günlük sorumluluklarını büyük ölçüde sürdürebilirken, daha hafif görünen belirtiler başka bir kişide ciddi işlev kaybına yol açabilir. Sosyal destek, iş koşulları ve kişinin baş etme kaynakları bu farkta rol oynayabilir."),
+      section("İşlevsellik Neden Tanısal Değerlendirmede Önemlidir?", "Birçok psikiyatrik durumda belirtilerin günlük yaşamı ne ölçüde etkilediği klinik önem açısından belirleyicidir. Bu nedenle yalnızca bir belirti listesi değil, kişinin yaşamındaki değişiklikler, sorumluluklarını sürdürme düzeyi ve önceki işlev düzeyiyle karşılaştırma da değerlendirilir."),
+      section("İşlevsellik Zaman İçinde Değişebilir mi?", "Evet. Belirtilerin seyri, yaşam koşulları, sosyal destek, uyku, fiziksel sağlık ve uygulanan psikolojik veya tıbbi yaklaşımlar işlevselliği etkileyebilir. Değerlendirmede kişinin yalnızca güçlükleri değil, korunmuş becerileri ve destek kaynakları da dikkate alınır.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "DEHB", slug: "dehb" }
+    ]
+  }],
+
+  ["kabus-bozuklugu", {
+    shortDefinition: "Kabus bozukluğu, genellikle tehdit, korku veya yoğun olumsuz duygular içeren, tekrarlayıcı ve ayrıntılı rüyaların uykuyu ve gündüz işlevselliğini belirgin biçimde etkilediği bir uyku bozukluğudur.",
+    intro: "Ara sıra kabus görmek yaygındır ve tek başına bir bozukluk anlamına gelmez. Klinik açıdan kabusların tekrarlayıcı olması, kişiyi uykudan uyandırması ve uykuya veya gündüz yaşamına belirgin etkide bulunması önemlidir.",
+    sections: [
+      section("Kabuslar Nasıl Yaşanabilir?", "Kişi yoğun korku, tehdit veya çaresizlik içeren canlı rüyalar görebilir ve uyandığında rüyanın içeriğini ayrıntılı biçimde hatırlayabilir. Uyanma sonrasında yeniden uykuya dönmek zor olabilir ve kişi kabus göreceği düşüncesiyle uyumaktan kaçınmaya başlayabilir."),
+      section("Her Kötü Rüya Kabus Bozukluğu mudur?", "Hayır. Stresli dönemlerde veya tek tük yaşanan olumsuz rüyalar sık görülebilir. Kabus bozukluğunda rüyalar tekrarlayıcı hale gelir ve uyku kalitesi, gündüz yorgunluğu, dikkat veya duygusal durum üzerinde belirgin bir etki oluşturur."),
+      section("Kabuslar Travma ile İlişkili Olabilir mi?", "Travmatik yaşantılar sonrasında kabuslar görülebilir ve bazı kişilerde rüya içeriği travmayla doğrudan ilişkili olabilir. Ancak her kabus travma sonrası stres bozukluğuna işaret etmez. Klinik değerlendirmede başka travma belirtilerinin bulunup bulunmadığı da ele alınır."),
+      section("Ne Zaman Değerlendirme Yararlı Olur?", "Kabuslar sıklaşıyor, kişinin uykuya gitmekten kaçınmasına yol açıyor veya gündüz işlevlerini belirgin biçimde etkiliyorsa değerlendirme yararlı olabilir. Kullanılan ilaçlar, madde kullanımı, diğer uyku sorunları ve eşlik eden ruhsal belirtiler de göz önünde bulundurulur.")
+    ],
+    relatedTerms: [
+      { term: "İnsomnia", slug: "insomnia" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["kacingan-baglanma", {
+    shortDefinition: "Kaçıngan bağlanma, yakın ilişkilerde duygusal ihtiyaçları ifade etmekten, destek istemekten veya başkalarına bağımlı hissetmekten kaçınma eğilimiyle ilişkilendirilen bir bağlanma örüntüsüdür.",
+    intro: "Kaçıngan bağlanma bir kişilik tanısı değildir ve kişiyi değişmez biçimde tanımlamaz. Bağlanma örüntüleri erken ilişkisel deneyimlerden etkilenebilse de yaşam boyunca yeni ilişkiler ve deneyimlerle değişebilir.",
+    sections: [
+      section("Kaçıngan Bağlanma Nasıl Görülebilir?", "Kişi yakınlık ihtiyacı hissetse bile duygusal destek istemekten kaçınabilir, sorunlarını tek başına çözmeye çalışabilir veya başkalarına ihtiyaç duyduğunu göstermeyi rahatsız edici bulabilir. İlişkilerde aşırı bağımsız görünme bazı kişilerde belirgin olabilir."),
+      section("Yakınlıktan Kaçınmak İlişki İstememek midir?", "Hayır. Kaçıngan bağlanma örüntüsü olan kişiler de yakın ve anlamlı ilişkiler isteyebilir. Ancak yakınlık arttığında kırılganlık, kontrol kaybı veya başkasına ihtiyaç duyma hissi rahatsız edici olabilir ve kişi duygusal mesafe koyabilir."),
+      section("Kaçıngan Bağlanma Nasıl Gelişebilir?", "Bağlanma kuramında erken dönemde bakım verenlerin duygusal ihtiyaçlara sınırlı yanıt vermesi veya çocuğun destek arayışının yeterince karşılanmaması olası etkenlerden biri olarak ele alınır. Bununla birlikte tek bir çocukluk deneyimi yetişkin bağlanma örüntüsünü kesin olarak belirlemez."),
+      section("Bağlanma Örüntüsü Değişebilir mi?", "Evet. Bağlanma biçimleri yaşam boyu sabit değildir. Güvenli ilişkiler, kişinin kendi duygusal ihtiyaçlarını daha iyi tanıması ve psikolojik çalışmalar yeni ilişki deneyimlerinin gelişmesine katkıda bulunabilir. Bağlanma kavramı kişiyi etiketlemek için değil, ilişki örüntülerini anlamak için kullanılmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Duygusal ihmal", slug: "duygusal-ihmal" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["kacingan-kisilik-oruntusu", {
+    shortDefinition: "Kaçıngan kişilik örüntüsü, yetersizlik duyguları, olumsuz değerlendirilme konusunda belirgin hassasiyet ve kişilerarası ilişkilerde geri çekilme eğiliminin süreklilik gösterdiği bir kişilik örüntüsünü ifade eder.",
+    intro: "Kaçıngan kişilik örüntüsü yalnızca utangaçlık veya içe dönüklük anlamına gelmez. Klinik değerlendirmede örüntünün uzun süredir bulunması, farklı yaşam alanlarında görülmesi ve ilişkiler ya da günlük işlevsellik üzerinde belirgin etkisi olması önemlidir.",
+    sections: [
+      section("Kaçıngan Kişilik Örüntüsü Nasıl Görülebilir?", "Kişi eleştirileceği, reddedileceği veya küçük düşürüleceği düşüncesiyle yeni ilişkilerden ve sosyal ortamlardan kaçınabilir. Yakınlık kurmak istese bile kendisini yetersiz görmesi veya olumsuz değerlendirilme ihtimaline aşırı odaklanması ilişkileri sınırlayabilir."),
+      section("Kaçıngan Örüntü ile Sosyal Anksiyete Aynı Şey midir?", "Hayır. İki durumda da sosyal değerlendirilme kaygısı ve kaçınma görülebilir ancak kaçıngan kişilik örüntüsü daha geniş ve süreklilik gösteren bir kişilerarası ve benlik algısı örüntüsünü ifade eder. Sosyal anksiyete ise belirli sosyal durumlara yönelik yoğun korku ve kaçınmayla daha belirgin olabilir."),
+      section("İçe Dönüklük ile Farkı Nedir?", "İçe dönük kişiler daha az sosyal etkileşimi tercih edebilir ancak bu tercih mutlaka yetersizlik hissi veya reddedilme korkusundan kaynaklanmaz. Kaçıngan kişilik örüntüsünde kişi ilişki isteyebilir fakat eleştirilme veya reddedilme korkusu nedeniyle geri çekilebilir."),
+      section("Kişilik Örüntüsü Değişmez Bir Özellik midir?", "Hayır. Kişilik örüntüleri uzun süreli olsa da tamamen değişmez değildir. Güvenli ilişkiler, yeni yaşam deneyimleri ve uygun psikolojik yaklaşımlar kişinin kendisiyle ve başkalarıyla ilişki kurma biçiminde değişiklik sağlayabilir. Değerlendirmede yalnız güçlükler değil, kişinin güçlü yönleri de ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Duygusal ihmal", slug: "duygusal-ihmal" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" }
+    ]
+  }],
+
   ["guvence-arama", {
     shortDefinition: "Güvence arama, kişinin belirsizlik veya kaygı karşısında başkalarından tekrar tekrar rahatlatıcı bilgi, onay ya da kesinlik istemesiyle görülebilen bir davranış örüntüsüdür.",
     intro: "Güvence istemek günlük yaşamın doğal bir parçasıdır. Klinik açıdan önemli olan, kişinin kısa süre rahatlamasına rağmen aynı kuşkunun yeniden ortaya çıkması ve güvence aramanın tekrarlayıcı hale gelmesidir.",
