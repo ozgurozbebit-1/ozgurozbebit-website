@@ -136,6 +136,184 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["risk-degerlendirmesi", {
+    shortDefinition: "Risk değerlendirmesi, kişinin kendisine veya başkasına zarar verme, ciddi işlev kaybı yaşama ya da mevcut ruhsal ve tıbbi durum nedeniyle güvenliğinin bozulma olasılığını sistematik biçimde değerlendirme sürecidir.",
+    intro: "Psikiyatride risk değerlendirmesi tek bir soruya veya puana dayanmaz. Mevcut düşünceler, davranışlar, geçmiş öykü, ruhsal durum, madde kullanımı, sosyal koşullar ve koruyucu etkenler birlikte ele alınır.",
+    sections: [
+      section("Risk Değerlendirmesinde Neler Ele Alınır?", "Kişinin mevcut düşünceleri ve davranışları, yakın zamanda yaşanan değişiklikler, dürtü kontrolü, psikotik veya ağır duygudurum belirtileri, madde kullanımı ve günlük işlevsellik değerlendirilir. Ayrıca kişinin yaşadığı ortamın güvenliği ve ulaşabildiği destek kaynakları göz önünde bulundurulur."),
+      section("Geçmiş Öykü Neden Önemlidir?", "Daha önce yaşanan krizler, kendine zarar verme davranışları, ciddi kontrol kaybı dönemleri veya hastane başvuruları gelecekteki risk hakkında önemli klinik bilgi sağlayabilir. Bununla birlikte geçmişte bir olay yaşanmış olması aynı durumun kaçınılmaz biçimde tekrarlanacağı anlamına gelmez."),
+      section("Koruyucu Etkenler Nelerdir?", "Destekleyici ilişkiler, yardım arama kapasitesi, geleceğe yönelik planlar, sorumluluklar, tedaviye erişim ve kriz sırasında başvurulabilecek güvenilir kişiler risk değerlendirmesinde dikkate alınabilecek koruyucu unsurlardır. Koruyucu etkenlerin bulunması riskin sıfır olduğu anlamına gelmez."),
+      section("Ne Zaman Acil Değerlendirme Gerekir?", "Kişi kendisini veya başkasını güvende tutamayacağını belirtiyorsa, hızla ağırlaşan ruhsal belirtiler varsa ya da belirgin bilinç, davranış veya gerçekliği değerlendirme değişikliği gelişmişse gecikmeden profesyonel değerlendirme gerekir. Klinik risk zaman içinde değişebildiği için değerlendirme gerektiğinde yenilenir.")
+    ],
+    relatedTerms: [
+      { term: "Kendine zarar verme", slug: "kendine-zarar-verme" },
+      { term: "Psikomotor ajitasyon", slug: "psikomotor-ajitasyon" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Madde kullanım bozukluğu", slug: "madde-kullanim-bozuklugu" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
+  ["sanrisal-bozukluk", {
+    shortDefinition: "Sanrısal bozukluk, bir veya daha fazla sanrının belirgin olduğu, ancak klinik tablonun şizofreni spektrumundaki daha yaygın dezorganizasyon ve negatif belirtilerle açıklanmadığı psikotik bir bozukluktur.",
+    intro: "Sanrı, kişinin kültürel ve toplumsal bağlamıyla açıklanamayan ve karşıt kanıtlara rağmen güçlü biçimde sürdürülen bir inanıştır. Sanrısal bozukluk tanısı yalnız sıra dışı veya yanlış bir düşüncenin bulunmasına dayanmaz.",
+    sections: [
+      section("Sanrısal Bozukluk Nasıl Görülebilir?", "Kişi takip edildiğine, aldatıldığına, özel bir hastalığı bulunduğuna veya başka insanların kendisi hakkında belirli bir niyet taşıdığına güçlü biçimde inanabilir. İnancın içeriği kişiden kişiye değişir ve değerlendirmede inancın kesinliği ile günlük yaşama etkisi önemlidir."),
+      section("Paranoid Düşünce ile Sanrı Aynı Şey midir?", "Hayır. Kuşku ve güvensizlik farklı yoğunluklarda görülebilir. Sanrıda inanç genellikle çok güçlü biçimde benimsenir ve kişinin alternatif açıklamaları değerlendirmesi belirgin ölçüde zorlaşır. Daha hafif paranoid düşüncelerde kişi yanılma olasılığını kısmen koruyabilir."),
+      section("İşlevsellik Her Zaman Ağır Biçimde Bozulur mu?", "Sanrının doğrudan etkilediği alanlar dışında kişinin bazı günlük işlevleri görece korunabilir. Bununla birlikte sanrının konusu ilişkileri, çalışma yaşamını veya güvenlik davranışlarını etkiliyorsa belirgin işlev kaybı ortaya çıkabilir."),
+      section("Başka Nedenlerin Dışlanması Neden Önemlidir?", "Madde veya ilaç etkileri, bazı nörolojik ve tıbbi hastalıklar ile duygudurum dönemleri psikotik belirtiler oluşturabilir. Yeni başlayan sanrısal düşüncelerde başlangıç zamanı, eşlik eden belirtiler, bilinç ve dikkat düzeyi ile tıbbi durum birlikte değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Paranoid düşünce", slug: "paranoid-dusunce" },
+      { term: "Psikotik özellik", slug: "psikotik-ozellik" },
+      { term: "Pozitif belirti", slug: "pozitif-belirti" },
+      { term: "Kısa psikotik bozukluk", slug: "kisa-psikotik-bozukluk" }
+    ]
+  }],
+
+  ["secici-soyutlama", {
+    shortDefinition: "Seçici soyutlama, bir durumun bütünü yerine sınırlı ve çoğunlukla olumsuz bir ayrıntıya odaklanarak genel sonucu bu ayrıntı üzerinden değerlendirme eğilimini ifade eden bilişsel bir çarpıtmadır.",
+    intro: "Seçici soyutlamada kişi olayın olumlu, nötr veya bağlamı değiştirebilecek başka yönlerini geri planda bırakabilir. Böylece küçük bir ayrıntı, bütün deneyimi temsil ediyormuş gibi algılanabilir.",
+    sections: [
+      section("Seçici Soyutlama Nasıl Görülebilir?", "Bir sunum hakkında birçok olumlu geri bildirim alan kişinin yalnızca tek bir eleştiriye odaklanıp sunumun tamamen kötü geçtiğini düşünmesi örnek olabilir. Benzer biçimde bir sosyal karşılaşmada birçok olumlu etkileşim varken tek bir sessizliği başarısızlık olarak yorumlayabilir."),
+      section("Ayrıntıya Dikkat Etmek ile Aynı Şey midir?", "Hayır. Ayrıntıları fark etmek yararlı olabilir. Seçici soyutlamada sorun, seçilen tek ayrıntının olayın bütünü hakkında orantısız bir sonuç çıkarmak için kullanılması ve diğer bilgilerin sistematik biçimde göz ardı edilmesidir."),
+      section("Hangi Duygularla İlişkili Olabilir?", "Olumsuz ayrıntılara sürekli odaklanmak kaygı, suçluluk, yetersizlik veya çökkünlük duygularını güçlendirebilir. Duygusal durum da kişinin hangi ayrıntıları daha kolay fark ettiğini etkileyerek düşünce döngüsünü sürdürebilir."),
+      section("Nasıl Yeniden Değerlendirilebilir?", "Olayın tüm kanıtları, olumlu ve nötr ayrıntılar dahil olmak üzere birlikte gözden geçirilebilir. Amaç olumsuz bilgiyi yok saymak değil, bu bilginin bütün tablo içindeki gerçek ağırlığını değerlendirmektir.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Aşırı genelleme", slug: "asiri-genelleme" },
+      { term: "Katastrofizasyon", slug: "katastrofizasyon" },
+      { term: "Kişiselleştirme", slug: "kisilestirme" },
+      { term: "Zihin okuma", slug: "zihin-okuma" }
+    ]
+  }],
+
+  ["semantik-bellek", {
+    shortDefinition: "Semantik bellek, kişisel bir yaşantının zaman ve mekân bağlamından bağımsız olarak kelimeler, kavramlar, gerçekler ve genel dünya bilgilerini saklayan uzun süreli bellek sistemidir.",
+    intro: "Bir ülkenin başkentini bilmek, bir kelimenin anlamını hatırlamak veya belirli bir nesnenin ne işe yaradığını bilmek semantik belleğe örnektir. Bu bilgiler belirli bir kişisel anıyla bağlantılı olmak zorunda değildir.",
+    sections: [
+      section("Semantik Bellekte Hangi Bilgiler Saklanır?", "Dil bilgisi, kelime anlamları, nesnelerin özellikleri, tarihsel bilgiler ve günlük yaşamda öğrenilmiş genel gerçekler semantik belleğin kapsamına girer. Bilgi zamanla kişinin genel bilgi sisteminin parçası haline gelir."),
+      section("Semantik ve Epizodik Bellek Arasındaki Fark Nedir?", "Epizodik bellek kişinin belirli bir zamanda ve yerde yaşadığı olayların anısını içerir. Semantik bellek ise olayın kişisel bağlamından bağımsız bilgiyi temsil eder. Örneğin bir şehrin adını bilmek semantik, o şehirde geçirilen belirli bir günü hatırlamak epizodik bellektir."),
+      section("Semantik Bellek Dikkatten Etkilenir mi?", "Yeni bilgilerin öğrenilebilmesi için dikkat ve bilginin işlenmesi gerekir. Dikkat dağınıklığı öğrenme aşamasını zorlaştırabilir ve kişi bunu sonradan bir bellek sorunu gibi yaşayabilir. Bu nedenle unutkanlık değerlendirilirken öğrenme ve hatırlama süreçleri ayrılmalıdır."),
+      section("Semantik Bellek Sorunları Nasıl Değerlendirilir?", "Kişinin kelime ve kavram bilgisindeki değişiklikler, bilinen nesneleri tanımlama kapasitesi ve başka bilişsel alanların durumu birlikte incelenir. Ani veya ilerleyici bilişsel değişikliklerde nörolojik ve tıbbi nedenlerin değerlendirilmesi önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Epizodik bellek", slug: "epizodik-bellek" },
+      { term: "Çalışma belleği", slug: "calisma-bellegi" },
+      { term: "Amnezi", slug: "amnezi" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Yürütücü işlevler", slug: "yurutucu-islevler" }
+    ]
+  }],
+
+  ["siklotimi", {
+    shortDefinition: "Siklotimi, hipomanik ve depresif belirtilerin uzun süre boyunca dalgalandığı ancak dönemlerin bipolar bozukluktaki tam hipomani, mani veya majör depresyon ölçütlerini sürekli karşılamadığı bir duygudurum bozukluğudur.",
+    intro: "Siklotimik seyir sıradan ruh hali değişkenliğinden daha süreğen bir örüntüyü ifade eder. Değerlendirmede belirtilerin zaman içindeki dağılımı, şiddeti ve kişinin işlevselliği önem taşır.",
+    sections: [
+      section("Siklotimik Dalgalanmalar Nasıl Görülebilir?", "Bazı dönemlerde enerji, konuşkanlık, özgüven veya etkinlik artabilirken başka dönemlerde isteksizlik, düşük enerji veya çökkünlük belirtileri görülebilir. Bu değişimler kişinin yaşamında tekrarlayan bir duygudurum örüntüsü oluşturabilir."),
+      section("Siklotimi ile Bipolar Bozukluk Aynı Şey midir?", "Hayır. Siklotimide duygudurum dalgalanmaları bipolar spektrumla ilişkili olsa da tam manik dönem veya belirli süre ve şiddette majör depresif dönemlerin varlığı farklı tanısal değerlendirmelere yöneltebilir."),
+      section("Normal Duygudurum Değişkenliğinden Nasıl Ayrılır?", "Herkesin enerjisi ve ruh hali yaşam olaylarına göre değişebilir. Siklotimik örüntüde dalgalanmalar daha uzun süreli ve tekrarlayıcıdır; kişinin ilişkilerini, kararlarını veya günlük yaşamını etkileyebilir."),
+      section("Tanıda Zaman İçindeki Seyir Neden Önemlidir?", "Tek bir yüksek enerjili veya çökkün dönem siklotimiyi göstermez. Belirtilerin uzun süre içindeki örüntüsünün anlaşılması, olası hipomani veya depresif dönemlerin ayırt edilmesi ve madde ya da tıbbi nedenlerin değerlendirilmesi gerekir. Kişinin yakın çevresinden alınan zaman içindeki gözlemler de duygudurum dalgalanmalarının örüntüsünü anlamaya katkı sağlayabilir.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Mani", slug: "mani" },
+      { term: "Hipomani", slug: "hipomani" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "Bipolar II bozukluk", slug: "bipolar-2-bozukluk" }
+    ]
+  }],
+
+  ["sinav-kaygisi", {
+    shortDefinition: "Sınav kaygısı, değerlendirilme ve performans beklentisiyle ilişkili olarak sınav öncesinde veya sırasında ortaya çıkan bilişsel, duygusal ve bedensel kaygı belirtilerini ifade eder.",
+    intro: "Belirli düzeyde kaygı sınava hazırlanmayı ve dikkati artırabilir. Sınav kaygısı klinik açıdan özellikle kaygının öğrenilen bilgiyi kullanmayı, sınava katılmayı veya kişinin günlük yaşamını belirgin biçimde zorlaştırdığı durumlarda önem kazanır.",
+    sections: [
+      section("Sınav Kaygısı Nasıl Görülebilir?", "Kişi başarısız olacağına ilişkin yoğun düşünceler yaşayabilir, sınav sırasında zihninin boşaldığını hissedebilir veya çarpıntı, terleme ve kas gerginliği gibi bedensel uyarılma belirtileri yaşayabilir. Dikkat sürekli olası başarısızlığa yöneldiğinde soruları değerlendirmek güçleşebilir."),
+      section("Hazırlıksız Olmak ile Sınav Kaygısı Aynı Şey midir?", "Hayır. Yetersiz hazırlık doğal olarak endişe yaratabilir. Sınav kaygısında ise kişi yeterince hazırlanmış olsa bile performans anında yoğun tehdit algısı yaşayabilir ve bildiklerini göstermekte zorlanabilir."),
+      section("Kaçınma Kaygıyı Nasıl Etkileyebilir?", "Çalışmayı ertelemek, deneme sınavlarından kaçınmak veya değerlendirme durumlarına katılmamak kısa vadede rahatlama sağlayabilir. Ancak bu davranışlar kişinin sınav ortamına alışmasını zorlaştırabilir ve sonraki değerlendirmelerde kaygının sürmesine katkıda bulunabilir."),
+      section("Değerlendirmede Neler Dikkate Alınır?", "Kaygının yalnız sınavlarla sınırlı olup olmadığı, sosyal değerlendirilme korkusu, dikkat güçlükleri, uyku düzeni, çalışma alışkanlıkları ve akademik koşullar birlikte ele alınır. Amaç olağan performans stresini gereksiz biçimde hastalıklaştırmak değildir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Ergen anksiyetesi", slug: "ergen-anksiyetesi" },
+      { term: "Sosyal anksiyete bozukluğu", slug: "sosyal-anksiyete-bozuklugu" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Güvence arama", slug: "guvence-arama" }
+    ]
+  }],
+
+  ["sirkadiyen-ritim", {
+    shortDefinition: "Sirkadiyen ritim, yaklaşık 24 saatlik döngü içinde uyku-uyanıklık, hormon salınımı, vücut sıcaklığı ve başka biyolojik süreçlerin zamanlamasını düzenleyen içsel biyolojik ritimdir.",
+    intro: "Sirkadiyen sistem çevresel saatten tamamen bağımsız değildir. Özellikle ışık-karanlık döngüsü iç biyolojik saatin günlük olarak çevreyle yeniden eşleşmesini sağlayan en güçlü zaman ipuçlarından biridir.",
+    sections: [
+      section("Sirkadiyen Ritim Uykuyu Nasıl Etkiler?", "Biyolojik saat günün belirli dönemlerinde uyanıklığı, belirli dönemlerinde ise uyku eğilimini destekler. Bu sistem gün içinde biriken uyku ihtiyacıyla birlikte çalışır; bu nedenle yalnızca ne kadar uykusuz kalındığı değil, hangi saatte uyumaya çalışıldığı da önemlidir."),
+      section("Işığın Rolü Nedir?", "Sabah ve akşam alınan ışık biyolojik saatin zamanlamasını etkileyebilir. Özellikle akşam saatlerindeki güçlü ışık bazı kişilerde uyku zamanının gecikmesine katkıda bulunabilir. Melatonin salınımı da ışık-karanlık döngüsüyle yakından ilişkilidir."),
+      section("Ritim Neden Kayabilir?", "Vardiyalı çalışma, uzun mesafeli seyahat, çok değişken uyku saatleri veya geç saatlere kadar süren düzenli uyanıklık biyolojik saat ile sosyal program arasında uyumsuzluk oluşturabilir. Bu durum kişinin istediği saatte uykuya geçmesini zorlaştırabilir."),
+      section("Her Uyku Sorunu Sirkadiyen Kaynaklı mıdır?", "Hayır. Insomnia, uyku apnesi, ruhsal durumlar, maddeler ve başka tıbbi sorunlar da uyku yakınmalarına yol açabilir. Uyku zamanlamasının düzenli biçimde gecikmesi veya erkene kayması varsa sirkadiyen örüntünün değerlendirilmesi yararlı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "Melatonin", slug: "melatonin" },
+      { term: "İnsomnia", slug: "insomnia" },
+      { term: "Hipersomnia", slug: "hipersomnia" },
+      { term: "Parasomni", slug: "parasomni" }
+    ]
+  }],
+
+  ["sizoaffektif-bozukluk", {
+    shortDefinition: "Şizoaffektif bozukluk, belirgin duygudurum dönemleri ile psikotik belirtilerin aynı hastalık seyri içinde bulunduğu ve psikotik belirtilerin bazı dönemlerde belirgin duygudurum dönemi dışında da sürdüğü bir psikiyatrik bozukluktur.",
+    intro: "Şizoaffektif bozukluğun değerlendirilmesinde yalnız belirtilerin türü değil, psikotik ve duygudurum belirtilerinin zaman içindeki ilişkisi temel önemdedir.",
+    sections: [
+      section("Hangi Belirtiler Görülebilir?", "Sanrı, varsanı veya dezorganize düşünce gibi psikotik belirtilere depresif ya da manik duygudurum belirtileri eşlik edebilir. Belirtilerin şiddeti ve işlevsellik üzerindeki etkisi kişiden kişiye değişebilir."),
+      section("Bipolar Bozukluktan Nasıl Ayrılır?", "Bipolar bozuklukta psikotik belirtiler manik veya depresif dönemler sırasında görülebilir. Şizoaffektif bozukluk değerlendirmesinde ise psikotik belirtilerin belirgin duygudurum dönemi olmadan da bulunduğu bir zaman aralığının olup olmadığı özellikle incelenir."),
+      section("Şizofreniden Nasıl Ayrılır?", "Her iki tabloda psikotik belirtiler görülebilir. Şizoaffektif bozuklukta belirgin duygudurum dönemleri hastalığın toplam seyri içinde önemli yer tutar. Bu ayrım tek bir görüşmeyle değil, zaman içindeki klinik seyir üzerinden yapılır."),
+      section("Tıbbi ve Maddeyle İlişkili Nedenler Neden Araştırılır?", "Madde veya ilaç etkileri ile bazı nörolojik ve tıbbi hastalıklar psikoz veya duygudurum değişiklikleri oluşturabilir. Yeni başlayan belirtilerde bilinç düzeyi, madde kullanımı, tıbbi bulgular ve geçmiş dönemlerin seyri birlikte değerlendirilir. Tanısal ayrım için belirtilerin yalnız bugünkü görünümü değil, önceki dönemlerle olan zaman ilişkisi de önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Psikotik özellik", slug: "psikotik-ozellik" },
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Mani", slug: "mani" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Negatif belirti", slug: "negatif-belirti" }
+    ]
+  }],
+
+  ["sosyal-destek", {
+    shortDefinition: "Sosyal destek, kişinin yakın ilişkileri ve sosyal çevresi aracılığıyla aldığı duygusal, pratik, bilgiye dayalı veya gündelik yaşamı kolaylaştıran yardımları ifade eden genel bir kavramdır.",
+    intro: "Sosyal destek yalnız kişinin çevresinde kaç insan bulunduğuyla ölçülmez. İlişkilerin güvenilirliği, gerektiğinde ulaşılabilir olması ve alınan desteğin kişinin ihtiyacına uygunluğu da önemlidir.",
+    sections: [
+      section("Sosyal Destek Hangi Biçimlerde Olabilir?", "Duygusal olarak dinlenmek ve anlaşılmak, gündelik bir işte yardım almak, bilgiye ulaşmak veya zor bir dönemde yalnız kalmamak farklı sosyal destek biçimleridir. Aynı kişi farklı durumlarda farklı türde desteğe ihtiyaç duyabilir."),
+      section("Sosyal Çevrenin Büyüklüğü Yeterli midir?", "Hayır. Çok sayıda sosyal bağlantıya sahip olmak kişinin kendisini desteklenmiş hissetmesini garanti etmez. Az sayıda ancak güvenilir ve karşılıklı ilişki bazı kişiler için daha güçlü bir destek kaynağı olabilir."),
+      section("Sosyal Destek Ruhsal Sağlığı Nasıl Etkileyebilir?", "Ulaşılabilir ve güvenilir ilişkiler stresli dönemlerde yalnızlık hissini azaltabilir, yardım aramayı kolaylaştırabilir ve günlük işlevselliğin sürdürülmesine katkıda bulunabilir. Ancak sosyal destek profesyonel değerlendirme gerektiren durumların yerine geçmez."),
+      section("Destek Her Zaman Yararlı mıdır?", "Desteğin biçimi önemlidir. Kişinin tercihlerini dikkate almayan, aşırı kontrol edici veya sürekli güvence vermeye dayanan yaklaşımlar bazı durumlarda yararlı olmayabilir. Etkili destek kişinin ihtiyacını anlamaya ve özerkliğini korumaya dayanır.")
+    ],
+    relatedTerms: [
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Rehabilitasyon", slug: "rehabilitasyon" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["stres-yaniti", {
+    shortDefinition: "Stres yanıtı, kişinin tehdit, belirsizlik veya artmış talepler karşısında geliştirdiği bedensel, bilişsel, duygusal ve davranışsal tepkilerin bütününü ifade eder.",
+    intro: "Stres yanıtı tek başına hastalık değildir. Kısa süreli stres tepkisi kişinin çevresel taleplere uyum sağlamasına yardımcı olabilir; ancak yanıtın uzun süre yüksek düzeyde kalması günlük işlevleri zorlaştırabilir.",
+    sections: [
+      section("Bedensel Stres Yanıtında Ne Olur?", "Otonom sinir sistemi ve hormonal sistemler devreye girerek kalp hızında artış, kas gerginliği, terleme veya solunumda değişiklik gibi tepkiler oluşturabilir. Bu değişiklikler organizmanın hızlı biçimde harekete hazırlanmasının parçasıdır."),
+      section("Stres Düşünce ve Dikkati Nasıl Etkileyebilir?", "Tehdit algısı arttığında dikkat olası tehlikelere daha fazla yönelebilir. Kişi belirsiz durumları daha olumsuz yorumlayabilir, karar vermekte zorlanabilir veya zihninin sürekli aynı sorunla meşgul olduğunu hissedebilir."),
+      section("Akut ve Uzun Süreli Stres Aynı mıdır?", "Hayır. Kısa süreli stres belirli bir olayla başlayıp olay sona erdiğinde azalabilir. Stres etkenlerinin uzun süre devam etmesi halinde uyku, duygudurum, dikkat, bedensel yakınmalar ve günlük işlevsellik üzerinde daha kalıcı etkiler ortaya çıkabilir."),
+      section("Stres Yanıtı Ne Zaman Değerlendirilmelidir?", "Belirtiler uzun sürüyor, işlevselliği belirgin biçimde etkiliyor, yoğun kaçınmaya yol açıyor veya travmatik bir olay sonrasında kalıcı hale geliyorsa profesyonel değerlendirme yararlı olabilir. Benzer bedensel belirtilerin tıbbi nedenleri de gerektiğinde göz önünde bulundurulur.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Uyum bozukluğu", slug: "uyum-bozuklugu" }
+    ]
+  }],
+
   ["oyun-oynama-bozuklugu", {
     shortDefinition: "Oyun oynama bozukluğu, dijital veya video oyunları üzerindeki kontrolün belirgin biçimde azalması, oyunun diğer yaşam alanlarının önüne geçmesi ve olumsuz sonuçlara rağmen davranışın sürmesiyle ilişkili klinik bir tablodur.",
     intro: "Çok oyun oynamak tek başına oyun oynama bozukluğu anlamına gelmez. Klinik değerlendirmede oyun süresinden çok davranış üzerindeki kontrol, önceliklerin değişmesi ve günlük işlevsellik üzerindeki kalıcı etkiler önem taşır.",
