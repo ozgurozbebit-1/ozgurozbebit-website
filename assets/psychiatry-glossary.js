@@ -304,6 +304,16 @@ Güvence arama|Kaygıyı azaltmak için tekrar tekrar onay veya rahatlatıcı bi
 `;
 
 const glossaryDetailPages = {
+  "Benzodiazepin": "benzodiazepin",
+  "Bilgilendirilmiş onam": "bilgilendirilmis-onam",
+  "Bölme": "bolme",
+  "Damgalanma": "damgalanma",
+  "Davranım bozukluğu": "davranim-bozuklugu",
+  "Doz titrasyonu": "doz-titrasyonu",
+  "Duygusal yoksunluk": "duygusal-yoksunluk",
+  "Ebeveyn tutumu": "ebeveyn-tutumu",
+  "Ehliyet değerlendirmesi": "ehliyet-degerlendirmesi",
+  "Enkoprezis": "enkoprezis",
   "Antisosyal kişilik örüntüsü": "antisosyal-kisilik-oruntusu",
   "ASRS": "asrs",
   "Atak": "atak",

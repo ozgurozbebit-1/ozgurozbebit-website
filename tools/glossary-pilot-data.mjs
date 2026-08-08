@@ -3196,7 +3196,291 @@ const seventhBatchNewTerms = [
   })
 ];
 
+
+const eighthBatchNewTerms = [
+  defineTerm({
+    term: "Benzodiazepin",
+    slug: "benzodiazepin",
+    shortDefinition: "Benzodiazepin, GABA sisteminin inhibitör etkisini güçlendiren ve bazı klinik durumlarda kaygı, uykusuzluk, ajitasyon, nöbet veya kas gerginliği gibi belirtilerde kullanılabilen ilaç grubudur.",
+    intro: "Benzodiazepinler hızlı etki gösterebilen ilaçlardır ancak her kaygı veya uyku sorunu için uygun değildir. Uyku hali, bilişsel etkiler, tolerans, fiziksel bağımlılık ve başka maddelerle etkileşim gibi özellikler nedeniyle klinik değerlendirme ve izlem önemlidir.",
+    sections: [
+      section("Benzodiazepinler Nasıl Etki Gösterir?", "Bu ilaçlar beyindeki temel inhibitör nörotransmiterlerden GABA'nın etkisini güçlendirir. Bunun sonucunda sinir sistemi aktivitesinde azalma, gevşeme ve sedasyon görülebilir. Etkinin niteliği kullanılan ilaca, kişinin özelliklerine ve eşlik eden diğer maddelere göre değişebilir."),
+      section("Hangi Durumlarda Kullanılabilir?", "Bazı akut kaygı tablolarında, kısa süreli ciddi uykusuzlukta, belirli nörolojik durumlarda veya yoğun ajitasyonun yönetiminde kullanılabilirler. Kullanım amacı ve süresi her klinik durumda aynı değildir; uzun dönem kaygı tedavisinin tek seçeneği olarak düşünülmezler."),
+      section("Tolerans ve Bağımlılık Ne Anlama Gelir?", "Düzenli kullanım sırasında bazı etkilerin zamanla azalması tolerans olarak tanımlanabilir. Fiziksel bağımlılık ise ilacın kesilmesi veya hızlı azaltılması sonrasında yoksunluk belirtileri ortaya çıkabilmesi anlamına gelir. Bu durum madde kullanım bozukluğuyla tamamen aynı kavram değildir."),
+      section("Neden Hekim Kontrolü Önemlidir?", "Uyku hali, düşme riski, dikkat ve bellek etkileri ile alkol veya başka merkezi sinir sistemi baskılayıcılarıyla etkileşim güvenlik açısından önem taşıyabilir. Uzun süre kullanılan benzodiazepinlerin aniden bırakılması bazı kişilerde ciddi sorun oluşturabileceğinden değişiklikler hekim değerlendirmesiyle planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyolitik", slug: "anksiyolitik" },
+      { term: "GABA", slug: "gaba" },
+      { term: "Tolerans", slug: "tolerans" },
+      { term: "Yoksunluk", slug: "yoksunluk" }
+    ],
+    seo: {
+      title: "Benzodiazepin Nedir? | Psikiyatri Sözlüğü",
+      description: "Benzodiazepinlerin GABA sistemi, klinik kullanım, tolerans, bağımlılık ve güvenli izlem açısından temel özelliklerini açıklar.",
+      ogTitle: "Benzodiazepin Nedir?",
+      ogDescription: "Benzodiazepin ilaç grubunu kullanım alanları ve güvenlik çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "GABA sistemini etkileyerek sedatif ve kaygı azaltıcı özellik gösterebilen ilaç grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Bilgilendirilmiş onam",
+    slug: "bilgilendirilmis-onam",
+    shortDefinition: "Bilgilendirilmiş onam, kişinin önerilen değerlendirme veya sağlık hizmetinin amacı, olası yararları, önemli riskleri ve alternatifleri hakkında anlaşılır bilgi aldıktan sonra özgür iradesiyle karar vermesi sürecidir.",
+    intro: "Bilgilendirilmiş onam yalnız bir formun imzalanmasından ibaret değildir. Kişinin kendisine sunulan bilgiyi anlayabilmesi, soru sorabilmesi ve kararını baskı altında kalmadan verebilmesi sürecin temel parçalarıdır.",
+    sections: [
+      section("Bilgilendirilmiş Onam Neleri İçerir?", "Kişiye yapılacak değerlendirmenin veya uygulamanın amacı, nasıl yürütüleceği, önemli olası yarar ve riskler ile mevcut alternatifler anlaşılır biçimde açıklanır. Kişinin bilgi düzeyi ve gereksinimleri dikkate alınarak açıklamanın anlaşılır olması sağlanmaya çalışılır."),
+      section("Form İmzalamak Tek Başına Yeterli midir?", "Hayır. İmza sürecin belgelendirilmesine yardımcı olabilir ancak kişinin neye onay verdiğini anlamadığı bir durumda yalnız imzanın bulunması gerçek anlamda bilgilendirilmiş karar verildiğini göstermez. Onam iletişime dayalı devam eden bir süreçtir."),
+      section("Kişi Fikrini Değiştirebilir mi?", "Birçok sağlık hizmetinde kişi daha önce verdiği onamı yeniden değerlendirebilir ve kararını değiştirebilir. Bunun sınırları acil durumlar, kişinin karar verme kapasitesi ve geçerli yasal düzenlemeler gibi özel koşullara göre farklılaşabilir."),
+      section("Karar Verme Kapasitesi Neden Önemlidir?", "Kişinin verilen bilgiyi anlaması, seçeneklerin sonuçlarını değerlendirebilmesi ve kararını ifade edebilmesi önemlidir. Karar verme kapasitesi belirli bir karara özgü olarak değerlendirilebilir ve yalnız bir psikiyatrik tanının bulunması kapasitenin otomatik olarak olmadığı anlamına gelmez.")
+    ],
+    relatedTerms: [
+      { term: "Mahremiyet", slug: "mahremiyet" },
+      { term: "Gizlilik", slug: "gizlilik" },
+      { term: "Hasta hakları", slug: "hasta-haklari" },
+      { term: "Adli psikiyatri", slug: "adli-psikiyatri" }
+    ],
+    seo: {
+      title: "Bilgilendirilmiş Onam Nedir? | Psikiyatri Sözlüğü",
+      description: "Bilgilendirilmiş onamın bilgi verme, anlama, gönüllülük ve karar verme kapasitesi bileşenlerini açıklar.",
+      ogTitle: "Bilgilendirilmiş Onam Nedir?",
+      ogDescription: "Bilgilendirilmiş onamın yalnızca imza olmadığını ve temel unsurlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin yeterli bilgi aldıktan ve seçenekleri anladıktan sonra gönüllü biçimde karar vermesi süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Bölme",
+    slug: "bolme",
+    shortDefinition: "Bölme, kişinin kendisini, başka insanları veya ilişkileri aynı anda hem olumlu hem olumsuz özellikleriyle değerlendirmekte zorlanıp tamamen iyi ya da tamamen kötü biçiminde algılayabildiği psikolojik savunma örüntüsüdür.",
+    intro: "Bölme özellikle yoğun duygusal durumlarda karmaşık ve çelişkili duyguları bir arada tutmanın zorlaştığı zamanlarda görülebilir. Tek başına belirli bir psikiyatrik tanıyı göstermez.",
+    sections: [
+      section("Bölme Nasıl Görülebilir?", "Bir kişi bir ilişkiyi belirli bir anda tamamen güvenli ve kusursuz olarak değerlendirirken hayal kırıklığı sonrasında aynı kişiyi bütünüyle kötü veya değersiz görebilir. Bu hızlı değişim ilişkinin bütün özelliklerini dengeli biçimde değerlendirmeyi güçleştirebilir."),
+      section("Neden Bir Savunma Mekanizması Olarak Ele Alınır?", "Çelişkili duyguları aynı anda yaşamak psikolojik olarak zorlayıcı olabilir. Bölme, olumlu ve olumsuz deneyimleri geçici olarak birbirinden ayırarak yoğun kaygıyı azaltabilir; ancak kalıcı hale geldiğinde ilişkilerin daha değişken ve çatışmalı yaşanmasına katkıda bulunabilir."),
+      section("Bölme Sadece Borderline Kişilikte mi Görülür?", "Hayır. Bölme borderline kişilik örüntüsüyle ilişkilendirilen kavramlardan biridir ancak farklı kişilerde, gelişim dönemlerinde ve yoğun stres koşullarında da görülebilir. Tek bir savunma mekanizması üzerinden kişilik tanısı konulmaz."),
+      section("Psikoterapide Nasıl Ele Alınabilir?", "Kişinin bir insan veya olay hakkında aynı anda birden fazla duygu taşıyabilmesini fark etmesi ve olumlu-olumsuz özellikleri daha bütüncül değerlendirebilmesi üzerinde çalışılabilir. Amaç duyguları geçersiz kılmak değil, karmaşık deneyimlere daha esnek biçimde yaklaşabilmektir.")
+    ],
+    relatedTerms: [
+      { term: "Savunma mekanizması", slug: "savunma-mekanizmasi" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Mentalizasyon", slug: "mentalizasyon" }
+    ],
+    seo: {
+      title: "Bölme Nedir? | Psikiyatri Sözlüğü",
+      description: "Bölme savunmasının kişileri tamamen iyi veya kötü değerlendirme eğilimiyle ilişkisini ve klinik anlamını açıklar.",
+      ogTitle: "Bölme Nedir?",
+      ogDescription: "Bölme savunma mekanizmasını damgalayıcı olmayan klinik bir çerçevede açıklar."
+    },
+    schema: {
+      definedTermDescription: "Olumlu ve olumsuz özellikleri bütünleştirmekte zorlanarak deneyimleri kutuplaştırma eğilimi."
+    }
+  }),
+
+  defineTerm({
+    term: "Damgalanma",
+    slug: "damgalanma",
+    shortDefinition: "Damgalanma, ruhsal hastalık veya başka bir özellikle ilişkilendirilen olumsuz kalıp yargılar nedeniyle kişinin küçümsenmesi, dışlanması, ayrımcılığa uğraması veya toplumdaki değerinin azaltılması sürecidir.",
+    intro: "Ruhsal hastalıklara ilişkin damgalanma kişilerin sağlık hizmetine başvurmasını geciktirebilir, sosyal ilişkilerini etkileyebilir ve hastalığın kendisinden bağımsız ek bir yük oluşturabilir.",
+    sections: [
+      section("Damgalanma Nasıl Ortaya Çıkar?", "Ruhsal hastalıkların kişisel zayıflık, tehlikelilik veya değişmezlik gibi yanlış genellemelerle ilişkilendirilmesi damgalanmaya katkıda bulunabilir. Bu kalıp yargılar günlük konuşmalardan iş, eğitim ve sağlık hizmetlerine kadar farklı alanlarda görülebilir."),
+      section("Ayrımcılıktan Farkı Nedir?", "Damgalanma olumsuz etiket ve kalıp yargıları içeren daha geniş bir süreçtir. Ayrımcılık ise bu önyargıların kişinin iş, eğitim, barınma, sağlık hizmeti veya sosyal ilişkilerinde somut dezavantaja dönüşmesini ifade edebilir."),
+      section("İçselleştirilmiş Damgalanma Nedir?", "Kişi toplumdaki olumsuz yargıları kendi benliğine uygulamaya başladığında kendisini yetersiz, değersiz veya umutsuz görebilir. Bu süreç özsaygıyı ve yardım arama davranışını olumsuz etkileyebilir."),
+      section("Damgalanmayı Azaltmak Neden Önemlidir?", "Ruhsal hastalıkların bilimsel ve insan odaklı biçimde konuşulması, kişiyi tanısından ibaret görmeyen dil kullanılması ve ayrımcı uygulamaların azaltılması önemlidir. Bilgilendirme tek başına her önyargıyı ortadan kaldırmasa da yanlış inanışların sorgulanmasına katkı sağlayabilir. Ruhsal hastalık yaşayan kişilerin çalışma, eğitim, sağlık hizmeti ve sosyal yaşama eşit katılımının desteklenmesi de damgalanmanın etkilerini azaltmada önemlidir. Kişinin yalnızca tanısıyla değil, yaşamının bütünlüğü içinde görülmesi bu yaklaşımın temel parçalarından biridir.")
+    ],
+    relatedTerms: [
+      { term: "Stigma", slug: "stigma" },
+      { term: "İçselleştirilmiş stigma", slug: "icsellestirilmis-stigma" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" },
+      { term: "Özsaygı", slug: "ozsaygi" }
+    ],
+    seo: {
+      title: "Damgalanma Nedir? | Psikiyatri Sözlüğü",
+      description: "Ruhsal hastalıklarda damgalanmanın kalıp yargı, ayrımcılık ve içselleştirilmiş stigma ile ilişkisini açıklar.",
+      ogTitle: "Damgalanma Nedir?",
+      ogDescription: "Ruhsal hastalıklarda damgalanmanın kişi ve toplum üzerindeki etkilerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Olumsuz kalıp yargılar nedeniyle kişinin etiketlenmesi, dışlanması veya değersizleştirilmesi süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Davranım bozukluğu",
+    slug: "davranim-bozuklugu",
+    shortDefinition: "Davranım bozukluğu, çocuk veya ergenin başkalarının temel haklarını ya da yaşına uygun önemli toplumsal kuralları tekrarlayan ve süreğen biçimde ihlal ettiği davranış örüntüsüyle tanımlanan psikiyatrik bozukluktur.",
+    intro: "Tek bir kural ihlali, öfke nöbeti veya ergenlik dönemindeki çatışma davranım bozukluğu anlamına gelmez. Değerlendirmede davranışların niteliği, sürekliliği, gelişimsel bağlamı ve farklı yaşam alanlarındaki etkileri birlikte ele alınır.",
+    sections: [
+      section("Davranım Bozukluğunda Hangi Davranışlar Görülebilir?", "İnsanlara veya hayvanlara yönelik saldırgan davranışlar, başkasının malına zarar verme, ciddi aldatıcı davranışlar, hırsızlık veya önemli kuralların tekrar tekrar ihlali gibi farklı örüntüler görülebilir. Her çocukta aynı belirtilerin bulunması gerekmez."),
+      section("Normal Ergenlik Davranışlarından Nasıl Ayrılır?", "Ergenlikte sınırları deneme ve otoriteyle zaman zaman çatışma görülebilir. Davranım bozukluğunda ise ihlaller daha ciddi, tekrar eden ve başkalarının güvenliği ya da hakları üzerinde belirgin etki oluşturan bir örüntü halindedir."),
+      section("Neden Damgalayıcı Dilden Kaçınılmalıdır?", "Bu tanı çocuğun veya ergenin 'kötü' olduğu anlamına gelmez. Travma, aile ve çevre koşulları, öğrenme güçlükleri, DEHB, madde kullanımı ve başka ruhsal sorunlar davranışların ortaya çıkışı veya sürmesinde rol oynayabilir."),
+      section("Değerlendirmede Neler Ele Alınır?", "Çocuğun gelişim öyküsü, okul ve aile ortamı, akran ilişkileri, belirtilerin başladığı dönem ve eşlik eden ruhsal sorunlar değerlendirilir. Güvenlik riski varsa bu ayrıca ele alınır ve destek planı çocuğun, ailenin ve çevrenin ihtiyaçlarına göre şekillendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Akran ilişkileri", slug: "akran-iliskileri" },
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" }
+    ],
+    seo: {
+      title: "Davranım Bozukluğu Nedir? | Psikiyatri Sözlüğü",
+      description: "Davranım bozukluğunun tekrar eden hak ve kural ihlalleriyle ilişkisini ve normal ergenlik davranışlarından farkını açıklar.",
+      ogTitle: "Davranım Bozukluğu Nedir?",
+      ogDescription: "Davranım bozukluğunu gelişimsel ve damgalayıcı olmayan bir klinik çerçevede açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuk ve ergenlerde başkalarının haklarını veya önemli kuralları süreğen biçimde ihlal eden davranış örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Doz titrasyonu",
+    slug: "doz-titrasyonu",
+    shortDefinition: "Doz titrasyonu, bir ilacın dozunun klinik yanıt, yan etkiler, kişinin tıbbi özellikleri ve tedavi hedefleri dikkate alınarak sağlık profesyoneli tarafından aşamalı biçimde ayarlanması sürecidir.",
+    intro: "Titrasyon her ilaçta aynı hız veya yöntemle yapılmaz. İlacın farmakolojik özellikleri, kişinin yaşı, eşlik eden hastalıkları, kullanılan diğer ilaçlar ve tedaviye verdiği yanıt süreci etkileyebilir.",
+    sections: [
+      section("Doz Titrasyonu Neden Yapılır?", "Amaç yalnızca daha yüksek bir doza ulaşmak değildir. En düşük etkili doz ile kabul edilebilir yan etki düzeyi arasında kişiye uygun bir denge kurulmaya çalışılır. Bazı ilaçlarda doz artırımı, bazılarında ise azaltım süreci titrasyon gerektirebilir."),
+      section("Her İlaç Aynı Şekilde Titre Edilir mi?", "Hayır. İlaçların yarı ömürleri, metabolizmaları, terapötik aralıkları ve ciddi yan etki riskleri farklıdır. Bu nedenle bir ilaç için kullanılan doz değişim yaklaşımı başka bir ilaç için geçerli olmayabilir."),
+      section("Yan Etkiler Titrasyonu Nasıl Etkiler?", "Yeni bir yan etki ortaya çıktığında bunun şiddeti, süresi ve ilaçla ilişkisi değerlendirilir. Klinik gereksinime göre mevcut dozun sürdürülmesi, planın değiştirilmesi veya farklı bir tedavi seçeneğinin değerlendirilmesi gerekebilir."),
+      section("Kişi Dozunu Kendi Kendine Değiştirmeli midir?", "Hayır. İlacın beklenen etkisi, kesilme belirtileri, etkileşimler veya başka güvenlik sorunları doz değişikliklerini kişiye özgü hale getirir. Bu nedenle doz artırma, azaltma veya bırakma kararları tedaviyi düzenleyen sağlık profesyoneliyle birlikte planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Yan etki", slug: "yan-etki" },
+      { term: "Etkileşim", slug: "etkilesim" },
+      { term: "Farmakokinetik", slug: "farmakokinetik" },
+      { term: "İlaç uyumu", slug: "ilac-uyumu" }
+    ],
+    seo: {
+      title: "Doz Titrasyonu Nedir? | Psikiyatri Sözlüğü",
+      description: "Doz titrasyonunun ilaç dozunun klinik yanıt ve yan etkilere göre profesyonel olarak ayarlanması süreci olduğunu açıklar.",
+      ogTitle: "Doz Titrasyonu Nedir?",
+      ogDescription: "Doz titrasyonu kavramını güvenli ilaç kullanımı çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "İlaç dozunun etkinlik ve güvenlik göz önüne alınarak aşamalı biçimde ayarlanması süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Duygusal yoksunluk",
+    slug: "duygusal-yoksunluk",
+    shortDefinition: "Duygusal yoksunluk, kişinin sevgi, ilgi, anlayış, korunma veya duygusal destek gibi temel ilişkisel ihtiyaçlarının başkaları tarafından yeterince karşılanmayacağı yönündeki kalıcı beklentisini ifade eden şema kavramıdır.",
+    intro: "Duygusal yoksunluk şeması kişinin gerçekten hiçbir zaman destek görmediği anlamına gelmez. Kişinin ilişkilerde ihtiyaçlarının karşılanmasını nasıl beklediği ve gelen desteği nasıl algıladığı da önemlidir.",
+    sections: [
+      section("Duygusal Yoksunluk Nasıl Deneyimlenebilir?", "Kişi yakın ilişkileri olsa bile yeterince anlaşılmadığını, önemsenmediğini veya duygusal olarak desteklenmediğini hissedebilir. Bu beklenti bazen ihtiyaçları açıkça ifade etmekte zorlanma veya karşı taraftan kendiliğinden anlaşılmayı bekleme ile birlikte görülebilir."),
+      section("Erken Deneyimlerle İlişkisi Nedir?", "Çocukluk döneminde duygusal ihtiyaçların sürekli olarak fark edilmemesi veya karşılanmaması böyle bir şemanın gelişimine katkıda bulunabilir. Bununla birlikte tek bir çocukluk deneyiminden doğrudan ve kesin neden-sonuç ilişkisi kurulmaz."),
+      section("İlişkilerde Nasıl Sürdürülebilir?", "Kişi duygusal olarak mesafeli insanlara yönelebilir, kendi ihtiyaçlarını ifade etmekten kaçınabilir veya aldığı desteği yetersiz olarak değerlendirebilir. Bu örüntüler şemanın doğrulandığı hissini güçlendirebilir."),
+      section("Duygusal İhmal ile Aynı Şey midir?", "Tam olarak değil. Duygusal ihmal kişinin gelişim döneminde ihtiyaçlarının yeterince karşılanmamasını ifade eden deneyimsel bir kavramdır. Duygusal yoksunluk ise kişinin ilişkilerinde taşıdığı daha kalıcı beklenti ve şema örüntüsünü tanımlar. Kişinin bugün destekleyici ilişkiler içinde bulunması bu eski beklentinin otomatik olarak ortadan kalkacağı anlamına gelmez; yeni ilişki deneyimlerinin nasıl yorumlandığı da önem taşır.")
+    ],
+    relatedTerms: [
+      { term: "Duygusal ihmal", slug: "duygusal-ihmal" },
+      { term: "Şema terapi", slug: "sema-terapi" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Benlik", slug: "benlik" }
+    ],
+    seo: {
+      title: "Duygusal Yoksunluk Nedir? | Psikiyatri Sözlüğü",
+      description: "Duygusal yoksunluk şemasının destek ve yakınlık beklentileriyle ilişkisini ve duygusal ihmalden farkını açıklar.",
+      ogTitle: "Duygusal Yoksunluk Nedir?",
+      ogDescription: "Duygusal yoksunluk şemasını ilişkisel ihtiyaçlar bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Duygusal ihtiyaçların başkaları tarafından yeterince karşılanmayacağı yönündeki kalıcı beklenti."
+    }
+  }),
+
+  defineTerm({
+    term: "Ebeveyn tutumu",
+    slug: "ebeveyn-tutumu",
+    shortDefinition: "Ebeveyn tutumu, anne, baba veya bakım veren kişinin çocuğa yakınlık gösterme, sınır koyma, beklenti oluşturma, destek verme ve davranışlara yanıt verme biçimlerinin genel örüntüsünü ifade eder.",
+    intro: "Ebeveynlik tek bir doğru davranış listesine indirgenemez. Çocuğun yaşı, mizacı, gelişim düzeyi, aile koşulları ve kültürel bağlam ebeveyn-çocuk etkileşimini etkiler.",
+    sections: [
+      section("Ebeveyn Tutumunda Hangi Boyutlar Önemlidir?", "Duygusal sıcaklık, tutarlılık, sınırların açıklığı, çocuğun yaşına uygun özerklik tanınması ve davranışlara verilen tepkiler önemli boyutlardır. Aynı ailede farklı çocukların farklı düzeyde desteğe ve yapıya ihtiyacı olabilir."),
+      section("Sınır Koymak Olumsuz Bir Tutum mudur?", "Hayır. Yaşa uygun, anlaşılır ve tutarlı sınırlar çocuğun güvenliğini ve özdenetim gelişimini destekleyebilir. Sorun sınır bulunması değil, sınırların aşırı katı, öngörülemez, korkutucu veya çocuğun gelişim düzeyiyle uyumsuz olması olabilir."),
+      section("Ebeveyn Tutumu Çocuğun Ruh Sağlığını Tek Başına Belirler mi?", "Hayır. Çocuğun ruhsal gelişimi genetik özellikler, mizaç, okul ortamı, akran ilişkileri, yaşam olayları ve başka birçok etkenin etkileşimiyle şekillenir. Ebeveynleri tek başına sorumlu tutan açıklamalar bilimsel olarak aşırı basitleştiricidir."),
+      section("Tutarlılık Neden Önemlidir?", "Çocuğun benzer durumlarda ne bekleyeceğini bilmesi güven duygusuna katkıda bulunabilir. Bununla birlikte tutarlılık değişmez veya mekanik davranmak değildir; çocuğun yaşı ve koşullar değiştikçe ebeveynlik yaklaşımının da esnek biçimde uyarlanması gerekebilir.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" },
+      { term: "Akran ilişkileri", slug: "akran-iliskileri" },
+      { term: "Duygusal ihmal", slug: "duygusal-ihmal" }
+    ],
+    seo: {
+      title: "Ebeveyn Tutumu Nedir? | Psikiyatri Sözlüğü",
+      description: "Ebeveyn tutumunun sıcaklık, sınır, tutarlılık ve özerklik boyutlarını gelişimsel bir çerçevede açıklar.",
+      ogTitle: "Ebeveyn Tutumu Nedir?",
+      ogDescription: "Ebeveyn tutumunu suçlayıcı olmayan gelişimsel bir yaklaşım içinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bakım verenin çocuğa yakınlık, sınır, destek ve beklenti sunma biçimlerinin genel örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "Ehliyet değerlendirmesi",
+    slug: "ehliyet-degerlendirmesi",
+    shortDefinition: "Ehliyet değerlendirmesi, kişinin sürücülük için gerekli dikkat, bilişsel işlevler, davranış kontrolü, tıbbi durum ve gerektiğinde ruhsal özelliklerinin trafik güvenliği açısından değerlendirilmesi sürecidir.",
+    intro: "Bir psikiyatrik tanının bulunması kişinin otomatik olarak araç kullanamayacağı anlamına gelmez. Değerlendirme tanı etiketinden çok mevcut işlevsellik, belirtiler, kullanılan ilaçların etkileri ve güvenli sürüş için gereken beceriler üzerine odaklanır.",
+    sections: [
+      section("Ehliyet Değerlendirmesinde Neler İncelenir?", "Dikkat, tepki verme, dürtü kontrolü, bilinç düzeyi, bilişsel işlevler ve kişinin hastalığının sürüş güvenliğini etkileyip etkilemediği değerlendirilebilir. Gerekli durumlarda tıbbi belgeler, ilaç kullanımı ve geçmiş sürüş öyküsü de dikkate alınır."),
+      section("Psikiyatrik Tanı Ehliyeti Otomatik Olarak Engeller mi?", "Hayır. Aynı tanıya sahip kişilerin belirtileri ve işlevsellikleri çok farklı olabilir. Değerlendirme kişinin güncel klinik durumu ve geçerli mevzuat çerçevesinde yapılır; yalnız tanı adına dayanarak sonuç çıkarılmaz."),
+      section("İlaç Kullanımı Neden Önemlidir?", "Bazı ilaçlar özellikle başlangıç veya değişiklik dönemlerinde uyku hali, dikkat azalması veya tepki süresinde değişiklik oluşturabilir. Ancak kullanılan her psikiyatrik ilaç sürüşün yasak olduğu anlamına gelmez; bireysel etkiler klinik olarak değerlendirilir."),
+      section("Adli Psikiyatriyle İlişkisi Nedir?", "Sürücülük yeterliliği bazı durumlarda tıbbi ve hukuki ölçütlerin birlikte ele alınmasını gerektirir. Hangi uzmanların değerlendirme yapacağı, hangi raporların gerektiği ve karar ölçütleri yürürlükteki mevzuata göre değişebilir.")
+    ],
+    relatedTerms: [
+      { term: "Adli psikiyatri", slug: "adli-psikiyatri" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "Ehliyet Değerlendirmesi Nedir? | Psikiyatri Sözlüğü",
+      description: "Ehliyet değerlendirmesinin tanıdan çok sürüş güvenliği, dikkat, işlevsellik ve klinik durum üzerinden nasıl ele alındığını açıklar.",
+      ogTitle: "Ehliyet Değerlendirmesi Nedir?",
+      ogDescription: "Psikiyatride sürücülük yeterliliği değerlendirmesinin temel ilkelerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Sürücülük için gerekli tıbbi, bilişsel ve ruhsal işlevlerin trafik güvenliği açısından değerlendirilmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Enkoprezis",
+    slug: "enkoprezis",
+    shortDefinition: "Enkoprezis, gelişimsel olarak bağırsak kontrolünün beklendiği yaşa ulaşmış bir çocukta dışkının tekrarlayan biçimde uygun olmayan yerlere yapılması veya kaçırılması durumunu tanımlayan klinik terimdir.",
+    intro: "Enkoprezis kasıtlı yaramazlık olarak değerlendirilmemelidir. Kabızlık ve dışkı tutma davranışı sık görülen nedenler arasında olabilir; bunun yanında gelişimsel, davranışsal ve psikososyal etkenlerin de değerlendirilmesi gerekebilir.",
+    sections: [
+      section("Enkoprezis Nasıl Ortaya Çıkabilir?", "Uzun süren kabızlıkta bağırsakta biriken dışkı rektumu genişletebilir ve çocuğun dışkılama hissini fark etmesi zorlaşabilir. Daha yumuşak dışkının birikimin çevresinden sızması çocuğun farkında olmadan iç çamaşırına kaçırmasına neden olabilir."),
+      section("Her Enkoprezis Kabızlığa mı Bağlıdır?", "Hayır. Kabızlık sık görülmekle birlikte her olgu aynı mekanizmayla açıklanmaz. Tıbbi öykü, dışkılama alışkanlıkları, beslenme, tuvalet eğitimi, gelişimsel özellikler ve gerektiğinde fiziksel değerlendirme birlikte ele alınır."),
+      section("Çocuğu Suçlamak Neden Uygun Değildir?", "Utandırma, cezalandırma veya çocuğun bunu bilerek yaptığı varsayımı sorunu ağırlaştırabilir ve çocuğun yardım istemesini güçleştirebilir. Yaklaşımın sakin, destekleyici ve mahremiyete saygılı olması önemlidir."),
+      section("Ne Zaman Değerlendirme Gerekir?", "Tekrarlayan dışkı kaçırma, belirgin kabızlık, ağrılı dışkılama veya günlük yaşamı etkileyen sorunlarda çocuk sağlığı değerlendirmesi önemlidir. Ruhsal ve davranışsal etkenler varsa bunlar tıbbi değerlendirmeyi dışlamadan birlikte ele alınabilir. Sorunun ne zamandır sürdüğü, tuvalet alışkanlıkları, dışkı tutma davranışı ve okul ya da sosyal yaşam üzerindeki etkisi değerlendirmeye önemli bilgiler sağlar.")
+    ],
+    relatedTerms: [
+      { term: "Enürezis", slug: "enurezis" },
+      { term: "Gelişimsel değerlendirme", slug: "gelisimsel-degerlendirme" },
+      { term: "Ebeveyn tutumu", slug: "ebeveyn-tutumu" },
+      { term: "Çocuk psikiyatrisi", slug: "cocuk-psikiyatrisi" }
+    ],
+    seo: {
+      title: "Enkoprezis Nedir? | Psikiyatri Sözlüğü",
+      description: "Enkoprezisin çocuklarda tekrarlayan dışkı kaçırma durumunu, kabızlıkla ilişkisini ve suçlayıcı olmayan değerlendirme yaklaşımını açıklar.",
+      ogTitle: "Enkoprezis Nedir?",
+      ogDescription: "Enkoprezisi gelişimsel, tıbbi ve psikososyal yönleriyle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Gelişimsel olarak bağırsak kontrolü beklenen çocukta tekrarlayan dışkı kaçırma veya uygunsuz yere dışkılama durumu."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...eighthBatchNewTerms,
   ...seventhBatchNewTerms,
   ...sixthBatchNewTerms,
   ...fifthBatchNewTerms,
