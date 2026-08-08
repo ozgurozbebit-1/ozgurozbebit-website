@@ -136,6 +136,94 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["dikkat-eksikligi", {
+    shortDefinition: "Dikkat eksikliği, kişinin dikkatini gerekli uyaranlara yöneltme veya belirli bir görev üzerinde yeterince sürdürebilme konusunda yaşadığı güçlüğü ifade eden genel bir klinik tanımlamadır.",
+    intro: "Dikkat eksikliği tek başına DEHB anlamına gelmez. Uyku, kaygı, depresif belirtiler, fiziksel hastalıklar, kullanılan maddeler veya çevresel koşullar da kişinin dikkat performansını etkileyebilir.",
+    sections: [
+      section("Dikkat Eksikliği Günlük Yaşamda Nasıl Görülebilir?", "Kişi konuşmaları takip etmekte, uzun süren görevlerde odağını korumakta veya ayrıntılara dikkat etmekte zorlanabilir. Yapılacak işleri unutma, bir görevden diğerine geçme veya dış uyaranlarla kolayca dikkatin dağılması da görülebilir. Ancak bu belirtilerin arada sırada yaşanması tek başına klinik bir sorun anlamına gelmez."),
+      section("Dikkat Eksikliği ile DEHB Aynı Şey midir?", "Hayır. DEHB, dikkatsizlik belirtilerinin yanı sıra bazı kişilerde dürtüsellik ve hareketlilik belirtilerinin de değerlendirildiği nörogelişimsel bir bozukluktur. Tanısal değerlendirmede belirtilerin çocukluk döneminden itibaren bulunması, birden fazla yaşam alanında görülmesi ve işlevselliği etkilemesi gibi özellikler önemlidir."),
+      section("Uyku ve Kaygı Dikkati Nasıl Etkileyebilir?", "Yetersiz uyku, yoğun zihinsel yorgunluk veya kaygı sırasında kişi dikkatini sürdürmekte geçici olarak zorlanabilir. Kaygılı kişilerde dikkat tehdit olarak algılanan uyaranlara yönelirken diğer bilgiler gözden kaçabilir. Bu nedenle dikkat güçlüğünün hangi koşullarda arttığını anlamak değerlendirmede önem taşır."),
+      section("Dikkat Güçlüğü Nasıl Değerlendirilir?", "Kişinin öyküsü, belirtilerin ne zamandır bulunduğu, okul veya iş performansına etkisi ve farklı ortamlarda görülüp görülmediği birlikte ele alınır. Gerektiğinde dikkat ve bilişsel işlevleri değerlendiren standart testlerden yararlanılabilir; ancak tek bir test sonucu tek başına tanı koydurmaz.")
+    ],
+    relatedTerms: [
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Çalışma belleği", slug: "calisma-bellegi" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["distimi", {
+    shortDefinition: "Distimi, güncel sınıflandırmalarda büyük ölçüde kalıcı depresif bozukluk kapsamında ele alınan, uzun süreli çökkün duygudurum ve eşlik eden depresif belirtileri tanımlamak için kullanılan eski bir klinik terimdir.",
+    intro: "Distimi terimi günümüzde önceki sınıflandırmalardaki kadar bağımsız kullanılmamaktadır. Kavramın temelinde, daha hafif görünebilse de uzun süre devam eden depresif belirtilerin kişinin yaşamına etkisi bulunur.",
+    sections: [
+      section("Distimi Nasıl Bir Klinik Görünümü Tanımlar?", "Kişi uzun süre kendisini moralsiz, isteksiz veya enerjisiz hissedebilir. Özgüvende azalma, karar vermede güçlük, umutsuzluk, uyku veya iştah değişiklikleri gibi belirtiler eşlik edebilir. Belirtilerin sürekliliği nedeniyle kişi zamanla bu duygusal durumu kendi olağan hali gibi algılayabilir."),
+      section("Distimi ile Majör Depresyon Arasındaki Fark Nedir?", "Majör depresif dönemlerde belirtiler belirli bir zaman diliminde daha belirgin yoğunlaşabilir. Distimi kavramında ise daha uzun süre devam eden kronik depresif belirtiler ön plandadır. Güncel sınıflandırmalarda uzun süreli depresif tablolar kalıcı depresif bozukluk başlığı altında daha bütüncül biçimde ele alınır."),
+      section("Uzun Süreli Moral Bozukluğu Distimi midir?", "Hayır. Yaşam koşullarına bağlı uzun süreli üzüntü veya stres yaşamak tek başına depresif bozukluk anlamına gelmez. Değerlendirmede belirtilerin süresi, yoğunluğu, kişinin olağan işlev düzeyinden ne ölçüde farklı olduğu ve yaşamındaki etkileri dikkate alınır."),
+      section("Neden Güncel Terminoloji Önemlidir?", "Psikiyatrik sınıflandırmalar zaman içinde değişebilir ve bazı eski terimler yeni tanısal çerçevelerin içine alınabilir. Distimi bu açıdan tarihsel olarak önemli bir kavramdır ancak güncel klinik değerlendirmede kişinin belirtileri mevcut tanı ölçütleri ve yaşam öyküsü üzerinden ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Çökkün duygudurum", slug: "cokkun-duygudurum" },
+      { term: "Anhedoni", slug: "anhedoni" },
+      { term: "Apati", slug: "apati" },
+      { term: "Duygudurum", slug: "duygudurum" }
+    ]
+  }],
+
+  ["durtu-kontrolu", {
+    shortDefinition: "Dürtü kontrolü, kişinin kısa vadede güçlü bir istek uyandıran davranışı durdurabilmesi, erteleyebilmesi veya sonuçlarını değerlendirerek düzenleyebilmesi kapasitesidir.",
+    intro: "Dürtü kontrolü kişinin hiçbir zaman ani davranmaması anlamına gelmez. Önemli olan, davranış ile sonuçları arasında düşünmeye ve seçim yapmaya yeterli zihinsel alan oluşturabilmesidir.",
+    sections: [
+      section("Dürtü Kontrolü Günlük Yaşamda Nasıl Kullanılır?", "Öfkeli olduğunda hemen tepki vermemek, anlık bir isteğe rağmen uzun vadeli hedefleri dikkate almak veya bir davranışın olası sonuçlarını düşünmek dürtü kontrolünün günlük örnekleridir. Bu kapasite yorgunluk, yoğun duygu veya madde etkisi gibi durumlarda geçici olarak azalabilir."),
+      section("Dürtüsellik ile Dürtü Kontrolü Aynı Şey midir?", "Dürtüsellik, kişinin yeterince düşünmeden hızlı davranma eğilimini ifade eder. Dürtü kontrolü ise bu eğilimi düzenleyebilme kapasitesiyle ilişkilidir. Bir kişi bazı alanlarda oldukça kontrollüyken belirli durumlarda daha dürtüsel davranabilir; bu nedenle davranışın bağlamı önemlidir."),
+      section("Hangi Durumlar Dürtü Kontrolünü Etkileyebilir?", "DEHB, bazı kişilik örüntüleri, madde kullanım sorunları ve duygudurum dönemlerinde dürtüsellik artabilir. Yoğun öfke, korku veya heyecan da kişinin karar verme süresini kısaltabilir. Ancak tek bir dürtüsel davranış üzerinden psikiyatrik tanı konulmaz."),
+      section("Değerlendirmede Neler Önemlidir?", "Dürtüsel davranışların ne sıklıkta olduğu, hangi koşullarda ortaya çıktığı ve kişinin ilişkileri, güvenliği, ekonomik durumu veya günlük sorumlulukları üzerinde nasıl bir etkisi bulunduğu değerlendirilir. Amaç kişiyi iradesiz olarak etiketlemek değil, davranışın ortaya çıkmasını kolaylaştıran etkenleri anlamaktır.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["duygu-duzenleme", {
+    shortDefinition: "Duygu düzenleme, kişinin duygularını fark etmesi, anlamlandırması ve bulunduğu duruma uygun biçimde yönetebilmesiyle ilişkili psikolojik süreçlerin bütünüdür.",
+    intro: "Duygu düzenlemek bir duyguyu bastırmak veya hiç hissetmemek anlamına gelmez. Amaç, duygunun varlığını korurken kişinin davranışlarını yalnızca o anki yoğun duygunun belirlememesidir.",
+    sections: [
+      section("Duygu Düzenleme Hangi Süreçleri İçerir?", "Kişinin ne hissettiğini fark etmesi, duygunun hangi olayla ilişkili olduğunu anlaması, yoğunluğunu tolere etmesi ve davranışını buna göre seçebilmesi duygu düzenlemenin parçalarıdır. Gerektiğinde dikkati başka bir noktaya yöneltmek veya bir durumu farklı açıdan değerlendirmek de bu süreçte kullanılabilir."),
+      section("Yoğun Duygular Duygu Düzenleme Sorunu Anlamına mı Gelir?", "Hayır. Yoğun sevinç, üzüntü, korku veya öfke yaşamak insan deneyiminin doğal bir parçasıdır. Klinik açıdan sorun, duyguların sık biçimde kişinin davranışlarını kontrol etmesi, yatışmasının çok güç olması veya ilişkiler ve günlük işlevsellik üzerinde sürekli sorun yaratması durumunda gündeme gelebilir."),
+      section("Duygu Düzenleme ile Dürtü Kontrolü Nasıl İlişkilidir?", "Duygular çok yoğunlaştığında kişinin düşünmeden hareket etme eğilimi artabilir. Duygunun fark edilmesi ve yoğunluğunun yönetilebilmesi, davranış için daha fazla seçim alanı oluşturabilir. Bununla birlikte dürtüsellik yalnızca duygu düzenleme güçlüğüyle açıklanmaz."),
+      section("Duygu Düzenleme Kapasitesi Değişebilir mi?", "Evet. Uyku, stres düzeyi, yaşam deneyimleri, ilişkiler ve öğrenilen baş etme yöntemleri kişinin duyguları yönetme kapasitesini etkileyebilir. Duygu düzenleme sabit bir kişilik özelliği değildir ve uygun psikolojik yaklaşımlarla yeni beceriler öğrenilebilir.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "Bağlanma", slug: "baglanma" }
+    ]
+  }],
+
+  ["duygudurum", {
+    shortDefinition: "Duygudurum, kişinin saatler veya günler boyunca devam edebilen genel ve baskın duygusal durumunu ifade eden klinik bir kavramdır.",
+    intro: "Duygudurum, tek bir anda hissedilen duygudan daha uzun süreli bir duygusal arka planı ifade eder. Kişi kendisini çökkün, kaygılı, neşeli, irritabl veya olağan duygusal halinde hissedebilir.",
+    sections: [
+      section("Duygudurum Nasıl Değerlendirilir?", "Klinik görüşmede kişinin son günlerde veya haftalarda kendisini nasıl hissettiği, duygusal durumunun ne kadar sürdüğü ve günlük yaşamını nasıl etkilediği sorulabilir. Kişinin kendi anlatımı temel olmakla birlikte davranışları ve duygusal dışavurumu da değerlendirmeye katkı sağlar."),
+      section("Duygudurum ile Affekt Arasındaki Fark Nedir?", "Duygudurum kişinin daha uzun süreli öznel duygusal durumunu ifade eder. Affekt ise görüşme sırasında dışarıdan gözlenebilen anlık duygusal dışavurumdur. Kişi kendisini uzun süredir çökkün hissettiğini söyleyebilirken görüşme sırasında duygusal tepkileri farklı yoğunluklarda görülebilir."),
+      section("Duygudurum Değişiklikleri Her Zaman Hastalık Belirtisi midir?", "Hayır. İnsanların duygudurumları günlük olaylara, uykuya, stres düzeyine ve yaşam koşullarına bağlı olarak değişebilir. Klinik önem, değişikliğin kişinin olağan halinden belirgin olması, yeterince uzun sürmesi veya günlük işlevsellikte önemli bir etki oluşturmasıyla artar."),
+      section("Mani ve Depresyonda Duygudurum Nasıl Değişebilir?", "Depresif dönemlerde çökkün veya irritabl duygudurum görülebilirken manik ve hipomanik dönemlerde yükselmiş, genişlemiş veya irritabl duygudurum ortaya çıkabilir. Ancak duygudurumun tek başına nasıl göründüğü tanı için yeterli değildir; enerji, uyku, düşünce, davranış ve işlevsellikteki diğer değişiklikler de değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Affekt", slug: "affekt" },
+      { term: "Çökkün duygudurum", slug: "cokkun-duygudurum" },
+      { term: "Mani", slug: "mani" },
+      { term: "Hipomani", slug: "hipomani" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" }
+    ]
+  }],
+
   ["calisma-bellegi", {
     shortDefinition: "Çalışma belleği, bilgiyi kısa süre boyunca zihinde tutarken aynı anda bu bilgi üzerinde işlem yapabilme kapasitesidir.",
     intro: "Çalışma belleği yalnızca kısa süreli hatırlama değildir. Bir telefon numarasını geçici olarak akılda tutmak, yönergelerin sırasını izlemek veya zihinden hesap yapmak gibi görevlerde bilgiyi aktif biçimde kullanmayı sağlar.",
