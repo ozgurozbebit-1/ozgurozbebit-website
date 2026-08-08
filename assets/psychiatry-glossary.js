@@ -494,6 +494,16 @@ const glossaryDetailPages = {
   "Duyusal hassasiyet": "duyusal-hassasiyet",
   "Ayrılma kaygısı": "ayrilma-kaygisi",
   "Okul reddi": "okul-reddi",
+  "Farmakodinamik": "farmakodinamik",
+  "Farmakokinetik": "farmakokinetik",
+  "Formülasyon": "formulasyon",
+  "GABA": "gaba",
+  "GAD-7": "gad-7",
+  "Gelişimsel değerlendirme": "gelisimsel-degerlendirme",
+  "Gelişimsel gecikme": "gelisimsel-gecikme",
+  "Gizlilik": "gizlilik",
+  "Glutamat": "glutamat",
+  "Grandiyözite": "grandiyozite",
 };
 
 const PSYCHIATRY_GLOSSARY_TERMS = glossarySource

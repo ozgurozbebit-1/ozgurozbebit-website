@@ -3762,7 +3762,291 @@ const ninthBatchNewTerms = [
   })
 ];
 
+
+const tenthBatchNewTerms = [
+  defineTerm({
+    term: "Farmakodinamik",
+    slug: "farmakodinamik",
+    shortDefinition: "Farmakodinamik, bir ilacın vücutta hangi hedeflere bağlandığını, bu hedefler üzerinde nasıl etkiler oluşturduğunu ve doz ile biyolojik yanıt arasındaki ilişkiyi inceleyen farmakoloji alanıdır.",
+    intro: "Psikiyatride farmakodinamik bilgi, bir ilacın nörotransmitter sistemleri veya reseptörler üzerindeki etkilerini anlamaya yardımcı olur. Ancak bir etki mekanizmasını bilmek, belirli bir kişide tedavi yanıtının veya yan etkinin kesin olarak öngörülebileceği anlamına gelmez.",
+    sections: [
+      section("Farmakodinamik Ne İnceler?", "Bir ilacın reseptör, taşıyıcı protein, enzim veya iyon kanalı gibi biyolojik hedeflerle nasıl etkileştiğini inceler. Bu etkileşimlerin hücresel sinyaller, nörotransmisyon ve sonuçta gözlenen klinik etkilerle ilişkisi araştırılır. Aynı ilaç birden fazla biyolojik hedef üzerinde etkili olabilir."),
+      section("Reseptör Etkisi Neden Önemlidir?", "Bir ilacın belirli reseptörleri uyarması, engellemesi veya başka biçimde düzenlemesi hem hedeflenen etkilerle hem de bazı yan etkilerle ilişkili olabilir. Bununla birlikte reseptör profili tek başına ilacın bütün klinik özelliklerini açıklamaz; beyin ağları ve bireysel biyolojik farklılıklar da önemlidir."),
+      section("Doz ile Etki Arasında Nasıl Bir İlişki Vardır?", "İlacın dozu arttıkça biyolojik etkinin her zaman aynı oranda artması beklenmez. Bazı etkiler belirli bir düzeyden sonra plato gösterebilir veya farklı hedeflerin devreye girmesiyle yan etki olasılığı değişebilir. Klinik doz kararları yalnız farmakodinamik bilgiye göre verilmez."),
+      section("Farmakokinetikten Farkı Nedir?", "Farmakodinamik ilacın vücuda ne yaptığını açıklarken farmakokinetik vücudun ilaca ne yaptığını inceler. Emilim, dağılım, metabolizma ve atılım farmakokinetiğin; reseptör etkileri ve biyolojik yanıt ise farmakodinamiğin temel alanlarıdır. Klinik uygulamada iki süreç birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Farmakokinetik", slug: "farmakokinetik" },
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Antipsikotik", slug: "antipsikotik" },
+      { term: "Etkileşim", slug: "etkilesim" }
+    ],
+    seo: {
+      title: "Farmakodinamik Nedir? | Psikiyatri Sözlüğü",
+      description: "Farmakodinamiğin ilaçların biyolojik hedefler üzerindeki etkilerini, doz-yanıt ilişkisini ve farmakokinetikten farkını açıklar.",
+      ogTitle: "Farmakodinamik Nedir?",
+      ogDescription: "İlaçların vücutta nasıl etki oluşturduğunu açıklayan farmakodinamik kavramını ele alır."
+    },
+    schema: {
+      definedTermDescription: "İlaçların biyolojik hedefler üzerindeki etkilerini ve doz ile yanıt arasındaki ilişkiyi inceleyen farmakoloji alanı."
+    }
+  }),
+
+  defineTerm({
+    term: "Farmakokinetik",
+    slug: "farmakokinetik",
+    shortDefinition: "Farmakokinetik, bir ilacın vücuda alındıktan sonra emilimini, dokulara dağılımını, metabolizmasını ve vücuttan atılmasını inceleyen farmakoloji alanıdır.",
+    intro: "Bir ilacın etkili olabilmesi yalnız hedef reseptöre bağlanmasına değil, yeterli miktarda uygun bölgeye ulaşmasına ve vücuttaki düzeyinin zaman içinde nasıl değiştiğine de bağlıdır. Bu süreç kişiden kişiye farklılık gösterebilir.",
+    sections: [
+      section("Farmakokinetiğin Temel Aşamaları Nelerdir?", "Farmakokinetik sıklıkla emilim, dağılım, metabolizma ve atılım başlıklarıyla açıklanır. İlaç önce uygulandığı bölgeden dolaşıma geçer, farklı dokulara dağılır, çeşitli enzimler aracılığıyla değişime uğrayabilir ve sonunda vücuttan uzaklaştırılır."),
+      section("Yarı Ömür Ne Anlama Gelir?", "Yarı ömür, bir ilacın kandaki veya vücuttaki miktarının belirli koşullarda yaklaşık yarıya düşmesi için geçen süreyi ifade eder. Bu özellik ilacın vücutta ne kadar süre kaldığını anlamaya yardımcı olabilir ancak tedavi aralığı yalnız yarı ömür üzerinden belirlenmez."),
+      section("Kişiler Arasında Neden Farklılık Olabilir?", "Yaş, karaciğer ve böbrek işlevleri, genetik özellikler, başka ilaçların kullanımı ve bazı hastalıklar ilacın metabolizma veya atılım hızını etkileyebilir. Bu nedenle aynı ilacın aynı miktarı farklı kişilerde aynı kan düzeyi veya aynı klinik etkiyi oluşturmayabilir."),
+      section("Farmakodinamikten Farkı Nedir?", "Farmakokinetik vücudun ilacı nasıl işlediğini; farmakodinamik ise ilacın biyolojik hedefler üzerinde nasıl etki oluşturduğunu inceler. Bir ilacın klinik etkisini değerlendirirken bu iki alan birbirinden tamamen ayrı düşünülemez ve birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Farmakodinamik", slug: "farmakodinamik" },
+      { term: "Etkileşim", slug: "etkilesim" },
+      { term: "Doz titrasyonu", slug: "doz-titrasyonu" },
+      { term: "Antidepresan", slug: "antidepresan" }
+    ],
+    seo: {
+      title: "Farmakokinetik Nedir? | Psikiyatri Sözlüğü",
+      description: "Farmakokinetiğin emilim, dağılım, metabolizma ve atılım süreçlerini ve farmakodinamikten farkını açıklar.",
+      ogTitle: "Farmakokinetik Nedir?",
+      ogDescription: "Bir ilacın vücutta nasıl işlendiğini açıklayan farmakokinetik kavramını ele alır."
+    },
+    schema: {
+      definedTermDescription: "İlacın emilim, dağılım, metabolizma ve vücuttan atılım süreçlerini inceleyen farmakoloji alanı."
+    }
+  }),
+
+  defineTerm({
+    term: "Formülasyon",
+    slug: "formulasyon",
+    shortDefinition: "Formülasyon, kişinin belirtilerini yaşam öyküsü, yatkınlıkları, tetikleyici olaylar, ilişkiler, baş etme biçimleri ve mevcut yaşam koşullarıyla birlikte anlamlandırmaya yönelik bireyselleştirilmiş klinik açıklamadır.",
+    intro: "Psikiyatride formülasyon yalnız tanı adını tekrar etmek değildir. Aynı tanıya sahip iki kişinin belirtilerinin neden ortaya çıktığını, neden sürdüğünü ve hangi koruyucu kaynaklara sahip olduğunu farklı biçimlerde açıklamak gerekebilir.",
+    sections: [
+      section("Klinik Formülasyon Ne Amaçla Yapılır?", "Belirtilerin kişinin yaşamının bütünü içinde nasıl geliştiğini anlamaya yardımcı olur. Biyolojik yatkınlıklar, erken yaşam deneyimleri, mevcut stresler, ilişkiler ve kişinin güçlü yönleri birlikte ele alınabilir. Böylece yalnız belirtilerin ne olduğu değil, hangi bağlam içinde anlam kazandığı da değerlendirilir."),
+      section("Tanı ile Formülasyon Aynı Şey midir?", "Hayır. Tanı belirli ölçütlere dayalı ortak bir klinik sınıflandırma sağlar. Formülasyon ise kişinin bireysel öyküsünü ve belirtiler arasındaki olası bağlantıları açıklamaya çalışır. Tanı benzer olsa bile iki kişinin formülasyonu önemli ölçüde farklı olabilir."),
+      section("Hangi Etkenler Ele Alınabilir?", "Yatkınlık oluşturan özellikler, yakın zamanda ortaya çıkan tetikleyiciler, belirtileri sürdüren davranış veya düşünce örüntüleri ve iyileşmeyi destekleyen koruyucu faktörler değerlendirilebilir. Bu çerçeve kesin bir neden-sonuç şeması olarak değil, eldeki bilgilerle oluşturulan çalışma modeli olarak kullanılır."),
+      section("Formülasyon Zamanla Değişebilir mi?", "Evet. Yeni bilgiler ortaya çıktığında, kişinin yaşam koşulları değiştiğinde veya klinik süreç farklılaştığında formülasyon yeniden gözden geçirilebilir. İyi bir formülasyon değişmez bir etiket değil, klinik görüşmeyi ve tedavi hedeflerinin anlaşılmasını destekleyen dinamik bir açıklamadır.")
+    ],
+    relatedTerms: [
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Psikososyal destek", slug: "psikososyal-destek" }
+    ],
+    seo: {
+      title: "Formülasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Klinik formülasyonun belirtileri yaşam öyküsü, tetikleyiciler, sürdürücü ve koruyucu etkenlerle birlikte nasıl anlamlandırdığını açıklar.",
+      ogTitle: "Klinik Formülasyon Nedir?",
+      ogDescription: "Psikiyatride formülasyon kavramını tanıdan farkı ve bireysel değerlendirmedeki yeriyle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirtilerin kişinin yaşam öyküsü ve biyopsikososyal bağlamıyla birlikte anlamlandırılmasına yönelik klinik açıklama."
+    }
+  }),
+
+  defineTerm({
+    term: "GABA",
+    slug: "gaba",
+    shortDefinition: "GABA, merkezi sinir sistemindeki temel inhibitör nörotransmitterlerden biridir ve sinir hücrelerinin aşırı uyarılmasını sınırlayan düzenleyici mekanizmalarda önemli rol oynar.",
+    intro: "GABA sistemi uyku, kaygı, kas tonusu ve çeşitli beyin devrelerinin düzenlenmesiyle ilişkilidir. Ancak psikiyatrik belirtileri yalnız tek bir nörotransmitter düzeyine indirgemek güncel nörobiyolojik yaklaşımı aşırı basitleştirir.",
+    sections: [
+      section("GABA Beyinde Ne Yapar?", "Sinir hücreleri arasındaki iletişimde bazı sinyaller uyarıcı, bazıları ise baskılayıcı yönde çalışır. GABA birçok beyin bölgesinde hücrenin uyarılabilirliğini azaltarak sinir ağlarının dengeli çalışmasına katkıda bulunur. Bu işlev beynin yalnız sakinleşmesi şeklinde düşünülmemelidir."),
+      section("GABA Hangi Süreçlerle İlişkilidir?", "Uyku-uyanıklık düzeni, kaygı devreleri, motor kontrol ve nöbet eşiği gibi birçok süreçte GABA aracılı sinyalleşmenin rolü vardır. GABA etkileri farklı beyin bölgelerinde ve sinir ağlarında aynı biçimde ortaya çıkmaz. Bu ilişkiler tek bir GABA düzeyi ölçümünün kişinin ruhsal durumunu açıklayabileceği anlamına gelmez."),
+      section("İlaçlarla İlişkisi Nedir?", "Bazı ilaçlar GABA sisteminin belirli reseptörleri üzerindeki etkileri güçlendirerek merkezi sinir sistemi aktivitesini azaltabilir. Bu mekanizmalar sedasyon ve kaygının azalması gibi etkilerle ilişkili olabileceği gibi dikkat, koordinasyon veya bağımlılık riski açısından da klinik önem taşıyabilir."),
+      section("GABA Eksikliği Bir Tanı Koydurur mu?", "Hayır. Depresyon, anksiyete veya başka psikiyatrik tablolar tek bir nörotransmitterin eksikliğiyle açıklanamaz. Beyin işlevleri çok sayıda nörotransmitter sistemi, sinir ağı, genetik özellik ve çevresel deneyimin etkileşimiyle ortaya çıkar.")
+    ],
+    relatedTerms: [
+      { term: "Glutamat", slug: "glutamat" },
+      { term: "Benzodiazepin", slug: "benzodiazepin" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Farmakodinamik", slug: "farmakodinamik" }
+    ],
+    seo: {
+      title: "GABA Nedir? | Psikiyatri Sözlüğü",
+      description: "GABA'nın beyindeki inhibitör nörotransmisyon, kaygı, uyku ve ilaç mekanizmalarıyla ilişkisini sade biçimde açıklar.",
+      ogTitle: "GABA Nedir?",
+      ogDescription: "GABA'nın merkezi sinir sistemindeki düzenleyici rolünü açıklar."
+    },
+    schema: {
+      definedTermDescription: "Merkezi sinir sisteminde sinir hücrelerinin uyarılabilirliğini azaltan temel inhibitör nörotransmitter."
+    }
+  }),
+
+  defineTerm({
+    term: "GAD-7",
+    slug: "gad-7",
+    shortDefinition: "GAD-7, son iki haftadaki yaygın kaygı belirtilerinin sıklığını değerlendirmek amacıyla kullanılan yedi maddelik kısa bir öz bildirim ölçeğidir.",
+    intro: "GAD-7 klinik görüşmeyi destekleyen bir tarama ve belirti şiddeti aracıdır. Puanın yüksek olması tek başına yaygın anksiyete bozukluğu veya başka bir psikiyatrik tanı koydurmaz.",
+    sections: [
+      section("GAD-7 Neyi Değerlendirir?", "Ölçekte aşırı endişe, endişeyi kontrol etmekte zorlanma, huzursuzluk, gevşemekte güçlük ve gerginlik gibi kaygıyla ilişkili belirtiler sorgulanır. Yanıtlar kişinin bu belirtileri yakın dönemde ne sıklıkta yaşadığına göre verilir."),
+      section("GAD-7 Bir Tanı Testi midir?", "Hayır. Ölçek belirtilerin düzeyini sistematik biçimde değerlendirmeye yardımcı olabilir ancak tanı için klinik görüşme gerekir. Benzer belirtiler farklı anksiyete tablolarında, depresyonda, bedensel hastalıklarda veya yaşam stresleri sırasında da görülebilir."),
+      section("Puanlar Nasıl Kullanılır?", "Toplam puan kaygı belirtilerinin şiddetini kabaca sınıflandırmak ve zaman içinde değişimi izlemek için kullanılabilir. Kesme puanları araştırmalarda yararlı olabilir ancak tek bir puanın kişinin klinik durumunu bütün yönleriyle temsil ettiği varsayılmamalıdır."),
+      section("Klinik Değerlendirmede Neden Tek Başına Yeterli Değildir?", "Kaygının süresi, hangi durumlarda ortaya çıktığı, kişinin günlük yaşamını ne ölçüde etkilediği, eşlik eden belirtiler ve olası tıbbi nedenler ayrıca değerlendirilir. Kişinin önceki ruhsal öyküsü ve başka belirtilerin varlığı da klinik yorum açısından önem taşıyabilir. Ölçek sonucu bu daha geniş klinik değerlendirme içinde anlam kazanır.")
+    ],
+    relatedTerms: [
+      { term: "Yaygın anksiyete bozukluğu", slug: "yaygin-anksiyete-bozuklugu" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ],
+    seo: {
+      title: "GAD-7 Nedir? | Psikiyatri Sözlüğü",
+      description: "GAD-7'nin kaygı belirtilerini değerlendirmede nasıl kullanıldığını ve neden tek başına psikiyatrik tanı koydurmadığını açıklar.",
+      ogTitle: "GAD-7 Nedir?",
+      ogDescription: "Yedi maddelik GAD-7 kaygı ölçeğinin kullanımını ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Son iki haftadaki yaygın kaygı belirtilerinin sıklığını değerlendiren yedi maddelik öz bildirim ölçeği."
+    }
+  }),
+
+  defineTerm({
+    term: "Gelişimsel değerlendirme",
+    slug: "gelisimsel-degerlendirme",
+    shortDefinition: "Gelişimsel değerlendirme, çocuğun bilişsel, dil, motor, sosyal, duygusal ve günlük yaşam becerilerinin yaşına ve gelişimsel bağlamına göre sistematik biçimde incelenmesidir.",
+    intro: "Amaç yalnız çocuğun yaşıtlarından geri olup olmadığını belirlemek değildir. Güçlü olduğu alanlar, desteğe ihtiyaç duyduğu beceriler, aile ve çevre koşulları ile gelişimin zaman içindeki seyri birlikte değerlendirilir.",
+    sections: [
+      section("Hangi Gelişim Alanları Değerlendirilir?", "Dil ve iletişim, ince ve kaba motor beceriler, problem çözme, öğrenme, sosyal etkileşim, oyun ve günlük yaşam becerileri değerlendirmenin parçası olabilir. Çocuğun yaşı ve başvuru nedeni hangi alanların daha ayrıntılı inceleneceğini belirler."),
+      section("Değerlendirme Nasıl Yapılır?", "Aileden gelişim öyküsü alınabilir, çocuk farklı ortamlarda gözlenebilir ve yaşına uygun standartlaştırılmış araçlar kullanılabilir. Tek bir test sonucu yerine farklı bilgi kaynaklarının bir arada değerlendirilmesi çocuğun gelişimsel profilini daha iyi anlamaya yardımcı olur."),
+      section("Her Çocuk Aynı Hızda mı Gelişir?", "Hayır. Normal gelişim içinde becerilerin kazanılma zamanında bireysel farklılıklar bulunabilir. Bununla birlikte belirgin gecikme, daha önce kazanılmış becerilerin kaybı veya birden fazla gelişim alanında güçlük bulunması daha ayrıntılı inceleme gerektirebilir."),
+      section("Erken Değerlendirme Neden Önemlidir?", "Gelişimsel güçlüklerin erken fark edilmesi uygun eğitimsel, tıbbi veya psikososyal desteklerin zamanında planlanmasını kolaylaştırabilir. Değerlendirme çocuğu etiketlemek amacıyla değil, ihtiyaçlarının ve güçlü yönlerinin daha doğru anlaşılması için yapılır.")
+    ],
+    relatedTerms: [
+      { term: "Gelişimsel gecikme", slug: "gelisimsel-gecikme" },
+      { term: "Otizm spektrum bozukluğu", slug: "otizm-spektrum-bozuklugu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" }
+    ],
+    seo: {
+      title: "Gelişimsel Değerlendirme Nedir? | Psikiyatri Sözlüğü",
+      description: "Gelişimsel değerlendirmenin çocuğun bilişsel, dil, motor ve sosyal gelişimini nasıl ele aldığını ve erken değerlendirmenin önemini açıklar.",
+      ogTitle: "Gelişimsel Değerlendirme Nedir?",
+      ogDescription: "Çocuklarda gelişimsel değerlendirmenin kapsamını ve amacını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuğun farklı gelişim alanlarındaki becerilerinin yaşı ve gelişimsel bağlamı içinde sistematik olarak değerlendirilmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Gelişimsel gecikme",
+    slug: "gelisimsel-gecikme",
+    shortDefinition: "Gelişimsel gecikme, bir çocuğun bilişsel, dil, motor, sosyal veya günlük yaşam becerilerinden birinde ya da birkaçında yaşından beklenen kazanımları belirgin biçimde daha geç edinmesini ifade eder.",
+    intro: "Gelişimsel gecikme tek başına belirli bir hastalığın adı değildir. Çocuğun hangi gelişim alanlarının etkilendiği, gecikmenin derecesi, zaman içindeki seyri ve olası nedenler ayrı ayrı değerlendirilir.",
+    sections: [
+      section("Gelişimsel Gecikme Hangi Alanlarda Görülebilir?", "Konuşma ve dili anlama, yürüme ve el becerileri, problem çözme, oyun, sosyal iletişim veya öz bakım gibi alanlarda gecikme görülebilir. Bazı çocuklarda yalnız bir alan etkilenirken bazılarında birden fazla gelişim alanında belirgin güçlük olabilir."),
+      section("Her Geç Kazanım Gelişimsel Gecikme midir?", "Hayır. Çocuklar gelişim basamaklarını tam olarak aynı zamanda kazanmaz. Tek bir becerinin kısa süre gecikmesi her zaman klinik sorun anlamına gelmez. Değerlendirmede çocuğun genel gelişim örüntüsü ve becerilerin zaman içindeki ilerleyişi dikkate alınır."),
+      section("Nedenleri Neler Olabilir?", "Genetik özellikler, gebelik veya doğum dönemine ilişkin durumlar, işitme ya da görme sorunları, nörolojik ve metabolik hastalıklar veya çevresel etkenler gelişimi etkileyebilir. Bazı çocuklarda ise ayrıntılı değerlendirmeye rağmen tek bir neden belirlenmeyebilir."),
+      section("Ne Zaman Daha Ayrıntılı Değerlendirme Gerekir?", "Birden fazla alanda belirgin gecikme, gelişimin duraklaması veya daha önce kazanılmış becerilerin kaybedilmesi önemlidir. Böyle durumlarda çocuğun gelişimsel ve tıbbi açıdan değerlendirilmesi gerekir. Erken destek, ihtiyaç duyulan alanlara yönelik müdahalelerin daha zamanında planlanmasını sağlayabilir.")
+    ],
+    relatedTerms: [
+      { term: "Gelişimsel değerlendirme", slug: "gelisimsel-degerlendirme" },
+      { term: "Otizm spektrum bozukluğu", slug: "otizm-spektrum-bozuklugu" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" }
+    ],
+    seo: {
+      title: "Gelişimsel Gecikme Nedir? | Psikiyatri Sözlüğü",
+      description: "Gelişimsel gecikmenin çocuklarda hangi alanlarda görülebileceğini, bireysel farklılıklardan farkını ve değerlendirme gerektiren durumları açıklar.",
+      ogTitle: "Gelişimsel Gecikme Nedir?",
+      ogDescription: "Çocuklarda gelişimsel gecikme kavramını nedenleri ve değerlendirme yaklaşımıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuğun bir veya daha fazla gelişim alanında yaşından beklenen becerileri belirgin biçimde daha geç kazanması."
+    }
+  }),
+
+  defineTerm({
+    term: "Gizlilik",
+    slug: "gizlilik",
+    shortDefinition: "Gizlilik, psikiyatrik değerlendirme ve tedavi sırasında paylaşılan kişisel bilgilerin etik ve yasal çerçevede korunması ve yalnız gerekli durumlarda yetkili kişilerle paylaşılması ilkesidir.",
+    intro: "Gizlilik güvenli bir klinik ilişkinin temel unsurlarındandır ancak mutlak ve sınırsız değildir. Bilgi paylaşımının hangi durumlarda gerekli olabileceği hukuki düzenlemelere, kişinin güvenliğine ve klinik bağlama göre değerlendirilir.",
+    sections: [
+      section("Gizlilik Neden Önemlidir?", "Kişinin düşüncelerini, duygularını ve yaşamındaki hassas bilgileri güvenle paylaşabilmesi değerlendirmeyi kolaylaştırır. Mahremiyetin korunacağına ilişkin güven, kişinin yardım arama ve klinik süreçte açık iletişim kurma isteğini destekleyebilir."),
+      section("Bilgiler Kimlerle Paylaşılabilir?", "Genel yaklaşım, sağlık bilgilerinin kişinin bilgisi ve gerekli izinler çerçevesinde paylaşılmasıdır. Tedavi ekibi içinde bilgi aktarımı da bakım için gerekli olanla sınırlandırılmalıdır. Gereksiz kişisel bilgilerin üçüncü kişilerle paylaşılması gizlilik ilkesiyle bağdaşmaz."),
+      section("Gizliliğin İstisnaları Olabilir mi?", "Evet. Kişinin veya başka birinin güvenliğiyle ilgili ciddi ve yakın riskler, bazı yasal bildirim yükümlülükleri veya hukuki süreçler gibi durumlarda gizliliğin sınırları gündeme gelebilir. Bu istisnalar genel bir paylaşım izni anlamına gelmez."),
+      section("Çocuk ve Ergenlerde Gizlilik Nasıl Ele Alınır?", "Çocuk ve ergenlerin yaşına ve gelişim düzeyine uygun mahremiyet alanı önemlidir. Bununla birlikte güvenlikle ilgili ciddi risklerde ebeveyn veya bakım verenlerin sürece dahil edilmesi gerekebilir. Klinik yaklaşım hem gencin güvenini hem de güvenlik sorumluluğunu gözetir.")
+    ],
+    relatedTerms: [
+      { term: "Bilgilendirilmiş onam", slug: "bilgilendirilmis-onam" },
+      { term: "Aile görüşmesi", slug: "aile-gorusmesi" },
+      { term: "Risk değerlendirmesi", slug: "risk-degerlendirmesi" },
+      { term: "Adli psikiyatri", slug: "adli-psikiyatri" }
+    ],
+    seo: {
+      title: "Gizlilik Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatride gizlilik ilkesinin kişisel bilgilerin korunmasındaki yerini, sınırlarını ve çocuk-ergen değerlendirmesindeki önemini açıklar.",
+      ogTitle: "Gizlilik Nedir?",
+      ogDescription: "Psikiyatrik değerlendirmede gizlilik ve mahremiyetin temel ilkelerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Klinik süreçte paylaşılan kişisel bilgilerin etik ve yasal sınırlar içinde korunması ilkesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Glutamat",
+    slug: "glutamat",
+    shortDefinition: "Glutamat, merkezi sinir sistemindeki temel uyarıcı nörotransmitterlerden biridir ve öğrenme, bellek ve sinir ağları arasındaki iletişimde önemli rol oynar.",
+    intro: "Glutamat sistemi psikiyatri ve nörobilim araştırmalarında geniş biçimde incelenmektedir. Bununla birlikte bir psikiyatrik bozukluğu yalnız glutamatın fazla veya az olmasıyla açıklamak doğru değildir; etkiler farklı beyin bölgeleri ve reseptör sistemlerine göre değişebilir.",
+    sections: [
+      section("Glutamat Beyinde Ne Yapar?", "Glutamat birçok sinir hücresi arasında uyarıcı sinyal iletimine katkıda bulunur. Sinaptik plastisite olarak adlandırılan, sinir bağlantılarının deneyime göre güçlenmesi veya zayıflaması süreçlerinde rol oynar. Bu özellik öğrenme ve bellek mekanizmaları açısından önemlidir."),
+      section("Glutamat Reseptörleri Neden Önemlidir?", "NMDA, AMPA ve başka glutamat reseptörleri farklı sinirsel işlevlere katkıda bulunur. Aynı nörotransmitterin farklı reseptörlerde oluşturduğu etkiler birbirinden farklı olabilir. Bu nedenle glutamat sistemi tek bir açık-kapalı mekanizma şeklinde düşünülmemelidir."),
+      section("Psikiyatriyle İlişkisi Nedir?", "Depresyon, şizofreni ve başka psikiyatrik tabloların nörobiyolojisinde glutamaterjik sistemler araştırılmaktadır. Bazı tedavilerin glutamat ile ilişkili mekanizmaları bilimsel açıdan önem taşır ancak grup düzeyindeki araştırma bulguları tek bir kişide tanı koyan biyobelirteç olarak kullanılamaz."),
+      section("GABA ile Nasıl Bir İlişkisi Vardır?", "Glutamat genel olarak uyarıcı, GABA ise inhibitör sinyal iletimiyle ilişkilendirilir. Beynin sağlıklı çalışması bu sistemlerden birinin yalnızca yüksek veya düşük olmasına değil, farklı sinir ağlarındaki dengeli ve zamanlaması uygun etkileşime bağlıdır.")
+    ],
+    relatedTerms: [
+      { term: "GABA", slug: "gaba" },
+      { term: "Şizofreni", slug: "sizofreni" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Farmakodinamik", slug: "farmakodinamik" }
+    ],
+    seo: {
+      title: "Glutamat Nedir? | Psikiyatri Sözlüğü",
+      description: "Glutamatın beyindeki uyarıcı nörotransmisyon, öğrenme ve bellek süreçlerindeki rolünü ve psikiyatriyle ilişkisini açıklar.",
+      ogTitle: "Glutamat Nedir?",
+      ogDescription: "Glutamat nörotransmitterinin beyin işlevleri ve psikiyatri araştırmalarındaki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Merkezi sinir sisteminde öğrenme, bellek ve uyarıcı sinyal iletiminde rol alan temel nörotransmitter."
+    }
+  }),
+
+  defineTerm({
+    term: "Grandiyözite",
+    slug: "grandiyozite",
+    shortDefinition: "Grandiyözite, kişinin kendi önemini, gücünü, yeteneklerini, bilgisini veya statüsünü gerçekçi sınırların belirgin biçimde üzerinde değerlendirmesiyle karakterize düşünce ve kendilik algısıdır.",
+    intro: "Grandiyöz düşünceler farklı klinik bağlamlarda görülebilir ve tek başına belirli bir psikiyatrik tanı anlamına gelmez. Değerlendirmede düşüncenin yoğunluğu, gerçeklikle ilişkisi, sürekliliği ve kişinin davranışları üzerindeki etkisi dikkate alınır.",
+    sections: [
+      section("Grandiyözite Nasıl Görülebilir?", "Kişi olağanüstü yeteneklere, özel bir statüye veya başkalarında bulunmayan güçlere sahip olduğuna inanabilir. Daha hafif düzeylerde başarı ve kapasitesini belirgin biçimde abartma görülürken bazı durumlarda inanış gerçeklikle belirgin biçimde uyuşmayabilir."),
+      section("Özgüven ile Aynı Şey midir?", "Hayır. Sağlıklı özgüven kişinin güçlü yanlarını ve sınırlılıklarını gerçekçi biçimde değerlendirebilmesini içerir. Grandiyözitede kişinin kendisine ilişkin değerlendirmesi mevcut kanıtlarla orantısız olabilir ve geri bildirimlere rağmen kolayca değişmeyebilir."),
+      section("Hangi Klinik Durumlarda Görülebilir?", "Grandiyöz düşünceler özellikle manik dönemlerde ortaya çıkabilir. Bazı psikotik tablolarda grandiyöz sanrılar görülebilir; bazı kişilik örüntülerinde ise kişinin üstünlük veya özel olma algısı daha kalıcı biçimde bulunabilir. Bu durumlar birbirinden ayrı değerlendirilir."),
+      section("Grandiyöz Sanrı ile Aynı Şey midir?", "Her grandiyöz düşünce sanrı değildir. Sanrı, karşıt kanıtlara rağmen sürdürülen ve kişinin kültürel bağlamıyla açıklanamayan sabit bir inanışı ifade eder. Grandiyözitenin sanrısal düzeye ulaşıp ulaşmadığı ancak düşüncenin içeriği, kesinliği ve gerçeklikle ilişkisi değerlendirilerek anlaşılabilir.")
+    ],
+    relatedTerms: [
+      { term: "Mani", slug: "mani" },
+      { term: "Sanrı", slug: "sanri" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Narsisistik kişilik örüntüsü", slug: "narsisistik-kisilik-oruntusu" }
+    ],
+    seo: {
+      title: "Grandiyözite Nedir? | Psikiyatri Sözlüğü",
+      description: "Grandiyözitenin abartılı kendilik değerlendirmesiyle ilişkisini, özgüvenden ve grandiyöz sanrıdan farkını açıklar.",
+      ogTitle: "Grandiyözite Nedir?",
+      ogDescription: "Grandiyözite kavramını mani, psikoz ve sağlıklı özgüvenden farklarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin önemini, gücünü veya yeteneklerini gerçekçi sınırların belirgin üzerinde değerlendirmesi."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...tenthBatchNewTerms,
   ...ninthBatchNewTerms,
   ...eighthBatchNewTerms,
   ...seventhBatchNewTerms,
