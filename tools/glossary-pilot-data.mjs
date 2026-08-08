@@ -136,6 +136,181 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["katastrofizasyon", {
+    shortDefinition: "Katastrofizasyon, bir durumun olası sonuçlarını gerçekçi kanıtların ötesinde çok kötü, dayanılmaz veya felaket düzeyinde yorumlama eğilimini ifade eden bir bilişsel çarpıtmadır.",
+    intro: "Katastrofizasyon sırasında kişi belirsiz veya zorlayıcı bir olayın en olumsuz sonucuna odaklanabilir ve bu sonucun gerçekleşme ihtimalini olduğundan daha yüksek değerlendirebilir.",
+    sections: [
+      section("Katastrofizasyon Nasıl Görülebilir?", "Kişi küçük bir hatanın tüm kariyerini bozacağını, geçici bir bedensel belirtinin ciddi bir hastalık anlamına geldiğini veya sosyal bir yanlış anlaşılmanın ilişkisini tamamen bitireceğini düşünebilir. Burada dikkat çeken nokta, sonucun eldeki kanıtlardan daha kesin ve ağır biçimde yorumlanmasıdır."),
+      section("Gerçekçi Kaygı ile Katastrofizasyon Arasındaki Fark Nedir?", "Gerçekçi kaygıda olası riskler mevcut bilgilerle orantılı biçimde değerlendirilir. Katastrofizasyonda ise en kötü senaryo zihinsel olarak büyütülebilir ve diğer olasılıklar geri planda kalabilir. Bir riskin gerçekten var olması, onun kaçınılmaz olduğu anlamına gelmez."),
+      section("Katastrofizasyon Duyguları Nasıl Etkileyebilir?", "En kötü senaryoya odaklanmak kaygı, çaresizlik veya kaçınma davranışlarını artırabilir. Kişi tehdit düzeyini yüksek algıladıkça bedensel uyarılmışlık da artabilir ve bu durum düşüncenin daha inandırıcı hissedilmesine yol açabilir."),
+      section("Bilişsel Değerlendirmede Ne Yapılır?", "Amaç kişiyi zorla olumlu düşünmeye yöneltmek değildir. Düşüncenin hangi kanıtlara dayandığı, alternatif açıklamaların bulunup bulunmadığı ve en olası sonuç ile en kötü olası sonucun birbirinden nasıl ayrıldığı incelenebilir.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Aşırı genelleme", slug: "asiri-genelleme" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" }
+    ]
+  }],
+
+  ["kaygili-baglanma", {
+    shortDefinition: "Kaygılı bağlanma, yakın ilişkilerde terk edilme, reddedilme veya karşı tarafın ilgisini kaybetmesi konusunda belirgin hassasiyet ve yoğun güvence ihtiyacıyla ilişkilendirilen bir bağlanma örüntüsüdür.",
+    intro: "Kaygılı bağlanma bir psikiyatrik tanı değildir. İlişkisel bir örüntüyü tanımlamak için kullanılır ve kişinin tüm ilişkilerini ya da kişiliğini tek başına açıklamaz.",
+    sections: [
+      section("Kaygılı Bağlanma Nasıl Görülebilir?", "Kişi partnerinin veya yakın olduğu kişinin ilgisindeki küçük değişiklikleri reddedilme işareti olarak yorumlayabilir, sık sık ilişkinin güvende olduğuna dair onay isteyebilir veya ayrılık olasılığı karşısında yoğun kaygı yaşayabilir."),
+      section("Güvence Arama ile İlişkisi Nedir?", "Kaygılı bağlanma örüntüsünde kişi ilişkideki belirsizliği azaltmak amacıyla sık sık güvence isteyebilir. Bu davranış kısa süre rahatlama sağlasa da belirsizlik yeniden ortaya çıktığında tekrar güvence arama ihtiyacı doğabilir."),
+      section("Kaygılı Bağlanma Nasıl Gelişebilir?", "Bağlanma kuramında bakım verenin ulaşılabilirliğinin veya duygusal yanıtlarının tutarsız yaşanması olası etkenlerden biri olarak ele alınır. Bununla birlikte yetişkin bağlanma biçimini tek bir çocukluk olayıyla açıklamak doğru değildir."),
+      section("Bağlanma Örüntüsü Değişebilir mi?", "Evet. Güvenli ve tutarlı ilişkiler, kişinin kendi duygusal ihtiyaçlarını fark etmesi ve ilişkisel deneyimlerini yeniden değerlendirmesi daha dengeli bağlanma biçimlerinin gelişmesine katkıda bulunabilir. Kişinin belirsizliği tolere etme ve ihtiyaçlarını daha doğrudan ifade etme becerileri de zaman içinde gelişebilir.")
+    ],
+    relatedTerms: [
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Ayrılma kaygısı", slug: "ayrilma-kaygisi" },
+      { term: "Güvence arama", slug: "guvence-arama" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
+
+  ["kendine-zarar-verme", {
+    shortDefinition: "Kendine zarar verme, kişinin yaşamına son verme amacı olmaksızın kendi bedenine zarar veren davranışlarda bulunmasını ifade eden klinik bir kavramdır.",
+    intro: "Kendine zarar verme davranışı farklı nedenlerle ortaya çıkabilir ve kişinin yaşadığı yoğun duygusal sıkıntının önemli bir işareti olabilir. Davranışın varlığı mutlaka intihar amacı olduğu anlamına gelmese de güvenlik açısından dikkatle değerlendirilmelidir.",
+    sections: [
+      section("Kendine Zarar Verme Hangi İşlevlerle İlişkili Olabilir?", "Bazı kişiler yoğun duygusal gerilimi azaltmak, hissizliği sona erdirmek veya ifade etmekte zorlandığı bir sıkıntıyı dışa vurmak amacıyla kendine zarar verme davranışı gösterebilir. Aynı davranış farklı kişilerde farklı psikolojik işlevlere sahip olabilir."),
+      section("Kendine Zarar Verme ile İntihar Davranışı Aynı Şey midir?", "Hayır. Kendine zarar verme her zaman yaşamı sonlandırma amacı taşımaz. Ancak bu iki durum birbirinden tamamen bağımsız da değildir ve kendine zarar verme öyküsü bulunan kişilerde intihar düşünceleri veya başka güvenlik riskleri ayrıca değerlendirilmelidir."),
+      section("Davranışı Gizlemek Neden Sık Görülebilir?", "Utanç, suçluluk, anlaşılmama korkusu veya çevrenin tepkisinden çekinme nedeniyle kişi yaşadığı güçlüğü gizleyebilir. Yargılayıcı olmayan bir yaklaşım, davranışın altında hangi duygusal ihtiyaçların veya krizlerin bulunduğunu anlamayı kolaylaştırabilir."),
+      section("Ne Zaman Acil Değerlendirme Gerekir?", "Kişinin yaşamına son verme düşünceleri, kendisini güvende tutamayacağı hissi veya hızla artan bir kriz varsa gecikmeden acil profesyonel değerlendirme gerekir. Klinik yaklaşımda yalnız davranışın kendisi değil, kişinin mevcut güvenliği, destek kaynakları ve eşlik eden ruhsal belirtiler birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" },
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" }
+    ]
+  }],
+
+  ["kisa-psikotik-bozukluk", {
+    shortDefinition: "Kısa psikotik bozukluk, sanrı, varsanı veya belirgin dezorganize konuşma ve davranış gibi psikotik belirtilerin kısa süreli olarak ortaya çıktığı bir psikiyatrik bozukluktur.",
+    intro: "Kısa psikotik bozukluk tanısı yalnızca tek bir sıra dışı yaşantıya dayanmaz. Belirtilerin niteliği, başlangıç biçimi, süresi ve kişinin önceki işlev düzeyine dönüşü değerlendirilir.",
+    sections: [
+      section("Hangi Belirtiler Görülebilir?", "Kişide gerçeğe uymayan güçlü inanışlar, dış uyaran olmadan algı yaşantıları veya düşünce ve davranışlarda belirgin organizasyon bozukluğu görülebilir. Belirtiler kişinin gerçekliği değerlendirmesini ve günlük işlevlerini belirgin biçimde etkileyebilir."),
+      section("Kısa Psikotik Bozukluğun Ayırıcı Özelliği Nedir?", "Temel özellik psikotik belirtilerin sınırlı bir zaman diliminde ortaya çıkması ve daha sonra kişinin önceki işlev düzeyine dönmesidir. Daha uzun süren psikotik tablolar farklı tanısal kategoriler içinde değerlendirilir."),
+      section("Stresle İlişkili Olabilir mi?", "Bazı vakalarda ciddi bir psikososyal stres etkeninin ardından psikotik belirtiler gelişebilir ancak her olguda belirgin bir stresör bulunmaz. Doğum sonrası dönem gibi bazı özel bağlamlar da klinik değerlendirmede dikkate alınır."),
+      section("Neden Tıbbi Değerlendirme de Önemlidir?", "Yeni başlayan psikotik belirtilerde madde etkileri, ilaçlar, nörolojik hastalıklar ve başka tıbbi nedenler de göz önünde bulundurulmalıdır. Özellikle bilinç veya dikkat değişikliği eşlik ediyorsa yalnızca psikiyatrik bir neden varsayılmamalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Mani", slug: "mani" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" },
+      { term: "Dezorganize davranış", slug: "dezorganize-davranis" },
+      { term: "Bilinç bulanıklığı", slug: "bilinc-bulanikligi" }
+    ]
+  }],
+
+  ["kisilestirme", {
+    shortDefinition: "Kişiselleştirme, kişinin kendisiyle doğrudan ilişkili olduğuna dair yeterli kanıt bulunmayan olumsuz olayları gereğinden fazla kendi sorumluluğu veya kendi davranışlarının sonucu olarak yorumlamasıdır.",
+    intro: "Kişiselleştirme bilişsel çarpıtmalardan biridir. Kişi çevresindeki olayları değerlendirirken kendi payını olduğundan büyük görebilir ve başka açıklamaları gözden kaçırabilir.",
+    sections: [
+      section("Kişiselleştirme Nasıl Görülebilir?", "Bir arkadaşının sessiz olmasını kendi yaptığı bir hataya bağlamak, bir toplantının kötü geçmesinden kendisini tamamen sorumlu tutmak veya başka insanların duygularını kendi davranışlarının doğrudan sonucu gibi değerlendirmek örnek olabilir."),
+      section("Sorumluluk Almak ile Kişiselleştirme Aynı Şey midir?", "Hayır. Gerçekten katkımız bulunan bir olayda sorumluluk almak sağlıklıdır. Kişiselleştirmede ise kişinin etkisi sınırlı veya belirsiz olduğu halde sorumluluk orantısız biçimde üstlenilir ve dış etkenler yeterince dikkate alınmaz."),
+      section("Kişiselleştirme Hangi Duygularla İlişkili Olabilir?", "Suçluluk, utanç, kaygı veya yetersizlik duyguları bu düşünce biçimiyle birlikte görülebilir. Kişi kendisini sürekli sorunların kaynağı olarak değerlendirdiğinde sosyal ilişkilerde geri çekilme veya aşırı telafi çabaları ortaya çıkabilir."),
+      section("Düşünce Nasıl Yeniden Değerlendirilebilir?", "Olay üzerindeki gerçek etki payı, başka kişilerin veya koşulların rolü ve eldeki somut kanıtlar gözden geçirilebilir. Amaç sorumluluğu tamamen reddetmek değil, kişinin payını gerçekçi ve orantılı biçimde değerlendirmektir. Özellikle otomatik olarak kendini suçlama eğilimi varsa alternatif açıklamaların bilinçli biçimde incelenmesi yararlı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Aşırı genelleme", slug: "asiri-genelleme" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Bilişsel davranışçı terapi", slug: "bilissel-davranisci-terapi" }
+    ]
+  }],
+
+  ["kisilik-bozuklugu", {
+    shortDefinition: "Kişilik bozukluğu, kişinin düşünme, duygulanım, ilişkiler ve dürtü kontrolü gibi alanlarında uzun süreli, esnekliği sınırlı ve günlük işlevselliği etkileyen örüntülerin bulunduğu durumları ifade eden genel bir tanısal kavramdır.",
+    intro: "Kişilik bozukluğu bir kişinin karakterinin kötü olduğu anlamına gelmez. Klinik kullanımda kişinin uzun süredir devam eden ilişki kurma, kendini değerlendirme ve davranış örüntülerinin yaşamında belirgin güçlük oluşturması ele alınır.",
+    sections: [
+      section("Kişilik Örüntüsü Ne Zaman Klinik Önem Taşır?", "Bir özellik yalnızca belirgin veya sıra dışı olduğu için bozukluk olarak değerlendirilmez. Örüntünün farklı durumlarda tekrarlaması, esnekliğinin sınırlı olması ve ilişkiler, iş yaşamı veya kişinin kendi ruhsal iyilik hali üzerinde kalıcı güçlük yaratması önemlidir."),
+      section("Kişilik Bozuklukları Tek Bir Tür müdür?", "Hayır. Farklı kişilik bozukluğu örüntüleri vardır ve bunlarda kişilerarası ilişkiler, benlik algısı, duygusal düzenleme veya dürtü kontrolü farklı biçimlerde etkilenebilir. Aynı tanı kategorisindeki kişilerde bile belirtiler ve işlevsellik önemli ölçüde değişebilir."),
+      section("Kişilik Özelliği ile Kişilik Bozukluğu Arasındaki Fark Nedir?", "Herkeste farklı kişilik özellikleri bulunur. Bir özelliğin klinik önem taşıması için yalnız var olması değil, aşırı katı hale gelmesi, kişinin koşullara uyumunu zorlaştırması ve uzun süreli işlev kaybıyla ilişkili olması gerekir."),
+      section("Kişilik Örüntüleri Değişebilir mi?", "Evet. Kişilik özellikleri görece kalıcı olsa da yaşam deneyimleri, ilişkiler ve psikolojik yaklaşımlar kişinin düşünme ve ilişki kurma biçimlerinde değişime katkıda bulunabilir. Tanı kişiyi değişmez biçimde tanımlayan bir etiket olarak kullanılmamalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Borderline kişilik örüntüsü", slug: "borderline-kisilik-oruntusu" },
+      { term: "Kaçıngan kişilik örüntüsü", slug: "kacingan-kisilik-oruntusu" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Duygu düzenleme", slug: "duygu-duzenleme" }
+    ]
+  }],
+
+  ["komorbidite", {
+    shortDefinition: "Komorbidite, aynı kişide aynı zaman diliminde veya yaşamın belirli dönemlerinde birden fazla hastalık ya da bozukluğun birlikte bulunmasını ifade eden tıbbi ve psikiyatrik bir terimdir.",
+    intro: "Psikiyatride bir kişinin birden fazla tanı ölçütünü karşılaması nadir değildir. Komorbidite, belirtilerin daha dikkatli değerlendirilmesini ve tedavi planının bütüncül biçimde ele alınmasını gerektirebilir.",
+    sections: [
+      section("Komorbiditeye Bir Örnek Nedir?", "Bir kişide depresif bozukluk ile anksiyete bozukluğunun birlikte bulunması veya DEHB'ye ek olarak başka bir ruhsal bozukluğun eşlik etmesi komorbidite olarak tanımlanabilir. Her tanı kendi ölçütleri üzerinden ayrı ayrı değerlendirilir."),
+      section("Belirti Örtüşmesi Komorbidite ile Aynı Şey midir?", "Hayır. İki farklı bozuklukta benzer belirtilerin bulunması mutlaka iki ayrı tanı olduğu anlamına gelmez. Örneğin dikkat güçlüğü hem kaygı hem depresyon hem de DEHB'de görülebilir. Bu nedenle belirtilerin kaynağı ve zaman içindeki seyri önemlidir."),
+      section("Komorbidite Neden Klinik Olarak Önemlidir?", "Birlikte bulunan durumlar belirtilerin şiddetini, işlevselliği ve kişinin yardım ihtiyacını etkileyebilir. Ayrıca bir bozukluğun belirtileri diğerinin değerlendirilmesini güçleştirebilir veya klinik görünümü değiştirebilir."),
+      section("Değerlendirmede Nasıl Ele Alınır?", "Kişinin tüm belirtileri tek bir tanıyla açıklanmaya çalışılmaz. Belirtilerin ne zaman başladığı, birbirleriyle ilişkisi, işlevsellik üzerindeki etkisi ve tıbbi ya da maddeyle ilişkili başka etkenler ayrı ayrı değerlendirilir. Birlikte bulunan durumların hangisinin mevcut yakınmaları daha fazla etkilediği de klinik planlamada dikkate alınır.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "İşlevsellik", slug: "islevsellik" }
+    ]
+  }],
+
+  ["konfuzyon", {
+    shortDefinition: "Konfüzyon, kişinin çevresini anlamlandırma, dikkatini sürdürme, yönelimini koruma veya bilgiyi tutarlı biçimde işleme yetisinde belirgin bozulma görülen genel bir klinik durumu ifade eder.",
+    intro: "Konfüzyon tek başına belirli bir psikiyatrik tanı değildir. Özellikle ani başladığında altta yatan tıbbi, nörolojik veya maddeyle ilişkili nedenlerin değerlendirilmesi önemlidir.",
+    sections: [
+      section("Konfüzyon Nasıl Görülebilir?", "Kişi bulunduğu yeri, zamanı veya durumu anlamakta zorlanabilir, sorulara tutarsız yanıt verebilir veya dikkatini konuşma üzerinde sürdüremeyebilir. Yakın zamanda olanları hatırlamakta güçlük ve çevresel uyaranları yanlış yorumlama da eşlik edebilir."),
+      section("Konfüzyon ile Unutkanlık Aynı Şey midir?", "Hayır. Unutkanlık daha sınırlı bir bellek güçlüğünü ifade edebilirken konfüzyonda dikkat, yönelim ve çevreyi anlamlandırma gibi birden fazla bilişsel alan etkilenebilir. Kişinin genel zihinsel organizasyonu belirgin biçimde bozulabilir."),
+      section("Konfüzyon Psikoz ile Aynı Şey midir?", "Hayır. Psikozda sanrı veya varsanı gibi gerçekliği değerlendirme sorunları ön planda olabilir ancak bilinç ve dikkat her zaman bozulmaz. Konfüzyonda ise özellikle dikkat ve yönelim sorunları daha belirgin olabilir."),
+      section("Ani Konfüzyon Neden Önemlidir?", "Saatler veya günler içinde gelişen yeni konfüzyon tıbbi açıdan önemli bir bulgudur. Enfeksiyonlar, metabolik sorunlar, ilaç veya madde etkileri ve nörolojik durumlar gibi birçok neden araştırılabilir. Bu nedenle akut konfüzyon gecikmeden tıbbi değerlendirme gerektirir.")
+    ],
+    relatedTerms: [
+      { term: "Bilinç bulanıklığı", slug: "bilinc-bulanikligi" },
+      { term: "Dikkat", slug: "dikkat" },
+      { term: "Amnezi", slug: "amnezi" },
+      { term: "Algı bozukluğu", slug: "algi-bozuklugu" }
+    ]
+  }],
+
+  ["kumar-oynama-bozuklugu", {
+    shortDefinition: "Kumar oynama bozukluğu, kumar davranışını kontrol etmekte güçlük, olumsuz sonuçlara rağmen davranışın sürmesi ve kumarın yaşamda giderek daha merkezi hale gelmesiyle karakterize davranışsal bir bağımlılık tablosudur.",
+    intro: "Ara sıra kumar oynamak tek başına kumar oynama bozukluğu anlamına gelmez. Klinik önem, davranış üzerindeki kontrolün azalması ve ekonomik, ilişkisel veya mesleki sonuçlara rağmen davranışın sürmesiyle artar.",
+    sections: [
+      section("Sorunlu Kumar Davranışı Nasıl Görülebilir?", "Kişi kumara ayırdığı zamanı ve kaynakları kontrol etmekte zorlanabilir, kayıpların ardından tekrar oynama isteği yaşayabilir veya kumar nedeniyle sorumluluklarını ihmal edebilir. Davranış zamanla kişinin düşüncelerinde daha fazla yer kaplayabilir."),
+      section("Kayıpları Geri Kazanma Çabası Neden Önemlidir?", "Kişi kaybettiği kaynakları yeniden kazanabileceği düşüncesiyle kumar davranışını sürdürebilir. Bu durum kayıpların artmasına ve kontrolün daha da azalmasına yol açabilen bir döngü oluşturabilir."),
+      section("Kumar Oynama Bozukluğu İrade Eksikliği midir?", "Hayır. Bağımlılık davranışlarında ödül beklentisi, dürtüsellik, öğrenilmiş davranış döngüleri ve ruhsal etkenler rol oynayabilir. Kişiyi ahlaki açıdan yargılamak yerine davranış üzerindeki kontrol kaybı ve işlevsel sonuçlar değerlendirilir."),
+      section("Hangi Alanlar Değerlendirilir?", "Kumar davranışının sıklığı, ekonomik etkileri, aile ve iş yaşamına yansımaları, kişinin davranışı azaltma girişimleri ve eşlik eden ruhsal sorunlar ele alınır. Borçlanma veya ciddi işlev kaybı varsa sosyal ve psikolojik destek gereksinimi de değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Dürtü kontrolü", slug: "durtu-kontrolu" },
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Duygudurum", slug: "duygudurum" }
+    ]
+  }],
+
+  ["kunt-duygulanim", {
+    shortDefinition: "Künt duygulanım, kişinin dışarıdan gözlenen duygusal ifade ve tepkilerinin belirgin biçimde azalmış görünmesini ifade eden klinik bir terimdir.",
+    intro: "Künt duygulanım kişinin hiçbir duygu yaşamadığı anlamına gelmez. Terim, görüşme sırasında yüz ifadesi, ses tonu, jestler ve duygusal tepkilerin dışarıdan gözlenen yoğunluğunu tanımlar.",
+    sections: [
+      section("Künt Duygulanım Nasıl Fark Edilebilir?", "Kişinin yüz ifadesi sınırlı olabilir, konuşurken ses tonunda az değişiklik görülebilir ve duygusal içerikli konulara verilen görünür tepkiler beklenenden daha düşük olabilir. Bu değerlendirme kişinin kültürel ve kişisel ifade biçimi dikkate alınarak yapılmalıdır."),
+      section("Künt Duygulanım ile Çökkün Duygudurum Aynı Şey midir?", "Hayır. Duygudurum kişinin içsel ve daha uzun süreli duygusal yaşantısını ifade ederken duygulanım dışarıdan gözlenen duygusal ifadedir. Bir kişi kendisini yoğun biçimde üzgün hissederken bunu dışarıdan sınırlı gösterebilir."),
+      section("Künt Duygulanım Hangi Durumlarda Görülebilir?", "Bazı psikotik bozukluklarda, depresif durumlarda, nörolojik hastalıklarda veya ilaç etkileriyle birlikte duygusal ifade azalabilir. Tek başına künt duygulanım belirli bir tanı koydurmaz."),
+      section("Değerlendirmede Neye Dikkat Edilir?", "Kişinin olağan duygusal ifade biçimi, kültürel özellikleri, konuşmanın içeriği ve eşlik eden diğer belirtiler birlikte değerlendirilir. Amaç kişiyi duygusuz olarak etiketlemek değil, gözlenen duygusal ifadenin klinik bağlamını anlamaktır. Duygusal ifadedeki değişikliğin yeni mi olduğu yoksa kişinin uzun süredir var olan ifade tarzını mı yansıttığı da önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "Affekt", slug: "affekt" },
+      { term: "Duygudurum", slug: "duygudurum" },
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Dezorganize davranış", slug: "dezorganize-davranis" },
+      { term: "Apati", slug: "apati" }
+    ]
+  }],
+
   ["insomnia", {
     shortDefinition: "İnsomnia, uyumak için yeterli fırsat bulunmasına rağmen uykuya dalmada, uykuyu sürdürmede veya istenenden erken uyanmada yaşanan güçlüğü ifade eden bir uyku sorunudur.",
     intro: "İnsomnia yalnızca az uyumak anlamına gelmez. Kişinin uykuya ilişkin güçlüklerinin gündüz işlevselliği, enerji, dikkat veya duygudurum üzerinde etkili olması klinik açıdan önemlidir.",
