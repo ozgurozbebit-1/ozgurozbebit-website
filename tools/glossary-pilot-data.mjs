@@ -136,6 +136,67 @@ const thirdReplacements = [
   makeQuickTerm("Okul reddi", "okul-reddi", [{ term: "Sınav kaygısı", slug: "sinav-kaygisi" }])
 ];
 const qualityOverrides = new Map([
+  ["psikoz", {
+    shortDefinition: "Psikoz, kişinin gerçekliği değerlendirme süreçlerinde belirgin bozulmanın ortaya çıkabildiği ve sanrı, varsanı veya düşünce organizasyonunda değişikliklerin görülebildiği bir klinik durumdur.",
+    intro: "Psikoz tek başına belirli bir hastalığın adı değildir. Farklı psikiyatrik, tıbbi veya maddeyle ilişkili durumlarda ortaya çıkabilen bir belirti kümesini ifade eder.",
+    sections: [
+      section("Psikozda Hangi Belirtiler Görülebilir?", "Sanrılar, kişinin gerçeklikle uyuşmayan bir düşünceye güçlü biçimde inanması şeklinde görülebilir. Varsanılarda ise dışarıda karşılığı olmayan ses, görüntü veya başka duyusal deneyimler yaşanabilir. Bazı kişilerde konuşma ve düşünce akışı da belirgin biçimde dağınık hale gelebilir. Belirtilerin biçimi ve yoğunluğu kişiden kişiye değişebilir."),
+      section("Psikoz ile Şizofreni Aynı Şey midir?", "Hayır. Şizofreni, psikoz belirtilerinin görülebileceği bozukluklardan biridir ancak her psikoz şizofreni değildir. Bipolar bozukluk, ağır depresif dönemler, bazı maddeler, nörolojik hastalıklar veya başka tıbbi durumlar sırasında da psikotik belirtiler ortaya çıkabilir. Bu nedenle tek bir psikotik belirti üzerinden belirli bir tanıya ulaşılmaz."),
+      section("Gerçekliği Değerlendirme Ne Anlama Gelir?", "Gerçekliği değerlendirme, kişinin iç yaşantılarıyla dış dünyadaki olayları birbirinden ayırabilme kapasitesini ifade eder. Psikoz sırasında kişi bazı düşünce veya algılarını dış dünyada gerçekten gerçekleşen olaylar olarak kabul edebilir. İçgörü düzeyi tamamen kaybolmak zorunda değildir ve belirtilerin yoğunluğu zaman içinde değişebilir."),
+      section("İlk Kez Ortaya Çıkan Psikotik Belirtiler Neden Önemlidir?", "İlk kez ortaya çıkan belirgin sanrı, varsanı veya davranış değişikliklerinde yalnız psikiyatrik nedenler değil, tıbbi ve maddeyle ilişkili nedenler de değerlendirilir. Ani başlayan, hızla ağırlaşan veya kişinin güvenliği ve günlük işlevselliğini ciddi biçimde etkileyen belirtilerde gecikmeden profesyonel değerlendirme önemlidir. Değerlendirmede belirtilerin başlangıcı, süresi ve eşlik eden diğer bulgular birlikte ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Şizofreni", slug: "sizofreni" },
+      { term: "Sanrı", slug: "sanri" },
+      { term: "Varsanı", slug: "varsani" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" }
+    ]
+  }],
+  ["hipomani", {
+    shortDefinition: "Hipomani, duygudurum ve enerjide kişinin olağan halinden belirgin bir yükselme veya irritabilite görülen ancak mani kadar ağır işlev kaybına yol açmayan klinik bir dönemdir.",
+    intro: "Hipomani bazen yalnızca “çok iyi hissetme” şeklinde yanlış anlaşılır. Oysa kişinin uyku ihtiyacı, konuşması, düşünce hızı, etkinlik düzeyi ve davranışlarında çevresi tarafından fark edilebilir bir değişiklik söz konusudur.",
+    sections: [
+      section("Hipomani Nasıl Görülebilir?", "Kişi kendisini olağandan daha enerjik ve üretken hissedebilir, daha az uyuyabilir ve çok daha fazla konuşabilir. Yeni projelere başlama, sosyalliğin artması veya dikkatin kolayca farklı konulara kayması görülebilir. Bazı kişilerde yükselmiş duygudurum yerine belirgin irritabilite ön planda olabilir."),
+      section("Kişi Hipomaniyi Her Zaman Sorun Olarak Görür mü?", "Hayır. Artmış enerji ve özgüven başlangıçta olumlu hissedilebilir. Bu nedenle kişi değişikliği sorun olarak değerlendirmeyebilir. Ancak yakın çevre, davranışların kişinin olağan halinden belirgin biçimde farklı olduğunu fark edebilir. Dürtüsel kararlar veya ilişki sorunları da ortaya çıkabilir."),
+      section("Mani ile Arasındaki Temel Fark Nedir?", "Manide işlev kaybı daha ağırdır ve tablo kişinin güvenliğini veya günlük yaşamını ciddi biçimde etkileyebilir. Psikotik belirtilerin varlığı da tabloyu mani düzeyinde değerlendirmeyi gerektirir. Hipomanide değişiklik belirgin olmasına rağmen tanım gereği mani düzeyindeki ağır bozulma bulunmaz."),
+      section("Bipolar II Bozuklukla İlişkisi Nedir?", "Bipolar II bozuklukta hipomanik dönemlerle birlikte majör depresif dönemler bulunur ve geçmişte tam manik dönem olmaması gerekir. Hipomani tek başına kişinin Bipolar II bozukluğu olduğu anlamına gelmez; dönemlerin süresi, belirtilerin niteliği ve kişinin yaşam öyküsü birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Mani", slug: "mani" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" }
+    ]
+  }],
+  ["mani", {
+    shortDefinition: "Mani, duygudurum ve enerjide belirgin yükselme veya irritabiliteyle birlikte davranış ve işlevsellikte önemli değişikliklerin ortaya çıktığı klinik bir dönemdir.",
+    intro: "Mani yalnızca kişinin çok neşeli, hareketli veya enerjik olması değildir. Uyku ihtiyacı, düşünce hızı, konuşma, kendine güven, etkinlik düzeyi ve karar verme biçiminde kişinin olağan halinden belirgin bir değişiklik ortaya çıkabilir.",
+    sections: [
+      section("Manik Dönemde Hangi Değişiklikler Görülebilir?", "Kişinin enerjisi belirgin biçimde artabilir, çok daha az uyumasına rağmen kendisini dinlenmiş hissedebilir ve konuşması olağandan hızlı veya baskılı hale gelebilir. Düşünceler çok hızlı ilerliyormuş gibi hissedilebilir ve dikkat kolayca farklı uyaranlara kayabilir. Aynı anda birçok işe başlama, sosyal etkinliğin artması veya olağandışı ölçüde yoğun çalışma görülebilir."),
+      section("Karar Verme ve Risk Alma Nasıl Etkilenebilir?", "Manik dönemde kişinin kendine güveni belirgin biçimde artabilir ve kendi kapasitesiyle ilgili gerçekçi olmayan değerlendirmeler gelişebilir. Sonuçları yeterince düşünmeden maddi, sosyal veya mesleki kararlar alma görülebilir. Bu davranışların önemli özelliği kişinin olağan tutum ve davranışlarından belirgin biçimde farklılaşması ve günlük işlevselliği olumsuz etkileyebilmesidir."),
+      section("Mani ile Hipomani Arasındaki Fark Nedir?", "Mani ve hipomanide duygudurum ve enerji düzeyinde kişinin olağan halinden farklı bir değişiklik vardır. Manide belirtiler daha ağırdır ve sosyal ya da mesleki işlevsellikte belirgin bozulmaya yol açabilir. Hastane düzeyinde bakım gereksinimi veya psikotik belirtilerin ortaya çıkması da tabloyu mani düzeyinde değerlendirmeyi gerektirebilir. Hipomani tanım gereği bu ağırlıkta bir işlev kaybı oluşturmaz."),
+      section("Mani Bipolar Bozukluk Açısından Neden Önemlidir?", "En az bir manik dönemin bulunması Bipolar I bozukluğun tanımlanmasında temel öneme sahiptir. Bununla birlikte yalnızca enerji artışı, az uyuma veya hızlı konuşma görülmesi tek başına bipolar bozukluk anlamına gelmez. Bazı maddeler, ilaçlar ve tıbbi durumlar da mani benzeri belirtilerle ilişkili olabilir; bu nedenle belirtilerin başlangıcı, süresi ve kişinin olağan işlevselliğindeki değişiklik birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "Hipomani", slug: "hipomani" },
+      { term: "Psikoz", slug: "psikoz" }
+    ]
+  }],
+  ["derealizasyon", {
+    shortDefinition: "Derealizasyon, kişinin çevresini alışılmadık, uzak, sisli veya gerçek dışıymış gibi algıladığı dissosiyatif bir deneyimdir.",
+    intro: "Derealizasyonda çevre gerçekten değişmez; kişinin çevreyi algılama biçimi değişir. Tanıdık bir ortam aniden yabancı, cansız veya sanki bir filmin içindeymiş gibi hissedilebilir.",
+    sections: [
+      section("Derealizasyon Nasıl Hissedilebilir?", "Kişi çevresindeki nesnelerin uzak, yapay veya iki boyutlu göründüğünü söyleyebilir. İnsanların veya mekanların tanıdık olduğunu bilmesine rağmen onları alışılmadık biçimde yabancı hissedebilir. Sesler, renkler veya mesafeler de farklı algılanabilir."),
+      section("Gerçekliği Değerlendirme Korunur mu?", "Çoğu derealizasyon deneyiminde kişi çevrenin gerçekten değişmediğini bilir. “Dünya gerçek değil” hissi yaşasa bile bunun kendi algısındaki bir değişiklik olduğunun farkındadır. Bu durum, gerçekliği değerlendirme yetisinin belirgin biçimde bozulduğu psikotik yaşantılardan ayrımda önemlidir."),
+      section("Depersonalizasyon ile Farkı Nedir?", "Depersonalizasyonda yabancılaşma kişinin kendisine, bedenine veya zihinsel süreçlerine yöneliktir. Derealizasyonda ise temel değişiklik çevrenin algılanmasındadır. İki belirti sıklıkla birlikte görülebilir ve dissosiyatif deneyimlerin farklı yüzlerini oluşturabilir."),
+      section("Kaygı ve Travmayla İlişkisi Var mıdır?", "Yoğun kaygı, panik atak, travmatik yaşantılar ve bazı dissosiyatif durumlarda derealizasyon gelişebilir. Bununla birlikte bu belirti yalnızca tek bir psikiyatrik duruma özgü değildir. Tekrarlayıcı veya günlük yaşamı belirgin biçimde etkileyen deneyimlerde diğer belirtilerle birlikte değerlendirilmesi önemlidir. Özellikle deneyimin ne zaman başladığı, ne kadar sürdüğü ve panik ya da yoğun stresle birlikte ortaya çıkıp çıkmadığı ayırıcı değerlendirmede yardımcı olabilir.")
+    ],
+    relatedTerms: [
+      { term: "Depersonalizasyon", slug: "depersonalizasyon" },
+      { term: "Dissosiyasyon", slug: "dissosiyasyon" },
+      { term: "Anksiyete", slug: "anksiyete" }
+    ]
+  }],
   ["depersonalizasyon", { shortDefinition: "Depersonalizasyon, kişinin kendisini, bedenini, duygularını veya zihinsel süreçlerini yabancılaşmış ya da dışarıdan izliyormuş gibi algılamasıdır.", intro: "Depersonalizasyon sırasında kişi “kendim gibi hissetmiyorum” veya “sanki kendimi dışarıdan izliyorum” şeklinde bir deneyim tarif edebilir. Bu yaşantı rahatsız edici olabilir ancak kişi çoğu zaman deneyimin öznel bir algı değişikliği olduğunun farkındadır.", sections: [section("Depersonalizasyon Nasıl Hissedilebilir?", "Kişi bedeninin kendisine ait değilmiş gibi olduğunu, hareketlerinin otomatikleştiğini veya duygularıyla arasında bir mesafe oluştuğunu hissedebilir. Bazı kişiler kendi sesini veya görüntüsünü yabancı bulabilir. Bu deneyimler kısa süreli olabileceği gibi bazı durumlarda daha uzun süre devam edebilir."), section("Gerçeklikle Bağ Kopar mı?", "Depersonalizasyonda gerçekliği değerlendirme genellikle korunur. Kişi yaşadığı yabancılaşma hissinin garip olduğunu bilir ve bunun gerçekten bedeninden ayrıldığı anlamına gelmediğini çoğunlukla fark eder. Bu özellik, bazı psikotik yaşantılardan ayrımda önemlidir."), section("Derealizasyondan Farkı Nedir?", "Depersonalizasyonda yabancılaşma kişinin kendisine yöneliktir. Derealizasyonda ise çevre, insanlar veya mekanlar alışılmadık, uzak veya gerçek dışı algılanabilir. İki deneyim aynı kişide birlikte ortaya çıkabilir."), section("Hangi Durumlarda Görülebilir?", "Yoğun stres, panik, travma sonrası durumlar veya bazı dissosiyatif tablolar sırasında depersonalizasyon yaşanabilir. Bununla birlikte tek başına kısa süreli bir depersonalizasyon deneyimi belirli bir bozukluk olduğu anlamına gelmez. Süreklilik, sıkıntı düzeyi ve günlük yaşama etkisi değerlendirmede önemlidir.")], relatedTerms: [{ term: "Dissosiyasyon", slug: "dissosiyasyon" }, { term: "Derealizasyon", slug: "derealizasyon" }, { term: "Travma sonrası stres bozukluğu", slug: "travma-sonrasi-stres-bozuklugu" }] }],
   ["intihar-dusuncesi", { shortDefinition: "İntihar düşüncesi, kişinin yaşamını sona erdirme veya yaşamaya devam etmeme yönünde düşünceler yaşamasını ifade eden ve klinik açıdan dikkatle değerlendirilmesi gereken bir belirtidir.", intro: "İntihar düşünceleri tek bir biçimde ortaya çıkmaz. Bazı kişiler yaşamın sona ermesini isteme veya “keşke uyanmasam” gibi daha pasif düşünceler yaşarken bazı kişilerde düşünceler daha yoğun ve ısrarlı hale gelebilir. Bu nedenle düşüncenin içeriğinin yanı sıra sıklığı, yoğunluğu ve kişinin kendisini güvende hissedip hissetmediği de önemlidir.", sections: [section("İntihar Düşüncesi Her Zaman Aynı Düzeyde midir?", "Hayır. Düşünceler geçici ve pasif bir yaşamdan vazgeçme isteğinden daha yoğun ve kontrol edilmesi güç düşüncelere kadar farklı düzeylerde olabilir. Klinik değerlendirmede düşüncenin ne kadar sık ortaya çıktığı, kişinin ne kadar zorlandığı, düşüncelerin zaman içinde artıp artmadığı ve kişinin kendisini güvende tutup tutamadığı dikkate alınır."), section("Hangi Durumlarla Birlikte Görülebilir?", "İntihar düşünceleri majör depresif bozukluk, bipolar bozukluk, psikoz, yoğun kaygı, travma sonrası durumlar veya ağır yaşam krizleri sırasında görülebilir. Bununla birlikte belirli bir psikiyatrik tanının bulunması şart değildir. Umutsuzluk, sosyal izolasyon, ciddi stres ve belirgin işlev kaybı kişinin yaşadığı sıkıntının şiddetini artırabilir."), section("Neden Açıkça Sorulması Önemlidir?", "İntihar düşüncelerini açık ve yargılamayan biçimde konuşmak, kişinin yaşadığı sıkıntının anlaşılmasına ve güvenliğinin değerlendirilmesine yardımcı olabilir. Bu düşüncelerin küçümsenmesi, geçiştirilmesi veya yalnızca “bunu düşünme” şeklinde karşılık verilmesi kişinin yaşadığı yükün anlaşılmasını zorlaştırabilir. Değerlendirmede düşüncelerin sıklığı, yoğunluğu ve kişinin destek kaynakları birlikte ele alınır."), section("Ne Zaman Acil Değerlendirme Gerekir?", "Kişinin kendisini güvende tutamayacağını düşünmesi, düşüncelerin hızla yoğunlaşması veya yakın zamanda kendisine zarar verme riski bulunduğunu ifade etmesi durumunda beklemeden acil profesyonel değerlendirme gerekir. Böyle bir durumda kişi yalnız bırakılmamalı ve mevcut sağlık hizmetlerine doğrudan başvurulmalıdır. Bu sayfa yalnızca bilgilendirme amaçlıdır ve bireysel risk değerlendirmesinin yerini tutmaz.")], relatedTerms: [{ term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" }, { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" }, { term: "Şizofreni", slug: "sizofreni" }] }],
   ["psikomotor-retardasyon", { shortDefinition: "Psikomotor retardasyon, düşünce, konuşma ve bedensel hareketlerin olağan hızına göre belirgin biçimde yavaşlamasını ifade eden klinik bir bulgudur.", intro: "Psikomotor retardasyon yalnızca kişinin kendisini yorgun hissetmesi değildir. Hareketlerin, konuşmanın ve tepki verme hızının dışarıdan da fark edilebilecek ölçüde yavaşlaması söz konusu olabilir.", sections: [section("Günlük Yaşamda Nasıl Görülebilir?", "Kişi sorulara yanıt vermeden önce uzun süre bekleyebilir, daha yavaş konuşabilir veya günlük işleri tamamlaması olağandan çok daha uzun sürebilir. Yürüme, giyinme veya basit bir işi başlatma gibi hareketlerde yavaşlama görülebilir. Yüz ifadesi ve jestlerde azalma da tabloya eşlik edebilir."), section("Yorgunluktan Farkı Nedir?", "Yorgun kişi enerji eksikliği hissedebilir ancak hareket ve düşünce hızı her zaman belirgin biçimde azalmaz. Psikomotor retardasyonda ise yavaşlama gözlenebilir nitelikte olabilir. Kişinin konuşma temposu, hareketleri ve çevresel uyaranlara yanıt verme biçimi olağan durumundan farklılaşabilir."), section("Depresyonla İlişkisi Nedir?", "Belirgin psikomotor yavaşlama bazı majör depresif dönemlerde görülebilir. Bununla birlikte bu bulgu yalnız depresyona özgü değildir. Bazı nörolojik hastalıklar, ilaçların etkileri veya farklı klinik durumlar da hareket ve tepki hızında azalmaya yol açabilir."), section("Abuli veya Apati ile Aynı Şey midir?", "Hayır. Abulide temel sorun davranışı isteme ve başlatma kapasitesindeki azalmadır. Apatide motivasyon ve ilgi azalması daha ön plandadır. Psikomotor retardasyonda ise kişinin zihinsel ve bedensel süreçlerinin hızında belirgin yavaşlama dikkat çeker. Bu belirtiler bazı durumlarda birlikte bulunabilir.")], relatedTerms: [{ term: "Majör depresif bozukluk", slug: "major-depresif-bozukluk" }, { term: "Abuli", slug: "abuli" }, { term: "Apati", slug: "apati" }] }],
@@ -300,6 +361,94 @@ const dissociationBaseTerm = defineTerm({
 });
 const anhedoniaBaseTerm = defineTerm({ term: "Anhedoni", slug: "anhedoni", shortDefinition: "Anhedoni, haz alma veya etkinliklere yönelik istek duyma kapasitesinde azalmayı ifade eden klinik belirtidir.", intro: "Anhedoni kişinin günlük yaşamdaki keyif deneyimini etkileyebilir.", sections: [section("Kısa Tanım", "Haz deneyimi ve etkinliğe yönelik istek farklı biçimlerde etkilenebilir."), section("Değerlendirme", "Belirtilerin bağlamı ve günlük yaşama etkisi birlikte ele alınır."), section("İlişkili Kavramlar", "Apati ve depresyonla örtüşen yönleri olabilir.")], relatedTerms: [], seo: { title: "Anhedoni Nedir? | Psikiyatri Sözlüğü", description: "Anhedoninin haz alma ve istek duyma kapasitesiyle ilişkisini açıklar.", ogTitle: "Anhedoni Nedir?", ogDescription: "Anhedoniyi klinik bağlamda ele alır." }, schema: { definedTermDescription: "Haz alma veya etkinliklere yönelik istek duyma kapasitesinde azalma." } });
 const depersonalizationBaseTerm = defineTerm({ term: "Depersonalizasyon", slug: "depersonalizasyon", shortDefinition: "Depersonalizasyon, kişinin kendisini veya bedenini yabancılaşmış gibi algılamasıdır.", intro: "Belirtilerin bağlamı ve günlük yaşama etkisi değerlendirmede önemlidir.", sections: [section("Kısa Tanım", "Kişinin kendisine yönelik algısında yabancılaşma hissi görülebilir."), section("Gerçeklik", "Gerçekliği değerlendirme çoğu zaman korunur."), section("Değerlendirme", "Süreklilik ve sıkıntı düzeyi dikkate alınır.")], relatedTerms: [], seo: { title: "Depersonalizasyon Nedir? | Psikiyatri Sözlüğü", description: "Depersonalizasyon deneyimini ve ilişkili kavramları açıklar.", ogTitle: "Depersonalizasyon Nedir?", ogDescription: "Depersonalizasyonu klinik bir çerçevede ele alır." }, schema: { definedTermDescription: "Kişinin kendisini, bedenini veya zihinsel süreçlerini yabancılaşmış gibi algılaması." } });
+const derealizationBaseTerm = defineTerm({
+  term: "Derealizasyon",
+  slug: "derealizasyon",
+  shortDefinition: "Derealizasyon, çevrenin alışılmadık veya gerçek dışı algılanabildiği dissosiyatif bir deneyimdir.",
+  intro: "Çevrenin algılanma biçimindeki değişiklik kişinin kendisi için belirgin ve rahatsız edici olabilir.",
+  sections: [
+    section("Kısa Tanım", "Derealizasyonda çevre tanıdık olduğu halde yabancı veya gerçek dışı hissedilebilir."),
+    section("Gerçekliği Değerlendirme", "Kişi çoğu zaman çevrenin gerçekten değişmediğinin farkındadır."),
+    section("İlişkili Kavramlar", "Depersonalizasyon ve dissosiyasyonla birlikte görülebilir.")
+  ],
+  relatedTerms: [],
+  seo: {
+    title: "Derealizasyon Nedir? | Psikiyatri Sözlüğü",
+    description: "Derealizasyonun nasıl hissedildiğini, depersonalizasyondan farkını ve kaygı ile ilişkisini açıklar.",
+    ogTitle: "Derealizasyon Nedir?",
+    ogDescription: "Derealizasyon deneyimini sade ve klinik bir çerçevede açıklar."
+  },
+  schema: {
+    definedTermDescription: "Çevrenin alışılmadık, uzak veya gerçek dışıymış gibi algılandığı dissosiyatif deneyim."
+  }
+});
+
+const maniBaseTerm = defineTerm({
+  term: "Mani",
+  slug: "mani",
+  shortDefinition: "Mani, duygudurum ve enerji düzeyinde belirgin artışla ilişkili klinik bir dönemdir.",
+  intro: "Manik dönem kişinin olağan duygudurum ve davranışlarından belirgin bir değişiklik içerir.",
+  sections: [
+    section("Kısa Tanım", "Enerji, duygudurum, uyku ve etkinlik düzeyinde belirgin değişiklik görülebilir."),
+    section("İşlevsellik", "Belirtiler sosyal ve mesleki işlevselliği belirgin biçimde etkileyebilir."),
+    section("İlişkili Kavramlar", "Mani, Bipolar I bozukluk açısından temel öneme sahiptir.")
+  ],
+  relatedTerms: [],
+  seo: {
+    title: "Mani Nedir? | Psikiyatri Sözlüğü",
+    description: "Manik dönemin belirtilerini, hipomaniden farkını ve Bipolar I bozuklukla ilişkisini açıklar.",
+    ogTitle: "Mani Nedir?",
+    ogDescription: "Maniyi günlük duygudurum değişikliklerinden ve hipomaniden ayıran özellikleri açıklar."
+  },
+  schema: {
+    definedTermDescription: "Duygudurum ve enerjide belirgin artışla birlikte işlevsellikte önemli değişikliklerin görülebildiği klinik dönem."
+  }
+});
+
+const hypomaniaBaseTerm = defineTerm({
+  term: "Hipomani",
+  slug: "hipomani",
+  shortDefinition: "Hipomani, duygudurum ve enerjide belirgin yükselme veya irritabilite ile seyreden klinik bir dönemdir.",
+  intro: "Hipomanik dönemde kişinin olağan duygudurum, enerji ve davranış düzeyinde belirgin bir değişiklik görülür.",
+  sections: [
+    section("Kısa Tanım", "Enerji, uyku ihtiyacı, konuşma ve etkinlik düzeyinde belirgin değişiklik ortaya çıkabilir."),
+    section("Maniden Farkı", "Hipomanide değişiklik belirgindir ancak mani düzeyinde ağır işlev kaybı bulunmaz."),
+    section("İlişkili Kavramlar", "Hipomani bipolar bozuklukların değerlendirilmesinde önemli bir klinik dönemdir.")
+  ],
+  relatedTerms: [],
+  seo: {
+    title: "Hipomani Nedir? | Psikiyatri Sözlüğü",
+    description: "Hipomaninin belirtilerini, maniden farkını ve bipolar bozukluklarla ilişkisini açıklar.",
+    ogTitle: "Hipomani Nedir?",
+    ogDescription: "Hipomaninin maniyle farkını ve günlük yaşamdaki görünümünü açıklar."
+  },
+  schema: {
+    definedTermDescription: "Duygudurum ve enerjide belirgin değişiklik görülen ancak mani düzeyinde ağır işlev kaybı oluşturmayan klinik dönem."
+  }
+});
+
+const psychosisBaseTerm = defineTerm({
+  term: "Psikoz",
+  slug: "psikoz",
+  shortDefinition: "Psikoz, gerçekliği değerlendirme süreçlerinin belirgin biçimde etkilenebildiği klinik bir durumdur.",
+  intro: "Psikoz farklı psikiyatrik, tıbbi veya maddeyle ilişkili durumlarda görülebilen bir belirti kümesini ifade eder.",
+  sections: [
+    section("Kısa Tanım", "Sanrı, varsanı veya düşünce organizasyonunda belirgin değişiklikler görülebilir."),
+    section("Değerlendirme", "Belirtilerin başlangıcı, süresi ve işlevselliğe etkisi birlikte ele alınır."),
+    section("İlişkili Kavramlar", "Psikoz şizofreni ile aynı kavram değildir ve farklı klinik durumlarda görülebilir.")
+  ],
+  relatedTerms: [],
+  seo: {
+    title: "Psikoz Nedir? | Psikiyatri Sözlüğü",
+    description: "Psikozun belirtilerini, şizofreniden farkını ve gerçekliği değerlendirme kavramını açıklar.",
+    ogTitle: "Psikoz Nedir?",
+    ogDescription: "Psikozu şizofreni ile eşitlemeden sade ve klinik bir çerçevede açıklar."
+  },
+  schema: {
+    definedTermDescription: "Gerçekliği değerlendirme süreçlerinde belirgin bozulma ve sanrı, varsanı veya düşünce organizasyonunda değişikliklerle ilişkili klinik durum."
+  }
+});
+
 export const thirdBatchSlugs = [...pilotTerms.slice(20, 40), ...thirdAdditionalTerms.filter((term) => !excludedThirdSlugs.has(term.slug)), ...thirdReplacements].map((term) => term.slug);
-export const allGlossaryPilotTerms = [...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm]
+export const allGlossaryPilotTerms = [...pilotTerms, ...thirdAdditionalTerms, ...thirdReplacements, dissociationBaseTerm, anhedoniaBaseTerm, depersonalizationBaseTerm, derealizationBaseTerm, maniBaseTerm, hypomaniaBaseTerm, psychosisBaseTerm]
   .map((term) => ({ ...term, ...qualityOverrides.get(term.slug) }));
