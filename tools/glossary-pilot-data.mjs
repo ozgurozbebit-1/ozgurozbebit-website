@@ -5444,7 +5444,564 @@ const thirteenthBatchNewTerms = [
   })
 ];
 
+
+const fourteenthBatchNewTerms = [
+  defineTerm({
+    term: "Paranoid kişilik örüntüsü",
+    slug: "paranoid-kisilik-oruntusu",
+    shortDefinition: "Paranoid kişilik örüntüsü, başkalarının niyetlerini sürekli kuşkuyla değerlendirme, kolay güvenememe ve nötr davranışları tehdit edici yorumlama eğiliminin baskın olduğu kişilik örüntüsüdür.",
+    intro: "Kuşku duymak zaman zaman herkes için normal olabilir. Paranoid kişilik örüntüsünde ise güvensizlik ve kuşkuculuk uzun süreli, farklı ilişkilere yayılan ve kişinin sosyal ya da mesleki işlevselliğini etkileyebilen bir özellik haline gelir.",
+    sections: [
+      section("Paranoid Kişilik Örüntüsü Nasıl Görülebilir?", "Kişi başkalarının kendisini kullanacağına, zarar vereceğine veya aldatacağına ilişkin güçlü kuşkular taşıyabilir. Zararsız sözlerde gizli anlam arama, eleştiriye aşırı duyarlılık veya kırgınlıkları uzun süre sürdürme görülebilir. Bu özelliklerin yoğunluğu kişiden kişiye değişir."),
+      section("Kuşkucu Olmak Tanı Anlamına Gelir mi?", "Hayır. Geçmiş deneyimler, bulunduğu çevre, gerçek güvenlik sorunları ve kültürel bağlam kişinin temkinli davranmasını açıklayabilir. Klinik değerlendirmede örüntünün ne kadar uzun süredir bulunduğu, farklı ortamlarda görülüp görülmediği ve işlevselliği nasıl etkilediği incelenir."),
+      section("Psikoz ile Aynı Şey midir?", "Hayır. Paranoid kişilik özelliklerinde yoğun güvensizlik bulunabilir ancak bu durum tek başına sanrı veya psikoz anlamına gelmez. Gerçeklikle değerlendirme belirgin biçimde bozulmuşsa psikoz ve diğer olası nedenler ayrıca değerlendirilir."),
+      section("Kişiyi Yalnız Bu Özellikle Tanımlamak Doğru mudur?", "Hayır. Kişilik örüntüleri kişinin bütün kimliğini açıklamaz. Değerlendirmede güçlü yönler, ilişkiler, yaşam öyküsü, travmatik deneyimler ve mevcut çevresel koşullar da dikkate alınmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Kişilik", slug: "kisilik" },
+      { term: "Kişilik bozukluğu", slug: "kisilik-bozuklugu" },
+      { term: "Referans fikirleri", slug: "referans-fikirleri" },
+      { term: "Psikoz", slug: "psikoz" }
+    ],
+    seo: {
+      title: "Paranoid Kişilik Örüntüsü Nedir? | Psikiyatri Sözlüğü",
+      description: "Paranoid kişilik örüntüsündeki kuşku ve güvensizliği, normal temkinlilikten ve psikozdan farklarıyla açıklar.",
+      ogTitle: "Paranoid Kişilik Örüntüsü Nedir?",
+      ogDescription: "Uzun süreli kuşku ve güvensizlik örüntüsünü klinik sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Başkalarının niyetlerine karşı yaygın ve uzun süreli kuşku ve güvensizlikle seyreden kişilik örüntüsü."
+    }
+  }),
+
+  defineTerm({
+    term: "PHQ-9",
+    slug: "phq-9",
+    shortDefinition: "PHQ-9, son iki haftadaki depresif belirti sıklığını dokuz madde üzerinden değerlendirmeye yardımcı olan kısa öz bildirim ölçeğidir.",
+    intro: "PHQ-9 depresif belirtileri sistematik biçimde sorgulamaya ve zaman içindeki değişimi izlemeye yardımcı olabilir. Bununla birlikte puan tek başına depresyon tanısı koymaz; klinik görüşme, işlevsellik ve olası diğer nedenlerle birlikte değerlendirilir. Ölçeğin amacı kişinin yaşadığı güçlükleri daha görünür hale getirmek ve klinik görüşmeye yapılandırılmış ek bilgi sağlamaktır.",
+    sections: [
+      section("PHQ-9 Neyi Değerlendirir?", "Ölçek ilgi ve keyif azalması, çökkün duygudurum, uyku, enerji, iştah, öz değerlendirme, dikkat, hareketlilik ve kendine zarar verme düşünceleri gibi depresyonla ilişkili alanların son iki haftadaki sıklığını sorgular."),
+      section("Yüksek Puan Depresyon Tanısı mıdır?", "Hayır. Yüksek puan daha ayrıntılı değerlendirme gereksinimini gösterebilir ancak belirtiler tıbbi hastalıklar, yas, uyku sorunları veya başka ruhsal durumlarla ilişkili olabilir. Tanı yalnız ölçek toplamına dayanılarak konulmaz."),
+      section("Düşük Puan Depresyonu Kesin Dışlar mı?", "Hayır. Öz bildirim ölçekleri kişinin soruları nasıl anladığından, belirtileri hatırlama biçiminden ve uygulama koşullarından etkilenebilir. Klinik açıdan önemli yakınmalar varsa düşük skor tek başına değerlendirmeyi sonlandırmaz."),
+      section("PHQ-9 İzlemde Kullanılabilir mi?", "Evet. Aynı ölçeğin farklı zamanlarda uygulanması belirtilerdeki değişimi daha sistematik izlemeye yardımcı olabilir. Puan değişimi yine kişinin günlük işlevselliği ve genel klinik durumu ile birlikte yorumlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Anhedoni", slug: "anhedoni" },
+      { term: "İntihar riski", slug: "intihar-riski" }
+    ],
+    seo: {
+      title: "PHQ-9 Nedir? | Psikiyatri Sözlüğü",
+      description: "PHQ-9'un depresif belirti şiddetini değerlendirmeye yardımcı olduğunu ancak tek başına depresyon tanısı koymadığını açıklar.",
+      ogTitle: "PHQ-9 Nedir?",
+      ogDescription: "PHQ-9 depresyon ölçeğinin kullanımını ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Son iki haftadaki depresif belirtilerin sıklığını değerlendiren dokuz maddelik öz bildirim ölçeği."
+    }
+  }),
+
+  defineTerm({
+    term: "Plasebo",
+    slug: "plasebo",
+    shortDefinition: "Plasebo, araştırmalarda karşılaştırma amacıyla kullanılan ve incelenen özgül etkin maddeyi içermeyen uygulama veya tedavi benzeri müdahaledir.",
+    intro: "Plasebo etkisi, yalnız kişinin bir şey hayal etmesi anlamına gelmez. Beklenti, öğrenme, bakım ortamı ve sağlık profesyoneliyle etkileşim gibi etkenler kişinin belirti deneyimini ve bazı ölçülebilir yanıtlarını etkileyebilir. Bu nedenle plasebo araştırmaları hem biyolojik tedavi etkisini hem de tedavi bağlamının katkısını daha iyi anlamaya yardımcı olur.",
+    sections: [
+      section("Plasebo Etkisi Nasıl Ortaya Çıkabilir?", "Kişinin tedaviden beklentisi, daha önceki deneyimleri ve uygulamanın sunulduğu bağlam ağrı, kaygı veya başka öznel belirtilerin algılanmasını değiştirebilir. Bu değişim gerçek bir deneyimdir ancak incelenen tedavinin özgül biyolojik etkisiyle aynı şey değildir."),
+      section("Klinik Araştırmalarda Neden Kullanılır?", "Yeni bir tedavinin gözlenen yararının ne kadarının tedaviye özgü olduğunu anlamak için uygun araştırmalarda plasebo kontrolü kullanılabilir. Böylece doğal iyileşme, beklenti ve değerlendirme yanlılığı gibi etkilerden bir bölümü ayrıştırılmaya çalışılır."),
+      section("Plasebo Her Araştırmada Kullanılabilir mi?", "Hayır. Etik uygunluk araştırılan hastalığa, mevcut etkili tedavilere ve katılımcının karşılaşabileceği riske bağlıdır. Etkili tedaviden mahrum bırakmanın ciddi zarar oluşturabileceği durumlarda plasebo kullanımı özel etik değerlendirme gerektirir."),
+      section("Plasebo Etkisi Tedavinin Gereksiz Olduğunu mu Gösterir?", "Hayır. Bir çalışmada plasebo grubunda iyileşme görülmesi etkin tedavilerin gereksiz olduğu anlamına gelmez. Asıl soru, incelenen tedavinin uygun karşılaştırma grubuna göre ek ve klinik açıdan anlamlı yarar sağlayıp sağlamadığıdır.")
+    ],
+    relatedTerms: [
+      { term: "Farmakodinamik", slug: "farmakodinamik" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Plasebo Nedir? | Psikiyatri Sözlüğü",
+      description: "Plasebo ve plasebo etkisinin ne olduğunu, klinik araştırmalarda neden kullanıldığını ve etik sınırlarını açıklar.",
+      ogTitle: "Plasebo Nedir?",
+      ogDescription: "Plasebo etkisini ve araştırmalardaki rolünü açıklar."
+    },
+    schema: {
+      definedTermDescription: "İncelenen özgül etkin maddeyi içermeyen ve araştırmalarda karşılaştırma amacıyla kullanılabilen uygulama."
+    }
+  }),
+
+  defineTerm({
+    term: "Prefrontal korteks",
+    slug: "prefrontal-korteks",
+    shortDefinition: "Prefrontal korteks, planlama, karar verme, çalışma belleği, davranışın düzenlenmesi ve dürtü kontrolü gibi üst düzey bilişsel süreçlere katkıda bulunan frontal beyin bölgesidir.",
+    intro: "Prefrontal korteks tek başına beynin karar merkezi değildir. Duygusal ve bilişsel bilgiyi başka kortikal ve subkortikal ağlarla birlikte işler ve davranışın mevcut hedeflere göre düzenlenmesine katkıda bulunur.",
+    sections: [
+      section("Prefrontal Korteks Hangi İşlevlerde Rol Alır?", "Plan yapma, seçenekleri karşılaştırma, dikkati sürdürme, çalışma belleğini kullanma ve uygun olmayan davranışları baskılama gibi yürütücü işlevlerle ilişkilidir. Bu beceriler tek bir bölgenin değil geniş beyin ağlarının ortak ürünüdür."),
+      section("Duygularla İlişkisi Nedir?", "Prefrontal bölgeler amigdala ve diğer limbik yapılarla karşılıklı bağlantılar kurar. Bu ağlar duygusal uyaranların değerlendirilmesi, davranışın bağlama göre ayarlanması ve stres altında karar verme süreçlerine katkıda bulunabilir."),
+      section("Psikiyatrik Bozukluklarda Neden Araştırılır?", "DEHB, depresyon, bağımlılık ve başka birçok ruhsal durumda prefrontal ağların işlevleri araştırılmıştır. Ancak grup düzeyindeki görüntüleme farklılıkları tek bir kişide tanı koyan güvenilir bir beyin testi değildir."),
+      section("Prefrontal Korteks Gelişimi Ne Zaman Tamamlanır?", "Prefrontal ağlar çocukluk ve ergenlik boyunca gelişmeye devam eder ve genç yetişkinlikte de olgunlaşma süreçleri sürer. Bununla birlikte gelişim kişiden kişiye değişir ve tek bir yaş sınırı davranışsal olgunluğu otomatik olarak belirlemez.")
+    ],
+    relatedTerms: [
+      { term: "Limbik sistem", slug: "limbik-sistem" },
+      { term: "Nöroplastisite", slug: "noroplastisite" },
+      { term: "DEHB", slug: "dehb" },
+      { term: "Dürtüsellik", slug: "durtusellik" }
+    ],
+    seo: {
+      title: "Prefrontal Korteks Nedir? | Psikiyatri Sözlüğü",
+      description: "Prefrontal korteksin planlama, karar verme, dikkat ve dürtü kontrolündeki rolünü beyin ağları bağlamında açıklar.",
+      ogTitle: "Prefrontal Korteks Nedir?",
+      ogDescription: "Prefrontal korteksin yürütücü işlevlerdeki rolünü açıklar."
+    },
+    schema: {
+      definedTermDescription: "Planlama, karar verme ve davranış düzenleme gibi yürütücü işlevlere katkıda bulunan frontal korteks bölgesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Premorbid",
+    slug: "premorbid",
+    shortDefinition: "Premorbid, bir hastalık veya belirgin klinik tablo başlamadan önceki kişilik, bilişsel kapasite, sosyal işlevsellik ve yaşam özelliklerini tanımlayan klinik terimdir.",
+    intro: "Bir kişinin hastalık öncesinde nasıl işlev gördüğünü bilmek, hastalık sonrasında ortaya çıkan değişiklikleri anlamaya yardımcı olabilir. Premorbid sözcüğü tek başına belirli bir hastalığı veya kötü gidişatı ifade etmez. Özellikle zaman içinde belirgin işlev değişikliği bulunan durumlarda önceki yaşam düzeyi önemli bir karşılaştırma noktası sağlar.",
+    sections: [
+      section("Premorbid İşlevsellik Neleri Kapsayabilir?", "Okul veya iş performansı, sosyal ilişkiler, bağımsız yaşam becerileri, ilgi alanları ve günlük sorumlulukları yerine getirme düzeyi değerlendirilebilir. Amaç kişinin hastalık öncesindeki genel işlev düzeyini olabildiğince gerçekçi biçimde anlamaktır."),
+      section("Premorbid Kişilik Ne Demektir?", "Belirgin hastalık belirtileri başlamadan önce kişinin uzun süredir gösterdiği kişilik ve davranış özelliklerini ifade eder. Bu bilgiler mevcut davranışların yeni ortaya çıkıp çıkmadığını değerlendirmede yardımcı olabilir."),
+      section("Bilgi Nasıl Elde Edilir?", "Kişinin kendi öyküsü temel kaynaktır; gerekli ve uygun durumlarda önceki kayıtlar veya kişinin izni ve klinik gereklilik çerçevesinde yakınlardan alınan bilgiler de kullanılabilir. Geçmişe ilişkin anlatıların her zaman kusursuz olmadığı göz önünde bulundurulur."),
+      section("Premorbid Özellikler Prognozu Kesin Belirler mi?", "Hayır. Hastalık öncesi işlevsellik klinik değerlendirmede önemli bilgilerden biri olabilir ancak gelecekteki seyri tek başına belirlemez. Tedaviye erişim, sosyal destek, hastalığın özellikleri ve birçok başka etken de gidişatı etkileyebilir.")
+    ],
+    relatedTerms: [
+      { term: "Prognoz", slug: "prognoz" },
+      { term: "İşlev kaybı", slug: "islev-kaybi" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Kişilik", slug: "kisilik" }
+    ],
+    seo: {
+      title: "Premorbid Nedir? | Psikiyatri Sözlüğü",
+      description: "Premorbid kavramını hastalık öncesi kişilik, işlevsellik ve yaşam özellikleri bağlamında açıklar.",
+      ogTitle: "Premorbid Nedir?",
+      ogDescription: "Hastalık öncesindeki işlev ve kişilik özelliklerini ifade eden kavramı açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir hastalık başlamadan önceki kişilik, işlevsellik ve yaşam özelliklerini ifade eden klinik terim."
+    }
+  }),
+
+  defineTerm({
+    term: "Prodrom",
+    slug: "prodrom",
+    shortDefinition: "Prodrom, bir hastalık veya belirgin klinik dönem tam olarak ortaya çıkmadan önce görülebilen erken ve çoğu zaman özgül olmayan belirti ve değişiklikler dönemidir.",
+    intro: "Uyku, enerji, dikkat, sosyal davranış veya duygu durumundaki bazı değişiklikler belirli hastalıklardan önce görülebilir. Ancak prodromal belirtiler genellikle özgül değildir ve tek başına gelecekte hangi hastalığın gelişeceğini kesin olarak göstermez. Bu nedenle erken değişiklikler kesin tanı işareti olarak değil, zaman içindeki örüntünün bir parçası olarak ele alınır.",
+    sections: [
+      section("Prodromal Belirtiler Nasıl Olabilir?", "Kişiye ve hastalığa göre uyku düzeninde bozulma, içe çekilme, performans azalması, huzursuzluk veya düşünce ve davranışlarda değişiklikler görülebilir. Aynı belirtiler stres veya başka klinik durumlarda da ortaya çıkabilir."),
+      section("Prodrom Tanı Anlamına Gelir mi?", "Hayır. Erken belirtilerin varlığı belirli bir bozukluğun mutlaka gelişeceği anlamına gelmez. Klinik değerlendirme belirtilerin süresini, şiddetini, değişimini ve kişinin işlevselliği üzerindeki etkisini izler."),
+      section("Erken Fark Etmek Neden Önemlidir?", "Daha önce benzer hastalık dönemleri yaşayan kişilerde kendilerine özgü erken uyarı işaretlerinin bilinmesi hızlı değerlendirmeye yardımcı olabilir. Böylece belirtiler ağırlaşmadan klinik izlem veya mevcut bakım planı gözden geçirilebilir."),
+      section("Prodrom ile Relaps Aynı Şey midir?", "Hayır. Prodrom yeni bir hastalık döneminin öncesindeki erken değişiklikleri anlatabilir. Relaps ise daha önce yatışmış belirtilerin yeniden belirginleşmesini ifade eder. İki kavram bazı klinik süreçlerde birbirine yakın kullanılabilse de aynı değildir.")
+    ],
+    relatedTerms: [
+      { term: "Relaps", slug: "relaps" },
+      { term: "Nüks önleme", slug: "nuks-onleme" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Prognoz", slug: "prognoz" }
+    ],
+    seo: {
+      title: "Prodrom Nedir? | Psikiyatri Sözlüğü",
+      description: "Prodromal dönemi, hastalık belirginleşmeden önce görülebilen ancak tek başına tanı koydurmayan erken belirtiler olarak açıklar.",
+      ogTitle: "Prodrom Nedir?",
+      ogDescription: "Hastalığın öncesindeki erken uyarı belirtileri kavramını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir hastalık belirginleşmeden önce görülebilen erken ve çoğu zaman özgül olmayan belirtiler dönemi."
+    }
+  }),
+
+  defineTerm({
+    term: "Prognoz",
+    slug: "prognoz",
+    shortDefinition: "Prognoz, bir hastalığın veya klinik durumun zaman içindeki olası seyri, düzelme olasılığı, tekrarlama riski ve işlevsellik üzerindeki beklenen etkilerine ilişkin değerlendirmedir.",
+    intro: "Prognoz kesin bir gelecek tahmini değildir. Benzer tanıya sahip kişiler arasında bile hastalığın seyri önemli ölçüde değişebilir ve değerlendirme zaman içinde yeni klinik bilgiler ortaya çıktıkça güncellenebilir. Bu nedenle prognoz kişiye değişmez bir sonuç atfetmek yerine olası gidişatları anlamaya yardımcı olan dinamik bir klinik çerçevedir.",
+    sections: [
+      section("Prognozu Hangi Etkenler Belirler?", "Belirtilerin şiddeti ve süresi, daha önceki dönemler, tedaviye yanıt, eşlik eden hastalıklar, madde kullanımı, sosyal destek ve kişinin yaşam koşulları gibi birçok etken birlikte rol oynayabilir."),
+      section("İyi veya Kötü Prognoz Ne Demektir?", "Bu ifadeler hastalığın beklenen seyri hakkında genel klinik değerlendirmeyi anlatır; kişinin değerini veya çabasını tanımlamaz. Prognoz olasılıksal bir kavramdır ve bireysel sonuçları kesin biçimde öngörmez."),
+      section("Tanı Tek Başına Prognozu Gösterir mi?", "Hayır. Aynı tanının farklı alt görünümleri ve farklı seyir biçimleri olabilir. Kişinin işlevselliği, erken müdahale, tedaviye erişim ve çevresel koşullar tanının adından bağımsız olarak önemli olabilir."),
+      section("Prognoz Zaman İçinde Değişebilir mi?", "Evet. Tedavi yanıtı, yeni hastalık dönemleri, yaşam olayları veya koruyucu etkenlerdeki değişiklikler prognoz değerlendirmesini değiştirebilir. Bu nedenle prognoz tek seferlik ve değişmez bir etiket değildir.")
+    ],
+    relatedTerms: [
+      { term: "İzlem", slug: "izlem" },
+      { term: "Relaps", slug: "relaps" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Premorbid", slug: "premorbid" }
+    ],
+    seo: {
+      title: "Prognoz Nedir? | Psikiyatri Sözlüğü",
+      description: "Prognozun hastalığın olası seyrine ilişkin değişebilir ve olasılıksal bir klinik değerlendirme olduğunu açıklar.",
+      ogTitle: "Prognoz Nedir?",
+      ogDescription: "Hastalığın beklenen seyrini ifade eden prognoz kavramını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir hastalığın zaman içindeki olası seyri ve sonuçlarına ilişkin klinik değerlendirme."
+    }
+  }),
+
+  defineTerm({
+    term: "Psikiyatrik rapor",
+    slug: "psikiyatrik-rapor",
+    shortDefinition: "Psikiyatrik rapor, belirli bir klinik veya idari soruya yönelik psikiyatrik değerlendirme bulgularını ve gerektiğinde uzman görüşünü belgeleyen tıbbi rapordur.",
+    intro: "Psikiyatrik raporların amacı ve kapsamı aynı değildir. İşe uygunluk, adli değerlendirme, engellilik, kurul işlemleri veya başka resmi süreçlerde istenen bilgiler ve kullanılan ölçütler ilgili mevzuata ve kuruma göre değişebilir.",
+    sections: [
+      section("Psikiyatrik Raporda Neler Bulunabilir?", "Raporun amacına göre başvuru nedeni, klinik öykü, mental durum muayenesi, mevcut kayıtlar, işlevsellik ve değerlendirme sonucuna ilişkin bilgiler yer alabilir. Gereksiz kişisel ayrıntıların rapora eklenmemesi mahremiyet açısından önemlidir."),
+      section("Tanı Tek Başına Rapor Sonucunu Belirler mi?", "Hayır. Birçok resmi değerlendirmede yalnız tanı değil belirtilerin sürekliliği, işlev kaybı, tedavi süreci ve ilgili görev veya hukuki soruyla ilişkisi değerlendirilir. Aynı tanıya sahip iki kişide sonuç farklı olabilir."),
+      section("Her Psikiyatrik Rapor Aynı Hukuki Değeri Taşır mı?", "Hayır. Raporu düzenleyen kurum, uzmanlık ve kurul gereklilikleri başvurunun türüne göre değişebilir. Belirli bir belgenin resmi olarak yeterli olup olmadığı güncel mevzuat ve ilgili kurumun kurallarıyla belirlenir."),
+      section("Mahremiyet Nasıl Korunur?", "Raporlama sırasında klinik olarak ve hukuken gerekli bilgilerle sınırlı kalınması temel ilkedir. Bununla birlikte yasal bildirim veya resmi değerlendirme süreçlerindeki gereklilikler ülkeye ve mevzuata göre değişebileceğinden kişisel durum ayrıca değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Mental durum muayenesi", slug: "mental-durum-muayenesi" },
+      { term: "Mahremiyet", slug: "mahremiyet" },
+      { term: "Hasta hakları", slug: "hasta-haklari" },
+      { term: "Maluliyet", slug: "maluliyet" }
+    ],
+    seo: {
+      title: "Psikiyatrik Rapor Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatrik raporların klinik ve resmi amaçlarını, kapsamını, işlevsellik değerlendirmesini ve mahremiyet sınırlarını açıklar.",
+      ogTitle: "Psikiyatrik Rapor Nedir?",
+      ogDescription: "Psikiyatrik raporların klinik ve hukuki çerçevesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirli klinik veya resmi amaçlar için psikiyatrik değerlendirme bulgularını belgeleyen tıbbi rapor."
+    }
+  }),
+
+  defineTerm({
+    term: "Psikiyatrik yatış",
+    slug: "psikiyatrik-yatis",
+    shortDefinition: "Psikiyatrik yatış, kişinin ruhsal durumunun hastane ortamında daha yoğun değerlendirme, güvenlik izlemi veya tedavi düzenlemesi gerektirdiği durumlarda uygulanan bakım sürecidir.",
+    intro: "Her psikiyatrik belirti hastane yatışı gerektirmez. Yatış kararı belirtilerin şiddeti, kişinin güvenliği, günlük işlevselliği, ayaktan bakımın yeterliliği ve mevcut tıbbi koşullar birlikte değerlendirilerek verilir. Amaç yalnız belirtileri azaltmak değil, kişinin güvenliğini sağlamak ve daha sürdürülebilir bir bakım planı oluşturmaktır.",
+    sections: [
+      section("Psikiyatrik Yatış Neden Gerekebilir?", "Yoğun intihar riski, ağır psikoz, ciddi davranışsal düzensizlik, kişinin temel bakımını sürdürememesi veya hızlı tedavi düzenlemesi gerektiren başka klinik durumlarda hastane ortamı değerlendirilebilir. Her durum bireysel olarak ele alınır."),
+      section("Yatış Sırasında Neler Yapılır?", "Klinik değerlendirme, mental durum izlemi, gerekli tıbbi incelemeler, ilaç ve diğer tedavilerin düzenlenmesi, güvenlik önlemleri ve taburculuk sonrası bakım planı oluşturulabilir. Süre kişinin klinik gereksinimlerine göre değişir."),
+      section("Gönüllü ve Zorunlu Yatış Aynı mıdır?", "Hayır. Kişinin kendi isteğiyle yatışı ile rızası dışında uygulanabilen yatış süreçlerinin hukuki dayanakları farklıdır. Zorunlu değerlendirme ve yatış kuralları ülkeye ve yürürlükteki mevzuata göre değişir."),
+      section("Taburculuk Ne Zaman Planlanır?", "Hastane düzeyinde bakım gereksinimi azaldığında ve ayaktan izlem için yeterli plan oluşturulduğunda taburculuk değerlendirilebilir. Kontrol, ilaç, sosyal destek ve kriz durumunda başvurulacak yolların belirlenmesi süreklilik açısından önemlidir.")
+    ],
+    relatedTerms: [
+      { term: "İntihar riski", slug: "intihar-riski" },
+      { term: "Güvenlik planı", slug: "guvenlik-plani" },
+      { term: "Kriz müdahalesi", slug: "kriz-mudahalesi" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Psikiyatrik Yatış Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatrik yatışın hangi klinik durumlarda değerlendirilebildiğini, hastane sürecini ve hukuki sınırlarını açıklar.",
+      ogTitle: "Psikiyatrik Yatış Nedir?",
+      ogDescription: "Psikiyatrik hastane yatışının amaçlarını ve genel sürecini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Yoğun değerlendirme, güvenlik veya tedavi düzenlemesi amacıyla psikiyatri hastane bakımına alınma süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Rasyonalizasyon",
+    slug: "rasyonalizasyon",
+    shortDefinition: "Rasyonalizasyon, kişinin davranış, karar veya duygularının gerçek nedenleriyle yüzleşmek yerine bunlara sonradan daha kabul edilebilir ve mantıklı görünen açıklamalar getirmesiyle tanımlanan savunma biçimidir.",
+    intro: "İnsanlar davranışlarının bütün nedenlerini her zaman tam olarak fark etmez. Rasyonalizasyon, benlik saygısını veya kişinin kendisi hakkındaki tutarlı anlatısını korumaya yardımcı olabilen otomatik bir psikolojik süreç olarak ele alınır. Bu süreç kişinin zorlayıcı duygularla karşılaşmasını geçici olarak azaltabilir ancak davranışın altında yatan etkenleri görmesini de zorlaştırabilir.",
+    sections: [
+      section("Rasyonalizasyon Nasıl Görülebilir?", "Kişi başarısız olduğu bir hedefin zaten önemli olmadığını söyleyebilir veya duygusal nedenlerle aldığı bir kararı yalnız mantıksal gerekçelerle açıklayabilir. Burada açıklama tamamen yanlış olmak zorunda değildir ancak asıl motivasyonun yalnız bir bölümünü yansıtabilir."),
+      section("Yalan Söylemekle Aynı Şey midir?", "Hayır. Savunma mekanizmaları çoğu zaman bilinçli planlanmaz. Rasyonalizasyonda kişi sunduğu açıklamaya kendisi de inanabilir; bu nedenle bilinçli olarak başkasını yanıltmaya yönelik davranıştan farklıdır."),
+      section("Her Rasyonalizasyon Zararlı mıdır?", "Hayır. Savunma mekanizmaları psikolojik dengeyi kısa süreli koruyabilir. Ancak kişinin davranışındaki tekrar eden sorunları fark etmesini engellediğinde veya sorumluluk almaktan sürekli kaçınmasına hizmet ettiğinde işlev bozucu hale gelebilir."),
+      section("Klinik Görüşmede Neden Önemlidir?", "Kişinin kendi davranışlarını nasıl anlamlandırdığı, duygularıyla düşünceleri arasındaki ilişkiyi değerlendirmeye yardımcı olabilir. Amaç kişiyi suçlamak değil, davranışın farklı olası nedenlerini daha esnek biçimde görebilmesini sağlamaktır.")
+    ],
+    relatedTerms: [
+      { term: "Savunma mekanizması", slug: "savunma-mekanizmasi" },
+      { term: "İçgörü", slug: "icgoru" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Rasyonalizasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Rasyonalizasyonu davranışlara sonradan kabul edilebilir açıklamalar getiren savunma mekanizması olarak açıklar.",
+      ogTitle: "Rasyonalizasyon Nedir?",
+      ogDescription: "Rasyonalizasyon savunma mekanizmasını günlük örüntüleriyle açıklar."
+    },
+    schema: {
+      definedTermDescription: "Davranış veya duygulara gerçek nedenleri yerine daha kabul edilebilir açıklamalar getiren savunma mekanizması."
+    }
+  }),
+
+  defineTerm({
+    term: "Referans fikirleri",
+    slug: "referans-fikirleri",
+    shortDefinition: "Referans fikirleri, çevredeki nötr olayların, konuşmaların veya davranışların kişinin kendisiyle özel biçimde ilişkili olduğuna yönelik düşüncelerdir.",
+    intro: "Birinin kendisine baktığını veya bir konuşmanın kendisiyle ilgili olabileceğini zaman zaman düşünmek tek başına psikiyatrik belirti değildir. Referans fikirlerinde bu yorumlama örüntüsü daha belirgin hale gelebilir ve klinik bağlama göre farklı anlamlar taşıyabilir. Değerlendirmede kişinin bu düşünceyi ne kadar kesin kabul ettiği ve alternatif açıklamalara ne ölçüde açık olduğu önemlidir.",
+    sections: [
+      section("Referans Fikirlerine Örnek Ne Olabilir?", "Kişi televizyondaki bir sözün özellikle kendisine gönderilmiş olduğunu, çevredeki insanların gülmesinin kendisiyle ilgili bulunduğunu veya rastlantısal olayların kişisel mesaj taşıdığını düşünebilir. Düşüncenin kesinliği ve esnekliği değerlendirmede önemlidir."),
+      section("Referans Fikri ile Sanrı Aynı Şey midir?", "Her zaman değil. Referans fikrinde kişi düşüncesinden bir ölçüde kuşku duyabilir veya alternatif açıklamaları değerlendirebilir. İnanç kesin, değiştirilemez ve gerçeklikle belirgin biçimde uyumsuz hale geldiğinde sanrısal düzey ayrıca değerlendirilir."),
+      section("Hangi Durumlarda Görülebilir?", "Yoğun kaygı, sosyal değerlendirilme korkusu, bazı kişilik örüntüleri, psikoz ve başka klinik durumlarda referans benzeri yorumlamalar görülebilir. Bu nedenle tek bir belirti doğrudan belirli bir tanıya bağlanmaz."),
+      section("Değerlendirmede Neler Önemlidir?", "Düşüncenin ne kadar sık olduğu, kişinin buna ne ölçüde inandığı, davranışlarını nasıl etkilediği ve başka belirtilerin eşlik edip etmediği incelenir. Kültürel ve gerçek yaşam bağlamı da mutlaka dikkate alınmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Psikoz", slug: "psikoz" },
+      { term: "Paranoid kişilik örüntüsü", slug: "paranoid-kisilik-oruntusu" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Referans Fikirleri Nedir? | Psikiyatri Sözlüğü",
+      description: "Referans fikirlerini nötr olayları kendisiyle ilişkili yorumlama eğilimi olarak açıklar ve sanrıdan farkını ele alır.",
+      ogTitle: "Referans Fikirleri Nedir?",
+      ogDescription: "Referans fikirlerinin klinik anlamını ve sanrıdan farkını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Nötr olayların kişinin kendisiyle özel olarak ilişkili olduğu yönündeki düşünceler."
+    }
+  }),
+
+  defineTerm({
+    term: "Regresyon",
+    slug: "regresyon",
+    shortDefinition: "Regresyon, yoğun stres veya çatışma karşısında kişinin daha önceki gelişim dönemlerine özgü daha ilkel davranış veya baş etme biçimlerine geçici olarak dönmesini anlatan psikodinamik kavramdır.",
+    intro: "Regresyon çoğu zaman bilinçli olarak seçilen bir davranış değildir. Psikolojik zorlanma arttığında kişinin daha önce kullandığı ve kendisini daha güvende hissettiren baş etme biçimlerine yönelmesini açıklamak için kullanılan kavramsal bir çerçevedir. Bu kavram davranışı küçümsemek için değil, stres karşısındaki psikolojik uyum biçimini anlamak amacıyla kullanılır.",
+    sections: [
+      section("Regresyon Nasıl Görülebilir?", "Yoğun stres yaşayan bir kişinin normalde bağımsız yapabildiği işlerde aşırı destek istemesi, daha çocuksu tepkiler göstermesi veya duygularını daha ilkel biçimde ifade etmesi regresyon kavramıyla açıklanabilir."),
+      section("Regresyon Çocukça Davranmakla Aynı mıdır?", "Kavram kişinin küçümsenmesi için kullanılmamalıdır. Psikodinamik açıdan önemli olan davranışın stres veya içsel çatışma sırasında daha erken baş etme örüntülerine benzemesidir. Her çocuksu görünen davranış regresyon olarak değerlendirilmez."),
+      section("Her Zaman Patolojik midir?", "Hayır. Geçici stres dönemlerinde kısa süreli regresif tepkiler görülebilir. Klinik önem davranışın yoğunluğu, süresi, bağlama uygunluğu ve kişinin günlük yaşamını ne ölçüde etkilediğine göre değerlendirilir."),
+      section("Savunma Mekanizmalarıyla İlişkisi Nedir?", "Regresyon klasik psikodinamik kuramlarda savunma mekanizmalarından biri olarak ele alınabilir. Güncel klinik değerlendirmede ise davranışın anlamı kişinin gelişimsel öyküsü ve mevcut stres kaynaklarıyla birlikte değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Savunma mekanizması", slug: "savunma-mekanizmasi" },
+      { term: "Rasyonalizasyon", slug: "rasyonalizasyon" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Regresyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Regresyonu stres altında daha erken gelişim dönemlerine özgü baş etme biçimlerine dönme kavramı olarak açıklar.",
+      ogTitle: "Regresyon Nedir?",
+      ogDescription: "Regresyon kavramını psikodinamik bağlamıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Stres altında daha erken gelişim dönemlerine ait davranış ve baş etme biçimlerine dönmeyi anlatan kavram."
+    }
+  }),
+
+  defineTerm({
+    term: "Relaps",
+    slug: "relaps",
+    shortDefinition: "Relaps, tedaviyle azalmış veya yatışmış hastalık belirtilerinin yeniden belirginleşmesi ya da önceki klinik döneme benzer bir alevlenmenin ortaya çıkmasıdır.",
+    intro: "Relaps ruhsal bozuklukların bazılarında hastalığın doğal seyri içinde görülebilir. Yeni belirtilerin ortaya çıkması tedavinin bütünüyle başarısız olduğu anlamına gelmez; önemli olan değişikliği erken fark ederek yeniden değerlendirmektir. Önceki dönemlerin başlangıç biçimini bilmek, kişinin kendisine özgü erken değişiklikleri daha kolay tanımasına yardımcı olabilir.",
+    sections: [
+      section("Relaps Nasıl Fark Edilebilir?", "Kişinin önceki hastalık dönemlerinde görülen uyku değişikliği, sosyal geri çekilme, düşünce veya davranış değişiklikleri yeniden ortaya çıkabilir. Erken işaretler kişiden kişiye farklılık gösterdiğinden bireysel örüntünün bilinmesi önemlidir."),
+      section("Relaps ile Nüks Aynı mıdır?", "Terimler günlük klinik kullanımda zaman zaman birbirinin yerine geçebilir. Bazı tanımlarda relaps tam iyileşme gerçekleşmeden aynı dönemin yeniden alevlenmesini, nüks ise daha uzun iyilik döneminden sonra yeni bir dönem gelişmesini anlatmak için ayrıştırılır."),
+      section("Relaps Riskini Neler Etkileyebilir?", "Hastalığın doğal seyri, tedavinin sürekliliği, uyku düzeni, madde kullanımı, yoğun stres ve sosyal destek gibi birçok etken rol oynayabilir. Tek bir neden üzerinden açıklama yapmak çoğu zaman mümkün değildir."),
+      section("Relaps Önleme Neden Önemlidir?", "Kişiye özgü erken belirtilerin tanınması, düzenli izlem ve önceden hazırlanmış baş etme planları klinik değişikliklerin daha erken değerlendirilmesini sağlayabilir. Bu yaklaşım hastalığın yönetiminde sürekliliği destekler.")
+    ],
+    relatedTerms: [
+      { term: "Nüks önleme", slug: "nuks-onleme" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Prodrom", slug: "prodrom" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Relaps Nedir? | Psikiyatri Sözlüğü",
+      description: "Relapsı yatışmış belirtilerin yeniden alevlenmesi olarak açıklar; erken uyarı işaretleri ve nüks önlemeyle ilişkisini ele alır.",
+      ogTitle: "Relaps Nedir?",
+      ogDescription: "Ruhsal belirtilerin yeniden alevlenmesi kavramını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Tedaviyle yatışmış hastalık belirtilerinin yeniden belirginleşmesi veya alevlenmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "REM uykusu",
+    slug: "rem-uykusu",
+    shortDefinition: "REM uykusu, hızlı göz hareketlerinin görüldüğü, beyin etkinliğinin arttığı, kas tonusunun belirgin azaldığı ve canlı rüyaların sık yaşandığı temel uyku dönemidir.",
+    intro: "Normal gece uykusunda REM ve Non-REM dönemleri döngüler halinde birbirini izler. REM süresinin oranı gece boyunca değişir ve sabaha yaklaştıkça REM dönemleri genellikle daha uzun hale gelir.",
+    sections: [
+      section("REM Uykusunda Beyinde Ne Olur?", "Beynin bazı bölgelerinde etkinlik uyanıklığa benzer düzeylere yaklaşırken iskelet kaslarının tonusu büyük ölçüde azalır. Gözlerde hızlı hareketler görülür ve canlı, anlatısal rüyalar bu dönemde daha sık bildirilir."),
+      section("REM Uykusu Bellekle İlişkili midir?", "REM uykusunun bazı bellek türleri, duygusal öğrenme ve yeni bilgilerin işlenmesiyle ilişkisi araştırılmıştır. Bununla birlikte bellek yalnız REM uykusuna bağlı değildir; Non-REM dönemleri de öğrenme ve bellek süreçlerine katkıda bulunur."),
+      section("REM ve Non-REM Arasındaki Temel Fark Nedir?", "Non-REM uykusu hafif ve derin uyku evrelerini içerirken REM döneminde hızlı göz hareketleri ve farklı beyin aktivitesi örüntüsü görülür. Sağlıklı uyku her iki dönemin düzenli biçimde birbirini izlemesini gerektirir."),
+      section("Uyku Evreleri Evde Kesin Ölçülebilir mi?", "Tüketici saatleri ve benzeri cihazlar uyku evrelerini hareket ve kalp hızı gibi dolaylı sinyallerden tahmin eder. Klinik uyku evrelemesinde ise beyin dalgaları, göz hareketleri ve kas aktivitesini kaydeden polisomnografi kullanılır.")
+    ],
+    relatedTerms: [
+      { term: "Non-REM uykusu", slug: "non-rem-uykusu" },
+      { term: "Bilinç", slug: "bilinc" },
+      { term: "Hipnotik", slug: "hipnotik" }
+    ],
+    seo: {
+      title: "REM Uykusu Nedir? | Psikiyatri Sözlüğü",
+      description: "REM uykusunun hızlı göz hareketleri, rüyalar, kas tonusu ve bellek süreçleriyle ilişkisini Non-REM uykusuyla karşılaştırarak açıklar.",
+      ogTitle: "REM Uykusu Nedir?",
+      ogDescription: "REM uykusunun temel özelliklerini ve uyku döngüsündeki yerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Hızlı göz hareketleri, düşük kas tonusu ve canlı rüyalarla karakterize temel uyku dönemi."
+    }
+  }),
+
+  defineTerm({
+    term: "Savunma mekanizması",
+    slug: "savunma-mekanizmasi",
+    shortDefinition: "Savunma mekanizması, kişinin kaygı, çatışma veya zorlayıcı duygularla baş ederken çoğu zaman bilinçdışı biçimde kullandığı psikolojik düzenleme yollarının genel adıdır.",
+    intro: "Savunma mekanizmaları yalnız psikiyatrik hastalığı olan kişilerde görülmez. Günlük yaşamda herkes zorlayıcı duygular karşısında çeşitli savunma biçimleri kullanabilir; klinik önem bunların ne kadar katı ve işlev bozucu hale geldiğine bağlıdır. Aynı kişi farklı yaşam koşullarında farklı savunmaları kullanabilir ve bu örüntüler zaman içinde değişebilir.",
+    sections: [
+      section("Savunma Mekanizmaları Ne İşe Yarar?", "Kaygıyı azaltmak, kişinin kendisi hakkındaki tutarlı algısını korumak veya yoğun duyguların kısa sürede yönetilmesini kolaylaştırmak gibi işlevler görebilir. Bazı savunmalar kısa vadede yararlı olsa da uzun vadede sorunları görmeyi engelleyebilir."),
+      section("Savunma Mekanizmaları Bilinçli midir?", "Çoğu klasik tanımda savunma mekanizmalarının büyük ölçüde otomatik ve bilinçdışı işlediği kabul edilir. Bu nedenle kişinin savunma kullandığını söylemek bilinçli biçimde gerçekleri çarpıttığı anlamına gelmez."),
+      section("Olgun ve Olgun Olmayan Savunma Ne Demektir?", "Psikodinamik kuramlar bazı savunmaları gerçekliği daha az bozan ve uyumu daha çok destekleyen, bazılarını ise daha katı veya işlev bozucu biçimler olarak sınıflandırır. Bu ayrım tek başına tanısal bir ölçüt değildir."),
+      section("Savunmalar Değişebilir mi?", "Kişinin duygularını tanıması, davranışlarının sonuçlarını fark etmesi ve farklı baş etme yöntemleri geliştirmesiyle savunma örüntülerinin kullanım biçimi değişebilir. Psikoterapi bu farkındalığın gelişebileceği alanlardan biridir.")
+    ],
+    relatedTerms: [
+      { term: "Rasyonalizasyon", slug: "rasyonalizasyon" },
+      { term: "Regresyon", slug: "regresyon" },
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "İçgörü", slug: "icgoru" }
+    ],
+    seo: {
+      title: "Savunma Mekanizması Nedir? | Psikiyatri Sözlüğü",
+      description: "Savunma mekanizmalarını kaygı ve içsel çatışmalarla baş etmeye yardımcı olan çoğunlukla otomatik psikolojik süreçler olarak açıklar.",
+      ogTitle: "Savunma Mekanizması Nedir?",
+      ogDescription: "Savunma mekanizmalarının işlevini ve klinik anlamını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kaygı ve psikolojik çatışmayla baş etmede kullanılan çoğu zaman bilinçdışı psikolojik süreç."
+    }
+  }),
+
+  defineTerm({
+    term: "Selektif mutizm",
+    slug: "selektif-mutizm",
+    shortDefinition: "Selektif mutizm, çocuğun konuşabildiği halde konuşmasının beklendiği belirli sosyal ortamlarda sürekli konuşamaması ve başka ortamlarda konuşabilmesiyle karakterize klinik durumdur.",
+    intro: "Selektif mutizm çocuğun bilinçli biçimde konuşmayı reddetmesi veya inat etmesi olarak değerlendirilmemelidir. Konuşma güçlüğü çoğunlukla belirli sosyal durumlarla ilişkilidir ve kaygı önemli bir rol oynayabilir. Çocuğun konuşabildiği ortamlardaki becerilerinin görülmesi, sorunun bir dil yetersizliğinden çok bağlama bağlı niteliğini anlamaya yardımcı olur. Bu ayrım değerlendirme açısından özellikle önemlidir.",
+    sections: [
+      section("Selektif Mutizm Nasıl Görülür?", "Çocuk evde yakınlarıyla rahat konuşurken okulda öğretmen veya arkadaşlarının yanında konuşamayabilir. Bazı çocuklar jest, mimik veya yazıyla iletişim kurabilir. Konuşma düzeyi ortamın güven vericiliğine göre belirgin biçimde değişebilir."),
+      section("Çocuk Konuşmak İstemediği İçin mi Susar?", "Genellikle hayır. Konuşması için baskı yapmak, cezalandırmak veya herkesin önünde zorlamak kaygıyı artırabilir. Çocuğun konuşamadığı durumlarda davranışı isteksizlik veya karşı gelme olarak yorumlamamak önemlidir."),
+      section("Değerlendirmede Neler Dikkate Alınır?", "Konuşmanın hangi ortamlarda mümkün olduğu, sorunun süresi, dil gelişimi, işitme, gelişimsel özellikler ve eşlik eden kaygı belirtileri değerlendirilir. Çocuğun bulunduğu dil ve kültür ortamı da göz önünde bulundurulmalıdır."),
+      section("Destek Nasıl Planlanır?", "Yaklaşım çocuğun kaygısını azaltan, güvenli ve aşamalı iletişim fırsatları oluşturan bir plan içerebilir. Aile, okul ve ilgili profesyonellerin aynı baskısız yaklaşımı sürdürmesi çocuğun iletişim becerilerini destekleyebilir.")
+    ],
+    relatedTerms: [
+      { term: "Anksiyete", slug: "anksiyete" },
+      { term: "Gelişimsel değerlendirme", slug: "gelisimsel-degerlendirme" },
+      { term: "Sosyal iletişim", slug: "sosyal-iletisim" }
+    ],
+    seo: {
+      title: "Selektif Mutizm Nedir? | Psikiyatri Sözlüğü",
+      description: "Selektif mutizmi çocuğun bazı sosyal ortamlarda konuşamaması olarak açıklar ve bunun bilinçli inat olmadığını vurgular.",
+      ogTitle: "Selektif Mutizm Nedir?",
+      ogDescription: "Selektif mutizmin belirtilerini ve değerlendirme yaklaşımını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Çocuğun konuşabildiği halde belirli sosyal ortamlarda sürekli konuşamamasıyla karakterize durum."
+    }
+  }),
+
+  defineTerm({
+    term: "SNRI",
+    slug: "snri",
+    shortDefinition: "SNRI, serotonin ve noradrenalin geri alımını etkileyen ve depresyon ile bazı anksiyete bozukluklarında kullanılabilen reçeteli antidepresan ilaç grubudur.",
+    intro: "Serotonin-noradrenalin geri alım inhibitörleri aynı ilaç grubunda yer alsa da birbirinin tamamen aynısı değildir. Hangi ilacın uygun olduğu klinik tablo, eşlik eden hastalıklar, olası yan etkiler ve daha önceki tedavi deneyimleriyle birlikte değerlendirilir. Tedavi sırasında yarar ve istenmeyen etkiler birlikte izlenerek klinik plan gerektiğinde yeniden değerlendirilir.",
+    sections: [
+      section("SNRI İlaçlar Nasıl Etki Gösterir?", "Serotonin ve noradrenalinin sinir hücreleri arasındaki geri alım süreçlerini etkileyerek bu sistemlerdeki sinyallemeyi değiştirirler. Klinik etkinin ortaya çıkması yalnız nörotransmitter miktarındaki anlık değişiklikle açıklanmaz ve zaman içinde gelişen uyarlanmalar da rol oynar."),
+      section("Hangi Durumlarda Kullanılabilir?", "Depresif bozukluklar ve bazı anksiyete bozukluklarında değerlendirilebilir; bazı ajanların başka tıbbi kullanım alanları da bulunabilir. İlacın seçimi yalnız tanı adına bakılarak yapılmaz ve kişisel tıbbi özellikler dikkate alınır."),
+      section("Yan Etkiler Herkeste Aynı mıdır?", "Hayır. Bulantı, uyku değişiklikleri, terleme veya başka etkiler görülebilir ancak her kişide aynı yan etkiler oluşmaz. Bazı SNRI ilaçlarında kan basıncı gibi klinik parametrelerin izlenmesi kişinin özelliklerine göre önem taşıyabilir."),
+      section("SNRI Kendi Kendine Kesilebilir mi?", "Reçeteli antidepresanların dozunun değiştirilmesi veya aniden bırakılması kişisel kararla yapılmamalıdır. Bazı kişilerde hızlı doz değişiklikleri kesilme belirtilerine yol açabileceğinden tedavi değişiklikleri reçeteleyen hekimle planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Noradrenalin", slug: "noradrenalin" },
+      { term: "Kesilme belirtileri", slug: "kesilme-belirtileri" },
+      { term: "SSRI", slug: "ssri" }
+    ],
+    seo: {
+      title: "SNRI Nedir? | Psikiyatri Sözlüğü",
+      description: "SNRI antidepresanların serotonin ve noradrenalin üzerindeki etkisini, kullanım alanlarını ve güvenli ilaç değişikliği ilkelerini açıklar.",
+      ogTitle: "SNRI Nedir?",
+      ogDescription: "SNRI antidepresan grubunu güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Serotonin ve noradrenalin geri alımını etkileyen reçeteli antidepresan ilaç grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Sosyal iletişim",
+    slug: "sosyal-iletisim",
+    shortDefinition: "Sosyal iletişim, kişinin sözel dil, jest, mimik, göz teması, ses tonu ve bağlama uygun karşılıklı etkileşim yollarıyla başkalarıyla anlam paylaşma becerilerinin bütünüdür.",
+    intro: "Sosyal iletişim yalnız konuşabilmekten ibaret değildir. Bir konuşmayı başlatma ve sürdürme, karşıdakinin verdiği ipuçlarını yorumlama ve iletişim biçimini sosyal bağlama göre değiştirme gibi birçok beceri birlikte çalışır. Bu becerilerin gelişimi yaş, dil deneyimi, sosyal çevre ve bireysel gelişim özelliklerinden etkilenebilir.",
+    sections: [
+      section("Sosyal İletişimin Hangi Bileşenleri Vardır?", "Sözel anlatımın yanı sıra jestler, yüz ifadesi, ses tonu, sıra alma, konu değiştirme ve karşıdakinin ilgisini takip etme gibi beceriler sosyal iletişime katkıda bulunur. Kültürel normlar bu davranışların biçimini etkileyebilir."),
+      section("Sosyal İletişim Güçlüğü Nasıl Fark Edilebilir?", "Kişi karşılıklı sohbeti sürdürmekte, mecaz veya dolaylı ifadeleri anlamakta, sosyal ipuçlarını yorumlamakta veya iletişim biçimini ortama göre değiştirmekte zorlanabilir. Tek bir davranış üzerinden gelişimsel bir tanı konulmaz."),
+      section("Utangaçlık ile Aynı Şey midir?", "Hayır. Utangaç kişi sosyal kuralları anlayabildiği halde kaygı veya çekingenlik nedeniyle iletişime girmekte zorlanabilir. Sosyal iletişim becerisindeki güçlük ise iletişimin yapısını anlama veya kullanma alanında farklı özellikler gösterebilir."),
+      section("Değerlendirmede Neler Önemlidir?", "Yaş, dil gelişimi, bilişsel özellikler, işitme, kültürel ortam ve sosyal deneyimler birlikte ele alınır. Çocuklarda aile ve okul gibi farklı ortamlardaki gözlemler gelişimsel değerlendirmeyi daha kapsamlı hale getirebilir.")
+    ],
+    relatedTerms: [
+      { term: "Gelişimsel değerlendirme", slug: "gelisimsel-degerlendirme" },
+      { term: "Selektif mutizm", slug: "selektif-mutizm" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Sosyal İletişim Nedir? | Psikiyatri Sözlüğü",
+      description: "Sosyal iletişimi sözel ve sözel olmayan karşılıklı iletişim becerileri olarak açıklar ve utangaçlıktan farkını ele alır.",
+      ogTitle: "Sosyal İletişim Nedir?",
+      ogDescription: "Sosyal iletişimin temel bileşenlerini ve değerlendirilmesini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Sözel ve sözel olmayan yollarla karşılıklı ilişki kurma ve anlam paylaşma becerilerinin bütünü."
+    }
+  }),
+
+  defineTerm({
+    term: "SSRI",
+    slug: "ssri",
+    shortDefinition: "SSRI, serotonin geri alımını seçici biçimde etkileyen ve depresyon ile birçok anksiyete bozukluğunda yaygın olarak kullanılan reçeteli antidepresan ilaç grubudur.",
+    intro: "Seçici serotonin geri alım inhibitörleri psikiyatride sık kullanılan ilaçlardır ancak aynı gruptaki ilaçların özellikleri tamamen aynı değildir. Tedavi seçimi belirtiler, eşlik eden hastalıklar, diğer ilaçlar ve daha önceki tedavi deneyimleriyle birlikte yapılır. Tedavi yanıtı yalnız belirtilerdeki değişimle değil günlük yaşam ve işlevsellik üzerindeki etkilerle birlikte değerlendirilir.",
+    sections: [
+      section("SSRI İlaçlar Nasıl Etki Gösterir?", "Serotoninin sinir hücreleri arasındaki geri alımını etkileyerek serotonerjik sinyallemeyi değiştirirler. Bununla birlikte antidepresan etkinin yalnız basit bir serotonin artışıyla açıklanması güncel nörobiyolojik bilgiyi aşırı basitleştirir."),
+      section("Hangi Durumlarda Kullanılabilir?", "Depresif bozukluklar, obsesif kompulsif bozukluk ve bazı anksiyete bozuklukları gibi çeşitli klinik durumlarda değerlendirilebilir. Hangi ilacın kullanılacağı ve tedavi süresi kişisel klinik değerlendirmeye göre belirlenir."),
+      section("Etkileri Hemen Başlar mı?", "Bazı yan etkiler veya bedensel değişiklikler erken dönemde hissedilebilirken hedeflenen klinik etkinin değerlendirilmesi daha uzun süre gerektirebilir. Tedavi yanıtı belirtiler ve günlük işlevsellik üzerinden zaman içinde izlenir."),
+      section("SSRI Aniden Bırakılabilir mi?", "Kendi kendine doz azaltmak veya tedaviyi aniden bırakmak uygun değildir. Bazı kişilerde hızlı doz değişikliği kesilme belirtilerine yol açabilir ve kullanılan ilaca göre plan farklılaşabileceğinden değişiklikler reçeteleyen hekimle değerlendirilmelidir.")
+    ],
+    relatedTerms: [
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "Kesilme belirtileri", slug: "kesilme-belirtileri" },
+      { term: "SNRI", slug: "snri" },
+      { term: "Farmakodinamik", slug: "farmakodinamik" }
+    ],
+    seo: {
+      title: "SSRI Nedir? | Psikiyatri Sözlüğü",
+      description: "SSRI antidepresanların genel etki mekanizmasını, kullanım alanlarını ve tedavi değişikliklerinin neden klinik olarak planlanması gerektiğini açıklar.",
+      ogTitle: "SSRI Nedir?",
+      ogDescription: "SSRI antidepresan grubunu güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Serotonin geri alımını seçici biçimde etkileyen yaygın reçeteli antidepresan ilaç grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Stigma",
+    slug: "stigma",
+    shortDefinition: "Stigma, bir kişinin ruhsal hastalık veya başka bir özelliği nedeniyle olumsuz kalıp yargılarla etiketlenmesi, değersizleştirilmesi veya sosyal olarak dışlanması sürecidir.",
+    intro: "Ruh sağlığı alanındaki stigma yalnız incitici sözlerden ibaret değildir. Eğitim, iş, ilişkiler ve sağlık hizmetlerine erişimde ayrımcılığa yol açabilir; ayrıca kişinin toplumdaki önyargıları kendi benlik algısına dahil etmesini de etkileyebilir.",
+    sections: [
+      section("Stigma Nasıl Ortaya Çıkar?", "Ruhsal hastalıkların zayıflık, tehlikelilik veya kişisel başarısızlıkla eş tutulduğu yanlış inanışlar stigmayı besleyebilir. Medya dili, sosyal çevre ve kurumsal uygulamalar bu kalıp yargıları azaltabilir veya güçlendirebilir."),
+      section("Stigma Yardım Aramayı Etkiler mi?", "Evet. Etiketlenme, işini kaybetme veya çevresinden dışlanma korkusu kişinin belirtilerini saklamasına ve profesyonel destek aramayı geciktirmesine yol açabilir. Bu nedenle stigma aynı zamanda önemli bir halk sağlığı sorunudur."),
+      section("Stigma ile İçselleştirilmiş Stigma Aynı mıdır?", "Hayır. Stigma toplumdan veya çevreden yönelen önyargı ve ayrımcılığı kapsayan daha geniş kavramdır. İçselleştirilmiş stigma ise kişinin bu olumsuz inanışları kendi kimliği ve değeri hakkında doğru kabul etmeye başlamasını ifade eder."),
+      section("Stigma Nasıl Azaltılabilir?", "Doğru bilgi, ayrımcı olmayan dil, ruhsal hastalık deneyimi yaşayan kişilerin insan olarak çok boyutlu biçimde temsil edilmesi ve eşit hakların korunması stigmanın azalmasına katkıda bulunabilir. Sorumluluk yalnız bireye yüklenmemelidir.")
+    ],
+    relatedTerms: [
+      { term: "İçselleştirilmiş stigma", slug: "icsellestirilmis-stigma" },
+      { term: "Hasta hakları", slug: "hasta-haklari" },
+      { term: "Koruyucu ruh sağlığı", slug: "koruyucu-ruh-sagligi" },
+      { term: "Psikoeğitim", slug: "psikoegitim" }
+    ],
+    seo: {
+      title: "Stigma Nedir? | Psikiyatri Sözlüğü",
+      description: "Ruh sağlığında stigma kavramını toplumsal önyargı, etiketleme, ayrımcılık ve içselleştirilmiş stigma ile ilişkisi üzerinden açıklar.",
+      ogTitle: "Stigma Nedir?",
+      ogDescription: "Ruh sağlığında damgalanma ve ayrımcılık süreçlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir kişinin ruhsal hastalık veya başka bir özelliği nedeniyle olumsuz biçimde etiketlenmesi ve dışlanması süreci."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...fourteenthBatchNewTerms,
   ...thirteenthBatchNewTerms,
   ...twelfthBatchNewTerms,
   ...eleventhBatchNewTerms,
