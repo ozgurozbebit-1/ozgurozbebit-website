@@ -6000,7 +6000,570 @@ const fourteenthBatchNewTerms = [
   })
 ];
 
+const fifteenthBatchNewTerms = [
+  defineTerm({
+    term: "Çift terapisi",
+    slug: "cift-terapisi",
+    shortDefinition: "Çift terapisi, partnerlerin ilişki içindeki iletişim, çatışma, yakınlık ve tekrar eden etkileşim örüntülerini birlikte ele alan yapılandırılmış bir psikoterapi yaklaşımıdır.",
+    intro: "Çift terapisi yalnız ilişkisi sona ermek üzere olan çiftlere yönelik değildir. İletişim güçlükleri, güven sorunları, yaşam geçişleri, ebeveynlik rolleri veya yakınlıkla ilgili zorlanmalar da çalışma konusu olabilir. Amaç hangi partnerin haklı olduğunu belirlemekten çok ilişkinin nasıl işlediğini anlamak ve daha işlevsel etkileşim yolları geliştirmektir.",
+    sections: [
+      section("Çift Terapisinde Neler Ele Alınır?", "Görüşmelerde çatışmaların nasıl başladığı, tarafların birbirinin davranışlarını nasıl yorumladığı, ihtiyaçların nasıl ifade edildiği ve gerilim sonrasında ilişkinin nasıl onarıldığı incelenebilir. İletişim biçimleri, duygusal yakınlık, sınırlar, güven ve ortak karar verme gibi alanlar çiftin gereksinimine göre ele alınır. Her çift için aynı yöntem veya hedef kullanılmaz."),
+      section("Amaç Kimin Haklı Olduğunu Bulmak mıdır?", "Hayır. Terapötik çalışmada taraflardan birini suçlu veya haklı ilan etmek temel amaç değildir. Tekrarlayan ilişki döngüsünün iki kişiyi nasıl etkilediğini anlamak daha önemlidir. Örneğin bir partner geri çekildikçe diğerinin daha yoğun biçimde yakınlık araması ve bunun geri çekilmeyi artırması karşılıklı sürdürülen bir örüntü oluşturabilir."),
+      section("Bireysel Psikoterapiden Farkı Nedir?", "Bireysel psikoterapide kişinin düşünceleri, duyguları ve yaşam öyküsü temel çalışma alanı olabilir. Çift terapisinde ise bunlara ek olarak partnerler arasındaki karşılıklı etkileşim doğrudan değerlendirilir. Gerektiğinde bireysel ruhsal sorunların ilişkiye etkisi de ele alınabilir ancak çift görüşmesi bireysel değerlendirmenin otomatik yerine geçmez."),
+      section("Her İlişki Sorununda Uygun mudur?", "Çift terapisi birçok ilişki güçlüğünde yararlı bir çalışma alanı sağlayabilir ancak güvenlik önceliklidir. Şiddet, tehdit, ağır kontrol davranışları veya kişinin görüşmeye özgürce katılımını engelleyen koşullar varsa standart çift görüşmesi her zaman uygun olmayabilir. Böyle durumlarda güvenlik, bireysel değerlendirme ve gerekli destek seçenekleri öncelikle ele alınır.")
+    ],
+    relatedTerms: [
+      { term: "Aile terapisi", slug: "aile-terapisi" },
+      { term: "Terapötik ittifak", slug: "terapotik-ittifak" },
+      { term: "Bağlanma", slug: "baglanma" },
+      { term: "Sosyal iletişim", slug: "sosyal-iletisim" }
+    ],
+    seo: {
+      title: "Çift Terapisi Nedir? | Psikiyatri Sözlüğü",
+      description: "Çift terapisinin ilişki örüntülerini, iletişimi ve çatışmaları nasıl ele aldığını ve bireysel psikoterapiden farkını açıklar.",
+      ogTitle: "Çift Terapisi Nedir?",
+      ogDescription: "Çift terapisinin amaçlarını, kapsamını ve güvenlik sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Partnerlerin ilişki içindeki iletişim ve etkileşim örüntülerini birlikte ele alan psikoterapi yaklaşımı."
+    }
+  }),
+
+  defineTerm({
+    term: "Terapötik ittifak",
+    slug: "terapotik-ittifak",
+    shortDefinition: "Terapötik ittifak, danışan ile ruh sağlığı uzmanı arasında hedefler, çalışma yöntemi ve güvene dayalı iş birliği konusunda oluşan profesyonel çalışma ilişkisidir.",
+    intro: "Psikoterapinin yalnız kullanılan tekniklerden oluşmadığını gösteren temel kavramlardan biridir. Kişinin kendisini anlaşılmış ve saygı görmüş hissetmesi, hedeflerin açık biçimde konuşulabilmesi ve terapötik sürece ilişkin görüş ayrılıklarının ele alınabilmesi ittifakın önemli parçalarıdır. Güçlü ittifak her konuda aynı düşünmek anlamına gelmez.",
+    sections: [
+      section("Terapötik İttifakın Temel Bileşenleri Nelerdir?", "Genellikle ortak hedefler, bu hedeflere ulaşmak için yapılacak çalışmalar konusunda anlaşma ve güvene dayalı profesyonel bağ üç temel unsur olarak ele alınır. Danışanın terapiye ilişkin beklentilerinin dinlenmesi ve kullanılan yöntemin anlaşılır biçimde açıklanması iş birliğini güçlendirebilir. İttifak tek taraflı değil karşılıklı gelişen dinamik bir süreçtir."),
+      section("İyi İlişki ile Aynı Şey midir?", "Hayır. Terapistin sıcak, anlayışlı veya destekleyici olması değerli olsa da terapötik ittifak yalnız iyi geçinmekten ibaret değildir. Zor konuların konuşulabilmesi, gerektiğinde farklı bakış açılarının ele alınması ve terapinin amaçları konusunda ortak bir çalışma zemininin kurulması gerekir. Profesyonel sınırlar da bu ilişkinin temel parçalarındandır."),
+      section("İttifakta Bozulma Olabilir mi?", "Evet. Danışanın anlaşılmadığını hissetmesi, hedeflerin uyuşmaması, bir yorumun incitici algılanması veya görüşme biçimiyle ilgili rahatsızlıklar geçici kopmalara yol açabilir. Bu tür durumların açıkça konuşulabilmesi terapötik sürecin önemli bir parçasıdır. Her uyuşmazlık terapinin başarısız olduğu anlamına gelmez."),
+      section("Tedavi Sonucuyla İlişkisi Nedir?", "Araştırmalar farklı psikoterapi yaklaşımlarında terapötik ittifak ile olumlu sonuçlar arasında ilişki bulunduğunu göstermektedir. Ancak bu ilişki tek başına neden-sonuç biçiminde yorumlanmamalıdır. Belirtilerin niteliği, kişinin yaşam koşulları, kullanılan yöntem, süreklilik ve başka birçok etken tedavi sonucunu birlikte etkiler.")
+    ],
+    relatedTerms: [
+      { term: "Psikoterapi", slug: "psikoterapi" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Formülasyon", slug: "formulasyon" },
+      { term: "Aktarım", slug: "aktarim" }
+    ],
+    seo: {
+      title: "Terapötik İttifak Nedir? | Psikiyatri Sözlüğü",
+      description: "Terapötik ittifakı psikoterapide ortak hedef, yöntem ve güvene dayalı çalışma ilişkisi üzerinden açıklar.",
+      ogTitle: "Terapötik İttifak Nedir?",
+      ogDescription: "Psikoterapide terapötik çalışma ilişkisinin temel bileşenlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Danışan ve ruh sağlığı uzmanı arasında hedef, yöntem ve güven temelinde kurulan profesyonel çalışma ilişkisi."
+    }
+  }),
+
+  defineTerm({
+    term: "Sublimasyon",
+    slug: "sublimasyon",
+    shortDefinition: "Sublimasyon, kabul edilmesi veya doğrudan ifade edilmesi güç dürtü ve duyguların daha yapıcı, üretken veya toplumsal olarak kabul gören etkinliklere yönlendirilmesini anlatan savunma mekanizmasıdır.",
+    intro: "Psikodinamik kuramda sublimasyon genellikle daha olgun savunma biçimlerinden biri olarak değerlendirilir. Temel düşünce, dürtünün bütünüyle yok edilmesi yerine enerjisinin farklı bir alanda ifade bulmasıdır. Kavram günlük yaşam davranışlarını tek bir psikolojik nedene indirgemek amacıyla kullanılmamalıdır.",
+    sections: [
+      section("Sublimasyon Nasıl Açıklanır?", "Kişinin yoğun rekabet, öfke, cinsellik veya başka güçlü dürtülerle ilişkili enerjisini sanat, spor, bilimsel üretim, çalışma veya toplumsal katkı gibi alanlara yönlendirmesi örnek olarak verilebilir. Ancak dışarıdan görülen bir etkinliğin gerçekten sublimasyon olup olmadığı yalnız davranışa bakılarak kesin biçimde belirlenemez."),
+      section("Bastırmadan Farkı Nedir?", "Bastırmada rahatsız edici düşünce, dürtü veya anının bilinç dışında tutulması vurgulanır. Sublimasyonda ise dürtünün enerjisinin başka ve daha kabul edilebilir bir hedefe yönelmesi söz konusudur. Psikodinamik kavramlar birbirinden teorik olarak ayrılabilse de gerçek yaşamda kişinin ruhsal süreçleri daha karmaşık olabilir."),
+      section("Her Üretken Davranış Sublimasyon mudur?", "Hayır. Bir kişinin spor yapması, sanatla ilgilenmesi veya çalışmaya yoğunlaşması tek başına sublimasyon kanıtı değildir. Davranışın anlamı kişinin yaşam öyküsü, duyguları, çatışmaları ve içinde bulunduğu bağlamla birlikte değerlendirilir. Savunma mekanizmaları gözlenebilir davranışlardan otomatik biçimde teşhis edilecek kategoriler değildir."),
+      section("Savunma Mekanizmaları Neden Kullanılır?", "Savunmalar kişinin kaygı, çatışma ve zorlayıcı duygularla baş etmesine katkıda bulunan çoğu zaman otomatik ruhsal süreçlerdir. Her savunma mutlaka hastalık belirtisi değildir. Esneklik önemlidir; aynı kişi farklı dönemlerde farklı savunmaları kullanabilir. Klinik değerlendirmede tek bir savunma üzerinden kişilik veya tanı sonucu çıkarılmaz.")
+    ],
+    relatedTerms: [
+      { term: "Savunma mekanizması", slug: "savunma-mekanizmasi" },
+      { term: "Bastırma", slug: "bastirma" },
+      { term: "Rasyonalizasyon", slug: "rasyonalizasyon" },
+      { term: "Entelektüalizasyon", slug: "entelektualizasyon" }
+    ],
+    seo: {
+      title: "Sublimasyon Nedir? | Psikiyatri Sözlüğü",
+      description: "Sublimasyonu dürtü ve duyguların üretken alanlara yönlendirilmesiyle ilişkili bir savunma mekanizması olarak açıklar.",
+      ogTitle: "Sublimasyon Nedir?",
+      ogDescription: "Sublimasyonun bastırmadan farkını ve psikodinamik anlamını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dürtü ve duygusal enerjinin yapıcı veya toplumsal olarak kabul edilen etkinliklere yönlendirilmesini anlatan savunma mekanizması."
+    }
+  }),
+
+  defineTerm({
+    term: "Öykü alma",
+    slug: "oyku-alma",
+    shortDefinition: "Öykü alma, kişinin güncel yakınmalarını, geçmiş sağlık bilgilerini, yaşam koşullarını ve belirtilerin zaman içindeki seyrini sistematik biçimde öğrenmeye yönelik klinik bilgi toplama sürecidir.",
+    intro: "Psikiyatrik değerlendirmede yalnız kişinin o anda nasıl göründüğü değil, belirtilerin ne zaman başladığı ve yaşam boyunca nasıl değiştiği de önem taşır. Öykü alma bu zaman çizgisini anlamaya yardımcı olur. Süreç bir sorgulama değil, klinik kararları destekleyen karşılıklı ve yapılandırılmış bir görüşmedir.",
+    sections: [
+      section("Psikiyatrik Öyküde Hangi Bilgiler Sorulur?", "Başvuru nedeni, belirtilerin başlangıcı ve seyri, önceki ruhsal ve bedensel hastalıklar, kullanılan ilaçlar, madde kullanımı, uyku, aile öyküsü, gelişimsel bilgiler, eğitim ve çalışma yaşamı gibi alanlar ele alınabilir. Her kişide aynı ayrıntı düzeyi gerekli değildir; sorular başvuru nedenine göre şekillenir."),
+      section("Öykü Alma ile Mental Durum Muayenesi Aynı mıdır?", "Hayır. Öykü alma kişinin geçmişi ve belirtilerin zaman içindeki gelişimi hakkında bilgi edinmeyi amaçlar. Mental durum muayenesi ise görüşme sırasında gözlenen görünüm, konuşma, duygu, düşünce, algı, dikkat ve içgörü gibi mevcut zihinsel işlevleri sistematik biçimde değerlendirir. İki bilgi kaynağı birlikte yorumlanır."),
+      section("Yakınlardan Bilgi Alınabilir mi?", "Bazı durumlarda kişinin onayıyla aile üyeleri veya yakınlarından ek bilgi alınması yararlı olabilir. Özellikle belirti farkındalığının azaldığı veya zaman çizgisinin netleştirilmesi gereken durumlarda bu bilgiler katkı sağlayabilir. Bununla birlikte mahremiyet, kişinin hakları ve bilginin hangi amaçla kullanılacağı gözetilmelidir."),
+      section("Tek Bir Görüşmede Tamamlanmak Zorunda mıdır?", "Hayır. Karmaşık klinik durumlarda öykü zaman içinde ayrıntılanabilir. İlk görüşmede güvenlik, acil gereksinimler ve temel klinik bilgiler öncelikli olabilir. Sonraki görüşmelerde gelişimsel öykü, önceki dönemler veya ilişki örüntüleri daha ayrıntılı ele alınabilir. Yeni bilgiler ortaya çıktıkça klinik formülasyon da güncellenebilir.")
+    ],
+    relatedTerms: [
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Mental durum muayenesi", slug: "mental-durum-muayenesi" },
+      { term: "Formülasyon", slug: "formulasyon" },
+      { term: "Mahremiyet", slug: "mahremiyet" }
+    ],
+    seo: {
+      title: "Öykü Alma Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatrik öykü almanın kapsamını, mental durum muayenesinden farkını ve klinik değerlendirmedeki yerini açıklar.",
+      ogTitle: "Öykü Alma Nedir?",
+      ogDescription: "Psikiyatrik değerlendirmede öykü alma sürecini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirtilerin başlangıcı, seyri ve kişinin sağlık ve yaşam öyküsü hakkında sistematik klinik bilgi toplama süreci."
+    }
+  }),
+
+  defineTerm({
+    term: "Tanı ölçütleri",
+    slug: "tani-olcutleri",
+    shortDefinition: "Tanı ölçütleri, belirli bir ruhsal bozukluğun değerlendirilmesinde hangi belirtilerin, sürelerin ve klinik özelliklerin dikkate alınacağını standartlaştırmaya yardımcı olan tanımlayıcı ölçütlerdir.",
+    intro: "DSM veya ICD gibi sınıflandırma sistemlerindeki ölçütler klinisyenler arasında ortak bir dil kurulmasını destekler. Ancak bir ölçüt listesindeki maddeleri saymak tek başına psikiyatrik tanı koymak anlamına gelmez. Belirtilerin bağlamı, işlevsellik, ayırıcı tanılar ve kişinin yaşam öyküsü birlikte değerlendirilmelidir.",
+    sections: [
+      section("Tanı Ölçütlerinin Amacı Nedir?", "Ölçütler araştırma ve klinik uygulamada benzer tabloların daha tutarlı biçimde tanımlanmasına yardımcı olur. Belirtilerin sayısı yanında süre, şiddet, başlangıç zamanı ve işlev kaybı gibi özellikler de tanımlanabilir. Bu yaklaşım farklı uzmanların aynı kavramları daha benzer anlamlarda kullanabilmesini sağlar."),
+      section("Ölçütleri Karşılamak Kesin Tanı Demek midir?", "Hayır. Bazı belirtiler bedensel hastalıklar, ilaç veya madde etkileri, uyku sorunları ya da başka ruhsal durumlarla açıklanabilir. Ayrıca kültürel ve gelişimsel bağlam önemlidir. Klinik değerlendirme yalnız belirtilerin bulunup bulunmadığını değil, bu belirtilerin neden ortaya çıktığını ve nasıl bir örüntü oluşturduğunu araştırır."),
+      section("DSM ve ICD Otomatik Tanı Sistemi midir?", "Hayır. Bu sistemler sınıflandırma ve iletişim araçlarıdır. Tanı koyan şey kitap veya kontrol listesi değil, uygun eğitim ve klinik değerlendirme sürecidir. Sınıflandırmalar zaman içinde bilimsel bilgiye göre güncellenebilir ve bazı kavramların tanımları yeni baskılarda değişebilir."),
+      section("Kişinin Kendini Test Etmesi Yeterli midir?", "İnternette yer alan ölçüt listeleri kişinin yaşadıklarını anlamlandırmasına yardımcı olabilir ancak kendi kendine kesin tanı koymak için yeterli değildir. Belirtilerin başka nedenlerle açıklanıp açıklanmadığı, işlevsellikteki değişim ve zaman içindeki seyir profesyonel değerlendirmede birlikte incelenir.")
+    ],
+    relatedTerms: [
+      { term: "DSM", slug: "dsm" },
+      { term: "ICD", slug: "icd" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Tanı Ölçütleri Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatride tanı ölçütlerinin amacını ve neden bir belirti listesinin tek başına tanı koymak için yeterli olmadığını açıklar.",
+      ogTitle: "Tanı Ölçütleri Nedir?",
+      ogDescription: "DSM ve ICD ölçütlerinin klinik değerlendirmedeki sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Ruhsal bozuklukların belirtilerini, sürelerini ve klinik özelliklerini standart biçimde tanımlamaya yardımcı olan ölçütler."
+    }
+  }),
+
+  defineTerm({
+    term: "Ölçek",
+    slug: "olcek",
+    shortDefinition: "Ölçek, belirti, işlev, davranış veya başka bir klinik özelliği yapılandırılmış sorular ve puanlama yöntemiyle ölçmeye yardımcı olan değerlendirme aracıdır.",
+    intro: "Psikiyatride ölçekler belirtilerin şiddetini değerlendirmek, zaman içindeki değişimi izlemek veya belirli bir alanda tarama yapmak amacıyla kullanılabilir. Ölçeğin kimin tarafından doldurulduğu, hangi toplumda doğrulandığı ve hangi amaçla geliştirildiği sonucu yorumlarken önem taşır. Tek bir puan klinik değerlendirmenin yerine geçmez.",
+    sections: [
+      section("Psikiyatrik Ölçekler Ne Ölçebilir?", "Depresif belirtiler, anksiyete, dikkat sorunları, uyku, yaşam kalitesi veya işlevsellik gibi çok farklı alanlar değerlendirilebilir. Bazı ölçekler kişinin kendisi tarafından doldurulur, bazıları klinisyen tarafından puanlanır, bazıları ise ebeveyn veya öğretmen gibi başka kişilerden bilgi toplar."),
+      section("Yüksek Puan Tanı Anlamına Gelir mi?", "Genellikle hayır. Puanın anlamı kullanılan ölçeğin yapısına ve amacına bağlıdır. Bir tarama ölçeğinde eşik üzerinde sonuç ayrıntılı değerlendirme gereksinimini gösterebilir ancak tanıyı kanıtlamaz. Klinik ölçekte yüksek puan ise belirtilerin daha yoğun olduğunu düşündürebilir fakat bağlam yine önemlidir."),
+      section("Geçerlik ve Güvenirlik Neden Önemlidir?", "Bir ölçme aracının hedeflediği özelliği gerçekten ölçebilmesi ve benzer koşullarda tutarlı sonuçlar verebilmesi gerekir. Ayrıca farklı dil ve kültürlere uyarlanan ölçeklerin yalnız çevrilmesi yeterli değildir; psikometrik özelliklerinin ilgili toplumda değerlendirilmesi gerekir."),
+      section("Ölçekler İzlemde Nasıl Kullanılır?", "Aynı aracın uygun aralıklarla tekrar uygulanması belirtilerin zaman içindeki değişimi hakkında ek bilgi sağlayabilir. Ancak puandaki değişiklik kişinin yaşamındaki değişiklikler, klinik görüşme ve işlevsellikle birlikte yorumlanmalıdır. Ölçüm sonucu tek başına ilaç başlama, bırakma veya doz değiştirme kararı verdirmez.")
+    ],
+    relatedTerms: [
+      { term: "Tarama testi", slug: "tarama-testi" },
+      { term: "Şiddet derecesi", slug: "siddet-derecesi" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" }
+    ],
+    seo: {
+      title: "Psikiyatrik Ölçek Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatrik ölçeklerin neyi ölçtüğünü, puanların nasıl yorumlandığını ve klinik değerlendirmenin neden yerine geçmediğini açıklar.",
+      ogTitle: "Ölçek Nedir?",
+      ogDescription: "Psikiyatride ölçek kullanımının amaçlarını ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirti veya işlev gibi klinik özellikleri yapılandırılmış sorular ve puanlama ile değerlendiren araç."
+    }
+  }),
+
+  defineTerm({
+    term: "Tarama testi",
+    slug: "tarama-testi",
+    shortDefinition: "Tarama testi, belirli bir ruhsal durum veya belirti kümesi açısından daha ayrıntılı değerlendirme gereksinimi olabilecek kişileri belirlemeye yardımcı olan değerlendirme aracıdır.",
+    intro: "Tarama araçları özellikle geniş gruplarda veya ilk değerlendirme sırasında olası sorunları fark etmeye yardımcı olabilir. Temel işlevleri tanı koymak değil, belirli bir durumun olasılığı konusunda dikkat çekmektir. Pozitif sonuç kesin hastalık, negatif sonuç ise her koşulda kesin dışlama anlamına gelmez.",
+    sections: [
+      section("Tarama Testi ile Tanı Testi Aynı mıdır?", "Hayır. Tarama aracı olası vakaları yakalamaya çalışır ve genellikle duyarlılık ile özgüllük arasında belirli bir denge kurar. Klinik tanı ise öykü, mental durum muayenesi, işlevsellik, ayırıcı tanılar ve gerektiğinde başka değerlendirmelerin birlikte yorumlanmasını gerektirir."),
+      section("Pozitif Sonuç Ne Anlama Gelir?", "Eşik üzerinde puan kişinin ilgili belirtileri belirli düzeyde bildirdiğini gösterebilir. Bu sonuç daha ayrıntılı klinik değerlendirme yapılmasının yararlı olabileceğine işaret eder. Belirtilerin başka bir ruhsal veya bedensel durumla açıklanıp açıklanmadığı ayrıca incelenmelidir."),
+      section("Negatif Sonuç Her Şeyi Dışlar mı?", "Hayır. Hiçbir tarama aracı kusursuz değildir. Belirtilerin yeni başlaması, kişinin soruları farklı yorumlaması, ölçeğin hedeflediği gruptan farklı bir popülasyonda kullanılması veya aracın duyarlılık özellikleri sonucu etkileyebilir. Klinik şüphe varsa düşük puan tek başına değerlendirmeyi sonlandırmaz."),
+      section("İnternetteki Testler Nasıl Yorumlanmalı?", "Geçerli bir ölçeğin çevrim içi uygulanması bile profesyonel değerlendirmeyle aynı şey değildir. Kaynağı belirsiz testlerin bilimsel geçerliliği ayrıca sorun olabilir. Sonuçlar kişinin kendisini anlaması için başlangıç noktası olabilir ancak kişisel ilaç veya tedavi kararları yalnız bu puanlara dayanarak verilmemelidir.")
+    ],
+    relatedTerms: [
+      { term: "Ölçek", slug: "olcek" },
+      { term: "Tanı ölçütleri", slug: "tani-olcutleri" },
+      { term: "Klinik görüşme", slug: "klinik-gorusme" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" }
+    ],
+    seo: {
+      title: "Tarama Testi Nedir? | Psikiyatri Sözlüğü",
+      description: "Tarama testlerinin tanı koymadığını, pozitif ve negatif sonuçların nasıl yorumlanması gerektiğini açıklar.",
+      ogTitle: "Tarama Testi Nedir?",
+      ogDescription: "Ruh sağlığında tarama testlerinin amaçlarını ve sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Daha ayrıntılı değerlendirme gereksinimi olabilecek kişileri belirlemeye yardımcı olan tarama aracı."
+    }
+  }),
+
+  defineTerm({
+    term: "Y-BOCS",
+    slug: "y-bocs",
+    shortDefinition: "Y-BOCS, obsesif kompulsif belirtilerin şiddetini ve günlük yaşam üzerindeki etkisini yapılandırılmış biçimde değerlendirmeye yardımcı olan klinik ölçektir.",
+    intro: "Yale-Brown Obsessive Compulsive Scale adıyla bilinen Y-BOCS özellikle obsesyon ve kompulsiyonların zaman kullanımı, yarattığı sıkıntı, oluşturduğu engellenme ve kontrol güçlüğü gibi boyutlarını değerlendirmek için kullanılır. Ölçek obsesif kompulsif bozukluk tanısını tek başına koymaz; klinik görüşmeye ek bilgi sağlar.",
+    sections: [
+      section("Y-BOCS Neyi Değerlendirir?", "Ölçek obsesyon ve kompulsiyonların ne kadar zaman aldığı, kişinin günlük yaşamına ne ölçüde müdahale ettiği, ne kadar sıkıntı oluşturduğu, belirtilere karşı ne kadar direnç gösterildiği ve kişinin bunlar üzerindeki kontrol hissi gibi boyutları değerlendirir. Belirtinin içeriğinden çok şiddeti ön plandadır."),
+      section("Yüksek Puan OKB Tanısı Demek midir?", "Hayır. Yüksek puan belirgin obsesif kompulsif belirti yüküne işaret edebilir ancak tanı için belirtilerin niteliği, süresi, işlevsellik üzerindeki etkisi ve başka durumlarla açıklanıp açıklanmadığı değerlendirilmelidir. Benzer tekrarlayıcı davranışlar farklı klinik durumlarda da görülebilir."),
+      section("Tedavi İzleminde Kullanılabilir mi?", "Evet. Uygun biçimde tekrarlandığında belirti şiddetindeki değişimin izlenmesine yardımcı olabilir. Ancak yalnız toplam puanın azalması veya artması üzerinden tedavi kararı verilmez. Kişinin günlük işlevi, rahatsızlık düzeyi, yan etkiler ve klinik görüşmedeki değişiklikler de birlikte değerlendirilir."),
+      section("Kendi Kendine Uygulamak Yeterli midir?", "Y-BOCS'un farklı uygulama biçimleri bulunmakla birlikte ölçeğin yorumlanması klinik bağlam gerektirir. İnternetten bulunan bir puan kesin tanı veya kişisel tedavi önerisi anlamına gelmez. Obsesyon veya kompulsiyonlar günlük yaşamı belirgin etkiliyorsa ayrıntılı profesyonel değerlendirme daha anlamlıdır.")
+    ],
+    relatedTerms: [
+      { term: "Obsesyon", slug: "obsesyon" },
+      { term: "Kompulsiyon", slug: "kompulsiyon" },
+      { term: "Obsesif kompulsif bozukluk", slug: "obsesif-kompulsif-bozukluk" },
+      { term: "Şiddet derecesi", slug: "siddet-derecesi" }
+    ],
+    seo: {
+      title: "Y-BOCS Nedir? | Psikiyatri Sözlüğü",
+      description: "Y-BOCS ölçeğinin obsesyon ve kompulsiyon şiddetini nasıl değerlendirdiğini ve neden tek başına OKB tanısı koymadığını açıklar.",
+      ogTitle: "Y-BOCS Nedir?",
+      ogDescription: "Y-BOCS ölçeğinin kullanım alanlarını ve klinik sınırlarını açıklar."
+    },
+    schema: {
+      definedTermDescription: "Obsesyon ve kompulsiyonların şiddetini yapılandırılmış biçimde değerlendirmeye yardımcı olan klinik ölçek."
+    }
+  }),
+
+  defineTerm({
+    term: "Şiddet derecesi",
+    slug: "siddet-derecesi",
+    shortDefinition: "Şiddet derecesi, bir belirti veya bozukluğun yoğunluğunu, sıklığını, oluşturduğu sıkıntıyı ve kişinin günlük işlevselliği üzerindeki etkisini tanımlamak için kullanılan klinik kavramdır.",
+    intro: "Aynı tanıya sahip kişilerin yaşadığı güçlüklerin düzeyi birbirinden oldukça farklı olabilir. Bu nedenle yalnız tanının varlığı değil, belirtilerin ne kadar yoğun olduğu ve yaşamı ne ölçüde etkilediği de değerlendirilir. Hafif, orta veya ağır gibi sınıflamalar kullanılan ölçütlere göre değişebilir.",
+    sections: [
+      section("Belirti Sayısı ile Aynı Şey midir?", "Hayır. Çok sayıda belirti her zaman daha ağır tablo anlamına gelmeyebilir. Bir veya birkaç belirti bile kişinin güvenliğini, çalışma yaşamını veya temel günlük işlevlerini ciddi biçimde etkileyebilir. Şiddet değerlendirmesi belirtilerin niteliğini, yoğunluğunu, süresini ve sonuçlarını birlikte ele alır."),
+      section("İşlevsellik Neden Önemlidir?", "Kişinin öz bakımını, eğitimini, işini, ilişkilerini ve günlük sorumluluklarını ne ölçüde sürdürebildiği klinik şiddetin anlaşılmasına katkı sağlar. Bununla birlikte dışarıdan işlevsel görünmek kişinin hiç sıkıntı yaşamadığı anlamına gelmez; kişinin öznel yaşantısı da değerlendirilmelidir."),
+      section("Ölçeklerle Belirlenebilir mi?", "Bazı ölçekler belirti şiddetini sayısal olarak değerlendirmeye yardımcı olur. Bu puanlar izlemde yararlı olabilir ancak kullanılan ölçeğin neyi ölçtüğü ve eşiklerin hangi gruplarda doğrulandığı bilinmelidir. Klinik şiddet yalnız bir sayıdan ibaret değildir."),
+      section("Şiddet Zaman İçinde Değişebilir mi?", "Evet. Ruhsal belirtiler yaşam olayları, tedavi, uyku, bedensel sağlık ve başka birçok etkenle zaman içinde artabilir veya azalabilir. Bu nedenle tek bir görüşmede belirlenen şiddet derecesi değişmez bir özellik değildir. İzlem sırasında belirtiler ve işlevsellik yeniden değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "İşlevsellik", slug: "islevsellik" },
+      { term: "Ölçek", slug: "olcek" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Tedavi yanıtı", slug: "tedavi-yaniti" }
+    ],
+    seo: {
+      title: "Şiddet Derecesi Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatride belirti şiddetinin yalnız belirti sayısıyla değil yoğunluk, sıkıntı ve işlevsellikle birlikte nasıl değerlendirildiğini açıklar.",
+      ogTitle: "Şiddet Derecesi Nedir?",
+      ogDescription: "Ruhsal belirtilerde şiddet değerlendirmesinin temel bileşenlerini açıklar."
+    },
+    schema: {
+      definedTermDescription: "Belirti yoğunluğu, sıklığı, yarattığı sıkıntı ve işlev kaybını birlikte ifade eden klinik değerlendirme kavramı."
+    }
+  }),
+
+  defineTerm({
+    term: "Tedavi yanıtı",
+    slug: "tedavi-yaniti",
+    shortDefinition: "Tedavi yanıtı, uygulanan tedavi sürecinde hedeflenen belirtilerde, işlevsellikte veya kişinin genel klinik durumunda anlamlı iyileşme görülmesini ifade eden klinik kavramdır.",
+    intro: "Psikiyatride tedavi başarısı yalnız kişinin kendisini biraz daha iyi hissetmesi veya bir ölçek puanının azalmasıyla değerlendirilmez. Başlangıçtaki hedefler, belirtilerin değişimi, günlük işlevler, yan etkiler ve kişinin tedaviye ilişkin deneyimi birlikte ele alınır. Yanıt ile tam iyileşme aynı kavram değildir.",
+    sections: [
+      section("Tedavi Yanıtı Nasıl Değerlendirilir?", "Klinik görüşme, kişinin öznel değerlendirmesi, yakınlarından alınan bilgiler ve gerektiğinde standart ölçekler birlikte kullanılabilir. Hangi belirtilerin başlangıçta hedeflendiği önemlidir. Örneğin uyku düzelirken kaygı veya işlev kaybı devam ediyorsa genel tedavi sonucu bütüncül biçimde değerlendirilmelidir."),
+      section("Yanıt ile Remisyon Aynı mıdır?", "Hayır. Tedavi yanıtı genellikle belirtilerde belirgin bir azalma olduğunu ifade ederken remisyon belirtilerin çok düşük düzeye inmesi veya tanımlanmış bir klinik eşik altına düşmesi anlamında kullanılabilir. Kullanılan tanımlar hastalığa ve araştırma yöntemine göre değişebilir."),
+      section("Yanıt Ne Kadar Sürede Ortaya Çıkar?", "Bu süre kullanılan tedaviye, hedeflenen belirtiye ve kişinin klinik özelliklerine göre değişir. Bazı belirtiler erken değişirken diğer alanlarda iyileşme daha uzun sürebilir. Bu nedenle kişinin kendi kendine kısa sürede sonuç alamadığı düşüncesiyle ilaç veya tedaviyi değiştirmesi uygun değildir."),
+      section("Yanıt Yoksa Ne Anlama Gelir?", "Beklenen iyileşmenin görülmemesi tanının, tedavi uyumunun, doz ve sürenin, eşlik eden hastalıkların, madde kullanımının veya psikososyal etkenlerin yeniden değerlendirilmesini gerektirebilir. Tek bir başarısız deneme kişinin hiçbir tedaviden yarar görmeyeceği anlamına gelmez.")
+    ],
+    relatedTerms: [
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Relaps", slug: "relaps" },
+      { term: "İzlem", slug: "izlem" },
+      { term: "Tedaviye direnç", slug: "tedaviye-direnc" }
+    ],
+    seo: {
+      title: "Tedavi Yanıtı Nedir? | Psikiyatri Sözlüğü",
+      description: "Psikiyatride tedavi yanıtının belirtiler, işlevsellik ve klinik hedeflerle nasıl değerlendirildiğini ve remisyondan farkını açıklar.",
+      ogTitle: "Tedavi Yanıtı Nedir?",
+      ogDescription: "Tedavi yanıtı ve remisyon arasındaki farkı açıklar."
+    },
+    schema: {
+      definedTermDescription: "Tedavi sürecinde hedef belirtiler veya işlevsellikte anlamlı klinik iyileşme görülmesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Trisiklik antidepresan",
+    slug: "trisiklik-antidepresan",
+    shortDefinition: "Trisiklik antidepresanlar, başta serotonin ve noradrenalin sistemleri olmak üzere birden fazla nörotransmitter ve reseptör sistemini etkileyebilen eski kuşak reçeteli antidepresan ilaç grubudur.",
+    intro: "Trisiklik antidepresanlar depresyon ve bazı başka klinik durumlarda uzun yıllardır kullanılmaktadır. Günümüzde birçok durumda daha iyi tolere edilen seçenekler bulunduğu için her zaman ilk tercih olmayabilirler. Etkileşim, yan etki ve yüksek dozda toksisite özellikleri nedeniyle tedavinin hekim tarafından planlanması özellikle önemlidir.",
+    sections: [
+      section("Trisiklik Antidepresanlar Nasıl Etki Gösterir?", "Serotonin ve noradrenalinin sinir hücreleri tarafından geri alımını azaltmanın yanında farklı reseptör sistemlerini de etkileyebilirler. Bu geniş farmakolojik etki hem klinik yararlara hem de ağız kuruluğu, kabızlık, uyku hali, tansiyon değişikliği gibi çeşitli yan etkilere katkıda bulunabilir."),
+      section("Neden Günümüzde Daha Seçici Kullanılır?", "Bazı yeni antidepresan grupları birçok kişide daha kolay tolere edilebilir ve yüksek doz güvenliği açısından avantajlı olabilir. Bununla birlikte trisiklikler belirli depresif tablolar, bazı ağrı durumları veya başka özel klinik gereksinimlerde hâlâ değerlendirilebilir. Seçim kişisel risk ve yarar değerlendirmesine dayanır."),
+      section("Kalp ve Diğer Hastalıklar Neden Önemlidir?", "Bu ilaçlar kalp iletim sistemi, tansiyon ve başka bedensel işlevler üzerinde etkiler oluşturabileceğinden eşlik eden hastalıklar ve kullanılan diğer ilaçlar dikkate alınır. Bazı kişilerde tedavi öncesi veya sırasında ek tıbbi değerlendirme gerekebilir. Gereksinim kullanılan ilaç ve kişinin özelliklerine göre değişir."),
+      section("Kendi Kendine Doz Değiştirilebilir mi?", "Hayır. Trisiklik antidepresanlarda doz değişikliği, başka ilaçlarla birlikte kullanım ve tedavinin bırakılması klinik olarak planlanmalıdır. Fazla miktarda alınmaları ciddi zehirlenmeye yol açabileceğinden reçete ve saklama güvenliği önemlidir. Kişisel doz veya ilaç değişikliği önerisi yalnız reçeteleyen hekim tarafından yapılmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Antidepresan", slug: "antidepresan" },
+      { term: "SSRI", slug: "ssri" },
+      { term: "SNRI", slug: "snri" },
+      { term: "Yan etki", slug: "yan-etki" }
+    ],
+    seo: {
+      title: "Trisiklik Antidepresan Nedir? | Psikiyatri Sözlüğü",
+      description: "Trisiklik antidepresanların genel etki mekanizmasını, kullanım alanlarını, yan etkilerini ve güvenlik özelliklerini açıklar.",
+      ogTitle: "Trisiklik Antidepresan Nedir?",
+      ogDescription: "Trisiklik antidepresanları güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Serotonin ve noradrenalin başta olmak üzere birden fazla sinir sistemi hedefini etkileyen reçeteli antidepresan grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Valproat",
+    slug: "valproat",
+    shortDefinition: "Valproat, epilepsi tedavisinin yanı sıra psikiyatride özellikle bazı bipolar bozukluk tablolarında duygudurum düzenleyici olarak kullanılabilen reçeteli ilaçtır.",
+    intro: "Valproatın kullanım kararı tanı, belirtilerin niteliği, eşlik eden hastalıklar, diğer ilaçlar ve kişisel riskler dikkate alınarak verilir. Gebelikte doğumsal anomali ve nörogelişimsel risklerle güçlü ilişkisi nedeniyle doğurganlık potansiyeli bulunan kişilerde özel güvenlik değerlendirmeleri gerektirir. Kişisel ilaç kararı hekimle planlanmalıdır.",
+    sections: [
+      section("Psikiyatride Hangi Amaçla Kullanılabilir?", "Valproat özellikle mani ve bazı bipolar bozukluk tablolarında değerlendirilebilen duygudurum düzenleyici seçeneklerden biridir. Her bipolar bozukluğu olan kişide gerekli veya uygun değildir. Akut dönem ve uzun dönem tedavi hedefleri farklı olabilir ve seçim önceki yanıt, eşlik eden durumlar ve risklerle birlikte yapılır."),
+      section("İzlem Neden Gereklidir?", "Karaciğer işlevleri, kan hücreleri ve gerektiğinde serum ilaç düzeyi gibi laboratuvar değerlendirmeleri klinik duruma göre izlenebilir. Kilo değişimi, tremor, mide bağırsak yakınmaları ve başka yan etkiler de takip edilir. İzlem sıklığı kişinin özelliklerine ve tedavi sürecine göre değişir."),
+      section("Gebelik Açısından Neden Özel Önemi Vardır?", "Valproat gebelik sırasında fetüs açısından ciddi risklerle ilişkilidir. Bu nedenle gebelik olasılığı bulunan kişilerde riskler, alternatifler ve etkili gebelikten korunma gereksinimleri ilgili hekimler tarafından ayrıntılı biçimde değerlendirilmelidir. İlaç kullanan kişi gebelik planladığında kendi kendine ilacı bırakmamalı, hızlı biçimde tıbbi görüş almalıdır."),
+      section("Valproat Aniden Bırakılabilir mi?", "Tedavinin kendi kendine kesilmesi uygun değildir. Ani değişiklik bipolar belirtilerin yeniden ortaya çıkmasına veya epilepsi için kullanan kişilerde nöbet riskine katkıda bulunabilir. Doz azaltma, bırakma veya başka ilaca geçiş kararı kullanılan endikasyon ve kişisel klinik özelliklere göre reçeteleyen hekim tarafından planlanır.")
+    ],
+    relatedTerms: [
+      { term: "Duygudurum düzenleyici", slug: "duygudurum-duzenleyici" },
+      { term: "Mani", slug: "mani" },
+      { term: "Bipolar I bozukluk", slug: "bipolar-1-bozukluk" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Valproat Nedir? | Psikiyatri Sözlüğü",
+      description: "Valproatın psikiyatrideki kullanımını, klinik izlemini ve gebelik açısından taşıdığı önemli güvenlik konularını açıklar.",
+      ogTitle: "Valproat Nedir?",
+      ogDescription: "Valproatı duygudurum düzenleyici kullanım ve güvenlik çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Psikiyatride bazı bipolar bozukluk tablolarında duygudurum düzenleyici olarak kullanılabilen reçeteli ilaç."
+    }
+  }),
+
+  defineTerm({
+    term: "Tipik antipsikotik",
+    slug: "tipik-antipsikotik",
+    shortDefinition: "Tipik antipsikotikler, dopamin D2 reseptörleri üzerindeki etkileri belirgin olan ve özellikle psikotik belirtilerin tedavisinde kullanılan birinci kuşak reçeteli antipsikotik ilaç grubudur.",
+    intro: "Birinci kuşak veya klasik antipsikotikler uzun yıllardır psikiyatride kullanılmaktadır. Aynı gruptaki ilaçların etki ve yan etki özellikleri birbirinden farklı olabilir. Özellikle hareket sistemiyle ilişkili yan etkiler klinik izlemin önemli parçalarındandır. İlaç seçimi kişinin klinik gereksinimine göre yapılır.",
+    sections: [
+      section("Tipik Antipsikotikler Nasıl Etki Gösterir?", "Temel farmakolojik özelliklerinden biri dopamin D2 reseptörlerini bloke etmeleridir. Bu etki sanrı ve varsanı gibi bazı psikotik belirtilerin azalmasına katkı sağlayabilir. Bununla birlikte klinik etkinlik ve yan etkiler yalnız tek bir nörotransmitter üzerinden açıklanamaz ve kullanılan ilaca göre farklılık gösterebilir."),
+      section("Atipik Antipsikotiklerden Farkı Nedir?", "Birinci ve ikinci kuşak ayrımı genel farmakolojik ve yan etki örüntülerini tanımlamak için kullanılır. Tipik antipsikotiklerde ekstrapiramidal hareket yan etkileri bazı ilaçlarda daha belirgin olabilirken ikinci kuşakta metabolik yan etkiler bazı ajanlarda daha fazla öne çıkabilir. Ancak grup içindeki farklılıklar büyüktür."),
+      section("Hangi Yan Etkiler İzlenir?", "Akatizi, parkinsonizm, distoni ve uzun süreli kullanımda tardiv diskinezi gibi hareket bozuklukları değerlendirilebilir. Prolaktin değişiklikleri, sedasyon, tansiyon etkileri ve kullanılan ilaca özgü başka sorunlar da ortaya çıkabilir. Yeni gelişen istemsiz hareketler klinik değerlendirme gerektirir."),
+      section("İlaç Değişikliği Nasıl Yapılır?", "Antipsikotik başlama, bırakma veya başka bir ilaca geçme kararı kişisel olarak yapılmamalıdır. Ani değişiklik bazı kişilerde belirtilerin yeniden alevlenmesine veya kesilme ile ilişkili sorunlara katkıda bulunabilir. Tedavi planı etkinlik, yan etkiler, önceki deneyimler ve kişinin tercihleriyle birlikte hekim tarafından değerlendirilir.")
+    ],
+    relatedTerms: [
+      { term: "Antipsikotik", slug: "antipsikotik" },
+      { term: "Atipik antipsikotik", slug: "atipik-antipsikotik" },
+      { term: "Akatizi", slug: "akatizi" },
+      { term: "Dopamin", slug: "dopamin" }
+    ],
+    seo: {
+      title: "Tipik Antipsikotik Nedir? | Psikiyatri Sözlüğü",
+      description: "Tipik antipsikotiklerin genel etki mekanizmasını, atipik antipsikotiklerden farkını ve hareket yan etkilerini açıklar.",
+      ogTitle: "Tipik Antipsikotik Nedir?",
+      ogDescription: "Birinci kuşak antipsikotikleri güvenli ilaç bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Dopamin D2 reseptör etkisi belirgin olan birinci kuşak reçeteli antipsikotik ilaç grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Stimülan",
+    slug: "stimulan",
+    shortDefinition: "Stimülan, merkezi sinir sistemi etkinliğini artıran ve psikiyatride özellikle DEHB tedavisinde belirli ilaçların dahil olduğu reçeteli ilaç grubunu tanımlayan genel terimdir.",
+    intro: "Stimülan ilaçlar dikkat, dürtü kontrolü ve görev sürdürme gibi alanlarda klinik yarar sağlayabilir ancak herkes için uygun değildir. Kullanılan ilaç, yaş, eşlik eden hastalıklar, kalp damar riskleri, madde kullanım öyküsü ve diğer ilaçlar değerlendirilerek karar verilir. Tedavi tıbbi izlem gerektirir.",
+    sections: [
+      section("Stimülanlar DEHB'de Nasıl Kullanılır?", "DEHB tedavisinde kullanılan bazı stimülanlar dopamin ve noradrenalin sinyallemesini etkileyerek dikkat ve davranış düzenleme süreçlerine katkıda bulunabilir. Tedavi yanıtı yalnız kişinin daha uzun süre oturabilmesiyle değerlendirilmez; dikkat, dürtüsellik, okul veya iş performansı ve günlük işlevler birlikte ele alınır."),
+      section("Yan Etkileri Neler Olabilir?", "İştah azalması, uykuya dalmada güçlük, baş ağrısı, mide yakınmaları, kalp hızı veya tansiyonda değişiklik gibi etkiler görülebilir. Yan etki örüntüsü ilaca ve kişiye göre değişir. Çocuk ve ergenlerde büyüme ve kilo seyri de klinik izlem kapsamında değerlendirilebilir."),
+      section("Bağımlılık Riski Var mıdır?", "Bazı stimülanlar kötüye kullanım potansiyeli taşıdığı için kontrollü reçeteleme ve uygun izlem gerektirir. Tıbbi amaçla reçete edilen ilacın hekim önerisine uygun kullanımı ile tıbbi olmayan kullanım aynı durum değildir. İlacın başkasıyla paylaşılması veya reçete dışı kullanılması güvenli değildir."),
+      section("Kendi Kendine Kullanılabilir mi?", "Hayır. Konsantrasyonu artırmak, sınava hazırlanmak veya daha uzun süre çalışmak amacıyla reçetesiz stimülan kullanımı tıbbi risk taşır. Kalp damar etkileri, uyku bozulması, kaygı ve kötüye kullanım gibi sorunlar ortaya çıkabilir. Kişisel ilaç seçimi ve doz düzenlemesi yalnız hekim değerlendirmesiyle yapılmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "DEHB", slug: "dehb" },
+      { term: "Atomoksetin", slug: "atomoksetin" },
+      { term: "Dopamin", slug: "dopamin" },
+      { term: "Noradrenalin", slug: "noradrenalin" }
+    ],
+    seo: {
+      title: "Stimülan Nedir? | Psikiyatri Sözlüğü",
+      description: "Stimülan ilaçların DEHB tedavisindeki yerini, yan etkilerini ve neden tıbbi izlem gerektirdiğini açıklar.",
+      ogTitle: "Stimülan Nedir?",
+      ogDescription: "Stimülan ilaçları kullanım ve güvenlik çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Merkezi sinir sistemi etkinliğini artıran ve bazıları DEHB tedavisinde kullanılan reçeteli ilaç grubu."
+    }
+  }),
+
+  defineTerm({
+    term: "Yan etki",
+    slug: "yan-etki",
+    shortDefinition: "Yan etki, bir ilaç veya başka bir tıbbi müdahale kullanılırken hedeflenen temel etkinin dışında ortaya çıkabilen istenmeyen veya beklenmeyen etkidir.",
+    intro: "Her yan etki aynı derecede önemli değildir. Bazıları hafif ve geçici olabilirken bazıları tedavi planının yeniden değerlendirilmesini gerektirebilir. Bir belirtinin ilaç kullanımı sırasında ortaya çıkması onun mutlaka ilaçtan kaynaklandığını kanıtlamaz; zamanlama, doz, diğer ilaçlar ve bedensel durum birlikte değerlendirilir.",
+    sections: [
+      section("Yan Etki Nasıl Değerlendirilir?", "Belirtinin ne zaman başladığı, ilaç başlama veya doz değişikliğiyle ilişkisi, şiddeti, sürekliliği ve başka olası nedenler incelenir. Aynı ilacı kullanan herkes aynı yan etkileri yaşamaz. Kişinin yaşı, metabolizması, eşlik eden hastalıkları ve diğer ilaçları risk profilini değiştirebilir."),
+      section("Sık Görülen Etki Tehlikeli Demek midir?", "Hayır. Bir yan etkinin sık görülmesi onun mutlaka ciddi olduğu anlamına gelmez. Benzer biçimde nadir görülen bazı yan etkiler klinik açıdan çok önemli olabilir. İlaç bilgilerinde sıklık ile ciddiyet birbirinden ayrı kavramlardır ve ikisinin birlikte değerlendirilmesi gerekir."),
+      section("Yan Etki Olunca İlaç Bırakılmalı mıdır?", "Her durumda hayır. Bazı yan etkiler zamanla azalabilir, bazıları başka bir düzenleme gerektirebilir ve bazı ciddi belirtilerde hızlı tıbbi değerlendirme gerekebilir. Kendi kendine doz azaltmak veya ilacı aniden kesmek özellikle bazı psikiyatrik ilaçlarda kesilme belirtileri veya hastalığın alevlenmesine yol açabilir."),
+      section("Yan Etki ile Hastalık Belirtisi Karışabilir mi?", "Evet. Uyku bozukluğu, huzursuzluk, yorgunluk veya dikkat güçlüğü hem hastalığın kendisine hem tedaviye hem de başka tıbbi nedenlere bağlı olabilir. Bu nedenle yeni bir belirtinin kaynağı yalnız zamanlamaya bakılarak kesinleştirilmez; klinik değerlendirme ve gerektiğinde ek incelemeler yapılır.")
+    ],
+    relatedTerms: [
+      { term: "Farmakodinamik", slug: "farmakodinamik" },
+      { term: "Farmakokinetik", slug: "farmakokinetik" },
+      { term: "Etkileşim", slug: "etkilesim" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Yan Etki Nedir? | Psikiyatri Sözlüğü",
+      description: "İlaç yan etkilerinin nasıl değerlendirildiğini, sıklık ile ciddiyet arasındaki farkı ve neden kendi kendine ilaç kesilmemesi gerektiğini açıklar.",
+      ogTitle: "Yan Etki Nedir?",
+      ogDescription: "İlaç yan etkilerini güvenli ve klinik bağlamda açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir tıbbi tedavinin hedeflenen temel etkisi dışında ortaya çıkabilen istenmeyen veya beklenmeyen etki."
+    }
+  }),
+
+  defineTerm({
+    term: "Tolerans",
+    slug: "tolerans",
+    shortDefinition: "Tolerans, bir madde veya ilacın aynı miktarının zaman içinde daha az etki oluşturması ya da aynı etki için daha yüksek miktar gereksinimi gelişmesi durumudur.",
+    intro: "Tolerans özellikle bağımlılık ve ilaç kullanımı bağlamında kullanılan farmakolojik bir kavramdır ancak tek başına madde kullanım bozukluğu tanısı anlamına gelmez. Bazı tedavilerde belirli etkilere tolerans gelişebilirken başka etkiler devam edebilir. Klinik anlamı kullanılan maddeye ve kullanım biçimine göre değişir.",
+    sections: [
+      section("Tolerans Nasıl Gelişebilir?", "Sinir sistemi ve diğer organ sistemleri tekrarlayan madde etkisine uyum sağlayabilir. Reseptör düzeyindeki değişiklikler, metabolik süreçler ve öğrenilmiş davranışsal uyumlar farklı tolerans biçimlerine katkıda bulunabilir. Her maddede aynı hızda veya aynı mekanizmayla tolerans gelişmez."),
+      section("Tolerans Bağımlılık Demek midir?", "Hayır. Tolerans bazı maddelerin düzenli tıbbi kullanımında da gelişebilir ve tek başına bağımlılık tanısı koydurmaz. Madde kullanım bozukluğunda kontrol kaybı, zararlarına rağmen sürdürme, yoğun istek ve işlevsellikte bozulma gibi başka özellikler de birlikte değerlendirilir."),
+      section("Tolerans Neden Riskli Olabilir?", "Kişinin önceki etkiyi elde etmek için miktarı kendi kendine artırması zehirlenme ve başka ciddi yan etkiler açısından risk yaratabilir. Ayrıca bazı etkiler için tolerans gelişirken toksik etkiler aynı ölçüde değişmeyebilir. Bu nedenle doz artışı güvenli bir çözüm olarak görülmemelidir."),
+      section("İlaç Dozu Kendi Kendine Artırılabilir mi?", "Hayır. Reçeteli bir ilacın etkisinin azaldığı düşünülüyorsa nedenin tolerans olup olmadığı klinik olarak değerlendirilmelidir. Hastalığın değişmesi, uyku, etkileşimler veya tedavi uyumu gibi başka nedenler de rol oynayabilir. Doz değişiklikleri yalnız reçeteleyen sağlık profesyoneliyle planlanmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Yoksunluk", slug: "yoksunluk" },
+      { term: "Madde kullanım bozukluğu", slug: "madde-kullanim-bozuklugu" },
+      { term: "Doz titrasyonu", slug: "doz-titrasyonu" }
+    ],
+    seo: {
+      title: "Tolerans Nedir? | Psikiyatri Sözlüğü",
+      description: "Toleransın aynı miktarda daha az etki oluşması anlamına geldiğini, bağımlılıktan farkını ve doz artırmanın risklerini açıklar.",
+      ogTitle: "Tolerans Nedir?",
+      ogDescription: "Tolerans kavramını bağımlılık ve ilaç kullanımı bağlamında açıklar."
+    },
+    schema: {
+      definedTermDescription: "Bir madde veya ilacın aynı miktarının zaman içinde daha az etki oluşturması durumu."
+    }
+  }),
+
+  defineTerm({
+    term: "Yoksunluk",
+    slug: "yoksunluk",
+    shortDefinition: "Yoksunluk, düzenli kullanılan bir madde veya bazı ilaçların azaltılması ya da bırakılması sonrasında ortaya çıkabilen bedensel, ruhsal ve davranışsal belirtiler bütünüdür.",
+    intro: "Yoksunluk belirtilerinin türü ve şiddeti kullanılan maddeye, kullanım süresine, miktara ve kişinin özelliklerine göre değişir. Yoksunluk her zaman bağımlılıkla aynı şey değildir ancak bazı maddelerde fiziksel uyumun göstergesi olabilir. Bazı yoksunluk tabloları tıbbi açıdan ciddi olabilir.",
+    sections: [
+      section("Yoksunluk Belirtileri Neler Olabilir?", "Kaygı, huzursuzluk, uyku bozukluğu, terleme, titreme, bulantı veya duygu durum değişiklikleri gibi belirtiler görülebilir. Ancak her madde ve ilaç için yoksunluk örüntüsü farklıdır. Belirtilerin başlama zamanı da maddenin vücutta kalma süresine göre değişebilir."),
+      section("Yoksunluk ile Bağımlılık Aynı mıdır?", "Hayır. Bazı ilaçlar uzun süre düzenli kullanıldığında fiziksel uyum gelişebilir ve kesilme sonrasında belirtiler ortaya çıkabilir; bu durum tek başına madde kullanım bozukluğu anlamına gelmez. Bağımlılık değerlendirmesinde kontrol kaybı, yoğun istek ve zararlarına rağmen kullanım gibi özellikler de önemlidir."),
+      section("Hangi Yoksunluklar Tıbbi Açıdan Önemlidir?", "Alkol ve bazı sedatif ilaçların ağır yoksunluk tabloları nöbet, bilinç değişikliği ve başka ciddi komplikasyonlara yol açabilir. Bu nedenle uzun süreli veya yoğun kullanım sonrasında aniden bırakma kararı kişisel olarak verilmemelidir. Risk kullanılan madde ve kişinin tıbbi durumuna göre değişir."),
+      section("İlaçlar Nasıl Bırakılmalıdır?", "Kesme planı kullanılan ilaca, doza, kullanım süresine ve kişinin klinik durumuna göre değişebilir. Bazı ilaçlarda kademeli azaltma gerekebilir ancak burada tek bir genel şema yoktur. Kişisel doz azaltma veya bırakma planı reçeteleyen hekim tarafından oluşturulmalıdır.")
+    ],
+    relatedTerms: [
+      { term: "Tolerans", slug: "tolerans" },
+      { term: "Bağımlılık", slug: "bagimlilik" },
+      { term: "Kesilme belirtileri", slug: "kesilme-belirtileri" },
+      { term: "Madde kullanım bozukluğu", slug: "madde-kullanim-bozuklugu" }
+    ],
+    seo: {
+      title: "Yoksunluk Nedir? | Psikiyatri Sözlüğü",
+      description: "Yoksunluk belirtilerinin neden ortaya çıktığını, bağımlılıktan farkını ve bazı maddelerde neden tıbbi risk taşıdığını açıklar.",
+      ogTitle: "Yoksunluk Nedir?",
+      ogDescription: "Yoksunluk kavramını güvenli ilaç ve madde bilgisi çerçevesinde açıklar."
+    },
+    schema: {
+      definedTermDescription: "Düzenli kullanılan madde veya bazı ilaçların azaltılması ya da bırakılması sonrasında gelişebilen belirtiler bütünü."
+    }
+  }),
+
+  defineTerm({
+    term: "Tedaviye direnç",
+    slug: "tedaviye-direnc",
+    shortDefinition: "Tedaviye direnç, uygun olduğu düşünülen tedavi girişimlerine rağmen beklenen klinik iyileşmenin yeterli düzeyde gerçekleşmemesini tanımlamak için kullanılan genel klinik kavramdır.",
+    intro: "Tedaviye direnç farklı ruhsal bozukluklarda farklı ölçütlerle tanımlanabilir. Bu ifade kişinin iyileşemeyeceği anlamına gelmez. Bir durum dirençli kabul edilmeden önce tanı, tedavinin yeterli süre ve düzeyde uygulanıp uygulanmadığı, tedavi uyumu, eşlik eden hastalıklar ve psikososyal etkenler yeniden değerlendirilir.",
+    sections: [
+      section("Tedaviye Direnç Nasıl Tanımlanır?", "Tek bir evrensel tanım yoktur. Örneğin depresyonda belirli sayıda uygun antidepresan denemesine yeterli yanıt alınamaması araştırmalarda kullanılan ölçütlerden biri olabilir. Diğer bozukluklarda farklı kriterler kullanılır. Bu nedenle terim mutlaka ilgili klinik durum bağlamında yorumlanmalıdır."),
+      section("Yanıt Alınmaması Her Zaman Gerçek Direnç midir?", "Hayır. İlacın yeterli süre kullanılmaması, düzensiz kullanım, yanlış veya eksik tanı, madde kullanımı, uyku bozukluğu, bedensel hastalıklar veya devam eden ağır yaşam stresleri beklenen iyileşmeyi engelleyebilir. Bu durumlar bazen görünürde tedavi direnci oluşturabilir."),
+      section("Direnç Varsa Seçenek Kalmadığı Anlamına mı Gelir?", "Hayır. Tanının ve önceki tedavilerin yeniden değerlendirilmesi sonrasında farklı ilaç stratejileri, psikoterapi yaklaşımları veya belirli durumlarda nöromodülasyon yöntemleri gibi seçenekler gündeme gelebilir. Hangi yaklaşımın uygun olduğu tanıya, önceki yanıtlara ve kişisel risklere göre belirlenir."),
+      section("Tedavi Planı Neden Bireyselleştirilir?", "Aynı tanıya sahip iki kişi önceki tedavilere farklı yanıt verebilir. Yan etkiler, eşlik eden hastalıklar, kişinin tercihleri, gebelik olasılığı, diğer ilaçlar ve erişilebilir tedavi seçenekleri kararları etkiler. Bu nedenle tedaviye direnç kişisel ilaç değişikliği veya kendi kendine kombinasyon yapma gerekçesi değildir.")
+    ],
+    relatedTerms: [
+      { term: "Tedavi yanıtı", slug: "tedavi-yaniti" },
+      { term: "Remisyon", slug: "remisyon" },
+      { term: "Ayırıcı tanı", slug: "ayirici-tani" },
+      { term: "İzlem", slug: "izlem" }
+    ],
+    seo: {
+      title: "Tedaviye Direnç Nedir? | Psikiyatri Sözlüğü",
+      description: "Tedaviye direncin ne anlama geldiğini, görünürde direnç nedenlerini ve neden tedavi seçeneği kalmadığı anlamına gelmediğini açıklar.",
+      ogTitle: "Tedaviye Direnç Nedir?",
+      ogDescription: "Psikiyatride tedaviye direnç kavramını klinik sınırlarıyla açıklar."
+    },
+    schema: {
+      definedTermDescription: "Uygun tedavi girişimlerine rağmen beklenen klinik iyileşmenin yeterli düzeyde gerçekleşmemesi."
+    }
+  }),
+
+  defineTerm({
+    term: "Ödül sistemi",
+    slug: "odul-sistemi",
+    shortDefinition: "Ödül sistemi, beynin motivasyon, öğrenme, beklenti ve davranışların sonuçlarından değer çıkarma süreçlerine katılan birbiriyle bağlantılı sinir ağlarını tanımlayan genel nörobiyolojik kavramdır.",
+    intro: "Günlük dilde ödül sistemi bazen yalnız dopamin salgılanmasıyla eş tutulur ancak bu aşırı basitleştirmedir. Dopamin önemli bir rol oynasa da motivasyon ve ödül öğrenmesi farklı beyin bölgeleri, nörotransmitterler ve çevresel deneyimlerin etkileşimiyle ortaya çıkar. Tek bir beyin bölgesi veya kimyasal tüm davranışı açıklamaz.",
+    sections: [
+      section("Ödül Sistemi Hangi Süreçlerde Rol Oynar?", "Bir davranışın sonucunu öğrenme, gelecekteki ödülleri tahmin etme, hedeflere yönelme ve bazı davranışları tekrar etme eğilimi bu ağlarla ilişkilidir. Ödül yalnız haz anlamına gelmez; bir sonucun ne kadar önemli olduğu ve kişinin onun için ne kadar çaba göstereceği de bu süreçlerle bağlantılıdır."),
+      section("Dopamin Mutluluk Kimyasalı mıdır?", "Bu ifade bilimsel olarak fazla basittir. Dopamin ödül beklentisi, öğrenme, motivasyon ve hareket gibi birçok süreçte rol oynar. Dopamin düzeyindeki tek bir değişiklikten kişinin ne kadar mutlu olduğu veya belirli bir davranışın nedeni doğrudan çıkarılamaz."),
+      section("Bağımlılıkla İlişkisi Nedir?", "Bağımlılık yapan maddeler ve bazı davranışlar ödül öğrenmesi ve motivasyon ağlarını etkileyebilir. Zaman içinde çevresel ipuçları güçlü istek ve davranış tekrarını tetikleyebilir. Ancak bağımlılık yalnız ödül sistemindeki bir bozukluk değildir; genetik, psikolojik, sosyal ve çevresel etkenler birlikte rol oynar."),
+      section("Depresyonla İlişkili Olabilir mi?", "Depresyonda ödül beklentisi, motivasyon ve haz alma süreçlerinde değişiklikler araştırılmaktadır. Anhedoni bu alanlarla ilişkili klinik belirtilerden biridir. Bununla birlikte grup düzeyindeki beyin görüntüleme veya nörobiyolojik bulgular bireysel kişide tanı koymak için kullanılan kesin biyobelirteçler değildir.")
+    ],
+    relatedTerms: [
+      { term: "Dopamin", slug: "dopamin" },
+      { term: "Anhedoni", slug: "anhedoni" },
+      { term: "Nörotransmitter", slug: "norotransmitter" },
+      { term: "Bağımlılık", slug: "bagimlilik" }
+    ],
+    seo: {
+      title: "Ödül Sistemi Nedir? | Psikiyatri Sözlüğü",
+      description: "Beynin ödül sistemini motivasyon, öğrenme, dopamin, bağımlılık ve anhedoni bağlamında aşırı basitleştirmeden açıklar.",
+      ogTitle: "Ödül Sistemi Nedir?",
+      ogDescription: "Ödül sisteminin dopaminden daha geniş bir sinir ağı olduğunu açıklar."
+    },
+    schema: {
+      definedTermDescription: "Motivasyon, ödül beklentisi ve davranış sonuçlarından öğrenmeye katılan bağlantılı beyin ağları."
+    }
+  }),
+
+  defineTerm({
+    term: "Özsaygı",
+    slug: "ozsaygi",
+    shortDefinition: "Özsaygı, kişinin kendi değerine, yeterliliğine ve kendisiyle kurduğu ilişkiye yönelik genel değerlendirme ve duygusal tutumlarını ifade eden psikolojik kavramdır.",
+    intro: "Özsaygı kişinin her zaman kendinden emin olması veya kendisini başkalarından üstün görmesi anlamına gelmez. Sağlıklı özsaygı güçlü ve sınırlı yönleri birlikte kabul edebilme, başarısızlıkların kişinin tüm değerini belirlemediğini görebilme ve kendine daha dengeli yaklaşabilme ile ilişkilidir. Tek başına psikiyatrik tanı değildir.",
+    sections: [
+      section("Özsaygı Nasıl Şekillenir?", "Çocukluk deneyimleri, ilişkiler, sosyal çevre, başarı ve başarısızlıkların yorumlanma biçimi, kültürel beklentiler ve kişinin kendisi hakkında geliştirdiği inançlar özsaygıyı etkileyebilir. Bununla birlikte erken dönem deneyimleri kişinin yaşam boyu değişmez bir özsaygı düzeyine mahkûm etmez."),
+      section("Düşük Özsaygı Bir Hastalık mıdır?", "Hayır. Düşük özsaygı tek başına psikiyatrik tanı değildir ancak depresyon, sosyal anksiyete, travmatik deneyimler veya bazı kişilik örüntüleriyle birlikte görülebilir. Klinik değerlendirmede kişinin kendisi hakkındaki olumsuz inanışlarının ne kadar katı olduğu ve günlük yaşamı nasıl etkilediği incelenir."),
+      section("Özsaygı ile Özgüven Aynı mıdır?", "Kavramlar günlük dilde birbirinin yerine kullanılabilse de özgüven çoğu zaman belirli bir işi yapabilme kapasitesine duyulan güveni, özsaygı ise kişinin kendi değerine ilişkin daha genel tutumunu anlatır. Kişi bir alanda kendine çok güvenirken genel özsaygısı düşük olabilir."),
+      section("Özsaygı Değişebilir mi?", "Evet. Yeni ilişkiler, öğrenme deneyimleri, psikoterapi ve kişinin kendi düşünce örüntülerini fark etmesi özsaygıda zaman içinde değişime katkıda bulunabilir. Amaç sürekli olumlu düşünmek değil, kişinin kendisini başarıları ve hatalarıyla daha gerçekçi ve esnek biçimde değerlendirebilmesidir.")
+    ],
+    relatedTerms: [
+      { term: "Benlik", slug: "benlik" },
+      { term: "Mükemmeliyetçilik", slug: "mukemmeliyetcilik" },
+      { term: "Bilişsel çarpıtma", slug: "bilissel-carpitma" },
+      { term: "Stigma", slug: "stigma" }
+    ],
+    seo: {
+      title: "Özsaygı Nedir? | Psikiyatri Sözlüğü",
+      description: "Özsaygının ne anlama geldiğini, özgüvenden farkını ve düşük özsaygının neden tek başına psikiyatrik tanı olmadığını açıklar.",
+      ogTitle: "Özsaygı Nedir?",
+      ogDescription: "Özsaygıyı kişinin kendisiyle kurduğu genel değerlendirme ilişkisi üzerinden açıklar."
+    },
+    schema: {
+      definedTermDescription: "Kişinin kendi değerine ve kendisiyle kurduğu ilişkiye yönelik genel değerlendirme ve duygusal tutumu."
+    }
+  })
+];
+
 export const allGlossaryPilotTerms = [
+  ...fifteenthBatchNewTerms,
   ...fourteenthBatchNewTerms,
   ...thirteenthBatchNewTerms,
   ...twelfthBatchNewTerms,
