@@ -698,10 +698,17 @@ if (contactDataElement) {
       });
     });
 
-    ["whatsapp", "instagram", "linkedin"].forEach((key) => {
+    ["phone", "whatsapp", "instagram", "linkedin"].forEach((key) => {
       document.querySelectorAll(`[data-contact-visible="${key}"]`).forEach((element) => {
         element.hidden = !hrefs[key];
       });
+    });
+
+    document.querySelectorAll('[data-contact-href="phone"]').forEach((element) => {
+      const hasPhone = Boolean(contact.phone && contact.phoneHref);
+      element.hidden = !hasPhone;
+      if (hasPhone) element.setAttribute("href", contact.phoneHref);
+      else element.removeAttribute("href");
     });
   } catch (error) {
     console.error("İletişim bilgileri okunamadı.", error);
