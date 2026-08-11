@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const excluded = new Set(["admin", "admin_panel", "api_disabled", "node_modules", ".git"]);
-const issues = []; const summary = { html: 0, img: 0, picture: 0, broken: 0, missingAlt: 0, emptyAlt: 0, missingWidth: 0, missingHeight: 0, heroLazy: 0, heroPriority: 0, over250: 0, over500: 0, over1m: 0, optimizedFallback: 0 };
+const issues = []; const summary = { html: 0, img: 0, picture: 0, broken: 0, missingAlt: 0, emptyAlt: 0, missingWidth: 0, missingHeight: 0, heroLazy: 0, heroPriority: 0, nonHeroPriority: 0, over250: 0, over500: 0, over1m: 0, optimizedFallback: 0 };
 const altUsage = new Map();
 
 function files(dir = ".") {
@@ -51,14 +51,20 @@ function checkImg(file, text, index, tag, hasOptimizedSource = false, hero = fal
   if (!/\bheight=/.test(tag)) { summary.missingHeight++; report("WARNING", file, line, "Missing height (possible CLS risk)"); }
   if (hero && /\bloading="lazy"/i.test(tag)) { summary.heroLazy++; report("WARNING", file, line, "Hero image uses loading=lazy"); }
   if (hero && !/\bfetchpriority="high"/i.test(tag)) { summary.heroPriority++; report("WARNING", file, line, "Hero image lacks fetchpriority=high"); }
-  if (!hero && /\bfetchpriority="high"/i.test(tag)) report("WARNING", file, line, "Non-hero image uses fetchpriority=high");
+  if (!hero && /\bfetchpriority="high"/i.test(tag)) { summary.nonHeroPriority++; report("WARNING", file, line, "Non-hero image uses fetchpriority=high"); }
   if (src) sizeCheck(file, line, src, hasOptimizedSource);
 }
 
 for (const file of files()) {
   summary.html++; const text = fs.readFileSync(file, "utf8");
+  const heroPositions = new Set(); const pictureRanges = [];
+  for (const section of text.matchAll(/<section\b[^>]*class="[^"]*(?:detail-hero|\bhero\b)[^"]*"[^>]*>([\s\S]*?)<\/section>/gi)) {
+    const visual = /<picture\b[^>]*>[\s\S]*?<\/picture>|<img\b[^>]*>/i.exec(section[0]);
+    if (visual) heroPositions.add(section.index + visual.index);
+  }
   for (const picture of text.matchAll(/<picture\b[^>]*>([\s\S]*?)<\/picture>/gi)) {
     summary.picture++; const index = picture.index; const block = picture[0]; const line = lineOf(text, index);
+    pictureRanges.push([index, index + block.length]);
     const sources = [...block.matchAll(/<source\b[^>]*>/gi)]; const img = block.match(/<img\b[^>]*>/i)?.[0];
     if (!img) report("ERROR", file, line, "Picture fallback img missing");
     let optimized = false;
@@ -67,10 +73,12 @@ for (const file of files()) {
       if (srcset && !extensionTypeMatches(srcset, type)) report("ERROR", file, line, `Picture type mismatch: ${srcset} (${type})`);
       if (type === "image/webp" || type === "image/avif") optimized = true;
     }
-    const hero = /(?:detail-hero|\bhero\b)/i.test(block.slice(0, 500)); if (img) checkImg(file, text, index, img, optimized, hero);
+    if (img) checkImg(file, text, index, img, optimized, heroPositions.has(index));
   }
-  const stripped = text.replace(/<picture\b[^>]*>[\s\S]*?<\/picture>/gi, "");
-  for (const match of stripped.matchAll(/<img\b[^>]*>/gi)) checkImg(file, text, match.index, match[0], false, /(?:detail-hero|\bhero\b)/i.test(match[0]));
+  for (const match of text.matchAll(/<img\b[^>]*>/gi)) {
+    if (pictureRanges.some(([start, end]) => match.index >= start && match.index < end)) continue;
+    checkImg(file, text, match.index, match[0], false, heroPositions.has(match.index));
+  }
 }
 for (const [alt, refs] of altUsage) if (refs.length >= 8) report("INFO", refs[0].split(":")[0], refs[0].split(":")[1], `Repeated alt (${refs.length} uses): ${alt}`);
 console.log("Image QA"); for (const [key, value] of Object.entries(summary)) console.log(`${key}: ${value}`);
