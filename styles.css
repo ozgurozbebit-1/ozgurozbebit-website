@@ -2238,7 +2238,7 @@ a.topic-card:hover {
 .sport-approved-note { display: flex; align-items: center; gap: 10px; margin: 44px 0 0; color: #d6e0e7; font-size: 13px; }
 .sport-approved-note i { display: block; width: 35px; height: 1px; background: var(--sport-green); }
 .sport-approved-strip { border-bottom: 1px solid #e3e9ef; background: #fff; }
-.sport-approved-sports { display: grid; grid-template-columns: repeat(8, 1fr); }
+.sport-approved-sports { display: grid; grid-template-columns: repeat(6, 1fr); }
 .sport-approved-sport { border-right: 1px solid #edf0f3; padding: 22px 8px; text-align: center; color: #182433; font-size: 12px; }
 .sport-approved-sport:last-child { border-right: 0; }
 .sport-approved-sport b { display: block; margin-bottom: 8px; font-size: 25px; }
@@ -2301,10 +2301,10 @@ a.topic-card:hover {
 .sport-zihin-page .sport-approved-hero {
   display: block;
   min-height: 0;
-  aspect-ratio: 1672 / 941;
+  aspect-ratio: 1672 / 782;
 }
 .sport-zihin-page .sport-approved-hero::after { display: none; }
-.sport-zihin-page .sport-approved-hero > img { object-fit: contain; object-position: center; }
+.sport-zihin-page .sport-approved-hero > img { object-fit: cover; object-position: center top; }
 .sport-zihin-page .sport-approved-hero-inner {
   position: absolute;
   inset: 0;
@@ -2324,7 +2324,7 @@ a.topic-card:hover {
 }
 .sport-zihin-page .sport-approved-actions {
   position: absolute;
-  top: 59.3%;
+  top: 71.3%;
   left: 6.6%;
   display: flex;
   width: 31%;
@@ -2345,10 +2345,256 @@ a.topic-card:hover {
   outline: 2px solid #fff;
   outline-offset: 3px;
 }
-.sport-zihin-page .sport-approved-strip { display: none; }
+.sport-branch-nav { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); background: #10233d; border-top: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.12); }
+.sport-branch-link { display: flex; min-height: 112px; flex-direction: column; align-items: center; justify-content: center; gap: 9px; border-right: 1px solid rgba(255,255,255,.14); color: #f4f7f8; font-size: 14px; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; transition: background-color 160ms ease, color 160ms ease; }
+.sport-branch-link:last-child { border-right: 0; }
+.sport-branch-icon { color: #8fd19e; font-size: 29px; line-height: 1; filter: grayscale(1) brightness(2.4); }
+.sport-branch-link > span:last-child { display: block; color: #f4f7f8; line-height: 1.2; }
+.sport-branch-link::after { width: 24px; height: 2px; margin-top: 2px; background: #8fd19e; content: ""; opacity: .72; }
+.sport-branch-link:hover { background: rgba(143,209,158,.12); color: #8fd19e; }
+.sport-branch-link:focus-visible { z-index: 1; outline: 3px solid #8fd19e; outline-offset: -5px; background: rgba(143,209,158,.16); }
 @media (max-width: 620px) {
-  .sport-zihin-page .sport-approved-actions { top: 55%; left: 4%; width: 70%; height: 22%; }
+  .sport-zihin-page .sport-approved-actions { top: 66%; left: 4%; width: 70%; height: 22%; }
+  .sport-branch-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sport-branch-link { min-height: 96px; border-bottom: 1px solid rgba(255,255,255,.14); font-size: 13px; }
+  .sport-branch-link:nth-child(3n) { border-right: 0; }
 }
+
+/* Spor & Zihin — temporary public coming-soon screen. Remove the body modifier to restore the prepared content. */
+.sport-coming-soon { display: none; }
+.sport-zihin-page--coming-soon .sport-zihin-live-content { display: none; }
+.sport-zihin-page--coming-soon .sport-coming-soon {
+  display: grid;
+  min-height: calc(100vh - 122px);
+  place-items: center;
+  padding: 136px 0 90px;
+  background:
+    radial-gradient(circle at 84% 17%, rgba(143, 209, 158, .2), transparent 27%),
+    linear-gradient(135deg, #10233d, #162e4e);
+  color: #fff;
+}
+.sport-coming-soon-content { max-width: 760px; text-align: center; }
+.sport-coming-soon-kicker {
+  display: inline-block;
+  margin: 0 0 22px;
+  border-bottom: 2px solid #f2c94c;
+  padding-bottom: 8px;
+  color: #8fd19e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.sport-coming-soon h1 {
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: clamp(52px, 9vw, 96px);
+  letter-spacing: -.055em;
+  line-height: .95;
+}
+.sport-coming-soon-title {
+  margin: 30px 0 18px;
+  color: #8fd19e;
+  font-size: clamp(21px, 3vw, 30px);
+  font-weight: 750;
+}
+.sport-coming-soon-content > p:not(.sport-coming-soon-kicker):not(.sport-coming-soon-title):not(.sport-coming-soon-signoff) {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #e5edf3;
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.7;
+}
+.sport-coming-soon-signoff {
+  margin: 36px 0 0;
+  color: #fff;
+  font-weight: 750;
+}
+@media (max-width: 620px) {
+  .sport-zihin-page--coming-soon .sport-coming-soon { min-height: calc(100vh - 102px); padding: 118px 0 62px; }
+  .sport-coming-soon-content { width: min(100% - 42px, 760px); }
+}
+
+/* Futbol & Zihin — approved reference integration */
+.sport-football-page { background: #fff; color: #182433; }
+.football-hero { min-height: 510px; display: flex; align-items: center; color: #fff; background: linear-gradient(90deg, rgba(7,20,37,.95) 0%, rgba(7,20,37,.78) 44%, rgba(7,20,37,.38) 100%), url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1800&q=85") center/cover; }
+.football-hero-inner { padding: 78px 0; }
+.football-eyebrow, .football-kicker { margin: 0; color: #8fd19e; font-size: 12px; font-weight: 900; letter-spacing: .22em; text-transform: uppercase; }
+.football-hero h1 { margin: 20px 0; color: #fff; font-family: Georgia, serif; font-size: clamp(58px, 8vw, 96px); letter-spacing: -.055em; line-height: .9; }
+.football-hero h1 span { color: #8fd19e; }
+.football-lead { max-width: 720px; margin: 0; color: #e4ebf0; font-size: 20px; line-height: 1.6; }
+.football-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.football-button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; border-radius: 10px; padding: 14px 19px; font-size: 14px; font-weight: 800; text-decoration: none; }
+.football-button-primary { background: #f2c94c; color: #10233d; }
+.football-button-ghost { border: 1px solid rgba(255,255,255,.45); color: #fff; }
+.football-subnav { border-bottom: 1px solid #e3e9ef; background: #fff; }
+.football-subnav-row { display: flex; gap: 26px; overflow: auto; padding: 17px 0; color: #182433; font-size: 13px; white-space: nowrap; }
+.football-subnav a, .football-subnav span { flex: 0 0 auto; }
+.football-subnav .is-active { color: #2f8a5b; font-weight: 800; }
+.football-section { padding: 76px 0; background: #fff; }
+.football-soft { background: #f7f9fc; }
+.football-section-head { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 28px; }
+.football-kicker { color: #2f8a5b; letter-spacing: .18em; }
+.football-section h2, .football-framework h2 { margin: 8px 0 0; color: #182433; font-family: Georgia, serif; font-size: clamp(34px, 4vw, 50px); letter-spacing: -.04em; line-height: 1.04; }
+.football-section-head > p { max-width: 520px; margin: 0; color: #6b7785; line-height: 1.7; }
+.football-profile-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.football-profile-grid article, .football-side article { border: 1px solid #e3e9ef; border-radius: 18px; background: #fff; box-shadow: 0 18px 45px rgba(16,35,61,.10); }
+.football-profile-grid article { padding: 23px; }
+.football-profile-grid b { display: block; margin-bottom: 9px; color: #2f8a5b; font-size: 14px; }
+.football-profile-grid p { margin: 0; color: #6b7785; font-size: 14px; line-height: 1.5; }
+.football-featured { display: grid; grid-template-columns: 1.35fr .65fr; gap: 22px; }
+.football-big { overflow: hidden; border: 1px solid #e3e9ef; border-radius: 22px; background: #fff; box-shadow: 0 18px 45px rgba(16,35,61,.10); }
+.football-big-image { position: relative; height: 340px; background: url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1400&q=85") center/cover; }
+.football-big-image span { position: absolute; top: 20px; left: 20px; border-radius: 7px; padding: 8px 11px; background: #f2c94c; color: #10233d; font-size: 11px; font-weight: 900; }
+.football-big-copy { padding: 27px; }
+.football-big h3 { margin: 0 0 10px; font-family: Georgia, serif; font-size: 34px; line-height: 1.08; }
+.football-big p { color: #6b7785; line-height: 1.65; }
+.football-side { display: grid; gap: 14px; }
+.football-side article { padding: 20px; }
+.football-side p, .football-cards article > div:last-child > p { margin: 0; color: #2f8a5b; font-size: 11px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
+.football-side h3 { margin: 7px 0; font-size: 20px; line-height: 1.2; }
+.football-side span { color: #6b7785; font-size: 14px; line-height: 1.5; }
+.football-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.football-cards article { overflow: hidden; border: 1px solid #e3e9ef; border-radius: 18px; background: #fff; }
+.football-card-image { height: 205px; background-position: center; background-size: cover; }
+.football-card-penalty { background-image: url("https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=900&q=80"); }
+.football-card-team { background-image: url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=900&q=80"); }
+.football-card-youth { background-image: url("https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80"); }
+.football-cards article > div:last-child { padding: 20px; }
+.football-cards h3 { margin: 9px 0; font-size: 21px; line-height: 1.18; }
+.football-cards span { color: #6b7785; font-size: 14px; line-height: 1.55; }
+.football-framework { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; align-items: start; }
+.football-framework > div > p:not(.football-kicker) { color: #6b7785; line-height: 1.75; }
+.football-checks { display: grid; gap: 11px; margin: 0; padding: 30px; border-radius: 22px; background: #10233d; color: #fff; list-style: none; counter-reset: football-check; }
+.football-checks li { border: 1px solid rgba(255,255,255,.13); border-radius: 11px; padding: 14px; counter-increment: football-check; }
+.football-checks li::before { margin-right: 7px; color: #f2c94c; content: counter(football-check, decimal-leading-zero); font-weight: 800; }
+.football-quote { padding: 65px 0; background: linear-gradient(90deg, rgba(7,20,37,.96), rgba(7,20,37,.78)), url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1800&q=85") center/cover; color: #fff; }
+.football-quote blockquote { max-width: 800px; margin: 0; font-family: Georgia, serif; font-size: 36px; font-style: italic; line-height: 1.32; }
+.football-quote p { color: #ccd6dd; }
+@media (max-width: 900px) { .football-profile-grid { grid-template-columns: repeat(2,1fr); }.football-featured, .football-framework { grid-template-columns: 1fr; }.football-cards { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 620px) { .football-hero { min-height: 470px; }.football-hero-inner { padding: 60px 0; }.football-lead { font-size: 17px; }.football-profile-grid, .football-cards { grid-template-columns: 1fr; }.football-section { padding: 56px 0; }.football-section-head { display: block; }.football-section-head > p { margin-top: 14px; }.football-big-image { height: 250px; }.football-big h3 { font-size: 28px; }.football-quote blockquote { font-size: 28px; } }
+
+/* Sualtı Rugby & Zihin — approved reference variations on the shared football template */
+.sport-rugby-page .football-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94) 0%, rgba(7,20,37,.74) 44%, rgba(7,20,37,.24) 100%), url("/assets/sualti-rugby-hero.jpg"); }
+.sport-rugby-page .football-hero h1 { font-size: clamp(54px, 7vw, 92px); }
+.sport-rugby-page .football-big-image { background-image: url("/assets/sualti-rugby-featured.jpg"); }
+.sport-rugby-page .football-card-penalty { background-image: url("/assets/sualti-rugby-action.jpg"); }
+.sport-rugby-page .football-card-team { background-image: url("/assets/sualti-rugby-team.jpg"); }
+.sport-rugby-page .football-card-youth { background-image: url("/assets/sualti-rugby-youth.jpg"); }
+.sport-rugby-page .football-quote { background-image: linear-gradient(90deg, rgba(7,20,37,.97), rgba(7,20,37,.72)), url("/assets/sualti-rugby-team.jpg"); }
+.football-atlas { margin: 18px 0 0; text-align: right; }
+.football-atlas a { color: #2f8a5b; font-size: 14px; font-weight: 800; text-decoration: none; }
+
+/* Tenis & Zihin — approved reference variations on the shared football template */
+.sport-tennis-page .football-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.96) 0%, rgba(7,20,37,.78) 44%, rgba(7,20,37,.35) 100%), url("https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1800&q=85"); }
+.sport-tennis-page .football-big-image { background-image: url("https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1400&q=85"); }
+.sport-tennis-page .football-card-penalty { background-image: url("https://images.unsplash.com/photo-1599586120429-48281b6f0ece?auto=format&fit=crop&w=900&q=80"); }
+.sport-tennis-page .football-card-team { background-image: url("https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?auto=format&fit=crop&w=900&q=80"); }
+.sport-tennis-page .football-card-youth { background-image: url("https://images.unsplash.com/photo-1542144582-1ba00456b5e3?auto=format&fit=crop&w=900&q=80"); }
+.sport-tennis-page .football-quote { background-image: linear-gradient(90deg, rgba(7,20,37,.97), rgba(7,20,37,.76)), url("https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1800&q=85"); }
+
+/* Basketbol & Zihin — approved reference variations on the shared football template */
+.sport-basketball-page .football-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.96) 0%, rgba(7,20,37,.78) 44%, rgba(7,20,37,.36) 100%), url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1800&q=85"); }
+.sport-basketball-page .football-big-image { background-image: url("https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1400&q=85"); }
+.sport-basketball-page .football-card-penalty { background-image: url("https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=900&q=80"); }
+.sport-basketball-page .football-card-team { background-image: url("https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?auto=format&fit=crop&w=900&q=80"); }
+.sport-basketball-page .football-card-youth { background-image: url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=900&q=80"); }
+.sport-basketball-page .football-quote { background-image: linear-gradient(90deg, rgba(7,20,37,.97), rgba(7,20,37,.76)), url("https://images.unsplash.com/photo-1518063319789-7217e6706b04?auto=format&fit=crop&w=1800&q=85"); }
+
+/* Voleybol & Zihin — approved reference variations on the shared football template */
+.sport-volleyball-page .football-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.96) 0%, rgba(7,20,37,.78) 44%, rgba(7,20,37,.35) 100%), url("https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=1800&q=85"); }
+.sport-volleyball-page .football-big-image { background-image: url("https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=1400&q=85"); }
+.sport-volleyball-page .football-card-penalty { background-image: url("https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=900&q=80"); }
+.sport-volleyball-page .football-card-team { background-image: url("https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=900&q=80"); }
+.sport-volleyball-page .football-card-youth { background-image: url("https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=900&q=80"); background-position: right center; }
+.sport-volleyball-page .football-quote { background-image: linear-gradient(90deg, rgba(7,20,37,.97), rgba(7,20,37,.76)), url("https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=1800&q=85"); }
+
+/* Spor & Zihin — all branches directory */
+.sport-branches-hero { min-height: 380px; background-image: radial-gradient(circle at 81% 18%, rgba(143,209,158,.22), transparent 23%), linear-gradient(135deg, #10233d, #18314f); }
+.sport-all-branches-page .football-hero h1 { font-size: clamp(54px, 7vw, 86px); }
+.sport-branch-directory { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.sport-branch-directory > a, .sport-branch-directory > article { display: flex; min-height: 214px; flex-direction: column; align-items: flex-start; border: 1px solid #e3e9ef; border-radius: 18px; padding: 24px; background: #fff; color: #182433; box-shadow: 0 18px 45px rgba(16,35,61,.08); text-decoration: none; }
+.sport-branch-directory b { margin-bottom: 26px; font-size: 29px; line-height: 1; }
+.sport-branch-directory strong { font-family: Georgia, serif; font-size: 26px; line-height: 1.05; }
+.sport-branch-directory span { margin-top: 10px; color: #6b7785; font-size: 14px; line-height: 1.5; }
+.sport-branch-directory em { margin-top: auto; padding-top: 18px; color: #2f8a5b; font-size: 13px; font-style: normal; font-weight: 800; }
+.sport-branch-directory-pending > article { box-shadow: none; opacity: .78; }
+.sport-branch-directory-pending em { color: #6b7785; }
+@media (max-width: 900px) { .sport-branch-directory { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .sport-branches-hero { min-height: 360px; }.sport-branch-directory { grid-template-columns: 1fr; }.sport-branch-directory > a, .sport-branch-directory > article { min-height: 186px; } }
+
+/* Futbol & Zihin — article pages */
+.football-card-link { display: block; height: 100%; color: inherit; text-decoration: none; }
+.sport-football-page .football-card-youth { background-image: url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80"); }
+.football-cards article:has(.football-card-link) { cursor: pointer; transition: transform .22s ease, box-shadow .22s ease; }
+.football-cards article:has(.football-card-link):hover { transform: translateY(-5px); box-shadow: 0 18px 32px rgba(16,35,61,.16); }
+.football-cards article:has(.football-card-link:focus-visible) { outline: 3px solid #8fd19e; outline-offset: 3px; }
+.football-card-read { display: block; margin-top: 16px; color: #2f8a5b; font-size: 13px; font-weight: 800; }
+.sport-football-article-hero { min-height: 455px; padding: 44px 0 62px; background: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=1800&q=85") center/cover; color: #fff; }
+.sport-football-article-reset .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1800&q=85"); }
+.sport-football-article-team .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1800&q=85"); }
+.sport-football-breadcrumb { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 54px; color: #d9e2e9; font-size: 13px; }
+.sport-football-breadcrumb a { color: #fff; text-decoration: none; }
+.sport-football-article-hero h1 { max-width: 900px; margin: 18px 0; color: #fff; font-family: Georgia, serif; font-size: clamp(43px, 6vw, 76px); letter-spacing: -.05em; line-height: .98; }
+.sport-football-article-hero > div > p:last-child { max-width: 700px; margin: 0; color: #e1e9ee; font-size: 19px; line-height: 1.55; }
+.sport-football-article { max-width: 800px; padding: 62px 0 54px; color: #263847; }
+.sport-football-article p, .sport-football-article li { font-size: 17px; line-height: 1.72; }
+.sport-football-article p { margin: 0 0 17px; }
+.sport-football-intro { margin-top: 0; color: #304a63; font-family: Georgia, serif; font-size: 27px !important; line-height: 1.42 !important; }
+.sport-football-article section { margin-top: 34px; }
+.sport-football-article h2 { position: relative; margin: 0 0 13px; padding-top: 14px; color: #10233d; font-family: Georgia, serif; font-size: clamp(31px, 3.2vw, 42px); letter-spacing: -.035em; line-height: 1.08; }
+.sport-football-article h2::before { position: absolute; top: 0; left: 0; width: 42px; height: 3px; border-radius: 2px; background: #8fd19e; content: ""; }
+.sport-football-article ul, .sport-football-article ol { padding-left: 24px; }
+.sport-football-article li + li { margin-top: 7px; }
+.sport-football-inline-feature { position: relative; width: min(1020px, calc(100vw - 48px)); height: 310px; margin: 36px 50% 34px; overflow: hidden; transform: translateX(-50%); border-radius: 16px; background: #10233d; }
+.sport-football-inline-feature::after { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,24,43,.88) 0%, rgba(8,24,43,.5) 58%, rgba(8,24,43,.2) 100%); content: ""; }
+.sport-football-inline-feature img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.sport-football-inline-feature--penalty img { object-position: center 60%; }
+.sport-football-inline-feature--reset img { object-position: center 45%; }
+.sport-football-inline-feature--team img { object-position: center 48%; }
+.sport-football-inline-feature figcaption { position: absolute; z-index: 1; bottom: 32px; left: max(28px, calc((100% - 850px) / 2)); max-width: 680px; margin: 0; color: #fff; font-family: Georgia, serif; font-size: clamp(24px, 3vw, 38px); font-weight: 700; letter-spacing: -.025em; line-height: 1.08; }
+.sport-football-takeaway { margin: 34px 0; border-left: 4px solid #8fd19e; border-radius: 0 12px 12px 0; padding: 21px 24px 18px; background: #f1f7f9; }
+.sport-football-takeaway-title { margin-bottom: 10px !important; color: #10233d; font-family: Georgia, serif; font-size: 23px !important; font-weight: 700; line-height: 1.2 !important; }
+.sport-football-takeaway ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 28px; margin: 0; padding-left: 20px; }
+.sport-football-takeaway li { color: #304a63; font-size: 15px !important; line-height: 1.5 !important; }
+.sport-football-takeaway li + li { margin-top: 0; }
+.sport-football-sources { margin-top: 36px !important; border-top: 1px solid #d8e2e9; padding-top: 21px; }
+.sport-football-sources h2 { margin-bottom: 10px; padding-top: 0; font-family: inherit; font-size: 18px; letter-spacing: 0; }
+.sport-football-sources h2::before { display: none; }
+.sport-football-sources li { color: #536878; font-size: 14px !important; line-height: 1.55 !important; }
+.sport-football-related { margin-top: 36px !important; border-top: 1px solid #d8e2e9; padding-top: 22px; }
+.sport-football-related > div { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.sport-football-related a { display: flex; min-height: 105px; flex-direction: column; border: 1px solid #dbe5eb; border-radius: 14px; padding: 18px; color: #10233d; font-family: Georgia, serif; font-size: 19px; line-height: 1.18; text-decoration: none; }
+.sport-football-related a span { display: block; margin-top: 12px; color: #2f8a5b; font-family: inherit; }
+@media (max-width: 620px) { .sport-football-article-hero { min-height: 410px; padding: 36px 0 48px; }.sport-football-breadcrumb { margin-bottom: 42px; }.sport-football-article { width: min(100% - 40px, 800px); padding: 46px 0; }.sport-football-article p, .sport-football-article li { font-size: 16px; line-height: 1.7; }.sport-football-article section { margin-top: 30px; }.sport-football-article h2 { font-size: 30px; }.sport-football-intro { font-size: 23px !important; }.sport-football-inline-feature { width: 100%; height: 248px; margin: 30px 0; transform: none; border-radius: 12px; }.sport-football-inline-feature::after { background: linear-gradient(0deg, rgba(8,24,43,.92), rgba(8,24,43,.18) 78%); }.sport-football-inline-feature figcaption { right: 20px; bottom: 20px; left: 20px; font-size: 25px; }.sport-football-takeaway { margin: 30px 0; padding: 18px 18px 16px; }.sport-football-takeaway ul { grid-template-columns: 1fr; gap: 5px; }.sport-football-related > div { grid-template-columns: 1fr; } }
+
+/* Penaltı makalesi: genel section padding'i yerine kesintisiz editorial akış. */
+.sport-football-article-penalty .article-content { max-width: 800px; width: min(800px, calc(100% - 40px)); margin: 0 auto; }
+.sport-football-article-penalty .article-content > section:not(.sport-football-sources):not(.sport-football-related) { min-height: 0; height: auto; margin: 0; padding: 0; display: block; }
+.sport-football-article-penalty .article-content > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin: 34px 0 12px; }
+.sport-football-article-penalty .article-content p { margin: 0 0 16px; }
+.sport-football-article-penalty .article-content ul, .sport-football-article-penalty .article-content ol { margin: 12px 0 20px; }
+.sport-football-article-penalty .article-content figure { width: 100%; margin: 28px 0; transform: none; }
+.sport-football-article-penalty .article-content .sport-football-takeaway { margin: 28px 0; }
+.sport-football-article-penalty .article-content .sport-football-sources { min-height: 0; height: auto; margin: 34px 0 0 !important; padding: 21px 0 0 !important; display: block; }
+.sport-football-article-penalty .article-content .sport-football-sources h2 { margin: 0 0 10px; }
+.sport-football-article-penalty .article-content .sport-football-related { min-height: 0; height: auto; margin: 34px 0 0 !important; padding: 22px 0 0 !important; display: block; }
+@media (max-width: 620px) { .sport-football-article-penalty .article-content { width: calc(100% - 40px); }.sport-football-article-penalty .article-content > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin-top: 30px; }.sport-football-article-penalty .article-content figure, .sport-football-article-penalty .article-content .sport-football-takeaway { margin: 28px 0; } }
+
+/* Sualtı Rugby makaleleri, onaylanan Futbol makale akışını kullanır. */
+.sport-rugby-article .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.62)), url("/assets/sualti-rugby-hero.jpg"); background-position: center; }
+.sport-approved-article-flow { max-width: 800px; width: min(800px, calc(100% - 40px)); margin: 0 auto; }
+.sport-approved-article-flow > section:not(.sport-football-sources):not(.sport-football-related) { min-height: 0; height: auto; margin: 0; padding: 0; display: block; }
+.sport-approved-article-flow > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin: 34px 0 12px; }
+.sport-approved-article-flow p { margin: 0 0 16px; }
+.sport-approved-article-flow ul, .sport-approved-article-flow ol { margin: 12px 0 20px; }
+.sport-approved-article-flow figure { width: 100%; margin: 28px 0; transform: none; }
+.sport-approved-article-flow .sport-football-takeaway { margin: 28px 0; }
+.sport-approved-article-flow .sport-football-sources { min-height: 0; height: auto; margin: 34px 0 0 !important; padding: 21px 0 0 !important; display: block; }
+.sport-approved-article-flow .sport-football-sources h2 { margin: 0 0 10px; }
+.sport-approved-article-flow .sport-football-related { min-height: 0; height: auto; margin: 34px 0 0 !important; padding: 22px 0 0 !important; display: block; }
+@media (max-width: 620px) { .sport-approved-article-flow { width: calc(100% - 40px); }.sport-approved-article-flow > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin-top: 30px; }.sport-approved-article-flow figure, .sport-approved-article-flow .sport-football-takeaway { margin: 28px 0; } }
 
 
 .test-page .detail-hero {
