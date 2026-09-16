@@ -2538,7 +2538,7 @@ a.topic-card:hover {
 .football-cards article:has(.football-card-link:focus-visible) { outline: 3px solid #8fd19e; outline-offset: 3px; }
 .football-card-read { display: block; margin-top: 16px; color: #2f8a5b; font-size: 13px; font-weight: 800; }
 .sport-football-article-hero { min-height: 455px; padding: 44px 0 62px; background: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=1800&q=85") center/cover; color: #fff; }
-.sport-football-article-reset .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1800&q=85"); }
+.sport-football-article-reset .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://unsplash.com/photos/hWMi25MJhQo/download?force=true&w=1800"); }
 .sport-football-article-team .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.68)), url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1800&q=85"); }
 .sport-tennis-article .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.6)), url("https://unsplash.com/photos/tQs6P_epXmo/download?force=true&w=1800"); background-position: center; }
 .sport-football-breadcrumb { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 54px; color: #d9e2e9; font-size: 13px; }
@@ -2582,7 +2582,8 @@ a.topic-card:hover {
 .sport-football-article-penalty .article-content > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin: 34px 0 12px; }
 .sport-football-article-penalty .article-content p { margin: 0 0 16px; }
 .sport-football-article-penalty .article-content ul, .sport-football-article-penalty .article-content ol { margin: 12px 0 20px; }
-.sport-football-article-penalty .article-content figure { width: 100%; margin: 28px 0; transform: none; }
+.sport-football-article-penalty .article-content figure { width: 100%; max-width: 100%; margin: 28px 0; margin-left: 0; margin-right: 0; transform: none; }
+.sport-football-article-penalty .article-content figure img { max-width: 100%; object-fit: cover; }
 .sport-football-article-penalty .article-content .sport-football-takeaway { margin: 28px 0; }
 .sport-football-article-penalty .article-content .sport-football-sources { min-height: 0; height: auto; margin: 34px 0 0 !important; padding: 21px 0 0 !important; display: block; }
 .sport-football-article-penalty .article-content .sport-football-sources h2 { margin: 0 0 10px; }
