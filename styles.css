@@ -2279,6 +2279,9 @@ a.topic-card:hover {
 .sport-approved-item strong, .sport-approved-item small { display: block; }
 .sport-approved-item strong { line-height: 1.25; }
 .sport-approved-item small { margin-top: 6px; color: #6b7785; line-height: 1.35; }
+.sport-approved-item[href] { color: inherit; cursor: pointer; text-decoration: none; }
+.sport-approved-item[href]:hover strong { color: #176b5b; }
+.sport-approved-item[href]:focus-visible { border-radius: 8px; outline: 3px solid #8fd19e; outline-offset: 3px; }
 .sport-approved-articles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .sport-approved-articles article > div { height: 210px; }
 .sport-approved-articles article img { width: 100%; height: 100%; object-fit: cover; }
