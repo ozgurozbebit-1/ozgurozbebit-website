@@ -4,3 +4,4 @@ Disallow: /admin
 Disallow: /api/
 
 Sitemap: https://www.ozgurozbebit.com.tr/sitemap.xml
+Sitemap: https://www.ozgurozbebit.com.tr/sitemap-spor-zihin.xml
