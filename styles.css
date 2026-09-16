@@ -2596,6 +2596,9 @@ a.topic-card:hover {
 .sport-approved-article-flow .sport-football-related { min-height: 0; height: auto; margin: 34px 0 0 !important; padding: 22px 0 0 !important; display: block; }
 @media (max-width: 620px) { .sport-approved-article-flow { width: calc(100% - 40px); }.sport-approved-article-flow > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin-top: 30px; }.sport-approved-article-flow figure, .sport-approved-article-flow .sport-football-takeaway { margin: 28px 0; } }
 
+/* Haftanın analizi: Fenerbahçe–Gaziantep FK maç bağlamına uygun görsel. */
+.sport-analysis-match .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.62)), url("https://img.gazetemerhaba.com/rcman/Cw820h462q95gc/storage/files/images/2026/03/17/fenerbahce-gaziantep-maci-canli-yay-1zez.jpg"); background-position: center; }
+
 
 .test-page .detail-hero {
   background: linear-gradient(135deg, rgba(246, 243, 237, 0.98), rgba(111, 139, 121, 0.12));
