@@ -17,8 +17,9 @@ Bu klasör, Spor & Zihin içindeki haftalık maç analizlerinin kalıcı sayfala
 4. `/spor-zihin/futbol/` içindeki büyük **90 Dakikanın Psikolojisi** kartını yeni analize, başlığa, kısa maç bilgisine, görsele ve CTA bağlantısına güncelleyin.
 5. `/spor-zihin/90-dakikanin-psikolojisi/` arşivinde **Bu haftanın analizi** alanını yeni makaleye taşıyın.
 6. Bir önceki güncel analizi aynı arşivdeki **Önceki analizler** bölümüne, en yeni içerik üstte kalacak biçimde ekleyin.
-7. `sitemap-spor-zihin.xml` içine yeni kalıcı URL’yi ekleyin.
-8. Yeni sayfanın tek H1, doğru canonical, `index, follow`, geçerli Article JSON-LD ve çalışan internal linklere sahip olduğunu yerelde doğrulayın.
+7. Yeni yazının kendi **İlgili Yazılar** bölümünde yalnız en yeni iki önceki Haftanın Psikoanalizi yazısını gösterin. Güncel yazıyı listeye eklemeyin; toplam iki analiz varsa yalnız bir önceki kartı gösterin, toplam tek analiz varsa bölümü göstermeyin.
+8. `sitemap-spor-zihin.xml` içine yeni kalıcı URL’yi ekleyin.
+9. Yeni sayfanın tek H1, doğru canonical, `index, follow`, geçerli Article JSON-LD ve çalışan internal linklere sahip olduğunu yerelde doğrulayın.
 
 ## Arşiv sıralaması
 
