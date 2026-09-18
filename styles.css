@@ -2561,6 +2561,9 @@ a.topic-card:hover {
 .sport-football-inline-feature--reset img { object-position: center 45%; }
 .sport-football-inline-feature--team img { object-position: center 48%; }
 .sport-football-inline-feature figcaption { position: absolute; z-index: 1; bottom: 32px; left: max(28px, calc((100% - 850px) / 2)); max-width: 680px; margin: 0; color: #fff; font-family: Georgia, serif; font-size: clamp(24px, 3vw, 38px); font-weight: 700; letter-spacing: -.025em; line-height: 1.08; }
+.sport-tennis-talk-photo { width: 100%; max-width: 100%; margin: 28px 0; }
+.sport-tennis-talk-photo img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; object-fit: contain; }
+.sport-tennis-talk-photo figcaption { margin-top: 8px; color: #6b7785; font-size: 13px; line-height: 1.45; }
 .sport-football-takeaway { margin: 34px 0; border-left: 4px solid #8fd19e; border-radius: 0 12px 12px 0; padding: 21px 24px 18px; background: #f1f7f9; }
 .sport-football-takeaway-title { margin-bottom: 10px !important; color: #10233d; font-family: Georgia, serif; font-size: 23px !important; font-weight: 700; line-height: 1.2 !important; }
 .sport-football-takeaway ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 28px; margin: 0; padding-left: 20px; }
