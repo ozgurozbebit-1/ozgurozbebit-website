@@ -2595,6 +2595,9 @@ a.topic-card:hover {
 
 /* Sualtı Rugby makaleleri, onaylanan Futbol makale akışını kullanır. */
 .sport-rugby-article .sport-football-article-hero { background-image: linear-gradient(90deg, rgba(7,20,37,.94), rgba(7,20,37,.62)), url("/assets/sualti-rugby-hero.jpg"); background-position: center; }
+.sport-football-article-trabzon .sport-football-article-hero { background-image: radial-gradient(circle at 82% 14%, rgba(143,209,158,.18), transparent 31%), linear-gradient(135deg, #10233d 0%, #172f4d 58%, #0b192b 100%); }
+.sport-football-statement { margin: 28px 0; border-left: 3px solid #8fd19e; padding: 16px 20px; background: #eef4f5; color: #10233d; font-family: Georgia, serif; font-size: clamp(22px, 3vw, 32px); font-weight: 700; letter-spacing: -.02em; line-height: 1.16; }
+.sport-football-statement--closing { margin-top: 36px; background: #10233d; color: #fff; }
 .sport-approved-article-flow { max-width: 800px; width: min(800px, calc(100% - 40px)); margin: 0 auto; }
 .sport-approved-article-flow > section:not(.sport-football-sources):not(.sport-football-related) { min-height: 0; height: auto; margin: 0; padding: 0; display: block; }
 .sport-approved-article-flow > section:not(.sport-football-sources):not(.sport-football-related) h2 { margin: 34px 0 12px; }
