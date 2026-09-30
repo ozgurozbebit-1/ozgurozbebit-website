@@ -15,6 +15,8 @@ const socialPhobiaRoot = document.querySelector("[data-social-phobia]");
 const contactDataElement = document.querySelector("#site-contact-data");
 
 const contactOverrides = {
+  phone: "+90 505 218 48 74",
+  phoneHref: "tel:+905052184874",
   email: "info@ozgurozbebit.com.tr",
   emailHref: "mailto:info@ozgurozbebit.com.tr",
   emailAppointmentHref: "mailto:info@ozgurozbebit.com.tr?subject=Randevu%20Talebi",
@@ -531,10 +533,22 @@ const showUnderConstruction = (event) => {
   window.alert("Yapım aşamasında.");
 };
 
-const temporaryAppointmentCtasVisible = false;
+const temporaryAppointmentCtasVisible = true;
 
 const hideTemporaryAppointmentButtons = () => {
   if (temporaryAppointmentCtasVisible) {
+    document.querySelectorAll("a.button, a.topic-card").forEach((button) => {
+      const label = button.textContent.replace(/\s+/g, " ").trim();
+      const isAppointmentButton = label.includes("Randevu Al") || label.includes("Randevu Talebi");
+      const isAppointmentCard = button.classList.contains("topic-card") && (button.getAttribute("href") || "").includes("/randevu/");
+
+      if (isAppointmentButton || isAppointmentCard) {
+        button.classList.remove("appointment-cta-temporarily-hidden");
+        button.removeAttribute("aria-hidden");
+        button.removeAttribute("tabindex");
+        button.setAttribute("href", "/randevu/");
+      }
+    });
     return;
   }
 
@@ -557,8 +571,11 @@ hideTemporaryAppointmentButtons();
 
 const applyChatContactOverrides = () => {
   document.querySelectorAll('.chat-actions [data-contact-href="phone"]').forEach((element) => {
-    element.setAttribute("href", "#");
-    element.addEventListener("click", showUnderConstruction);
+    element.hidden = false;
+    element.setAttribute("href", contactOverrides.phoneHref);
+    if (!element.textContent.trim() || element.textContent.trim() === "Telefonla Ara") {
+      element.textContent = `Telefonla Ara · ${contactOverrides.phone}`;
+    }
   });
 
   document.querySelectorAll('.chat-actions [data-contact-href="whatsapp"]').forEach((element) => {
@@ -670,7 +687,12 @@ ensureResourceCenterNavLink();
 
 if (contactDataElement) {
   try {
-    const contact = JSON.parse(contactDataElement.textContent);
+    const parsedContact = JSON.parse(contactDataElement.textContent);
+    const contact = {
+      ...parsedContact,
+      phone: parsedContact.phone || contactOverrides.phone,
+      phoneHref: parsedContact.phoneHref || contactOverrides.phoneHref,
+    };
     const hrefs = {
       phone: contact.phoneHref,
       whatsapp: contact.whatsappHref,
