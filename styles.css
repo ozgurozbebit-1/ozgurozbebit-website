@@ -3792,6 +3792,234 @@ a.topic-card:hover {
   font-weight: 800;
 }
 
+/* Public appointment request: availability only; no patient records are rendered here. */
+.appointment-page {
+  max-width: 1120px;
+}
+
+.appointment-booking-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 24px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.appointment-calendar-card,
+.appointment-help-card,
+.appointment-request-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.82);
+  padding: 24px;
+}
+
+.appointment-calendar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.appointment-calendar-head .eyebrow,
+.appointment-request-card .eyebrow {
+  margin: 0 0 5px;
+}
+
+.appointment-calendar-head h3,
+.appointment-help-card h3 {
+  margin: 0;
+  color: var(--ink);
+}
+
+.appointment-calendar-navigation {
+  display: flex;
+  gap: 8px;
+}
+
+.appointment-calendar-navigation button {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.appointment-calendar-navigation button:hover:not(:disabled),
+.appointment-calendar-navigation button:focus-visible {
+  border-color: var(--teal);
+  outline: 2px solid rgba(46, 122, 117, 0.24);
+  outline-offset: 2px;
+}
+
+.appointment-calendar-navigation button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.appointment-calendar-days {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.appointment-day {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.appointment-day h3 {
+  margin: 0;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.appointment-slot-list {
+  display: grid;
+  gap: 6px;
+  padding: 8px;
+}
+
+.appointment-slot {
+  width: 100%;
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.appointment-slot--available {
+  background: rgba(183, 226, 210, 0.34);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.appointment-slot--available:hover,
+.appointment-slot--available:focus-visible {
+  border-color: var(--teal);
+  background: rgba(183, 226, 210, 0.68);
+  outline: 2px solid rgba(46, 122, 117, 0.22);
+  outline-offset: 1px;
+}
+
+.appointment-slot--busy {
+  background: rgba(26, 53, 51, 0.05);
+  color: var(--muted);
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.appointment-closed,
+.appointment-loading {
+  min-height: 320px;
+  display: grid;
+  margin: 0;
+  place-items: center;
+  color: var(--muted);
+  font-size: 22px;
+}
+
+.appointment-loading {
+  font-size: 13px;
+}
+
+.appointment-calendar-status,
+.appointment-form-message {
+  min-height: 1.5em;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.appointment-calendar-status.is-error,
+.appointment-form-message.is-error {
+  color: #9f302c;
+}
+
+.appointment-form-message.is-success {
+  color: var(--teal);
+}
+
+.appointment-help-card p {
+  margin: 14px 0;
+}
+
+.appointment-help-card .text-link {
+  display: inline-flex;
+  margin-top: 6px;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.appointment-request-card {
+  margin-top: 30px;
+}
+
+.appointment-request-card h2 {
+  margin: 0 0 8px;
+}
+
+.appointment-selected {
+  margin: 0 0 20px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.appointment-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.appointment-form-grid label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.appointment-form-grid input,
+.appointment-form-grid select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  padding: 9px 11px;
+}
+
+.appointment-form-grid input:focus,
+.appointment-form-grid select:focus {
+  border-color: var(--teal);
+  outline: 2px solid rgba(46, 122, 117, 0.2);
+  outline-offset: 1px;
+}
+
+.appointment-notes {
+  max-width: 800px;
+}
+
 @media (max-width: 980px) {
   .weird-cases-home,
   .weird-case-list {
@@ -3846,4 +4074,34 @@ a.topic-card:hover {
   .pdf-preview-card .pdf-cover {
     min-height: 170px;
   }
+
+  .appointment-booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .appointment-calendar-card,
+  .appointment-help-card,
+  .appointment-request-card {
+    padding: 18px;
+  }
+
+  .appointment-calendar-days {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .appointment-closed,
+  .appointment-loading {
+    min-height: 190px;
+  }
+
+  .appointment-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
