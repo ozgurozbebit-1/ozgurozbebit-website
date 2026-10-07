@@ -4105,3 +4105,108 @@ a.topic-card:hover {
   }
 }
 }
+
+
+/* Contact page */
+.standalone-contact {
+  margin-top: 22px;
+  gap: 0;
+}
+.standalone-contact .contact-detail {
+  display: grid;
+  gap: 4px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.standalone-contact .contact-detail strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+.standalone-contact .contact-detail span,
+.standalone-contact .contact-detail a {
+  display: block;
+  padding: 0;
+  border: 0;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.55;
+  text-decoration: none;
+}
+.standalone-contact .contact-detail a:hover {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.contact-form-section {
+  margin-top: 34px;
+}
+.contact-form-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 253, 248, 0.82);
+  padding: clamp(22px, 4vw, 34px);
+  box-shadow: 0 14px 34px rgba(32, 49, 45, 0.06);
+}
+.contact-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 22px;
+}
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.contact-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-weight: 800;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  padding: 11px 12px;
+}
+.contact-form input {
+  min-height: 46px;
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--teal);
+  outline: 2px solid rgba(46, 122, 117, 0.2);
+  outline-offset: 1px;
+}
+.contact-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+.contact-form-status {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+.contact-form-status.is-success { color: var(--teal); }
+.contact-form-status.is-error { color: #9f302c; }
+.contact-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+@media (max-width: 620px) {
+  .contact-form-grid { grid-template-columns: 1fr; }
+}
