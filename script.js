@@ -1,3 +1,19 @@
+/* GOOGLE_ADS_TAG_AW_18499912391 */
+(() => {
+  const googleAdsId = "AW-18499912391";
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", googleAdsId);
+
+  if (!document.querySelector(`script[src*="googletagmanager.com/gtag/js?id=${googleAdsId}"]`)) {
+    const googleTagScript = document.createElement("script");
+    googleTagScript.async = true;
+    googleTagScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`;
+    document.head.appendChild(googleTagScript);
+  }
+})();
+
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const toggle = document.querySelector("[data-nav-toggle]");
