@@ -68,10 +68,35 @@
       </section>
       <article class="approach-article" aria-label="İletişim">
         <section><h2>İletişim Bilgileri</h2><p class="lead">Randevu ve bilgi almak için aşağıdaki iletişim seçeneklerinden yararlanabilirsiniz.</p><div class="contact-list standalone-contact">
-            <p><strong>Açık adres:</strong><br>Yeni Mahalle, Kurtuluş Cad., Deniz Apt. No: 36, Daire: 5, Didim / Aydın</p>
-            <p><strong>Telefon:</strong><br><a href="tel:+905052184874">0 505 218 48 74</a></p>
-            <p><strong>E-posta:</strong><br><a href="mailto:ozbebit@gmail.com">ozbebit@gmail.com</a></p>
+            <div class="contact-detail"><strong>Açık adres</strong><span>Yeni Mahalle, Kurtuluş Cad., Deniz Apt. No: 36, Daire: 5, Didim / Aydın</span></div>
+            <div class="contact-detail"><strong>Telefon</strong><a href="tel:+905052184874">0 505 218 48 74</a></div>
+            <div class="contact-detail"><strong>E-posta</strong><a href="mailto:ozbebit@gmail.com">ozbebit@gmail.com</a></div>
           </div></section>
+        <section class="contact-form-section" aria-labelledby="contact-form-title">
+          <div class="contact-form-card">
+            <p class="eyebrow">Bize Ulaşın</p>
+            <h2 id="contact-form-title">Sorunuzu iletin</h2>
+            <p class="lead">Aşağıdaki formu doldurarak mesajınızı doğrudan iletebilirsiniz.</p>
+            <form id="contact-form" class="contact-form">
+              <div class="contact-form-grid">
+                <label>Ad Soyad
+                  <input type="text" name="name" autocomplete="name" maxlength="120" required>
+                </label>
+                <label>E-posta Adresi
+                  <input type="email" name="email" autocomplete="email" maxlength="160" required>
+                </label>
+              </div>
+              <label>Sorunuz
+                <textarea name="message" rows="7" maxlength="4000" required></textarea>
+              </label>
+              <input class="contact-honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="contact-form-actions">
+                <button class="button primary" type="submit">Gönder</button>
+                <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </section>
         <section aria-label="Muayenehane konumu">
           <h2>Muayenehane Konumu</h2>
           <div style="overflow:hidden;border:1px solid rgba(32,49,45,.14);border-radius:10px;box-shadow:0 12px 30px rgba(32,49,45,.08);background:#fff;">
@@ -112,5 +137,37 @@
     </main>
     <footer><p>© <span data-year></span> Uzm. Dr. Özgür Özbebit</p><p>Bu web sitesi bilgilendirme amaçlıdır; acil durumlarda en yakın sağlık kuruluşuna başvurunuz.</p></footer>
     <script src="../script.js?v=20260714-turkish-books"></script>
+    <script>
+      (() => {
+        const form = document.querySelector("#contact-form");
+        const status = document.querySelector("#contact-form-status");
+        if (!form || !status) return;
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const button = form.querySelector('button[type="submit"]');
+          const data = Object.fromEntries(new FormData(form).entries());
+          button.disabled = true;
+          status.className = "contact-form-status";
+          status.textContent = "Mesajınız gönderiliyor…";
+          try {
+            const response = await fetch("/api/public/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "Accept": "application/json" },
+              body: JSON.stringify(data)
+            });
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok) throw new Error(result.detail || "Mesaj gönderilemedi.");
+            form.reset();
+            status.className = "contact-form-status is-success";
+            status.textContent = "Mesajınız başarıyla gönderildi. Teşekkür ederiz.";
+          } catch (error) {
+            status.className = "contact-form-status is-error";
+            status.textContent = error.message || "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.";
+          } finally {
+            button.disabled = false;
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
