@@ -18,6 +18,7 @@
   const today = startOfDay(new Date());
   const lastDate = addDays(today, 89);
   const state = { windowStart: today, days: {}, selected: null };
+  let availabilityRequest = 0;
 
   function startOfDay(date) {
     return new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -98,22 +99,36 @@
     nextButton.disabled = addDays(state.windowStart, 4) > lastDate;
   }
 
-  async function loadAvailability() {
+  async function loadAvailability(quiet = false) {
+    const requestId = ++availabilityRequest;
     const dates = visibleDates();
     if (!dates.length) return;
     const from = toIso(dates[0]);
     const to = toIso(dates[dates.length - 1]);
-    setStatus("Uygun saatler yükleniyor…");
-    render();
+    if (!quiet) {
+      setStatus("Uygun saatler yükleniyor…");
+      render();
+    }
     try {
       const response = await fetch(`/api/public/availability?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`, {
-        headers: { Accept: "application/json" }
+        headers: { Accept: "application/json" },
+        cache: "no-store"
       });
       const payload = await response.json();
+      if (requestId !== availabilityRequest) return;
       if (!response.ok || !payload.days) throw new Error(payload.detail || "Uygunluk bilgisi alınamadı.");
       Object.assign(state.days, payload.days);
-      setStatus("Uygun saatlerden birini seçin.");
+      if (state.selected && payload.days[state.selected.date]?.slots?.[state.selected.time] !== undefined &&
+          payload.days[state.selected.date].slots[state.selected.time] !== "available") {
+        state.selected = null;
+        formSection.hidden = true;
+        setStatus("Seçtiğiniz saat az önce doldu. Lütfen başka bir saat seçin.", "error");
+      } else {
+        setStatus("Uygun saatlerden birini seçin.");
+      }
     } catch (error) {
+      if (requestId !== availabilityRequest) return;
+      for (const date of dates) delete state.days[toIso(date)];
       setStatus(error.message || "Uygunluk bilgisi şu anda alınamıyor.", "error");
     }
     render();
@@ -165,6 +180,7 @@
       state.selected = null;
       formMessage.textContent = "Randevu talebiniz alınmıştır. Onay sonrası sizinle iletişime geçilecektir.";
       formMessage.className = "appointment-form-message is-success";
+      await loadAvailability(true);
     } catch (error) {
       formMessage.textContent = error.message || "Randevu talebi gönderilemedi. Lütfen daha sonra tekrar deneyin.";
       formMessage.className = "appointment-form-message is-error";
@@ -173,5 +189,12 @@
     }
   });
 
+  setInterval(() => {
+    if (!document.hidden && !submitButton.disabled) loadAvailability(true);
+  }, 15000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && !submitButton.disabled) loadAvailability(true);
+  });
+  window.addEventListener("online", () => loadAvailability(true));
   loadAvailability();
 })();
