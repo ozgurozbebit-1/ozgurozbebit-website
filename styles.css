@@ -4449,8 +4449,8 @@ a.topic-card:hover {
 .chatbox .chat-panel{
   box-sizing:border-box;
   width:min(350px,calc(100vw - 28px));
-  max-height:min(550px,calc(100dvh - 190px));
   max-height:min(550px,calc(100vh - 190px));
+  max-height:min(550px,calc(100dvh - 190px));
   overflow-x:hidden;
   overflow-y:auto;
   overscroll-behavior:contain;
