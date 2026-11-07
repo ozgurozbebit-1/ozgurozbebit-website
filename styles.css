@@ -4210,3 +4210,46 @@ a.topic-card:hover {
 @media (max-width: 620px) {
   .contact-form-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Editorial premium navigation — desktop and mobile, all public pages */
+.site-header.editorial-header {z-index:100;gap:24px;padding:14px clamp(20px,3.2vw,54px);align-items:center}
+.site-header.editorial-header .brand {flex-shrink:0;gap:13px}
+.site-header.editorial-header .brand-logo {width:64px;height:64px}
+.site-header.editorial-header .brand strong {font-size:clamp(15px,1.32vw,19px);white-space:nowrap}
+.site-header.editorial-header .brand small {font-size:13px}
+.site-header.editorial-header #editorial-nav {display:flex;align-items:center;gap:clamp(13px,1.65vw,28px);font-size:13px;font-weight:620;flex-wrap:nowrap;white-space:nowrap}
+.site-header.editorial-header #editorial-nav>a:not(.editorial-booking){opacity:.92}
+.site-header.editorial-header #editorial-nav>a[aria-current="page"]{text-decoration:underline;text-underline-offset:7px}
+.site-header.editorial-header .editorial-booking {display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,253,248,.64);border-radius:5px;padding:11px 15px;font-weight:750;opacity:1}
+.site-header.editorial-header.is-scrolled .editorial-booking,.site-header.editorial-header.is-open .editorial-booking {border-color:rgba(32,49,45,.3);background:var(--ink);color:#fff}
+.site-header.editorial-header .editorial-discovery{position:static}
+.site-header.editorial-header .editorial-discovery>.nav-dropdown-toggle {font:inherit;font-weight:700;opacity:1}
+.site-header.editorial-header .editorial-mega{position:absolute;top:calc(100% + 2px);left:auto;right:clamp(20px,3.2vw,54px);width:min(850px,calc(100vw - 40px));min-width:0;grid-template-columns:1.2fr 1fr 1fr;gap:25px;border-radius:15px;padding:26px 30px;white-space:normal;text-align:left;background:rgba(255,253,248,.99);border:1px solid rgba(32,49,45,.15);box-shadow:0 28px 75px #12291f3d;color:var(--ink);transform:translateY(9px);max-height:min(72vh,670px);overflow:auto}
+.site-header.editorial-header .editorial-mega-column {display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.site-header.editorial-header .editorial-mega-label {font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:#9b6550;font-weight:800;margin-bottom:8px}
+.site-header.editorial-header .editorial-mega a{display:block;width:100%;font-size:13px;font-weight:530;padding:6px 4px;border-radius:5px;line-height:1.35;white-space:normal}
+.site-header.editorial-header .editorial-mega a:hover {background:#f0eee7;color:#253b35}
+.site-header.editorial-header .editorial-discovery:not(.is-open):not(:hover):not(:focus-within) .editorial-mega {pointer-events:none}
+@media (max-width:1100px) {
+  .site-header.editorial-header .brand-logo{width:54px;height:54px}
+  .site-header.editorial-header .brand strong{font-size:15px}
+  .site-header.editorial-header .brand small{font-size:12px}
+  .site-header.editorial-header #editorial-nav{gap:12px;font-size:12px}
+  .site-header.editorial-header .editorial-booking{padding:9px}
+}
+@media (max-width:960px) {
+  .site-header.editorial-header{padding:13px 20px}
+  .site-header.editorial-header .nav-toggle{display:block}
+  .site-header.editorial-header #editorial-nav{display:none;position:absolute;top:calc(100% + 3px);left:16px;right:16px;width:auto;max-height:calc(100vh - 105px);overflow-y:auto;padding:9px;border:1px solid rgba(32,49,45,.12);border-radius:12px;background:#fffdf8;color:#20312d;box-shadow:0 25px 55px #142b2433;white-space:normal}
+  .site-header.editorial-header #editorial-nav.is-open{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .site-header.editorial-header #editorial-nav>a{padding:13px 12px;font-size:14px;border-bottom:1px solid #e8e5df}
+  .site-header.editorial-header .editorial-discovery{border-bottom:1px solid #e8e5df}
+  .site-header.editorial-header .editorial-discovery>.nav-dropdown-toggle{display:flex;justify-content:space-between;width:100%;padding:13px 12px;text-align:left}
+  .site-header.editorial-header .editorial-mega{position:static;display:none;opacity:1;pointer-events:auto;width:auto;max-height:none;overflow:visible;transform:none;grid-template-columns:1fr;gap:12px;border:0;border-radius:8px;box-shadow:none;padding:12px 16px;background:#f5f3ec}
+  .site-header.editorial-header .editorial-discovery.is-open .editorial-mega{display:grid}
+  .site-header.editorial-header .editorial-mega-column{gap:0}
+  .site-header.editorial-header .editorial-mega a{padding:9px 7px}
+  .site-header.editorial-header #editorial-nav>.editorial-booking{margin:10px 4px 3px;text-align:center;justify-content:center;background:#20312d;color:white;border-radius:6px}
+}
+@media (prefers-reduced-motion:reduce){.site-header.editorial-header .editorial-mega{transition:none}}
