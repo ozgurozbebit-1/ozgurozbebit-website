@@ -41,7 +41,7 @@ export default async function handler(request, response) {
   try {
     await transporter.sendMail({
       from: `Ozgur Ozbebit Web Sitesi <${gmailUser}>`,
-      to: "drozgurozbebit@gmail.com",
+      to: "ozbebit@gmail.com",
       replyTo: email,
       subject: `Web sitesi iletişim formu — ${name}`,
       text: `Ad Soyad: ${name}\nE-posta: ${email}\n\nSoru / Mesaj:\n${message}`
