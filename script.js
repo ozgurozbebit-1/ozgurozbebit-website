@@ -104,6 +104,7 @@ const contactDataElement = document.querySelector("#site-contact-data");
 const contactOverrides = {
   phone: "+90 505 218 48 74",
   phoneHref: "tel:+905052184874",
+  whatsappHref: "https://wa.me/905052184874",
   email: "info@ozgurozbebit.com.tr",
   emailHref: "mailto:info@ozgurozbebit.com.tr",
   emailAppointmentHref: "mailto:info@ozgurozbebit.com.tr?subject=Randevu%20Talebi",
@@ -779,6 +780,7 @@ if (contactDataElement) {
       ...parsedContact,
       phone: parsedContact.phone || contactOverrides.phone,
       phoneHref: parsedContact.phoneHref || contactOverrides.phoneHref,
+      whatsappHref: contactOverrides.whatsappHref,
     };
     const hrefs = {
       phone: contact.phoneHref,
