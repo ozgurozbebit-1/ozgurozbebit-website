@@ -4493,3 +4493,91 @@ a.topic-card:hover {
 @media(max-height:580px){
   .chatbox .chat-panel{max-height:calc(100dvh - 105px)}
 }
+
+/* Editorial contact popover final refinement: remove global section padding! */
+.chatbox .chat-panel{
+  padding:0;
+  width:min(410px,calc(100vw - 24px));
+  max-height:min(520px,calc(100vh - 125px));
+  max-height:min(520px,calc(100dvh - 125px));
+  overflow-x:hidden;
+  overflow-y:auto;
+  bottom:76px;
+  border-radius:14px;
+  background:#fffdf8;
+  box-shadow:0 19px 48px rgba(23,41,34,.25);
+}
+.chatbox .chat-head{
+  display:flex;
+  position:relative;
+  top:auto;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin:0;
+  padding:13px 16px;
+  background:#38594e;
+}
+.chatbox .chat-head-copy{flex:1;min-width:0}
+.chatbox .chat-head strong{
+  display:block;
+  font-size:15px;
+  line-height:1.2;
+  white-space:nowrap;
+}
+.chatbox .chat-head small{
+  display:block;
+  margin-top:3px;
+  font-size:11px;
+  line-height:1.2;
+}
+.chatbox .chat-head button{width:29px;height:29px}
+.chatbox .chat-body{padding:13px 16px 14px}
+.chatbox .chat-body .chat-intro{
+  margin:0;
+  font-size:12.5px;
+  line-height:1.35;
+  color:#596963;
+}
+.chatbox .chat-actions{
+  display:grid;
+  gap:6px;
+  margin:11px 0 10px;
+}
+.chatbox .chat-actions a{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  min-height:34px;
+  padding:7px 11px;
+  border-radius:7px;
+  font-size:12.5px;
+  line-height:1.2;
+  white-space:nowrap;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.chatbox .chat-actions .chat-action-call{
+  font-size:12.5px;
+  letter-spacing:-.015em;
+}
+.chatbox .chat-body .chat-note{
+  margin:0;
+  font-size:10.5px;
+  line-height:1.35;
+}
+@media(max-width:580px){
+  .chatbox .chat-panel{
+    width:min(390px,calc(100vw - 20px));
+    max-height:calc(100dvh - 105px);
+    bottom:66px;
+  }
+  .chatbox .chat-head{padding:12px 13px}
+  .chatbox .chat-body{padding:11px 12px 12px}
+  .chatbox .chat-head strong{font-size:14px}
+  .chatbox .chat-actions a{font-size:12px}
+  .chatbox .chat-actions .chat-action-call{font-size:11.5px}
+}
+@media(max-height:600px){
+  .chatbox .chat-panel{max-height:calc(100dvh - 100px)}
+}
