@@ -4320,3 +4320,13 @@ a.topic-card:hover {
   .site-header.editorial-header .editorial-mega-column {align-items:stretch}
   .site-header.editorial-header .editorial-mega a {white-space:normal;overflow-wrap:normal;word-break:normal}
 }
+
+/* Small premium map card beneath the home contact area */
+.home-location-card{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:24px;align-items:center;max-width:1120px;margin:20px auto 0;padding:22px;border:1px solid rgba(32,49,45,.13);border-radius:12px;background:#fffdf8;box-shadow:0 10px 30px rgba(32,49,45,.07)}
+.home-location-details{padding:4px 10px}
+.home-location-eyebrow{font-size:11px!important;font-weight:800;letter-spacing:.13em;color:#b56f4c!important;margin:0 0 8px!important}
+.home-location-details h3{font-family:Georgia,serif;font-size:clamp(23px,2.7vw,32px);font-weight:500;color:#20312d;margin:0 0 12px}
+.home-location-details p:not(.home-location-eyebrow){font-size:14px;line-height:1.7;color:#66736d;margin:0 0 16px}
+.home-location-details a{font-size:13px;font-weight:750;color:#385a4f;text-decoration:underline;text-underline-offset:4px}
+.home-location-frame{overflow:hidden;border-radius:9px;background:#e6e8e2;min-height:240px}
+@media(max-width:720px){.home-location-card{grid-template-columns:1fr;padding:15px;gap:14px;margin-top:16px}.home-location-details{padding:8px}.home-location-frame iframe{height:230px}}
