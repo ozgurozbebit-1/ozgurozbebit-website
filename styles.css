@@ -4330,3 +4330,20 @@ a.topic-card:hover {
 .home-location-details a{font-size:13px;font-weight:750;color:#385a4f;text-decoration:underline;text-underline-offset:4px}
 .home-location-frame{overflow:hidden;border-radius:9px;background:#e6e8e2;min-height:240px}
 @media(max-width:720px){.home-location-card{grid-template-columns:1fr;padding:15px;gap:14px;margin-top:16px}.home-location-details{padding:8px}.home-location-frame iframe{height:230px}}
+
+/* Premium home contact details — aligned rows and compact social icons */
+.contact-panel .premium-contact-list{display:flex;flex-direction:column;gap:0;min-width:0}
+.contact-panel .premium-contact-row,.contact-panel .premium-contact-address{display:grid;grid-template-columns:88px minmax(0,1fr);align-items:center;gap:12px;width:100%;min-width:0;border-bottom:1px solid rgba(255,253,248,.2);padding:13px 0;color:#fffdf8;text-decoration:none}
+.contact-panel .premium-contact-row:hover{color:#f6c9a8}
+.contact-panel .premium-contact-label,.contact-panel .premium-social-heading{font-size:11px;line-height:1.4;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,253,248,.68);font-weight:700}
+.contact-panel .premium-contact-row strong{font-size:14px;font-weight:580;line-height:1.5;overflow-wrap:anywhere}
+.contact-panel .premium-contact-address>span:last-child{font-size:13px;line-height:1.55;color:rgba(255,253,248,.9);border:0;padding:0}
+.contact-panel .premium-whatsapp strong{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+.contact-panel .premium-whatsapp svg{width:20px;height:20px;flex-shrink:0}
+.contact-panel .premium-social{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:19px 0 0}
+.contact-panel .premium-social-icons{display:flex;flex-wrap:wrap;gap:9px}
+.contact-panel .premium-social-icons a{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;padding:0;border:1px solid rgba(255,253,248,.34);border-radius:50%;color:#fffdf8;background:rgba(255,253,248,.035);text-decoration:none;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.contact-panel .premium-social-icons a:hover,.contact-panel .premium-social-icons a:focus-visible{background:rgba(255,253,248,.16);border-color:rgba(255,253,248,.8);transform:translateY(-2px)}
+.contact-panel .premium-social-icons svg{width:19px;height:19px}
+@media(max-width:500px){.contact-panel .premium-contact-row,.contact-panel .premium-contact-address{grid-template-columns:74px minmax(0,1fr);gap:10px}.contact-panel .premium-contact-row strong{font-size:13px}.contact-panel .premium-social{align-items:flex-start;justify-content:flex-start}.contact-panel .premium-social-heading{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.contact-panel .premium-social-icons a{transition:none}}
