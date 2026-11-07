@@ -14,6 +14,74 @@
   }
 })();
 
+
+/* EDITORIAL NAVIGATION — shared single source for every public page (2026-11-07). */
+(() => {
+  const siteHeader = document.querySelector("header.site-header[data-header]");
+  if (!siteHeader || siteHeader.closest("[data-admin-app]")) return;
+  siteHeader.classList.add("editorial-header");
+  const brand = siteHeader.querySelector(".brand");
+  if (brand) { brand.setAttribute("href", "/"); brand.setAttribute("aria-label", "Uzm. Dr. Özgür Özbebit ana sayfa"); }
+  const oldNav = siteHeader.querySelector("[data-nav]");
+  if (!oldNav) return;
+  const current = window.location.pathname.replace(/\/+$/, "") || "/";
+  const active = (href) => current === href.replace(/\/+$/, "") ? ' aria-current="page"' : "";
+  oldNav.id = "editorial-nav";
+  oldNav.setAttribute("aria-label", "Ana gezinme");
+  oldNav.innerHTML = [
+    '<a href="/hakkimda/"' + active("/hakkimda/") + '>Hakkımda</a>',
+    '<a href="/#alanlar">Çalışma Alanları</a>',
+    '<a href="/bilimsel-yayinlar/"' + active("/bilimsel-yayinlar/") + '>Bilimsel Yayınlar</a>',
+    '<a href="/psikiyatri-sozlugu/"' + (current.startsWith("/psikiyatri-sozlugu") ? ' aria-current="page"' : "") + '>Sözlük</a>',
+    '<div class="nav-dropdown editorial-discovery" data-nav-dropdown>',
+      '<button class="nav-dropdown-toggle" type="button" data-nav-dropdown-toggle aria-expanded="false" aria-controls="editorial-discovery-panel">Keşfet</button>',
+      '<div class="nav-dropdown-menu editorial-mega" id="editorial-discovery-panel" data-nav-dropdown-menu>',
+        '<section class="editorial-mega-column" aria-label="Klinik alanlar"><span class="editorial-mega-label">Klinik Alanlar</span>',
+          '<a href="/dehb/">DEHB</a><a href="/anksiyete/">Anksiyete</a><a href="/depresyon/">Depresyon</a>',
+          '<a href="/okb/">OKB</a><a href="/bipolar-bozukluk/">Bipolar Bozukluk</a>',
+          '<a href="/panik-bozukluk/">Panik Bozukluk</a><a href="/bagimliliklar/">Bağımlılıklar</a>',
+          '<a href="/fobiler/">Fobiler</a><a href="/uyku-ve-stres/">Uyku ve Stres</a>',
+          '<a href="/travma-sonrasi-stres-bozuklugu/">Travma Sonrası Stres</a>',
+          '<a href="/cinsel-islev-bozukluklari/">Cinsel İşlev Bozuklukları</a>',
+          '<a href="/yeme-bozukluklari/">Yeme Bozuklukları</a><a href="/psikotik-bozukluklar/">Psikotik Bozukluklar</a>',
+        '</section>',
+        '<section class="editorial-mega-column" aria-label="Bilgi ve kaynaklar"><span class="editorial-mega-label">Bilgi ve Kaynaklar</span>',
+          '<a href="/blog/">Blog</a><a href="/pdf-rehberler/">Kaynak Merkezi</a>',
+          '<a href="/test-merkezi/">Test Merkezi</a>',
+          '<a href="/psikiyatride-en-tuhaf-vakalar/">İlginç Vakalar</a>',
+          '<a href="/spor-zihin/">Spor &amp; Zihin</a>',
+          '<a href="/psikiyatri-sozlugu/">Psikiyatri Sözlüğü</a>',
+        '</section>',
+        '<section class="editorial-mega-column" aria-label="Hakkımda ve iletişim"><span class="editorial-mega-label">Akademik &amp; İletişim</span>',
+          '<a href="/bilimsel-yayinlar/">Bilimsel Yayınlar</a>',
+          '<a href="/basinda/">Basında ve Etkinliklerde</a>',
+          '<a href="/hakkimda/">Hakkımda</a>',
+          '<a href="/iletisim/">İletişim</a>',
+          '<a href="/randevu/">Randevu</a>',
+        '</section>',
+      '</div>',
+    '</div>',
+    '<a class="editorial-booking" href="/randevu/"' + active("/randevu/") + '>Randevu Al <span aria-hidden="true">↗</span></a>'
+  ].join("");
+  siteHeader.querySelector("[data-nav-toggle]")?.setAttribute("aria-controls", "editorial-nav");
+  document.addEventListener("click", (event) => {
+    if (siteHeader.contains(event.target)) return;
+    const discovery = siteHeader.querySelector(".editorial-discovery");
+    discovery?.classList.remove("is-open");
+    discovery?.querySelector("[data-nav-dropdown-toggle]")?.setAttribute("aria-expanded", "false");
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    siteHeader.querySelector(".editorial-discovery")?.classList.remove("is-open");
+    siteHeader.querySelector("[data-nav-dropdown-toggle]")?.setAttribute("aria-expanded", "false");
+    siteHeader.querySelector("[data-nav]")?.classList.remove("is-open");
+    siteHeader.classList.remove("is-open");
+    const toggle = siteHeader.querySelector("[data-nav-toggle]");
+    toggle?.setAttribute("aria-expanded", "false");
+    toggle?.focus();
+  });
+})();
+
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const toggle = document.querySelector("[data-nav-toggle]");
