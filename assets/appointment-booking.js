@@ -12,7 +12,8 @@
   const formMessage = root.querySelector("[data-appointment-form-message]");
   const submitButton = form?.querySelector('button[type="submit"]');
   const slots = Array.from({ length: 10 }, (_, index) => `${String(index + 10).padStart(2, "0")}:00`);
-  const formatter = new Intl.DateTimeFormat("tr-TR", { weekday: "short", day: "numeric", month: "short" });
+  const monthFormatter = new Intl.DateTimeFormat("tr-TR", { month: "long" });
+  const weekdayFormatter = new Intl.DateTimeFormat("tr-TR", { weekday: "long" });
   const fullFormatter = new Intl.DateTimeFormat("tr-TR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 
   const today = startOfDay(new Date());
@@ -71,7 +72,18 @@
       const card = document.createElement("section");
       card.className = "appointment-day";
       const heading = document.createElement("h3");
-      heading.textContent = formatter.format(date);
+      heading.className = "appointment-date-heading";
+      heading.setAttribute("aria-label", fullFormatter.format(date));
+      const number = document.createElement("span");
+      number.className = "appointment-date-number";
+      number.textContent = String(date.getDate());
+      const month = document.createElement("span");
+      month.className = "appointment-date-month";
+      month.textContent = monthFormatter.format(date).toLocaleUpperCase("tr-TR");
+      const weekday = document.createElement("span");
+      weekday.className = "appointment-date-weekday";
+      weekday.textContent = weekdayFormatter.format(date);
+      heading.append(number, month, weekday);
       card.append(heading);
 
       const slotList = document.createElement("div");
