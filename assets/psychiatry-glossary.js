@@ -1,4 +1,69 @@
 const glossarySource = `
+Nesne sürekliliği|Bir kişi veya nesne görünmediğinde de varlığını sürdürdüğünü kavrama becerisidir.
+Ortak dikkat|İki kişinin dikkatini aynı nesne ya da olaya karşılıklı olarak yöneltmesidir.
+Sosyal karşılıklılık|Sosyal etkileşimde karşıdakinin işaretlerine uygun ve iki yönlü yanıt verme becerisidir.
+Zihin kuramı|Başkalarının kendinden farklı düşünce, inanç ve niyetleri olabileceğini kavrama becerisidir.
+Duygu tanıma|Yüz ifadesi, ses tonu ve bağlamdan duygusal durumları ayırt etme becerisidir.
+Duygu adlandırma|Kişinin hissettiği duyguları uygun kelimelerle ifade edebilmesidir.
+Duygusal okuryazarlık|Duyguları tanıma, anlama ve uygun şekilde ifade etmeyle ilgili beceriler bütünüdür.
+Öz düzenleme|Dikkat, duygu ve davranışı hedefe ve koşullara uygun biçimde yönetme becerisidir.
+Birlikte düzenleme|Çocuğun duygularını yönetirken güvenilir yetişkinin desteğinden yararlanmasıdır.
+Duygusal eş düzenleme|İki kişinin etkileşim yoluyla birbirinin duygusal uyarılmasını etkileyip düzenlemesidir.
+Ebeveyn duyarlılığı|Bakım verenin çocuğun sinyallerini fark edip uygun ve zamanında karşılık vermesidir.
+Ebeveyn yansıtıcılığı|Bakım verenin çocuğun davranışlarının ardındaki duygu ve zihinsel durumları düşünmesidir.
+Ebeveyn tükenmişliği|Çocuk bakımına bağlı uzun süreli stresle ilişkili belirgin zihinsel ve duygusal yorgunluktur.
+Ebeveynlik stresi|Çocuk yetiştirme sorumluluklarının kişinin kaynaklarını zorladığı hissidir.
+Olumlu pekiştirme|Bir davranışın ardından olumlu sonuç verilerek o davranışın tekrarının artırılmasıdır.
+Olumsuz pekiştirme|Bir davranışın ardından rahatsız edici uyaranın kalkmasıyla o davranışın artmasıdır.
+Sönme|Pekiştirilmeyen öğrenilmiş davranışın zamanla azalması sürecidir.
+Model alma|Başkalarının davranışlarını gözleyerek benzer davranışları öğrenmedir.
+Davranış zinciri|Bir beceriyi oluşturan ardışık küçük adımların öğrenilip birbirine bağlanmasıdır.
+Davranışsal aktivasyon|Anlamlı ve ödüllendirici etkinliklerin planlı artırılmasıyla depresif kaçınmanın azaltılmasıdır.
+Davranışsal inhibisyon|Yeni veya belirsiz durumlara temkinli yaklaşma eğilimidir.
+Gecikmiş ödül|Daha büyük bir kazanım için anlık ödülü erteleyebilme becerisiyle ilgili kavramdır.
+Öz yeterlik|Kişinin belirli bir görevi başarabileceğine ilişkin inancı ve değerlendirmesidir.
+Bilişsel esneklik|Değişen koşullara uyum için düşünme veya davranış stratejisini değiştirebilme becerisidir.
+İnhibisyon kontrolü|Uygun olmayan otomatik tepki veya dürtüyü durdurabilme becerisidir.
+Planlama becerisi|Bir hedefe ulaşmak için adımları sıralayıp gerekli kaynakları düzenleme becerisidir.
+Görev başlatma|Bir işi uygun zamanda başlatabilme ve harekete geçebilme becerisidir.
+Zaman körlüğü|Geçen süreyi veya gelecekteki zaman gereksinimini kestirmede belirgin güçlük yaşanmasıdır.
+Görev değiştirme|Bir etkinlikten diğerine geçerken dikkat ve davranış kurallarını değiştirme becerisidir.
+Sürdürülen dikkat|Belirli bir görev veya uyaran üzerinde dikkati zaman boyunca koruma becerisidir.
+Seçici dikkat|Çeldiricileri azaltarak hedef uyaranlara odaklanma becerisidir.
+Bölünmüş dikkat|Birden fazla görevin gerektirdiği bilginin aynı zaman diliminde yönetilmesidir.
+Dikkat dalgalanması|Odaklanma düzeyinin zaman içinde belirgin artıp azalmasıdır.
+Duyusal arayış|Kişinin hareket, dokunma veya ses gibi duyusal uyaranları yoğun biçimde aramasıdır.
+Duyusal kaçınma|Rahatsız edici hissedilen duyusal uyaranlardan uzaklaşmaya çalışma eğilimidir.
+Motor stereotipi|Benzer biçimde tekrarlanan, çoğu zaman ritmik motor hareketlerdir.
+Ekolalik konuşma|Duyulan sözlerin hemen veya gecikmeli olarak tekrarlanması biçimindeki konuşmadır.
+Pragmatik dil|Dilin sosyal bağlama ve iletişim amacına uygun kullanılma becerisidir.
+Alıcı dil|Söylenen veya yazılan dili anlama becerisidir.
+İfade edici dil|Düşünce ve gereksinimleri sözlü, yazılı veya başka yollarla ifade etme becerisidir.
+Fonolojik farkındalık|Sözcüklerin ses yapısını ayırt etme ve seslerle zihinsel işlem yapma becerisidir.
+Disleksi|Okuma doğruluğu veya akıcılığında kalıcı güçlüklerle belirginleşebilen özgül öğrenme bozukluğudur.
+Diskalkuli|Sayı kavramı ve matematik becerilerinde belirgin güçlüklerle seyreden özgül öğrenme alanıdır.
+Disgrafi|Yazılı anlatım veya yazı üretimiyle ilgili güçlükleri tanımlamak için kullanılan terimdir.
+Gelişimsel koordinasyon bozukluğu|Motor koordinasyon güçlüğünün günlük işlevleri etkilediği nörogelişimsel durumdur.
+Kekemelik|Konuşma akışında tekrar, uzatma veya blokların görülebildiği akıcılık bozukluğudur.
+Gece alt ıslatma|Çocuğun gelişimsel yaşına uygun olmayan dönemde uykuda istemsiz idrar kaçırmasıdır.
+Gece korkuları|Çocuklarda karanlık veya ayrılık gibi durumlarla ilişkili gelişimsel korkuların genel adıdır.
+Ayrılma anksiyetesi bozukluğu|Bağlandığı kişilerden ayrılmaya ilişkin gelişimsel düzeye göre aşırı korku ve sıkıntıdır.
+Okul devamsızlığı|Çocuğun eğitim ortamına katılımının çeşitli nedenlerle aksamasıdır; her zaman okul reddi değildir.
+Okula uyum güçlüğü|Yeni okul veya sınıf koşullarına alışırken yaşanan belirgin zorlanmadır.
+Sosyal çekingenlik|Sosyal ortamlarda geri durma ve etkileşim başlatmakta zorlanma eğilimidir.
+Akran reddi|Bir çocuğun akran grubunca tekrarlayan biçimde dışlanması veya kabul edilmemesidir.
+Siber zorbalık|Dijital kanallar üzerinden tekrarlanan zarar verici veya aşağılayıcı davranışlardır.
+Dijital oyun süresi|Oyunla geçirilen zamanın miktarıdır; tek başına oyun oynama bozukluğu tanısı koydurmaz.
+Ekran maruziyeti|Telefon, televizyon veya bilgisayar gibi ekranlarla geçirilen zaman ve içerik deneyimidir.
+Sosyal medya karşılaştırması|Kişinin kendini çevrimiçi başkalarının yaşam ve görünüşleriyle değerlendirmesidir.
+Ergen kimlik gelişimi|Ergenlikte değerlerin, hedeflerin ve aidiyetlerin araştırılarak kişisel kimliğin biçimlenmesidir.
+Ergen risk alma|Gelişimsel değişimlerle birlikte heyecan arama ve sonuçları sınama eğilimidir.
+Ergenlikte uyku gecikmesi|Biyolojik zamanlamanın ergenlerde daha geç uyuma yönünde kayabilmesidir.
+Akran baskısı|Kişinin grup kabulü için davranışlarını arkadaş çevresinin beklentilerine göre ayarlamasıdır.
+Sosyal aidiyet|Bir topluluk tarafından kabul görme ve onun parçası olma hissidir.
+Öz şefkat|Kişinin zorlanma veya hata anlarında kendine anlayışlı ve dengeli yaklaşmasıdır.
+Psikolojik dayanıklılık|Zorluklara rağmen uyum sağlayıp toparlanmaya katkı veren değişken beceri ve kaynaklardır.
+Uyum kapasitesi|Yeni koşullara karşı düşünce, duygu ve davranışları yeniden düzenleyebilme potansiyelidir.
 Nörogelişim|Sinir sisteminin gebelikten erişkinliğe uzanan olgunlaşma ve değişim sürecidir.
 Sinaptik budanma|Beyin gelişiminde daha az kullanılan sinaptik bağlantıların seçici olarak azalmasıdır.
 Sinaptik iletim|Bir sinir hücresinin diğerine kimyasal veya elektriksel sinyal aktarmasıdır.
