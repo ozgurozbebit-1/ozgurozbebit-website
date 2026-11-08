@@ -1,4 +1,69 @@
 const glossarySource = `
+Nörogelişim|Sinir sisteminin gebelikten erişkinliğe uzanan olgunlaşma ve değişim sürecidir.
+Sinaptik budanma|Beyin gelişiminde daha az kullanılan sinaptik bağlantıların seçici olarak azalmasıdır.
+Sinaptik iletim|Bir sinir hücresinin diğerine kimyasal veya elektriksel sinyal aktarmasıdır.
+Miyelinizasyon|Sinir liflerinin çevresindeki miyelin kılıfın gelişerek iletim hızına katkı sağlamasıdır.
+Beyin kaynaklı nörotrofik faktör|Nöronların yaşaması ve sinaptik değişimiyle ilişkili BDNF adlı proteindir.
+Nörogenez|Yeni sinir hücrelerinin oluşması sürecidir; erişkin insan beynindeki kapsamı araştırılmaktadır.
+Nöroinflamasyon|Sinir sistemi içindeki bağışıklıkla ilişkili iltihabi yanıt süreçleridir.
+Nörodejenerasyon|Sinir hücrelerinin veya bağlantılarının ilerleyici kaybıyla giden biyolojik süreçtir.
+Nöroendokrin yanıt|Sinir sistemi ile hormon sisteminin stres veya başka uyaranlara ortak verdiği yanıttır.
+Otonom sinir sistemi|Kalp hızı, sindirim ve terleme gibi istemsiz bedensel işlevleri düzenleyen sinir ağıdır.
+Sempatik sinir sistemi|Uyarılma, enerji kullanımı ve savaş-kaç yanıtıyla ilişkili otonom sistem bölümüdür.
+Parasempatik sinir sistemi|Dinlenme, sindirim ve toparlanma süreçlerinde rol oynayan otonom sistem bölümüdür.
+Vagus siniri|Beyin sapıyla çeşitli iç organlar arasında duyusal ve motor bilgi taşıyan önemli sinirdir.
+İnterosepsiyon|Kalp atışı, açlık ve solunum gibi beden içi sinyallerin algılanmasıdır.
+Propriyosepsiyon|Bedenin uzaydaki konumunu ve hareketini duyumsama becerisidir.
+Eksterosepsiyon|Dış çevreden gelen ses, ışık ve dokunma gibi duyusal bilgilerin algılanmasıdır.
+Duyusal bütünleme|Farklı duyulardan gelen bilgileri işlevsel bir algı ve davranış için birleştirme sürecidir.
+Duyusal aşırı yüklenme|Birden fazla uyaranın baş etmeyi güçleştiren yoğunlukta algılanmasıdır.
+Habituasyon|Tekrarlanan ve zararsız uyaranlara verilen tepkinin zamanla azalmasıdır.
+Sensitizasyon|Tekrarlanan veya güçlü uyaranlara verilen tepkinin artmasıdır.
+Nöral ağ|Birbiriyle bağlantılı nöronların birlikte bilgi işlediği işlevsel yapıdır.
+Varsayılan mod ağı|Beynin kendilikle ilgili düşünme ve içsel zihinsel süreçlerde etkinleşen ağlarından biridir.
+Belirginlik ağı|Dikkate değer iç veya dış uyaranların seçilmesinde rol oynayan beyin ağıdır.
+Merkezî yürütücü ağ|Hedefe yönelik dikkat, çalışma belleği ve problem çözmeyle ilişkili beyin ağıdır.
+Anterior insula|Beden içi duyumları, duyguları ve önemli uyaranları bütünleştirmede rol oynayan beyin bölgesidir.
+Orbitofrontal korteks|Ödül değerini değerlendirme ve karar verme süreçleriyle ilişkili frontal beyin alanıdır.
+Dorsolateral prefrontal korteks|Planlama, çalışma belleği ve bilişsel kontrol süreçlerine katkı sağlayan kortikal alandır.
+Ventromedial prefrontal korteks|Duygusal değer biçme, karar verme ve kendilikle ilişkili işlemlerde rol oynayan alandır.
+Nukleus akkumbens|Ödül, motivasyon ve pekiştirmeyle ilişkili bazal ön beyin yapısıdır.
+Talamus|Birçok duyusal ve motor sinyalin kortekse iletilmesinde görev alan beyin yapısıdır.
+Hipotalamus|Hormon, açlık, susuzluk, uyku ve beden dengesini düzenlemede rol oynayan beyin alanıdır.
+Beyincik|Hareket koordinasyonunun yanı sıra bazı bilişsel ve duygusal süreçlerde rol oynayan yapıdır.
+Beyin sapı|Solunum, uyanıklık ve yaşamsal reflekslerin düzenlenmesinde görev alan beyin bölümüdür.
+Retiküler aktive edici sistem|Uyanıklık ve dikkat düzeyinin düzenlenmesine katkı sağlayan beyin sapı ağıdır.
+Asetilkolin|Dikkat, öğrenme, bellek ve kas hareketlerinde görev alan nörotransmitterdir.
+Histamin|Uyanıklık ve çeşitli bedensel süreçlerde rol oynayan kimyasal ileticidir.
+Oksitosin|Doğum ve süt salınımının yanı sıra sosyal bağlanma süreçleriyle ilişkili hormondur.
+Vazopressin|Su dengesi ve bazı sosyal davranış süreçlerinde rol oynayan hormondur.
+Endorfin|Vücudun ürettiği, ağrı algısı ve ödülle ilişkili opioid etkili peptitlerdir.
+Endokannabinoid sistem|İştah, ağrı, stres ve sinaptik sinyal düzenlenmesine katkıda bulunan biyolojik sistemdir.
+Sirkadiyen faz kayması|Biyolojik uyku-uyanıklık zamanlamasının daha erken veya geç saatlere kaymasıdır.
+Sosyal jetlag|Hafta içi ve hafta sonu uyku saatlerinin uyumsuzluğuyla oluşan biyolojik zaman farkıdır.
+Kronotip|Bireyin doğal olarak daha erken veya geç uyumaya ve uyanmaya eğilimidir.
+Uyku basıncı|Uyanık kalma süresi uzadıkça artan biyolojik uyuma ihtiyacıdır.
+Uyku ataleti|Uyanmanın hemen ardından geçici sersemlik ve düşük zihinsel performans yaşanmasıdır.
+Mikro uyku|Kişinin farkına varmadan saniyeler süren kısa uyku dönemleridir.
+Uyku apnesi|Uyku sırasında solunumun tekrarlayan biçimde durması veya azalmasıyla seyreden durumdur.
+Huzursuz bacak sendromu|Özellikle dinlenirken bacaklarda hareket ettirme ihtiyacı ve rahatsızlık hissidir.
+Gecikmiş uyku fazı|Uykuya dalma ve uyanma zamanının istenen saatlerden belirgin geç olmasıdır.
+İleri uyku fazı|Uykuya dalma ve uyanmanın alışılmış saatlerden belirgin erken olmasıdır.
+Gece terörü|Genellikle derin uykudan ani korku ve otonom uyarılmayla kısmi uyanmadır.
+Uyurgezerlik|Uyku sırasında yürüme veya karmaşık davranışların görülebildiği parasomnidir.
+REM uykusu davranış bozukluğu|REM dönemindeki kas gevşemesinin bozulmasıyla rüya içeriğine uygun hareketlerin yapılmasıdır.
+Hipnagojik halüsinasyon|Uykuya dalma sırasında ortaya çıkan canlı duyusal yaşantılardır.
+Hipnopompik halüsinasyon|Uykudan uyanma sırasında ortaya çıkan canlı duyusal yaşantılardır.
+Uyku felci|Uykuya dalarken veya uyanırken kısa süre hareket edememe yaşantısıdır.
+Lucid rüya|Kişinin rüya sırasında rüya gördüğünün farkında olduğu yaşantıdır.
+Bellek konsolidasyonu|Yeni öğrenilen bilgilerin zaman içinde daha kalıcı belleğe yerleşme sürecidir.
+Bellek geri çağırma|Önceden öğrenilmiş bilgiyi gerektiğinde yeniden hatırlama sürecidir.
+Prospektif bellek|Gelecekte yapılması planlanan bir işi doğru zamanda hatırlama becerisidir.
+İşlemsel bellek|Bisiklet sürmek gibi beceri ve alışkanlıkların öğrenilmiş bilgisini kapsayan bellek türüdür.
+Otobiyografik bellek|Kişinin kendi yaşam öyküsündeki olaylara ve kişisel bilgilere ilişkin belleğidir.
+Kaynak belleği|Öğrenilen bilginin nereden, ne zaman veya kimden edinildiğini hatırlama becerisidir.
+Bellek yanlılığı|Bazı bilgilerin duygusal veya bilişsel nedenlerle diğerlerinden daha kolay hatırlanmasıdır.
+Yanlış anı|Gerçekte yaşanmayan veya farklı yaşanan bir olayın anı olarak hatırlanmasıdır.
 Anksiyete duyarlılığı|Kaygıya eşlik eden bedensel duyumları tehlikeli veya zararlı olarak yorumlama eğilimidir.
 Beklenti kaygısı|Henüz yaşanmamış bir olay ya da belirtinin ortaya çıkma olasılığına yönelik önceden hissedilen kaygıdır.
 Belirsizliğe tahammülsüzlük|Sonucu bilinmeyen durumları katlanılması güç veya tehdit edici görme eğilimidir.
