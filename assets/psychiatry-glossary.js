@@ -1,4 +1,69 @@
 const glossarySource = `
+Anksiyete duyarlılığı|Kaygıya eşlik eden bedensel duyumları tehlikeli veya zararlı olarak yorumlama eğilimidir.
+Beklenti kaygısı|Henüz yaşanmamış bir olay ya da belirtinin ortaya çıkma olasılığına yönelik önceden hissedilen kaygıdır.
+Belirsizliğe tahammülsüzlük|Sonucu bilinmeyen durumları katlanılması güç veya tehdit edici görme eğilimidir.
+Kaçınma davranışı|Kaygıyı azaltmak amacıyla korkulan durum, düşünce ya da etkinlikten uzak durmadır.
+Güvenlik davranışı|Korkulan sonucu önlemeye çalışırken kaygının sürmesine katkıda bulunabilen koruyucu alışkanlıktır.
+Panik atağı|Ani başlayan, kısa sürede yoğunlaşan korku veya rahatsızlıkla birlikte bedensel belirtilerin yaşandığı dönemdir.
+Panik döngüsü|Bedensel duyumların tehlike işareti sayılarak korkuyu ve duyumları karşılıklı artırdığı süreçtir.
+Hiperventilasyon|İhtiyaçtan hızlı veya derin solunum nedeniyle kandaki karbondioksit düzeyinin düşebilmesidir.
+Bedensel hipervijilans|Kişinin kalp atışı veya solunumu gibi bedensel duyumlarını aşırı dikkatle izlemesidir.
+Sağlık kaygısı|Bedensel belirtilerin ciddi hastalık göstergesi olabileceğine dair yoğun ve süregelen endişedir.
+Hastalık kaygısı bozukluğu|Ciddi bir hastalığa sahip olma veya yakalanma korkusunun belirgin sıkıntı yarattığı durumdur.
+Somatik belirti bozukluğu|Bedensel yakınmalara eşlik eden aşırı düşünce, kaygı veya davranışlarla seyreden tablodur.
+Konversiyon bozukluğu|Sinir sistemi işlevleriyle ilgili belirtilerin bilinen nörolojik hastalık örüntüsüyle uyuşmaması durumudur.
+İşlevsel nörolojik belirti|Hareket, duyu veya nöbet benzeri yakınmaların sinir sistemi işleyişindeki değişimlerle ilişkili belirtisidir.
+Psikojenik epileptik olmayan nöbet|Epileptik elektriksel boşalımla açıklanmayan, nöbete benzeyen atakların klinik adlandırmalarından biridir.
+Kaygı hiyerarşisi|Korkulan durumların daha az kaygı verenden daha çoğa doğru sıralandığı çalışma listesidir.
+Sistematik duyarsızlaştırma|Korkulan uyaranlara aşamalı yaklaşmayı gevşeme gibi becerilerle birleştiren davranışçı yöntemdir.
+İnteroceptif maruz bırakma|Korkulan bedensel duyumlarla güvenli ve kontrollü biçimde karşılaşmaya dayalı uygulamadır.
+Bilişsel yeniden yapılandırma|İşlevsiz düşüncelerin kanıtlar ışığında sorgulanıp daha dengeli alternatiflerle değerlendirilmesidir.
+Davranış deneyi|Bir inancın doğruluğunu gündelik yaşamda planlı ve gözlenebilir biçimde sınama uygulamasıdır.
+Otomatik düşünce|Bir olay karşısında hızla beliren ve çoğu zaman sorgulanmadan kabul edilen zihinsel yorumdur.
+Temel inanç|Kişinin kendisi, başkaları veya dünya hakkında geliştirdiği köklü ve genelleyici kabuldür.
+Ara inanç|Temel inançlarla günlük otomatik düşünceler arasında yer alan kural, tutum veya varsayımdır.
+Olumsuz benlik şeması|Kişinin kendi değerine veya yeterliliğine ilişkin süreğen olumsuz bilgi örgütlenmesidir.
+Düşünce-duygu-davranış ilişkisi|Bir olayı yorumlama biçimi, duygusal tepki ve davranışın karşılıklı etkileşimini anlatır.
+Düşünce bastırma|İstenmeyen düşünceleri bilinçli olarak uzaklaştırmaya çalışma; bazen düşüncelerin sıklaşmasına yol açabilir.
+Düşünce-eylem kaynaşması|Bir düşünceyi yaşamanın o eylemi gerçekleştirmekle ahlaken eşit ya da gerçekleşme olasılığını artırır sayılmasıdır.
+Büyüsel düşünce|Düşünce veya ritüellerin nedensel bağlantı olmaksızın olayları etkileyebileceğine inanılmasıdır.
+Obsesif kuşku|Kesinlik sağlanmasına rağmen kişinin aynı olasılığı tekrar tekrar sorgulamasıdır.
+Kontrol kompulsiyonu|Kaygıyı azaltmak amacıyla kapı, ocak veya başka durumları tekrarlayıcı biçimde denetlemedir.
+Yıkama kompulsiyonu|Kirlenme kaygısını azaltmak için gereğinden fazla yıkama veya temizleme davranışıdır.
+Zihinsel ritüel|Kaygıyı azaltmak için zihinden sayı sayma, tekrar etme veya belirli ifadeleri düşünme davranışıdır.
+Simetri obsesyonu|Nesnelerin tam dengeli veya belirli düzende olması gerektiğine ilişkin ısrarlı takıntıdır.
+Bulaşma obsesyonu|Mikrop, kir veya zararlı maddeyle temas etme olasılığına ilişkin yoğun ve tekrarlayan düşüncedir.
+Zarar verme obsesyonu|İstem dışı gelen, kendine ya da başkasına zarar verme içerikli rahatsız edici düşüncedir.
+Dini obsesyon|İnanç veya ibadetle ilgili istenmeyen düşünceler nedeniyle yoğun suçluluk ve kuşku yaşanmasıdır.
+İlişki obsesyonu|İlişkinin doğruluğu veya partnerin özellikleri hakkında tekrarlayan kuşku ve zihinsel uğraştır.
+Biriktirme bozukluğu|Eşyaları elden çıkarmakta kalıcı güçlük ve bunun yaşam alanını bozmasıyla seyreden durumdur.
+Trikotillomani|Yineleyici saç veya kıl yolma sonucunda belirgin kayıp oluşmasıyla seyreden bozukluktur.
+Deri yolma bozukluğu|Deride lezyonlara neden olabilen tekrarlayan yolma davranışıdır.
+Beden dismorfik bozukluğu|Görünümde fark edilmeyen veya küçük kusurlarla aşırı zihinsel uğraş ve tekrarlayıcı davranışlardır.
+Referans sanrısı|Nötr olayların doğrudan kendisiyle ilgili özel mesajlar içerdiğine ilişkin sarsılmaz yanlış inançtır.
+Perseküsyon sanrısı|Kişinin izlenme, zarar görme veya kendisine komplo kurulması konusunda sabit yanlış inancıdır.
+Somatik sanrı|Bedende olağan dışı veya gerçek dışı bir durum bulunduğuna ilişkin sarsılmaz yanlış inançtır.
+Nihilistik sanrı|Kendisinin, organlarının veya dünyanın var olmadığına ilişkin ağır gerçeklik dışı inançtır.
+Erotomanik sanrı|Bir başkasının kendisine âşık olduğu yönünde kanıtlarla değişmeyen yanlış inançtır.
+Kıskançlık sanrısı|Partnerin sadakatsiz olduğuna ilişkin gerçeklikle uyuşmayan, sarsılmaz inançtır.
+Düşünce sokulması|Düşüncelerin kişinin kendi zihnine dışarıdan yerleştirildiği yaşantısıdır.
+Düşünce çekilmesi|Düşüncelerin kişinin zihninden başka bir güç tarafından alındığını hissetmesidir.
+Düşünce yayınlanması|Kişinin düşüncelerinin başkaları tarafından doğrudan bilindiğine veya yayıldığına inanmasıdır.
+İşitsel varsanı|Dışarıda gerçek ses kaynağı yokken konuşma veya başka sesler duyma yaşantısıdır.
+Görsel varsanı|Dışarıda karşılığı olmayan kişi, nesne veya görüntülerin algılanmasıdır.
+Olfaktör varsanı|Gerçek bir koku kaynağı olmadan koku algılanması yaşantısıdır.
+Dokunsal varsanı|Dış uyaran olmaksızın ten üzerinde temas veya hareket hissedilmesidir.
+Komut veren sesler|Kişiye bir davranışı yapmasını söyleyen işitsel varsanı içeriğidir; güvenlik açısından değerlendirilir.
+İçgörü düzeyi|Kişinin yaşantısının veya inancının hastalıkla ilişkili olabileceğini kavrama derecesidir.
+Gerçeklik değerlendirmesi|Algı ve düşünceleri dış dünyanın doğrulanabilir özellikleriyle karşılaştırma becerisidir.
+Negatif semptomlar|Duygusal ifade, konuşma, istek veya sosyal katılımın azalması gibi belirtilerdir.
+Alogi|Konuşmanın miktarında veya içeriğinin zenginliğinde belirgin azalmadır.
+Asosyalite|Başkalarıyla ilişki kurma veya ilişkileri sürdürmeye yönelik isteğin azalmasıdır.
+Anosognozi|Kişinin sahip olduğu hastalık veya işlev kaybını nörolojik nedenlerle fark edememesidir.
+Düşünce uçuşması|Fikirlerin hızlı ve art arda geldiği, çağrışımların konuşma akışını hızlandırdığı durumdur.
+Çağrışım gevşekliği|Düşünceler arasındaki mantıksal bağlantıların belirgin biçimde zayıflamasıdır.
+Neolojizm|Kişinin kendisine özgü yeni sözcükler üretmesidir.
+Perseverasyon|Bir yanıt veya davranışın uygun olmadığı durumda bile tekrarlanarak sürdürülmesidir.
 Abuli|Karar verme ve harekete geçme isteğinde belirgin azalma olmasıdır.
 Açık uçlu soru|Kişinin kendini ayrıntılı anlatmasına alan açan, evet-hayırla sınırlı olmayan sorudur.
 Adaptasyon|Kişinin yeni koşullara ruhsal ve davranışsal olarak uyum sağlamasıdır.
