@@ -1,4 +1,69 @@
 const glossarySource = `
+Benlik saygısı|Kişinin kendisine biçtiği genel değer ve kabul düzeyidir.
+Benlik algısı|Kişinin özellikleri, rolleri ve yeterlikleri hakkındaki zihinsel tasarımıdır.
+Ayna benlik|Kişinin başkalarının kendisini nasıl gördüğünü düşündüğü üzerinden benlik algısı oluşturmasıdır.
+Öz kimlik|Kişinin değerleri, aidiyetleri ve yaşam öyküsünü kendine özgü bir bütün olarak yaşamasıdır.
+Kimlik karmaşası|Kişinin değer, rol ve aidiyetleri konusunda süreğen belirsizlik veya çatışma yaşamasıdır.
+Kimlik bütünlüğü|Kişinin farklı rollerini ve deneyimlerini tutarlı bir kendilik anlayışında birleştirmesidir.
+Benlik ayrışması|Kişinin kendi duygu ve görüşlerini başkalarının beklentilerinden ayırt edebilmesidir.
+Benlik sınırları|Kişinin kendisiyle başkaları arasındaki psikolojik ayrımı kurabilmesidir.
+Duygusal bulaşma|Bir kişinin duygu durumunun sosyal etkileşimle başkalarına aktarılabilmesidir.
+Empatik doğrulama|Karşıdakinin yaşantısını küçümsemeden anlamaya ve kabul etmeye yönelik yanıttır.
+Bilişsel empati|Başkasının bakış açısını ve zihinsel durumunu kavrama becerisidir.
+Duygusal empati|Başkasının duygularına duygusal düzeyde karşılık verebilme becerisidir.
+Aşırı öz eleştiri|Kişinin hatalarını katı ve olumsuz biçimde değerlendirmeye eğilimli olmasıdır.
+Utanç|Kişinin kendisini başkalarının veya kendi gözünde yetersiz ya da kusurlu görmesiyle ilişkili duygudur.
+Suçluluk|Kişinin yaptığı veya yapmadığı bir davranışı değerleriyle çelişkili bulmasıyla ortaya çıkan duygudur.
+Duygusal kaçınma|Rahatsız edici duyguları hissetmemek veya fark etmemek için kullanılan davranış örüntüsüdür.
+Deneyimsel kaçınma|İstenmeyen içsel yaşantılardan kaçmaya çalışmanın davranışları katı biçimde yönlendirmesidir.
+Duygu bastırma|Hissedilen duygunun dışavurumunu bilinçli olarak azaltmaya çalışma stratejisidir.
+Yeniden değerlendirme|Bir olayın anlamını farklı yorumlayarak duygusal tepkiyi düzenleme yöntemidir.
+Duygusal farkındalık|Kişinin o anki duygularını ve bunların olası nedenlerini fark edebilmesidir.
+Duygu toleransı|Rahatsız edici duygularla, hemen kaçınmadan veya dürtüsel davranmadan kalabilme becerisidir.
+Sıkıntıya dayanma|Yoğun stres anlarında kendine veya başkasına zarar vermeden durumu yönetme becerisidir.
+Kişilerarası duyarlılık|Başkalarının tepkilerini ve ilişkideki değişimleri yoğun biçimde fark etmeye yatkınlıktır.
+Reddedilme duyarlılığı|Reddedilmeyi bekleme, kolay algılama ve buna yoğun duygusal tepki verme eğilimidir.
+Terk edilme korkusu|Önemli bir ilişkinin kaybedileceğine ilişkin yoğun ve tekrarlayan endişedir.
+Bağlanma kaygısı|Yakın ilişkilerde sevilen kişinin ulaşılabilirliği ve bağlılığı konusunda aşırı endişedir.
+Bağlanmadan kaçınma|Yakınlık veya bağımlılıktan rahatsız olma ve duygusal mesafeyi koruma eğilimidir.
+Bağlanma yaralanması|Önemli bir ilişkide güvenin sarsıldığı ve uzun süre etkisi sürebilen yaşantıdır.
+Travma tetiklenmesi|Geçmiş zorlayıcı yaşantıyla bağlantılı ipuçlarının yoğun tepkiyi yeniden başlatmasıdır.
+Travma hatırlatıcısı|Önceki travmatik deneyimi çağrıştıran ses, koku, yer veya başka uyaranlardır.
+İstemsiz anı|Kişinin bilinçli çabası olmadan aniden beliren geçmiş yaşantı içeriğidir.
+Flashback|Travmatik olayı yeniden oluyormuş gibi deneyimleme yaşantısıdır.
+Hipervijilans|Çevredeki olası tehditleri sürekli ve aşırı biçimde tarama halidir.
+İrkilme tepkisi|Ani uyaranlara karşı gelişen hızlı, istemsiz bedensel yanıttır.
+Duygusal uyuşma|Özellikle stres veya travma sonrası duyguların azalmış ya da uzak hissedilmesidir.
+Dissosiyatif amnezi|Önemli otobiyografik bilgilerin sıradan unutkanlıkla açıklanamayacak biçimde hatırlanamamasıdır.
+Dissosiyatif kimlik bozukluğu|Kimlik yaşantısında belirgin süreksizlik ve bellek boşluklarıyla seyreden bozukluktur.
+Dissosiyatif füg|Kimlik veya yaşam öyküsüne ilişkin amneziyle birlikte yer değiştirme yaşanabilen durumdur.
+Kompleks travma sonrası stres bozukluğu|Uzun veya tekrarlayıcı travmalar ardından TSSB belirtileriyle birlikte benlik ve ilişki güçlüklerinin görüldüğü durumdur.
+Travmatik yas|Kayıp sürecinin travmatik koşullar ve yoğun stres tepkileriyle birlikte yaşanmasıdır.
+Uzamış yas bozukluğu|Yakın kaybı sonrası beklenen süreyi aşan yoğun özlem ve işlev kaybıyla seyreden durumdur.
+Beklenen yas|Yaklaşan bir kayıp olasılığı karşısında kayıp gerçekleşmeden yaşanabilen yas tepkisidir.
+Belirsiz kayıp|Bir kişinin fiziksel veya psikolojik olarak yokluğunun netleşmediği kayıp yaşantısıdır.
+Yas tepkisi|Önemli bir kayıp ardından ortaya çıkan duygusal, bilişsel ve bedensel tepkilerdir.
+Uyumlu baş etme|Stres karşısında sorunu veya duyguyu uzun vadede işlevsel biçimde yönetmeye yönelik stratejilerdir.
+İşlevsiz baş etme|Kısa süre rahatlatabilse de uzun vadede güçlüğü sürdürebilen baş etme davranışlarıdır.
+Kaçıngan baş etme|Sorunla karşılaşmak yerine düşünce, ortam veya görevden uzak durmaya dayalı stratejidir.
+Problem odaklı baş etme|Stres kaynağını değiştirmeye veya yönetmeye yönelik somut eylemlerdir.
+Duygu odaklı baş etme|Stresin oluşturduğu duygusal tepkiyi düzenlemeye yönelik stratejilerdir.
+Kabul temelli yaklaşım|Değiştirilemeyen içsel yaşantıları bastırmadan karşılamaya odaklanan yaklaşımdır.
+Psikolojik esneklik|Zorlayıcı düşünce ve duygulara rağmen değerlere uygun davranabilme becerisidir.
+Bilişsel ayrışma|Düşünceleri mutlak gerçekler yerine zihinsel olaylar olarak gözlemleme becerisidir.
+Değer odaklı eylem|Kişinin uzun vadeli önem verdiği yaşam yönüne uygun davranış seçmesidir.
+Farkındalık meditasyonu|Dikkati şimdiki deneyime yargılamadan yöneltmeyi amaçlayan uygulama biçimidir.
+Mindfulness|Dikkati içinde bulunulan ana bilinçli ve yargılamayan biçimde yöneltme yaklaşımıdır.
+Öznel iyi oluş|Kişinin yaşam doyumu, olumlu ve olumsuz duygularını birlikte değerlendiren iyilik halidir.
+Yaşam doyumu|Kişinin yaşamını kendi ölçütlerine göre genel olarak değerlendirmesidir.
+Psikolojik iyi oluş|Amaç, özerklik, gelişim ve ilişkiler gibi alanlarda işlevsel yaşantıyı kapsayan kavramdır.
+Anlam arayışı|Kişinin yaşamının önemini, yönünü ve bütünlüğünü anlamlandırma çabasıdır.
+Varoluşsal kaygı|Ölüm, özgürlük, yalnızlık veya anlam gibi temel yaşam konularıyla ilişkili kaygıdır.
+Varoluşsal boşluk|Kişinin yaşamda anlam veya yön eksikliği hissetmesidir.
+Öğrenilmiş çaresizlik|Kontrol edilemeyen olumsuz deneyimler sonrasında kişinin etkili davranış başlatmaması durumudur.
+Kontrol odağı|Olayların nedenlerini kendi davranışlarına veya dış koşullara bağlama eğilimidir.
+Öznel kontrol algısı|Kişinin olayların sonuçları üzerinde ne ölçüde etkisi olduğunu düşündüğüdür.
+Psikolojik reaktans|Seçim özgürlüğünün kısıtlandığı hissine karşı ortaya çıkan karşı koyma eğilimidir.
 Nesne sürekliliği|Bir kişi veya nesne görünmediğinde de varlığını sürdürdüğünü kavrama becerisidir.
 Ortak dikkat|İki kişinin dikkatini aynı nesne ya da olaya karşılıklı olarak yöneltmesidir.
 Sosyal karşılıklılık|Sosyal etkileşimde karşıdakinin işaretlerine uygun ve iki yönlü yanıt verme becerisidir.
