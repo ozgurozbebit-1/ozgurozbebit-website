@@ -1,4 +1,69 @@
 const glossarySource = `
+Terapötik sınırlar|Profesyonel yardım ilişkisinde rol, süre ve sorumlulukların açık biçimde belirlenmesidir.
+Paylaşımlı karar verme|Klinisyen ve kişinin tedavi seçeneklerini kanıtlar ve tercihler doğrultusunda birlikte değerlendirmesidir.
+Tedavi hedefi|Değişmesi istenen belirti, beceri veya işlev alanının açık biçimde tanımlanmasıdır.
+Tedavi uyumsuzluğu|Önerilen tedavi planının çeşitli nedenlerle uygulanamaması veya aksamasıdır.
+Ortak hastalık|Bir kişide aynı dönemde birden fazla tanımlanmış sağlık durumunun bulunmasıdır.
+Semptom kümesi|Bir arada görülen ve klinik bir örüntü oluşturabilen belirtiler grubudur.
+Subklinik belirti|Tanı eşiğini karşılamasa da kişide bulunan ve bazen işlevi etkileyen belirtidir.
+Eşik altı depresyon|Depresif belirtilerin belirgin olduğu ancak majör depresyon ölçütlerini bütünüyle karşılamadığı durumdur.
+Tedaviye kısmi yanıt|Belirtilerde iyileşme olsa da hedeflenen düzeye tamamen ulaşılamamasıdır.
+Tam remisyon|Hastalığın belirti ve bulgularının tanımlanan süre boyunca kaybolduğu veya çok azaldığı durumdur.
+Kısmi remisyon|Belirtilerin belirgin azaldığı ancak tam düzelmenin sağlanmadığı klinik dönemdir.
+Rezidüel belirti|Tedaviden sonra azalarak devam eden belirtilerdir.
+Erken uyarı işareti|Yineleme veya alevlenme öncesinde fark edilebilen kişiye özgü belirti değişikliğidir.
+Koruyucu etken|Bir ruhsal güçlüğün ortaya çıkma veya ağırlaşma olasılığını azaltabilen özelliktir.
+Risk etkeni|Bir durumun gelişme olasılığıyla ilişkili olan; tek başına neden anlamına gelmeyen özelliktir.
+Predispozan etken|Bir kişinin belirli ruhsal güçlüğe yatkınlığını artırabilecek önceki veya kalıcı etkendir.
+Presipitan etken|Belirtilerin başlamasından hemen önce etkili olabilen tetikleyici koşuldur.
+Sürdürücü etken|Başlamış bir güçlüğün devam etmesine katkıda bulunan alışkanlık veya koşuldur.
+Biyopsikososyal model|Sağlığı biyolojik, psikolojik ve sosyal süreçlerin birlikte etkilediğini açıklayan yaklaşımdır.
+Vaka formülasyonu|Belirtileri kişinin yaşam öyküsü, ilişkileri ve sürdürücü etkenleriyle açıklayan klinik çerçevedir.
+Boylamsal değerlendirme|Belirtilerin zaman içindeki başlangıç, seyir ve değişimini birlikte incelemedir.
+Kesitsel değerlendirme|Kişinin belirli bir zaman noktasındaki belirtilerini ve işlevini değerlendirmedir.
+Klinik belirti izlemi|Belirti sıklığı, şiddeti ve işlevsellik değişimlerinin düzenli takip edilmesidir.
+Ölçüm temelli bakım|Tedavi sürecinde standart ölçekler ve işlevsel sonuçlardan düzenli yararlanılmasıdır.
+Psikometrik geçerlik|Bir ölçme aracının hedeflenen özelliği ne ölçüde ölçtüğüne ilişkin kanıttır.
+Psikometrik güvenirlik|Bir ölçme aracının uygun koşullarda ne kadar tutarlı sonuç verdiğidir.
+Duyarlılık|Bir testin durumu gerçekten bulunan kişileri doğru saptayabilme oranıdır.
+Özgüllük|Bir testin durumu bulunmayan kişileri doğru biçimde ayırt etme oranıdır.
+Pozitif yordayıcı değer|Testi pozitif olan kişiler arasında durumun gerçekten bulunma olasılığıdır.
+Negatif yordayıcı değer|Testi negatif olan kişiler arasında durumun gerçekten bulunmama olasılığıdır.
+Yanlış pozitif sonuç|Gerçekte bulunmayan bir durumun testte varmış gibi görünmesidir.
+Yanlış negatif sonuç|Gerçekte bulunan bir durumun testte saptanamamasıdır.
+Tarama ile tanı farkı|Taramanın olasılık belirlediğini, tanının ise kapsamlı klinik değerlendirme gerektirdiğini anlatır.
+Klinik önemlilik|Bir değişimin yalnızca istatistiksel değil, kişinin yaşamı açısından da anlamlı olmasıdır.
+Etki büyüklüğü|Bir araştırmada gözlenen farkın veya ilişkinin miktarını ifade eden ölçüdür.
+Randomize kontrollü çalışma|Katılımcıların müdahale gruplarına rastgele atandığı araştırma tasarımıdır.
+Sistematik derleme|Belirli sorudaki araştırmaların önceden belirlenmiş yöntemle kapsamlı biçimde bir araya getirilmesidir.
+Meta-analiz|Birden çok araştırmanın nicel sonuçlarının istatistiksel yöntemlerle birleştirilmesidir.
+Kanıta dayalı uygulama|Bilimsel bulguları klinik uzmanlık ve kişinin değerleriyle birlikte ele alan yaklaşımdır.
+Klinik kılavuz|Araştırmalar ve uzman değerlendirmeleri ışığında hazırlanmış uygulama önerileri bütünüdür.
+Farmakogenetik|Genetik farklılıkların bazı ilaçlara verilen yanıt veya metabolizmayla ilişkisini inceler.
+Farmakovijilans|İlaçların olası istenmeyen etkilerinin izlenmesi ve güvenlik bilgilerinin değerlendirilmesidir.
+İlaç yarılanma ömrü|İlacın kandaki miktarının yarıya düşmesi için geçen yaklaşık süredir.
+Kararlı durum düzeyi|Düzenli ilaç kullanımında vücuda giren ve atılan miktarların dengeye yaklaştığı durumdur.
+Terapötik ilaç izlemi|Bazı ilaçların kan düzeylerini etkinlik ve güvenlik açısından izleme uygulamasıdır.
+Antikolinerjik etki|Asetilkolin etkisinin azalmasıyla ağız kuruluğu ve kabızlık gibi belirtiler oluşturabilen etkidir.
+Ekstrapiramidal belirti|Bazı ilaçlarla ilişkili olabilen kas sertliği, titreme veya hareket bozukluğu belirtileridir.
+Tardif diskinezi|Özellikle uzun süre dopamin reseptör blokajı sonrası görülebilen istemsiz tekrarlayıcı hareketlerdir.
+Nöroleptik malign sendrom|Bazı antipsikotiklerle ilişkili ateş, kas sertliği ve bilinç değişikliğiyle seyredebilen acil durumdur.
+Serotonin sendromu|Serotonerjik etkinliğin aşırı artmasıyla oluşabilen nöromüsküler ve otonom belirtili acil tablodur.
+QT uzaması|Kalpte elektriksel yeniden kutuplaşma süresinin uzaması; bazı ilaçlarda izlem gerektirebilir.
+Metabolik sendrom|Karın çevresi yağlanması, kan şekeri, tansiyon ve yağ düzeyindeki risklerin birlikte bulunmasıdır.
+Antidepresan kesilme sendromu|Bazı antidepresanların hızlı azaltılması veya bırakılması sonrası oluşabilen belirtilerdir.
+İlaç etkileşim riski|Bir ilacın diğerinin etki veya yan etki düzeyini değiştirme olasılığıdır.
+Polifarmasi|Bir kişinin aynı dönemde birden fazla ilacı kullanması durumudur.
+Elektrokonvülsif tedavi|Belirli ciddi ruhsal tablolarda anestezi altında kontrollü nöbet oluşturularak uygulanan tedavidir.
+Transkraniyal manyetik uyarım|Beyin bölgelerini manyetik alanla uyarmayı amaçlayan, bazı durumlarda kullanılan yöntemdir.
+Transkraniyal doğru akım uyarımı|Kafa derisi üzerinden düşük düzeyli elektrik akımı verilerek sinirsel etkinliği etkilemeyi araştıran yöntemdir.
+Ketamin tedavisi|Belirli klinik koşullarda uzman gözetimiyle kullanılan ve glutamat sistemiyle ilişkili tedavi yaklaşımıdır.
+Esketamin|Belirli dirençli depresyon tablolarında uygun izlemle kullanılabilen ilaç etken maddesidir.
+Işık terapisi|Bazı uyku-uyanıklık sorunları ve mevsimsel depresyon tablolarında planlı parlak ışık uygulamasıdır.
+Mevsimsel örüntü|Duygudurum dönemlerinin belirli mevsimlerle tekrarlayıcı ilişki göstermesidir.
+Doğum sonrası depresyon|Doğum sonrası dönemde ortaya çıkabilen ve klinik değerlendirme gerektiren depresif tablodur.
+Perinatal ruh sağlığı|Gebelik ve doğum çevresindeki dönemde kişinin ruhsal iyilik halini ele alan alandır.
+Yaşlılık psikiyatrisi|İleri yaşta görülen ruhsal belirtilerin ve bunlara eşlik eden sağlık etkenlerinin değerlendirildiği alandır.
 Benlik saygısı|Kişinin kendisine biçtiği genel değer ve kabul düzeyidir.
 Benlik algısı|Kişinin özellikleri, rolleri ve yeterlikleri hakkındaki zihinsel tasarımıdır.
 Ayna benlik|Kişinin başkalarının kendisini nasıl gördüğünü düşündüğü üzerinden benlik algısı oluşturmasıdır.
