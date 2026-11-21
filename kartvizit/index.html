@@ -42,6 +42,8 @@ h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,7vw,39px);co
 .footer{text-align:center;font-size:11px;color:#738174;padding:20px 8px 0}.status{min-height:1.5em;color:#215a42;font-size:12px;text-align:center;margin-top:8px}
 @media(max-width:370px){.shell{padding:12px 9px 30px}.content{padding:20px 13px}.actions{gap:6px}.action{font-size:11px;min-height:84px}.hero{padding:27px 16px}.qr-wrap{width:180px;height:180px}}
 @media(prefers-reduced-motion:no-preference){.action,.primary,.share-button{transition:transform .2s,box-shadow .2s}.action:hover,.share-button:hover,.primary:hover{transform:translateY(-2px)}}
+
+.paybox{margin-top:24px;border:1px solid #dfe8d9;border-radius:20px;overflow:hidden;background:#fff}.paybox summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:17px 16px;background:#f2f6ef;color:#174833;font-size:16px;font-weight:750}.paybox summary::-webkit-details-marker{display:none}.paybox summary:focus-visible{outline:3px solid #c99b44;outline-offset:-3px}.paybox summary .chevron{margin-left:auto;font-size:20px}.paybox[open] summary .chevron{transform:rotate(180deg)}.paycontent{padding:17px 16px 19px}.paylabel{color:#65796b;font-size:11px;letter-spacing:1px;font-weight:800;margin-bottom:3px}.payvalue{font-weight:700;color:#214d37}.payrow{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #e5ece3}.iban{font-variant-numeric:tabular-nums;overflow-wrap:anywhere;font-size:14px;letter-spacing:.3px}.ibanbutton{background:#184b35;color:white;border:0;border-radius:11px;padding:11px 15px;font-weight:700;width:100%;margin:2px 0 17px}.bankqr{display:block;width:240px;max-width:100%;height:auto;image-rendering:pixelated;margin:8px auto 5px;background:white}.banknote{font-size:12px;color:#65786a;line-height:1.55;text-align:center;margin:7px 0 0}
 </style>
 </head>
 <body>
@@ -78,6 +80,7 @@ Rehbere Kaydet
 <div class="info-line"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 6 5 12 0 18M12 3c-5 6-5 12 0 18"/></svg><a href="https://www.ozgurozbebit.com.tr/">www.ozgurozbebit.com.tr</a></div>
 <div class="info-line"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps?cid=8166923601121425306" target="_blank" rel="noopener noreferrer">Yeni Mahalle, Kurtuluş Caddesi, Deniz Apartmanı No: 36 Daire: 5, Didim / Aydın</a></div>
 </div>
+<details class="paybox" id="payment"><summary><span aria-hidden="true">🏦</span> Banka / Ödeme Bilgileri <span class="chevron" aria-hidden="true">⌄</span></summary><div class="paycontent"><div class="payrow"><div class="paylabel">BANKA</div><div class="payvalue">T.C. Ziraat Bankası</div></div><div class="payrow"><div class="paylabel">HESAP SAHİBİ</div><div class="payvalue">ÖZGÜR ÖZBEBİT</div></div><div><div class="paylabel">IBAN</div><div class="payvalue iban" id="ibanText">TR20 0001 0002 0138 2549 4450 14</div></div><button class="ibanbutton" type="button" id="copyIban">▢ IBAN'ı Kopyala</button><div class="paylabel" style="text-align:center">ZİRAAT BANKASI QR KODU</div><img class="bankqr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBAQAAAACmjPToAAACXklEQVR42o3S20uTcRzH8c/v24PbQlNbB0I8bGKZ1JZGqeWxFlQkos2CUsoQnRXoTRdWyKNGjrooVAipkV6UlJUdFK3Qua2Ds4mzkzIxTTFFSra0bbrD00V010Wvq/cf8GYC/qgi/PXPckhptt6RJQaJLF8Ua08020E+Xt1iqWuKAsHbn0OxJwGCt1Gp0/MAXO+DloZTdS6e2WMyAAjPKih47kdf5aYpN5h7Tbqkqy26UcK5j24N06dgVsYcisr63I0BoQbCvoV380aJFmzx/hbDnt4Up4ETmVw5O6d6GpLJd+bCsGPHuAZMUGS/9ssHNiQzR5FJG92vWtXMPCqlLvFRdpSMc6l7noymv/xkIH9QftzZBHMsaKVr9/fSB1FuEGeNuZJXVAhwLD70g+8ijCDHZEhxN2/WAEvMqz6yesTFs6WOwYIudea2zWxROqGrOR08GE+S0qTwj5baEJDwLauhOnXeDk6ItAWes50CsCxKE0uTHyfyhDtjxhLV5evgfK3tc61OU5UMfmdYev+ibJAnIb9vr5BXZwctTbdrJ0d8+0HMGuc9mKFwgwKOhR5+eLPaCvI7y6zm6MRysOW2W2bOMzr+HMuRIZ1jxzsFnqOruZ71FC4G+W7fdQUX1DSBAqblqrjzLRqQpzxJ6JJ3u0GcTTX0dsYgBvvVkDA6YLFmZJLHJi+bOaDUgglvXm0vtJuuyZiwkPP56T3TbCGzyzo6vw4Vv4jnRMZL8lJ52kQ856vRM/VPUzYIwo11vSXj5SCQ/pDUOWkFraiI2DVP4RrAHjFcWxVoVfLsPw/7DfPV/L+zaEZRAAAAAElFTkSuQmCC" alt="Özgür Özbebit Ziraat Bankası ödeme QR kodu" width="240" height="240"><p class="banknote">Ödeme öncesinde alıcı adını ve IBAN'ı banka uygulamanızdan kontrol edin. QR ile ödeme desteği bankanızın uygulamasına bağlıdır.</p></div></details>
 <section class="share" aria-labelledby="share-title">
 <h2 id="share-title">Kartvizitimi Paylaş</h2>
 <p>Bu QR kodu okutabilir veya aynı adresi NFC kartına kaydedebilirsiniz.</p>
@@ -124,6 +127,11 @@ Rehbere Kaydet
       catch(e){if(e.name!=='AbortError') copy()}
     }else{copy()}
   }
+  document.getElementById('copyIban').addEventListener('click',async()=>{
+    const iban='TR200001000201382549445014';
+    try{await navigator.clipboard.writeText(iban);say('IBAN kopyalandı.');document.getElementById('copyIban').textContent='✓ IBAN Kopyalandı';}
+    catch(e){prompt('IBAN:',iban)}
+  });
   document.getElementById('copyLink').addEventListener('click',copy);
   document.getElementById('shareTop').addEventListener('click',share);
   document.getElementById('shareBottom').addEventListener('click',share);
